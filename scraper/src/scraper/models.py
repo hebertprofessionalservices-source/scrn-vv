@@ -166,7 +166,7 @@ class Player(_Frozen):
 
 
 class BoxScoreEntry(_Frozen):
-    model_config = ConfigDict(extra="forbid", frozen=False, populate_by_name=True)
+    model_config = ConfigDict(extra="ignore", frozen=False, populate_by_name=True)
 
     playerId: str
     cmp: int | None = None
