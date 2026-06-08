@@ -4,6 +4,7 @@ from __future__ import annotations
 import asyncio
 import contextlib
 import json
+import os
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -114,9 +115,34 @@ async def _run_pipeline(
     config.LOGOS_DIR.mkdir(parents=True, exist_ok=True)
     config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    teams_out: list[dict[str, Any]] = []
-    players_out: list[dict[str, Any]] = []
-    games_out: list[dict[str, Any]] = []
+    # --- Resume / checkpointing setup ---
+    completed_path = season_data_dir / "_completed_teams.txt"
+    if force and completed_path.exists():
+        completed_path.unlink()
+
+    completed_team_ids: set[str] = _load_completed(completed_path) if not force else set()
+
+    # Load partial outputs (ignored when --force)
+    teams_out: list[dict[str, Any]] = (
+        _load_json_or_empty(season_data_dir / "teams.json") if not force else []
+    )
+    players_out: list[dict[str, Any]] = (
+        _load_json_or_empty(season_data_dir / "players.json") if not force else []
+    )
+    games_out: list[dict[str, Any]] = (
+        _load_json_or_empty(season_data_dir / "games.json") if not force else []
+    )
+
+    # Drop orphan entries not yet confirmed as complete
+    teams_out = [t for t in teams_out if t.get("id") in completed_team_ids]
+    players_out = [p for p in players_out if p.get("teamId") in completed_team_ids]
+    games_out = [
+        g
+        for g in games_out
+        if g.get("homeTeamId") in completed_team_ids
+        or g.get("awayTeamId") in completed_team_ids
+    ]
+
     errors: list[dict[str, Any]] = []
 
     async with BrowserHarness(headless=not headed) as harness:
@@ -164,6 +190,12 @@ async def _run_pipeline(
 
         teams_attempted = len(all_team_rows)
 
+        log.info(
+            "resume_state",
+            already_done=len(completed_team_ids),
+            remaining=teams_attempted - len(completed_team_ids),
+        )
+
         # Step 4: per-team scrape
         for team_row in all_team_rows:
             team_url = team_row.get("url", "")
@@ -178,6 +210,10 @@ async def _run_pipeline(
 
                 tid = slugify.team_id(team_home["name"], team_home.get("mascot"))
 
+                if tid in completed_team_ids:
+                    log.info("team_skipped", team_id=tid)
+                    continue
+
                 await download_team_logo(
                     team_id=tid,
                     logo_url=team_home.get("logoUrl"),
@@ -188,6 +224,11 @@ async def _run_pipeline(
                     teams_out.append(
                         build_team(season=season, team_home=team_home).model_dump(by_alias=True)
                     )
+                    log.info("team_done", team_id=tid)
+                    _checkpoint(
+                        season_data_dir, teams_out, players_out, games_out, completed_path, tid
+                    )
+                    completed_team_ids.add(tid)
                     continue
 
                 roster_json = await _fetch_json(
@@ -266,6 +307,10 @@ async def _run_pipeline(
                 games_out.extend(g.model_dump(by_alias=True) for g in games)
 
                 log.info("team_done", team_id=tid)
+                _checkpoint(
+                    season_data_dir, teams_out, players_out, games_out, completed_path, tid
+                )
+                completed_team_ids.add(tid)
 
             except Exception as exc:
                 log.warning("team_error", team_url=team_url, error=str(exc))
@@ -314,6 +359,50 @@ async def _run_pipeline(
 def _write_json(path: Path, data: list[dict[str, Any]]) -> None:
     path.write_text(json.dumps(data, indent=2, default=str), encoding="utf-8")
     log.info("wrote_json", path=str(path), count=len(data))
+
+
+def _load_completed(path: Path) -> set[str]:
+    """Return the set of team_ids recorded as fully processed."""
+    if not path.exists():
+        return set()
+    return {
+        line.strip()
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    }
+
+
+def _load_json_or_empty(path: Path) -> list[dict[str, Any]]:
+    """Load a JSON array from *path*, returning [] on missing or malformed file."""
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _atomic_write_json(path: Path, data: list[dict[str, Any]]) -> None:
+    """Write *data* to *path* via a temp file, then atomically replace."""
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, indent=2, default=str), encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def _checkpoint(
+    season_dir: Path,
+    teams_out: list[dict[str, Any]],
+    players_out: list[dict[str, Any]],
+    games_out: list[dict[str, Any]],
+    completed_path: Path,
+    team_id: str,
+) -> None:
+    """Atomically persist partial outputs and record *team_id* as complete."""
+    _atomic_write_json(season_dir / "teams.json", teams_out)
+    _atomic_write_json(season_dir / "players.json", players_out)
+    _atomic_write_json(season_dir / "games.json", games_out)
+    with completed_path.open("a", encoding="utf-8") as fh:
+        fh.write(team_id + "\n")
 
 
 @app.command()
