@@ -23,3 +23,19 @@ def test_supported_seasons_present():
 
 def test_maxpreps_base_url_set():
     assert config.MAXPREPS_BASE.startswith("https://www.maxpreps.com")
+
+
+def test_ms_football_landing_uses_short_path():
+    assert config.MS_FOOTBALL_LANDING.endswith("/ms/football/")
+
+
+def test_chromium_extra_launch_args_non_empty():
+    assert isinstance(config.CHROMIUM_EXTRA_LAUNCH_ARGS, tuple)
+    assert len(config.CHROMIUM_EXTRA_LAUNCH_ARGS) > 0
+
+
+def test_landing_url_template_has_placeholder():
+    # Should be formattable with season keyword
+    url = config.LANDING_URL_TEMPLATE.format(season="25-26")
+    assert "25-26" in url
+    assert url.startswith("https://www.maxpreps.com")

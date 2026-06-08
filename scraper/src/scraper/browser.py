@@ -23,11 +23,15 @@ class BrowserHarness:
 
     async def __aenter__(self) -> BrowserHarness:
         self._playwright = await async_playwright().start()
-        self._browser = await self._playwright.chromium.launch(headless=self._headless)
+        self._browser = await self._playwright.chromium.launch(
+            headless=self._headless,
+            args=list(config.CHROMIUM_EXTRA_LAUNCH_ARGS),
+        )
         self._context = await self._browser.new_context(
             user_agent=config.USER_AGENT,
             viewport={"width": 1440, "height": 900},
         )
+        await self._context.add_init_script(config.CHROMIUM_INIT_SCRIPT)
         return self
 
     async def __aexit__(

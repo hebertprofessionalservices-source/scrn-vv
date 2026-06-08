@@ -15,9 +15,18 @@ RUN_REPORT_PATH = OUTPUT_DIR / "run-report.md"
 ERRORS_LOG_PATH = OUTPUT_DIR / "errors.jsonl"
 
 MAXPREPS_BASE = "https://www.maxpreps.com"
-MS_FOOTBALL_LANDING = f"{MAXPREPS_BASE}/mississippi/football/"
+MS_FOOTBALL_LANDING = f"{MAXPREPS_BASE}/ms/football/"
+LANDING_URL_TEMPLATE = f"{MAXPREPS_BASE}/ms/football/{{season}}/"
 
 SUPPORTED_SEASONS: tuple[str, ...] = ("2024-25", "2025-26")
+
+CHROMIUM_EXTRA_LAUNCH_ARGS: tuple[str, ...] = (
+    "--disable-blink-features=AutomationControlled",
+)
+
+CHROMIUM_INIT_SCRIPT = (
+    "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+)
 
 PAGE_CONCURRENCY = 3
 BROWSER_CONTEXTS = 1
