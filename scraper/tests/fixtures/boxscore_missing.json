@@ -1,0 +1,254 @@
+{
+  "source_url": "https://www.maxpreps.com/games/09-11-2026/football-26/ashland-vs-byhalia.htm?c=vjFO3GAoFkuZvV2CuDaWXg",
+  "page_type": "legacy_matchup_no_stats",
+  "metadata": {
+    "contestId": "dc4e31be-2860-4b16-99bd-5d82b836965e",
+    "pageError": 0,
+    "pageNum": 0,
+    "siteHier": [
+      "contest",
+      "matchup"
+    ],
+    "siteSection": "contest",
+    "siteType": "desktop web",
+    "pageOntologyId": "100080",
+    "pageType": "boxscore",
+    "pageName": "/local/contest/matchup.aspx",
+    "pageTypeId": "6872",
+    "state": "MS",
+    "gender": "Boys",
+    "sportName": "Football",
+    "teamLevel": "Varsity",
+    "season": "Fall",
+    "year": "26-27",
+    "ssid": "2286cd80-c46d-4739-8dd1-92a67ca8daa7",
+    "content": "contest,contest-pregame",
+    "siteRsid": "cbsimaxprepssite",
+    "brandPlatformId": "maxpreps_site_desktop",
+    "isAvia": false,
+    "contentFramework": "Desktop",
+    "contentStatus": "Indeterminate",
+    "allowContentToBeFramed": "Deny",
+    "appType": "Website",
+    "appPlatform": "None",
+    "contentVersion": "Legacy"
+  },
+  "score_summary": {},
+  "stat_tables": [],
+  "has_player_data": false,
+  "page_notes": "This page is a pre-game or no-stats matchup page (siteHier: contest/matchup). No player stats present.",
+  "schema_org_event": {
+    "@context": "http://schema.org",
+    "@type": "SportsEvent",
+    "HomeTeam": {
+      "@type": "SportsTeam",
+      "url": "/ms/byhalia/byhalia-indians/football/",
+      "name": "Byhalia High School"
+    },
+    "AwayTeam": {
+      "@type": "SportsTeam",
+      "url": "/ms/ashland/ashland-blue-devils/football/",
+      "name": "Ashland High School"
+    },
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Byhalia",
+        "addressRegion": "Mississippi",
+        "postalCode": "38611",
+        "streetAddress": "278 Hwy 309 N"
+      },
+      "name": "Byhalia High School"
+    },
+    "startDate": "2026-09-12T00:00:00Z",
+    "endDate": "2026-09-12T02:00:00Z",
+    "PotentialAction": {
+      "@type": "PlayAction",
+      "name": "Football game"
+    },
+    "Performer": [
+      {
+        "@type": "SportsTeam",
+        "url": "/ms/byhalia/byhalia-indians/football/",
+        "name": "Byhalia High School"
+      },
+      {
+        "@type": "SportsTeam",
+        "url": "/ms/ashland/ashland-blue-devils/football/",
+        "name": "Ashland High School"
+      }
+    ],
+    "url": "https://www.maxpreps.com/games/9-11-2026/football-26/ashland-vs-byhalia.htm?c=vjFO3GAoFkuZvV2CuDaWXg",
+    "name": "Ashland Varsity Football @ Byhalia",
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": "https://image.maxpreps.io/school-mascot/4/e/9/4e90b532-946d-4da7-9861-91314599e32b.gif?version=636507416400000000"
+      }
+    ],
+    "description": "The Byhalia (MS) varsity football team has a home non-conference game vs. Ashland (MS) on Friday, September 11 @ 7p."
+  },
+  "all_tables": [
+    {
+      "headers": [
+        "Overall",
+        "Home",
+        "Away",
+        "Win %",
+        "PF",
+        "PA"
+      ],
+      "rows": [
+        [
+          "0-0",
+          "0-0",
+          "0-0",
+          ".000",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "Overall",
+        "Home",
+        "Away",
+        "Win %",
+        "PF",
+        "PA"
+      ],
+      "rows": [
+        [
+          "0-0",
+          "0-0",
+          "0-0",
+          ".000",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "School",
+        "Common Opp. Rec.",
+        "",
+        "School",
+        "Common Opp. Rec."
+      ],
+      "rows": [
+        [
+          "Ashland",
+          "0-0",
+          "",
+          "Byhalia",
+          "0-0"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "Date",
+        "Away",
+        "Home",
+        "Result",
+        "",
+        "Date",
+        "Away",
+        "Home",
+        "Result"
+      ],
+      "rows": [
+        [
+          "10/23/26",
+          "Ashland",
+          "Potts Camp",
+          "",
+          "",
+          "9/18/26",
+          "Byhalia",
+          "Potts Camp",
+          ""
+        ],
+        [
+          "10/29/26",
+          "Byers",
+          "Ashland",
+          "",
+          "",
+          "8/27/26",
+          "Byers",
+          "Byhalia",
+          ""
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "Ashland (26-27)",
+        "",
+        "Byhalia (26-27)"
+      ],
+      "rows": [
+        [
+          "0-0",
+          "Overall",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "League",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Non-League",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Head to Head",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Common Opponent",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Home",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Away",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Neutral",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Playoff",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "In-State",
+          "0-0"
+        ],
+        [
+          "0-0",
+          "Out-of-State",
+          "0-0"
+        ]
+      ]
+    }
+  ]
+}

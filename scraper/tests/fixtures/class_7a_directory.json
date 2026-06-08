@@ -1,0 +1,1624 @@
+{
+  "props": {
+    "pageProps": {
+      "canonicalUrl": "https://www.maxpreps.com/ms/football/26-27/class/class-7a/?statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce",
+      "tracking": {
+        "gender": "Boys",
+        "sportName": "Football",
+        "teamLevel": "Varsity",
+        "ssid": "2286cd80-c46d-4739-8dd1-92a67ca8daa7",
+        "state": "ms"
+      },
+      "requestContext": {
+        "deviceType": "desktop",
+        "appType": 0
+      },
+      "pageTitle": "Division 7A High School Football Standings",
+      "pageDescription": "Mississippi Division 7A Football Standings",
+      "siteNavData": {
+        "allSeasonId": "22e2b335-334e-4d4d-9f67-a0f716bb1ccd",
+        "season": "Fall",
+        "sections": [
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/football/",
+                "text": "Football Home"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/schools/",
+                "text": "Teams"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/athletes/",
+                "text": "Players"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/#states",
+                "text": "States"
+              },
+              {
+                "url": "https://www.maxpreps.com/list/schedules_scores_redirect.aspx?gendersport=boys,football",
+                "text": "Scores"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/rankings/1/",
+                "text": "Rankings"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/stat-leaders/",
+                "text": "Stat leaders"
+              },
+              {
+                "url": "https://www.maxpreps.com/photography/browse-galleries/?gendersport=boys,football&state=all states",
+                "text": "Photos"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/playoffs/",
+                "text": "Playoffs"
+              },
+              {
+                "url": "https://www.maxpreps.com/video/channel/football/",
+                "text": "Videos"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/1kaTlgLBKUKkzkQPotK9yw/national-high-school-football-record-book.htm",
+                "text": "Record Book"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/game-of-the-week/",
+                "text": "Game of the Week"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/articles_list.aspx?gendersport=boys,football",
+                "text": "News"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/sports/football?utm_campaign=sport-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams"
+              }
+            ],
+            "header": "Football",
+            "id": "Boys,Football,Fall"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/baseball/",
+                "text": "Baseball Home"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/schools/",
+                "text": "Teams"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/athletes/",
+                "text": "Players"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/#states",
+                "text": "States"
+              },
+              {
+                "url": "https://www.maxpreps.com/list/schedules_scores_redirect.aspx?gendersport=boys,baseball",
+                "text": "Scores"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/rankings/1/",
+                "text": "Rankings"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/stat-leaders/",
+                "text": "Stat leaders"
+              },
+              {
+                "url": "https://www.maxpreps.com/photography/browse-galleries/?gendersport=boys,baseball&state=all states",
+                "text": "Photos"
+              },
+              {
+                "url": "https://www.maxpreps.com/baseball/playoffs/",
+                "text": "Playoffs"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/viAlrzyYJUCPhWbwrqfTXA/national-high-school-baseball-record-book.htm",
+                "text": "Record Book"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/articles_list.aspx?gendersport=boys,baseball",
+                "text": "News"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/sports/baseball?utm_campaign=sport-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams"
+              }
+            ],
+            "header": "Baseball",
+            "id": "Boys,Baseball,Spring"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/basketball/",
+                "text": "B. Basketball Home"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/schools/",
+                "text": "Teams"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/athletes/",
+                "text": "Players"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/#states",
+                "text": "States"
+              },
+              {
+                "url": "https://www.maxpreps.com/list/schedules_scores_redirect.aspx?gendersport=boys,basketball",
+                "text": "Scores"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/rankings/1/",
+                "text": "Rankings"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/stat-leaders/",
+                "text": "Stat leaders"
+              },
+              {
+                "url": "https://www.maxpreps.com/photography/browse-galleries/?gendersport=boys,basketball&state=all states",
+                "text": "Photos"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/playoffs/",
+                "text": "Playoffs"
+              },
+              {
+                "url": "https://www.maxpreps.com/video/channel/basketball/",
+                "text": "Videos"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/NJXu8aL8DUeoU-eSSSAxvg/national-high-school-basketball-record-book.htm",
+                "text": "Record Book"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/game-of-the-week/",
+                "text": "Game of the Week"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/articles_list.aspx?gendersport=boys,basketball",
+                "text": "News"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/sports/basketball?gender=boys&utm_campaign=sport-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams"
+              }
+            ],
+            "header": "B. Basketball",
+            "id": "Boys,Basketball,Winter"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/",
+                "text": "G. Basketball Home"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/schools/",
+                "text": "Teams"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/athletes/",
+                "text": "Players"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/#states",
+                "text": "States"
+              },
+              {
+                "url": "https://www.maxpreps.com/list/schedules_scores_redirect.aspx?gendersport=girls,basketball",
+                "text": "Scores"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/rankings/1/",
+                "text": "Rankings"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/stat-leaders/",
+                "text": "Stat leaders"
+              },
+              {
+                "url": "https://www.maxpreps.com/photography/browse-galleries/?gendersport=girls,basketball&state=all states",
+                "text": "Photos"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/playoffs/",
+                "text": "Playoffs"
+              },
+              {
+                "url": "https://www.maxpreps.com/video/channel/basketball/",
+                "text": "Videos"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/aT5TtNXPJE6gw3znKNhmFw/national-high-school-girls-basketball-record-book.htm",
+                "text": "Record Book"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/game-of-the-week/",
+                "text": "Game of the Week"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/articles_list.aspx?gendersport=girls,basketball",
+                "text": "News"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/sports/basketball?gender=girls&utm_campaign=sport-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams"
+              }
+            ],
+            "header": "G. Basketball",
+            "id": "Girls,Basketball,Winter"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/volleyball/",
+                "text": "G. Volleyball Home"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/schools/",
+                "text": "Teams"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/athletes/",
+                "text": "Players"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/#states",
+                "text": "States"
+              },
+              {
+                "url": "https://www.maxpreps.com/list/schedules_scores_redirect.aspx?gendersport=girls,volleyball",
+                "text": "Scores"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/rankings/1/",
+                "text": "Rankings"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/stat-leaders/",
+                "text": "Stat leaders"
+              },
+              {
+                "url": "https://www.maxpreps.com/photography/browse-galleries/?gendersport=girls,volleyball&state=all states",
+                "text": "Photos"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/playoffs/",
+                "text": "Playoffs"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/cIKV6USFeUinmv3U6-AUqA/national-high-school-volleyball-record-book.htm",
+                "text": "Record Book"
+              },
+              {
+                "url": "https://www.maxpreps.com/news/articles_list.aspx?gendersport=girls,volleyball",
+                "text": "News"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/sports/volleyball?gender=girls&utm_campaign=sport-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams"
+              }
+            ],
+            "header": "G. Volleyball",
+            "id": "Girls,Volleyball,Fall"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/sports/",
+                "text": "All Sports"
+              }
+            ],
+            "header": "All Sports",
+            "id": "PopularSports-AllSports"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/baseball/",
+                "text": "Baseball"
+              },
+              {
+                "url": "https://www.maxpreps.com/basketball/",
+                "text": "Basketball"
+              },
+              {
+                "url": "https://www.maxpreps.com/beach-volleyball/boys/",
+                "text": "Beach Volleyball"
+              },
+              {
+                "url": "https://www.maxpreps.com/cross-country/",
+                "text": "Cross Country"
+              },
+              {
+                "url": "https://www.maxpreps.com/football/",
+                "text": "Football"
+              },
+              {
+                "url": "https://www.maxpreps.com/golf/",
+                "text": "Golf"
+              },
+              {
+                "url": "https://www.maxpreps.com/ice-hockey/",
+                "text": "Ice Hockey"
+              },
+              {
+                "url": "https://www.maxpreps.com/lacrosse/",
+                "text": "Lacrosse"
+              },
+              {
+                "url": "https://www.maxpreps.com/soccer/",
+                "text": "Soccer"
+              },
+              {
+                "url": "https://www.maxpreps.com/swimming/",
+                "text": "Swimming"
+              },
+              {
+                "url": "https://www.maxpreps.com/tennis/",
+                "text": "Tennis"
+              },
+              {
+                "url": "https://www.maxpreps.com/track-field/",
+                "text": "Track & Field"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/boys/",
+                "text": "Volleyball"
+              },
+              {
+                "url": "https://www.maxpreps.com/water-polo/",
+                "text": "Water Polo"
+              },
+              {
+                "url": "https://www.maxpreps.com/wrestling/",
+                "text": "Wrestling"
+              }
+            ],
+            "header": "Popular Sports - Boys",
+            "id": "PopularSports-Boys"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/basketball/girls/",
+                "text": "Basketball"
+              },
+              {
+                "url": "https://www.maxpreps.com/beach-volleyball/",
+                "text": "Beach Volleyball"
+              },
+              {
+                "url": "https://www.maxpreps.com/cross-country/girls/",
+                "text": "Cross Country"
+              },
+              {
+                "url": "https://www.maxpreps.com/field-hockey/",
+                "text": "Field Hockey"
+              },
+              {
+                "url": "https://www.maxpreps.com/flag-football/girls/",
+                "text": "Flag Football"
+              },
+              {
+                "url": "https://www.maxpreps.com/golf/girls/",
+                "text": "Golf"
+              },
+              {
+                "url": "https://www.maxpreps.com/ice-hockey/girls/",
+                "text": "Ice Hockey"
+              },
+              {
+                "url": "https://www.maxpreps.com/lacrosse/girls/",
+                "text": "Lacrosse"
+              },
+              {
+                "url": "https://www.maxpreps.com/soccer/girls/",
+                "text": "Soccer"
+              },
+              {
+                "url": "https://www.maxpreps.com/softball/",
+                "text": "Softball"
+              },
+              {
+                "url": "https://www.maxpreps.com/swimming/girls/",
+                "text": "Swimming"
+              },
+              {
+                "url": "https://www.maxpreps.com/tennis/girls/",
+                "text": "Tennis"
+              },
+              {
+                "url": "https://www.maxpreps.com/track-field/girls/",
+                "text": "Track & Field"
+              },
+              {
+                "url": "https://www.maxpreps.com/volleyball/",
+                "text": "Volleyball"
+              },
+              {
+                "url": "https://www.maxpreps.com/water-polo/girls/",
+                "text": "Water Polo"
+              }
+            ],
+            "header": "Popular Sports - Girls",
+            "id": "PopularSports-Girls"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/apps/default.aspx?app=maxapp",
+                "text": "MaxPreps",
+                "description": "Follow your favorite high school teams and players",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/images/apps/maxapp_icon_v2.png"
+              },
+              {
+                "url": "https://www.maxpreps.com/apps/default.aspx?app=maxstats",
+                "text": "MP Stats for iPad",
+                "description": "Stat keeping for basketball teams",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/images/apps/maxstats_icon_128x128.png"
+              }
+            ],
+            "header": "Apps",
+            "id": "Media-Apps"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/photography/",
+                "text": "Photo Galleries",
+                "description": "Explore and purchase photos of your local teams and players",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/react/shared/site-nav-photography-thumbnail.png"
+              }
+            ],
+            "header": "Pro Photography",
+            "id": "Media-Photography"
+          },
+          {
+            "links": [
+              {
+                "url": "https://www.maxpreps.com/video/",
+                "text": "Video Center",
+                "description": "See top plays & highlights of the best high school sports",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/react/shared/site-nav-video-thumbnail.png"
+              },
+              {
+                "url": "https://www.nfhsnetwork.com/?utm_campaign=media-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Live Streams & Replays",
+                "description": "Get access to live game streams and full replays for 8000+ schools",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/react/shared/site-nav-nfhs.png"
+              }
+            ],
+            "header": "Watch",
+            "id": "Media-Video"
+          },
+          {
+            "links": [
+              {
+                "url": "https://gofan.co/?utm_campaign=media-menu&utm_medium=referral&utm_source=maxpreps&utm_content=fixed",
+                "text": "Digital Tickets",
+                "description": "Don't miss the action \u2013 Get Official Tickets",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/react/shared/site-nav-gofan.png"
+              }
+            ],
+            "header": "Tickets",
+            "id": "Tickets"
+          },
+          {
+            "links": [
+              {
+                "url": "https://secure.maxpreps.com/utility/member/new_coach.aspx",
+                "text": "Coaches",
+                "description": "Set up your high school team",
+                "thumbnailUrl": "https://asset.maxpreps.io/includes/react/shared/site-nav-whistle.svg"
+              }
+            ],
+            "header": "Content Contributors",
+            "id": "Content-Contributors"
+          }
+        ]
+      },
+      "breadcrumbConfig": {
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "name": "MaxPreps.com",
+              "item": {
+                "@type": "Thing",
+                "@id": "https://www.maxpreps.com/"
+              },
+              "position": 1
+            },
+            {
+              "@type": "ListItem",
+              "name": "High School Football",
+              "item": {
+                "@type": "Thing",
+                "@id": "https://www.maxpreps.com/football/"
+              },
+              "position": 2
+            },
+            {
+              "@type": "ListItem",
+              "name": "Mississippi",
+              "item": {
+                "@type": "Thing",
+                "@id": "https://www.maxpreps.com/ms/football/"
+              },
+              "position": 3
+            },
+            {
+              "@type": "ListItem",
+              "name": "Class Division 7A",
+              "item": {
+                "@type": "Thing",
+                "@id": "https://www.maxpreps.com/ms/football/26-27/class/class-7a/?statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce"
+              },
+              "position": 4
+            }
+          ]
+        }
+      },
+      "navBarProps": {
+        "pageNavLinks": [
+          {
+            "text": "Home",
+            "href": "https://www.maxpreps.com/ms/football/26-27/class/class-7a/?statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce"
+          },
+          {
+            "text": "Scores",
+            "href": "https://www.maxpreps.com/ms/football/26-27/class/class-7a/scores/?statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce"
+          },
+          {
+            "text": "Rankings",
+            "href": "https://www.maxpreps.com/ms/football/26-27/class/class-7a/rankings/1/?statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce"
+          }
+        ]
+      },
+      "layoutProps": {
+        "context": "division",
+        "contextId": "86401710-9915-4a02-8f4e-0d905a356dce",
+        "isCoreSport": true,
+        "contextAlias": "Class",
+        "trackingContextData": {
+          "state": "MS",
+          "sportName": "Football",
+          "year": "26-27",
+          "ssid": "2286cd80-c46d-4739-8dd1-92a67ca8daa7"
+        },
+        "statLeadersCardProps": null,
+        "scoreboardCardProps": null,
+        "headerData": {
+          "title": "Division 7A",
+          "sport": "Football",
+          "stateName": "Mississippi",
+          "sectionFormattedName": null,
+          "year": "26-27",
+          "teamsCount": 25
+        },
+        "tableData": [
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/c/a/1/ca1c9c0e-493c-452a-9996-425400b04293.gif?version=635708134800000000&width=1024&height=1024",
+            "schoolName": "Biloxi",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/biloxi/biloxi-indians/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "ca1c9c0e-493c-452a-9996-425400b04293",
+            "modifiedOn": "2026-05-27T17:13:06",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "BHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/8/2/4/82407d21-d248-4423-9d13-86eea015e20c.gif?version=639136579105634540&width=1024&height=1024",
+            "schoolName": "Brandon",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/brandon/brandon-bulldogs/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "82407d21-d248-4423-9d13-86eea015e20c",
+            "modifiedOn": "2026-05-27T23:28:49",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "BHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "",
+            "schoolName": "Clinton",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/clinton/clinton-arrows/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "372efe4e-b8d5-4097-b382-93ceda2607a9",
+            "modifiedOn": "2026-05-30T13:12:48",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "CHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/6/a/f/6aff9722-8280-4a31-a8cb-08737318df82.gif?version=634859754600000000&width=1024&height=1024",
+            "schoolName": "D'Iberville",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/diberville/diberville-warriors/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "6aff9722-8280-4a31-a8cb-08737318df82",
+            "modifiedOn": "2026-05-26T16:10:32",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "DIHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/1/f/1/1f1e94a4-fd1e-493e-9f72-060604041001.gif?version=638930196502556290&width=1024&height=1024",
+            "schoolName": "DeSoto Central",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/southaven/desoto-central-jaguars/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "1f1e94a4-fd1e-493e-9f72-060604041001",
+            "modifiedOn": "2026-06-02T08:04:59",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "DSCHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/4/6/d/46db9155-ea44-4147-b288-af8866cca5a4.gif?version=638157782400000000&width=1024&height=1024",
+            "schoolName": "Germantown",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/madison/germantown-mavericks/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "46db9155-ea44-4147-b288-af8866cca5a4",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "GHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/e/0/7/e07287db-fa1c-46b1-9d5a-664da415b117.gif?version=635935422600000000&width=1024&height=1024",
+            "schoolName": "Gulfport",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/gulfport/gulfport-admirals/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "e07287db-fa1c-46b1-9d5a-664da415b117",
+            "modifiedOn": "2026-05-26T16:10:15",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "GHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/f/a/8/fa8c4a36-54d7-4b24-8c74-82b1b0b299dc.gif?version=639131255058654760&width=1024&height=1024",
+            "schoolName": "Harrison Central",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/gulfport/harrison-central-red-rebels/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "fa8c4a36-54d7-4b24-8c74-82b1b0b299dc",
+            "modifiedOn": "2026-05-26T16:11:45",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "HCHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/5/9/9/599b9c31-6976-412b-a2da-7f7106269ae1.gif?version=637628366400000000&width=1024&height=1024",
+            "schoolName": "Hernando",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/hernando/hernando-tigers/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "599b9c31-6976-412b-a2da-7f7106269ae1",
+            "modifiedOn": "2026-05-28T16:22:30",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "HHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/5/d/d/5dd15068-2c2d-4ee3-ba37-1bb6afa62fdc.gif?version=638947225459876400&width=1024&height=1024",
+            "schoolName": "Horn Lake",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/horn-lake/horn-lake-eagles/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "5dd15068-2c2d-4ee3-ba37-1bb6afa62fdc",
+            "modifiedOn": "2026-05-27T23:32:52",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "HLHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/c/6/2/c627de47-f6c2-42c7-b02a-07b2e7a38234.gif?version=637086399000000000&width=1024&height=1024",
+            "schoolName": "Lewisburg",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/olive-branch/lewisburg-patriots/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "c627de47-f6c2-42c7-b02a-07b2e7a38234",
+            "modifiedOn": "2026-05-28T16:21:56",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "LHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/6/e/9/6e9faa9c-51e7-488a-87b3-0921bda07669.gif?version=636918717000000000&width=1024&height=1024",
+            "schoolName": "Madison Central",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/madison/madison-central-jaguars/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "6e9faa9c-51e7-488a-87b3-0921bda07669",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "MCHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/f/9/a/f9a81206-af4b-4ccb-9e0b-be45d746d87e.gif?version=636453370800000000&width=1024&height=1024",
+            "schoolName": "Meridian",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/meridian/meridian-wildcats/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "f9a81206-af4b-4ccb-9e0b-be45d746d87e",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "MHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/d/9/f/d9fb6da9-afa9-4465-9bc0-801d30cbf115.gif?version=638937023072163610&width=1024&height=1024",
+            "schoolName": "Murrah",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/jackson/murrah-mustangs/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "d9fb6da9-afa9-4465-9bc0-801d30cbf115",
+            "modifiedOn": "2026-05-27T17:15:43",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "MHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/b/2/5/b256e2a0-429f-465a-b28e-1d98a4bb49f7.gif?version=636549286800000000&width=1024&height=1024",
+            "schoolName": "Northwest Rankin",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/brandon/northwest-rankin-cougars/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "b256e2a0-429f-465a-b28e-1d98a4bb49f7",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "NRHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/c/1/0/c105174b-1e24-4272-a094-546328b82b4f.gif?version=635288244000000000&width=1024&height=1024",
+            "schoolName": "Oak Grove",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/hattiesburg/oak-grove-warriors/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "c105174b-1e24-4272-a094-546328b82b4f",
+            "modifiedOn": "2026-05-26T22:44:17",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "OGHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/c/9/0/c90b95c1-ff55-4300-b208-ea702476484d.gif?version=638963201333524200&width=1024&height=1024",
+            "schoolName": "Ocean Springs",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/ocean-springs/ocean-springs-greyhounds/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "c90b95c1-ff55-4300-b208-ea702476484d",
+            "modifiedOn": "2026-05-26T16:11:17",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "OSHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/c/2/4/c24e746b-8172-4ea1-b2cb-192526e0ad82.gif?version=636168715800000000&width=1024&height=1024",
+            "schoolName": "Oxford",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/oxford/oxford-chargers/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "c24e746b-8172-4ea1-b2cb-192526e0ad82",
+            "modifiedOn": "2026-05-27T23:30:33",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "OHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/d/6/4/d64af848-4762-4e5f-ace6-9cb8bb234f02.gif?version=635919166200000000&width=1024&height=1024",
+            "schoolName": "Pearl",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/pearl/pearl-pirates/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "d64af848-4762-4e5f-ace6-9cb8bb234f02",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "PHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/2/5/6/2569141b-ceb8-45b5-957a-116f5f2978cc.gif?version=635140900200000000&width=1024&height=1024",
+            "schoolName": "Petal",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/petal/petal-panthers/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "2569141b-ceb8-45b5-957a-116f5f2978cc",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "PHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/d/9/a/d9a5e795-263d-487e-832c-45ad4210a809.gif?version=638937103485642590&width=1024&height=1024",
+            "schoolName": "Southaven",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/southaven/southaven-chargers/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "d9a5e795-263d-487e-832c-45ad4210a809",
+            "modifiedOn": "2026-05-27T23:31:39",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "SHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/0/2/0/020ce09c-b17b-4742-aebf-1ddffb260562.gif?version=636385815600000000&width=1024&height=1024",
+            "schoolName": "St. Martin",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/ocean-springs/st-martin-yellow-jackets/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "020ce09c-b17b-4742-aebf-1ddffb260562",
+            "modifiedOn": "2026-05-26T16:11:45",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "SMHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/f/0/4/f04c912e-3eeb-4692-b9f4-796b479183b9.gif?version=635533645200000000&width=1024&height=1024",
+            "schoolName": "Starkville",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/starkville/starkville-yellowjackets/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "f04c912e-3eeb-4692-b9f4-796b479183b9",
+            "modifiedOn": null,
+            "winningPercentage": 0,
+            "schoolNameAcronym": "SHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/2/4/5/245f1463-3aed-41d1-89b7-9cdef961d52e.gif?version=638935262596773850&width=1024&height=1024",
+            "schoolName": "Tupelo",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/tupelo/tupelo-golden-wave/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "245f1463-3aed-41d1-89b7-9cdef961d52e",
+            "modifiedOn": "2026-05-27T23:33:43",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "THS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          },
+          {
+            "schoolMascotUrl": "https://image.maxpreps.io/school-mascot/f/a/7/fa73f429-40fa-45f6-9781-50524db9c8d5.gif?version=638940622276066820&width=1024&height=1024",
+            "schoolName": "West Harrison",
+            "teamCanonicalUrl": "https://www.maxpreps.com/ms/gulfport/west-harrison-hurricanes/football/",
+            "overallWins": 0,
+            "overallLosses": 0,
+            "overallTies": 0,
+            "overallStandingPlacement": 1,
+            "points": 0,
+            "pointsAgainst": 0,
+            "streak": 0,
+            "streakResult": null,
+            "schoolId": "fa73f429-40fa-45f6-9781-50524db9c8d5",
+            "modifiedOn": "2026-05-26T16:08:57",
+            "winningPercentage": 0,
+            "schoolNameAcronym": "WHHS",
+            "homeWins": 0,
+            "homeLosses": 0,
+            "homeTies": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "awayTies": 0,
+            "neutralWins": 0,
+            "neutralLosses": 0,
+            "neutralTies": 0,
+            "firstPlace": null,
+            "secondPlace": null,
+            "thirdPlace": null,
+            "contextWins": null,
+            "contextLosses": null,
+            "contextTies": null,
+            "contextWinningPercentage": null,
+            "contextPoints": null,
+            "contextPointsAgainst": null,
+            "contextStandingPlacement": null,
+            "context": "stateDivision"
+          }
+        ],
+        "relatedVideosCardProps": {
+          "videos": [
+            {
+              "context": "NationalSport",
+              "video": {
+                "canonicalUrl": "https://www.maxpreps.com/video/watch/landen-williams-callis-has-a-chance-to-become-leading-rusher-in-texas-high-school-football-history/?v=65a866e0-5fa9-4f15-b3c9-70d0dca203c2",
+                "description": "Taking a look at Randle's (Richmond, TX) 5-star senior RB Landen Williams-Callis.",
+                "formattedDuration": "1:10",
+                "publishedOn": "2026-06-04T12:38:50",
+                "thumbnailUrl": "https://image.maxpreps.io/target/65a866e0-5fa9-4f15-b3c9-70d0dca203c2/thumbnails/65a866e0-5fa9-4f15-b3c9-70d0dca203c2_1280x720.jpg",
+                "title": "Landen Williams-Callis has a chance to become leading rusher in Texas High School Football History",
+                "videoId": "65a866e0-5fa9-4f15-b3c9-70d0dca203c2",
+                "viewCount": 624920
+              }
+            },
+            {
+              "context": "NationalSport",
+              "video": {
+                "canonicalUrl": "https://www.maxpreps.com/video/watch/david-gabriel-georges-is-a-running-back-made-in-a-lab/?v=6f69fe49-2ba4-4fbf-8ce3-cff9c4e5397c",
+                "description": "Taking a look at Baylor's (Chatanooga, TN) 5-star senior RB David Gabriel Georges.",
+                "formattedDuration": "1:05",
+                "publishedOn": "2026-06-02T16:05:06",
+                "thumbnailUrl": "https://image.maxpreps.io/target/6f69fe49-2ba4-4fbf-8ce3-cff9c4e5397c/thumbnails/6f69fe49-2ba4-4fbf-8ce3-cff9c4e5397c_1280x720.jpg",
+                "title": "David Gabriel Georges is a Running Back made in a Lab",
+                "videoId": "6f69fe49-2ba4-4fbf-8ce3-cff9c4e5397c",
+                "viewCount": 523265
+              }
+            },
+            {
+              "context": "NationalSport",
+              "video": {
+                "canonicalUrl": "https://www.maxpreps.com/video/watch/jared-verse-went-from-a-0-star-recruit-to-nfl-star/?v=803ee040-7df0-4111-a06a-2e022f278d9e",
+                "description": "Looking back at the Cleveland Brown's Jared Verse during his prep career at Central Columbia (Bloomsburg, PA).",
+                "formattedDuration": "1:00",
+                "publishedOn": "2026-06-01T14:57:06",
+                "thumbnailUrl": "https://image.maxpreps.io/target/803ee040-7df0-4111-a06a-2e022f278d9e/thumbnails/803ee040-7df0-4111-a06a-2e022f278d9e_1280x720.jpg",
+                "title": "Jared Verse went from a 0-Star Recruit to NFL Star",
+                "videoId": "803ee040-7df0-4111-a06a-2e022f278d9e",
+                "viewCount": 329199
+              }
+            },
+            {
+              "context": "NationalSport",
+              "video": {
+                "canonicalUrl": "https://www.maxpreps.com/video/watch/braylen-warren-shines-at-elite-11-finals-emerging-as-one-of-the-top-quarterbacks-in-attendance/?v=f19795b4-cf2e-4061-a1ed-b61d5e88258a",
+                "description": "Braylen Warren continued his rise as one of the nation's top Class of 2027 quarterback prospects with an impressive performance at the Elite 11 Finals this past weekend.",
+                "formattedDuration": "0:44",
+                "publishedOn": "2026-06-01T13:44:16",
+                "thumbnailUrl": "https://image.maxpreps.io/target/f19795b4-cf2e-4061-a1ed-b61d5e88258a/thumbnails/f19795b4-cf2e-4061-a1ed-b61d5e88258a_1920x1080.png",
+                "title": "Braylen Warren Shines at Elite 11 Finals, Emerging as One of the Top Quarterbacks in Attendance",
+                "videoId": "f19795b4-cf2e-4061-a1ed-b61d5e88258a",
+                "viewCount": 23994
+              }
+            }
+          ],
+          "showSubtitle": false,
+          "isCompact": true,
+          "playbackMode": "auto-play"
+        },
+        "tournamentCardProps": null
+      }
+    },
+    "__N_SSP": true
+  },
+  "page": "/concordia/division",
+  "query": {
+    "statedivisionid": "86401710-9915-4a02-8f4e-0d905a356dce",
+    "url": "/local/division/standings.aspx?gendersport=boys,football&name=class-7a&ssid=2286cd80-c46d-4739-8dd1-92a67ca8daa7&state=ms&statedivisionid=86401710-9915-4a02-8f4e-0d905a356dce",
+    "currentContext": "StateDivision",
+    "state": "ms",
+    "ssid": "2286cd80-c46d-4739-8dd1-92a67ca8daa7",
+    "gendersport": "boys,football",
+    "name": "class-7a",
+    "allSeasonId": "22e2b335-334e-4d4d-9f67-a0f716bb1ccd",
+    "gender": "Boys",
+    "sport": "Football",
+    "teamLevel": "Varsity"
+  },
+  "buildId": "1780928458\n",
+  "assetPrefix": "https://asset.maxpreps.io",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gssp": true,
+  "scriptLoader": []
+}
