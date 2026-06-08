@@ -1,0 +1,103 @@
+name: Scrape MaxPreps
+
+on:
+  schedule:
+    # Sunday late: 04:00 UTC Monday → Sun 11pm CDT / 10pm CST
+    - cron: "0 4 * * MON"
+    # Tuesday late: 04:00 UTC Wednesday → Tue 11pm CDT / 10pm CST
+    - cron: "0 4 * * WED"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season to scrape (YYYY-YY)"
+        required: true
+        default: "2025-26"
+        type: choice
+        options: ["2024-25", "2025-26"]
+      force:
+        description: "Bypass crawl cache"
+        required: false
+        default: false
+        type: boolean
+      teams_only:
+        description: "Discovery + team home only (fast diagnostic run)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    defaults:
+      run:
+        working-directory: scraper
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          playwright install --with-deps chromium
+
+      - name: Run pytest
+        run: pytest -q
+
+      - name: Run ruff
+        run: ruff check src tests scripts
+
+      - name: Restore crawl cache
+        uses: actions/cache@v4
+        with:
+          path: scraper/.cache
+          key: crawl-cache-${{ github.event.inputs.season || '2025-26' }}-${{ github.run_id }}
+          restore-keys: |
+            crawl-cache-${{ github.event.inputs.season || '2025-26' }}-
+
+      - name: Scrape
+        env:
+          SEASON: ${{ github.event.inputs.season || '2025-26' }}
+          FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+          TEAMS_ONLY: ${{ github.event.inputs.teams_only == 'true' && '--teams-only' || '' }}
+        run: scrape --season "$SEASON" $FORCE $TEAMS_ONLY
+
+      - name: Post run report to summary
+        if: always()
+        run: |
+          if [ -f output/run-report.md ]; then
+            cat output/run-report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No run-report.md produced" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit outputs to web/public/
+        if: success()
+        run: |
+          cd ..
+          git config user.name "vv-scraper-bot"
+          git config user.email "bot@scrn.live"
+          mkdir -p web/public/data web/public/team-logos
+          rsync -a --delete scraper/output/data/ web/public/data/
+          rsync -a scraper/output/logos/ web/public/team-logos/
+          git add web/public/data web/public/team-logos
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "data: refresh from scheduled scrape (${SEASON:-2025-26})"
+            git push
+          fi
+        env:
+          SEASON: ${{ github.event.inputs.season || '2025-26' }}
