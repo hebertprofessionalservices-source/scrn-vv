@@ -23,6 +23,23 @@ def test_to_next_data_url():
     assert url == "https://www.maxpreps.com/_next/data/abc123/ms/starkville/starkville-yellowjackets/football/25-26/roster.json"
 
 
+def test_extract_build_id_strips_whitespace():
+    html_json = '<html><script id="__NEXT_DATA__">  \n {"buildId": "abc"}  \n </script></html>'
+    assert extract_build_id(html_json) == "abc"
+
+    html_regex = '<html>...some content..."buildId":"def123"\n...</html>'
+    assert extract_build_id(html_regex) == "def123"
+
+
+def test_to_next_data_url_strips_build_id():
+    url = to_next_data_url(
+        page_url="https://www.maxpreps.com/ms/x/y/football/25-26/roster/",
+        build_id="abc123\n",
+    )
+    assert "\n" not in url
+    assert "/abc123/" in url
+
+
 def test_derive_team_season_urls():
     urls = derive_team_season_urls(
         team_url="https://www.maxpreps.com/ms/starkville/starkville-yellowjackets/football/",

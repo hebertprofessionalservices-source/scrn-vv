@@ -122,9 +122,9 @@ def parse_season_stats(payload: dict) -> dict[str, dict[str, Any]]:
         category entry for the player, and any recognized flat fields derived
         from those entries.
     """
-    leaders_raw: list[dict] = (
-        payload["props"]["pageProps"]["playerStatLeadersData"]["leaders"]
-    )
+    # Support both legacy schema (props.pageProps) and current schema (pageProps).
+    page_props: dict = payload.get("pageProps") or payload.get("props", {}).get("pageProps", {})
+    leaders_raw: list[dict] = page_props.get("playerStatLeadersData", {}).get("leaders", [])
 
     # Accumulator: player_label -> player dict
     result: dict[str, dict[str, Any]] = {}

@@ -181,11 +181,9 @@ def parse_schedule(payload: dict, *, team_url: str) -> list[dict[str, Any]]:
         date, homeOrAway, opponentName, opponentTeamId, opponentLogoUrl,
         status, scoreFor, scoreAgainst, venue, boxScoreUrl, contestId.
     """
-    contests: list = (
-        payload.get("props", {})
-        .get("pageProps", {})
-        .get("contests", [])
-    )
+    # Support both legacy schema (props.pageProps) and current schema (pageProps).
+    page_props: dict = payload.get("pageProps") or payload.get("props", {}).get("pageProps", {})
+    contests: list = page_props.get("contests", [])
 
     our_slug = _team_slug(team_url)
 

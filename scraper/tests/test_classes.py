@@ -22,5 +22,14 @@ def test_discover_substitutes_requested_season():
         assert "statedivisionid=" in entry["url"], entry["url"]
 
 
-def test_discover_handles_empty_html():
-    assert discover_class_links("<html></html>", season_short="25-26") == []
+def test_discover_falls_back_for_missing_classes():
+    # An empty landing should still yield 7 classes via fallback.
+    links = discover_class_links("<html></html>", season_short="25-26")
+    classes = {entry["classification"] for entry in links}
+    assert classes == set(TARGET_CLASSES)
+
+
+def test_discover_fallback_substitutes_requested_season():
+    links = discover_class_links("<html></html>", season_short="24-25")
+    for entry in links:
+        assert "/ms/football/24-25/class/class-" in entry["url"], entry["url"]

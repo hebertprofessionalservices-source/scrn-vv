@@ -123,7 +123,9 @@ def parse_roster(payload: dict) -> list[dict[str, Any]]:
         List of player dicts with keys: name, jersey, position, playerClass,
         height, weight.
     """
-    athlete_rows: list[list[Any]] = payload["pageProps"]["athleteData"]
+    # Support both legacy schema (props.pageProps) and current schema (pageProps).
+    page_props: dict = payload.get("pageProps") or payload.get("props", {}).get("pageProps", {})
+    athlete_rows: list[list[Any]] = page_props.get("athleteData", [])
     players: list[dict[str, Any]] = []
 
     for row in athlete_rows:

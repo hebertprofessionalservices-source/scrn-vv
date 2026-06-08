@@ -22,11 +22,11 @@ def extract_build_id(html: str) -> str | None:
         try:
             data = json.loads(tag.string)
             if isinstance(data, dict) and "buildId" in data:
-                return data["buildId"]
+                return data["buildId"].strip()
         except json.JSONDecodeError:
             pass
     m = _BUILD_ID_RE.search(html)
-    return m.group(1) if m else None
+    return m.group(1).strip() if m else None
 
 
 def to_next_data_url(*, page_url: str, build_id: str) -> str:
@@ -38,7 +38,7 @@ def to_next_data_url(*, page_url: str, build_id: str) -> str:
     """
     parsed = urlparse(page_url)
     path = parsed.path.rstrip("/")
-    return f"{parsed.scheme}://{parsed.netloc}/_next/data/{build_id}{path}.json"
+    return f"{parsed.scheme}://{parsed.netloc}/_next/data/{build_id.strip()}{path}.json"
 
 
 def derive_team_season_urls(*, team_url: str, season_short: str) -> dict[str, str]:

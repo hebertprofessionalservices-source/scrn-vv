@@ -18,7 +18,9 @@ def parse_team_directory(payload: dict) -> list[dict[str, Any]]:
         Rows missing ``schoolName`` or ``teamCanonicalUrl`` are skipped.
     """
     try:
-        rows = payload["props"]["pageProps"]["layoutProps"]["tableData"]
+        # Support both legacy schema (props.pageProps) and current schema (pageProps).
+        page_props: dict = payload.get("pageProps") or payload.get("props", {}).get("pageProps", {})
+        rows = page_props["layoutProps"]["tableData"]
     except (KeyError, TypeError):
         return []
 
