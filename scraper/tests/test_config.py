@@ -19,6 +19,7 @@ def test_config_exposes_crawl_tuning():
 def test_supported_seasons_present():
     assert "2024-25" in config.SUPPORTED_SEASONS
     assert "2025-26" in config.SUPPORTED_SEASONS
+    assert "2026-27" in config.SUPPORTED_SEASONS
 
 
 def test_maxpreps_base_url_set():
@@ -34,8 +35,7 @@ def test_chromium_extra_launch_args_non_empty():
     assert len(config.CHROMIUM_EXTRA_LAUNCH_ARGS) > 0
 
 
-def test_landing_url_template_has_placeholder():
-    # Should be formattable with season keyword
-    url = config.LANDING_URL_TEMPLATE.format(season="25-26")
-    assert "25-26" in url
-    assert url.startswith("https://www.maxpreps.com")
+def test_landing_url_template_points_to_ms_football():
+    # No season placeholder — the landing page URL is static.
+    assert config.LANDING_URL_TEMPLATE.endswith("/ms/football/")
+    assert config.LANDING_URL_TEMPLATE.startswith("https://www.maxpreps.com")

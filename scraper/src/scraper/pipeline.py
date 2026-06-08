@@ -120,8 +120,8 @@ async def _run_pipeline(
     errors: list[dict[str, Any]] = []
 
     async with BrowserHarness(headless=not headed) as harness:
-        # Step 1: fetch landing to grab buildId
-        landing_url = config.LANDING_URL_TEMPLATE.format(season=short)
+        # Step 1: fetch landing to grab buildId and class links
+        landing_url = config.LANDING_URL_TEMPLATE
         landing_html = await _fetch_html(harness, landing_url, cache, force=force)
         build_id = extract_build_id(landing_html)
         if not build_id:
@@ -135,7 +135,7 @@ async def _run_pipeline(
         log.info("build_id", build_id=build_id)
 
         # Step 2: enumerate all team rows from class directories
-        class_entries = classes_mod.list_class_urls(short)
+        class_entries = classes_mod.discover_class_links(landing_html, season_short=short)
         all_team_rows: list[dict[str, str]] = []
         seen_urls: set[str] = set()
 
@@ -143,9 +143,8 @@ async def _run_pipeline(
             c_url = class_entry["url"]
             c_label = class_entry["classification"]
             try:
-                class_next_url = to_next_data_url(page_url=c_url, build_id=build_id)
-                class_payload = await _fetch_json(harness, class_next_url, cache, force=force)
-                rows = teams_mod.parse_team_directory(class_payload)
+                class_html = await _fetch_html(harness, c_url, cache, force=force)
+                rows = teams_mod.parse_team_directory_from_html(class_html)
                 for row in rows:
                     row_url = row.get("url", "")
                     if row_url and row_url not in seen_urls:
@@ -348,3 +347,7 @@ def run(
     )
     if exit_code != 0:
         raise typer.Exit(code=exit_code)
+
+
+if __name__ == "__main__":
+    app()

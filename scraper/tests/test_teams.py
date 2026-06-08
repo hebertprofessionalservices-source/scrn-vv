@@ -1,4 +1,4 @@
-from scraper.teams import parse_team_directory
+from scraper.teams import parse_team_directory, parse_team_directory_from_html
 
 
 def test_parse_team_directory_returns_team_records(load_json_fixture):
@@ -32,3 +32,16 @@ def test_parse_team_directory_handles_missing_data():
     assert result == []
     result = parse_team_directory({"props": {"pageProps": {"layoutProps": {"tableData": []}}}})
     assert result == []
+
+
+def test_parse_team_directory_from_html(load_fixture):
+    html = load_fixture("class_7a_directory.html")
+    teams = parse_team_directory_from_html(html)
+    assert len(teams) > 5, f"expected >5 teams from HTML fixture, got {len(teams)}"
+    t = teams[0]
+    assert {"name", "url", "schoolId"} <= set(t.keys())
+    assert t["url"].startswith("https://")
+
+
+def test_parse_team_directory_from_html_handles_empty():
+    assert parse_team_directory_from_html("<html></html>") == []
