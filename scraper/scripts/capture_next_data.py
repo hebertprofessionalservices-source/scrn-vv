@@ -16,6 +16,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
+import contextlib  # noqa: E402
+
 from playwright.async_api import async_playwright  # noqa: E402
 
 FIXTURES = PROJECT_ROOT / "tests" / "fixtures"
@@ -106,10 +108,8 @@ async def capture(
     except Exception as exc:
         print(f"  goto warning: {exc}")
     # Wait for XHRs to settle
-    try:
+    with contextlib.suppress(Exception):
         await page.wait_for_load_state("networkidle", timeout=15_000)
-    except Exception:
-        pass
     await page.wait_for_timeout(3_000)
     page.remove_listener("response", on_response)
 
@@ -183,7 +183,8 @@ async def main() -> None:
             size = p.stat().st_size
             try:
                 d = json.loads(p.read_text(encoding="utf-8"))
-                pp_keys = list(d.get("pageProps", d.get("props", {}).get("pageProps", {})).keys())[:6]
+                inner = d.get("pageProps", d.get("props", {}).get("pageProps", {}))
+                pp_keys = list(inner.keys())[:6]
                 print(f"  OK  {filename:35s} {size:>9,} bytes  keys={pp_keys}")
             except Exception as exc:
                 print(f"  ERR {filename:35s} parse error: {exc}")

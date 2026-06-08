@@ -9,9 +9,9 @@ Usage:
 """
 from __future__ import annotations
 
+import contextlib
 import json
 import re
-import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -61,10 +61,8 @@ def parse_boxscore_html(html: str, source_url: str) -> dict:
     for script in re.findall(r"<script[^>]*>(.*?)</script>", html, re.DOTALL):
         m = re.search(r"var utag_data\s*=\s*(\{.*?\})\s*;", script, re.DOTALL)
         if m:
-            try:
+            with contextlib.suppress(Exception):
                 result["metadata"] = json.loads(m.group(1))
-            except Exception:
-                pass
             break
 
     # 2. Extract schema.org SportsEvent data

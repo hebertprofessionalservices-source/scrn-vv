@@ -17,6 +17,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
+import contextlib  # noqa: E402
+
 from playwright.async_api import async_playwright  # noqa: E402
 
 FIXTURES = PROJECT_ROOT / "tests" / "fixtures"
@@ -55,7 +57,9 @@ BOXSCORE_URL_PATTERNS = [
 ]
 
 
-async def capture_boxscore(page, url: str, contest_id: str, dest: Path) -> tuple[bool, int, list[str]]:
+async def capture_boxscore(
+    page, url: str, contest_id: str, dest: Path
+) -> tuple[bool, int, list[str]]:
     """Capture boxscore JSON data for a contest page."""
     captured_responses: list[tuple[str, bytes]] = []
     all_json_urls: list[str] = []
@@ -84,10 +88,8 @@ async def capture_boxscore(page, url: str, contest_id: str, dest: Path) -> tuple
         print(f"  goto warning: {exc}")
 
     # Wait longer for legacy page with multiple XHR requests
-    try:
+    with contextlib.suppress(Exception):
         await page.wait_for_load_state("networkidle", timeout=20_000)
-    except Exception:
-        pass
     await page.wait_for_timeout(5_000)
     page.remove_listener("response", on_response)
 
