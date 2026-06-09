@@ -1,0 +1,54 @@
+import type { Player, Position, Team } from "./types";
+
+export function topPlayersByStat(
+  players: Player[],
+  position: Position,
+  metric: (p: Player) => number,
+  limit: number,
+): Player[] {
+  return players
+    .filter((p) => p.position === position && metric(p) > 0)
+    .sort((a, b) => metric(b) - metric(a))
+    .slice(0, limit);
+}
+
+export interface DefenseRank {
+  team: Team;
+  ppg: number;
+}
+
+export function topDefensesByPPG(teams: Team[], limit: number): DefenseRank[] {
+  return teams
+    .filter((t) => t.record.wins + t.record.losses > 0)
+    .map<DefenseRank>((t) => ({
+      team: t,
+      ppg: t.stats.pointsAgainst / (t.record.wins + t.record.losses),
+    }))
+    .sort((a, b) => a.ppg - b.ppg)
+    .slice(0, limit);
+}
+
+export function teamsByClass(teams: Team[]): Map<string, Team[]> {
+  const out = new Map<string, Team[]>();
+  for (const t of teams) {
+    const list = out.get(t.classification) ?? [];
+    list.push(t);
+    out.set(t.classification, list);
+  }
+  return out;
+}
+
+export function lastWeeksGames<T extends { date: string; status: string }>(
+  games: T[],
+  today = new Date(),
+): T[] {
+  const lastWeekEnd = new Date(today);
+  lastWeekEnd.setDate(today.getDate() - today.getDay());
+  const lastWeekStart = new Date(lastWeekEnd);
+  lastWeekStart.setDate(lastWeekEnd.getDate() - 7);
+  return games.filter((g) => {
+    if (g.status !== "final") return false;
+    const d = new Date(g.date);
+    return d >= lastWeekStart && d <= lastWeekEnd;
+  });
+}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SearchTrigger } from "./search-trigger";
 
 export function SiteHeader() {
   return (
@@ -26,6 +27,7 @@ export function SiteHeader() {
             Players
           </Link>
         </nav>
+        <SearchTrigger />
         <div className="text-xs text-chrome-500 hidden sm:block">2025–26 · MS</div>
       </div>
     </header>
