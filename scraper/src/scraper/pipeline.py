@@ -208,7 +208,12 @@ async def _run_pipeline(
                 team_home_html = await _fetch_html(harness, urls["team_home"], cache, force=force)
                 team_home = parse_team_home(team_home_html, source_url=team_url)
 
-                if not team_home.get("classification"):
+                # Always use the directory-derived label for historical seasons.
+                # team_home["classification"] comes from the live team page's
+                # stateDivisionName which reflects the *current* season — wrong
+                # for past seasons when a school changed class.  The class
+                # directory we scraped the team from is the authoritative source.
+                if c_label:
                     team_home["classification"] = c_label
 
                 tid = slugify.team_id(team_home["name"], team_home.get("mascot"))
