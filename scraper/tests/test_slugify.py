@@ -38,12 +38,18 @@ def test_player_id_handles_single_name_player():
     ) == "foo-bar-7-cher"
 
 
-def test_player_id_with_missing_jersey_uses_x():
-    assert player_id(
-        team_id_="foo-bar",
-        jersey=None,
-        full_name="Jane Smith",
-    ) == "foo-bar-x-smith"
+def test_player_id_with_missing_jersey_uses_x_and_hash():
+    pid = player_id(team_id_="foo-bar", jersey=None, full_name="Jane Smith")
+    assert pid.startswith("foo-bar-x-smith-")
+    assert len(pid) > len("foo-bar-x-smith-")
+    # Same name should produce same id (deterministic)
+    assert player_id(team_id_="foo-bar", jersey=None, full_name="Jane Smith") == pid
+
+
+def test_player_id_distinguishes_two_smiths_with_no_jersey():
+    p1 = player_id(team_id_="foo-bar", jersey=None, full_name="Jane Smith")
+    p2 = player_id(team_id_="foo-bar", jersey=None, full_name="John Smith")
+    assert p1 != p2
 
 
 def test_game_id_format():

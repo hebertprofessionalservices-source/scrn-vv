@@ -327,9 +327,9 @@ async def _run_pipeline(
     # Step 5: write output files
     finished_at = datetime.now(UTC).isoformat()
 
-    _write_json(season_data_dir / "teams.json", teams_out)
-    _write_json(season_data_dir / "players.json", players_out)
-    _write_json(season_data_dir / "games.json", games_out)
+    _write_json(season_data_dir / "teams.json", _dedupe_by_id(teams_out))
+    _write_json(season_data_dir / "players.json", _dedupe_by_id(players_out))
+    _write_json(season_data_dir / "games.json", _dedupe_by_id(games_out))
 
     games_complete = sum(1 for g in games_out if g.get("dataStatus") == "complete")
     games_incomplete = sum(1 for g in games_out if g.get("dataStatus") == "incomplete")
@@ -390,6 +390,17 @@ def _load_json_or_empty(path: Path) -> list[dict[str, Any]]:
         return []
 
 
+def _dedupe_by_id(items: list[dict]) -> list[dict]:
+    """Keep the LAST entry for each id (so latest scrape wins on conflict)."""
+    seen: dict[str, dict] = {}
+    for item in items:
+        key = item.get("id")
+        if key is None:
+            continue
+        seen[key] = item
+    return list(seen.values())
+
+
 def _atomic_write_json(path: Path, data: list[dict[str, Any]]) -> None:
     """Write *data* to *path* via a temp file, then atomically replace."""
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -406,9 +417,9 @@ def _checkpoint(
     team_id: str,
 ) -> None:
     """Atomically persist partial outputs and record *team_id* as complete."""
-    _atomic_write_json(season_dir / "teams.json", teams_out)
-    _atomic_write_json(season_dir / "players.json", players_out)
-    _atomic_write_json(season_dir / "games.json", games_out)
+    _atomic_write_json(season_dir / "teams.json", _dedupe_by_id(teams_out))
+    _atomic_write_json(season_dir / "players.json", _dedupe_by_id(players_out))
+    _atomic_write_json(season_dir / "games.json", _dedupe_by_id(games_out))
     with completed_path.open("a", encoding="utf-8") as fh:
         fh.write(team_id + "\n")
 

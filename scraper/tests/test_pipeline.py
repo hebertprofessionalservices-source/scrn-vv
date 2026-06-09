@@ -6,6 +6,7 @@ from typer.testing import CliRunner
 from scraper.pipeline import (
     _atomic_write_json,
     _checkpoint,
+    _dedupe_by_id,
     _load_completed,
     _load_json_or_empty,
     _short_season,
@@ -59,6 +60,24 @@ def test_atomic_write_json_roundtrip(tmp_path: Path):
     p = tmp_path / "out.json"
     _atomic_write_json(p, [{"id": "x"}])
     assert json.loads(p.read_text()) == [{"id": "x"}]
+
+
+def test_dedupe_by_id_keeps_last_entry():
+    items = [
+        {"id": "a", "name": "first"},
+        {"id": "b", "name": "only-b"},
+        {"id": "a", "name": "second-a"},
+    ]
+    result = _dedupe_by_id(items)
+    by_id = {x["id"]: x["name"] for x in result}
+    assert by_id == {"a": "second-a", "b": "only-b"}
+
+
+def test_dedupe_by_id_handles_items_without_id():
+    items = [{"id": "x"}, {"no_id_key": True}, {"id": "y"}]
+    result = _dedupe_by_id(items)
+    ids = {x["id"] for x in result}
+    assert ids == {"x", "y"}
 
 
 def test_checkpoint_writes_files_and_appends_completed(tmp_path: Path):
