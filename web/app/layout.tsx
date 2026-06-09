@@ -4,7 +4,7 @@ import { Inter, Barlow_Condensed } from "next/font/google";
 import { SiteHeader } from "@/components/brand/site-header";
 import { SiteFooter } from "@/components/brand/site-footer";
 import { CommandPalette } from "@/components/search/command-palette";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -28,7 +28,8 @@ export default async function RootLayout({
   const pathname = h.get("x-next-pathname") ?? "";
   const isPresent = pathname.startsWith("/present");
 
-  const data = isPresent ? null : await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = isPresent ? null : await loadDataset(season);
 
   return (
     <html lang="en" className={`dark ${inter.variable} ${display.variable}`}>

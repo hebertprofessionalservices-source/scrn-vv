@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import { PositionFilter } from "@/components/filters/position-filter";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 
@@ -7,7 +7,8 @@ export default async function PlayersPage({
   searchParams,
 }: { searchParams: Promise<{ pos?: string; class?: string }> }) {
   const sp = await searchParams;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const pos = sp.pos ?? null;
   const cls = sp.class ?? null;
 

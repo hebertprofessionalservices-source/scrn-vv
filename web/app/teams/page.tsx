@@ -1,4 +1,4 @@
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import { ClassFilter } from "@/components/filters/class-filter";
 import { TeamCard } from "@/components/cards/team-card";
 
@@ -6,7 +6,8 @@ export default async function TeamsPage({
   searchParams,
 }: { searchParams: Promise<{ class?: string; sort?: string }> }) {
   const sp = await searchParams;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const cls = sp.class ?? null;
   const sort = sp.sort ?? "name";
 

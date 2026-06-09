@@ -1,4 +1,4 @@
-import { loadDataset, loadEditorial } from "@/lib/data-server";
+import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 import { LedHero } from "@/components/brand/led-hero";
 import { TopPerformerCard } from "@/components/cards/top-performer-card";
 import { TopDefenseCard } from "@/components/cards/top-defense-card";
@@ -9,7 +9,7 @@ import { topPlayersByStat, topDefensesByPPG, lastWeeksGames } from "@/lib/stats"
 import type { Player, Team } from "@/lib/types";
 
 export default async function Home() {
-  const season = process.env.NEXT_PUBLIC_SEASON ?? "2025-26";
+  const season = await currentSeason();
   const data = await loadDataset(season);
   const editorial = await loadEditorial();
   const ctx = buildEditorialContext(editorial, data.games, data.teams);

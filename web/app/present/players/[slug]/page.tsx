@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import { SeasonStatGrid } from "@/components/player/season-stat-grid";
 
 export default async function PresentPlayer({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const player = data.playersById.get(slug);
   if (!player) notFound();
   const team = data.teamsById.get(player.teamId);

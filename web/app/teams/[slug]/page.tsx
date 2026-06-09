@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason, availableSeasons } from "@/lib/data-server";
 import { TeamStatPanel } from "@/components/team/team-stat-panel";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +12,8 @@ export default async function TeamDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const team = data.teamsBySlug.get(slug);
   if (!team) notFound();
 
@@ -141,8 +142,17 @@ export default async function TeamDetailPage({
 }
 
 export async function generateStaticParams() {
-  const { loadDataset } = await import("@/lib/data-server");
+  const { loadDataset, availableSeasons } = await import("@/lib/data-server");
   const { displaySlug } = await import("@/lib/display-slug");
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
-  return data.teams.map((t) => ({ slug: displaySlug(t) }));
+  const seasons = await availableSeasons();
+  const out: { slug: string }[] = [];
+  for (const s of seasons) {
+    const data = await loadDataset(s);
+    for (const t of data.teams) {
+      out.push({ slug: displaySlug(t) });
+    }
+  }
+  // Dedupe
+  const seen = new Set<string>();
+  return out.filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
 }

@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { availableSeasons, currentSeason } from "@/lib/data-server";
+import { SeasonSwitcher } from "@/components/filters/season-switcher";
 import { SearchTrigger } from "./search-trigger";
 
-export function SiteHeader() {
+export async function SiteHeader() {
+  const [seasons, current] = await Promise.all([availableSeasons(), currentSeason()]);
   return (
     <header className="border-b border-chrome-500/15 bg-navy-900/95 backdrop-blur sticky top-0 z-40">
       <div className="max-w-7xl mx-auto h-16 px-4 flex items-center justify-between">
@@ -27,8 +30,10 @@ export function SiteHeader() {
             Players
           </Link>
         </nav>
-        <SearchTrigger />
-        <div className="text-xs text-chrome-500 hidden sm:block">2025–26 · MS</div>
+        <div className="flex items-center gap-3">
+          <SearchTrigger />
+          <SeasonSwitcher current={current} options={seasons} />
+        </div>
       </div>
     </header>
   );

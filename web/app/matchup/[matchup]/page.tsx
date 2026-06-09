@@ -1,14 +1,15 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
 import { displaySlug } from "@/lib/display-slug";
 
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
   const { matchup } = await params;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const m = matchup.match(/^(.+)-vs-(.+)$/);
   if (!m) notFound();
   const away = data.teamsBySlug.get(m[1]);

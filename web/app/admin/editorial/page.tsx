@@ -1,10 +1,11 @@
-import { loadDataset, loadEditorial } from "@/lib/data-server";
+import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 
 export default async function AdminEditorialPage({
   searchParams,
 }: { searchParams: Promise<{ ok?: string }> }) {
   const sp = await searchParams;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const editorial = await loadEditorial() ?? {
     currentSeason: "2025-26", currentWeek: 0,
     gameOfTheWeek: { gameId: null, storyline: "", pickedBy: "", pickedAt: "" },

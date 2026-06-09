@@ -1,13 +1,14 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason, availableSeasons } from "@/lib/data-server";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { SeasonStatGrid } from "@/components/player/season-stat-grid";
 import { displaySlug } from "@/lib/display-slug";
 
 export default async function PlayerDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const player = data.playersById.get(slug);
   if (!player) notFound();
   const team = data.teamsById.get(player.teamId);
@@ -35,8 +36,21 @@ export default async function PlayerDetailPage({ params }: { params: Promise<{ s
 }
 
 export async function generateStaticParams() {
-  const { loadDataset } = await import("@/lib/data-server");
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
-  // Cap static generation to 5000 for build perf; rest still resolvable at request time
-  return data.players.slice(0, 5000).map((p) => ({ slug: p.id }));
+  const { loadDataset, availableSeasons } = await import("@/lib/data-server");
+  const seasons = await availableSeasons();
+  const out: { slug: string }[] = [];
+  let count = 0;
+  const limit = 5000;
+  for (const s of seasons) {
+    if (count >= limit) break;
+    const data = await loadDataset(s);
+    for (const p of data.players) {
+      if (count >= limit) break;
+      out.push({ slug: p.id });
+      count++;
+    }
+  }
+  // Dedupe
+  const seen = new Set<string>();
+  return out.filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
 }

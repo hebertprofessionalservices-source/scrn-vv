@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 
 export default async function PresentTeam({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const team = data.teamsBySlug.get(slug);
   if (!team) notFound();
   const games = (data.gamesByTeam.get(team.id) ?? []).slice().sort((a, b) => a.date.localeCompare(b.date));

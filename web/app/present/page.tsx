@@ -1,8 +1,9 @@
-import { loadDataset } from "@/lib/data-server";
+import { loadDataset, currentSeason } from "@/lib/data-server";
 import { topPlayersByStat, topDefensesByPPG } from "@/lib/stats";
 
 export default async function PresentHome() {
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const season = await currentSeason();
+  const data = await loadDataset(season);
   const topQBs = topPlayersByStat(data.players, "QB", (p) => p.stats.passing.yds, 3);
   const topRBs = topPlayersByStat(data.players, "RB", (p) => p.stats.rushing.yds, 3);
   const topDef = topDefensesByPPG(data.teams, 3);
