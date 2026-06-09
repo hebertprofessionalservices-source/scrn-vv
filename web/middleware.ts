@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COOKIE_NAME, verifyToken } from "@/lib/auth";
+import { ADMIN_COOKIE_NAME, COOKIE_NAME, verifyToken } from "@/lib/auth";
 
 const PUBLIC_PATHS = ["/unlock", "/api/unlock", "/_next", "/brand", "/favicon.ico"];
 
@@ -24,6 +24,20 @@ export async function middleware(req: NextRequest) {
     url.searchParams.set("next", pathname);
     return NextResponse.redirect(url);
   }
+
+  // Admin scope check for /admin/*
+  if (pathname.startsWith("/admin")) {
+    const adminToken = req.cookies.get(ADMIN_COOKIE_NAME)?.value;
+    const adminDecoded = adminToken ? await verifyToken(adminToken, secret) : null;
+    if (!adminDecoded || adminDecoded.scope !== "admin") {
+      const url = req.nextUrl.clone();
+      url.pathname = "/unlock";
+      url.searchParams.set("admin", "1");
+      url.searchParams.set("next", pathname);
+      return NextResponse.redirect(url);
+    }
+  }
+
   const res = NextResponse.next();
   res.headers.set("x-next-pathname", pathname);
   return res;
