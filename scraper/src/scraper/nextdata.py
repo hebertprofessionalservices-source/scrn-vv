@@ -41,6 +41,21 @@ def to_next_data_url(*, page_url: str, build_id: str) -> str:
     return f"{parsed.scheme}://{parsed.netloc}/_next/data/{build_id.strip()}{path}.json"
 
 
+def extract_next_data_payload(html: str) -> dict | None:
+    """Extract the parsed __NEXT_DATA__ JSON payload from a Next.js page's HTML.
+
+    Returns None if absent or malformed.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    tag = soup.find("script", id="__NEXT_DATA__")
+    if not tag or not tag.string:
+        return None
+    try:
+        return json.loads(tag.string)
+    except json.JSONDecodeError:
+        return None
+
+
 def derive_team_season_urls(*, team_url: str, season_short: str) -> dict[str, str]:
     """Given a base team URL like `.../starkville-yellowjackets/football/`,
     return the season-specific URLs for roster, schedule, and stats pages.

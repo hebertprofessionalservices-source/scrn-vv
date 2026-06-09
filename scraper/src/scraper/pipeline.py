@@ -19,7 +19,7 @@ from scraper.boxscore import parse_box_score
 from scraper.browser import BrowserHarness
 from scraper.cache import CrawlCache
 from scraper.logos import download_team_logo
-from scraper.nextdata import derive_team_season_urls, extract_build_id, to_next_data_url
+from scraper.nextdata import derive_team_season_urls, extract_next_data_payload
 from scraper.normalize import build_games, build_players, build_team
 from scraper.report import RunStats, build_report
 from scraper.roster import parse_roster
@@ -146,19 +146,9 @@ async def _run_pipeline(
     errors: list[dict[str, Any]] = []
 
     async with BrowserHarness(headless=not headed) as harness:
-        # Step 1: fetch landing to grab buildId and class links
+        # Step 1: fetch landing to discover class links
         landing_url = config.LANDING_URL_TEMPLATE
         landing_html = await _fetch_html(harness, landing_url, cache, force=force)
-        build_id = extract_build_id(landing_html)
-        if not build_id:
-            log.error("build_id_not_found", landing_url=landing_url)
-            typer.echo(
-                "ERROR: Could not extract Next.js buildId — site may have changed.",
-                err=True,
-            )
-            return 1
-
-        log.info("build_id", build_id=build_id)
 
         # Step 2: enumerate all team rows from class directories
         class_entries = classes_mod.discover_class_links(landing_html, season_short=short)
@@ -239,28 +229,28 @@ async def _run_pipeline(
                     completed_team_ids.add(tid)
                     continue
 
-                roster_json = await _fetch_json(
-                    harness,
-                    to_next_data_url(page_url=urls["roster"], build_id=build_id),
-                    cache,
-                    force=force,
-                )
-                schedule_json = await _fetch_json(
-                    harness,
-                    to_next_data_url(page_url=urls["schedule"], build_id=build_id),
-                    cache,
-                    force=force,
-                )
-                stats_json = await _fetch_json(
-                    harness,
-                    to_next_data_url(page_url=urls["stats"], build_id=build_id),
-                    cache,
-                    force=force,
-                )
+                roster_html = await _fetch_html(harness, urls["roster"], cache, force=force)
+                roster_payload = extract_next_data_payload(roster_html)
+                if roster_payload is None:
+                    raise RuntimeError(
+                        f"no __NEXT_DATA__ on roster page for {team_url}"
+                    )
+                roster_partials = parse_roster(roster_payload)
 
-                roster_partials = parse_roster(roster_json)
-                schedule_partials = parse_schedule(schedule_json, team_url=team_url)
-                season_stats_partials = parse_season_stats(stats_json)
+                schedule_html = await _fetch_html(harness, urls["schedule"], cache, force=force)
+                schedule_payload = extract_next_data_payload(schedule_html)
+                if schedule_payload is None:
+                    raise RuntimeError(
+                        f"no __NEXT_DATA__ on schedule page for {team_url}"
+                    )
+                schedule_partials = parse_schedule(schedule_payload, team_url=team_url)
+
+                stats_html = await _fetch_html(harness, urls["stats"], cache, force=force)
+                stats_payload = extract_next_data_payload(stats_html)
+                if stats_payload is None:
+                    season_stats_partials = {}
+                else:
+                    season_stats_partials = parse_season_stats(stats_payload)
 
                 # Box scores — scrape only finals with a boxScoreUrl.
                 # If --week is provided, restrict to games within the last 14 days

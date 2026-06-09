@@ -1,4 +1,9 @@
-from scraper.nextdata import derive_team_season_urls, extract_build_id, to_next_data_url
+from scraper.nextdata import (
+    derive_team_season_urls,
+    extract_build_id,
+    extract_next_data_payload,
+    to_next_data_url,
+)
 
 
 def test_extract_build_id_from_next_data_script():
@@ -49,3 +54,18 @@ def test_derive_team_season_urls():
     assert urls["schedule"].endswith("/25-26/schedule/")
     assert urls["stats"].endswith("/25-26/stats/")
     assert urls["team_home"].endswith("/25-26/")
+
+
+def test_extract_next_data_payload_happy_path():
+    html = '<html><script id="__NEXT_DATA__">{"props":{"pageProps":{"a":1}}}</script></html>'
+    payload = extract_next_data_payload(html)
+    assert payload == {"props": {"pageProps": {"a": 1}}}
+
+
+def test_extract_next_data_payload_missing_tag():
+    assert extract_next_data_payload("<html></html>") is None
+
+
+def test_extract_next_data_payload_malformed_json():
+    html = '<html><script id="__NEXT_DATA__">not-json</script></html>'
+    assert extract_next_data_payload(html) is None
