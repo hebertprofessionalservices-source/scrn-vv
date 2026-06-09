@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Barlow_Condensed } from "next/font/google";
 import { SiteHeader } from "@/components/brand/site-header";
 import { SiteFooter } from "@/components/brand/site-footer";
@@ -23,14 +24,19 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const data = await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+  const h = await headers();
+  const pathname = h.get("x-next-pathname") ?? "";
+  const isPresent = pathname.startsWith("/present");
+
+  const data = isPresent ? null : await loadDataset(process.env.NEXT_PUBLIC_SEASON ?? "2025-26");
+
   return (
     <html lang="en" className={`dark ${inter.variable} ${display.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <SiteHeader />
+        {!isPresent && <SiteHeader />}
         <div className="flex-1">{children}</div>
-        <SiteFooter />
-        <CommandPalette teams={data.teams} players={data.players} />
+        {!isPresent && <SiteFooter />}
+        {!isPresent && data && <CommandPalette teams={data.teams} players={data.players} />}
       </body>
     </html>
   );

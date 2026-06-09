@@ -1,0 +1,4 @@
+.present-root { background-image: linear-gradient(180deg, #050810 0%, #0b1f3a 100%); }
+.present-root h1 { font-size: 5rem; line-height: 1.05; }
+.present-root h2 { font-size: 3rem; line-height: 1.1; }
+.present-root table th { text-transform: uppercase; letter-spacing: 0.06em; }
