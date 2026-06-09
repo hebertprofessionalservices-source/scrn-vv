@@ -36,9 +36,24 @@ _FALLBACK_STATEDIVISIONID_25_26: dict[str, str] = {
     "7A": "fa876ba2-246c-49a3-89d3-982d6f4433cb",
 }
 
+# 24-25 UUIDs — discovered by probing known team schedule pages for each class
+# (e.g. Simmons/Biggersville for 1A, Aberdeen for 3A, Warren Central for 6A)
+# and verifying the statedivisionid returned by __NEXT_DATA__ against the class
+# directory URL.  2A, 4A, 5A, 7A share their UUID with the 25-26 season.
+_FALLBACK_STATEDIVISIONID_24_25: dict[str, str] = {
+    "1A": "31cbd332-b45d-44ea-ab32-bc3bcff7b4d9",
+    "2A": "31a6d75b-37be-45c0-8ac4-1807a225a22b",
+    "3A": "fa5899d8-6bc8-4231-ad6b-63221e62a503",
+    "4A": "6aad0ce2-dd50-479a-8e94-8c33eebdb57a",
+    "5A": "6c4b545c-fbf5-464b-a44b-30fb26ef906e",
+    "6A": "4bff6343-79fe-4b50-8de2-7debfea1a437",
+    "7A": "fa876ba2-246c-49a3-89d3-982d6f4433cb",
+}
+
 # Registry keyed by season_short.  Falls back to the 26-27 dict for any season
 # not explicitly listed — correct for future seasons until their UUIDs are known.
 _FALLBACK_BY_SEASON: dict[str, dict[str, str]] = {
+    "24-25": _FALLBACK_STATEDIVISIONID_24_25,
     "25-26": _FALLBACK_STATEDIVISIONID_25_26,
     "26-27": _FALLBACK_STATEDIVISIONID_26_27,
 }
