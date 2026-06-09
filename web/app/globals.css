@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-navy-50:  #e7ecf3;
+  --color-navy-500: #1f3a6b;
+  --color-navy-700: #0b1f3a;
+  --color-navy-900: #050810;
+  --color-crimson-500: #c8102e;
+  --color-crimson-600: #a50d24;
+  --color-chrome-100: #e8e8ea;
+  --color-chrome-300: #b9bcc2;
+  --color-chrome-500: #6c7079;
+  --font-display: "Barlow Condensed", "Oswald", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html, body {
+  background-color: var(--color-navy-900);
+  color: var(--color-chrome-100);
+  font-family: var(--font-sans);
+}
+
+.bg-led-dots {
+  background-image: url("/brand/led-dots-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
