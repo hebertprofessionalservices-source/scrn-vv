@@ -7,5 +7,5 @@ out/
 scraper/.venv/
 scraper/.cache/
 scraper/output/
-web/public/data/
+web/public/data/*/
 web/public/team-logos/
