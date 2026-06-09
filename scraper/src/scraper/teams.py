@@ -2,7 +2,27 @@
 from __future__ import annotations
 
 import json as _json
+import re
 from typing import Any
+
+# Matches a trailing season segment (YY-YY) with an optional sub-page name,
+# e.g. "/25-26/schedule/" or "/25-26/".  We strip this to get the bare team URL.
+_SEASON_TAIL_RE = re.compile(r"/\d{2}-\d{2}(?:/[a-z-]+)?/?$")
+
+
+def _canonicalize_team_url(url: str) -> str:
+    """Strip any season + sub-page tail so the URL ends with /football/.
+
+    Examples:
+        .../football/25-26/schedule/ → .../football/
+        .../football/25-26/          → .../football/
+        .../football/                → .../football/  (unchanged)
+    """
+    if not url:
+        return url
+    url = url.rstrip("/") + "/"
+    url = _SEASON_TAIL_RE.sub("/", url)
+    return url
 
 
 def parse_team_directory(payload: dict) -> list[dict[str, Any]]:
@@ -33,9 +53,10 @@ def parse_team_directory(payload: dict) -> list[dict[str, Any]]:
         if not isinstance(row, dict):
             continue
         name = row.get("schoolName")
-        url = row.get("teamCanonicalUrl")
-        if not name or not url:
+        raw_url = row.get("teamCanonicalUrl")
+        if not name or not raw_url:
             continue
+        url = _canonicalize_team_url(raw_url)
         if url in seen:
             continue
         seen.add(url)

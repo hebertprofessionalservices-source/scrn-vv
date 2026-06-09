@@ -182,6 +182,9 @@ async def _run_pipeline(
                 errors.append({"team_url": c_url, "step": "class_directory", "error": str(exc)})
 
         log.info("teams_discovered", count=len(all_team_rows))
+        # Sanity-check: log the first 3 team URLs so malformed URLs are visible early.
+        for _row in all_team_rows[:3]:
+            log.info("team_url_sample", url=_row.get("url"))
 
         # Step 3: apply max_teams cap
         if max_teams is not None:
