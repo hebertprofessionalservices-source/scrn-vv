@@ -14,6 +14,10 @@ export default async function Home() {
   const editorial = await loadEditorial();
   const ctx = buildEditorialContext(editorial, data.games, data.teams);
 
+  if (data.teams.length === 0) {
+    return <PreseasonEmptyState season={season} />;
+  }
+
   const topQBs = topPlayersByStat(data.players, "QB", (p) => p.stats.passing.yds, 3);
   const topRBs = topPlayersByStat(data.players, "RB", (p) => p.stats.rushing.yds, 3);
   const topWRs = topPlayersByStat(data.players, "WR", (p) => p.stats.receiving.yds, 3);
@@ -82,6 +86,22 @@ export default async function Home() {
           <ScoreStrip games={lastWeek} teamsById={data.teamsById} />
         </div>
       </section>
+    </>
+  );
+}
+
+function PreseasonEmptyState({ season }: { season: string }) {
+  return (
+    <>
+      <LedHero>
+        <div className="text-xs uppercase tracking-wider text-crimson-500">{season}</div>
+        <h1 className="font-display text-5xl md:text-7xl mt-1">
+          Coming <span className="text-crimson-500">Soon</span>
+        </h1>
+        <p className="mt-4 text-chrome-300">
+          The {season} season hasn&apos;t started yet. Check back in September.
+        </p>
+      </LedHero>
     </>
   );
 }

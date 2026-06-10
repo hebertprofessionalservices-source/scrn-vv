@@ -30,9 +30,18 @@ export default async function TeamsPage({
       <div className="mb-6 space-y-4">
         <ClassFilter />
       </div>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {teams.map((t) => <TeamCard key={t.id} team={t} />)}
-      </div>
+      {data.teams.length === 0 ? (
+        <div className="rounded-xl border border-chrome-500/15 p-12 text-center">
+          <p className="font-display text-2xl mb-2">No teams yet for {season}</p>
+          <p className="text-chrome-500 text-sm">
+            The {season} season hasn&apos;t started yet. Check back in September.
+          </p>
+        </div>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {teams.map((t) => <TeamCard key={t.id} team={t} />)}
+        </div>
+      )}
     </main>
   );
 }

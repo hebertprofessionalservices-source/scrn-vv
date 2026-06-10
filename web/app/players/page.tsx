@@ -32,6 +32,15 @@ export default async function PlayersPage({
         <span className="text-chrome-500 text-sm">{players.length.toLocaleString()} listed</span>
       </div>
       <div className="mb-6"><PositionFilter /></div>
+      {data.players.length === 0 && (
+        <div className="rounded-xl border border-chrome-500/15 p-12 text-center">
+          <p className="font-display text-2xl mb-2">No players yet for {season}</p>
+          <p className="text-chrome-500 text-sm">
+            The {season} season hasn&apos;t started yet. Check back in September.
+          </p>
+        </div>
+      )}
+      {data.players.length > 0 && (
       <ul className="divide-y divide-chrome-500/15 rounded-xl border border-chrome-500/15 overflow-hidden">
         {players.slice(0, 200).map((p) => {
           const team = data.teamsById.get(p.teamId);
@@ -49,7 +58,8 @@ export default async function PlayersPage({
           );
         })}
       </ul>
-      {players.length > 200 && (
+      )}
+      {data.players.length > 0 && players.length > 200 && (
         <p className="text-xs text-chrome-500 mt-4 text-center">
           Showing first 200. Use the search palette (⌘K) to find specific players.
         </p>
