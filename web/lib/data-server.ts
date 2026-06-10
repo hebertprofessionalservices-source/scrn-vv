@@ -47,5 +47,11 @@ export async function currentSeason(): Promise<string> {
   const fromCookie = c.get("season")?.value;
   const all = await availableSeasons();
   if (fromCookie && all.includes(fromCookie)) return fromCookie;
+  // Default to the newest season that actually has data, so an empty
+  // placeholder season (preseason) doesn't take over the home page.
+  for (const season of all) {
+    const teams = await readJson<Team[]>(`${season}/teams.json`, []);
+    if (teams.length > 0) return season;
+  }
   return all[0] ?? "2025-26";
 }

@@ -1,19 +1,23 @@
 import Fuse, { type IFuseOptions } from "fuse.js";
 import type { Player, Team } from "./types";
 import { displaySlug } from "./display-slug";
+import { classRegionLabel } from "./team-format";
 
 export interface SearchEntry {
   id: string;
   kind: "team" | "player";
   label: string;
   subtitle: string;
+  /** Extra searchable terms (city, mascot) not shown in the UI. */
+  keywords: string;
   href: string;
 }
 
 const OPTIONS: IFuseOptions<SearchEntry> = {
   keys: [
-    { name: "label", weight: 0.7 },
-    { name: "subtitle", weight: 0.3 },
+    { name: "label", weight: 0.6 },
+    { name: "subtitle", weight: 0.2 },
+    { name: "keywords", weight: 0.2 },
   ],
   threshold: 0.35,
   distance: 80,
@@ -26,8 +30,9 @@ export function buildSearchIndex(teams: Team[], players: Player[]) {
     entries.push({
       id: t.id,
       kind: "team",
-      label: t.mascot ? `${t.name} ${t.mascot}` : t.name,
-      subtitle: `${t.city ?? ""} · ${t.classification}`,
+      label: t.name,
+      subtitle: classRegionLabel(t),
+      keywords: [t.city, t.mascot].filter(Boolean).join(" "),
       href: `/teams/${displaySlug(t)}`,
     });
   }
@@ -37,6 +42,7 @@ export function buildSearchIndex(teams: Team[], players: Player[]) {
       kind: "player",
       label: `${p.name} #${p.jersey ?? "?"}`,
       subtitle: `${p.position} · ${p.class}`,
+      keywords: "",
       href: `/players/${p.id}`,
     });
   }

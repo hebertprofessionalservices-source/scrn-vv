@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
+import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
 
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
@@ -29,11 +29,11 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             <div className="text-xs text-chrome-500">{away.classification} · {away.record.wins}–{away.record.losses}</div>
             <Link href={`/teams/${displaySlug(away)}` as any} className="font-display text-3xl">{away.name}</Link>
           </div>
-          {away.logoUrl && <Image src={away.logoUrl} alt="" width={64} height={64} className="h-16 w-16 object-contain" unoptimized />}
+          <TeamLogo src={away.logoUrl} size={64} />
         </div>
         <div className="font-display text-5xl text-crimson-500">VS</div>
         <div className="flex items-center gap-3">
-          {home.logoUrl && <Image src={home.logoUrl} alt="" width={64} height={64} className="h-16 w-16 object-contain" unoptimized />}
+          <TeamLogo src={home.logoUrl} size={64} />
           <div>
             <div className="text-xs text-chrome-500">{home.classification} · {home.record.wins}–{home.record.losses}</div>
             <Link href={`/teams/${displaySlug(home)}` as any} className="font-display text-3xl">{home.name}</Link>

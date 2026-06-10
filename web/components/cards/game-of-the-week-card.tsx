@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
+import { TeamLogo } from "@/components/brand/team-logo";
 import type { Game, Team } from "@/lib/types";
 
 export function GameOfTheWeekCard({
@@ -28,11 +28,11 @@ export function GameOfTheWeekCard({
               <div className="font-display text-2xl leading-tight">{away.name}</div>
               <div className="text-xs text-chrome-500">{away.classification} · {away.record.wins}–{away.record.losses}</div>
             </div>
-            {away.logoUrl && <Image src={away.logoUrl} alt="" width={56} height={56} className="h-14 w-14 object-contain" unoptimized />}
+            <TeamLogo src={away.logoUrl} size={56} />
           </div>
           <div className="font-display text-3xl text-crimson-500">VS</div>
           <div className="flex items-center gap-3">
-            {home.logoUrl && <Image src={home.logoUrl} alt="" width={56} height={56} className="h-14 w-14 object-contain" unoptimized />}
+            <TeamLogo src={home.logoUrl} size={56} />
             <div>
               <div className="font-display text-2xl leading-tight">{home.name}</div>
               <div className="text-xs text-chrome-500">{home.classification} · {home.record.wins}–{home.record.losses}</div>

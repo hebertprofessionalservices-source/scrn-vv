@@ -1,5 +1,4 @@
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
-import { LedHero } from "@/components/brand/led-hero";
 import { TopPerformerCard } from "@/components/cards/top-performer-card";
 import { TopDefenseCard } from "@/components/cards/top-defense-card";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
@@ -30,7 +29,8 @@ export default async function Home() {
 
   return (
     <>
-      <LedHero>
+      <LedPageBackground />
+      <section className="relative max-w-7xl mx-auto px-4 py-12">
         <div className="text-xs uppercase tracking-wider text-crimson-500">Week {editorial?.currentWeek ?? "—"}</div>
         <h1 className="font-display text-5xl md:text-7xl mt-1">
           Mississippi <span className="text-crimson-500">HS Football</span>
@@ -38,7 +38,7 @@ export default async function Home() {
         {editorial?.featuredQuote && (
           <p className="mt-4 italic text-chrome-300">&ldquo;{editorial.featuredQuote}&rdquo;</p>
         )}
-      </LedHero>
+      </section>
 
       <section className="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6">
         {hostGame && (
@@ -93,7 +93,8 @@ export default async function Home() {
 function PreseasonEmptyState({ season }: { season: string }) {
   return (
     <>
-      <LedHero>
+      <LedPageBackground />
+      <section className="relative max-w-7xl mx-auto px-4 py-12">
         <div className="text-xs uppercase tracking-wider text-crimson-500">{season}</div>
         <h1 className="font-display text-5xl md:text-7xl mt-1">
           Coming <span className="text-crimson-500">Soon</span>
@@ -101,7 +102,17 @@ function PreseasonEmptyState({ season }: { season: string }) {
         <p className="mt-4 text-chrome-300">
           The {season} season hasn&apos;t started yet. Check back in September.
         </p>
-      </LedHero>
+      </section>
+    </>
+  );
+}
+
+/** Full-viewport LED dot background pinned behind the home page content. */
+function LedPageBackground() {
+  return (
+    <>
+      <div className="fixed inset-0 -z-10 bg-led-dots" aria-hidden />
+      <div className="fixed inset-0 -z-10 bg-navy-900/80" aria-hidden />
     </>
   );
 }

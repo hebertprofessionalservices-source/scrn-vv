@@ -12,6 +12,27 @@ export function topPlayersByStat(
     .slice(0, limit);
 }
 
+/**
+ * Composite season impact score so offense, defense, and kickers can be
+ * ranked on one list. Weights are rough point-equivalents per unit.
+ */
+export function playerImpactScore(p: Player): number {
+  const s = p.stats;
+  return (
+    s.passing.yds +
+    s.rushing.yds * 1.2 +
+    s.receiving.yds * 1.2 +
+    (s.passing.td + s.rushing.td + s.receiving.td) * 60 -
+    s.passing.int * 30 +
+    s.defense.tackles * 8 +
+    s.defense.sacks * 50 +
+    s.defense.int * 60 +
+    s.defense.ff * 40 +
+    s.kicking.fgm * 25 +
+    s.kicking.xpm * 8
+  );
+}
+
 export interface DefenseRank {
   team: Team;
   ppg: number;

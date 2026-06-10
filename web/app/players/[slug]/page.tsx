@@ -5,6 +5,12 @@ import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { SeasonStatGrid } from "@/components/player/season-stat-grid";
 import { displaySlug } from "@/lib/display-slug";
 
+/** "6-3" -> 6'3" */
+function formatHeight(height: string): string {
+  const m = height.match(/^(\d+)-(\d+)$/);
+  return m ? `${m[1]}'${m[2]}"` : height;
+}
+
 export default async function PlayerDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const season = await currentSeason();
@@ -21,7 +27,9 @@ export default async function PlayerDetailPage({ params }: { params: Promise<{ s
         <div>
           <h1 className="font-display text-5xl">{player.name}</h1>
           <p className="text-chrome-300">
-            {player.position} · {player.class} · {player.height ?? "—"} · {player.weight ?? "—"}
+            {player.position} · {player.class}
+            {player.height ? <> · Height {formatHeight(player.height)}</> : null}
+            {player.weight ? <> · Weight {player.weight} lbs</> : null}
           </p>
           {team && (
             <Link href={`/teams/${displaySlug(team)}` as any} className="text-crimson-500 text-sm">

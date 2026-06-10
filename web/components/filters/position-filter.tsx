@@ -18,11 +18,11 @@ export function PositionFilter() {
 
   return (
     <div className="flex flex-wrap gap-2">
-      <button onClick={() => setPos(null)}>
+      <button className="cursor-pointer" onClick={() => setPos(null)}>
         <Badge variant={active === null ? "default" : "outline"}>All</Badge>
       </button>
       {POSITIONS.map((p) => (
-        <button key={p} onClick={() => setPos(p)}>
+        <button key={p} className="cursor-pointer" onClick={() => setPos(p)}>
           <Badge variant={active === p ? "default" : "outline"}>{p}</Badge>
         </button>
       ))}

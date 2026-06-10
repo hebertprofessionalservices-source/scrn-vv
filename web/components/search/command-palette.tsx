@@ -34,7 +34,8 @@ export function CommandPalette({
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      const key = e.key.toLowerCase();
+      if ((e.metaKey || e.ctrlKey) && (key === "f" || key === "k")) {
         e.preventDefault();
         setOpen((v) => !v);
       }

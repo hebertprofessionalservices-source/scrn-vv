@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
 import type { Team } from "@/lib/types";
 
@@ -11,9 +11,7 @@ export function TeamCard({ team }: { team: Team }) {
     <Link href={`/teams/${slug}` as any}>
       <Card className="p-4 hover:border-crimson-500 transition-colors h-full flex flex-col gap-3">
         <div className="flex items-center gap-3">
-          {team.logoUrl && (
-            <Image src={team.logoUrl} alt="" width={48} height={48} className="h-12 w-12 object-contain" unoptimized />
-          )}
+          <TeamLogo src={team.logoUrl} size={48} />
           <div>
             <h3 className="font-display text-lg leading-tight">{team.name}</h3>
             <p className="text-xs text-chrome-500">{team.city}</p>

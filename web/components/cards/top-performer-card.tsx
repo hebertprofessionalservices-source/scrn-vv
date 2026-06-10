@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
+import { TeamLogo } from "@/components/brand/team-logo";
 import type { Player, Team } from "@/lib/types";
 
 export function TopPerformerCard({
@@ -14,9 +14,7 @@ export function TopPerformerCard({
       <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 hover:border-crimson-500 p-5 h-full">
         <div className="flex items-start justify-between mb-3">
           <span className="font-display text-3xl text-crimson-500">#{rank}</span>
-          {team?.logoUrl && (
-            <Image src={team.logoUrl} alt="" width={36} height={36} className="h-9 w-9 object-contain" unoptimized />
-          )}
+          <TeamLogo src={team?.logoUrl ?? null} size={36} />
         </div>
         <div className="flex items-center gap-3 mb-3">
           <JerseyAvatar jersey={player.jersey}

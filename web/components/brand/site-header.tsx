@@ -29,6 +29,9 @@ export async function SiteHeader() {
           <Link href={"/players" as any} className="hover:text-crimson-500">
             Players
           </Link>
+          <Link href={"/matchup" as any} className="hover:text-crimson-500">
+            Match Up
+          </Link>
         </nav>
         <div className="flex items-center gap-3">
           <SearchTrigger />

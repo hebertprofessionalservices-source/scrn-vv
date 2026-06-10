@@ -2,6 +2,7 @@ import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { PositionFilter } from "@/components/filters/position-filter";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
+import { playerImpactScore } from "@/lib/stats";
 
 export default async function PlayersPage({
   searchParams,
@@ -16,14 +17,10 @@ export default async function PlayersPage({
   if (pos) players = players.filter((p) => p.position === pos);
   if (cls) players = players.filter((p) => p.class === cls);
 
-  players = [...players].sort((a, b) => {
-    if (pos) {
-      const aTotal = a.stats.passing.yds + a.stats.rushing.yds + a.stats.receiving.yds;
-      const bTotal = b.stats.passing.yds + b.stats.rushing.yds + b.stats.receiving.yds;
-      return bTotal - aTotal;
-    }
-    return a.name.localeCompare(b.name);
-  });
+  players = [...players].sort(
+    (a, b) =>
+      playerImpactScore(b) - playerImpactScore(a) || a.name.localeCompare(b.name),
+  );
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
@@ -61,7 +58,7 @@ export default async function PlayersPage({
       )}
       {data.players.length > 0 && players.length > 200 && (
         <p className="text-xs text-chrome-500 mt-4 text-center">
-          Showing first 200. Use the search palette (⌘K) to find specific players.
+          Showing the top 200 by season production. Use search (Ctrl+F) to find specific players.
         </p>
       )}
     </main>
