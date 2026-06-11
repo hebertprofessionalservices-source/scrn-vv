@@ -3,6 +3,7 @@ import Link from "next/link";
 import { availableSeasons, currentSeason } from "@/lib/data-server";
 import { SeasonSwitcher } from "@/components/filters/season-switcher";
 import { SearchTrigger } from "./search-trigger";
+import { MobileNav } from "./mobile-nav";
 
 export async function SiteHeader() {
   const [seasons, current] = await Promise.all([availableSeasons(), currentSeason()]);
@@ -39,6 +40,7 @@ export async function SiteHeader() {
         <div className="flex items-center gap-3">
           <SearchTrigger />
           <SeasonSwitcher current={current} options={seasons} />
+          <MobileNav />
         </div>
       </div>
     </header>
