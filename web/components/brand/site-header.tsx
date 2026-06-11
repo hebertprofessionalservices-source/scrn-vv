@@ -23,6 +23,9 @@ export async function SiteHeader() {
           <Link href="/" className="hover:text-crimson-500">
             Home
           </Link>
+          <Link href={"/upcoming" as any} className="hover:text-crimson-500">
+            Upcoming Games
+          </Link>
           <Link href={"/teams" as any} className="hover:text-crimson-500">
             Teams
           </Link>
