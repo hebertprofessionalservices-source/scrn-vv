@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 import { TopPerformerCard } from "@/components/cards/top-performer-card";
 import { TopDefenseCard } from "@/components/cards/top-defense-card";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
 import { ScoreStrip } from "@/components/cards/score-strip";
 import { buildEditorialContext } from "@/lib/editorial";
-import { topPlayersByStat, topDefensesByPPG, lastWeeksGames } from "@/lib/stats";
+import { topPlayersByStat, topDefensesByPPG, lastWeeksGames, seasonConcluded } from "@/lib/stats";
 import type { Player, Team } from "@/lib/types";
 
 export default async function Home() {
@@ -27,14 +28,28 @@ export default async function Home() {
   const hostGame = ctx.hostPickGame;
   const algoGame = ctx.algorithmPickGame;
 
+  const concluded = seasonConcluded(data.games);
+  const currentWeek = editorial?.currentWeek ?? 0;
+
   return (
     <>
       <LedPageBackground />
-      <section className="relative max-w-7xl mx-auto px-4 py-12">
-        <div className="text-xs uppercase tracking-wider text-crimson-500">Week {editorial?.currentWeek ?? "—"}</div>
-        <h1 className="font-display text-5xl md:text-7xl mt-1">
-          Mississippi <span className="text-crimson-500">HS Football</span>
-        </h1>
+      <section className="relative max-w-7xl mx-auto px-4 py-8">
+        {!concluded && currentWeek > 0 && (
+          <div className="text-xs uppercase tracking-wider text-crimson-500 mb-3">
+            Week {currentWeek}
+          </div>
+        )}
+        <h1 className="sr-only">Varsity Voices — Mississippi HS Football</h1>
+        <Image
+          src="/brand/varsity-voices-banner.jpg"
+          alt="Varsity Voices — Mississippi's #1 source for high school football, powered by State Championships Radio Network"
+          width={1584}
+          height={672}
+          priority
+          unoptimized
+          className="w-full h-auto rounded-2xl"
+        />
         {editorial?.featuredQuote && (
           <p className="mt-4 italic text-chrome-300">&ldquo;{editorial.featuredQuote}&rdquo;</p>
         )}

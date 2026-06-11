@@ -59,6 +59,22 @@ export function teamsByClass(teams: Team[]): Map<string, Team[]> {
   return out;
 }
 
+/** True once we're well past the last game on the schedule. */
+export function seasonConcluded<T extends { date: string }>(
+  games: T[],
+  today = new Date(),
+): boolean {
+  if (games.length === 0) return false;
+  let last = "";
+  for (const g of games) {
+    if (g.date > last) last = g.date;
+  }
+  const GRACE_DAYS_AFTER_FINAL_GAME = 14;
+  const cutoff = new Date(last);
+  cutoff.setDate(cutoff.getDate() + GRACE_DAYS_AFTER_FINAL_GAME);
+  return today > cutoff;
+}
+
 export function lastWeeksGames<T extends { date: string; status: string }>(
   games: T[],
   today = new Date(),
