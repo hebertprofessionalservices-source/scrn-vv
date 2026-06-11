@@ -167,7 +167,7 @@ function TeamHeader({ team, align }: { team: MatchupTeam; align: "left" | "right
       <TeamLogo src={team.logoUrl} size={72} />
       <div className="font-display text-3xl leading-tight">{team.name}</div>
       <div className="text-sm text-chrome-300">
-        {team.stateRank ? `Rank: #${team.stateRank} ` : ""}
+        {team.stateRank ? `#${team.stateRank} - ` : ""}
         {classRegionLabel(team)}
       </div>
       <div className="text-sm text-chrome-500">
