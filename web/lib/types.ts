@@ -4,7 +4,8 @@ export type GameStatus = "final" | "scheduled" | "in_progress" | "postponed";
 export type DataStatus = "complete" | "incomplete" | "missing";
 export type Classification =
   | "1A" | "2A" | "3A" | "4A" | "5A" | "6A" | "7A"
-  | "MAIS-1A" | "MAIS-2A" | "MAIS-3A" | "MAIS-4A" | "MAIS-5A" | "MAIS-6A";
+  | "MAIS-1A" | "MAIS-2A" | "MAIS-3A" | "MAIS-4A" | "MAIS-5A" | "MAIS-6A"
+  | "MAIS-8M-1A" | "MAIS-8M-2A";
 
 export interface TeamRecord { wins: number; losses: number; }
 export interface TeamRankings {

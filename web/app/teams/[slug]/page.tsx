@@ -7,7 +7,7 @@ import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { Badge } from "@/components/ui/badge";
 import { displaySlug } from "@/lib/display-slug";
-import { regionLabel, titleCaseSlug } from "@/lib/team-format";
+import { classificationLabel, regionLabel, titleCaseSlug } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import type { Player } from "@/lib/types";
 
@@ -77,7 +77,7 @@ export default async function TeamDetailPage({
           <h1 className="font-display text-5xl">{team.name}</h1>
           <p className="text-chrome-500">{team.city}</p>
           <div className="mt-2 flex items-center gap-2">
-            <Badge>{team.classification}</Badge>
+            <Badge>{classificationLabel(team.classification)}</Badge>
             {region && <Badge variant="outline">{region}</Badge>}
             {team.headCoach && (
               <span className="text-sm text-chrome-300 ml-2">

@@ -3,6 +3,7 @@ import { loadDataset, currentSeason } from "@/lib/data-server";
 import { PositionFilter } from "@/components/filters/position-filter";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { playerImpactScore } from "@/lib/stats";
+import { classificationLabel } from "@/lib/team-format";
 
 export default async function PlayersPage({
   searchParams,
@@ -49,7 +50,7 @@ export default async function PlayersPage({
                   <div className="text-sm">{p.name}</div>
                   <div className="text-xs text-chrome-500">{p.position} · {p.class} · {team?.name}</div>
                 </div>
-                <span className="text-xs text-chrome-500">{team?.classification}</span>
+                <span className="text-xs text-chrome-500">{team ? classificationLabel(team.classification) : ""}</span>
               </Link>
             </li>
           );

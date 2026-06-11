@@ -5,6 +5,7 @@ import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
+import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
@@ -27,7 +28,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
         <div className="flex items-center justify-end gap-3">
           <div className="text-right">
-            <div className="text-xs text-chrome-500">{away.classification} · {away.record.wins}–{away.record.losses}</div>
+            <div className="text-xs text-chrome-500">{classificationLabel(away.classification)} · {away.record.wins}–{away.record.losses}</div>
             <Link href={`/teams/${displaySlug(away)}` as any} className="font-display text-3xl">{away.name}</Link>
           </div>
           <TeamLogo src={away.logoUrl} size={64} />
@@ -36,7 +37,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         <div className="flex items-center gap-3">
           <TeamLogo src={home.logoUrl} size={64} />
           <div>
-            <div className="text-xs text-chrome-500">{home.classification} · {home.record.wins}–{home.record.losses}</div>
+            <div className="text-xs text-chrome-500">{classificationLabel(home.classification)} · {home.record.wins}–{home.record.losses}</div>
             <Link href={`/teams/${displaySlug(home)}` as any} className="font-display text-3xl">{home.name}</Link>
           </div>
         </div>

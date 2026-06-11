@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
 import { TeamLogo } from "@/components/brand/team-logo";
+import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import type { Game, Team } from "@/lib/types";
 
@@ -27,7 +28,7 @@ export function GameOfTheWeekCard({
           <div className="flex items-center gap-3 justify-end">
             <div className="text-right">
               <div className="font-display text-2xl leading-tight">{away.name}</div>
-              <div className="text-xs text-chrome-500">{away.classification} · {away.record.wins}–{away.record.losses}</div>
+              <div className="text-xs text-chrome-500">{classificationLabel(away.classification)} · {away.record.wins}–{away.record.losses}</div>
             </div>
             <TeamLogo src={away.logoUrl} size={56} />
           </div>
@@ -36,7 +37,7 @@ export function GameOfTheWeekCard({
             <TeamLogo src={home.logoUrl} size={56} />
             <div>
               <div className="font-display text-2xl leading-tight">{home.name}</div>
-              <div className="text-xs text-chrome-500">{home.classification} · {home.record.wins}–{home.record.losses}</div>
+              <div className="text-xs text-chrome-500">{classificationLabel(home.classification)} · {home.record.wins}–{home.record.losses}</div>
             </div>
           </div>
         </div>

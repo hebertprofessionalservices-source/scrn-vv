@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { TeamLogo } from "@/components/brand/team-logo";
-import { classRegionLabel } from "@/lib/team-format";
+import { classRegionLabel, classificationLabel } from "@/lib/team-format";
 import type { Team } from "@/lib/types";
 
 export interface MatchupTeam {
@@ -152,7 +152,7 @@ function TeamSelect({
         <option value="">Select a team…</option>
         {teams.map((t) => (
           <option key={t.id} value={t.id} disabled={t.id === excludeId}>
-            {t.name} ({t.classification})
+            {t.name} ({classificationLabel(t.classification)})
           </option>
         ))}
       </select>

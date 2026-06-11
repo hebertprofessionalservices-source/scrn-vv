@@ -5,8 +5,23 @@ import json
 import re
 from typing import Any
 
-# MHSAA classes (1A–7A). MAIS divisions out of scope for v1.
-TARGET_CLASSES: tuple[str, ...] = ("1A", "2A", "3A", "4A", "5A", "6A", "7A")
+# MHSAA classes (1A–7A) plus MAIS divisions (private school association).
+TARGET_CLASSES: tuple[str, ...] = (
+    "1A", "2A", "3A", "4A", "5A", "6A", "7A",
+    "MAIS-2A", "MAIS-3A", "MAIS-4A", "MAIS-8M-1A", "MAIS-8M-2A",
+)
+
+# Classification label -> URL slug used in MaxPreps class-directory paths.
+CLASS_SLUGS: dict[str, str] = {
+    "1A": "class-1a", "2A": "class-2a", "3A": "class-3a", "4A": "class-4a",
+    "5A": "class-5a", "6A": "class-6a", "7A": "class-7a",
+    "MAIS-2A": "class-mais-2a",
+    "MAIS-3A": "class-mais-3a",
+    "MAIS-4A": "class-mais-4a",
+    "MAIS-8M-1A": "class-mais-8-man-1a",
+    "MAIS-8M-2A": "class-mais-8-man-2a",
+}
+_SLUG_TO_CLASS: dict[str, str] = {v: k for k, v in CLASS_SLUGS.items()}
 
 # statedivisionid values are season-specific: MaxPreps assigns a new UUID per
 # class per season.  When live discovery (anchors / __NEXT_DATA__) misses a
@@ -21,6 +36,11 @@ _FALLBACK_STATEDIVISIONID_26_27: dict[str, str] = {
     "5A": "b8b1faff-0962-4fc8-956e-e7eec953fd82",
     "6A": "641b26ce-e375-4896-913b-a4a042fa6ac5",
     "7A": "86401710-9915-4a02-8f4e-0d905a356dce",
+    "MAIS-2A": "1026e45a-3d79-4811-9972-9d6c0dcb3b43",
+    "MAIS-3A": "1e0ba112-11fd-4c48-8ca1-2aa73a171896",
+    "MAIS-4A": "6b6625f6-c8b3-4ec2-b240-7007c06a6968",
+    "MAIS-8M-1A": "e1bcea3b-5d1e-472e-99df-fd460134f684",
+    "MAIS-8M-2A": "a7680cad-acb4-4969-bbbe-2387b6afbbbe",
 }
 
 # 25-26 UUIDs — extracted from team pages (e.g. Ashland/1A, Natchez/5A, etc.)
@@ -34,6 +54,12 @@ _FALLBACK_STATEDIVISIONID_25_26: dict[str, str] = {
     "5A": "6c4b545c-fbf5-464b-a44b-30fb26ef906e",
     "6A": "8c7c20fc-b340-4935-8608-7072cfac3c6e",
     "7A": "fa876ba2-246c-49a3-89d3-982d6f4433cb",
+    # MAIS UUIDs probed from member team pages (MRA, Lamar, Copiah, etc).
+    "MAIS-2A": "78c69c43-b41c-4697-8f4f-e55c3e6b7d5f",
+    "MAIS-3A": "6de83cdb-4f28-4de5-beb9-5bd781204bee",
+    "MAIS-4A": "8ffd819e-5bc1-43d6-8d78-787a6ee4f35d",
+    "MAIS-8M-1A": "575695a0-6b08-4e1c-9981-3d084cd03b37",
+    "MAIS-8M-2A": "1fbf492f-6fb7-43ec-b0c0-88fc1c2e7df3",
 }
 
 # 24-25 UUIDs — discovered by probing known team schedule pages for each class
@@ -104,7 +130,7 @@ def discover_class_links(landing_html: str, *, season_short: str) -> list[dict[s
         # landing HTML says (e.g. for future seasons not yet in our registry).
         sdid = season_fallback.get(cls, sdid)
         full = (
-            f"https://www.maxpreps.com/ms/football/{season_short}/class/class-{class_lower}/"
+            f"https://www.maxpreps.com/ms/football/{season_short}/class/{CLASS_SLUGS[cls]}/"
             f"?statedivisionid={sdid}"
         )
         # Only set once per class — first hit wins.
@@ -124,7 +150,7 @@ def discover_class_links(landing_html: str, *, season_short: str) -> list[dict[s
                         sdid = season_fallback.get(cls, sdid)
                         hits.setdefault(
                             cls,
-                            f"https://www.maxpreps.com/ms/football/{season_short}/class/class-{cls.lower()}/"
+                            f"https://www.maxpreps.com/ms/football/{season_short}/class/{CLASS_SLUGS[cls]}/"
                             f"?statedivisionid={sdid}",
                         )
             except json.JSONDecodeError:
@@ -135,7 +161,7 @@ def discover_class_links(landing_html: str, *, season_short: str) -> list[dict[s
         if cls not in hits and cls in season_fallback:
             sdid = season_fallback[cls]
             hits[cls] = (
-                f"https://www.maxpreps.com/ms/football/{season_short}/class/class-{cls.lower()}/"
+                f"https://www.maxpreps.com/ms/football/{season_short}/class/{CLASS_SLUGS[cls]}/"
                 f"?statedivisionid={sdid}"
             )
 

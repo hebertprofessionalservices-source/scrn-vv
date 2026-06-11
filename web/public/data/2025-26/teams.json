@@ -8397,5 +8397,3076 @@
     },
     "headCoach": "Marcus Gibson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/murrah-mustangs/football/"
+  },
+  {
+    "id": "centreville-academy-tigers-tigers",
+    "name": "Centreville Academy Tigers",
+    "mascot": "Tigers",
+    "city": "Centreville",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 4",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 12,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": 24,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 511,
+      "pointsAgainst": 209,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Bill Hurst",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/centreville/centreville-academy-tigers/football/"
+  },
+  {
+    "id": "winona-christian-stars-stars",
+    "name": "Winona Christian Stars",
+    "mascot": "Stars",
+    "city": "Winona",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/8/f/f/8ff803ad-1011-4bbd-9525-3b56a5672ae3.gif?version=635344461000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 27,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 352,
+      "pointsAgainst": 152,
+      "yardsFor": 3330,
+      "yardsAgainst": 0,
+      "passYdsFor": 1161,
+      "rushYdsFor": 2169,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 25,
+      "turnoversLost": 5
+    },
+    "headCoach": "Ashley Kuhn",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/winona/winona-christian-stars/football/"
+  },
+  {
+    "id": "oak-hill-academy-raiders-raiders",
+    "name": "Oak Hill Academy Raiders",
+    "mascot": "Raiders",
+    "city": "West Point",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 3",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 4
+    },
+    "rankings": {
+      "stateOverall": 35,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 385,
+      "pointsAgainst": 229,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Elvina Emilia",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/west-point/oak-hill-academy-raiders/football/"
+  },
+  {
+    "id": "lee-academy-colts-colts",
+    "name": "Lee Academy Colts",
+    "mascot": "Colts",
+    "city": "Clarksdale",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 1",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 4
+    },
+    "rankings": {
+      "stateOverall": 49,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 399,
+      "pointsAgainst": 243,
+      "yardsFor": 4139,
+      "yardsAgainst": 0,
+      "passYdsFor": 1073,
+      "rushYdsFor": 3066,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 9,
+      "turnoversLost": 7
+    },
+    "headCoach": "Bobby Spinks",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/clarksdale/lee-academy-colts/football/"
+  },
+  {
+    "id": "kirk-academy-raiders-raiders",
+    "name": "Kirk Academy Raiders",
+    "mascot": "Raiders",
+    "city": "Grenada",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 1",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 6,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 44,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 367,
+      "pointsAgainst": 310,
+      "yardsFor": 3442,
+      "yardsAgainst": 0,
+      "passYdsFor": 709,
+      "rushYdsFor": 2733,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 17,
+      "turnoversLost": 6
+    },
+    "headCoach": "Justin Purvis",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/grenada/kirk-academy-raiders/football/"
+  },
+  {
+    "id": "winston-academy-patriots-patriots",
+    "name": "Winston Academy Patriots",
+    "mascot": "Patriots",
+    "city": "Louisville",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/0/a/10ab807c-c10a-46b4-ba77-545a652be368.gif?version=636755317800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 40,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 202,
+      "pointsAgainst": 286,
+      "yardsFor": 2490,
+      "yardsAgainst": 0,
+      "passYdsFor": 1161,
+      "rushYdsFor": 1329,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 25,
+      "turnoversLost": 19
+    },
+    "headCoach": "Pat Byrd",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/louisville/winston-academy-patriots/football/"
+  },
+  {
+    "id": "canton-academy-panthers-panthers",
+    "name": "Canton Academy Panthers",
+    "mascot": "Panthers",
+    "city": "Canton",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/3/f/5/3f554ef5-c983-4230-8ad7-c18a3c40cded.gif?version=635787620400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 81,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 231,
+      "pointsAgainst": 326,
+      "yardsFor": 368,
+      "yardsAgainst": 0,
+      "passYdsFor": 80,
+      "rushYdsFor": 288,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Tripp McCarty",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/canton/canton-academy-panthers/football/"
+  },
+  {
+    "id": "st-joseph-fighting-irish-fighting-irish",
+    "name": "St. Joseph Fighting Irish",
+    "mascot": "Fighting Irish",
+    "city": "Greenville",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/e/9/de951ca1-00fc-485d-a0cc-8f3cb7047e51.gif?version=636115094400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 20,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 290,
+      "pointsAgainst": 355,
+      "yardsFor": 3893,
+      "yardsAgainst": 0,
+      "passYdsFor": 1963,
+      "rushYdsFor": 1930,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 10,
+      "turnoversLost": 7
+    },
+    "headCoach": "John Baker",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/st-joseph-fighting-irish/football/"
+  },
+  {
+    "id": "carroll-academy-rebels-rebels",
+    "name": "Carroll Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Carrollton",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/c/0/cc0d364a-115d-4140-9e4b-191028deeede.gif?version=637701649800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 27,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 260,
+      "pointsAgainst": 386,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Bo Milton",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/carrollton/carroll-academy-rebels/football/"
+  },
+  {
+    "id": "indianola-academy-colonels-colonels",
+    "name": "Indianola Academy Colonels",
+    "mascot": "Colonels",
+    "city": "Indianola",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 2",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 29,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 230,
+      "pointsAgainst": 336,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Hayes Barrier",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/indianola/indianola-academy-colonels/football/"
+  },
+  {
+    "id": "regents-lions-lions",
+    "name": "Regents Lions",
+    "mascot": "Lions",
+    "city": "Oxford",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/0/a/2/0a2f3e90-a9a2-49dd-b642-a3410b3b01c7.gif?version=637183269600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 11,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 262,
+      "pointsAgainst": 400,
+      "yardsFor": 3224,
+      "yardsAgainst": 0,
+      "passYdsFor": 2783,
+      "rushYdsFor": 441,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 25,
+      "turnoversLost": 20
+    },
+    "headCoach": "JoJo Pearson",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/oxford/regents-lions/football/"
+  },
+  {
+    "id": "north-delta-green-wave-green-wave",
+    "name": "North Delta Green Wave",
+    "mascot": "Green Wave",
+    "city": "Batesville",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/2/9/7/297bc3a3-9895-4044-9090-e69e21561915.gif?version=636726945600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 95,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 157,
+      "pointsAgainst": 380,
+      "yardsFor": 1576,
+      "yardsAgainst": 0,
+      "passYdsFor": 138,
+      "rushYdsFor": 1438,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 6,
+      "turnoversLost": 17
+    },
+    "headCoach": "Jim Crowder",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/batesville/north-delta-green-wave/football/"
+  },
+  {
+    "id": "manchester-academy-mavericks-mavericks",
+    "name": "Manchester Academy Mavericks",
+    "mascot": "Mavericks",
+    "city": "Yazoo City",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/7/0/e/70e9d9ae-e6f5-47dc-a010-168406f22085.gif?version=635384580000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 92,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 112,
+      "pointsAgainst": 390,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/yazoo-city/manchester-academy-mavericks/football/"
+  },
+  {
+    "id": "discovery-christian",
+    "name": "Discovery Christian",
+    "mascot": null,
+    "city": "Florence",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 4",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 15,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 140,
+      "pointsAgainst": 400,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/florence/discovery-christian/football/"
+  },
+  {
+    "id": "greenville-christian-saints-saints",
+    "name": "Greenville Christian Saints",
+    "mascot": "Saints",
+    "city": "Greenville",
+    "classification": "MAIS-2A",
+    "district": "MAIS 2A District 2",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 0,
+      "losses": 11
+    },
+    "rankings": {
+      "stateOverall": 31,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 130,
+      "pointsAgainst": 536,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Jon Reed McLendon",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/greenville-christian-saints/football/"
+  },
+  {
+    "id": "tri-county-academy-rebels-rebels",
+    "name": "Tri-County Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Flora",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/3/f/e/3febbe6a-d19f-4a49-8c90-47f162d9a0b0.gif?version=637720480800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 10,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 19,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 501,
+      "pointsAgainst": 134,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Philip Wasson",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/flora/tri-county-academy-rebels/football/"
+  },
+  {
+    "id": "russell-christian-academy-warriors-warriors",
+    "name": "Russell Christian Academy Warriors",
+    "mascot": "Warriors",
+    "city": "Meridian",
+    "classification": "MAIS-3A",
+    "district": "Christian (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/9/7/6973376b-06ce-40ee-88ee-2c6feb8302be.gif?version=634482712800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 10,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 530,
+      "pointsAgainst": 214,
+      "yardsFor": 3853,
+      "yardsAgainst": 0,
+      "passYdsFor": 1251,
+      "rushYdsFor": 2602,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 23,
+      "turnoversLost": 14
+    },
+    "headCoach": "Tim Moore",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/meridian/russell-christian-academy-warriors/football/"
+  },
+  {
+    "id": "leake-academy-rebels-rebels",
+    "name": "Leake Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Madden",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/e/6/3/e63fc638-92e0-46ff-bc3e-52189c495c09.gif?version=636555153600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 10,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 17,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 455,
+      "pointsAgainst": 238,
+      "yardsFor": 4591,
+      "yardsAgainst": 0,
+      "passYdsFor": 2897,
+      "rushYdsFor": 1694,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 16,
+      "turnoversLost": 11
+    },
+    "headCoach": "Brian Pickens",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/madden/leake-academy-rebels/football/"
+  },
+  {
+    "id": "washington-generals-generals",
+    "name": "Washington Generals",
+    "mascot": "Generals",
+    "city": "Greenville",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/4/d/a4d8aa83-b1f5-4b4e-a963-5cfd01fd5692.gif?version=638906726537936210&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 8,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 390,
+      "pointsAgainst": 194,
+      "yardsFor": 3503,
+      "yardsAgainst": 0,
+      "passYdsFor": 720,
+      "rushYdsFor": 2783,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 13,
+      "turnoversLost": 17
+    },
+    "headCoach": "Todd Lott",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/washington-generals/football/"
+  },
+  {
+    "id": "adams-county-christian-rebels-rebels",
+    "name": "Adams County Christian Rebels",
+    "mascot": "Rebels",
+    "city": "Natchez",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/c/1/dc1986c3-55b4-4110-952a-c6858aec67a6.gif?version=636075463200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 36,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 454,
+      "pointsAgainst": 282,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "David King",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/natchez/adams-county-christian-rebels/football/"
+  },
+  {
+    "id": "marshall-academy-patriots-patriots",
+    "name": "Marshall Academy Patriots",
+    "mascot": "Patriots",
+    "city": "Holly Springs",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/d/f/cdfdab6e-dd21-4e37-8758-ff2295d22275.gif?version=638749637227488260&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 10,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 38,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 480,
+      "pointsAgainst": 262,
+      "yardsFor": 3892,
+      "yardsAgainst": 0,
+      "passYdsFor": 1830,
+      "rushYdsFor": 2062,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 20,
+      "turnoversLost": 12
+    },
+    "headCoach": "Chris Bunio",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/holly-springs/marshall-academy-patriots/football/"
+  },
+  {
+    "id": "columbia-academy-cougars-cougars",
+    "name": "Columbia Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Columbia",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/b/1/c/b1c0e796-dfc3-4fd2-a031-0d72196d2a33.gif?version=636213547200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 32,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 385,
+      "pointsAgainst": 176,
+      "yardsFor": 3774,
+      "yardsAgainst": 0,
+      "passYdsFor": 1198,
+      "rushYdsFor": 2576,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 15,
+      "turnoversLost": 6
+    },
+    "headCoach": "Joey Hawkins",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/columbia/columbia-academy-cougars/football/"
+  },
+  {
+    "id": "amite-school-center-rebels-rebels",
+    "name": "Amite School Center Rebels",
+    "mascot": "Rebels",
+    "city": "Liberty",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/0/7/60723ebd-bc77-4809-a4e0-40cea12f5055.gif?version=636548110800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 42,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 377,
+      "pointsAgainst": 177,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Bryce Bean",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/liberty/amite-school-center-rebels/football/"
+  },
+  {
+    "id": "rossville-christian-academy-wolves-wolves",
+    "name": "Rossville Christian Academy Wolves",
+    "mascot": "Wolves",
+    "city": "Rossville",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/d/f/1df9b338-7231-4f51-a714-d31e5b6f0a47.gif?version=638616392580891730&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 6,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 78,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 328,
+      "pointsAgainst": 327,
+      "yardsFor": 3493,
+      "yardsAgainst": 0,
+      "passYdsFor": 1883,
+      "rushYdsFor": 1610,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 29,
+      "turnoversLost": 14
+    },
+    "headCoach": "Brad Kimberlin",
+    "maxprepsUrl": "https://www.maxpreps.com/tn/rossville/rossville-christian-academy-wolves/football/"
+  },
+  {
+    "id": "central-hinds-academy-cougars-cougars",
+    "name": "Central Hinds Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Raymond",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/f/b/afba6475-8ac9-4519-9546-d6e905bd134b.gif?version=634349093400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 68,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 229,
+      "pointsAgainst": 303,
+      "yardsFor": 2737,
+      "yardsAgainst": 0,
+      "passYdsFor": 1061,
+      "rushYdsFor": 1676,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 11,
+      "turnoversLost": 10
+    },
+    "headCoach": "Sam Vincent",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/raymond/central-hinds-academy-cougars/football/"
+  },
+  {
+    "id": "wayne-academy-jaguars-jaguars",
+    "name": "Wayne Academy Jaguars",
+    "mascot": "Jaguars",
+    "city": "Waynesboro",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/8/0/6/8065dfc5-8e22-427e-8aaf-a2b5eebe856e.gif?version=638312334600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 15,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 317,
+      "pointsAgainst": 325,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Chad Lofton",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/waynesboro/wayne-academy-jaguars/football/"
+  },
+  {
+    "id": "st-aloysius-flashes-flashes",
+    "name": "St. Aloysius Flashes",
+    "mascot": "Flashes",
+    "city": "Vicksburg",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/3/4/d/34d75abb-2700-4cbb-b943-6d9eb33e8fcc.gif?version=636692449200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 73,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 202,
+      "pointsAgainst": 229,
+      "yardsFor": 85,
+      "yardsAgainst": 0,
+      "passYdsFor": 56,
+      "rushYdsFor": 29,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 1,
+      "turnoversLost": 1
+    },
+    "headCoach": "Bubba Nettles",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/vicksburg/st-aloysius-flashes/football/"
+  },
+  {
+    "id": "clinton-christian-academy-warriors-warriors",
+    "name": "Clinton Christian Academy Warriors ",
+    "mascot": "Warriors ",
+    "city": "Clinton",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/d/6/cd600fbd-814f-4a34-9537-42ecbc659310.gif?version=635751593400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 85,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 135,
+      "pointsAgainst": 226,
+      "yardsFor": 131,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 131,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "David Parker",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/clinton/clinton-christian-academy-warriors/football/"
+  },
+  {
+    "id": "riverfield-academy-raiders-raiders",
+    "name": "Riverfield Academy Raiders",
+    "mascot": "Raiders",
+    "city": "Rayville",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/9/4/4/9447b082-a83a-4b28-97f5-d441e8a4c999.gif?version=635805826200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 2,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 27,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 181,
+      "pointsAgainst": 283,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Matthew Hogan",
+    "maxprepsUrl": "https://www.maxpreps.com/la/rayville/riverfield-academy-raiders/football/"
+  },
+  {
+    "id": "west-memphis-christian-black-knights-black-knights",
+    "name": "West Memphis Christian Black Knights",
+    "mascot": "Black Knights",
+    "city": "West Memphis",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/6/f/66fbee51-9f14-477b-a6ea-db9d1e74ba71.gif?version=638592361946381910&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 2,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 115,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 116,
+      "pointsAgainst": 348,
+      "yardsFor": 2272,
+      "yardsAgainst": 0,
+      "passYdsFor": 1186,
+      "rushYdsFor": 1086,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 16,
+      "turnoversLost": 18
+    },
+    "headCoach": "Josh Horner",
+    "maxprepsUrl": "https://www.maxpreps.com/ar/west-memphis/west-memphis-christian-black-knights/football/"
+  },
+  {
+    "id": "bowling-green-buccaneers-buccaneers",
+    "name": "Bowling Green Buccaneers",
+    "mascot": "Buccaneers",
+    "city": "Franklinton",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/9/7/9/979fc71e-d32d-4109-836f-dc998197a7db.gif?version=638260024200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 70,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 126,
+      "pointsAgainst": 370,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Dean King",
+    "maxprepsUrl": "https://www.maxpreps.com/la/franklinton/bowling-green-buccaneers/football/"
+  },
+  {
+    "id": "christian-collegiate-academy-conquerors-conquerors",
+    "name": "Christian Collegiate Academy Conquerors",
+    "mascot": "Conquerors",
+    "city": "Gulfport",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/d/e/adecfae0-6811-4d44-923c-5df4b758e7f4.gif?version=635761737600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 0,
+      "losses": 11
+    },
+    "rankings": {
+      "stateOverall": 20,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 40,
+      "pointsAgainst": 554,
+      "yardsFor": 461,
+      "yardsAgainst": 0,
+      "passYdsFor": 284,
+      "rushYdsFor": 177,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 2,
+      "turnoversLost": 11
+    },
+    "headCoach": "Steve Spinks",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/gulfport/christian-collegiate-academy-bulldogs/football/"
+  },
+  {
+    "id": "parklane-academy-pioneers-pioneers",
+    "name": "Parklane Academy Pioneers",
+    "mascot": "Pioneers",
+    "city": "McComb",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/4/b/a/4bab3e5b-abc6-4fce-9ab9-701bb0a74d00.gif?version=635955460800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": 7,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 435,
+      "pointsAgainst": 106,
+      "yardsFor": 4053,
+      "yardsAgainst": 0,
+      "passYdsFor": 2044,
+      "rushYdsFor": 2009,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 1,
+      "turnoversLost": 7
+    },
+    "headCoach": "Brian Stutzman",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/mccomb/parklane-academy-pioneers/football/"
+  },
+  {
+    "id": "jackson-academy-raiders-raiders",
+    "name": "Jackson Academy Raiders",
+    "mascot": "Raiders",
+    "city": "Jackson",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/3/6/8/36873950-4c1d-487c-ae95-1f5be0fbfc24.gif?version=636213706800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 498,
+      "pointsAgainst": 134,
+      "yardsFor": 4600,
+      "yardsAgainst": 0,
+      "passYdsFor": 2173,
+      "rushYdsFor": 2427,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 27,
+      "turnoversLost": 7
+    },
+    "headCoach": "David Duggan",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/jackson-academy-raiders/football/"
+  },
+  {
+    "id": "magnolia-heights-chiefs-chiefs",
+    "name": "Magnolia Heights Chiefs",
+    "mascot": "Chiefs",
+    "city": "Senatobia",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/2/a/c/2ac37603-584e-4f8e-99e5-56fd27e6ddd1.gif?version=636227492400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 13,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 444,
+      "pointsAgainst": 208,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Jim Patterson",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/senatobia/magnolia-heights-chiefs/football/"
+  },
+  {
+    "id": "madison-ridgeland-academy-patriots-patriots",
+    "name": "Madison-Ridgeland Academy Patriots",
+    "mascot": "Patriots",
+    "city": "Madison",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/7/6/676cc31e-d246-4c35-8d67-02e129b0d222.gif?version=637092390000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 419,
+      "pointsAgainst": 241,
+      "yardsFor": 4661,
+      "yardsAgainst": 0,
+      "passYdsFor": 3160,
+      "rushYdsFor": 1501,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 13,
+      "turnoversLost": 10
+    },
+    "headCoach": "Herbert Davis",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/madison/madison-ridgeland-academy-patriots/football/"
+  },
+  {
+    "id": "heritage-academy-patriots-patriots",
+    "name": "Heritage Academy Patriots",
+    "mascot": "Patriots",
+    "city": "Columbus",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/8/0/68069163-9182-4c40-9e53-3af1b7078fa2.gif?version=634515012000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 10,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 9,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 398,
+      "pointsAgainst": 296,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Tobias Smith",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/columbus/heritage-academy-patriots/football/"
+  },
+  {
+    "id": "copiah-academy-colonels-colonels",
+    "name": "Copiah Academy Colonels",
+    "mascot": "Colonels",
+    "city": "Gallman",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/5/d/15de1f12-7f3a-4d90-b9b0-ec0fdb01e85c.gif?version=636050394000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 25,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 294,
+      "pointsAgainst": 141,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Lance Teasley",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/gallman/copiah-academy-colonels/football/"
+  },
+  {
+    "id": "lamar-raiders-raiders",
+    "name": "Lamar Raiders",
+    "mascot": "Raiders",
+    "city": "Meridian",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/2/9/f/29f316ea-5a20-4968-8f4b-387786e9dd2d.gif?version=636021051000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 4
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 380,
+      "pointsAgainst": 279,
+      "yardsFor": 4440,
+      "yardsAgainst": 0,
+      "passYdsFor": 2502,
+      "rushYdsFor": 1938,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 28,
+      "turnoversLost": 15
+    },
+    "headCoach": "Jacob Land",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/meridian/lamar-raiders/football/"
+  },
+  {
+    "id": "brookhaven-academy-cougars-cougars",
+    "name": "Brookhaven Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Brookhaven",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 3",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 34,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 325,
+      "pointsAgainst": 335,
+      "yardsFor": 115,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 115,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Ron Rushing",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/brookhaven/brookhaven-academy-cougars/football/"
+  },
+  {
+    "id": "jackson-prep-patriots-patriots",
+    "name": "Jackson Prep Patriots",
+    "mascot": "Patriots",
+    "city": "Jackson",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/5/e/a/5ea6ab6a-9528-4f3c-9694-fb9c9e0e6257.gif?version=634178963400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 12,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 383,
+      "pointsAgainst": 240,
+      "yardsFor": 4194,
+      "yardsAgainst": 0,
+      "passYdsFor": 2243,
+      "rushYdsFor": 1951,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 14,
+      "turnoversLost": 8
+    },
+    "headCoach": "Doug Goodwin",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/jackson-prep-patriots/football/"
+  },
+  {
+    "id": "starkville-academy-volunteers-volunteers",
+    "name": "Starkville Academy Volunteers",
+    "mascot": "Volunteers",
+    "city": "Starkville",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/6/3/1636ec38-2b3c-4488-9acb-1a5771a61a2d.gif?version=637826043600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 14,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 219,
+      "pointsAgainst": 249,
+      "yardsFor": 1744,
+      "yardsAgainst": 0,
+      "passYdsFor": 843,
+      "rushYdsFor": 901,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 14,
+      "turnoversLost": 9
+    },
+    "headCoach": "Chase Nicholson",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/starkville/starkville-academy-volunteers/football/"
+  },
+  {
+    "id": "cathedral-green-wave-green-wave",
+    "name": "Cathedral Green Wave",
+    "mascot": "Green Wave",
+    "city": "Natchez",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/7/7/6773cbc8-384b-4383-a180-405ef6147e0c.gif?version=637085550600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 43,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 279,
+      "pointsAgainst": 293,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Josh Loy",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/natchez/cathedral-green-wave/football/"
+  },
+  {
+    "id": "east-rankin-academy-patriots-patriots",
+    "name": "East Rankin Academy Patriots",
+    "mascot": "Patriots",
+    "city": "Pelahatchie",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/1/3/61317921-e014-4126-8c86-a9fa0da9cedc.gif?version=637075063800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 6,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 54,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 324,
+      "pointsAgainst": 290,
+      "yardsFor": 3226,
+      "yardsAgainst": 0,
+      "passYdsFor": 285,
+      "rushYdsFor": 2941,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 15,
+      "turnoversLost": 8
+    },
+    "headCoach": "Teddy Dyess",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/pelahatchie/east-rankin-academy-patriots/football/"
+  },
+  {
+    "id": "hartfield-academy-hawks-hawks",
+    "name": "Hartfield Academy Hawks",
+    "mascot": "Hawks",
+    "city": "Flowood",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 2",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/0/e/5/0e5aa8d7-e9a4-42cb-8699-e48e9b636019.gif?version=634954969200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 6,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 371,
+      "pointsAgainst": 349,
+      "yardsFor": 4203,
+      "yardsAgainst": 0,
+      "passYdsFor": 1682,
+      "rushYdsFor": 2521,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 7,
+      "turnoversLost": 13
+    },
+    "headCoach": "Craig Bowman",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/flowood/hartfield-academy-hawks/football/"
+  },
+  {
+    "id": "park-place-christian-academy-crusaders-crusaders",
+    "name": "Park Place Christian Academy Crusaders",
+    "mascot": "Crusaders",
+    "city": "Pearl",
+    "classification": "MAIS-4A",
+    "district": null,
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/0/f/c0f0316a-0518-4098-910d-86ed7a193395.gif?version=635985918600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 83,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 164,
+      "pointsAgainst": 189,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/pearl/park-place-christian-academy-crusaders/football/"
+  },
+  {
+    "id": "silliman-institute-wildcats-wildcats",
+    "name": "Silliman Institute Wildcats",
+    "mascot": "Wildcats",
+    "city": "Clinton",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/9/c/5/9c52daf2-a893-43c0-848d-fea905af277a.gif?version=636501384000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 33,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 202,
+      "pointsAgainst": 271,
+      "yardsFor": 28,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 28,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "TJ Davis",
+    "maxprepsUrl": "https://www.maxpreps.com/la/clinton/silliman-institute-wildcats/football/"
+  },
+  {
+    "id": "bayou-academy-colts-colts",
+    "name": "Bayou Academy Colts",
+    "mascot": "Colts",
+    "city": "Cleveland",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/1/9/a19cdc6c-6d11-419a-8c50-7c5d0f5fe7b0.gif?version=635765959800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 15,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 240,
+      "pointsAgainst": 302,
+      "yardsFor": 2465,
+      "yardsAgainst": 0,
+      "passYdsFor": 787,
+      "rushYdsFor": 1678,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 11,
+      "turnoversLost": 7
+    },
+    "headCoach": "Bayou Academy",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/cleveland/bayou-academy-colts/football/"
+  },
+  {
+    "id": "pillow-academy-mustangs-mustangs",
+    "name": "Pillow Academy Mustangs",
+    "mascot": "Mustangs",
+    "city": "Greenwood",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/8/0/d80f0909-c0b3-41c9-8a93-8d4b4f247119.gif?version=634632633600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 12,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 213,
+      "pointsAgainst": 350,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "TJ Davis",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/greenwood/pillow-academy-mustangs/football/"
+  },
+  {
+    "id": "oak-forest-academy-yellowjackets-yellowjackets",
+    "name": "Oak Forest Academy Yellowjackets",
+    "mascot": "Yellowjackets",
+    "city": "Amite",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 4",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/5/6/e/56eab146-00a5-40f2-b6c5-bc17f7382b14.gif?version=636501384000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 41,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 158,
+      "pointsAgainst": 223,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "LeShawn Booker",
+    "maxprepsUrl": "https://www.maxpreps.com/la/amite/oak-forest-academy-yellowjackets/football/"
+  },
+  {
+    "id": "simpson-academy-cougars-cougars",
+    "name": "Simpson Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Mendenhall",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 3",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/7/1/c71d071e-0f68-44b7-b701-534694cf1097.gif?version=637465092000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 40,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 220,
+      "pointsAgainst": 340,
+      "yardsFor": 2145,
+      "yardsAgainst": 0,
+      "passYdsFor": 846,
+      "rushYdsFor": 1299,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 7
+    },
+    "headCoach": "Todd Mangum",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/mendenhall/simpson-academy-cougars/football/"
+  },
+  {
+    "id": "st-joseph-catholic-bruins-bruins",
+    "name": "St. Joseph Catholic Bruins",
+    "mascot": "Bruins",
+    "city": "Madison",
+    "classification": "MAIS-4A",
+    "district": "MAIS 4A District 1",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/8/7/d/87d38fcc-50fc-4019-b6bc-83fd955d74ab.gif?version=635938197600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 2,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 59,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 245,
+      "pointsAgainst": 420,
+      "yardsFor": 3190,
+      "yardsAgainst": 0,
+      "passYdsFor": 1837,
+      "rushYdsFor": 1353,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 9,
+      "turnoversLost": 15
+    },
+    "headCoach": "Jason Moore",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/madison/st-joseph-catholic-bruins/football/"
+  },
+  {
+    "id": "river-oaks-mustangs-mustangs",
+    "name": "River Oaks Mustangs",
+    "mascot": "Mustangs",
+    "city": "Monroe",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 4 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/7/e/2/7e287296-2d61-4485-97ba-42eaa984f447.gif?version=635581248000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 0
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 489,
+      "pointsAgainst": 215,
+      "yardsFor": 1719,
+      "yardsAgainst": 0,
+      "passYdsFor": 843,
+      "rushYdsFor": 876,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 1,
+      "turnoversLost": 0
+    },
+    "headCoach": "Bo Barton",
+    "maxprepsUrl": "https://www.maxpreps.com/la/monroe/river-oaks-mustangs/football/"
+  },
+  {
+    "id": "humphreys-academy-rebels-rebels",
+    "name": "Humphreys Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Belzoni",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 2 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 508,
+      "pointsAgainst": 224,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Jerry Mclendon",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/belzoni/humphreys-academy-rebels/football/"
+  },
+  {
+    "id": "prairie-view-academy-spartans-spartans",
+    "name": "Prairie View Academy Spartans",
+    "mascot": "Spartans",
+    "city": "Bastrop",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 4 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/f/5/9/f59d2195-4754-4103-9dd3-06720ffc534f.gif?version=638730458393006420&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 432,
+      "pointsAgainst": 218,
+      "yardsFor": 3535,
+      "yardsAgainst": 0,
+      "passYdsFor": 1273,
+      "rushYdsFor": 2262,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 23,
+      "turnoversLost": 9
+    },
+    "headCoach": "B Jason Taylor",
+    "maxprepsUrl": "https://www.maxpreps.com/la/bastrop/prairie-view-academy-spartans/football/"
+  },
+  {
+    "id": "newton-county-academy-generals-generals",
+    "name": "Newton County Academy Generals",
+    "mascot": "Generals",
+    "city": "Decatur",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/e/1/e/e1e1c06d-e761-48db-a573-441cb664f28d.gif?version=635889785400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 426,
+      "pointsAgainst": 229,
+      "yardsFor": 4318,
+      "yardsAgainst": 0,
+      "passYdsFor": 585,
+      "rushYdsFor": 3733,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 13,
+      "turnoversLost": 8
+    },
+    "headCoach": "Steve Nelson",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/decatur/newton-county-academy-generals/football/"
+  },
+  {
+    "id": "claiborne-academy-rebels-rebels",
+    "name": "Claiborne Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Haynesville",
+    "classification": "MAIS-8M-1A",
+    "district": "8-Man Freelance (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/b/5/7/b5701bff-5dd3-4c63-9f23-8eae6d2251f1.gif?version=636501384000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 522,
+      "pointsAgainst": 296,
+      "yardsFor": 4161,
+      "yardsAgainst": 0,
+      "passYdsFor": 1906,
+      "rushYdsFor": 2255,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 25,
+      "turnoversLost": 16
+    },
+    "headCoach": "Jason Williams",
+    "maxprepsUrl": "https://www.maxpreps.com/la/haynesville/claiborne-academy-rebels/football/"
+  },
+  {
+    "id": "deer-creek-warriors-warriors",
+    "name": "Deer Creek Warriors",
+    "mascot": "Warriors",
+    "city": "Arcola",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 1 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 4
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 428,
+      "pointsAgainst": 290,
+      "yardsFor": 3713,
+      "yardsAgainst": 0,
+      "passYdsFor": 672,
+      "rushYdsFor": 3041,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 12,
+      "turnoversLost": 8
+    },
+    "headCoach": "Will Rodgers",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/arcola/deer-creek-warriors/football/"
+  },
+  {
+    "id": "benton-academy-raiders-raiders",
+    "name": "Benton Academy Raiders",
+    "mascot": "Raiders",
+    "city": "Benton",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 2 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/7/4/f/74f50d1f-b3a6-46be-88eb-550a244c4640.gif?version=635819591400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 412,
+      "pointsAgainst": 369,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Hingle McCringleberry",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/benton/benton-academy-raiders/football/"
+  },
+  {
+    "id": "christ-covenant",
+    "name": "Christ Covenant",
+    "mascot": null,
+    "city": "Ridgeland",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 2 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 6,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 257,
+      "pointsAgainst": 271,
+      "yardsFor": 1379,
+      "yardsAgainst": 0,
+      "passYdsFor": 727,
+      "rushYdsFor": 652,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 1,
+      "turnoversLost": 1
+    },
+    "headCoach": "Dylan Hambick",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/ridgeland/christ-covenant/football/"
+  },
+  {
+    "id": "sylva-bay-academy-saints-saints",
+    "name": "Sylva Bay Academy Saints",
+    "mascot": "Saints",
+    "city": "Bay Springs",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/6/8/3/683fd462-3f90-4f70-9278-31e20ea18b13.gif?version=636554008200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 388,
+      "pointsAgainst": 337,
+      "yardsFor": 747,
+      "yardsAgainst": 0,
+      "passYdsFor": 209,
+      "rushYdsFor": 538,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/bay-springs/sylva-bay-academy-saints/football/"
+  },
+  {
+    "id": "bens-ford-christian-eagles-eagles",
+    "name": "Ben's Ford Christian Eagles",
+    "mascot": "Eagles",
+    "city": "Bogalusa",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/7/0/2/70226d9c-307a-404f-90d6-01a96873ed3f.gif?version=638670162634732130&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 349,
+      "pointsAgainst": 377,
+      "yardsFor": 3666,
+      "yardsAgainst": 0,
+      "passYdsFor": 829,
+      "rushYdsFor": 2837,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 9,
+      "turnoversLost": 11
+    },
+    "headCoach": "Destin Pittman",
+    "maxprepsUrl": "https://www.maxpreps.com/la/bogalusa/bens-ford-christian-eagles/football/"
+  },
+  {
+    "id": "porters-chapel-academy-eagles-eagles",
+    "name": "Porter's Chapel Academy Eagles",
+    "mascot": "Eagles",
+    "city": "Vicksburg",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 2 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/8/8/0/88052d01-0011-436c-b15d-8ae73eeba261.gif?version=634317918000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 3,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 264,
+      "pointsAgainst": 314,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Blake Purvis",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/vicksburg/porters-chapel-academy-eagles/football/"
+  },
+  {
+    "id": "prentiss-christian-saints-saints",
+    "name": "Prentiss Christian Saints",
+    "mascot": "Saints",
+    "city": "Prentiss",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/a/c/aac40fad-1d97-46b9-9fd3-30ce831c57fe.gif?version=636389893800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 176,
+      "pointsAgainst": 321,
+      "yardsFor": 1913,
+      "yardsAgainst": 0,
+      "passYdsFor": 894,
+      "rushYdsFor": 1019,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 19,
+      "turnoversLost": 23
+    },
+    "headCoach": "Terrell Luckey",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/prentiss/prentiss-christian-saints/football/"
+  },
+  {
+    "id": "delta-streets-academy-lions-lions",
+    "name": "Delta Streets Academy Lions",
+    "mascot": "Lions",
+    "city": "Greenwood",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 1 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/a/9/da9b3509-706d-47cc-81e6-f6e96d12d5c6.gif?version=637438776000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 8,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 342,
+      "pointsAgainst": 459,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Travis Upshaw",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/greenwood/delta-streets-academy-lions/football/"
+  },
+  {
+    "id": "delta-academy-raiders-raiders",
+    "name": "Delta Academy Raiders",
+    "mascot": "Raiders",
+    "city": "Marks",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 1 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/d/5/dd5b6087-f2f3-4a5c-ae98-646d61f06bbe.gif?version=635787757200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 2,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 6,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 404,
+      "pointsAgainst": 576,
+      "yardsFor": 3877,
+      "yardsAgainst": 0,
+      "passYdsFor": 1572,
+      "rushYdsFor": 2305,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 9,
+      "turnoversLost": 23
+    },
+    "headCoach": "Brandon Sims",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/marks/delta-academy-raiders/football/"
+  },
+  {
+    "id": "north-sunflower-academy-rebels-rebels",
+    "name": "North Sunflower Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Drew",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 1 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 164,
+      "pointsAgainst": 474,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Ricky Smither",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/drew/north-sunflower-academy-rebels/football/"
+  },
+  {
+    "id": "hillcrest-christian-cougars-cougars",
+    "name": "Hillcrest Christian Cougars",
+    "mascot": "Cougars",
+    "city": "Jackson",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/5/f/3/5f39d09a-d95d-49d2-aa31-7d5b86c74c7c.gif?version=635289193200000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 0,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": null,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 0,
+      "pointsAgainst": 24,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Connor McDavid",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/hillcrest-christian-cougars/football/"
+  },
+  {
+    "id": "wilkinson-county-christian-academy-rams-rams",
+    "name": "Wilkinson County Christian Academy Rams",
+    "mascot": "Rams",
+    "city": "Woodville",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 7 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/f/4/7/f47d6dd5-69e2-474e-92b8-e4a722b100b6.gif?version=636869679000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 325,
+      "pointsAgainst": 140,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Randy Holloway",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/woodville/wilkinson-county-christian-academy-rams/football/"
+  },
+  {
+    "id": "columbus-christian-academy-rams-rams",
+    "name": "Columbus Christian Academy rams",
+    "mascot": "rams",
+    "city": "Steens",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 6 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/1/5/d1519d39-e6d3-4477-9956-66ab632c78ef.gif?version=636082470600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 9,
+      "losses": 1
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 586,
+      "pointsAgainst": 300,
+      "yardsFor": 4539,
+      "yardsAgainst": 0,
+      "passYdsFor": 1210,
+      "rushYdsFor": 3329,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 7,
+      "turnoversLost": 0
+    },
+    "headCoach": "Rusty Mason",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/steens/columbus-christian-academy-rams/football/"
+  },
+  {
+    "id": "desoto-thunderbirds-thunderbirds",
+    "name": "DeSoto Thunderbirds",
+    "mascot": "Thunderbirds",
+    "city": "West Helena",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 5 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 11,
+      "losses": 2
+    },
+    "rankings": {
+      "stateOverall": 1,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 498,
+      "pointsAgainst": 190,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Noah Odom",
+    "maxprepsUrl": "https://www.maxpreps.com/ar/west-helena/desoto-thunderbirds/football/"
+  },
+  {
+    "id": "briarfield-academy-rebels-rebels",
+    "name": "Briarfield Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Lake Providence",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 8 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/b/c/cbc93901-4688-4283-a52e-903fa3727a90.gif?version=635518218600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 3
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 484,
+      "pointsAgainst": 181,
+      "yardsFor": 3737,
+      "yardsAgainst": 0,
+      "passYdsFor": 1938,
+      "rushYdsFor": 1799,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 29,
+      "turnoversLost": 3
+    },
+    "headCoach": "Beau Travis",
+    "maxprepsUrl": "https://www.maxpreps.com/la/lake-providence/briarfield-academy-rebels/football/"
+  },
+  {
+    "id": "tallulah-academy-trojans-trojans",
+    "name": "Tallulah Academy Trojans",
+    "mascot": "Trojans",
+    "city": "Tallulah",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 8 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/f/e/1fe9d7a7-6c46-4c8e-9267-7d7468ef44d9.gif?version=636501384000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 8,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 5,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 454,
+      "pointsAgainst": 368,
+      "yardsFor": 458,
+      "yardsAgainst": 0,
+      "passYdsFor": 104,
+      "rushYdsFor": 354,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Bart Wood",
+    "maxprepsUrl": "https://www.maxpreps.com/la/tallulah/tallulah-academy-trojans/football/"
+  },
+  {
+    "id": "lee-academy-cougars-cougars",
+    "name": "Lee Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Marianna",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 5 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/8/9/2/8920390f-b219-40b4-a3f8-f84904d6c3e5.gif?version=636477260400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 6,
+      "losses": 5
+    },
+    "rankings": {
+      "stateOverall": 3,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 378,
+      "pointsAgainst": 264,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Mitch Smith",
+    "maxprepsUrl": "https://www.maxpreps.com/ar/marianna/lee-academy-cougars/football/"
+  },
+  {
+    "id": "calhoun-academy-cougars-cougars",
+    "name": "Calhoun Academy Cougars",
+    "mascot": "Cougars",
+    "city": "Calhoun City",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 6 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/c/2/d/c2d91b6a-456b-4386-ba00-9fb15b9a5d2c.gif?version=635509602000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 7,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 2,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 481,
+      "pointsAgainst": 346,
+      "yardsFor": 4350,
+      "yardsAgainst": 0,
+      "passYdsFor": 1376,
+      "rushYdsFor": 2974,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 17,
+      "turnoversLost": 5
+    },
+    "headCoach": "Benny Bryant",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/calhoun-city/calhoun-academy-cougars/football/"
+  },
+  {
+    "id": "tunica-academy-blue-devils-blue-devils",
+    "name": "Tunica Academy Blue Devils",
+    "mascot": "Blue Devils",
+    "city": "Tunica",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 5 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/1/b/4/1b4934a4-76dd-4a94-af72-710babb6c3d1.gif?version=636035040000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 5,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 334,
+      "pointsAgainst": 470,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Noah Odom",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/tunica/tunica-academy-blue-devils/football/"
+  },
+  {
+    "id": "marvell-academy-eagles-eagles",
+    "name": "Marvell Academy Eagles",
+    "mascot": "Eagles",
+    "city": "Marvell",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 5 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/2/b/2/2b2612bf-5fa0-4255-b299-94cd674508be.gif?version=635793711000000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 4,
+      "losses": 6
+    },
+    "rankings": {
+      "stateOverall": 7,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 314,
+      "pointsAgainst": 364,
+      "yardsFor": 2721,
+      "yardsAgainst": 0,
+      "passYdsFor": 376,
+      "rushYdsFor": 2345,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 6,
+      "turnoversLost": 5
+    },
+    "headCoach": "Justin Cunningham",
+    "maxprepsUrl": "https://www.maxpreps.com/ar/marvell/marvell-academy-eagles/football/"
+  },
+  {
+    "id": "tensas-academy-chiefs-chiefs",
+    "name": "Tensas Academy Chiefs",
+    "mascot": "Chiefs",
+    "city": "St. Joseph",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 7 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/5/7/b/57b856fb-346c-4684-b612-3386eb3d8b33.gif?version=638626846117434720&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 3,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 6,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 166,
+      "pointsAgainst": 301,
+      "yardsFor": 242,
+      "yardsAgainst": 0,
+      "passYdsFor": 90,
+      "rushYdsFor": 152,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 2,
+      "turnoversLost": 2
+    },
+    "headCoach": "Stacy Sizemore",
+    "maxprepsUrl": "https://www.maxpreps.com/la/st-joseph/tensas-academy-chiefs/football/"
+  },
+  {
+    "id": "heritage-christian-academy-warriors-warriors",
+    "name": "Heritage Christian Academy Warriors",
+    "mascot": "Warriors",
+    "city": "Picayune",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 7 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/7/4/a7408213-9bb9-4c15-b3af-c8010b81c096.gif?version=638295911400000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 2,
+      "losses": 7
+    },
+    "rankings": {
+      "stateOverall": 5,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 172,
+      "pointsAgainst": 317,
+      "yardsFor": 1750,
+      "yardsAgainst": 0,
+      "passYdsFor": 643,
+      "rushYdsFor": 1107,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 9,
+      "turnoversLost": 8
+    },
+    "headCoach": "Trevor Lee",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/picayune/heritage-christian-academy-warriors/football/"
+  },
+  {
+    "id": "union-christian-academy-lions-lions",
+    "name": "Union Christian Academy Lions",
+    "mascot": "Lions",
+    "city": "Farmerville",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 8 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/d/9/b/d9b5ee09-33a5-47bf-ab2f-5fc46cdbeec5.gif?version=637081285800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 8
+    },
+    "rankings": {
+      "stateOverall": 8,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 168,
+      "pointsAgainst": 403,
+      "yardsFor": 2203,
+      "yardsAgainst": 0,
+      "passYdsFor": 1123,
+      "rushYdsFor": 1080,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 3,
+      "turnoversLost": 10
+    },
+    "headCoach": "Trey Fulton",
+    "maxprepsUrl": "https://www.maxpreps.com/la/farmerville/union-christian-academy-lions/football/"
+  },
+  {
+    "id": "kemper-academy-rams-rams",
+    "name": "Kemper Academy Rams",
+    "mascot": "Rams",
+    "city": "DeKalb",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 6 (8 Man)",
+    "logoUrl": null,
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 1,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 3,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 152,
+      "pointsAgainst": 447,
+      "yardsFor": 0,
+      "yardsAgainst": 0,
+      "passYdsFor": 0,
+      "rushYdsFor": 0,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 0,
+      "turnoversLost": 0
+    },
+    "headCoach": "Colt Kilpatrick",
+    "maxprepsUrl": "https://www.maxpreps.com/ms/dekalb/kemper-academy-rams/football/"
+  },
+  {
+    "id": "riverdale-academy-rebels-rebels",
+    "name": "Riverdale Academy Rebels",
+    "mascot": "Rebels",
+    "city": "Coushatta",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 8 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/9/9/0/99022793-5dd4-4f2c-8283-ce4f967c7ee2.gif?version=636391719600000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 0,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 104,
+      "pointsAgainst": 442,
+      "yardsFor": 843,
+      "yardsAgainst": 0,
+      "passYdsFor": 305,
+      "rushYdsFor": 538,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 2,
+      "turnoversLost": 3
+    },
+    "headCoach": "Nathan Edie",
+    "maxprepsUrl": "https://www.maxpreps.com/la/coushatta/riverdale-academy-rebels/football/"
+  },
+  {
+    "id": "hebron-christian-eagles-eagles",
+    "name": "Hebron Christian Eagles",
+    "mascot": "Eagles",
+    "city": "Pheba",
+    "classification": "MAIS-8M-2A",
+    "district": "MAIS 8-Man 2A District 6 (8 Man)",
+    "logoUrl": "https://image.maxpreps.io/school-mascot/a/0/8/a0836605-7ad3-47ff-bd72-6e653c6b50b6.gif?version=638088838800000000&width=1024&height=1024",
+    "colors": {
+      "primary": null,
+      "secondary": null
+    },
+    "season": "2025-26",
+    "record": {
+      "wins": 0,
+      "losses": 9
+    },
+    "rankings": {
+      "stateOverall": 4,
+      "stateClass": null,
+      "national": null
+    },
+    "stats": {
+      "pointsFor": 56,
+      "pointsAgainst": 473,
+      "yardsFor": 987,
+      "yardsAgainst": 0,
+      "passYdsFor": 564,
+      "rushYdsFor": 423,
+      "passYdsAgainst": 0,
+      "rushYdsAgainst": 0,
+      "turnoversForced": 4,
+      "turnoversLost": 17
+    },
+    "headCoach": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/pheba/hebron-christian-eagles/football/"
   }
 ]

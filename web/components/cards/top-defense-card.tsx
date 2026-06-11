@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
+import { classificationLabel } from "@/lib/team-format";
 import { TeamLogo } from "@/components/brand/team-logo";
 import type { Team } from "@/lib/types";
 
@@ -16,7 +17,7 @@ export function TopDefenseCard({
         <div className="font-display text-xl leading-tight mb-2">{team.name}</div>
         <div className="font-display text-4xl">{ppg.toFixed(1)}</div>
         <div className="text-xs text-chrome-500 mt-1">PTS ALLOWED / GAME</div>
-        <div className="text-xs text-chrome-500">{team.classification} · {team.record.wins}–{team.record.losses}</div>
+        <div className="text-xs text-chrome-500">{classificationLabel(team.classification)} · {team.record.wins}–{team.record.losses}</div>
       </div>
     </Link>
   );

@@ -1,19 +1,34 @@
 import { slugify } from "./slugify";
 import type { Team } from "./types";
 
-/** "7A Region 2" -> "Region 2" (classification already shown elsewhere). */
+/** Display form of a classification: "MAIS-8M-1A" -> "MAIS 8-Man 1A". */
+export function classificationLabel(classification: string): string {
+  return classification
+    .replace(/^MAIS-8M-/, "MAIS 8-Man ")
+    .replace(/^MAIS-/, "MAIS ");
+}
+
+/**
+ * Strip the class prefix from a district so it isn't shown twice:
+ * "7A Region 2" -> "Region 2", "MAIS 4A District 3" -> "District 3",
+ * "MAIS 8-Man 1A District 2 (8 Man)" -> "District 2".
+ */
 export function regionLabel(team: Pick<Team, "district" | "classification">): string | null {
   if (!team.district) return null;
-  const stripped = team.district.replace(/^(MAIS-)?\d+A\s*/i, "").trim();
+  const stripped = team.district
+    .replace(/^(MAIS[\s-]*)?(8[\s-]?man\s*)?\d+A\s*/i, "")
+    .replace(/\s*\(8\s*man\)\s*$/i, "")
+    .trim();
   return stripped || team.district;
 }
 
-/** "7A Region 2" — classification plus region for compact displays. */
+/** "7A Region 2" / "MAIS 4A District 3" — class plus region, compact. */
 export function classRegionLabel(
   team: Pick<Team, "district" | "classification">,
 ): string {
+  const cls = classificationLabel(team.classification);
   const region = regionLabel(team);
-  return region ? `${team.classification} ${region}` : team.classification;
+  return region ? `${cls} ${region}` : cls;
 }
 
 /**

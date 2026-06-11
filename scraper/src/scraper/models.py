@@ -6,7 +6,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-_CLASS_PATTERN = re.compile(r"^(?:[1-7]A|MAIS-[1-6]A)$")
+_CLASS_PATTERN = re.compile(r"^(?:[1-7]A|MAIS-[1-6]A|MAIS-8M-[12]A)$")
 _SEASON_PATTERN = re.compile(r"^\d{4}-\d{2}$")
 _DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
+import { classificationLabel } from "@/lib/team-format";
 import type { Team } from "@/lib/types";
 
 export function TeamCard({ team }: { team: Team }) {
@@ -18,7 +19,7 @@ export function TeamCard({ team }: { team: Team }) {
           </div>
         </div>
         <div className="flex items-center justify-between mt-auto">
-          <Badge variant="outline">{team.classification}</Badge>
+          <Badge variant="outline">{classificationLabel(team.classification)}</Badge>
           <span className="text-sm text-chrome-300">
             {team.record.wins}–{team.record.losses}
           </span>

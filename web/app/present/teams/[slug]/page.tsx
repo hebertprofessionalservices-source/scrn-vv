@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { formatGameDate } from "@/lib/format-date";
-import { titleCaseSlug } from "@/lib/team-format";
+import { classificationLabel, titleCaseSlug } from "@/lib/team-format";
 
 export default async function PresentTeam({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -13,7 +13,7 @@ export default async function PresentTeam({ params }: { params: Promise<{ slug: 
   return (
     <>
       <h1 className="font-display">{team.name}</h1>
-      <p className="text-3xl text-chrome-300">{team.classification} · {team.record.wins}–{team.record.losses}{team.headCoach ? ` · Coach ${team.headCoach}` : ""}</p>
+      <p className="text-3xl text-chrome-300">{classificationLabel(team.classification)} · {team.record.wins}–{team.record.losses}{team.headCoach ? ` · Coach ${team.headCoach}` : ""}</p>
       <table className="w-full mt-8 text-2xl">
         <thead><tr className="text-chrome-500"><th className="text-left">Date</th><th className="text-left">Opponent</th><th className="text-right">Result</th></tr></thead>
         <tbody>
