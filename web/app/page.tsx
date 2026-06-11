@@ -48,7 +48,7 @@ export default async function Home() {
           height={672}
           priority
           unoptimized
-          className="w-full h-auto rounded-2xl"
+          className="w-full max-w-4xl mx-auto h-auto rounded-2xl"
         />
         {editorial?.featuredQuote && (
           <p className="mt-4 italic text-chrome-300">&ldquo;{editorial.featuredQuote}&rdquo;</p>
