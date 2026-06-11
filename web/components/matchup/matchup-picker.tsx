@@ -29,17 +29,19 @@ interface StatRow {
   value: (t: MatchupTeam) => number;
   format: (v: number) => string;
   lowerIsBetter?: boolean;
+  /** Stat comes from MaxPreps season tables, which some schools don't publish. */
+  needsPrintStats?: boolean;
 }
 
 const STAT_ROWS: StatRow[] = [
   { label: "Points / Game", value: (t) => perGame(t, t.stats.pointsFor), format: f1 },
   { label: "Points Allowed / Game", value: (t) => perGame(t, t.stats.pointsAgainst), format: f1, lowerIsBetter: true },
   { label: "Total Points", value: (t) => t.stats.pointsFor, format: f0 },
-  { label: "Total Yards", value: (t) => t.stats.yardsFor, format: f0 },
-  { label: "Passing Yards", value: (t) => t.stats.passYdsFor, format: f0 },
-  { label: "Rushing Yards", value: (t) => t.stats.rushYdsFor, format: f0 },
-  { label: "Turnovers Forced", value: (t) => t.stats.turnoversForced, format: f0 },
-  { label: "Turnovers Lost", value: (t) => t.stats.turnoversLost, format: f0, lowerIsBetter: true },
+  { label: "Total Yards", value: (t) => t.stats.yardsFor, format: f0, needsPrintStats: true },
+  { label: "Passing Yards", value: (t) => t.stats.passYdsFor, format: f0, needsPrintStats: true },
+  { label: "Rushing Yards", value: (t) => t.stats.rushYdsFor, format: f0, needsPrintStats: true },
+  { label: "Turnovers Forced", value: (t) => t.stats.turnoversForced, format: f0, needsPrintStats: true },
+  { label: "Turnovers Lost", value: (t) => t.stats.turnoversLost, format: f0, lowerIsBetter: true, needsPrintStats: true },
 ];
 
 function perGame(t: MatchupTeam, total: number): number {
@@ -48,6 +50,11 @@ function perGame(t: MatchupTeam, total: number): number {
 }
 function f0(v: number): string { return Math.round(v).toLocaleString(); }
 function f1(v: number): string { return v.toFixed(1); }
+
+/** Schools whose MaxPreps season tables weren't published have all-zero yardage. */
+function hasPrintStats(t: MatchupTeam): boolean {
+  return t.stats.yardsFor > 0;
+}
 
 export function MatchupPicker({
   teams,
@@ -86,15 +93,18 @@ export function MatchupPicker({
                 {STAT_ROWS.map((row) => {
                   const va = row.value(teamA);
                   const vb = row.value(teamB);
-                  const aBetter = row.lowerIsBetter ? va < vb : va > vb;
-                  const bBetter = row.lowerIsBetter ? vb < va : vb > va;
+                  const aMissing = Boolean(row.needsPrintStats) && !hasPrintStats(teamA);
+                  const bMissing = Boolean(row.needsPrintStats) && !hasPrintStats(teamB);
+                  const comparable = !aMissing && !bMissing;
+                  const aBetter = comparable && (row.lowerIsBetter ? va < vb : va > vb);
+                  const bBetter = comparable && (row.lowerIsBetter ? vb < va : vb > va);
                   return (
                     <tr key={row.label} className="border-t border-chrome-500/10 first:border-t-0">
-                      <td className={cellClass("right", aBetter)}>{row.format(va)}</td>
+                      <td className={cellClass("right", aBetter)}>{aMissing ? "—" : row.format(va)}</td>
                       <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
                         {row.label}
                       </td>
-                      <td className={cellClass("left", bBetter)}>{row.format(vb)}</td>
+                      <td className={cellClass("left", bBetter)}>{bMissing ? "—" : row.format(vb)}</td>
                     </tr>
                   );
                 })}
@@ -118,7 +128,7 @@ function cellClass(align: "left" | "right", better: boolean): string {
   return [
     "px-4 py-2.5 w-2/5 font-display text-lg",
     align === "right" ? "text-right" : "text-left",
-    better ? "text-crimson-500" : "text-chrome-100",
+    better ? "text-green-400" : "text-chrome-100",
   ].join(" ");
 }
 
