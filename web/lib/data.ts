@@ -44,10 +44,37 @@ export function buildDataset(raw: RawDataset, season = "2025-26"): Dataset {
     list.push(p);
     playersByTeam.set(p.teamId, list);
   }
-  const gamesByTeam = new Map<string, Game[]>();
-  const gamesById = new Map<string, Game>();
+
+  // Each game was scraped from both teams' schedules, so most contests
+  // appear twice (with the opponent as a short slug in one and a canonical
+  // id in the other). Merge duplicates by MaxPreps contest key.
+  const groups = new Map<string, Game[]>();
+  const groupOrder: string[] = [];
   for (const g of raw.games) {
-    gamesById.set(g.id, g);
+    const key = contestKey(g) ?? `id:${g.id}`;
+    if (!groups.has(key)) {
+      groups.set(key, []);
+      groupOrder.push(key);
+    }
+    groups.get(key)!.push(g);
+  }
+
+  const games: Game[] = [];
+  const gamesById = new Map<string, Game>();
+  for (const key of groupOrder) {
+    const group = groups.get(key)!;
+    let merged = group[0];
+    for (let i = 1; i < group.length; i++) {
+      merged = mergeDuplicateGame(merged, group[i], teamsById);
+    }
+    games.push(merged);
+    // Every original id (including discarded duplicates) resolves to the
+    // merged record so stored references like editorial gameId keep working.
+    for (const g of group) gamesById.set(g.id, merged);
+  }
+
+  const gamesByTeam = new Map<string, Game[]>();
+  for (const g of games) {
     for (const tid of [g.homeTeamId, g.awayTeamId]) {
       const list = gamesByTeam.get(tid) ?? [];
       list.push(g);
@@ -55,8 +82,33 @@ export function buildDataset(raw: RawDataset, season = "2025-26"): Dataset {
     }
   }
   return {
-    teams: raw.teams, players: raw.players, games: raw.games,
+    teams: raw.teams, players: raw.players, games,
     teamsById, teamsBySlug, teamsByAlias, playersById, playersByTeam,
     gamesByTeam, gamesById, season,
+  };
+}
+
+function contestKey(g: Game): string | null {
+  const m = (g.maxprepsUrl ?? "").match(/[?&]c=([\w-]+)/);
+  return m ? m[1] : null;
+}
+
+function mergeDuplicateGame(
+  a: Game,
+  b: Game,
+  teamsById: Map<string, Team>,
+): Game {
+  const canonical = (x: string, y: string) =>
+    teamsById.has(x) ? x : teamsById.has(y) ? y : x;
+  return {
+    ...a,
+    homeTeamId: canonical(a.homeTeamId, b.homeTeamId),
+    awayTeamId: canonical(a.awayTeamId, b.awayTeamId),
+    homeScore: a.homeScore ?? b.homeScore,
+    awayScore: a.awayScore ?? b.awayScore,
+    status: a.status === "final" || b.status === "final" ? "final" : a.status,
+    venue: a.venue ?? b.venue,
+    boxScore: a.boxScore ?? b.boxScore,
+    maxprepsUrl: a.maxprepsUrl ?? b.maxprepsUrl,
   };
 }
