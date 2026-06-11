@@ -35,15 +35,18 @@ export function SeasonStatGrid({ stats }: { stats: PlayerStats }) {
     return <p className="text-chrome-500 text-sm">No season stat leaders for this player.</p>;
   }
   return (
-    <div className="grid gap-4 md:grid-cols-2">
+    <div className="space-y-5">
       {groups.map((g) => (
-        <div key={g.label} className="rounded-xl border border-chrome-500/15 p-4">
-          <div className="text-xs uppercase tracking-wider text-chrome-500 mb-2">{g.label}</div>
-          <div className="grid grid-cols-4 gap-3">
+        <div key={g.label} className="rounded-2xl border border-chrome-500/15 bg-navy-700/30 p-6">
+          <div className="text-sm uppercase tracking-wider text-chrome-500 mb-4">{g.label}</div>
+          <div
+            className="grid gap-4"
+            style={{ gridTemplateColumns: `repeat(${g.entries.length}, minmax(0, 1fr))` }}
+          >
             {g.entries.map(([k, v]) => (
-              <div key={k}>
-                <div className="text-[10px] text-chrome-500">{k}</div>
-                <div className="font-display text-xl">{v}</div>
+              <div key={k} className="text-center">
+                <div className="text-xs uppercase tracking-wider text-chrome-500 mb-1">{k}</div>
+                <div className="font-display text-4xl md:text-6xl">{v}</div>
               </div>
             ))}
           </div>
