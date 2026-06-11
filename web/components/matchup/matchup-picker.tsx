@@ -49,9 +49,17 @@ function perGame(t: MatchupTeam, total: number): number {
 function f0(v: number): string { return Math.round(v).toLocaleString(); }
 function f1(v: number): string { return v.toFixed(1); }
 
-export function MatchupPicker({ teams }: { teams: MatchupTeam[] }) {
-  const [aId, setAId] = useState("");
-  const [bId, setBId] = useState("");
+export function MatchupPicker({
+  teams,
+  initialA = "",
+  initialB = "",
+}: {
+  teams: MatchupTeam[];
+  initialA?: string;
+  initialB?: string;
+}) {
+  const [aId, setAId] = useState(initialA);
+  const [bId, setBId] = useState(initialB);
 
   const byId = useMemo(() => new Map(teams.map((t) => [t.id, t])), [teams]);
   const teamA = byId.get(aId);

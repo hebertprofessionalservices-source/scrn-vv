@@ -1,7 +1,12 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam } from "@/components/matchup/matchup-picker";
 
-export default async function MatchupBuilderPage() {
+export default async function MatchupBuilderPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ a?: string; b?: string }>;
+}) {
+  const sp = await searchParams;
   const season = await currentSeason();
   const data = await loadDataset(season);
 
@@ -42,7 +47,11 @@ export default async function MatchupBuilderPage() {
           </p>
         </div>
       ) : (
-        <MatchupPicker teams={teams} />
+        <MatchupPicker
+          teams={teams}
+          initialA={teams.some((t) => t.id === sp.a) ? sp.a : ""}
+          initialB={teams.some((t) => t.id === sp.b) ? sp.b : ""}
+        />
       )}
     </main>
   );

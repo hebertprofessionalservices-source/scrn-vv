@@ -102,6 +102,7 @@ export default async function TeamDetailPage({
           <table className="w-full text-sm">
             <thead className="bg-navy-700/50 text-chrome-500 uppercase">
               <tr>
+                <th className="px-3 py-2 text-left" aria-label="Match Up" />
                 <th className="px-3 py-2 text-left">Date</th>
                 <th className="px-3 py-2 text-left">Opponent</th>
                 <th className="px-3 py-2 text-right">Result</th>
@@ -116,6 +117,16 @@ export default async function TeamDetailPage({
                 const sa = isHome ? g.awayScore : g.homeScore;
                 return (
                   <tr key={g.id} className="border-t border-chrome-500/10">
+                    <td className="px-3 py-2 whitespace-nowrap">
+                      {opp && (
+                        <Link
+                          href={`/matchup?a=${team.id}&b=${opp.id}` as any}
+                          className="inline-block rounded border border-crimson-500/60 px-2 py-1 text-xs text-crimson-500 hover:bg-crimson-500/10"
+                        >
+                          View Match Up
+                        </Link>
+                      )}
+                    </td>
                     <td className="px-3 py-2 text-chrome-300">{formatGameDate(g.date)}</td>
                     <td className="px-3 py-2">
                       {isHome ? "vs " : "@ "}
