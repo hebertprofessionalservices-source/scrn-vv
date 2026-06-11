@@ -5,6 +5,7 @@ import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
+import { formatGameDate } from "@/lib/format-date";
 
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
   const { matchup } = await params;
@@ -60,7 +61,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
           <ul className="space-y-1 text-sm">
             {h2h.map((g) => (
               <li key={g.id} className="text-chrome-300">
-                {g.date}: {g.awayScore} – {g.homeScore}
+                {formatGameDate(g.date)}: {g.awayScore} – {g.homeScore}
               </li>
             ))}
           </ul>

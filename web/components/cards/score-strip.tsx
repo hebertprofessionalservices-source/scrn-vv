@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
+import { formatGameDate } from "@/lib/format-date";
 import type { Game, Team } from "@/lib/types";
 
 export function ScoreStrip({
@@ -31,7 +32,7 @@ export function ScoreStrip({
               </span>
               <span className="font-display">{g.homeScore ?? "—"}</span>
             </div>
-            <div className="text-[10px] text-chrome-500 mt-1">{g.date}</div>
+            <div className="text-[10px] text-chrome-500 mt-1">{formatGameDate(g.date)}</div>
           </div>
         );
         return matchupHref

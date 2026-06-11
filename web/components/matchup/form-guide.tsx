@@ -1,3 +1,4 @@
+import { formatGameDate } from "@/lib/format-date";
 import type { Game } from "@/lib/types";
 
 export function FormGuide({ teamId, games }: { teamId: string; games: Game[] }) {
@@ -16,7 +17,7 @@ export function FormGuide({ teamId, games }: { teamId: string; games: Game[] }) 
         const win = sf > sa;
         return (
           <span key={g.id}
-            title={`${g.date}: ${sf}-${sa}`}
+            title={`${formatGameDate(g.date)}: ${sf}-${sa}`}
             className={`inline-flex items-center justify-center w-6 h-6 rounded text-[10px] font-bold ${win ? "bg-green-600/70" : "bg-crimson-600/80"}`}>
             {win ? "W" : "L"}
           </span>

@@ -8,6 +8,7 @@ import { TeamLogo } from "@/components/brand/team-logo";
 import { Badge } from "@/components/ui/badge";
 import { displaySlug } from "@/lib/display-slug";
 import { regionLabel, titleCaseSlug } from "@/lib/team-format";
+import { formatGameDate } from "@/lib/format-date";
 import type { Player } from "@/lib/types";
 
 // Offense first, then defense, then special teams.
@@ -115,7 +116,7 @@ export default async function TeamDetailPage({
                 const sa = isHome ? g.awayScore : g.homeScore;
                 return (
                   <tr key={g.id} className="border-t border-chrome-500/10">
-                    <td className="px-3 py-2 text-chrome-300">{g.date}</td>
+                    <td className="px-3 py-2 text-chrome-300">{formatGameDate(g.date)}</td>
                     <td className="px-3 py-2">
                       {isHome ? "vs " : "@ "}
                       {opp ? (

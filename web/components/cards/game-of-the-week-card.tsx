@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
 import { TeamLogo } from "@/components/brand/team-logo";
+import { formatGameDate } from "@/lib/format-date";
 import type { Game, Team } from "@/lib/types";
 
 export function GameOfTheWeekCard({
@@ -42,7 +43,7 @@ export function GameOfTheWeekCard({
         {storyline && (
           <p className="mt-4 text-sm text-chrome-300 leading-snug">{storyline}</p>
         )}
-        <p className="mt-2 text-xs text-chrome-500">{game.date}{game.venue ? ` · ${game.venue}` : ""}</p>
+        <p className="mt-2 text-xs text-chrome-500">{formatGameDate(game.date)}{game.venue ? ` · ${game.venue}` : ""}</p>
       </div>
     </Link>
   );

@@ -1,4 +1,5 @@
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
+import { formatGameDate } from "@/lib/format-date";
 
 export default async function AdminEditorialPage({
   searchParams,
@@ -38,7 +39,7 @@ export default async function AdminEditorialPage({
             {upcoming.map((g) => {
               const away = data.teamsById.get(g.awayTeamId)?.name ?? g.awayTeamId;
               const home = data.teamsById.get(g.homeTeamId)?.name ?? g.homeTeamId;
-              return <option key={g.id} value={g.id}>{g.date} · {away} @ {home}</option>;
+              return <option key={g.id} value={g.id}>{formatGameDate(g.date)} · {away} @ {home}</option>;
             })}
           </select>
         </div>
