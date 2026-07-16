@@ -2001,7 +2001,7 @@
     "city": "Booneville",
     "classification": "1A",
     "district": "1A Region 1",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/thrasher-rebels-rebels.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -3426,7 +3426,7 @@
     "city": "North Carrollton",
     "classification": "2A",
     "district": "2A Region 3",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/j-z-george-jaguars-jaguars.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -5022,7 +5022,7 @@
     "city": "Belzoni",
     "classification": "3A",
     "district": "3A Region 3",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/humphreys-county-cowboys-cowboys.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -5079,7 +5079,7 @@
     "city": "Quitman",
     "classification": "3A",
     "district": "3A Region 5",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/quitman-panthers-panthers.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -5706,7 +5706,7 @@
     "city": "Independence",
     "classification": "3A",
     "district": "3A Region 2",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/independence-wildcats-wildcats.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -11121,7 +11121,7 @@
     "city": "Gautier",
     "classification": "6A",
     "district": "6A Region 4",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/gautier-gators-gators.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -12945,7 +12945,7 @@
     "city": "Centreville",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 4",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/centreville-academy-tigers-tigers.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13059,7 +13059,7 @@
     "city": "West Point",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 3",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/oak-hill-academy-raiders-raiders.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13116,7 +13116,7 @@
     "city": "Clarksdale",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 1",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/lee-academy-colts-colts.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13173,7 +13173,7 @@
     "city": "Grenada",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 1",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/kirk-academy-raiders-raiders.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13458,7 +13458,7 @@
     "city": "Indianola",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 2",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/indianola-academy-colonels-colonels.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13686,7 +13686,7 @@
     "city": "Florence",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 4",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/discovery-christian.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -13743,7 +13743,7 @@
     "city": "Greenville",
     "classification": "MAIS-2A",
     "district": "MAIS 2A District 2",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/greenville-christian-saints-saints.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -14484,7 +14484,7 @@
     "city": "Clinton",
     "classification": "MAIS-3A",
     "district": "MAIS 3A District 3",
-    "logoUrl": "https://image.maxpreps.io/school-mascot/c/d/6/cd600fbd-814f-4a34-9537-42ecbc659310.gif?version=635751593400000000&width=1024&height=1024",
+    "logoUrl": "/team-logos/clinton-christian-academy-warriors-warriors.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -15168,7 +15168,7 @@
     "city": "Brookhaven",
     "classification": "MAIS-4A",
     "district": "MAIS 4A District 3",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/brookhaven-academy-cougars-cougars.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -15966,7 +15966,7 @@
     "city": "Belzoni",
     "classification": "MAIS-8M-1A",
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/humphreys-academy-rebels-rebels.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -16194,7 +16194,7 @@
     "city": "Arcola",
     "classification": "MAIS-8M-1A",
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/deer-creek-warriors-warriors.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -16308,7 +16308,7 @@
     "city": "Ridgeland",
     "classification": "MAIS-8M-1A",
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/christ-covenant.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -16707,7 +16707,7 @@
     "city": "Drew",
     "classification": "MAIS-8M-1A",
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/north-sunflower-academy-rebels-rebels.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -16935,7 +16935,7 @@
     "city": "West Helena",
     "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/desoto-thunderbirds-thunderbirds.png",
     "colors": {
       "primary": null,
       "secondary": null
@@ -17505,7 +17505,7 @@
     "city": "DeKalb",
     "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
-    "logoUrl": null,
+    "logoUrl": "/team-logos/kemper-academy-rams-rams.png",
     "colors": {
       "primary": null,
       "secondary": null
