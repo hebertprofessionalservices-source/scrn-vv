@@ -13,6 +13,10 @@ import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 
+// Storylines / Key Players / Coaches / Series History hidden from production
+// until client revisions land. Flip to true to bring them back.
+const SHOW_MATCHUP_EXTRAS = false;
+
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
   const { matchup } = await params;
   const season = await currentSeason();
@@ -54,7 +58,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         </div>
       </div>
 
-      {storylines.length > 0 && (
+      {SHOW_MATCHUP_EXTRAS && storylines.length > 0 && (
         <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
           <h2 className="font-display text-xl mb-3">Storylines</h2>
           <ul className="space-y-2 text-sm">
@@ -70,9 +74,13 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
 
       <TaleOfTheTape a={away} b={home} />
 
-      <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
+      {SHOW_MATCHUP_EXTRAS && (
+        <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
+      )}
 
-      <SeriesHistory away={away} home={home} h2h={h2h} view={historyView} />
+      {SHOW_MATCHUP_EXTRAS && (
+        <SeriesHistory away={away} home={home} h2h={h2h} view={historyView} />
+      )}
 
       <div className="grid md:grid-cols-2 gap-6">
         <section>

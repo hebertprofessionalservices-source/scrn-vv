@@ -6,6 +6,10 @@ import { buildStorylines } from "@/lib/storylines";
 import { loadHistory } from "@/lib/history-server";
 import { buildMatchupHistory } from "@/lib/matchup-history";
 
+// Storylines / Key Players / Coaches / Series History hidden from production
+// until client revisions land. Flip to true to bring them back.
+const SHOW_MATCHUP_EXTRAS = false;
+
 export default async function MatchupBuilderPage({
   searchParams,
 }: {
@@ -75,6 +79,7 @@ async function MatchupExtras({
   data: Awaited<ReturnType<typeof loadDataset>>;
   season: string;
 }) {
+  if (!SHOW_MATCHUP_EXTRAS) return null;
   const teamA = a ? data.teamsById.get(a) : undefined;
   const teamB = b ? data.teamsById.get(b) : undefined;
   if (!teamA || !teamB || teamA.id === teamB.id) return null;
