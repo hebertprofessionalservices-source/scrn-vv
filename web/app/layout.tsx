@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/brand/site-header";
 import { SiteFooter } from "@/components/brand/site-footer";
 import { CommandPalette } from "@/components/search/command-palette";
 import { loadDataset, currentSeason } from "@/lib/data-server";
+import { buildSearchEntries } from "@/lib/search-index";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -37,7 +38,9 @@ export default async function RootLayout({
         {!isPresent && <SiteHeader />}
         <div className="flex-1">{children}</div>
         {!isPresent && <SiteFooter />}
-        {!isPresent && data && <CommandPalette teams={data.teams} players={data.players} />}
+        {!isPresent && data && (
+          <CommandPalette entries={buildSearchEntries(data.teams, data.players)} />
+        )}
       </body>
     </html>
   );

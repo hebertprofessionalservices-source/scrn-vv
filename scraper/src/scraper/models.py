@@ -49,6 +49,11 @@ class TeamColors(_Frozen):
     secondary: str | None = None
 
 
+class TeamStreak(_Frozen):
+    count: int = Field(ge=1)
+    result: str = Field(pattern=r"^[WLT]$")
+
+
 class Team(_Frozen):
     id: str
     name: str
@@ -64,6 +69,11 @@ class Team(_Frozen):
     stats: TeamStats = Field(default_factory=TeamStats)
     headCoach: str | None = None
     maxprepsUrl: str | None = None
+    regionRecord: TeamRecord | None = None
+    homeRecord: TeamRecord | None = None
+    awayRecord: TeamRecord | None = None
+    neutralRecord: TeamRecord | None = None
+    streak: TeamStreak | None = None
 
     @field_validator("classification")
     @classmethod

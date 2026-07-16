@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TeamStatPanel } from "@/components/team/team-stat-panel";
+import { TeamVitals, findLastLoss } from "@/components/team/team-vitals";
+import { buildPowerRankings } from "@/lib/power";
+import { buildTeamEfficiency } from "@/lib/efficiency";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { Badge } from "@/components/ui/badge";
@@ -52,6 +55,9 @@ export default async function TeamDetailPage({
   ];
 
   const region = regionLabel(team);
+  const power = buildPowerRankings(data).get(team.id) ?? null;
+  const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
+  const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -94,7 +100,9 @@ export default async function TeamDetailPage({
         </Link>
       </header>
 
-      <TeamStatPanel team={team} />
+      <TeamVitals team={team} power={power} lastLoss={lastLoss} />
+
+      <TeamStatPanel team={team} efficiency={efficiency} />
 
       <section>
         <h2 className="font-display text-2xl mb-3">Schedule</h2>

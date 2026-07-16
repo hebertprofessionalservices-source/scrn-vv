@@ -69,3 +69,36 @@ def test_extract_next_data_payload_missing_tag():
 def test_extract_next_data_payload_malformed_json():
     html = '<html><script id="__NEXT_DATA__">not-json</script></html>'
     assert extract_next_data_payload(html) is None
+
+
+class TestExtractRegionRecord:
+    def _payload(self, wlt):
+        return {
+            "props": {"pageProps": {"teamContext": {"standingsData": {
+                "leagueStanding": {"conferenceWinLossTies": wlt}
+            }}}}
+        }
+
+    def test_parses_win_loss(self):
+        from scraper.nextdata import extract_region_record
+        assert extract_region_record(self._payload("2-3")) == {"wins": 2, "losses": 3}
+
+    def test_parses_win_loss_ties(self):
+        from scraper.nextdata import extract_region_record
+        assert extract_region_record(self._payload("4-1-1")) == {"wins": 4, "losses": 1}
+
+    def test_missing_standings_returns_none(self):
+        from scraper.nextdata import extract_region_record
+        assert extract_region_record({"props": {"pageProps": {}}}) is None
+        assert extract_region_record(self._payload(None)) is None
+        assert extract_region_record(self._payload("bogus")) is None
+
+    def test_real_fixture_has_region_record(self):
+        import json
+        from pathlib import Path
+
+        from scraper.nextdata import extract_region_record
+        payload = json.loads(
+            (Path(__file__).parent / "fixtures" / "team_schedule.json").read_text(encoding="utf-8")
+        )
+        assert extract_region_record(payload) == {"wins": 2, "losses": 3}

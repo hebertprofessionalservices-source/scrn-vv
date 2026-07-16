@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ADMIN_COOKIE_NAME, COOKIE_NAME, verifyToken } from "@/lib/auth";
+import { ADMIN_COOKIE_NAME, verifyToken } from "@/lib/auth";
 
 const PUBLIC_PATHS = ["/unlock", "/api/unlock", "/_next", "/brand", "/favicon.ico"];
 
@@ -12,21 +12,15 @@ export async function middleware(req: NextRequest) {
     res.headers.set("x-next-pathname", pathname);
     return res;
   }
-  const secret = process.env.COOKIE_SECRET;
-  if (!secret) {
-    return new NextResponse("Server misconfiguration", { status: 500 });
-  }
-  const token = req.cookies.get(COOKIE_NAME)?.value;
-  const decoded = token ? await verifyToken(token, secret) : null;
-  if (!decoded) {
-    const url = req.nextUrl.clone();
-    url.pathname = "/unlock";
-    url.searchParams.set("next", pathname);
-    return NextResponse.redirect(url);
-  }
+  // Site-wide password gate temporarily disabled (2026-07). To restore,
+  // re-add the site cookie check here — see git history for the original.
 
   // Admin scope check for /admin/*
   if (pathname.startsWith("/admin")) {
+    const secret = process.env.COOKIE_SECRET;
+    if (!secret) {
+      return new NextResponse("Server misconfiguration", { status: 500 });
+    }
     const adminToken = req.cookies.get(ADMIN_COOKIE_NAME)?.value;
     const adminDecoded = adminToken ? await verifyToken(adminToken, secret) : null;
     if (!adminDecoded || adminDecoded.scope !== "admin") {

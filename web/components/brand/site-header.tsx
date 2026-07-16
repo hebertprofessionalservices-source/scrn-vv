@@ -9,14 +9,14 @@ export async function SiteHeader() {
   const [seasons, current] = await Promise.all([availableSeasons(), currentSeason()]);
   return (
     <header className="border-b border-chrome-500/15 bg-navy-900/95 backdrop-blur sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto h-16 px-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto h-24 px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/brand/varsity-voices-logo.jpg"
             alt="Varsity Voices"
             width={140}
             height={48}
-            className="h-10 w-auto rounded"
+            className="h-20 w-auto rounded"
             priority
           />
         </Link>
@@ -26,6 +26,9 @@ export async function SiteHeader() {
           </Link>
           <Link href={"/upcoming" as any} className="hover:text-crimson-500">
             Upcoming Games
+          </Link>
+          <Link href={"/standings" as any} className="hover:text-crimson-500">
+            Standings
           </Link>
           <Link href={"/teams" as any} className="hover:text-crimson-500">
             Teams

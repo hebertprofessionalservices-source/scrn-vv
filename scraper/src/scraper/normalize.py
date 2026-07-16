@@ -20,6 +20,7 @@ from scraper.models import (
     TeamRankings,
     TeamRecord,
     TeamStats,
+    TeamStreak,
 )
 
 # Maps flat season_stats keys -> (sub_model_group, field_name_or_alias)
@@ -55,6 +56,8 @@ def build_team(
     season: str,
     team_home: dict[str, Any],
     schedule_games: list[dict[str, Any]] | None = None,
+    region_record: dict[str, int] | None = None,
+    overall_standing: dict[str, Any] | None = None,
 ) -> Team:
     """Build a validated Team from team_home parser output.
 
@@ -103,7 +106,24 @@ def build_team(
         stats=stats,
         headCoach=team_home.get("headCoach"),
         maxprepsUrl=team_home.get("maxprepsUrl"),
+        regionRecord=TeamRecord(**region_record) if region_record else None,
+        **_standing_fields(overall_standing),
     )
+
+
+def _standing_fields(overall_standing: dict[str, Any] | None) -> dict[str, Any]:
+    """Optional Team kwargs from extract_overall_standing() output."""
+    if not overall_standing:
+        return {}
+    out: dict[str, Any] = {}
+    for key in ("homeRecord", "awayRecord", "neutralRecord"):
+        rec = overall_standing.get(key)
+        if rec:
+            out[key] = TeamRecord(**rec)
+    streak = overall_standing.get("streak")
+    if streak:
+        out["streak"] = TeamStreak(**streak)
+    return out
 
 
 def _build_player_stats(flat: dict[str, Any]) -> PlayerStats:

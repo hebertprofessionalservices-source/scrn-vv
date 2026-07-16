@@ -11,21 +11,14 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { buildSearchIndex, type SearchEntry } from "@/lib/search-index";
-import type { Player, Team } from "@/lib/types";
+import { buildFuse, type SearchEntry } from "@/lib/search-index";
 
-export function CommandPalette({
-  teams,
-  players,
-}: {
-  teams: Team[];
-  players: Player[];
-}) {
+export function CommandPalette({ entries }: { entries: SearchEntry[] }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();
 
-  const fuse = useMemo(() => buildSearchIndex(teams, players), [teams, players]);
+  const fuse = useMemo(() => buildFuse(entries), [entries]);
   const results = useMemo<SearchEntry[]>(
     () =>
       query.trim() ? fuse.search(query, { limit: 25 }).map((r) => r.item) : [],

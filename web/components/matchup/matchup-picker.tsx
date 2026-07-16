@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
 import type { Team } from "@/lib/types";
@@ -67,16 +68,30 @@ export function MatchupPicker({
 }) {
   const [aId, setAId] = useState(initialA);
   const [bId, setBId] = useState(initialB);
+  const router = useRouter();
 
   const byId = useMemo(() => new Map(teams.map((t) => [t.id, t])), [teams]);
   const teamA = byId.get(aId);
   const teamB = byId.get(bId);
 
+  // Keep the URL in sync so the server-rendered sections below the picker
+  // (storylines, key players, series history) update with the selection.
+  function select(which: "a" | "b", id: string) {
+    const nextA = which === "a" ? id : aId;
+    const nextB = which === "b" ? id : bId;
+    if (which === "a") setAId(id);
+    else setBId(id);
+    const sp = new URLSearchParams();
+    if (nextA) sp.set("a", nextA);
+    if (nextB) sp.set("b", nextB);
+    router.replace(`/matchup?${sp.toString()}` as any, { scroll: false });
+  }
+
   return (
     <div className="space-y-8">
       <div className="grid sm:grid-cols-2 gap-4">
-        <TeamSelect label="Team A" value={aId} onChange={setAId} teams={teams} excludeId={bId} />
-        <TeamSelect label="Team B" value={bId} onChange={setBId} teams={teams} excludeId={aId} />
+        <TeamSelect label="Team A" value={aId} onChange={(id) => select("a", id)} teams={teams} excludeId={bId} />
+        <TeamSelect label="Team B" value={bId} onChange={(id) => select("b", id)} teams={teams} excludeId={aId} />
       </div>
 
       {teamA && teamB ? (

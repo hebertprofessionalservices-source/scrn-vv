@@ -1,5 +1,8 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam } from "@/components/matchup/matchup-picker";
+import { KeyPlayers } from "@/components/matchup/key-players";
+import { SeriesHistory } from "@/components/matchup/series-history";
+import { buildStorylines } from "@/lib/storylines";
 
 export default async function MatchupBuilderPage({
   searchParams,
@@ -53,6 +56,47 @@ export default async function MatchupBuilderPage({
           initialB={teams.some((t) => t.id === sp.b) ? sp.b : ""}
         />
       )}
+      <MatchupExtras a={sp.a} b={sp.b} data={data} />
     </main>
+  );
+}
+
+/** Storylines, key players, and series history for the selected pair. */
+function MatchupExtras({
+  a,
+  b,
+  data,
+}: {
+  a?: string;
+  b?: string;
+  data: Awaited<ReturnType<typeof loadDataset>>;
+}) {
+  const teamA = a ? data.teamsById.get(a) : undefined;
+  const teamB = b ? data.teamsById.get(b) : undefined;
+  if (!teamA || !teamB || teamA.id === teamB.id) return null;
+
+  const h2h = (data.gamesByTeam.get(teamA.id) ?? []).filter(
+    (g) => g.homeTeamId === teamB.id || g.awayTeamId === teamB.id,
+  );
+  const storylines = buildStorylines(data, teamA, teamB, h2h);
+
+  return (
+    <div className="mt-8 space-y-8">
+      {storylines.length > 0 && (
+        <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
+          <h2 className="font-display text-xl mb-3">Storylines</h2>
+          <ul className="space-y-2 text-sm">
+            {storylines.map((line) => (
+              <li key={line} className="flex gap-2">
+                <span className="text-crimson-500 shrink-0">—</span>
+                <span className="text-chrome-100">{line}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      <KeyPlayers away={teamA} home={teamB} playersByTeam={data.playersByTeam} />
+      <SeriesHistory away={teamA} home={teamB} h2h={h2h} />
+    </div>
   );
 }

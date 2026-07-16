@@ -6,6 +6,7 @@ import Link from "next/link";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/upcoming", label: "Upcoming Games" },
+  { href: "/standings", label: "Standings" },
   { href: "/teams", label: "Teams" },
   { href: "/players", label: "Players" },
   { href: "/matchup", label: "Match Up" },

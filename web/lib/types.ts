@@ -37,6 +37,13 @@ export interface Team {
   stats: TeamStats;
   headCoach: string | null;
   maxprepsUrl: string | null;
+  /** Official region record from MaxPreps standings; absent until scraped. */
+  regionRecord?: TeamRecord | null;
+  /** Official venue splits + current streak from MaxPreps standings. */
+  homeRecord?: TeamRecord | null;
+  awayRecord?: TeamRecord | null;
+  neutralRecord?: TeamRecord | null;
+  streak?: { count: number; result: "W" | "L" | "T" } | null;
 }
 
 export interface PassingStats { att: number; cmp: number; yds: number; td: number; int: number; rating: number; }

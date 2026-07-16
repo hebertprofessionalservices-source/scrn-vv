@@ -1,12 +1,10 @@
-import Image from "next/image";
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
-import { TopPerformerCard } from "@/components/cards/top-performer-card";
-import { TopDefenseCard } from "@/components/cards/top-defense-card";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
 import { ScoreStrip } from "@/components/cards/score-strip";
+import { HomeLeaderboards } from "@/components/home/home-leaderboards";
 import { buildEditorialContext } from "@/lib/editorial";
-import { topPlayersByStat, topDefensesByPPG, lastWeeksGames, seasonConcluded } from "@/lib/stats";
-import type { Player, Team } from "@/lib/types";
+import { buildLeaderboardData } from "@/lib/leaderboard";
+import { lastWeeksGames, seasonConcluded } from "@/lib/stats";
 
 export default async function Home() {
   const season = await currentSeason();
@@ -18,10 +16,7 @@ export default async function Home() {
     return <PreseasonEmptyState season={season} />;
   }
 
-  const topQBs = topPlayersByStat(data.players, "QB", (p) => p.stats.passing.yds, 3);
-  const topRBs = topPlayersByStat(data.players, "RB", (p) => p.stats.rushing.yds, 3);
-  const topWRs = topPlayersByStat(data.players, "WR", (p) => p.stats.receiving.yds, 3);
-  const topDef = topDefensesByPPG(data.teams, 3);
+  const leaderboards = buildLeaderboardData(data.teams, data.players);
 
   const lastWeek = lastWeeksGames(data.games);
 
@@ -41,15 +36,6 @@ export default async function Home() {
           </div>
         )}
         <h1 className="sr-only">Varsity Voices — Mississippi HS Football</h1>
-        <Image
-          src="/brand/varsity-voices-banner.jpg"
-          alt="Varsity Voices — Mississippi's #1 source for high school football, powered by State Championships Radio Network"
-          width={1584}
-          height={672}
-          priority
-          unoptimized
-          className="w-full max-w-4xl mx-auto h-auto rounded-2xl"
-        />
         {editorial?.featuredQuote && (
           <p className="mt-4 italic text-chrome-300">&ldquo;{editorial.featuredQuote}&rdquo;</p>
         )}
@@ -77,24 +63,7 @@ export default async function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 space-y-8 pb-12">
-        <Row label="Top 3 Quarterbacks" players={topQBs} teamsById={data.teamsById}
-          headline={(p) => `${p.stats.passing.yds.toLocaleString()} YDS · ${p.stats.passing.td} TD`}
-          secondary={(p) => `INT ${p.stats.passing.int} · RAT ${p.stats.passing.rating.toFixed(1)}`} />
-        <Row label="Top 3 Running Backs" players={topRBs} teamsById={data.teamsById}
-          headline={(p) => `${p.stats.rushing.yds.toLocaleString()} YDS · ${p.stats.rushing.td} TD`}
-          secondary={(p) => `${p.stats.rushing.att} ATT · ${p.stats.rushing.ypc.toFixed(1)} YPC`} />
-        <Row label="Top 3 Receivers" players={topWRs} teamsById={data.teamsById}
-          headline={(p) => `${p.stats.receiving.yds.toLocaleString()} YDS · ${p.stats.receiving.td} TD`}
-          secondary={(p) => `${p.stats.receiving.rec} REC`} />
-
-        <div>
-          <h2 className="font-display text-2xl mb-3">Top 3 Defenses</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {topDef.map((d, i) => (
-              <TopDefenseCard key={d.team.id} team={d.team} ppg={d.ppg} rank={(i + 1) as 1 | 2 | 3} />
-            ))}
-          </div>
-        </div>
+        <HomeLeaderboards data={leaderboards} />
 
         <div>
           <h2 className="font-display text-2xl mb-3">Last Week&apos;s Scores</h2>
@@ -129,38 +98,5 @@ function LedPageBackground() {
       <div className="fixed inset-0 -z-10 bg-led-dots" aria-hidden />
       <div className="fixed inset-0 -z-10 bg-navy-900/80" aria-hidden />
     </>
-  );
-}
-
-function Row({
-  label, players, teamsById, headline, secondary,
-}: {
-  label: string;
-  players: Player[];
-  teamsById: Map<string, Team>;
-  headline: (p: Player) => string;
-  secondary: (p: Player) => string;
-}) {
-  if (players.length === 0) {
-    return (
-      <div>
-        <h2 className="font-display text-2xl mb-3">{label}</h2>
-        <p className="text-chrome-500 text-sm">No data yet.</p>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <h2 className="font-display text-2xl mb-3">{label}</h2>
-      <div className="grid sm:grid-cols-3 gap-4">
-        {players.map((p, i) => (
-          <TopPerformerCard
-            key={p.id} player={p} team={teamsById.get(p.teamId)}
-            headline={headline(p)} secondary={secondary(p)}
-            rank={(i + 1) as 1 | 2 | 3}
-          />
-        ))}
-      </div>
-    </div>
   );
 }

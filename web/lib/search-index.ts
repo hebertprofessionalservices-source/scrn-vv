@@ -24,7 +24,11 @@ const OPTIONS: IFuseOptions<SearchEntry> = {
   ignoreLocation: true,
 };
 
-export function buildSearchIndex(teams: Team[], players: Player[]) {
+/**
+ * Compact entries built server-side so only ~search-relevant strings cross
+ * the client boundary — never full Team/Player objects (12MB+ per page).
+ */
+export function buildSearchEntries(teams: Team[], players: Player[]): SearchEntry[] {
   const entries: SearchEntry[] = [];
   for (const t of teams) {
     entries.push({
@@ -46,7 +50,11 @@ export function buildSearchIndex(teams: Team[], players: Player[]) {
       href: `/players/${p.id}`,
     });
   }
+  return entries;
+}
+
+export function buildFuse(entries: SearchEntry[]) {
   return new Fuse(entries, OPTIONS);
 }
 
-export type SearchIndex = ReturnType<typeof buildSearchIndex>;
+export type SearchIndex = ReturnType<typeof buildFuse>;

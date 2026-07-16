@@ -3,6 +3,9 @@ import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
+import { SeriesHistory } from "@/components/matchup/series-history";
+import { KeyPlayers } from "@/components/matchup/key-players";
+import { buildStorylines } from "@/lib/storylines";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel } from "@/lib/team-format";
@@ -22,6 +25,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
   const homeGames = data.gamesByTeam.get(home.id) ?? [];
   const h2h = awayGames.filter((g) =>
     g.homeTeamId === home.id || g.awayTeamId === home.id);
+  const storylines = buildStorylines(data, away, home, h2h);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -43,7 +47,25 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         </div>
       </div>
 
+      {storylines.length > 0 && (
+        <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
+          <h2 className="font-display text-xl mb-3">Storylines</h2>
+          <ul className="space-y-2 text-sm">
+            {storylines.map((line) => (
+              <li key={line} className="flex gap-2">
+                <span className="text-crimson-500 shrink-0">—</span>
+                <span className="text-chrome-100">{line}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <TaleOfTheTape a={away} b={home} />
+
+      <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
+
+      <SeriesHistory away={away} home={home} h2h={h2h} />
 
       <div className="grid md:grid-cols-2 gap-6">
         <section>

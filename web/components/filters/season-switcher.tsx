@@ -12,7 +12,7 @@ export function SeasonSwitcher({ current, options }: { current: string; options:
       }}
       className="bg-navy-700 border border-chrome-500/20 rounded px-2 py-1 text-xs"
     >
-      {options.map((s) => <option key={s} value={s}>{s}</option>)}
+      {options.map((s) => <option key={s} value={s}>{s.split("-")[0]}</option>)}
     </select>
   );
 }
