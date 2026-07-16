@@ -64,10 +64,15 @@ def test_discover_fallback_uses_season_specific_uuids_26_27():
 
 
 def test_discover_uses_24_25_fallback_when_season_is_24_25():
-    """Fallback for 24-25 must use the 24-25 UUIDs and embed the 24-25 season path."""
+    """Fallback for 24-25 must use the 24-25 UUIDs and embed the 24-25 season path.
+
+    MAIS divisions joined the dataset in 25-26; their 24-25 statedivision UUIDs
+    were never probed, so the 24-25 fallback intentionally covers MHSAA only.
+    """
     links = discover_class_links("<html></html>", season_short="24-25")
     classes = {entry["classification"] for entry in links}
-    assert classes == set(TARGET_CLASSES), f"missing: {set(TARGET_CLASSES) - classes}"
+    expected = set(_FALLBACK_STATEDIVISIONID_24_25)
+    assert classes == expected, f"missing: {expected - classes}"
     for entry in links:
         cls = entry["classification"]
         expected_sdid = _FALLBACK_STATEDIVISIONID_24_25[cls]
@@ -85,11 +90,19 @@ def test_discover_falls_back_to_26_27_for_unknown_season():
     assert classes == set(TARGET_CLASSES)
 
 
-def test_discover_all_seven_classes_any_season_empty_html():
-    """discover_class_links always returns 7 entries when fed empty HTML."""
+def test_discover_all_classes_any_season_empty_html():
+    """discover_class_links returns every fallback class when fed empty HTML.
+
+    24-25 predates the MAIS import, so it expects MHSAA classes only.
+    """
     for season in ("24-25", "25-26", "26-27", "27-28"):
         links = discover_class_links("<html></html>", season_short=season)
         classes = {entry["classification"] for entry in links}
-        assert classes == set(TARGET_CLASSES), (
-            f"season {season}: missing classes {set(TARGET_CLASSES) - classes}"
+        expected = (
+            set(_FALLBACK_STATEDIVISIONID_24_25)
+            if season == "24-25"
+            else set(TARGET_CLASSES)
+        )
+        assert classes == expected, (
+            f"season {season}: missing classes {expected - classes}"
         )

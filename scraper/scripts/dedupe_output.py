@@ -38,7 +38,8 @@ def main() -> None:
             after = len(cleaned)
             if before != after:
                 path.write_text(json.dumps(cleaned, indent=2, default=str), encoding="utf-8")
-                print(f"[{season}] {filename}: {before:,} -> {after:,} (removed {before - after:,})")
+                removed = before - after
+                print(f"[{season}] {filename}: {before:,} -> {after:,} (removed {removed:,})")
             else:
                 print(f"[{season}] {filename}: {before:,} (no dupes)")
 

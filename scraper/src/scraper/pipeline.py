@@ -19,7 +19,12 @@ from scraper.boxscore import parse_box_score
 from scraper.browser import BrowserHarness
 from scraper.cache import CrawlCache
 from scraper.logos import download_team_logo
-from scraper.nextdata import derive_team_season_urls, extract_next_data_payload
+from scraper.nextdata import (
+    derive_team_season_urls,
+    extract_next_data_payload,
+    extract_overall_standing,
+    extract_region_record,
+)
 from scraper.normalize import build_games, build_players, build_team
 from scraper.report import RunStats, build_report
 from scraper.roster import parse_roster
@@ -212,11 +217,15 @@ async def _run_pipeline(
                     log.info("team_skipped", team_id=tid)
                     continue
 
-                await download_team_logo(
+                logo_path = await download_team_logo(
                     team_id=tid,
                     logo_url=team_home.get("logoUrl"),
                     out_dir=config.LOGOS_DIR,
                 )
+                # Serve the downloaded copy from the site instead of hotlinking
+                # MaxPreps' CDN; keep the remote URL when the download failed.
+                if logo_path is not None:
+                    team_home["logoUrl"] = f"/team-logos/{tid}.png"
 
                 if teams_only:
                     teams_out.append(
@@ -282,6 +291,8 @@ async def _run_pipeline(
                     season=season,
                     team_home=team_home,
                     schedule_games=schedule_partials,
+                    region_record=extract_region_record(schedule_payload),
+                    overall_standing=extract_overall_standing(schedule_payload),
                 )
                 teams_out.append(team.model_dump(by_alias=True))
 
