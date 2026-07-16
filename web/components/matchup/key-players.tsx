@@ -50,7 +50,7 @@ function leadersFor(team: Team, players: Player[]): { offense: Leader[]; defense
     const s = tackler.stats.defense;
     defense.push({
       player: tackler,
-      role: "TKL",
+      role: tackler.position,
       line: `${s.tackles} TKL · ${s.sacks} SACK · ${s.int} INT`,
     });
   }
@@ -59,7 +59,7 @@ function leadersFor(team: Team, players: Player[]): { offense: Leader[]; defense
     const s = rusher.stats.defense;
     defense.push({
       player: rusher,
-      role: "EDGE",
+      role: rusher.position,
       line: `${s.sacks} SACK · ${s.tackles} TKL · ${s.ff} FF`,
     });
   }
