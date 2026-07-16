@@ -6,6 +6,8 @@ import { FormGuide } from "@/components/matchup/form-guide";
 import { SeriesHistory } from "@/components/matchup/series-history";
 import { KeyPlayers } from "@/components/matchup/key-players";
 import { buildStorylines } from "@/lib/storylines";
+import { loadHistory } from "@/lib/history-server";
+import { buildMatchupHistory } from "@/lib/matchup-history";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel } from "@/lib/team-format";
@@ -25,7 +27,12 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
   const homeGames = data.gamesByTeam.get(home.id) ?? [];
   const h2h = awayGames.filter((g) =>
     g.homeTeamId === home.id || g.awayTeamId === home.id);
-  const storylines = buildStorylines(data, away, home, h2h);
+  const history = await loadHistory();
+  const historyView = buildMatchupHistory(history, away, home, Number(season.slice(0, 4)));
+  const storylines = [
+    ...buildStorylines(data, away, home, h2h),
+    ...historyView.milestones,
+  ].slice(0, 8);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -65,7 +72,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
 
       <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
 
-      <SeriesHistory away={away} home={home} h2h={h2h} />
+      <SeriesHistory away={away} home={home} h2h={h2h} view={historyView} />
 
       <div className="grid md:grid-cols-2 gap-6">
         <section>

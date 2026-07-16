@@ -2,6 +2,8 @@ import Link from "next/link";
 import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import { displaySlug } from "@/lib/display-slug";
+import { fmtWLT } from "@/lib/matchup-history";
+import type { CoachSummary } from "@/lib/history";
 import type { PowerRank } from "@/lib/power";
 import type { Game, Team } from "@/lib/types";
 
@@ -52,10 +54,12 @@ export function TeamVitals({
   team,
   power,
   lastLoss,
+  coach,
 }: {
   team: Team;
   power: PowerRank | null;
   lastLoss: LastLoss | null;
+  coach?: CoachSummary | null;
 }) {
   const played = team.record.wins + team.record.losses > 0;
   return (
@@ -124,10 +128,21 @@ export function TeamVitals({
 
       <VitalCard label="Head Coach" className="sm:col-span-2 lg:col-span-4">
         <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
-          <span className="font-display text-2xl">{team.headCoach ?? "n/a"}</span>
-          <span className="text-sm text-chrome-500">Years at school: n/a</span>
-          <span className="text-sm text-chrome-500">Record at school: n/a</span>
-          <span className="text-sm text-chrome-500">Overall record: n/a</span>
+          <span className="font-display text-2xl">
+            {coach?.name ?? team.headCoach ?? "n/a"}
+          </span>
+          <span className="text-sm text-chrome-500">
+            Years at school:{" "}
+            <span className="text-chrome-300">{coach ? coach.yearsAtSchool : "n/a"}</span>
+          </span>
+          <span className="text-sm text-chrome-500">
+            Record at school:{" "}
+            <span className="text-chrome-300">{coach ? fmtWLT(coach.atSchool) : "n/a"}</span>
+          </span>
+          <span className="text-sm text-chrome-500">
+            Overall record:{" "}
+            <span className="text-chrome-300">{coach ? fmtWLT(coach.career) : "n/a"}</span>
+          </span>
         </div>
       </VitalCard>
     </section>

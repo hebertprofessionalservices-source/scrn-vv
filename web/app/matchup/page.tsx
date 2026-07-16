@@ -3,6 +3,8 @@ import { MatchupPicker, type MatchupTeam } from "@/components/matchup/matchup-pi
 import { KeyPlayers } from "@/components/matchup/key-players";
 import { SeriesHistory } from "@/components/matchup/series-history";
 import { buildStorylines } from "@/lib/storylines";
+import { loadHistory } from "@/lib/history-server";
+import { buildMatchupHistory } from "@/lib/matchup-history";
 
 export default async function MatchupBuilderPage({
   searchParams,
@@ -56,20 +58,22 @@ export default async function MatchupBuilderPage({
           initialB={teams.some((t) => t.id === sp.b) ? sp.b : ""}
         />
       )}
-      <MatchupExtras a={sp.a} b={sp.b} data={data} />
+      <MatchupExtras a={sp.a} b={sp.b} data={data} season={season} />
     </main>
   );
 }
 
 /** Storylines, key players, and series history for the selected pair. */
-function MatchupExtras({
+async function MatchupExtras({
   a,
   b,
   data,
+  season,
 }: {
   a?: string;
   b?: string;
   data: Awaited<ReturnType<typeof loadDataset>>;
+  season: string;
 }) {
   const teamA = a ? data.teamsById.get(a) : undefined;
   const teamB = b ? data.teamsById.get(b) : undefined;
@@ -78,7 +82,12 @@ function MatchupExtras({
   const h2h = (data.gamesByTeam.get(teamA.id) ?? []).filter(
     (g) => g.homeTeamId === teamB.id || g.awayTeamId === teamB.id,
   );
-  const storylines = buildStorylines(data, teamA, teamB, h2h);
+  const history = await loadHistory();
+  const historyView = buildMatchupHistory(history, teamA, teamB, Number(season.slice(0, 4)));
+  const storylines = [
+    ...buildStorylines(data, teamA, teamB, h2h),
+    ...historyView.milestones,
+  ].slice(0, 8);
 
   return (
     <div className="mt-8 space-y-8">
@@ -96,7 +105,7 @@ function MatchupExtras({
         </section>
       )}
       <KeyPlayers away={teamA} home={teamB} playersByTeam={data.playersByTeam} />
-      <SeriesHistory away={teamA} home={teamB} h2h={h2h} />
+      <SeriesHistory away={teamA} home={teamB} h2h={h2h} view={historyView} />
     </div>
   );
 }

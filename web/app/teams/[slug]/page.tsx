@@ -6,6 +6,8 @@ import { TeamStatPanel } from "@/components/team/team-stat-panel";
 import { TeamVitals, findLastLoss } from "@/components/team/team-vitals";
 import { buildPowerRankings } from "@/lib/power";
 import { buildTeamEfficiency } from "@/lib/efficiency";
+import { loadHistory } from "@/lib/history-server";
+import { teamCoachView } from "@/lib/matchup-history";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { Badge } from "@/components/ui/badge";
@@ -58,6 +60,7 @@ export default async function TeamDetailPage({
   const power = buildPowerRankings(data).get(team.id) ?? null;
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
+  const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -100,7 +103,7 @@ export default async function TeamDetailPage({
         </Link>
       </header>
 
-      <TeamVitals team={team} power={power} lastLoss={lastLoss} />
+      <TeamVitals team={team} power={power} lastLoss={lastLoss} coach={coach} />
 
       <TeamStatPanel team={team} efficiency={efficiency} />
 
