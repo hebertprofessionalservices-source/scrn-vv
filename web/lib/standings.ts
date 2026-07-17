@@ -95,7 +95,10 @@ function collectRegionState(data: Dataset, todayKey: string): RegionState {
     const home = data.teamsByAlias.get(g.homeTeamId);
     const away = data.teamsByAlias.get(g.awayTeamId);
     if (!home || !away) continue;
+    // Region games are same district AND same classification — playoff races
+    // never cross classification lines.
     if (!home.district || home.district !== away.district) continue;
+    if (home.classification !== away.classification) continue;
     const district = home.district;
 
     if (g.status === "final" && g.homeScore !== null && g.awayScore !== null) {
@@ -316,7 +319,11 @@ export function teamRecordSplits(
     if (opp.classification === team.classification) {
       cls[won ? "wins" : "losses"] += 1;
     }
-    if (team.district && opp.district === team.district) {
+    if (
+      team.district &&
+      opp.district === team.district &&
+      opp.classification === team.classification
+    ) {
       region[won ? "wins" : "losses"] += 1;
     }
   }
