@@ -1,12 +1,18 @@
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
 import { ScoreStrip } from "@/components/cards/score-strip";
-import { HomeLeaderboards } from "@/components/home/home-leaderboards";
+import { HomePerformances, OutstandingPerformances } from "@/components/home/home-performances";
 import { buildEditorialContext } from "@/lib/editorial";
 import { buildLeaderboardData } from "@/lib/leaderboard";
+import { buildWeeklyView } from "@/lib/weekly";
 import { lastWeeksGames, seasonConcluded } from "@/lib/stats";
 
-export default async function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ asof?: string }>;
+}) {
+  const { asof } = await searchParams;
   const season = await currentSeason();
   const data = await loadDataset(season);
   const editorial = await loadEditorial();
@@ -17,6 +23,8 @@ export default async function Home() {
   }
 
   const leaderboards = buildLeaderboardData(data.teams, data.players);
+  // ?asof=YYYY-MM-DD replays the season as of a past date (testing aid).
+  const weekly = buildWeeklyView(data, asof);
 
   const lastWeek = lastWeeksGames(data.games);
 
@@ -63,7 +71,9 @@ export default async function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 space-y-8 pb-12">
-        <HomeLeaderboards data={leaderboards} />
+        <HomePerformances leaderboards={leaderboards} weekly={weekly} />
+
+        <OutstandingPerformances weekly={weekly} />
 
         <div>
           <h2 className="font-display text-2xl mb-3">Last Week&apos;s Scores</h2>

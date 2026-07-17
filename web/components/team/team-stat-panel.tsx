@@ -4,14 +4,19 @@ import type { Team } from "@/lib/types";
 export function TeamStatPanel({
   team,
   efficiency,
+  runPass,
 }: {
   team: Team;
   efficiency?: TeamEfficiency | null;
+  /** Season rush/pass attempt totals summed from the roster. */
+  runPass?: { rush: number; pass: number } | null;
 }) {
   const games = team.record.wins + team.record.losses;
   const ppg = games ? (team.stats.pointsFor / games).toFixed(1) : "—";
   const papg = games ? (team.stats.pointsAgainst / games).toFixed(1) : "—";
   const e = efficiency ?? null;
+  const plays = (runPass?.rush ?? 0) + (runPass?.pass ?? 0);
+  const runShare = plays > 0 ? Math.round((runPass!.rush / plays) * 100) : null;
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
       <Stat label="Record" value={`${team.record.wins}–${team.record.losses}`} />
@@ -54,6 +59,15 @@ export function TeamStatPanel({
         sub={
           e?.defYdsPerPass != null
             ? `${e.defYdsPerPass.toFixed(1)} per pass att`
+            : undefined
+        }
+      />
+      <Stat
+        label="Run / Pass"
+        value={runShare !== null ? `${runShare}% / ${100 - runShare}%` : "n/a"}
+        sub={
+          runShare !== null
+            ? `${runPass!.rush.toLocaleString()} rush · ${runPass!.pass.toLocaleString()} pass att`
             : undefined
         }
       />

@@ -61,6 +61,10 @@ export default async function TeamDetailPage({
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
+  const runPass = players.reduce(
+    (acc, p) => ({ rush: acc.rush + p.stats.rushing.att, pass: acc.pass + p.stats.passing.att }),
+    { rush: 0, pass: 0 },
+  );
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -105,7 +109,7 @@ export default async function TeamDetailPage({
 
       <TeamVitals team={team} power={power} lastLoss={lastLoss} coach={coach} />
 
-      <TeamStatPanel team={team} efficiency={efficiency} />
+      <TeamStatPanel team={team} efficiency={efficiency} runPass={runPass} />
 
       <section>
         <h2 className="font-display text-2xl mb-3">Schedule</h2>

@@ -34,7 +34,7 @@ const MAX_UNATTRIBUTED = 0.15;
 /** Minimum share of games with box scores before def yardage joins the index. */
 const MIN_DEF_COVERAGE = 0.5;
 
-function normalizeName(label: string): string {
+export function normalizeName(label: string): string {
   return label
     .replace(/\(.*?\)/g, "")
     .toLowerCase()
@@ -44,7 +44,7 @@ function normalizeName(label: string): string {
 }
 
 /** "d pittman" — first-initial form for abbreviated box-score labels. */
-function initialForm(normalized: string): string | null {
+export function initialForm(normalized: string): string | null {
   const parts = normalized.split(" ");
   if (parts.length < 2) return null;
   return `${parts[0][0]} ${parts[parts.length - 1]}`;
