@@ -14,6 +14,7 @@ import { Badge } from "@/components/ui/badge";
 import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel, regionLabel, titleCaseSlug } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
+import { runPassAttempts } from "@/lib/run-pass";
 import type { Player } from "@/lib/types";
 
 // Offense first, then defense, then special teams.
@@ -61,15 +62,7 @@ export default async function TeamDetailPage({
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
-  // Run/Pass cell hidden from production until client review; flip to
-  // true to bring it back.
-  const SHOW_RUN_PASS = true;
-  const runPass = SHOW_RUN_PASS
-    ? players.reduce(
-        (acc, p) => ({ rush: acc.rush + p.stats.rushing.att, pass: acc.pass + p.stats.passing.att }),
-        { rush: 0, pass: 0 },
-      )
-    : null;
+  const runPass = runPassAttempts(players);
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">

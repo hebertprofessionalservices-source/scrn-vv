@@ -22,9 +22,12 @@ export function buildStorylines(
   const odds = playoffOddsForGame(data, away.id, home.id, today);
   if (odds) {
     for (const t of [away, home]) {
-      const win = (t.id === odds.teamAId ? odds.ifTeamWins : odds.ifTeamLoses).get(t.id);
-      const loss = (t.id === odds.teamAId ? odds.ifTeamLoses : odds.ifTeamWins).get(t.id);
-      if (win !== undefined && loss !== undefined && win !== loss) {
+      const winRaw = (t.id === odds.teamAId ? odds.ifTeamWins : odds.ifTeamLoses).get(t.id);
+      const lossRaw = (t.id === odds.teamAId ? odds.ifTeamLoses : odds.ifTeamWins).get(t.id);
+      if (winRaw === undefined || lossRaw === undefined) continue;
+      const win = Math.round(winRaw);
+      const loss = Math.round(lossRaw);
+      if (win !== loss) {
         lines.push(
           `With a win, ${t.name}'s playoff chances rise to ${win}% — with a loss they fall to ${loss}%`,
         );

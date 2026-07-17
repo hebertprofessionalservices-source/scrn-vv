@@ -1,10 +1,13 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
-import { MatchupPicker, type MatchupTeam } from "@/components/matchup/matchup-picker";
+import { MatchupPicker, type MatchupTeam, type PairOutlook } from "@/components/matchup/matchup-picker";
 import { KeyPlayers } from "@/components/matchup/key-players";
 import { SeriesHistory } from "@/components/matchup/series-history";
 import { buildStorylines } from "@/lib/storylines";
 import { loadHistory } from "@/lib/history-server";
 import { buildMatchupHistory } from "@/lib/matchup-history";
+import { buildPowerRankings } from "@/lib/power";
+import { matchupPlayoffOutlook, playoffPotentials } from "@/lib/standings";
+import { runPassAttempts } from "@/lib/run-pass";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
 // until client revisions land. Flip to true to bring them back.
@@ -19,26 +22,46 @@ export default async function MatchupBuilderPage({
   const season = await currentSeason();
   const data = await loadDataset(season);
 
+  const power = buildPowerRankings(data);
+  const potentials = playoffPotentials(data);
+
   const teams: MatchupTeam[] = data.teams
-    .map((t) => ({
-      id: t.id,
-      name: t.name,
-      logoUrl: t.logoUrl,
-      classification: t.classification,
-      district: t.district,
-      record: { wins: t.record.wins, losses: t.record.losses },
-      stateRank: t.rankings.stateOverall,
-      stats: {
-        pointsFor: t.stats.pointsFor,
-        pointsAgainst: t.stats.pointsAgainst,
-        yardsFor: t.stats.yardsFor,
-        passYdsFor: t.stats.passYdsFor,
-        rushYdsFor: t.stats.rushYdsFor,
-        turnoversForced: t.stats.turnoversForced,
-        turnoversLost: t.stats.turnoversLost,
-      },
-    }))
+    .map((t) => {
+      const p = power.get(t.id);
+      return {
+        id: t.id,
+        name: t.name,
+        logoUrl: t.logoUrl,
+        classification: t.classification,
+        district: t.district,
+        record: { wins: t.record.wins, losses: t.record.losses },
+        splits: {
+          home: t.homeRecord ?? null,
+          away: t.awayRecord ?? null,
+          neutral: t.neutralRecord ?? null,
+          region: t.regionRecord ?? null,
+        },
+        power: p ? { overall: p.overallRank, cls: p.classRank } : null,
+        playoffPct: potentials.get(t.id) ?? null,
+        runPass: runPassAttempts(data.playersByTeam.get(t.id) ?? []),
+        stats: {
+          pointsFor: t.stats.pointsFor,
+          pointsAgainst: t.stats.pointsAgainst,
+          yardsFor: t.stats.yardsFor,
+          passYdsFor: t.stats.passYdsFor,
+          rushYdsFor: t.stats.rushYdsFor,
+          turnoversForced: t.stats.turnoversForced,
+          turnoversLost: t.stats.turnoversLost,
+        },
+      };
+    })
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  let pairOutlook: PairOutlook | null = null;
+  if (sp.a && sp.b && sp.a !== sp.b) {
+    const outlook = matchupPlayoffOutlook(data, sp.a, sp.b);
+    if (outlook) pairOutlook = { aId: sp.a, bId: sp.b, ...outlook };
+  }
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-8">
@@ -60,6 +83,7 @@ export default async function MatchupBuilderPage({
           teams={teams}
           initialA={teams.some((t) => t.id === sp.a) ? sp.a : ""}
           initialB={teams.some((t) => t.id === sp.b) ? sp.b : ""}
+          pairOutlook={pairOutlook}
         />
       )}
       <MatchupExtras a={sp.a} b={sp.b} data={data} season={season} />

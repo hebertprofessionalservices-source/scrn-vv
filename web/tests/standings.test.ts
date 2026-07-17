@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildDataset } from "@/lib/data";
-import { buildStandings } from "@/lib/standings";
+import { buildStandings, matchupPlayoffOutlook } from "@/lib/standings";
 import type { Game, Player, Team } from "@/lib/types";
 
 function makeTeam(
@@ -87,10 +87,13 @@ describe("buildStandings", () => {
       makeTeam("weak", "1A Region 1", 0, 8, 60, 420),
     ];
     const games = [
-      // Played region games establish current region standings.
+      // Played region games establish current region standings AND the
+      // SOS-adjusted ratings that drive the simulation's win probabilities.
       makeGame("p1", "strong", "weak", 48, 0, "2025-09-05"),
       makeGame("p2", "t2", "t5", 28, 14, "2025-09-05"),
       makeGame("p3", "t3", "t4", 21, 20, "2025-09-12"),
+      makeGame("p4", "t4", "weak", 35, 7, "2025-09-19"),
+      makeGame("p5", "strong", "t4", 42, 7, "2025-09-26"),
       // Remaining region games (future).
       makeGame("f1", "strong", "t2", null, null, "2025-10-24"),
       makeGame("f2", "t3", "weak", null, null, "2025-10-24"),
@@ -113,6 +116,56 @@ describe("buildStandings", () => {
     const standings = buildStandings(data, new Date("2026-07-01"));
     expect(standings.regions[0].rows[0].region).toBeNull();
     expect(standings.regions[0].rows[0].playoffPct).toBeNull();
+  });
+
+  it("matchup outlook: region rivals get exact win/loss conditioning", () => {
+    const teams = [
+      makeTeam("a", "1A Region 1", 2, 0),
+      makeTeam("b", "1A Region 1", 1, 1),
+      makeTeam("c", "1A Region 1", 1, 1),
+      makeTeam("d", "1A Region 1", 0, 2),
+      makeTeam("e", "1A Region 1", 0, 2),
+    ];
+    const games = [
+      makeGame("p1", "a", "b", 28, 14, "2025-09-05"),
+      makeGame("p2", "c", "d", 21, 7, "2025-09-05"),
+      makeGame("p3", "b", "e", 28, 7, "2025-09-12"),
+      makeGame("f1", "b", "c", null, null, "2025-10-24"),
+      makeGame("f2", "a", "d", null, null, "2025-10-24"),
+      makeGame("f3", "d", "e", null, null, "2025-10-31"),
+    ];
+    const data = buildDataset({ teams, players, games });
+    const outlook = matchupPlayoffOutlook(data, "b", "c", new Date("2025-10-20"))!;
+    expect(outlook).not.toBeNull();
+    for (const side of [outlook.a, outlook.b]) {
+      expect(side.current).not.toBeNull();
+      expect(side.ifWin!).toBeGreaterThanOrEqual(side.ifLoss!);
+      expect(side.ifWin!).toBeGreaterThanOrEqual(side.current!);
+      expect(side.ifLoss!).toBeLessThanOrEqual(side.current!);
+    }
+  });
+
+  it("matchup outlook: non-region games shift odds through the rating", () => {
+    const teams = [
+      makeTeam("a", "1A Region 1", 1, 0),
+      makeTeam("b", "1A Region 1", 0, 1),
+      makeTeam("x", "1A Region 2", 1, 0),
+      makeTeam("y", "1A Region 2", 0, 1),
+    ];
+    const games = [
+      makeGame("p1", "a", "b", 28, 14, "2025-09-05"),
+      makeGame("p2", "x", "y", 21, 7, "2025-09-05"),
+      makeGame("f1", "b", "a", null, null, "2025-10-24"),
+      makeGame("f2", "y", "x", null, null, "2025-10-24"),
+    ];
+    const data = buildDataset({ teams, players, games });
+    // a (Region 1) vs x (Region 2): no shared region game exists.
+    const outlook = matchupPlayoffOutlook(data, "a", "x", new Date("2025-10-20"))!;
+    expect(outlook).not.toBeNull();
+    for (const side of [outlook.a, outlook.b]) {
+      expect(side.current).not.toBeNull();
+      expect(side.ifWin!).toBeGreaterThanOrEqual(side.ifLoss!);
+    }
   });
 
   it("prefers official (scraped) region records over derived ones", () => {

@@ -4,7 +4,15 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
+import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
+import { fmtPct, recordSplitsLabel } from "@/lib/matchup-format";
+import type { MatchupOutlook } from "@/lib/standings";
 import type { Team } from "@/lib/types";
+
+interface WL {
+  wins: number;
+  losses: number;
+}
 
 export interface MatchupTeam {
   id: string;
@@ -12,8 +20,11 @@ export interface MatchupTeam {
   logoUrl: string | null;
   classification: Team["classification"];
   district: string | null;
-  record: { wins: number; losses: number };
-  stateRank: number | null;
+  record: WL;
+  splits: { home: WL | null; away: WL | null; neutral: WL | null; region: WL | null };
+  power: { overall: number; cls: number } | null;
+  playoffPct: number | null;
+  runPass: RunPassSplit | null;
   stats: {
     pointsFor: number;
     pointsAgainst: number;
@@ -23,6 +34,13 @@ export interface MatchupTeam {
     turnoversForced: number;
     turnoversLost: number;
   };
+}
+
+export interface PairOutlook {
+  aId: string;
+  bId: string;
+  a: MatchupOutlook;
+  b: MatchupOutlook;
 }
 
 interface StatRow {
@@ -61,10 +79,13 @@ export function MatchupPicker({
   teams,
   initialA = "",
   initialB = "",
+  pairOutlook = null,
 }: {
   teams: MatchupTeam[];
   initialA?: string;
   initialB?: string;
+  /** Server-computed win/loss playoff odds for the pair in the URL. */
+  pairOutlook?: PairOutlook | null;
 }) {
   const [aId, setAId] = useState(initialA);
   const [bId, setBId] = useState(initialB);
@@ -97,15 +118,23 @@ export function MatchupPicker({
       {teamA && teamB ? (
         <div>
           <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-4 mb-6">
-            <TeamHeader team={teamA} align="right" />
+            <TeamHeader
+              team={teamA}
+              align="right"
+              outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.a : null}
+            />
             <div className="font-display text-4xl text-crimson-500 self-center">VS</div>
-            <TeamHeader team={teamB} align="left" />
+            <TeamHeader
+              team={teamB}
+              align="left"
+              outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.b : null}
+            />
           </div>
 
           <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
-                {STAT_ROWS.map((row) => {
+                {STAT_ROWS.flatMap((row) => {
                   const va = row.value(teamA);
                   const vb = row.value(teamB);
                   const aMissing = Boolean(row.needsPrintStats) && !hasPrintStats(teamA);
@@ -113,7 +142,7 @@ export function MatchupPicker({
                   const comparable = !aMissing && !bMissing;
                   const aBetter = comparable && (row.lowerIsBetter ? va < vb : va > vb);
                   const bBetter = comparable && (row.lowerIsBetter ? vb < va : vb > va);
-                  return (
+                  const tr = (
                     <tr key={row.label} className="border-t border-chrome-500/10 first:border-t-0">
                       <td className={cellClass("right", aBetter)}>{aMissing ? "—" : row.format(va)}</td>
                       <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
@@ -122,6 +151,21 @@ export function MatchupPicker({
                       <td className={cellClass("left", bBetter)}>{bMissing ? "—" : row.format(vb)}</td>
                     </tr>
                   );
+                  if (row.label !== "Rushing Yards") return [tr];
+                  return [
+                    tr,
+                    <tr key="run-pass" className="border-t border-chrome-500/10">
+                      <td className={cellClass("right", false)}>
+                        {teamA.runPass ? runPassLabel(teamA.runPass) : "—"}
+                      </td>
+                      <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
+                        Run / Pass %
+                      </td>
+                      <td className={cellClass("left", false)}>
+                        {teamB.runPass ? runPassLabel(teamB.runPass) : "—"}
+                      </td>
+                    </tr>,
+                  ];
                 })}
               </tbody>
             </table>
@@ -175,19 +219,46 @@ function TeamSelect({
   );
 }
 
-function TeamHeader({ team, align }: { team: MatchupTeam; align: "left" | "right" }) {
+function pairMatches(outlook: PairOutlook | null, aId: string, bId: string): boolean {
+  return outlook !== null && outlook.aId === aId && outlook.bId === bId;
+}
+
+function TeamHeader({
+  team,
+  align,
+  outlook,
+}: {
+  team: MatchupTeam;
+  align: "left" | "right";
+  outlook?: MatchupOutlook | null;
+}) {
   const alignClass = align === "right" ? "items-end text-right" : "items-start text-left";
   return (
     <div className={`flex flex-col gap-2 ${alignClass}`}>
       <TeamLogo src={team.logoUrl} size={72} />
-      <div className="font-display text-3xl leading-tight">{team.name}</div>
+      <div className="font-display text-3xl leading-tight">
+        {team.name}
+        {team.power && (
+          <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
+            {" "}#{team.power.overall} Overall - #{team.power.cls}{" "}
+            {classificationLabel(team.classification)}
+          </span>
+        )}
+      </div>
       <div className="text-sm text-chrome-300">
-        {team.stateRank ? `#${team.stateRank} - ` : ""}
         {classRegionLabel(team)}
+        {team.playoffPct !== null &&
+          ` (Current Playoff Potential: ${team.playoffPct.toFixed(2)}%)`}
       </div>
-      <div className="text-sm text-chrome-500">
-        {team.record.wins}–{team.record.losses}
-      </div>
+      <div className="text-sm text-chrome-500">{recordSplitsLabel(team.record, team.splits)}</div>
+      {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
+        <div className="text-sm text-chrome-500">
+          Playoff Potential if win/loss:{" "}
+          <span className="text-chrome-300">
+            {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}
+          </span>
+        </div>
+      )}
     </div>
   );
 }

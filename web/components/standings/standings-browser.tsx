@@ -89,7 +89,7 @@ function StandingRowView({ row, rank }: { row: StandingRow; rank: number }) {
         {row.playoffPct === null ? (
           <span className="text-chrome-500">n/a</span>
         ) : (
-          `${row.playoffPct}%`
+          `${Math.round(row.playoffPct)}%`
         )}
       </td>
     </tr>

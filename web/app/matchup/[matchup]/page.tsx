@@ -10,8 +10,13 @@ import { loadHistory } from "@/lib/history-server";
 import { buildMatchupHistory } from "@/lib/matchup-history";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
-import { classificationLabel } from "@/lib/team-format";
+import { classificationLabel, classRegionLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
+import { buildPowerRankings, type PowerRank } from "@/lib/power";
+import { matchupPlayoffOutlook, playoffPotentials, type MatchupOutlook } from "@/lib/standings";
+import { runPassAttempts } from "@/lib/run-pass";
+import { fmtPct, recordSplitsLabel } from "@/lib/matchup-format";
+import type { Team } from "@/lib/types";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
 // until client revisions land. Flip to true to bring them back.
@@ -38,23 +43,37 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
     ...historyView.milestones,
   ].slice(0, 8);
 
+  const power = buildPowerRankings(data);
+  const potentials = playoffPotentials(data);
+  const outlook = matchupPlayoffOutlook(data, away.id, home.id);
+  const runPass = {
+    a: runPassAttempts(data.playersByTeam.get(away.id) ?? []),
+    b: runPassAttempts(data.playersByTeam.get(home.id) ?? []),
+  };
+
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
         <div className="flex items-center justify-end gap-3">
-          <div className="text-right">
-            <div className="text-xs text-chrome-500">{classificationLabel(away.classification)} · {away.record.wins}–{away.record.losses}</div>
-            <Link href={`/teams/${displaySlug(away)}` as any} className="font-display text-3xl">{away.name}</Link>
-          </div>
+          <MatchupTeamHeader
+            team={away}
+            align="right"
+            power={power.get(away.id) ?? null}
+            playoffPct={potentials.get(away.id) ?? null}
+            outlook={outlook?.a ?? null}
+          />
           <TeamLogo src={away.logoUrl} size={64} />
         </div>
         <div className="font-display text-5xl text-crimson-500">VS</div>
         <div className="flex items-center gap-3">
           <TeamLogo src={home.logoUrl} size={64} />
-          <div>
-            <div className="text-xs text-chrome-500">{classificationLabel(home.classification)} · {home.record.wins}–{home.record.losses}</div>
-            <Link href={`/teams/${displaySlug(home)}` as any} className="font-display text-3xl">{home.name}</Link>
-          </div>
+          <MatchupTeamHeader
+            team={home}
+            align="left"
+            power={power.get(home.id) ?? null}
+            playoffPct={potentials.get(home.id) ?? null}
+            outlook={outlook?.b ?? null}
+          />
         </div>
       </div>
 
@@ -72,7 +91,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         </section>
       )}
 
-      <TaleOfTheTape a={away} b={home} />
+      <TaleOfTheTape a={away} b={home} runPass={runPass} />
 
       {SHOW_MATCHUP_EXTRAS && (
         <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
@@ -113,5 +132,53 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         Open in broadcast mode →
       </Link>
     </main>
+  );
+}
+
+function MatchupTeamHeader({
+  team,
+  align,
+  power,
+  playoffPct,
+  outlook,
+}: {
+  team: Team;
+  align: "left" | "right";
+  power: PowerRank | null;
+  playoffPct: number | null;
+  outlook: MatchupOutlook | null;
+}) {
+  return (
+    <div className={align === "right" ? "text-right" : "text-left"}>
+      <div className="text-xs text-chrome-500">
+        {classRegionLabel(team)}
+        {playoffPct !== null && ` (Current Playoff Potential: ${playoffPct.toFixed(2)}%)`}
+      </div>
+      <div className="font-display text-3xl leading-tight">
+        <Link href={`/teams/${displaySlug(team)}` as any}>{team.name}</Link>
+        {power && (
+          <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
+            {" "}#{power.overallRank} Overall - #{power.classRank}{" "}
+            {classificationLabel(team.classification)}
+          </span>
+        )}
+      </div>
+      <div className="text-sm text-chrome-500">
+        {recordSplitsLabel(team.record, {
+          home: team.homeRecord ?? null,
+          away: team.awayRecord ?? null,
+          neutral: team.neutralRecord ?? null,
+          region: team.regionRecord ?? null,
+        })}
+      </div>
+      {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
+        <div className="text-sm text-chrome-500">
+          Playoff Potential if win/loss:{" "}
+          <span className="text-chrome-300">
+            {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}
+          </span>
+        </div>
+      )}
+    </div>
   );
 }

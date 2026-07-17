@@ -1,4 +1,5 @@
 import type { Team } from "@/lib/types";
+import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
 
 function games(t: Team) { return t.record.wins + t.record.losses; }
 function ppg(t: Team) { return games(t) ? t.stats.pointsFor / games(t) : 0; }
@@ -13,7 +14,15 @@ const ROWS: Array<{ label: string; value: (t: Team) => number; betterIsHigher: b
     format: (n) => n === 999 ? "—" : `#${n}` },
 ];
 
-export function TaleOfTheTape({ a, b }: { a: Team; b: Team }) {
+export function TaleOfTheTape({
+  a,
+  b,
+  runPass,
+}: {
+  a: Team;
+  b: Team;
+  runPass?: { a: RunPassSplit | null; b: RunPassSplit | null };
+}) {
   return (
     <div className="rounded-2xl border border-chrome-500/15 overflow-hidden">
       <table className="w-full">
@@ -32,6 +41,19 @@ export function TaleOfTheTape({ a, b }: { a: Team; b: Team }) {
               </tr>
             );
           })}
+          {runPass && (runPass.a || runPass.b) && (
+            <tr className="border-t border-chrome-500/10">
+              <td className="px-4 py-3 text-right font-display text-xl">
+                {runPass.a ? runPassLabel(runPass.a) : "—"}
+              </td>
+              <td className="px-2 py-3 text-center text-xs uppercase text-chrome-500 w-32">
+                Run / Pass %
+              </td>
+              <td className="px-4 py-3 text-left font-display text-xl">
+                {runPass.b ? runPassLabel(runPass.b) : "—"}
+              </td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>
