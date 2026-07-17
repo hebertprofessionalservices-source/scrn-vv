@@ -138,13 +138,16 @@ def parse_team_home(html: str, *, source_url: str) -> dict[str, Any]:
         if isinstance(rankings_data, dict):
             for entry in rankings_data.get("data") or []:
                 rank_val = entry.get("rank")
-                rank_type = (entry.get("type") or "").lower()
-                if "national" in rank_type:
+                # rankingType: 0 national, 1 state overall, 4 state
+                # division/class, 6 DMA/metro (deliberately ignored —
+                # e.g. "Columbus-Tupelo" is not a state rank).
+                rank_type = entry.get("rankingType")
+                if rank_type == 0:
                     rankings["national"] = rank_val
-                elif "class" in rank_type or "division" in rank_type:
-                    rankings["stateClass"] = rank_val
-                else:
+                elif rank_type == 1:
                     rankings["stateOverall"] = rank_val
+                elif rank_type == 4:
+                    rankings["stateClass"] = rank_val
 
     # ── HTML fallback for name if __NEXT_DATA__ failed ────────────────────
     if not name:
