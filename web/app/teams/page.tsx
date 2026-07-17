@@ -1,13 +1,17 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TeamFilters } from "@/components/filters/team-filters";
 import { TeamCard } from "@/components/cards/team-card";
+import { leagueOf } from "@/lib/team-format";
 
 export default async function TeamsPage({
   searchParams,
-}: { searchParams: Promise<{ class?: string; region?: string; sort?: string }> }) {
+}: {
+  searchParams: Promise<{ league?: string; class?: string; region?: string; sort?: string }>;
+}) {
   const sp = await searchParams;
   const season = await currentSeason();
   const data = await loadDataset(season);
+  const league = sp.league ?? null;
   const cls = sp.class ?? null;
   const region = sp.region ?? null;
   const sort = sp.sort ?? "name";
@@ -24,6 +28,7 @@ export default async function TeamsPage({
   }
 
   let teams = data.teams;
+  if (league) teams = teams.filter((t) => leagueOf(t.classification) === league);
   if (cls) teams = teams.filter((t) => t.classification === cls);
   if (region) teams = teams.filter((t) => t.district === region);
 

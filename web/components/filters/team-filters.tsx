@@ -1,11 +1,13 @@
 "use client";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { classificationLabel } from "@/lib/team-format";
+import { classificationLabel, leagueOf } from "@/lib/team-format";
 
 const CLASSES = [
   "7A", "6A", "5A", "4A", "3A", "2A", "1A",
   "MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A",
 ];
+
+const LEAGUES = ["MHSAA", "MAIS"] as const;
 
 const SELECT_CLASSES =
   "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 cursor-pointer hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
@@ -19,31 +21,55 @@ export function TeamFilters({
   const params = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
+  const league = params.get("league") ?? "";
   const cls = params.get("class") ?? "";
   const region = params.get("region") ?? "";
 
-  const classes = CLASSES.filter((c) => regionsByClass[c]?.length);
+  const allClasses = CLASSES.filter((c) => regionsByClass[c]?.length);
+  const classes = league
+    ? allClasses.filter((c) => leagueOf(c) === league)
+    : allClasses;
   const regions = cls
     ? regionsByClass[cls] ?? []
     : classes.flatMap((c) => regionsByClass[c]);
 
-  function update(nextCls: string, nextRegion: string) {
+  function update(nextLeague: string, nextCls: string, nextRegion: string) {
     const sp = new URLSearchParams(params.toString());
+    if (nextLeague) sp.set("league", nextLeague); else sp.delete("league");
     if (nextCls) sp.set("class", nextCls); else sp.delete("class");
     if (nextRegion) sp.set("region", nextRegion); else sp.delete("region");
-    router.push(`${pathname}?${sp.toString()}` as any);
+    const qs = sp.toString();
+    // Never push a trailing "?": the production router ignores it.
+    router.push((qs ? `${pathname}?${qs}` : pathname) as any);
   }
 
   return (
     <div className="flex flex-wrap items-center gap-3">
       <select
         className={SELECT_CLASSES}
+        value={league}
+        onChange={(e) => {
+          const next = e.target.value;
+          // Keep narrower filters only if they still fit the new league.
+          const keepCls = cls && (!next || leagueOf(cls) === next);
+          const keepRegion =
+            keepCls && cls && (regionsByClass[cls] ?? []).includes(region);
+          update(next, keepCls ? cls : "", keepRegion ? region : "");
+        }}
+        aria-label="League"
+      >
+        <option value="">All Leagues</option>
+        {LEAGUES.map((l) => (
+          <option key={l} value={l}>{l}</option>
+        ))}
+      </select>
+      <select
+        className={SELECT_CLASSES}
         value={cls}
         onChange={(e) => {
           const next = e.target.value;
-          // Drop the region unless it still belongs to the new classification.
-          const keep = next && (regionsByClass[next] ?? []).includes(region);
-          update(next, keep ? region : "");
+          const keepRegion = next && (regionsByClass[next] ?? []).includes(region);
+          update(league, next, keepRegion ? region : "");
         }}
         aria-label="Classification"
       >
@@ -55,7 +81,7 @@ export function TeamFilters({
       <select
         className={SELECT_CLASSES}
         value={region}
-        onChange={(e) => update(cls, e.target.value)}
+        onChange={(e) => update(league, cls, e.target.value)}
         aria-label="Region"
       >
         <option value="">All Regions</option>

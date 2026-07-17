@@ -20,25 +20,27 @@ export async function SiteHeader() {
             priority
           />
         </Link>
+        {/* Plain anchors: a hydration-race click on a client-side <Link> can
+            be silently dropped; native navigation always fires. */}
         <nav className="hidden md:flex items-center gap-6 text-sm uppercase tracking-wide font-display">
-          <Link href="/" className="hover:text-crimson-500">
+          <a href="/" className="hover:text-crimson-500">
             Home
-          </Link>
-          <Link href={"/upcoming" as any} className="hover:text-crimson-500">
+          </a>
+          <a href="/upcoming" className="hover:text-crimson-500">
             Upcoming Games
-          </Link>
-          <Link href={"/standings" as any} className="hover:text-crimson-500">
+          </a>
+          <a href="/standings" className="hover:text-crimson-500">
             Standings
-          </Link>
-          <Link href={"/teams" as any} className="hover:text-crimson-500">
+          </a>
+          <a href="/teams" className="hover:text-crimson-500">
             Teams
-          </Link>
-          <Link href={"/players" as any} className="hover:text-crimson-500">
+          </a>
+          <a href="/players" className="hover:text-crimson-500">
             Players
-          </Link>
-          <Link href={"/matchup" as any} className="hover:text-crimson-500">
+          </a>
+          <a href="/matchup" className="hover:text-crimson-500">
             Match Up
-          </Link>
+          </a>
         </nav>
         <div className="flex items-center gap-3">
           <SearchTrigger />

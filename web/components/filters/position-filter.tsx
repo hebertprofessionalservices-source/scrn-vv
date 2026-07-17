@@ -13,7 +13,9 @@ export function PositionFilter() {
   function setPos(p: string | null) {
     const sp = new URLSearchParams(params.toString());
     if (p) sp.set("pos", p); else sp.delete("pos");
-    router.push(`${pathname}?${sp.toString()}` as any);
+    const qs = sp.toString();
+    // Never push a trailing "?": the production router ignores it.
+    router.push((qs ? `${pathname}?${qs}` : pathname) as any);
   }
 
   return (

@@ -90,7 +90,14 @@ export default async function TeamDetailPage({
         </div>
       )}
 
-      <header className="flex items-center gap-6">
+      <Link
+        href={"/teams" as any}
+        className="inline-flex items-center gap-1 text-sm text-chrome-500 hover:text-crimson-500"
+      >
+        ← Back to Teams
+      </Link>
+
+      <header className="flex items-center gap-6 !mt-3">
         <TeamLogo src={team.logoUrl} size={96} />
         <div>
           <h1 className="font-display text-5xl">{team.name}</h1>

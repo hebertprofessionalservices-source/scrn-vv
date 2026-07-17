@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -38,15 +37,16 @@ export function MobileNav() {
       </button>
       {open && (
         <nav className="absolute left-0 right-0 top-full z-50 border-b border-chrome-500/15 bg-navy-900/95 backdrop-blur px-4 py-2 flex flex-col font-display text-sm uppercase tracking-wide">
+          {/* Plain anchors — see site-header.tsx. */}
           {LINKS.map((link) => (
-            <Link
+            <a
               key={link.href}
-              href={link.href as any}
+              href={link.href}
               onClick={() => setOpen(false)}
               className="py-3 border-b border-chrome-500/10 last:border-b-0 hover:text-crimson-500"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <button
             onClick={openSearch}

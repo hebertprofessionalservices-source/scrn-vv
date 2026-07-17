@@ -22,6 +22,11 @@ export function regionLabel(team: Pick<Team, "district" | "classification">): st
   return stripped || team.district;
 }
 
+/** League a classification belongs to. */
+export function leagueOf(classification: string): "MHSAA" | "MAIS" {
+  return classification.startsWith("MAIS") ? "MAIS" : "MHSAA";
+}
+
 /** "7A Region 2" / "MAIS 4A District 3" — class plus region, compact. */
 export function classRegionLabel(
   team: Pick<Team, "district" | "classification">,
