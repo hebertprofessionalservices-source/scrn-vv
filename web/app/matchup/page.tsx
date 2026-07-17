@@ -6,7 +6,7 @@ import { buildStorylines } from "@/lib/storylines";
 import { loadHistory } from "@/lib/history-server";
 import { buildMatchupHistory } from "@/lib/matchup-history";
 import { buildPowerRankings } from "@/lib/power";
-import { matchupPlayoffOutlook, playoffPotentials } from "@/lib/standings";
+import { matchupPlayoffOutlook, playoffPotentials, teamRecordSplits } from "@/lib/standings";
 import { runPassAttempts } from "@/lib/run-pass";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
@@ -35,12 +35,7 @@ export default async function MatchupBuilderPage({
         classification: t.classification,
         district: t.district,
         record: { wins: t.record.wins, losses: t.record.losses },
-        splits: {
-          home: t.homeRecord ?? null,
-          away: t.awayRecord ?? null,
-          neutral: t.neutralRecord ?? null,
-          region: t.regionRecord ?? null,
-        },
+        splits: teamRecordSplits(data, t),
         power: p ? { overall: p.overallRank, cls: p.classRank } : null,
         playoffPct: potentials.get(t.id) ?? null,
         runPass: runPassAttempts(data.playersByTeam.get(t.id) ?? []),

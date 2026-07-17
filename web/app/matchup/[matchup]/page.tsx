@@ -13,9 +13,9 @@ import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel, classRegionLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import { buildPowerRankings, type PowerRank } from "@/lib/power";
-import { matchupPlayoffOutlook, playoffPotentials, type MatchupOutlook } from "@/lib/standings";
+import { matchupPlayoffOutlook, playoffPotentials, teamRecordSplits, type MatchupOutlook } from "@/lib/standings";
 import { runPassAttempts } from "@/lib/run-pass";
-import { fmtPct, recordSplitsLabel } from "@/lib/matchup-format";
+import { fmtPct, recordSplitsLabel, type RecordSplits } from "@/lib/matchup-format";
 import type { Team } from "@/lib/types";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
@@ -61,6 +61,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             power={power.get(away.id) ?? null}
             playoffPct={potentials.get(away.id) ?? null}
             outlook={outlook?.a ?? null}
+            splits={teamRecordSplits(data, away)}
           />
           <TeamLogo src={away.logoUrl} size={64} />
         </div>
@@ -73,6 +74,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             power={power.get(home.id) ?? null}
             playoffPct={potentials.get(home.id) ?? null}
             outlook={outlook?.b ?? null}
+            splits={teamRecordSplits(data, home)}
           />
         </div>
       </div>
@@ -141,12 +143,14 @@ function MatchupTeamHeader({
   power,
   playoffPct,
   outlook,
+  splits,
 }: {
   team: Team;
   align: "left" | "right";
   power: PowerRank | null;
   playoffPct: number | null;
   outlook: MatchupOutlook | null;
+  splits: RecordSplits;
 }) {
   return (
     <div className={align === "right" ? "text-right" : "text-left"}>
@@ -164,12 +168,7 @@ function MatchupTeamHeader({
         )}
       </div>
       <div className="text-sm text-chrome-500">
-        {recordSplitsLabel(team.record, {
-          home: team.homeRecord ?? null,
-          away: team.awayRecord ?? null,
-          neutral: team.neutralRecord ?? null,
-          region: team.regionRecord ?? null,
-        })}
+        {recordSplitsLabel(team.record, splits)}
       </div>
       {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
         <div className="text-sm text-chrome-500">

@@ -291,6 +291,38 @@ export function playoffOddsForGame(
   };
 }
 
+/**
+ * Overall-record companions for display: record vs same-classification
+ * opponents (derived from final games) and region record (official when
+ * scraped, otherwise derived). Always returns records, 0–0 when nothing
+ * has been played.
+ */
+export function teamRecordSplits(
+  data: Dataset,
+  team: Team,
+): { classification: RecordWL; region: RecordWL } {
+  const cls: RecordWL = { wins: 0, losses: 0 };
+  const region: RecordWL = { wins: 0, losses: 0 };
+  for (const g of data.games) {
+    if (g.status !== "final" || g.homeScore === null || g.awayScore === null) continue;
+    if (g.homeScore === g.awayScore) continue;
+    const home = data.teamsByAlias.get(g.homeTeamId);
+    const away = data.teamsByAlias.get(g.awayTeamId);
+    if (!home || !away || home.id === away.id) continue;
+    const isHome = home.id === team.id;
+    if (!isHome && away.id !== team.id) continue;
+    const opp = isHome ? away : home;
+    const won = isHome === (g.homeScore > g.awayScore);
+    if (opp.classification === team.classification) {
+      cls[won ? "wins" : "losses"] += 1;
+    }
+    if (team.district && opp.district === team.district) {
+      region[won ? "wins" : "losses"] += 1;
+    }
+  }
+  return { classification: cls, region: team.regionRecord ?? region };
+}
+
 /** One team's region simulation; null when the team has no live region race. */
 function regionPcts(
   data: Dataset,

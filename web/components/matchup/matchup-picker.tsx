@@ -21,7 +21,7 @@ export interface MatchupTeam {
   classification: Team["classification"];
   district: string | null;
   record: WL;
-  splits: { home: WL | null; away: WL | null; neutral: WL | null; region: WL | null };
+  splits: { classification: WL; region: WL };
   power: { overall: number; cls: number } | null;
   playoffPct: number | null;
   runPass: RunPassSplit | null;
