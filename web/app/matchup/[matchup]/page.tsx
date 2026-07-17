@@ -15,7 +15,7 @@ import { formatGameDate } from "@/lib/format-date";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
 // until client revisions land. Flip to true to bring them back.
-const SHOW_MATCHUP_EXTRAS = false;
+const SHOW_MATCHUP_EXTRAS = true;
 
 export default async function MatchupPage({ params }: { params: Promise<{ matchup: string }> }) {
   const { matchup } = await params;

@@ -23,8 +23,10 @@ export interface WeeklyLine {
   context: string;
   /** "312 YDS · 4 TD" */
   line: string;
-  /** Sort metric for its bucket. */
+  /** Primary sort metric for its bucket (yards; tackle composite for DEF). */
   value: number;
+  /** Bucket TDs (pass/rush/rec; always 0 for DEF) for the TDs sort. */
+  td: number;
 }
 
 export interface OutstandingLine {
@@ -200,22 +202,27 @@ function context(l: RawLine): string {
 
 const BUCKETS: Record<WeeklyBucket, {
   value: (l: RawLine) => number;
+  td: (l: RawLine) => number;
   line: (l: RawLine) => string;
 }> = {
   QB: {
     value: (l) => l.passYds,
+    td: (l) => l.passTd,
     line: (l) => `${l.passYds} YDS · ${l.passTd} TD · ${l.passInt} INT`,
   },
   RB: {
     value: (l) => l.rushYds,
+    td: (l) => l.rushTd,
     line: (l) => `${l.rushYds} YDS · ${l.rushTd} TD`,
   },
   WR: {
     value: (l) => l.recYds,
+    td: (l) => l.recTd,
     line: (l) => `${l.rec} REC · ${l.recYds} YDS · ${l.recTd} TD`,
   },
   DEF: {
     value: (l) => l.tackles + l.sacks * 2 + l.defInt * 3,
+    td: () => 0,
     line: (l) => `${l.tackles} TKL · ${l.sacks} SACK · ${l.defInt} INT`,
   },
 };
@@ -254,6 +261,7 @@ function toWeeklyLine(l: RawLine, bucket: WeeklyBucket): WeeklyLine {
     context: context(l),
     line: BUCKETS[bucket].line(l),
     value: BUCKETS[bucket].value(l),
+    td: BUCKETS[bucket].td(l),
   };
 }
 
@@ -281,12 +289,32 @@ export function buildWeeklyView(data: Dataset, asOf?: string): WeeklyView {
         ? shortDate(dates[0])
         : `${shortDate(dates[0])} – ${shortDate(dates[dates.length - 1])}`;
 
+    // Per-classification top-10 union (by yards and by TDs) so the client
+    // can filter by class and re-sort without another server round trip.
     const leaders = {} as Record<WeeklyBucket, WeeklyLine[]>;
     for (const bucket of Object.keys(BUCKETS) as WeeklyBucket[]) {
-      leaders[bucket] = wLines
-        .filter((l) => BUCKETS[bucket].value(l) > 0)
-        .sort((a, b) => BUCKETS[bucket].value(b) - BUCKETS[bucket].value(a))
-        .slice(0, WEEKLY_LEADER_LIMIT)
+      const { value, td } = BUCKETS[bucket];
+      const byClass = new Map<string, RawLine[]>();
+      for (const l of wLines) {
+        if (value(l) <= 0 && td(l) <= 0) continue;
+        const list = byClass.get(l.team.classification) ?? [];
+        list.push(l);
+        byClass.set(l.team.classification, list);
+      }
+      const chosen = new Set<RawLine>();
+      for (const arr of byClass.values()) {
+        [...arr]
+          .sort((a, b) => value(b) - value(a))
+          .slice(0, WEEKLY_LEADER_LIMIT)
+          .forEach((l) => chosen.add(l));
+        [...arr]
+          .filter((l) => td(l) > 0)
+          .sort((a, b) => td(b) - td(a) || value(b) - value(a))
+          .slice(0, WEEKLY_LEADER_LIMIT)
+          .forEach((l) => chosen.add(l));
+      }
+      leaders[bucket] = [...chosen]
+        .sort((a, b) => value(b) - value(a))
         .map((l) => toWeeklyLine(l, bucket));
     }
 

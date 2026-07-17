@@ -1,6 +1,5 @@
 import type { Dataset } from "./data";
 import type { Game, Team } from "./types";
-import { buildPowerRankings } from "./power";
 import { playoffOddsForGame } from "./standings";
 import { classificationLabel } from "./team-format";
 import { formatGameDate } from "./format-date";
@@ -60,16 +59,6 @@ export function buildStorylines(
     if (t.record.losses === 0 && t.record.wins >= 5) {
       lines.push(`${t.name} is a perfect ${t.record.wins}–0`);
     }
-  }
-
-  // Power ranking stakes.
-  const power = buildPowerRankings(data);
-  const pa = power.get(away.id);
-  const ph = power.get(home.id);
-  if (pa && ph && (pa.overallRank <= 25 || ph.overallRank <= 25)) {
-    lines.push(
-      `#${pa.overallRank} ${away.name} meets #${ph.overallRank} ${home.name} in the SCRN Power Rankings`,
-    );
   }
 
   // Scoring superlatives within classification (top 3 only).

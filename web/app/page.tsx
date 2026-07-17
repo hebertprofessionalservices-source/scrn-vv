@@ -10,7 +10,7 @@ import { lastWeeksGames, seasonConcluded } from "@/lib/stats";
 
 // Weekly performances + outstanding performances hidden from production
 // until client review. Flip to true to bring them back.
-const SHOW_WEEKLY_FEATURES = false;
+const SHOW_WEEKLY_FEATURES = true;
 
 export default async function Home({
   searchParams,

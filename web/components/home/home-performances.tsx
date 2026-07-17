@@ -4,8 +4,8 @@ import Link from "next/link";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classificationLabel } from "@/lib/team-format";
-import { HomeLeaderboards } from "@/components/home/home-leaderboards";
-import type { LeaderboardData } from "@/lib/leaderboard";
+import { HomeLeaderboards, LeaderboardFilters } from "@/components/home/home-leaderboards";
+import { CATEGORY_OPTIONS, type LeaderCategory, type LeaderboardData } from "@/lib/leaderboard";
 import type { OutstandingLine, WeeklyBucket, WeeklyLine, WeeklyView } from "@/lib/weekly";
 
 const SECTIONS: { bucket: WeeklyBucket; heading: string }[] = [
@@ -14,6 +14,13 @@ const SECTIONS: { bucket: WeeklyBucket; heading: string }[] = [
   { bucket: "WR", heading: "Receiving" },
   { bucket: "DEF", heading: "Defense" },
 ];
+
+type WeeklyCategory = "yds" | "td";
+const WEEKLY_CATEGORY_OPTIONS: readonly { value: WeeklyCategory; label: string }[] = [
+  { value: "yds", label: "Yards" },
+  { value: "td", label: "TDs" },
+];
+const WEEKLY_LIMIT = 10;
 
 const SELECT_CLASSES =
   "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 cursor-pointer hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
@@ -28,6 +35,9 @@ export function HomePerformances({
   const hasWeekly = weekly.latestKey !== null;
   const [view, setView] = useState<"week" | "season">(hasWeekly ? "week" : "season");
   const [weekKey, setWeekKey] = useState<string>(weekly.latestKey ?? "");
+  const [cls, setCls] = useState<string>("");
+  const [seasonCategory, setSeasonCategory] = useState<LeaderCategory>("yds");
+  const [weekCategory, setWeekCategory] = useState<WeeklyCategory>("yds");
 
   const group = weekly.byWeek[weekKey];
 
@@ -44,9 +54,28 @@ export function HomePerformances({
           <option value="week">Top Performances by Week</option>
           <option value="season">Season Leaders</option>
         </select>
+        {view === "week" ? (
+          <LeaderboardFilters
+            classes={leaderboards.classes}
+            cls={cls}
+            setCls={setCls}
+            category={weekCategory}
+            setCategory={setWeekCategory}
+            categoryOptions={WEEKLY_CATEGORY_OPTIONS}
+          />
+        ) : (
+          <LeaderboardFilters
+            classes={leaderboards.classes}
+            cls={cls}
+            setCls={setCls}
+            category={seasonCategory}
+            setCategory={setSeasonCategory}
+            categoryOptions={CATEGORY_OPTIONS}
+          />
+        )}
         {view === "week" && hasWeekly && (
           <select
-            className={SELECT_CLASSES}
+            className={`${SELECT_CLASSES} ml-auto`}
             value={weekKey}
             onChange={(e) => setWeekKey(e.target.value)}
             aria-label="Week"
@@ -61,17 +90,30 @@ export function HomePerformances({
       </div>
 
       {view === "season" ? (
-        <HomeLeaderboards data={leaderboards} />
+        <HomeLeaderboards data={leaderboards} controls={{ cls, category: seasonCategory }} />
       ) : !group ? (
         <p className="text-chrome-500 text-sm">No games played yet this season.</p>
       ) : (
-        SECTIONS.map(({ bucket, heading }) => (
-          <WeeklySection
-            key={bucket}
-            heading={`${heading} — ${group.label}`}
-            lines={group.leaders[bucket]}
-          />
-        ))
+        SECTIONS.map(({ bucket, heading }) => {
+          const pool = cls
+            ? group.leaders[bucket].filter((l) => l.classification === cls)
+            : group.leaders[bucket];
+          // DEF has no TD stat; it always ranks by its tackle composite.
+          const sorted = [...pool].sort(
+            bucket !== "DEF" && weekCategory === "td"
+              ? (a, b) => b.td - a.td || b.value - a.value
+              : (a, b) => b.value - a.value,
+          );
+          const suffix =
+            bucket !== "DEF" && weekCategory === "td" ? " · by TDs" : "";
+          return (
+            <WeeklySection
+              key={bucket}
+              heading={`${heading} — ${group.label}${suffix}`}
+              lines={sorted.slice(0, WEEKLY_LIMIT)}
+            />
+          );
+        })
       )}
     </div>
   );
@@ -82,12 +124,46 @@ function WeeklySection({ heading, lines }: { heading: string; lines: WeeklyLine[
   return (
     <div>
       <h2 className="font-display text-2xl mb-3">{heading}</h2>
-      <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 divide-y divide-chrome-500/10">
-        {lines.map((l, i) => (
-          <WeeklyRow key={`${l.playerId ?? l.name}:${i}`} line={l} rank={i + 1} />
+      <div className="grid sm:grid-cols-3 gap-4">
+        {lines.slice(0, 3).map((l, i) => (
+          <WeeklyCard key={`${l.playerId ?? l.name}:${i}`} line={l} rank={i + 1} />
         ))}
       </div>
+      {lines.length > 3 && (
+        <div className="mt-3 rounded-2xl border border-chrome-500/15 bg-navy-700/40 divide-y divide-chrome-500/10">
+          {lines.slice(3).map((l, i) => (
+            <WeeklyRow key={`${l.playerId ?? l.name}:${i + 3}`} line={l} rank={i + 4} />
+          ))}
+        </div>
+      )}
     </div>
+  );
+}
+
+function WeeklyCard({ line, rank }: { line: WeeklyLine; rank: number }) {
+  const inner = (
+    <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 hover:border-crimson-500 p-5 h-full">
+      <div className="flex items-start justify-between mb-3">
+        <span className="font-display text-3xl text-crimson-500">#{rank}</span>
+        <TeamLogo src={line.teamLogo} size={36} />
+      </div>
+      <div className="flex items-center gap-3 mb-3">
+        <JerseyAvatar jersey={line.jersey} primary={line.primary} secondary={line.secondary} size={48} />
+        <div>
+          <div className="font-display text-xl leading-tight">{line.name}</div>
+          <div className="text-xs text-chrome-500">
+            {line.teamName} · {classificationLabel(line.classification)}
+          </div>
+        </div>
+      </div>
+      <div className="font-display text-2xl text-chrome-100">{line.line}</div>
+      <div className="text-xs text-chrome-500 mt-1">{line.context}</div>
+    </div>
+  );
+  return line.playerId ? (
+    <Link href={`/players/${line.playerId}` as any}>{inner}</Link>
+  ) : (
+    inner
   );
 }
 

@@ -26,38 +26,74 @@ const SECTIONS: { pos: LeaderPosition; plural: string }[] = [
 const SELECT_CLASSES =
   "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 cursor-pointer hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
 
-export function HomeLeaderboards({ data }: { data: LeaderboardData }) {
-  const [cls, setCls] = useState<string>("");
-  const [category, setCategory] = useState<LeaderCategory>("yds");
+/** Classification + stat-category selects; shared by the weekly and season views. */
+export function LeaderboardFilters<C extends string>({
+  classes, cls, setCls, category, setCategory, categoryOptions,
+}: {
+  classes: string[];
+  cls: string;
+  setCls: (v: string) => void;
+  category: C;
+  setCategory: (v: C) => void;
+  categoryOptions: readonly { value: C; label: string }[];
+}) {
+  return (
+    <>
+      <select
+        className={SELECT_CLASSES}
+        value={cls}
+        onChange={(e) => setCls(e.target.value)}
+        aria-label="Classification"
+      >
+        <option value="">All Classifications</option>
+        {classes.map((c) => (
+          <option key={c} value={c}>{classificationLabel(c)}</option>
+        ))}
+      </select>
+      <select
+        className={`${SELECT_CLASSES} min-w-44`}
+        value={category}
+        onChange={(e) => setCategory(e.target.value as C)}
+        aria-label="Stat category"
+      >
+        {categoryOptions.map((o) => (
+          <option key={o.value} value={o.value}>{o.label}</option>
+        ))}
+      </select>
+    </>
+  );
+}
+
+export function HomeLeaderboards({
+  data,
+  controls,
+}: {
+  data: LeaderboardData;
+  /** When provided, the parent owns the filter selects and this renders none. */
+  controls?: { cls: string; category: LeaderCategory };
+}) {
+  const [clsState, setClsState] = useState<string>("");
+  const [categoryState, setCategoryState] = useState<LeaderCategory>("yds");
+  const cls = controls?.cls ?? clsState;
+  const category = controls?.category ?? categoryState;
 
   const clsSuffix = cls ? ` (${classificationLabel(cls)})` : "";
 
   return (
     <div className="space-y-8">
-      <div className="flex flex-wrap items-center gap-3">
-        <label className="text-xs uppercase tracking-wider text-chrome-500">Filter</label>
-        <select
-          className={SELECT_CLASSES}
-          value={cls}
-          onChange={(e) => setCls(e.target.value)}
-          aria-label="Classification"
-        >
-          <option value="">All Classifications</option>
-          {data.classes.map((c) => (
-            <option key={c} value={c}>{classificationLabel(c)}</option>
-          ))}
-        </select>
-        <select
-          className={SELECT_CLASSES}
-          value={category}
-          onChange={(e) => setCategory(e.target.value as LeaderCategory)}
-          aria-label="Stat category"
-        >
-          {CATEGORY_OPTIONS.map((o) => (
-            <option key={o.value} value={o.value}>{o.label}</option>
-          ))}
-        </select>
-      </div>
+      {!controls && (
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="text-xs uppercase tracking-wider text-chrome-500">Filter</label>
+          <LeaderboardFilters
+            classes={data.classes}
+            cls={clsState}
+            setCls={setClsState}
+            category={categoryState}
+            setCategory={setCategoryState}
+            categoryOptions={CATEGORY_OPTIONS}
+          />
+        </div>
+      )}
 
       {SECTIONS.map(({ pos, plural }) => {
         const pool = cls

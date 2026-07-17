@@ -63,7 +63,7 @@ export default async function TeamDetailPage({
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
   // Run/Pass cell hidden from production until client review; flip to
   // true to bring it back.
-  const SHOW_RUN_PASS = false;
+  const SHOW_RUN_PASS = true;
   const runPass = SHOW_RUN_PASS
     ? players.reduce(
         (acc, p) => ({ rush: acc.rush + p.stats.rushing.att, pass: acc.pass + p.stats.passing.att }),
