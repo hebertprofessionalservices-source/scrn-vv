@@ -39,7 +39,10 @@ export function HomePerformances({
   const [seasonCategory, setSeasonCategory] = useState<LeaderCategory>("yds");
   const [weekCategory, setWeekCategory] = useState<WeeklyCategory>("yds");
 
-  const group = weekly.byWeek[weekKey];
+  // The stored key can go stale when the dataset changes under this mounted
+  // component (season switch, ?asof); fall back to the latest real week.
+  const activeKey = weekly.byWeek[weekKey] ? weekKey : weekly.latestKey ?? "";
+  const group = weekly.byWeek[activeKey];
 
   return (
     <div className="space-y-8">
@@ -76,7 +79,7 @@ export function HomePerformances({
         {view === "week" && hasWeekly && (
           <select
             className={`${SELECT_CLASSES} ml-auto`}
-            value={weekKey}
+            value={activeKey}
             onChange={(e) => setWeekKey(e.target.value)}
             aria-label="Week"
           >
@@ -114,6 +117,23 @@ export function HomePerformances({
             />
           );
         })
+      )}
+
+      {hasWeekly && (
+        <OutstandingSection
+          heading={
+            view === "week" && group
+              ? `Outstanding Performances — ${group.label}`
+              : "Outstanding Performances — Full Season"
+          }
+          lines={view === "week" ? group?.outstanding ?? [] : weekly.outstandingSeason}
+          showWeek={view === "season"}
+          note={
+            view === "season" && weekly.outstandingSeasonTotal > weekly.outstandingSeason.length
+              ? `Showing the ${weekly.outstandingSeason.length} most recent of ${weekly.outstandingSeasonTotal} qualifying performances.`
+              : null
+          }
+        />
       )}
     </div>
   );
@@ -190,44 +210,31 @@ function WeeklyRow({ line, rank }: { line: WeeklyLine; rank: number }) {
   );
 }
 
-export function OutstandingPerformances({ weekly }: { weekly: WeeklyView }) {
-  const hasWeekly = weekly.latestKey !== null;
-  const [mode, setMode] = useState<"week" | "season">("week");
-  const latest = hasWeekly ? weekly.byWeek[weekly.latestKey!] : null;
-
-  if (!hasWeekly) return null;
-  const lines = mode === "week" ? latest!.outstanding : weekly.outstandingSeason;
-
+/** Outstanding list for the selected week (or full season in season view). */
+function OutstandingSection({
+  heading,
+  lines,
+  showWeek,
+  note,
+}: {
+  heading: string;
+  lines: OutstandingLine[];
+  showWeek: boolean;
+  note: string | null;
+}) {
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-3 mb-3">
-        <h2 className="font-display text-2xl">Outstanding Performances</h2>
-        <select
-          className={SELECT_CLASSES}
-          value={mode}
-          onChange={(e) => setMode(e.target.value as "week" | "season")}
-          aria-label="Outstanding performances range"
-        >
-          <option value="week">This Week ({latest!.label})</option>
-          <option value="season">Full Season</option>
-        </select>
-      </div>
+      <h2 className="font-display text-2xl mb-3">{heading}</h2>
       {lines.length === 0 ? (
-        <p className="text-chrome-500 text-sm">
-          No qualifying performances {mode === "week" ? `in ${latest!.label}` : "yet"}.
-        </p>
+        <p className="text-chrome-500 text-sm">No qualifying performances.</p>
       ) : (
         <>
           <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 divide-y divide-chrome-500/10">
             {lines.map((l, i) => (
-              <OutstandingRow key={`${l.playerId ?? l.name}:${l.weekLabel}:${i}`} line={l} showWeek={mode === "season"} />
+              <OutstandingRow key={`${l.playerId ?? l.name}:${l.weekLabel}:${i}`} line={l} showWeek={showWeek} />
             ))}
           </div>
-          {mode === "season" && weekly.outstandingSeasonTotal > lines.length && (
-            <p className="text-xs text-chrome-500 mt-2">
-              Showing the {lines.length} most recent of {weekly.outstandingSeasonTotal} qualifying performances.
-            </p>
-          )}
+          {note && <p className="text-xs text-chrome-500 mt-2">{note}</p>}
         </>
       )}
     </div>

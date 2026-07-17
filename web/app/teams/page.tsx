@@ -1,18 +1,31 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
-import { ClassFilter } from "@/components/filters/class-filter";
+import { TeamFilters } from "@/components/filters/team-filters";
 import { TeamCard } from "@/components/cards/team-card";
 
 export default async function TeamsPage({
   searchParams,
-}: { searchParams: Promise<{ class?: string; sort?: string }> }) {
+}: { searchParams: Promise<{ class?: string; region?: string; sort?: string }> }) {
   const sp = await searchParams;
   const season = await currentSeason();
   const data = await loadDataset(season);
   const cls = sp.class ?? null;
+  const region = sp.region ?? null;
   const sort = sp.sort ?? "name";
+
+  const regionsByClass: Record<string, string[]> = {};
+  for (const t of data.teams) {
+    if (!t.district) continue;
+    (regionsByClass[t.classification] ??= []).push(t.district);
+  }
+  for (const c of Object.keys(regionsByClass)) {
+    regionsByClass[c] = [...new Set(regionsByClass[c])].sort((a, b) =>
+      a.localeCompare(b, undefined, { numeric: true }),
+    );
+  }
 
   let teams = data.teams;
   if (cls) teams = teams.filter((t) => t.classification === cls);
+  if (region) teams = teams.filter((t) => t.district === region);
 
   teams = [...teams].sort((a, b) => {
     if (sort === "wins") return b.record.wins - a.record.wins;
@@ -28,7 +41,7 @@ export default async function TeamsPage({
         <span className="text-chrome-500 text-sm">{teams.length} teams</span>
       </div>
       <div className="mb-6 space-y-4">
-        <ClassFilter />
+        <TeamFilters regionsByClass={regionsByClass} />
       </div>
       {data.teams.length === 0 ? (
         <div className="rounded-xl border border-chrome-500/15 p-12 text-center">

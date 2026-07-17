@@ -2,7 +2,7 @@ import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
 import { ScoreStrip } from "@/components/cards/score-strip";
 import { HomeLeaderboards } from "@/components/home/home-leaderboards";
-import { HomePerformances, OutstandingPerformances } from "@/components/home/home-performances";
+import { HomePerformances } from "@/components/home/home-performances";
 import { buildEditorialContext } from "@/lib/editorial";
 import { buildLeaderboardData } from "@/lib/leaderboard";
 import { buildWeeklyView } from "@/lib/weekly";
@@ -77,10 +77,7 @@ export default async function Home({
 
       <section className="max-w-7xl mx-auto px-4 space-y-8 pb-12">
         {SHOW_WEEKLY_FEATURES ? (
-          <>
-            <HomePerformances leaderboards={leaderboards} weekly={weekly} />
-            <OutstandingPerformances weekly={weekly} />
-          </>
+          <HomePerformances leaderboards={leaderboards} weekly={weekly} />
         ) : (
           <HomeLeaderboards data={leaderboards} />
         )}
