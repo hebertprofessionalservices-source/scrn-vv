@@ -62,15 +62,17 @@ export function TeamStatPanel({
             : undefined
         }
       />
-      <Stat
-        label="Run / Pass"
-        value={runShare !== null ? `${runShare}% / ${100 - runShare}%` : "n/a"}
-        sub={
-          runShare !== null
-            ? `${runPass!.rush.toLocaleString()} rush · ${runPass!.pass.toLocaleString()} pass att`
-            : undefined
-        }
-      />
+      {runPass != null && (
+        <Stat
+          label="Run / Pass"
+          value={runShare !== null ? `${runShare}% / ${100 - runShare}%` : "n/a"}
+          sub={
+            runShare !== null
+              ? `${runPass.rush.toLocaleString()} rush · ${runPass.pass.toLocaleString()} pass att`
+              : undefined
+          }
+        />
+      )}
     </div>
   );
 }
