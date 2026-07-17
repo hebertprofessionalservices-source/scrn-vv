@@ -3,9 +3,13 @@ import { buildDataset } from "@/lib/data";
 import { buildPowerRankings } from "@/lib/power";
 import type { Game, Team } from "@/lib/types";
 
-function makeTeam(id: string, classification: Team["classification"] = "1A"): Team {
+function makeTeam(
+  id: string,
+  classification: Team["classification"] = "1A",
+  district: string | null = null,
+): Team {
   return {
-    id, name: id, mascot: null, city: null, classification, district: null,
+    id, name: id, mascot: null, city: null, classification, district,
     logoUrl: null, colors: { primary: null, secondary: null }, season: "2025-26",
     record: { wins: 0, losses: 0 },
     rankings: { stateOverall: null, stateClass: null, national: null },
@@ -65,6 +69,71 @@ describe("buildPowerRankings", () => {
     expect(ranks.get("a")!.classRank).toBe(1);
     expect(ranks.get("b")!.classRank).toBe(2);
     expect(ranks.has("idle")).toBe(false);
+  });
+
+  it("preseason: ranks every team from prior-season ratings, labeled prior", () => {
+    const teams = [makeTeam("a"), makeTeam("b"), makeTeam("c")];
+    const prior = new Map([["a", 12], ["b", -3], ["c", 5]]);
+    const ranks = buildPowerRankings(buildDataset({ teams, players: [], games: [] }, "2026-27", prior));
+    expect(ranks.get("a")!.overallRank).toBe(1);
+    expect(ranks.get("c")!.overallRank).toBe(2);
+    expect(ranks.get("b")!.overallRank).toBe(3);
+    for (const id of ["a", "b", "c"]) expect(ranks.get(id)!.source).toBe("prior");
+  });
+
+  it("keeps the prior rating (labeled) until a team's first region game", () => {
+    // a and b share a region but have only played non-region games (vs c).
+    const teams = [
+      makeTeam("a", "1A", "1A Region 1"),
+      makeTeam("b", "1A", "1A Region 1"),
+      makeTeam("c", "1A", "1A Region 2"),
+    ];
+    const prior = new Map([["a", -10], ["b", 10]]);
+    const games = [
+      makeGame("g1", "a", "c", 28, 7),
+      makeGame("g2", "b", "c", 21, 14),
+    ];
+    const ranks = buildPowerRankings(buildDataset({ teams, players: [], games }, "2026-27", prior));
+    expect(ranks.get("a")!.rating).toBe(-10);
+    expect(ranks.get("a")!.source).toBe("prior");
+    expect(ranks.get("b")!.source).toBe("prior");
+  });
+
+  it("drops the prior entirely after the first region game", () => {
+    // b was far better last season, but current results own the rating as
+    // soon as the region opener is played — zero prior bleed-through.
+    const teams = [
+      makeTeam("a", "1A", "1A Region 1"),
+      makeTeam("b", "1A", "1A Region 1"),
+    ];
+    const prior = new Map([["a", -10], ["b", 10]]);
+    const games = [makeGame("g1", "a", "b", 28, 7)];
+    const withPrior = buildPowerRankings(
+      buildDataset({ teams, players: [], games }, "2026-27", prior),
+    );
+    const noPrior = buildPowerRankings(buildDataset({ teams, players: [], games }, "2026-27"));
+    expect(withPrior.get("a")!.rating).toBe(noPrior.get("a")!.rating);
+    expect(withPrior.get("a")!.source).toBe("current");
+    expect(withPrior.get("a")!.overallRank).toBe(1);
+  });
+
+  it("independents (no region) switch off the prior after 2 finals", () => {
+    const teams = [makeTeam("a"), makeTeam("b"), makeTeam("c")];
+    const prior = new Map([["a", -10]]);
+    const one = [makeGame("g1", "a", "b", 28, 7)];
+    const two = [...one, makeGame("g2", "a", "c", 28, 7)];
+    const after1 = buildPowerRankings(buildDataset({ teams, players: [], games: one }, "2026-27", prior));
+    const after2 = buildPowerRankings(buildDataset({ teams, players: [], games: two }, "2026-27", prior));
+    expect(after1.get("a")!.source).toBe("prior");
+    expect(after2.get("a")!.source).toBe("current");
+  });
+
+  it("ignores the prior for teams no longer in the dataset", () => {
+    const teams = [makeTeam("a")];
+    const prior = new Map([["a", 5], ["ghost", 99]]);
+    const ranks = buildPowerRankings(buildDataset({ teams, players: [], games: [] }, "2026-27", prior));
+    expect(ranks.has("ghost")).toBe(false);
+    expect(ranks.get("a")!.overallRank).toBe(1);
   });
 
   it("caps blowout margins", () => {

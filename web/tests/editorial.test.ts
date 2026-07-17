@@ -1,6 +1,17 @@
 import { describe, expect, it } from "vitest";
 import { pickAlgorithmGOTW } from "@/lib/editorial";
+import type { PowerRank } from "@/lib/power";
 import type { Game, Team } from "@/lib/types";
+
+/** Power map from [id, overallRank] pairs; unlisted teams are unranked. */
+function powerMap(ranks: [string, number][]): Map<string, PowerRank> {
+  return new Map(
+    ranks.map(([id, rank]) => [
+      id,
+      { rating: 100 - rank, overallRank: rank, classRank: rank, source: "current" as const },
+    ]),
+  );
+}
 
 function team(id: string, rank: number | null): Team {
   return {
@@ -57,16 +68,25 @@ function game(
 }
 
 describe("pickAlgorithmGOTW", () => {
-  it("prefers games between two ranked teams over one ranked + unranked", () => {
+  it("prefers games between two power-ranked teams over one ranked + unranked", () => {
     const teams = [team("a", 1), team("b", 2), team("c", null)];
     const games = [game("g1", "a", "c"), game("g2", "a", "b")];
-    const pick = pickAlgorithmGOTW(games, teams);
+    const pick = pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]));
+    expect(pick?.id).toBe("g2");
+  });
+
+  it("prefers the highest-ranked pairing", () => {
+    const teams = [team("a", 1), team("b", 2), team("c", 30), team("d", 31)];
+    const games = [game("g1", "c", "d"), game("g2", "a", "b")];
+    const pick = pickAlgorithmGOTW(
+      games, teams, powerMap([["a", 1], ["b", 2], ["c", 30], ["d", 31]]),
+    );
     expect(pick?.id).toBe("g2");
   });
 
   it("returns null when no scheduled games", () => {
     const teams = [team("a", 1), team("b", 2)];
     const games = [game("g1", "a", "b", "final")];
-    expect(pickAlgorithmGOTW(games, teams)).toBeNull();
+    expect(pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]))).toBeNull();
   });
 });

@@ -22,7 +22,7 @@ export interface MatchupTeam {
   district: string | null;
   record: WL;
   splits: { classification: WL; region: WL };
-  power: { overall: number; cls: number } | null;
+  power: { overall: number; cls: number; prior: boolean } | null;
   playoffPct: number | null;
   runPass: RunPassSplit | null;
   stats: {
@@ -242,6 +242,9 @@ function TeamHeader({
           <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
             {" "}#{team.power.overall} Overall - #{team.power.cls}{" "}
             {classificationLabel(team.classification)}
+            {team.power.prior && (
+              <span className="text-sm text-chrome-500/80"> (prior season)</span>
+            )}
           </span>
         )}
       </div>

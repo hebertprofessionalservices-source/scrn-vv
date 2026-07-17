@@ -36,7 +36,9 @@ export default async function MatchupBuilderPage({
         district: t.district,
         record: { wins: t.record.wins, losses: t.record.losses },
         splits: teamRecordSplits(data, t),
-        power: p ? { overall: p.overallRank, cls: p.classRank } : null,
+        power: p
+          ? { overall: p.overallRank, cls: p.classRank, prior: p.source === "prior" }
+          : null,
         playoffPct: potentials.get(t.id) ?? null,
         runPass: runPassAttempts(data.playersByTeam.get(t.id) ?? []),
         stats: {

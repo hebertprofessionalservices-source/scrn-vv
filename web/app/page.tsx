@@ -5,6 +5,7 @@ import { HomeLeaderboards } from "@/components/home/home-leaderboards";
 import { HomePerformances } from "@/components/home/home-performances";
 import { buildEditorialContext } from "@/lib/editorial";
 import { buildLeaderboardData } from "@/lib/leaderboard";
+import { buildPowerRankings } from "@/lib/power";
 import { buildWeeklyView } from "@/lib/weekly";
 import { lastWeeksGames, seasonConcluded } from "@/lib/stats";
 
@@ -21,7 +22,7 @@ export default async function Home({
   const season = await currentSeason();
   const data = await loadDataset(season);
   const editorial = await loadEditorial();
-  const ctx = buildEditorialContext(editorial, data.games, data.teams);
+  const ctx = buildEditorialContext(editorial, data.games, data.teams, buildPowerRankings(data));
 
   if (data.teams.length === 0) {
     return <PreseasonEmptyState season={season} />;

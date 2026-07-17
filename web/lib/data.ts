@@ -17,9 +17,15 @@ export interface Dataset {
   gamesByTeam: Map<string, Game[]>;
   gamesById: Map<string, Game>;
   season: string;
+  /** Final power ratings from the previous season; preseason rating prior. */
+  priorRatings: Map<string, number> | null;
 }
 
-export function buildDataset(raw: RawDataset, season = "2025-26"): Dataset {
+export function buildDataset(
+  raw: RawDataset,
+  season = "2025-26",
+  priorRatings: Map<string, number> | null = null,
+): Dataset {
   const teamsById = new Map<string, Team>();
   const teamsBySlug = new Map<string, Team>();
   const teamsByAlias = new Map<string, Team>();
@@ -84,7 +90,7 @@ export function buildDataset(raw: RawDataset, season = "2025-26"): Dataset {
   return {
     teams: raw.teams, players: raw.players, games,
     teamsById, teamsBySlug, teamsByAlias, playersById, playersByTeam,
-    gamesByTeam, gamesById, season,
+    gamesByTeam, gamesById, season, priorRatings,
   };
 }
 

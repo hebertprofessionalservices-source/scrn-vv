@@ -53,11 +53,14 @@ export function findLastLoss(
 export function TeamVitals({
   team,
   power,
+  prior,
   lastLoss,
   coach,
 }: {
   team: Team;
   power: PowerRank | null;
+  /** Prior-season context, shown while the power rank is a preseason projection. */
+  prior?: { lastRank: number | null; returning: number | null } | null;
   lastLoss: LastLoss | null;
   coach?: CoachSummary | null;
 }) {
@@ -72,6 +75,20 @@ export function TeamVitals({
             <div className="text-sm text-chrome-300 mt-1">
               #{power.classRank} in {classificationLabel(team.classification)}
             </div>
+            {power.source === "prior" && (
+              <div className="text-xs text-chrome-500 mt-2 space-y-0.5">
+                {prior?.lastRank != null && (
+                  <div>Last season: #{prior.lastRank} Overall</div>
+                )}
+                <div>
+                  Returning production:{" "}
+                  {prior?.returning != null
+                    ? `${Math.round(prior.returning * 100)}%`
+                    : "n/a"}
+                </div>
+                <div>Projected from both — updates after first region game</div>
+              </div>
+            )}
           </>
         ) : (
           <NA />

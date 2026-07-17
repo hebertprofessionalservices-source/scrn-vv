@@ -164,6 +164,9 @@ function MatchupTeamHeader({
           <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
             {" "}#{power.overallRank} Overall - #{power.classRank}{" "}
             {classificationLabel(team.classification)}
+            {power.source === "prior" && (
+              <span className="text-sm text-chrome-500/80"> (prior season)</span>
+            )}
           </span>
         )}
       </div>

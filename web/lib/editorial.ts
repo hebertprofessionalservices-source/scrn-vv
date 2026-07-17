@@ -1,4 +1,5 @@
 import type { Editorial, Game, Team } from "./types";
+import type { PowerRank } from "./power";
 
 export interface EditorialContext {
   editorial: Editorial | null;
@@ -6,7 +7,11 @@ export interface EditorialContext {
   algorithmPickGame: Game | null;
 }
 
-export function pickAlgorithmGOTW(games: Game[], teams: Team[]): Game | null {
+export function pickAlgorithmGOTW(
+  games: Game[],
+  teams: Team[],
+  power: Map<string, PowerRank>,
+): Game | null {
   const byId = new Map(teams.map((t) => [t.id, t]));
   const candidates = games.filter((g) => g.status === "scheduled");
   if (candidates.length === 0) return null;
@@ -16,8 +21,8 @@ export function pickAlgorithmGOTW(games: Game[], teams: Team[]): Game | null {
     const home = byId.get(g.homeTeamId);
     const away = byId.get(g.awayTeamId);
     if (!home || !away) continue;
-    const hr = home.rankings.stateOverall ?? 999;
-    const ar = away.rankings.stateOverall ?? 999;
+    const hr = power.get(home.id)?.overallRank ?? 999;
+    const ar = power.get(away.id)?.overallRank ?? 999;
     const rankScore =
       hr < 999 && ar < 999 ? 1000 - (hr + ar) : 500 - Math.min(hr, ar);
     const hw =
@@ -35,7 +40,8 @@ export function pickAlgorithmGOTW(games: Game[], teams: Team[]): Game | null {
 export function buildEditorialContext(
   editorial: Editorial | null,
   games: Game[],
-  teams: Team[]
+  teams: Team[],
+  power: Map<string, PowerRank>,
 ): EditorialContext {
   const byId = new Map(games.map((g) => [g.id, g]));
   const hostPickGame = editorial?.gameOfTheWeek?.gameId
@@ -44,6 +50,6 @@ export function buildEditorialContext(
   return {
     editorial,
     hostPickGame,
-    algorithmPickGame: pickAlgorithmGOTW(games, teams),
+    algorithmPickGame: pickAlgorithmGOTW(games, teams, power),
   };
 }
