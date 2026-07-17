@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -47,6 +48,25 @@ OUT_DIRS = [
 MISSING_MD = ROOT.parent / "docs" / "missing-2026-schedules.md"
 
 
+def homeaway_truth(html: str) -> dict[str, tuple[str, str]]:
+    """Per-contest (awayName, homeName) from the page's JSON-LD events.
+
+    Scheduled games carry a /game/X-vs-Y/ preview URL whose slug is
+    ALPHABETICAL (unlike final box scores' away-vs-home .htm slugs), so
+    parse_schedule's URL heuristic can't orient them. The JSON-LD event
+    name "Away at Home" is explicit instead; sides use MaxPreps short
+    names, the same vocabulary as parse_schedule's opponentName.
+    """
+    truth: dict[str, tuple[str, str]] = {}
+    for chunk in html.split('{"@type":"SportsEvent"')[1:]:
+        chunk = chunk[:2500]
+        nm = re.match(r'\s*,\s*"name":"([^"]+) at ([^"]+)"', chunk)
+        cm = re.search(r'/game/[^"]*\?c=([\w-]+)', chunk)
+        if nm and cm:
+            truth[cm.group(1)] = (nm.group(1).strip(), nm.group(2).strip())
+    return truth
+
+
 def carried_team(t: dict) -> dict:
     nt = json.loads(json.dumps(t))
     nt["season"] = SEASON
@@ -71,9 +91,11 @@ async def main() -> None:
     if args.limit:
         teams = teams[: args.limit]
 
-    games_out: list[dict] = []
     missing: list[tuple[dict, str]] = []
-    found = 0
+    pending: list[tuple[dict, str, list[dict]]] = []  # (team, url, partials)
+    # contestId -> (awayName, homeName); short names are global, so truth
+    # found on either team's page orients both perspectives.
+    truth: dict[str, tuple[str, str]] = {}
 
     cache = CrawlCache(config.CACHE_DB_PATH)
     async with BrowserHarness(headless=True) as harness:
@@ -99,13 +121,67 @@ async def main() -> None:
             if not partials:
                 missing.append((t, "no 2026 games listed on MaxPreps yet"))
                 continue
-            games = build_games(
-                season=SEASON, team_id=t["id"], opponent_lookup={},
-                schedule=partials, box_scores={}, player_label_to_id={},
-            )
-            games_out.extend(g.model_dump(by_alias=True) for g in games)
-            found += 1
-            print(f"[{i + 1}/{len(teams)}] {t['name']}: {len(games)} games", flush=True)
+            truth.update(homeaway_truth(html))
+            pending.append((t, url, partials))
+            print(f"[{i + 1}/{len(teams)}] {t['name']}: {len(partials)} games", flush=True)
+
+    # Fix each row's homeOrAway from JSON-LD "Away at Home" event names,
+    # matched by contest id and oriented via the row's opponentName.
+    fixed = defaulted = 0
+    rows_by_contest: dict[str, list[dict]] = {}
+    for t, url, partials in pending:
+        for g in partials:
+            if g.get("contestId"):
+                rows_by_contest.setdefault(g["contestId"], []).append(g)
+            g["_fixed"] = False
+            sides = truth.get(g.get("contestId") or "")
+            opp = (g.get("opponentName") or "").strip()
+            if sides and opp:
+                away_name, home_name = sides
+                if opp == home_name and opp != away_name:
+                    g["homeOrAway"] = "away"
+                    g["_fixed"] = True
+                    fixed += 1
+                    continue
+                if opp == away_name and opp != home_name:
+                    g["homeOrAway"] = "home"
+                    g["_fixed"] = True
+                    fixed += 1
+                    continue
+            defaulted += 1
+
+    # The two perspective rows of one contest must be complementary; when
+    # JSON-LD resolved only one (or neither), reconcile the pair so the
+    # runtime merge still yields canonical ids for both teams.
+    reconciled = 0
+    for rows in rows_by_contest.values():
+        if len(rows) != 2:
+            continue
+        a, b = rows
+        if a["_fixed"] and not b["_fixed"]:
+            b["homeOrAway"] = "away" if a["homeOrAway"] == "home" else "home"
+            reconciled += 1
+        elif b["_fixed"] and not a["_fixed"]:
+            a["homeOrAway"] = "away" if b["homeOrAway"] == "home" else "home"
+            reconciled += 1
+        elif not a["_fixed"] and a["homeOrAway"] == b["homeOrAway"]:
+            # No signal at all: orientation is a guess, but keep it consistent.
+            b["homeOrAway"] = "away" if a["homeOrAway"] == "home" else "home"
+            reconciled += 1
+    print(f"reconciled {reconciled} paired rows", flush=True)
+
+    games_out: list[dict] = []
+    found = 0
+    for t, url, partials in pending:
+        for g in partials:
+            g.pop("_fixed", None)
+        games = build_games(
+            season=SEASON, team_id=t["id"], opponent_lookup={},
+            schedule=partials, box_scores={}, player_label_to_id={},
+        )
+        games_out.extend(g.model_dump(by_alias=True) for g in games)
+        found += 1
+    print(f"home/away: {fixed} from JSON-LD, {defaulted} defaulted", flush=True)
 
     # Dedupe by game id (matches the season pipeline's behaviour).
     seen: dict[str, dict] = {}
