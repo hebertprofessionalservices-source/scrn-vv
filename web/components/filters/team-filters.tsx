@@ -48,14 +48,9 @@ export function TeamFilters({
       <select
         className={SELECT_CLASSES}
         value={league}
-        onChange={(e) => {
-          const next = e.target.value;
-          // Keep narrower filters only if they still fit the new league.
-          const keepCls = cls && (!next || leagueOf(cls) === next);
-          const keepRegion =
-            keepCls && cls && (regionsByClass[cls] ?? []).includes(region);
-          update(next, keepCls ? cls : "", keepRegion ? region : "");
-        }}
+        // Hierarchy: League > Classification > Region — changing a filter
+        // resets everything below it and never touches what's above.
+        onChange={(e) => update(e.target.value, "", "")}
         aria-label="League"
       >
         <option value="">All Leagues</option>
@@ -66,11 +61,7 @@ export function TeamFilters({
       <select
         className={SELECT_CLASSES}
         value={cls}
-        onChange={(e) => {
-          const next = e.target.value;
-          const keepRegion = next && (regionsByClass[next] ?? []).includes(region);
-          update(league, next, keepRegion ? region : "");
-        }}
+        onChange={(e) => update(league, e.target.value, "")}
         aria-label="Classification"
       >
         <option value="">All Classifications</option>
