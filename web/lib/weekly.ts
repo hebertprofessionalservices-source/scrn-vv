@@ -79,7 +79,7 @@ interface RawLine {
 }
 
 /** ISO date of the Monday of the game's calendar week. */
-function mondayKey(date: string): string {
+export function mondayKey(date: string): string {
   const d = new Date(date.slice(0, 10) + "T12:00");
   d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
   return d.toISOString().slice(0, 10);

@@ -69,6 +69,8 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
+      {/* Frozen like a header row: sticks below the site header on scroll. */}
+      <div className="sticky top-24 z-30 -mx-4 px-4 py-3 bg-navy-900/95 backdrop-blur border-b border-chrome-500/15">
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
         <div className="flex items-center justify-end gap-3">
           <MatchupTeamHeader
@@ -93,6 +95,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             records={sides.b.records}
           />
         </div>
+      </div>
       </div>
 
       <AiPick

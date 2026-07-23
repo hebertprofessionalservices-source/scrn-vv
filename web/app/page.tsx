@@ -35,7 +35,7 @@ export default async function Home({
   const lastWeek = lastWeeksGames(data.games);
 
   const hostGame = ctx.hostPickGame;
-  const algoGame = ctx.algorithmPickGame;
+  const { mhsaa: mhsaaGame, mais: maisGame } = ctx.algorithmPicks;
 
   const concluded = seasonConcluded(data.games);
   const currentWeek = editorial?.currentWeek ?? 0;
@@ -65,12 +65,21 @@ export default async function Home({
             storyline={editorial?.gameOfTheWeek?.storyline ?? ""}
           />
         )}
-        {algoGame && (
+        {mhsaaGame && (
           <GameOfTheWeekCard
-            game={algoGame}
-            away={data.teamsById.get(algoGame.awayTeamId)}
-            home={data.teamsById.get(algoGame.homeTeamId)}
-            label="Algorithm's Pick"
+            game={mhsaaGame}
+            away={data.teamsById.get(mhsaaGame.awayTeamId)}
+            home={data.teamsById.get(mhsaaGame.homeTeamId)}
+            label="MHSAA Game of the Week"
+            storyline="Top-ranked teams + tight matchup score."
+          />
+        )}
+        {maisGame && (
+          <GameOfTheWeekCard
+            game={maisGame}
+            away={data.teamsById.get(maisGame.awayTeamId)}
+            home={data.teamsById.get(maisGame.homeTeamId)}
+            label="MAIS Game of the Week"
             storyline="Top-ranked teams + tight matchup score."
           />
         )}

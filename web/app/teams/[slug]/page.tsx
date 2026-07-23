@@ -22,6 +22,7 @@ import {
   nextScheduledGame,
 } from "@/lib/team-outlook";
 import { ReturnersList } from "@/components/matchup/key-returners";
+import { TeamKeyPlayers } from "@/components/matchup/key-players";
 import type { Player } from "@/lib/types";
 
 // Offense first, then defense, then special teams.
@@ -158,6 +159,8 @@ export default async function TeamDetailPage({
         sos={{ played: side.sosPlayed, remaining: side.sosRemaining }}
         playoff={playoffCard}
       />
+
+      {players.length > 0 && <TeamKeyPlayers team={team} players={players} />}
 
       {keyReturners.length > 0 && (
         <section>

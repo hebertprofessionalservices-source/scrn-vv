@@ -13,13 +13,13 @@ function powerMap(ranks: [string, number][]): Map<string, PowerRank> {
   );
 }
 
-function team(id: string, rank: number | null): Team {
+function team(id: string, rank: number | null, classification: Team["classification"] = "7A"): Team {
   return {
     id,
     name: id,
     mascot: null,
     city: null,
-    classification: "7A",
+    classification,
     district: null,
     logoUrl: null,
     colors: { primary: null, secondary: null },
@@ -43,17 +43,20 @@ function team(id: string, rank: number | null): Team {
   };
 }
 
+const TODAY = new Date("2025-09-01");
+
 function game(
   id: string,
   home: string,
   away: string,
-  status: "final" | "scheduled" = "scheduled"
+  status: "final" | "scheduled" = "scheduled",
+  date = "2025-09-12",
 ): Game {
   return {
     id,
     season: "2025-26",
     week: 0,
-    date: "2025-09-12",
+    date,
     homeTeamId: home,
     awayTeamId: away,
     homeScore: null,
@@ -71,7 +74,7 @@ describe("pickAlgorithmGOTW", () => {
   it("prefers games between two power-ranked teams over one ranked + unranked", () => {
     const teams = [team("a", 1), team("b", 2), team("c", null)];
     const games = [game("g1", "a", "c"), game("g2", "a", "b")];
-    const pick = pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]));
+    const pick = pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]), TODAY);
     expect(pick?.id).toBe("g2");
   });
 
@@ -79,14 +82,53 @@ describe("pickAlgorithmGOTW", () => {
     const teams = [team("a", 1), team("b", 2), team("c", 30), team("d", 31)];
     const games = [game("g1", "c", "d"), game("g2", "a", "b")];
     const pick = pickAlgorithmGOTW(
-      games, teams, powerMap([["a", 1], ["b", 2], ["c", 30], ["d", 31]]),
+      games, teams, powerMap([["a", 1], ["b", 2], ["c", 30], ["d", 31]]), TODAY,
     );
     expect(pick?.id).toBe("g2");
+  });
+
+  it("only considers the coming week, not better games later on", () => {
+    const teams = [team("a", 1), team("b", 2), team("c", 30), team("d", 31)];
+    const games = [
+      game("near", "c", "d", "scheduled", "2025-09-12"),
+      game("far", "a", "b", "scheduled", "2025-09-19"), // better pairing, next week
+    ];
+    const pick = pickAlgorithmGOTW(
+      games, teams, powerMap([["a", 1], ["b", 2], ["c", 30], ["d", 31]]), TODAY,
+    );
+    expect(pick?.id).toBe("near");
+  });
+
+  it("ignores stale scheduled games in the past", () => {
+    const teams = [team("a", 1), team("b", 2), team("c", 30), team("d", 31)];
+    const games = [
+      game("old", "a", "b", "scheduled", "2025-08-15"),
+      game("next", "c", "d", "scheduled", "2025-09-12"),
+    ];
+    const pick = pickAlgorithmGOTW(
+      games, teams, powerMap([["a", 1], ["b", 2], ["c", 30], ["d", 31]]), TODAY,
+    );
+    expect(pick?.id).toBe("next");
   });
 
   it("returns null when no scheduled games", () => {
     const teams = [team("a", 1), team("b", 2)];
     const games = [game("g1", "a", "b", "final")];
-    expect(pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]))).toBeNull();
+    expect(pickAlgorithmGOTW(games, teams, powerMap([["a", 1], ["b", 2]]), TODAY)).toBeNull();
+  });
+
+  it("picks per league, each scoped to its own nearest week", () => {
+    const teams = [
+      team("a", 1), team("b", 2),                       // MHSAA (7A)
+      team("m1", 3, "MAIS-3A"), team("m2", 4, "MAIS-3A"),
+    ];
+    const games = [
+      game("mais", "m1", "m2", "scheduled", "2025-09-12"),
+      // MHSAA slate doesn't start until the following week.
+      game("mhsaa", "a", "b", "scheduled", "2025-09-19"),
+    ];
+    const power = powerMap([["a", 1], ["b", 2], ["m1", 3], ["m2", 4]]);
+    expect(pickAlgorithmGOTW(games, teams, power, TODAY, "MAIS")?.id).toBe("mais");
+    expect(pickAlgorithmGOTW(games, teams, power, TODAY, "MHSAA")?.id).toBe("mhsaa");
   });
 });

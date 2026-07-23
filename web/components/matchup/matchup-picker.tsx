@@ -120,18 +120,21 @@ export function MatchupPicker({
 
       {teamA && teamB ? (
         <div>
-          <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-4 mb-6">
-            <TeamHeader
-              team={teamA}
-              align="right"
-              outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.a : null}
-            />
-            <div className="font-display text-4xl text-crimson-500 self-center">VS</div>
-            <TeamHeader
-              team={teamB}
-              align="left"
-              outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.b : null}
-            />
+          {/* Frozen like a header row: sticks below the site header on scroll. */}
+          <div className="sticky top-24 z-30 -mx-4 px-4 py-3 mb-6 bg-navy-900/95 backdrop-blur border-b border-chrome-500/15">
+            <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-4">
+              <TeamHeader
+                team={teamA}
+                align="right"
+                outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.a : null}
+              />
+              <div className="font-display text-4xl text-crimson-500 self-center">VS</div>
+              <TeamHeader
+                team={teamB}
+                align="left"
+                outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.b : null}
+              />
+            </div>
           </div>
 
           <div className="mb-6">
