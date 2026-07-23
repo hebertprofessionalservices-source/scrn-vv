@@ -1,5 +1,5 @@
 "use client";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { classificationLabel, leagueOf } from "@/lib/team-format";
 
 const CLASSES = [
@@ -19,7 +19,6 @@ export function TeamFilters({
   regionsByClass: Record<string, string[]>;
 }) {
   const params = useSearchParams();
-  const router = useRouter();
   const pathname = usePathname();
   const league = params.get("league") ?? "";
   const cls = params.get("class") ?? "";
@@ -39,8 +38,10 @@ export function TeamFilters({
     if (nextCls) sp.set("class", nextCls); else sp.delete("class");
     if (nextRegion) sp.set("region", nextRegion); else sp.delete("region");
     const qs = sp.toString();
-    // Never push a trailing "?": the production router ignores it.
-    router.push((qs ? `${pathname}?${qs}` : pathname) as any);
+    // Full navigation, not router.push: the client router silently drops
+    // transitions issued while a previous one is still in flight, which
+    // made filter changes randomly "not work".
+    window.location.assign(qs ? `${pathname}?${qs}` : pathname);
   }
 
   return (

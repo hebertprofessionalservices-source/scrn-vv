@@ -1,12 +1,11 @@
 "use client";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 
 const POSITIONS = ["QB","RB","WR","TE","OL","DL","LB","DB","K","P","ATH"];
 
 export function PositionFilter() {
   const params = useSearchParams();
-  const router = useRouter();
   const pathname = usePathname();
   const active = params.get("pos");
 
@@ -14,8 +13,9 @@ export function PositionFilter() {
     const sp = new URLSearchParams(params.toString());
     if (p) sp.set("pos", p); else sp.delete("pos");
     const qs = sp.toString();
-    // Never push a trailing "?": the production router ignores it.
-    router.push((qs ? `${pathname}?${qs}` : pathname) as any);
+    // Full navigation, not router.push: the client router silently drops
+    // transitions issued while a previous one is still in flight.
+    window.location.assign(qs ? `${pathname}?${qs}` : pathname);
   }
 
   return (
