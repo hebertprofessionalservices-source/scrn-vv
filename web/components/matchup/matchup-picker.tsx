@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
 import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
-import { fmtPct, recordSplitsLabel } from "@/lib/matchup-format";
+import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg } from "@/lib/matchup-format";
 import type { MatchupOutlook } from "@/lib/standings";
+import type { MatchupSideData } from "@/lib/team-outlook";
 import type { Team } from "@/lib/types";
 
 interface WL {
@@ -21,10 +22,12 @@ export interface MatchupTeam {
   classification: Team["classification"];
   district: string | null;
   record: WL;
-  splits: { classification: WL; region: WL };
   power: { overall: number; cls: number; prior: boolean } | null;
+  /** Power rating, for the AI pick win probability. */
+  rating: number | null;
   playoffPct: number | null;
   runPass: RunPassSplit | null;
+  side: MatchupSideData;
   stats: {
     pointsFor: number;
     pointsAgainst: number;
@@ -131,6 +134,10 @@ export function MatchupPicker({
             />
           </div>
 
+          <div className="mb-6">
+            <AiPickBanner a={teamA} b={teamB} />
+          </div>
+
           <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
@@ -142,13 +149,23 @@ export function MatchupPicker({
                   const comparable = !aMissing && !bMissing;
                   const aBetter = comparable && (row.lowerIsBetter ? va < vb : va > vb);
                   const bBetter = comparable && (row.lowerIsBetter ? vb < va : vb > va);
+                  // Yardage rows carry the per-attempt average in parentheses.
+                  const avgFor = (t: MatchupTeam) =>
+                    row.label === "Passing Yards" ? t.side.avgPass
+                    : row.label === "Rushing Yards" ? t.side.avgRush
+                    : null;
+                  const cell = (t: MatchupTeam, v: number, missing: boolean) => {
+                    if (missing) return "—";
+                    const avg = avgFor(t);
+                    return avg !== null ? ydsWithAvg(v, avg) : row.format(v);
+                  };
                   const tr = (
                     <tr key={row.label} className="border-t border-chrome-500/10 first:border-t-0">
-                      <td className={cellClass("right", aBetter)}>{aMissing ? "—" : row.format(va)}</td>
+                      <td className={cellClass("right", aBetter)}>{cell(teamA, va, aMissing)}</td>
                       <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
                         {row.label}
                       </td>
-                      <td className={cellClass("left", bBetter)}>{bMissing ? "—" : row.format(vb)}</td>
+                      <td className={cellClass("left", bBetter)}>{cell(teamB, vb, bMissing)}</td>
                     </tr>
                   );
                   if (row.label !== "Rushing Yards") return [tr];
@@ -167,6 +184,15 @@ export function MatchupPicker({
                     </tr>,
                   ];
                 })}
+                {outlookRows(teamA.side, teamB.side).map((row) => (
+                  <tr key={row.label} className="border-t border-chrome-500/10">
+                    <td className={cellClass("right", Boolean(row.aBetter))}>{row.a}</td>
+                    <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
+                      {row.label}
+                    </td>
+                    <td className={cellClass("left", Boolean(row.bBetter))}>{row.b}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -223,6 +249,21 @@ function pairMatches(outlook: PairOutlook | null, aId: string, bId: string): boo
   return outlook !== null && outlook.aId === aId && outlook.bId === bId;
 }
 
+function AiPickBanner({ a, b }: { a: MatchupTeam; b: MatchupTeam }) {
+  if (a.rating === null || b.rating === null) return null;
+  const pA = 1 / (1 + Math.exp(-(a.rating - b.rating) / 7));
+  const winner = pA >= 0.5 ? a.name : b.name;
+  const pct = Math.round(Math.max(pA, 1 - pA) * 100);
+  return (
+    <div className="rounded-xl border border-crimson-500/40 bg-navy-700/40 px-4 py-2.5 text-center">
+      <span className="text-xs uppercase tracking-wider text-crimson-500 mr-2">AI Pick</span>
+      <span className="font-display text-lg text-chrome-100">
+        {winner} — {pct}%
+      </span>
+    </div>
+  );
+}
+
 function TeamHeader({
   team,
   align,
@@ -253,7 +294,11 @@ function TeamHeader({
         {team.playoffPct !== null &&
           ` (Current Playoff Potential: ${team.playoffPct.toFixed(2)}%)`}
       </div>
-      <div className="text-sm text-chrome-500">{recordSplitsLabel(team.record, team.splits)}</div>
+      <div className="text-sm text-chrome-500">
+        {recordsBlockLines(team.side.records).map((line) => (
+          <div key={line}>{line}</div>
+        ))}
+      </div>
       {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
         <div className="text-sm text-chrome-500">
           Playoff Potential if win/loss:{" "}

@@ -19,12 +19,14 @@ function production(p: Player): number {
   );
 }
 
-/** teamId -> share of production returning (0..1), null when unknown. */
-export function returningShares(players: Player[]): Map<string, number | null> {
+function shares(
+  players: Player[],
+  metric: (p: Player) => number,
+): Map<string, number | null> {
   const totals = new Map<string, { all: number; back: number }>();
   for (const p of players) {
     const t = totals.get(p.teamId) ?? { all: 0, back: 0 };
-    const prod = production(p);
+    const prod = metric(p);
     t.all += prod;
     if (p.class !== "SR") t.back += prod;
     totals.set(p.teamId, t);
@@ -34,6 +36,79 @@ export function returningShares(players: Player[]): Map<string, number | null> {
     out.set(
       teamId,
       t.all < MIN_PRODUCTION ? null : Math.max(0, Math.min(1, t.back / t.all)),
+    );
+  }
+  return out;
+}
+
+/** teamId -> share of production returning (0..1), null when unknown. */
+export function returningShares(players: Player[]): Map<string, number | null> {
+  return shares(players, production);
+}
+
+/** teamId -> share of OFFENSIVE yardage returning (0..1), null when unknown. */
+export function returningOffenseShares(players: Player[]): Map<string, number | null> {
+  return shares(
+    players,
+    (p) => p.stats.passing.yds + p.stats.rushing.yds + p.stats.receiving.yds,
+  );
+}
+
+const NEXT_CLASS: Record<string, string> = { FR: "So", SO: "Jr", JR: "Sr" };
+
+export interface KeyReturner {
+  playerId: string;
+  name: string;
+  position: string;
+  /** Class they'll be THIS season (last season's class promoted). */
+  nextClass: string;
+  /** Last season's headline stat line, e.g. "1,204 rush yds · 15 TD". */
+  line: string;
+}
+
+function headline(p: Player): string {
+  const s = p.stats;
+  const candidates: [number, string][] = [
+    [s.passing.yds, `${s.passing.yds.toLocaleString()} pass yds · ${s.passing.td} TD`],
+    [s.rushing.yds, `${s.rushing.yds.toLocaleString()} rush yds · ${s.rushing.td} TD`],
+    [s.receiving.yds, `${s.receiving.rec} rec · ${s.receiving.yds.toLocaleString()} yds · ${s.receiving.td} TD`],
+    [
+      s.defense.tackles * 8,
+      `${s.defense.tackles} tackles` +
+        (s.defense.sacks ? ` · ${s.defense.sacks} sacks` : "") +
+        (s.defense.int ? ` · ${s.defense.int} INT` : ""),
+    ],
+  ];
+  candidates.sort((a, b) => b[0] - a[0]);
+  return candidates[0][1];
+}
+
+/** Top returning stat leaders per team (non-seniors, by prior production). */
+export function keyReturnersByTeam(
+  players: Player[],
+  limit = 5,
+): Map<string, KeyReturner[]> {
+  const byTeam = new Map<string, Player[]>();
+  for (const p of players) {
+    if (p.class === "SR" || production(p) <= 0) continue;
+    const list = byTeam.get(p.teamId) ?? [];
+    list.push(p);
+    byTeam.set(p.teamId, list);
+  }
+  const out = new Map<string, KeyReturner[]>();
+  for (const [teamId, list] of byTeam) {
+    out.set(
+      teamId,
+      list
+        .sort((a, b) => production(b) - production(a))
+        .slice(0, limit)
+        .map((p) => ({
+          playerId: p.id,
+          name: p.name,
+          position: p.position,
+          nextClass: NEXT_CLASS[p.class] ?? p.class,
+          line: headline(p),
+        })),
     );
   }
   return out;

@@ -13,9 +13,13 @@ import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel, classRegionLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import { buildPowerRankings, type PowerRank } from "@/lib/power";
-import { matchupPlayoffOutlook, playoffPotentials, teamRecordSplits, type MatchupOutlook } from "@/lib/standings";
+import { buildRatings, matchupPlayoffOutlook, playoffPotentials, type MatchupOutlook } from "@/lib/standings";
+import { buildTeamEfficiency } from "@/lib/efficiency";
 import { runPassAttempts } from "@/lib/run-pass";
-import { fmtPct, recordSplitsLabel, type RecordSplits } from "@/lib/matchup-format";
+import { buildMatchupSide } from "@/lib/team-outlook";
+import { fmtPct, recordsBlockLines, type RecordsBlockInput } from "@/lib/matchup-format";
+import { AiPick, KeyReturnersSection } from "@/components/matchup/key-returners";
+import { loadPriorSeasonInfo } from "@/lib/data-server";
 import type { Team } from "@/lib/types";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
@@ -50,6 +54,18 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
     a: runPassAttempts(data.playersByTeam.get(away.id) ?? []),
     b: runPassAttempts(data.playersByTeam.get(home.id) ?? []),
   };
+  const rate = buildRatings(data);
+  const efficiency = buildTeamEfficiency(data);
+  const prior = await loadPriorSeasonInfo(season);
+  const sideFor = (t: Team, rp: typeof runPass.a) =>
+    buildMatchupSide(data, t, {
+      rate,
+      efficiency: efficiency.get(t.id) ?? null,
+      runPass: rp,
+      retOff: prior?.returningOffense.get(t.id) ?? null,
+      retAll: prior?.returning.get(t.id) ?? null,
+    });
+  const sides = { a: sideFor(away, runPass.a), b: sideFor(home, runPass.b) };
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -61,7 +77,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             power={power.get(away.id) ?? null}
             playoffPct={potentials.get(away.id) ?? null}
             outlook={outlook?.a ?? null}
-            splits={teamRecordSplits(data, away)}
+            records={sides.a.records}
           />
           <TeamLogo src={away.logoUrl} size={64} />
         </div>
@@ -74,10 +90,17 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             power={power.get(home.id) ?? null}
             playoffPct={potentials.get(home.id) ?? null}
             outlook={outlook?.b ?? null}
-            splits={teamRecordSplits(data, home)}
+            records={sides.b.records}
           />
         </div>
       </div>
+
+      <AiPick
+        aName={away.name}
+        bName={home.name}
+        aRating={power.get(away.id)?.rating ?? null}
+        bRating={power.get(home.id)?.rating ?? null}
+      />
 
       {SHOW_MATCHUP_EXTRAS && storylines.length > 0 && (
         <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
@@ -93,7 +116,12 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
         </section>
       )}
 
-      <TaleOfTheTape a={away} b={home} runPass={runPass} />
+      <TaleOfTheTape a={away} b={home} runPass={runPass} sides={sides} />
+
+      <KeyReturnersSection
+        a={{ teamName: away.name, returners: prior?.keyReturners.get(away.id) ?? [] }}
+        b={{ teamName: home.name, returners: prior?.keyReturners.get(home.id) ?? [] }}
+      />
 
       {SHOW_MATCHUP_EXTRAS && (
         <KeyPlayers away={away} home={home} playersByTeam={data.playersByTeam} />
@@ -143,14 +171,14 @@ function MatchupTeamHeader({
   power,
   playoffPct,
   outlook,
-  splits,
+  records,
 }: {
   team: Team;
   align: "left" | "right";
   power: PowerRank | null;
   playoffPct: number | null;
   outlook: MatchupOutlook | null;
-  splits: RecordSplits;
+  records: RecordsBlockInput;
 }) {
   return (
     <div className={align === "right" ? "text-right" : "text-left"}>
@@ -171,7 +199,9 @@ function MatchupTeamHeader({
         )}
       </div>
       <div className="text-sm text-chrome-500">
-        {recordSplitsLabel(team.record, splits)}
+        {recordsBlockLines(records).map((line) => (
+          <div key={line}>{line}</div>
+        ))}
       </div>
       {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
         <div className="text-sm text-chrome-500">

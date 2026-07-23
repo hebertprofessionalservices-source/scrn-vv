@@ -15,6 +15,13 @@ import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel, regionLabel, titleCaseSlug } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import { runPassAttempts } from "@/lib/run-pass";
+import { buildRatings, matchupPlayoffOutlook, playoffPotentials } from "@/lib/standings";
+import {
+  buildMatchupSide,
+  gameWinProbability,
+  nextScheduledGame,
+} from "@/lib/team-outlook";
+import { ReturnersList } from "@/components/matchup/key-returners";
 import type { Player } from "@/lib/types";
 
 // Offense first, then defense, then special teams.
@@ -59,18 +66,36 @@ export default async function TeamDetailPage({
 
   const region = regionLabel(team);
   const power = buildPowerRankings(data).get(team.id) ?? null;
-  const priorInfo =
-    power?.source === "prior" ? await loadPriorSeasonInfo(season) : null;
-  const prior = priorInfo
-    ? {
-        lastRank: priorInfo.power.get(team.id)?.overallRank ?? null,
-        returning: priorInfo.returning.get(team.id) ?? null,
-      }
-    : null;
+  const priorInfo = await loadPriorSeasonInfo(season);
+  const prior =
+    power?.source === "prior" && priorInfo
+      ? {
+          lastRank: priorInfo.power.get(team.id)?.overallRank ?? null,
+          returning: priorInfo.returning.get(team.id) ?? null,
+        }
+      : null;
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
   const runPass = runPassAttempts(players);
+
+  const rate = buildRatings(data);
+  const side = buildMatchupSide(data, team, {
+    rate,
+    efficiency,
+    runPass,
+    retOff: priorInfo?.returningOffense.get(team.id) ?? null,
+    retAll: priorInfo?.returning.get(team.id) ?? null,
+  });
+  const next = nextScheduledGame(data, team);
+  const nextOutlook = next ? matchupPlayoffOutlook(data, team.id, next.opp.id) : null;
+  const playoffCard = {
+    current: playoffPotentials(data).get(team.id) ?? null,
+    ifWin: nextOutlook?.a.ifWin ?? null,
+    ifLoss: nextOutlook?.a.ifLoss ?? null,
+    oppName: next?.opp.name ?? null,
+  };
+  const keyReturners = priorInfo?.keyReturners.get(team.id) ?? [];
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -122,7 +147,26 @@ export default async function TeamDetailPage({
 
       <TeamVitals team={team} power={power} prior={prior} lastLoss={lastLoss} coach={coach} />
 
-      <TeamStatPanel team={team} efficiency={efficiency} runPass={runPass} />
+      <TeamStatPanel
+        team={team}
+        efficiency={efficiency}
+        runPass={runPass}
+        records={side.records}
+        avgRush={side.avgRush}
+        avgPass={side.avgPass}
+        returning={{ off: side.retOff, all: side.retAll }}
+        sos={{ played: side.sosPlayed, remaining: side.sosRemaining }}
+        playoff={playoffCard}
+      />
+
+      {keyReturners.length > 0 && (
+        <section>
+          <h2 className="font-display text-2xl mb-3">Key Returning Players</h2>
+          <div className="max-w-2xl">
+            <ReturnersList side={{ teamName: team.name, returners: keyReturners }} />
+          </div>
+        </section>
+      )}
 
       <section>
         <h2 className="font-display text-2xl mb-3">Schedule</h2>
@@ -133,6 +177,7 @@ export default async function TeamDetailPage({
                 <th className="px-3 py-2 text-left" aria-label="Match Up" />
                 <th className="px-3 py-2 text-left">Date</th>
                 <th className="px-3 py-2 text-left">Opponent</th>
+                <th className="px-3 py-2 text-right">Win Prob</th>
                 <th className="px-3 py-2 text-right">Result</th>
               </tr>
             </thead>
@@ -143,6 +188,8 @@ export default async function TeamDetailPage({
                 const opp = data.teamsByAlias.get(oppId);
                 const sf = isHome ? g.homeScore : g.awayScore;
                 const sa = isHome ? g.awayScore : g.homeScore;
+                const winProb =
+                  g.status === "scheduled" ? gameWinProbability(data, team, g, rate) : null;
                 return (
                   <tr key={g.id} className="border-t border-chrome-500/10">
                     <td className="px-3 py-2 whitespace-nowrap">
@@ -168,6 +215,9 @@ export default async function TeamDetailPage({
                       ) : (
                         titleCaseSlug(oppId)
                       )}
+                    </td>
+                    <td className="px-3 py-2 text-right text-chrome-300">
+                      {winProb !== null ? `${Math.round(winProb * 100)}%` : "—"}
                     </td>
                     <td className="px-3 py-2 text-right">
                       {g.status === "final" && sf !== null && sa !== null

@@ -77,9 +77,9 @@ export function buildRatings(data: Dataset): Rate {
   return (teamId) => power.get(teamId)?.rating ?? 0;
 }
 
-/** P(home team beats away team) from the rating gap; ~7 points ≈ 73%. */
-function winProbability(rate: Rate, homeId: string, awayId: string): number {
-  return 1 / (1 + Math.exp(-(rate(homeId) - rate(awayId)) / 7));
+/** P(first team beats second) from the rating gap; ~7 points ≈ 73%. */
+export function winProbability(rate: Rate, teamId: string, oppId: string): number {
+  return 1 / (1 + Math.exp(-(rate(teamId) - rate(oppId)) / 7));
 }
 
 interface RegionState {

@@ -1,13 +1,16 @@
-import { loadDataset, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadPriorSeasonInfo, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam, type PairOutlook } from "@/components/matchup/matchup-picker";
 import { KeyPlayers } from "@/components/matchup/key-players";
+import { KeyReturnersSection } from "@/components/matchup/key-returners";
 import { SeriesHistory } from "@/components/matchup/series-history";
 import { buildStorylines } from "@/lib/storylines";
 import { loadHistory } from "@/lib/history-server";
 import { buildMatchupHistory } from "@/lib/matchup-history";
 import { buildPowerRankings } from "@/lib/power";
-import { matchupPlayoffOutlook, playoffPotentials, teamRecordSplits } from "@/lib/standings";
+import { buildRatings, matchupPlayoffOutlook, playoffPotentials } from "@/lib/standings";
+import { buildTeamEfficiency } from "@/lib/efficiency";
 import { runPassAttempts } from "@/lib/run-pass";
+import { buildMatchupSide } from "@/lib/team-outlook";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
 // until client revisions land. Flip to true to bring them back.
@@ -24,10 +27,14 @@ export default async function MatchupBuilderPage({
 
   const power = buildPowerRankings(data);
   const potentials = playoffPotentials(data);
+  const rate = buildRatings(data);
+  const efficiency = buildTeamEfficiency(data);
+  const prior = await loadPriorSeasonInfo(season);
 
   const teams: MatchupTeam[] = data.teams
     .map((t) => {
       const p = power.get(t.id);
+      const runPass = runPassAttempts(data.playersByTeam.get(t.id) ?? []);
       return {
         id: t.id,
         name: t.name,
@@ -35,12 +42,19 @@ export default async function MatchupBuilderPage({
         classification: t.classification,
         district: t.district,
         record: { wins: t.record.wins, losses: t.record.losses },
-        splits: teamRecordSplits(data, t),
         power: p
           ? { overall: p.overallRank, cls: p.classRank, prior: p.source === "prior" }
           : null,
+        rating: p?.rating ?? null,
         playoffPct: potentials.get(t.id) ?? null,
-        runPass: runPassAttempts(data.playersByTeam.get(t.id) ?? []),
+        runPass,
+        side: buildMatchupSide(data, t, {
+          rate,
+          efficiency: efficiency.get(t.id) ?? null,
+          runPass,
+          retOff: prior?.returningOffense.get(t.id) ?? null,
+          retAll: prior?.returning.get(t.id) ?? null,
+        }),
         stats: {
           pointsFor: t.stats.pointsFor,
           pointsAgainst: t.stats.pointsAgainst,
@@ -114,9 +128,14 @@ async function MatchupExtras({
     ...buildStorylines(data, teamA, teamB, h2h),
     ...historyView.milestones,
   ].slice(0, 8);
+  const prior = await loadPriorSeasonInfo(season);
 
   return (
     <div className="mt-8 space-y-8">
+      <KeyReturnersSection
+        a={{ teamName: teamA.name, returners: prior?.keyReturners.get(teamA.id) ?? [] }}
+        b={{ teamName: teamB.name, returners: prior?.keyReturners.get(teamB.id) ?? [] }}
+      />
       {storylines.length > 0 && (
         <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
           <h2 className="font-display text-xl mb-3">Storylines</h2>

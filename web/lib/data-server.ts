@@ -5,7 +5,13 @@ import { cookies } from "next/headers";
 import type { Editorial, Game, Player, Team } from "./types";
 import { buildDataset, type Dataset } from "./data";
 import { buildPowerRankings, type PowerRank } from "./power";
-import { adjustPriorRatings, returningShares } from "./returning";
+import {
+  adjustPriorRatings,
+  keyReturnersByTeam,
+  returningOffenseShares,
+  returningShares,
+  type KeyReturner,
+} from "./returning";
 
 const PUBLIC_DATA = path.join(process.cwd(), "public", "data");
 
@@ -43,6 +49,10 @@ export interface PriorSeasonInfo {
   power: Map<string, PowerRank>;
   /** teamId -> returning-production share (0..1), null when unknown. */
   returning: Map<string, number | null>;
+  /** teamId -> returning OFFENSIVE yardage share (0..1), null when unknown. */
+  returningOffense: Map<string, number | null>;
+  /** teamId -> top returning stat leaders from the previous season. */
+  keyReturners: Map<string, KeyReturner[]>;
 }
 
 /** Previous season's final ratings + returning production (no recursion). */
@@ -58,7 +68,13 @@ export async function loadPriorSeasonInfo(
   if (teams.length === 0 || games.length === 0) return null;
   const power = buildPowerRankings(buildDataset({ teams, players: [], games }, prev));
   if (power.size === 0) return null;
-  return { season: prev, power, returning: returningShares(players) };
+  return {
+    season: prev,
+    power,
+    returning: returningShares(players),
+    returningOffense: returningOffenseShares(players),
+    keyReturners: keyReturnersByTeam(players),
+  };
 }
 
 export async function loadEditorial(): Promise<Editorial | null> {

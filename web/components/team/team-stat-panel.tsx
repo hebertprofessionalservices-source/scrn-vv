@@ -1,15 +1,43 @@
 import type { TeamEfficiency } from "@/lib/efficiency";
 import type { Team } from "@/lib/types";
+import {
+  fmtPct,
+  fmtSos,
+  recordsBlockLines,
+  ydsWithAvg,
+  type RecordsBlockInput,
+} from "@/lib/matchup-format";
+import type { SosInfo } from "@/lib/team-outlook";
+
+export interface TeamPlayoffCard {
+  current: number | null;
+  ifWin: number | null;
+  ifLoss: number | null;
+  /** Next opponent the win/loss numbers are conditioned on. */
+  oppName: string | null;
+}
 
 export function TeamStatPanel({
   team,
   efficiency,
   runPass,
+  records,
+  avgRush,
+  avgPass,
+  returning,
+  sos,
+  playoff,
 }: {
   team: Team;
   efficiency?: TeamEfficiency | null;
   /** Season rush/pass attempt totals summed from the roster. */
   runPass?: { rush: number; pass: number } | null;
+  records?: RecordsBlockInput | null;
+  avgRush?: number | null;
+  avgPass?: number | null;
+  returning?: { off: number | null; all: number | null } | null;
+  sos?: SosInfo | null;
+  playoff?: TeamPlayoffCard | null;
 }) {
   const games = team.record.wins + team.record.losses;
   const ppg = games ? (team.stats.pointsFor / games).toFixed(1) : "—";
@@ -17,14 +45,44 @@ export function TeamStatPanel({
   const e = efficiency ?? null;
   const plays = (runPass?.rush ?? 0) + (runPass?.pass ?? 0);
   const runShare = plays > 0 ? Math.round((runPass!.rush / plays) * 100) : null;
+  const hasPrint = team.stats.yardsFor > 0;
+  const recordLines = records ? recordsBlockLines(records) : null;
+  const sharePct = (v: number | null | undefined) =>
+    v == null ? "n/a" : `${Math.round(v * 100)}%`;
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-      <Stat label="Record" value={`${team.record.wins}–${team.record.losses}`} />
+      {recordLines ? (
+        <Stat label="Record" value={recordLines[0].replace(/^Overall /, "")} subs={recordLines.slice(1)} />
+      ) : (
+        <Stat label="Record" value={`${team.record.wins}–${team.record.losses}`} />
+      )}
       <Stat label="PPG" value={ppg} />
       <Stat label="PA / G" value={papg} />
+      {runPass != null && (
+        <Stat
+          label="Run / Pass"
+          value={runShare !== null ? `${runShare}% / ${100 - runShare}%` : "n/a"}
+          sub={
+            runShare !== null
+              ? `${runPass.rush.toLocaleString()} rush · ${runPass.pass.toLocaleString()} pass att`
+              : undefined
+          }
+        />
+      )}
+      {returning && (
+        <Stat
+          label="Returning Off. Production"
+          value={sharePct(returning.off)}
+          sub={`${sharePct(returning.all)} overall production`}
+        />
+      )}
       <Stat
-        label="State Rank"
-        value={team.rankings.stateOverall ? `#${team.rankings.stateOverall}` : "—"}
+        label="Rushing Yards"
+        value={hasPrint ? ydsWithAvg(team.stats.rushYdsFor, avgRush ?? null) : "n/a"}
+      />
+      <Stat
+        label="Passing Yards"
+        value={hasPrint ? ydsWithAvg(team.stats.passYdsFor, avgPass ?? null) : "n/a"}
       />
       <Stat
         label="Off Efficiency"
@@ -62,13 +120,30 @@ export function TeamStatPanel({
             : undefined
         }
       />
-      {runPass != null && (
+      {sos && (
         <Stat
-          label="Run / Pass"
-          value={runShare !== null ? `${runShare}% / ${100 - runShare}%` : "n/a"}
-          sub={
-            runShare !== null
-              ? `${runPass.rush.toLocaleString()} rush · ${runPass.pass.toLocaleString()} pass att`
+          label="SOS Rating"
+          value={fmtSos(sos.played)}
+          sub="avg opponent rating vs league avg"
+        />
+      )}
+      {sos && (
+        <Stat
+          label="Remaining SOS"
+          value={fmtSos(sos.remaining)}
+          sub="avg remaining opponent rating"
+        />
+      )}
+      {playoff && (
+        <Stat
+          label="Playoff Potential"
+          value={fmtPct(playoff.current)}
+          subs={
+            playoff.oppName && (playoff.ifWin !== null || playoff.ifLoss !== null)
+              ? [
+                  `if win/loss vs ${playoff.oppName}:`,
+                  `${fmtPct(playoff.ifWin)} / ${fmtPct(playoff.ifLoss)}`,
+                ]
               : undefined
           }
         />
@@ -77,12 +152,25 @@ export function TeamStatPanel({
   );
 }
 
-function Stat({ label, value, sub }: { label: string; value: string; sub?: string }) {
+function Stat({
+  label,
+  value,
+  sub,
+  subs,
+}: {
+  label: string;
+  value: string;
+  sub?: string;
+  subs?: string[];
+}) {
+  const lines = subs ?? (sub ? [sub] : []);
   return (
     <div className="rounded-xl border border-chrome-500/15 bg-navy-700/40 p-4">
       <div className="text-xs uppercase tracking-wider text-chrome-500">{label}</div>
       <div className="font-display text-2xl mt-1">{value}</div>
-      {sub && <div className="text-xs text-chrome-500 mt-0.5">{sub}</div>}
+      {lines.map((l) => (
+        <div key={l} className="text-xs text-chrome-500 mt-0.5">{l}</div>
+      ))}
     </div>
   );
 }
