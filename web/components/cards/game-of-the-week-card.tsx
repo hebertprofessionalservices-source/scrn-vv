@@ -21,10 +21,10 @@ export function GameOfTheWeekCard({
   }
   const href = `/matchup/${displaySlug(away)}-vs-${displaySlug(home)}`;
   return (
-    <Link href={href as any}>
-      <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 hover:border-crimson-500 p-6">
+    <Link href={href as any} className="block h-full">
+      <div className="flex h-full flex-col rounded-2xl border border-chrome-500/15 bg-navy-700/40 hover:border-crimson-500 p-6">
         <div className="text-xs uppercase tracking-wider text-crimson-500 mb-2">{label}</div>
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+        <div className="flex-1 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
           <div className="flex items-center gap-3 justify-end">
             <div className="text-right">
               <div className="font-display text-2xl leading-tight">{away.name}</div>

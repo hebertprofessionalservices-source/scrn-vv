@@ -189,8 +189,11 @@ function MatchupTeamHeader({
         {classRegionLabel(team)}
         {playoffPct !== null && ` (Current Playoff Potential: ${playoffPct.toFixed(2)}%)`}
       </div>
-      <div className="font-display text-3xl leading-tight">
-        <Link href={`/teams/${displaySlug(team)}` as any}>{team.name}</Link>
+      <div className="font-display text-2xl xl:text-3xl leading-tight">
+        {/* The name itself never wraps; the rank drops below when tight. */}
+        <Link href={`/teams/${displaySlug(team)}` as any} className="whitespace-nowrap">
+          {team.name}
+        </Link>
         {power && (
           <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
             {" "}#{power.overallRank} Overall - #{power.classRank}{" "}

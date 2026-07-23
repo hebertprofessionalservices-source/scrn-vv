@@ -280,8 +280,9 @@ function TeamHeader({
   return (
     <div className={`flex flex-col gap-2 ${alignClass}`}>
       <TeamLogo src={team.logoUrl} size={72} />
-      <div className="font-display text-3xl leading-tight">
-        {team.name}
+      <div className="font-display text-2xl xl:text-3xl leading-tight">
+        {/* The name itself never wraps; the rank drops below when tight. */}
+        <span className="whitespace-nowrap">{team.name}</span>
         {team.power && (
           <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
             {" "}#{team.power.overall} Overall - #{team.power.cls}{" "}
