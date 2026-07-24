@@ -13,19 +13,26 @@ const MARGIN_CAP = 28;
 const ITERATIONS = 25;
 /** Fallback cutoff for teams with no region (independents). */
 const PRIOR_CUTOFF_GAMES = 2;
+/** Client-set blend: MaxPreps' opinion carries this share of the rating. */
+const MAXPREPS_WEIGHT = 0.75;
 
 /**
- * SCRN Power Ranking — a Simple Rating System (SRS): each team's rating is
- * its average (capped) scoring margin plus the average rating of its
- * opponents, iterated to convergence. Only games between two teams in the
- * dataset count.
+ * SCRN Power Ranking — a weighted blend of two signals:
  *
- * Season-start rule: a team carries last season's final rating (source
- * "prior", labeled in the UI) until it has played its first region game
- * this season; from then on the rating is purely this season's SRS — the
- * prior never bleeds into it. Teams without a region switch after
- * PRIOR_CUTOFF_GAMES finals instead. Teams with neither games nor a prior
- * stay unranked.
+ * 1. MaxPreps' ranking (MAXPREPS_WEIGHT = 75%) — the statewide list for
+ *    MHSAA, the per-class rank for MAIS — mapped onto our rating scale by
+ *    order statistics within each pool. Preseason, before MaxPreps
+ *    publishes current ranks, their prior-season final rank stands in.
+ * 2. Our own SRS rating (25%): average (capped) scoring margin plus the
+ *    average rating of opponents, iterated to convergence — strength of
+ *    schedule built in. Season-start rule: a team carries last season's
+ *    final rating discounted by returning production (source "prior",
+ *    labeled in the UI) until its first region game this season
+ *    (independents: PRIOR_CUTOFF_GAMES finals), then switches to pure
+ *    current-season SRS.
+ *
+ * Teams MaxPreps doesn't rank use our rating alone; teams with neither
+ * games nor a prior stay unranked.
  */
 export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   const results = new Map<string, { margins: number[]; opps: string[] }>();
@@ -110,6 +117,53 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
     }
   }
   if (finalRatings.size === 0) return new Map();
+
+  // Blend with MaxPreps: current rank when published, else last season's
+  // final. MaxPreps ranks are only consistent WITHIN a pool — MHSAA is one
+  // statewide list (stateOverall), while MAIS academies are ranked in
+  // their home-state pools, so only their per-class rank (stateClass) is
+  // comparable. Within each pool their #k team gets the k-th highest of
+  // that pool's OWN ratings (order statistics), then MaxPreps' value is
+  // averaged in at MAXPREPS_WEIGHT. Pools never trade rating mass, so
+  // cross-league ordering stays anchored to our ratings.
+  const poolOf = (id: string): string | null => {
+    const t = data.teamsById.get(id);
+    if (!t) return null;
+    return t.classification.startsWith("MAIS") ? t.classification : "MHSAA";
+  };
+  const mpRank = new Map<string, number>();
+  for (const id of finalRatings.keys()) {
+    const t = data.teamsById.get(id);
+    if (!t) continue;
+    const current = t.classification.startsWith("MAIS")
+      ? t.rankings.stateClass
+      : t.rankings.stateOverall;
+    const rank = current ?? data.priorStateRanks?.get(id);
+    if (rank != null) mpRank.set(id, rank);
+  }
+  const poolMembers = new Map<string, string[]>();
+  for (const id of finalRatings.keys()) {
+    const pool = poolOf(id);
+    if (!pool) continue;
+    const list = poolMembers.get(pool) ?? [];
+    list.push(id);
+    poolMembers.set(pool, list);
+  }
+  const blended = new Map<string, number>();
+  for (const members of poolMembers.values()) {
+    const slots = members.map((id) => finalRatings.get(id)!).sort((a, b) => b - a);
+    const ranked = members
+      .filter((id) => mpRank.has(id))
+      .sort((a, b) => mpRank.get(a)! - mpRank.get(b)!);
+    ranked.forEach((id, i) => {
+      const idx = ranked.length > 1
+        ? Math.round((i * (slots.length - 1)) / (ranked.length - 1))
+        : 0;
+      const ours = finalRatings.get(id)!;
+      blended.set(id, MAXPREPS_WEIGHT * slots[idx] + (1 - MAXPREPS_WEIGHT) * ours);
+    });
+  }
+  for (const [id, v] of blended) finalRatings.set(id, v);
 
   const ordered = [...finalRatings.keys()].sort(
     (a, b) => finalRatings.get(b)! - finalRatings.get(a)!,

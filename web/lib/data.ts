@@ -19,12 +19,15 @@ export interface Dataset {
   season: string;
   /** Final power ratings from the previous season; preseason rating prior. */
   priorRatings: Map<string, number> | null;
+  /** Previous season's final MaxPreps state ranks; preseason blend input. */
+  priorStateRanks: Map<string, number> | null;
 }
 
 export function buildDataset(
   raw: RawDataset,
   season = "2025-26",
   priorRatings: Map<string, number> | null = null,
+  priorStateRanks: Map<string, number> | null = null,
 ): Dataset {
   const teamsById = new Map<string, Team>();
   const teamsBySlug = new Map<string, Team>();
@@ -90,7 +93,7 @@ export function buildDataset(
   return {
     teams: raw.teams, players: raw.players, games,
     teamsById, teamsBySlug, teamsByAlias, playersById, playersByTeam,
-    gamesByTeam, gamesById, season, priorRatings,
+    gamesByTeam, gamesById, season, priorRatings, priorStateRanks,
   };
 }
 

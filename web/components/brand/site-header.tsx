@@ -32,6 +32,9 @@ export async function SiteHeader() {
           <a href="/standings" className="hover:text-crimson-500">
             Standings
           </a>
+          <a href="/rankings" className="hover:text-crimson-500">
+            Rankings
+          </a>
           <a href="/teams" className="hover:text-crimson-500">
             Teams
           </a>

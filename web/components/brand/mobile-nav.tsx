@@ -6,6 +6,7 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/upcoming", label: "Upcoming Games" },
   { href: "/standings", label: "Standings" },
+  { href: "/rankings", label: "Rankings" },
   { href: "/teams", label: "Teams" },
   { href: "/players", label: "Players" },
   { href: "/matchup", label: "Match Up" },

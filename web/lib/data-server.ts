@@ -34,7 +34,12 @@ export async function loadDataset(season: string): Promise<Dataset> {
   const priorRatings = prior
     ? adjustPriorRatings(prior.power, prior.returning)
     : null;
-  return buildDataset({ teams, players, games }, season, priorRatings);
+  return buildDataset(
+    { teams, players, games },
+    season,
+    priorRatings,
+    prior?.stateRanks ?? null,
+  );
 }
 
 /** "2026-27" -> "2025-26". */
@@ -53,6 +58,8 @@ export interface PriorSeasonInfo {
   returningOffense: Map<string, number | null>;
   /** teamId -> top returning stat leaders from the previous season. */
   keyReturners: Map<string, KeyReturner[]>;
+  /** teamId -> previous season's final MaxPreps state-overall rank. */
+  stateRanks: Map<string, number>;
 }
 
 /** Previous season's final ratings + returning production (no recursion). */
@@ -68,12 +75,22 @@ export async function loadPriorSeasonInfo(
   if (teams.length === 0 || games.length === 0) return null;
   const power = buildPowerRankings(buildDataset({ teams, players: [], games }, prev));
   if (power.size === 0) return null;
+  // Pool-appropriate MaxPreps rank: MHSAA teams use the statewide list;
+  // MAIS academies (ranked in their home-state pools) use their class rank.
+  const stateRanks = new Map<string, number>();
+  for (const t of teams) {
+    const rank = t.classification.startsWith("MAIS")
+      ? t.rankings.stateClass
+      : t.rankings.stateOverall;
+    if (rank !== null) stateRanks.set(t.id, rank);
+  }
   return {
     season: prev,
     power,
     returning: returningShares(players),
     returningOffense: returningOffenseShares(players),
     keyReturners: keyReturnersByTeam(players),
+    stateRanks,
   };
 }
 

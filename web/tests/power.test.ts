@@ -136,6 +136,69 @@ describe("buildPowerRankings", () => {
     expect(ranks.get("a")!.overallRank).toBe(1);
   });
 
+  it("MaxPreps state rank dominates the blend (75/25)", () => {
+    // Our results say a is far better, but MaxPreps ranks b #1 and a #40;
+    // the blended rating should put b on top.
+    const a = makeTeam("a");
+    const b = makeTeam("b");
+    const c = makeTeam("c");
+    a.rankings.stateOverall = 40;
+    b.rankings.stateOverall = 1;
+    const games = [
+      makeGame("g1", "a", "b", 42, 0),
+      makeGame("g2", "a", "c", 35, 7),
+      makeGame("g3", "b", "c", 21, 14),
+    ];
+    const ranks = buildPowerRankings(buildDataset({ teams: [a, b, c], players: [], games }));
+    expect(ranks.get("b")!.overallRank).toBe(1);
+    expect(ranks.get("a")!.overallRank).toBe(2);
+  });
+
+  it("preseason: falls back to prior-season MaxPreps ranks", () => {
+    const teams = [makeTeam("a"), makeTeam("b")];
+    // Our prior ratings favor a; last season's MaxPreps ranks favor b.
+    const prior = new Map([["a", 10], ["b", 5]]);
+    const mp = new Map([["b", 1], ["a", 30]]);
+    const ranks = buildPowerRankings(
+      buildDataset({ teams, players: [], games: [] }, "2026-27", prior, mp),
+    );
+    expect(ranks.get("b")!.overallRank).toBe(1);
+  });
+
+  it("MaxPreps pools don't cross-contaminate leagues", () => {
+    // A MAIS team ranked #1 in its own pool must not leapfrog MHSAA teams:
+    // its pool contains only itself, so its rating is unchanged.
+    const a = makeTeam("a");
+    const b = makeTeam("b");
+    const c = makeTeam("c");
+    const m = makeTeam("m", "MAIS-8M-1A");
+    m.rankings.stateClass = 1;
+    const games = [
+      makeGame("g1", "a", "b", 28, 7),
+      makeGame("g2", "b", "c", 21, 14),
+      makeGame("g3", "a", "c", 35, 0),
+      makeGame("g4", "c", "m", 20, 14),
+    ];
+    const ranks = buildPowerRankings(buildDataset({ teams: [a, b, c, m], players: [], games }));
+    expect(ranks.get("m")!.overallRank).toBe(4);
+  });
+
+  it("teams MaxPreps doesn't rank keep our rating alone", () => {
+    const a = makeTeam("a");
+    const b = makeTeam("b");
+    const c = makeTeam("c");
+    a.rankings.stateOverall = 1;
+    b.rankings.stateOverall = 2;
+    const games = [
+      makeGame("g1", "a", "b", 28, 7),
+      makeGame("g2", "b", "c", 21, 14),
+      makeGame("g3", "a", "c", 35, 0),
+    ];
+    const ranks = buildPowerRankings(buildDataset({ teams: [a, b, c], players: [], games }));
+    expect(ranks.has("c")).toBe(true);
+    expect(ranks.get("a")!.overallRank).toBe(1);
+  });
+
   it("caps blowout margins", () => {
     // 100-0 should not rate higher than 28-0 against the same opponent pool.
     const teams = [makeTeam("blowout"), makeTeam("cap"), makeTeam("v1"), makeTeam("v2")];
