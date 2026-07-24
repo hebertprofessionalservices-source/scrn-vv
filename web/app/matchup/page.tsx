@@ -43,7 +43,12 @@ export default async function MatchupBuilderPage({
         district: t.district,
         record: { wins: t.record.wins, losses: t.record.losses },
         power: p
-          ? { overall: p.overallRank, cls: p.classRank, prior: p.source === "prior" }
+          ? {
+              overall: p.overallRank,
+              cls: p.classRank,
+              priorYear:
+                p.source === "prior" ? prior?.season.slice(0, 4) ?? "prior" : null,
+            }
           : null,
         rating: p?.rating ?? null,
         playoffPct: potentials.get(t.id) ?? null,

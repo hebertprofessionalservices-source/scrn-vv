@@ -22,7 +22,8 @@ export interface MatchupTeam {
   classification: Team["classification"];
   district: string | null;
   record: WL;
-  power: { overall: number; cls: number; prior: boolean } | null;
+  /** priorYear set (e.g. "2025") when the rank is a prior-season projection. */
+  power: { overall: number; cls: number; priorYear: string | null } | null;
   /** Power rating, for the AI pick win probability. */
   rating: number | null;
   playoffPct: number | null;
@@ -277,21 +278,23 @@ function TeamHeader({
   outlook?: MatchupOutlook | null;
 }) {
   const alignClass = align === "right" ? "items-end text-right" : "items-start text-left";
+  const rank = team.power && (
+    <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
+      #{team.power.overall} Overall - #{team.power.cls}{" "}
+      {classificationLabel(team.classification)}
+      {team.power.priorYear && (
+        <span className="text-sm text-chrome-500/80"> ({team.power.priorYear})</span>
+      )}
+    </span>
+  );
   return (
     <div className={`flex flex-col gap-2 ${alignClass}`}>
       <TeamLogo src={team.logoUrl} size={72} />
       <div className="font-display text-2xl xl:text-3xl leading-tight">
-        {/* The name itself never wraps; the rank drops below when tight. */}
+        {/* Name never wraps; sides mirror — rank sits VS-far on both. */}
+        {align === "right" && rank && <>{rank} </>}
         <span className="whitespace-nowrap">{team.name}</span>
-        {team.power && (
-          <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
-            {" "}#{team.power.overall} Overall - #{team.power.cls}{" "}
-            {classificationLabel(team.classification)}
-            {team.power.prior && (
-              <span className="text-sm text-chrome-500/80"> (prior season)</span>
-            )}
-          </span>
-        )}
+        {align === "left" && rank && <> {rank}</>}
       </div>
       <div className="text-sm text-chrome-300">
         {classRegionLabel(team)}

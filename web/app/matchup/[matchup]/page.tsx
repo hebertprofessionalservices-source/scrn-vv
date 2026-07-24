@@ -57,6 +57,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
   const rate = buildRatings(data);
   const efficiency = buildTeamEfficiency(data);
   const prior = await loadPriorSeasonInfo(season);
+  const priorYear = prior?.season.slice(0, 4) ?? null;
   const sideFor = (t: Team, rp: typeof runPass.a) =>
     buildMatchupSide(data, t, {
       rate,
@@ -80,6 +81,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             playoffPct={potentials.get(away.id) ?? null}
             outlook={outlook?.a ?? null}
             records={sides.a.records}
+            priorYear={priorYear}
           />
           <TeamLogo src={away.logoUrl} size={64} />
         </div>
@@ -93,6 +95,7 @@ export default async function MatchupPage({ params }: { params: Promise<{ matchu
             playoffPct={potentials.get(home.id) ?? null}
             outlook={outlook?.b ?? null}
             records={sides.b.records}
+            priorYear={priorYear}
           />
         </div>
       </div>
@@ -175,6 +178,7 @@ function MatchupTeamHeader({
   playoffPct,
   outlook,
   records,
+  priorYear,
 }: {
   team: Team;
   align: "left" | "right";
@@ -182,7 +186,17 @@ function MatchupTeamHeader({
   playoffPct: number | null;
   outlook: MatchupOutlook | null;
   records: RecordsBlockInput;
+  priorYear: string | null;
 }) {
+  const rank = power && (
+    <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
+      #{power.overallRank} Overall - #{power.classRank}{" "}
+      {classificationLabel(team.classification)}
+      {power.source === "prior" && (
+        <span className="text-sm text-chrome-500/80"> ({priorYear ?? "prior"})</span>
+      )}
+    </span>
+  );
   return (
     <div className={align === "right" ? "text-right" : "text-left"}>
       <div className="text-xs text-chrome-500">
@@ -190,19 +204,12 @@ function MatchupTeamHeader({
         {playoffPct !== null && ` (Current Playoff Potential: ${playoffPct.toFixed(2)}%)`}
       </div>
       <div className="font-display text-2xl xl:text-3xl leading-tight">
-        {/* The name itself never wraps; the rank drops below when tight. */}
+        {/* Name never wraps; sides mirror — rank sits VS-far on both. */}
+        {align === "right" && rank && <>{rank} </>}
         <Link href={`/teams/${displaySlug(team)}` as any} className="whitespace-nowrap">
           {team.name}
         </Link>
-        {power && (
-          <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
-            {" "}#{power.overallRank} Overall - #{power.classRank}{" "}
-            {classificationLabel(team.classification)}
-            {power.source === "prior" && (
-              <span className="text-sm text-chrome-500/80"> (prior season)</span>
-            )}
-          </span>
-        )}
+        {align === "left" && rank && <> {rank}</>}
       </div>
       <div className="text-sm text-chrome-500">
         {recordsBlockLines(records).map((line) => (
