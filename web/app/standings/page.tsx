@@ -12,10 +12,7 @@ export default async function StandingsPage() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="font-display text-4xl mb-1">Standings</h1>
-      <p className="text-sm text-chrome-500 mb-6">
-        Region standings · {season} · Playoff % is based on remaining region games
-      </p>
+      <h1 className="font-display text-4xl mb-6">Standings</h1>
       {standings.regions.length === 0 ? (
         <p className="text-chrome-500">No standings data yet.</p>
       ) : (

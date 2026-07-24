@@ -83,9 +83,6 @@ export default async function MatchupBuilderPage({
     <main className="max-w-5xl mx-auto px-4 py-8">
       <div className="mb-6">
         <h1 className="font-display text-4xl">Match Up</h1>
-        <p className="text-chrome-500 text-sm mt-1">
-          Compare any two teams side by side.
-        </p>
       </div>
       {teams.length === 0 ? (
         <div className="rounded-xl border border-chrome-500/15 p-12 text-center">

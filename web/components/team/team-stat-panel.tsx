@@ -120,20 +120,8 @@ export function TeamStatPanel({
             : undefined
         }
       />
-      {sos && (
-        <Stat
-          label="SOS Rating"
-          value={fmtSos(sos.played)}
-          sub="avg opponent rating vs league avg"
-        />
-      )}
-      {sos && (
-        <Stat
-          label="Remaining SOS"
-          value={fmtSos(sos.remaining)}
-          sub="avg remaining opponent rating"
-        />
-      )}
+      {sos && <Stat label="SOS Rating" value={fmtSos(sos.played)} />}
+      {sos && <Stat label="Remaining SOS" value={fmtSos(sos.remaining)} />}
       {playoff && (
         <Stat
           label="Playoff Potential"

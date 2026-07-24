@@ -86,7 +86,6 @@ export function TeamVitals({
                     ? `${Math.round(prior.returning * 100)}%`
                     : "n/a"}
                 </div>
-                <div>Projected from both — updates after first region game</div>
               </div>
             )}
           </>
