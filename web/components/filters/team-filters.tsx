@@ -1,11 +1,6 @@
 "use client";
 import { useSearchParams, usePathname } from "next/navigation";
-import { classificationLabel, leagueOf } from "@/lib/team-format";
-
-const CLASSES = [
-  "7A", "6A", "5A", "4A", "3A", "2A", "1A",
-  "MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A",
-];
+import { CLASSIFICATIONS as CLASSES, classificationLabel, leagueOf } from "@/lib/team-format";
 
 const LEAGUES = ["MHSAA", "MAIS"] as const;
 

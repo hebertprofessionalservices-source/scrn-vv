@@ -1,18 +1,27 @@
 import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { buildPowerRankings } from "@/lib/power";
+import { teamRecordSplits } from "@/lib/standings";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
-import { classificationLabel, leagueOf } from "@/lib/team-format";
+import { CLASSIFICATIONS, classificationLabel, leagueOf } from "@/lib/team-format";
 import { RankingsFilter } from "@/components/filters/rankings-filter";
+
+const CLASS_VIEW_LIMIT = 10;
 
 export default async function RankingsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ league?: string }>;
+  searchParams: Promise<{ league?: string; class?: string }>;
 }) {
   const sp = await searchParams;
   const league = sp.league === "MHSAA" || sp.league === "MAIS" ? sp.league : null;
+  const cls =
+    sp.class &&
+    CLASSIFICATIONS.includes(sp.class) &&
+    (!league || leagueOf(sp.class) === league)
+      ? sp.class
+      : null;
   const season = await currentSeason();
   const data = await loadDataset(season);
   const power = buildPowerRankings(data);
@@ -21,10 +30,17 @@ export default async function RankingsPage({
     .map((t) => ({ team: t, rank: power.get(t.id) }))
     .filter((r) => r.rank !== undefined)
     .filter((r) => !league || leagueOf(r.team.classification) === league)
+    .filter((r) => !cls || r.team.classification === cls)
     .sort((a, b) => a.rank!.overallRank - b.rank!.overallRank)
-    // League views renumber 1..N within the league; Overall keeps the
+    // Filtered views renumber 1..N within the view; Overall keeps the
     // global rank.
-    .map((r, i) => ({ ...r, shownRank: league ? i + 1 : r.rank!.overallRank }));
+    .map((r, i) => ({
+      ...r,
+      shownRank: league || cls ? i + 1 : r.rank!.overallRank,
+      // Classification view: top 10 with each team's region record.
+      regionRecord: cls ? teamRecordSplits(data, r.team).region : null,
+    }))
+    .slice(0, cls ? CLASS_VIEW_LIMIT : undefined);
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-8">
@@ -46,7 +62,7 @@ export default async function RankingsPage({
         </div>
       ) : (
         <div className="space-y-2">
-          {rows.map(({ team, rank, shownRank }) => (
+          {rows.map(({ team, rank, shownRank, regionRecord }) => (
             <Link
               key={team.id}
               href={`/teams/${displaySlug(team)}` as any}
@@ -60,7 +76,9 @@ export default async function RankingsPage({
                 {team.name}
               </span>
               <span className="ml-auto font-display text-lg text-chrome-100 whitespace-nowrap">
-                (#{rank!.classRank} {classificationLabel(team.classification)})
+                {regionRecord
+                  ? `Region ${regionRecord.wins}–${regionRecord.losses}`
+                  : `(#${rank!.classRank} ${classificationLabel(team.classification)})`}
               </span>
             </Link>
           ))}
