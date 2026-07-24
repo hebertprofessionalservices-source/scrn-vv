@@ -76,6 +76,14 @@ export function buildDataset(
     for (let i = 1; i < group.length; i++) {
       merged = mergeDuplicateGame(merged, group[i], teamsById);
     }
+    // Normalize both sides to canonical team ids when the alias resolves —
+    // otherwise team lookups (schedules, head-to-head) miss the game when
+    // the perspective rows disagreed on orientation.
+    const homeT = teamsByAlias.get(merged.homeTeamId);
+    const awayT = teamsByAlias.get(merged.awayTeamId);
+    if (homeT && awayT && homeT.id !== awayT.id) {
+      merged = { ...merged, homeTeamId: homeT.id, awayTeamId: awayT.id };
+    }
     games.push(merged);
     // Every original id (including discarded duplicates) resolves to the
     // merged record so stored references like editorial gameId keep working.

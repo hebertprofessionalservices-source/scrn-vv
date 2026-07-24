@@ -23,6 +23,7 @@ import {
 } from "@/lib/team-outlook";
 import { ReturnersList } from "@/components/matchup/key-returners";
 import { TeamKeyPlayers } from "@/components/matchup/key-players";
+import { teamKeyLeaders } from "@/lib/game-leaders";
 import type { Player } from "@/lib/types";
 
 // Offense first, then defense, then special teams.
@@ -97,6 +98,10 @@ export default async function TeamDetailPage({
     oppName: next?.opp.name ?? null,
   };
   const keyReturners = priorInfo?.keyReturners.get(team.id) ?? [];
+  const keyLeaders = teamKeyLeaders(
+    players,
+    priorInfo?.returningPlayers.get(team.id) ?? null,
+  );
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -160,7 +165,9 @@ export default async function TeamDetailPage({
         playoff={playoffCard}
       />
 
-      {players.length > 0 && <TeamKeyPlayers team={team} players={players} />}
+      {keyLeaders.offense.length + keyLeaders.defense.length > 0 && (
+        <TeamKeyPlayers team={team} leaders={keyLeaders} />
+      )}
 
       {keyReturners.length > 0 && (
         <section>

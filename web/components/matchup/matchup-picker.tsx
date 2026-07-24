@@ -17,6 +17,8 @@ interface WL {
 
 export interface MatchupTeam {
   id: string;
+  /** URL slug for team/present links. */
+  slug: string;
   name: string;
   logoUrl: string | null;
   classification: Team["classification"];
@@ -84,12 +86,16 @@ export function MatchupPicker({
   initialA = "",
   initialB = "",
   pairOutlook = null,
+  children,
 }: {
   teams: MatchupTeam[];
   initialA?: string;
   initialB?: string;
   /** Server-computed win/loss playoff odds for the pair in the URL. */
   pairOutlook?: PairOutlook | null;
+  /** Server-rendered sections for the selected pair; rendered inside the
+   *  comparison block so the sticky team header spans them too. */
+  children?: React.ReactNode;
 }) {
   const [aId, setAId] = useState(initialA);
   const [bId, setBId] = useState(initialB);
@@ -138,8 +144,16 @@ export function MatchupPicker({
             </div>
           </div>
 
-          <div className="mb-6">
-            <AiPickBanner a={teamA} b={teamB} />
+          <div className="mb-6 flex items-center gap-4">
+            <div className="flex-1">
+              <AiPickBanner a={teamA} b={teamB} />
+            </div>
+            <a
+              href={`/present/matchup/${teamA.slug}-vs-${teamB.slug}`}
+              className="shrink-0 px-4 py-2 rounded-lg border border-crimson-500 text-crimson-500 font-display"
+            >
+              Broadcast →
+            </a>
           </div>
 
           <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
@@ -200,6 +214,8 @@ export function MatchupPicker({
               </tbody>
             </table>
           </div>
+
+          {children}
         </div>
       ) : (
         <div className="rounded-xl border border-chrome-500/15 p-12 text-center">

@@ -65,7 +65,7 @@ export const WEEKLY_LEADER_LIMIT = 10;
 export const OUTSTANDING_SEASON_CAP = 60;
 
 /** One attributed player-game stat line. */
-interface RawLine {
+export interface RawLine {
   player: Player;
   team: Team;
   opp: Team;
@@ -107,9 +107,79 @@ function formMap(players: Player[]): Map<string, Player | null> {
   return map;
 }
 
-function extractLines(data: Dataset, asOf?: string): RawLine[] {
+function collectGameLines(
+  data: Dataset,
+  g: Game,
+  formsFor: (teamId: string) => Map<string, Player | null>,
+  lines: Map<string, RawLine>,
+): void {
+  if (g.status !== "final" || !g.boxScore) return;
+  const home = data.teamsByAlias.get(g.homeTeamId);
+  const away = data.teamsByAlias.get(g.awayTeamId);
+  if (!home || !away || home.id === away.id) return;
+  const homeForms = formsFor(home.id);
+  const awayForms = formsFor(away.id);
+
+  type Resolved = { player: Player; team: Team; opp: Team; isHome: boolean };
+  const resolve = (label: string): Resolved | null => {
+    const n = normalizeName(label);
+    const candidates = [n, initialForm(n)].filter(Boolean) as string[];
+    let hit: Resolved | null = null;
+    for (const f of candidates) {
+      const h = homeForms.get(f);
+      const a = awayForms.get(f);
+      if (h && a) return null; // on both rosters — ambiguous
+      const p = h ?? a;
+      if (!p) continue;
+      const side: Resolved = h
+        ? { player: p, team: home, opp: away, isHome: true }
+        : { player: p, team: away, opp: home, isHome: false };
+      if (hit && hit.player.id !== side.player.id) return null;
+      hit = side;
+    }
+    return hit;
+  };
+
+  const add = (
+    entry: BoxScoreEntry,
+    apply: (l: RawLine, e: BoxScoreEntry) => void,
+  ) => {
+    const r = resolve(entry.playerId);
+    if (!r) return;
+    const key = `${g.id}:${r.player.id}`;
+    let l = lines.get(key);
+    if (!l) {
+      l = {
+        player: r.player, team: r.team, opp: r.opp, isHome: r.isHome, game: g,
+        weekKey: mondayKey(g.date),
+        passYds: 0, passTd: 0, passInt: 0,
+        rushYds: 0, rushTd: 0,
+        rec: 0, recYds: 0, recTd: 0,
+        tackles: 0, sacks: 0, defInt: 0, ff: 0,
+      };
+      lines.set(key, l);
+    }
+    apply(l, entry);
+  };
+
+  for (const e of g.boxScore.passing) add(e, (l, x) => {
+    l.passYds += x.yds ?? 0; l.passTd += x.td ?? 0; l.passInt += x.int ?? 0;
+  });
+  for (const e of g.boxScore.rushing) add(e, (l, x) => {
+    l.rushYds += x.yds ?? 0; l.rushTd += x.td ?? 0;
+  });
+  for (const e of g.boxScore.receiving) add(e, (l, x) => {
+    l.rec += x.rec ?? 0; l.recYds += x.yds ?? 0; l.recTd += x.td ?? 0;
+  });
+  for (const e of g.boxScore.defense) add(e, (l, x) => {
+    l.tackles += x.tackles ?? 0; l.sacks += x.sacks ?? 0;
+    l.defInt += x.int ?? 0; l.ff += x.ff ?? 0;
+  });
+}
+
+function makeFormsFor(data: Dataset) {
   const forms = new Map<string, Map<string, Player | null>>();
-  const formsFor = (teamId: string) => {
+  return (teamId: string) => {
     let m = forms.get(teamId);
     if (!m) {
       m = formMap(data.playersByTeam.get(teamId) ?? []);
@@ -117,73 +187,22 @@ function extractLines(data: Dataset, asOf?: string): RawLine[] {
     }
     return m;
   };
+}
 
+function extractLines(data: Dataset, asOf?: string): RawLine[] {
+  const formsFor = makeFormsFor(data);
   const lines = new Map<string, RawLine>();
   for (const g of data.games) {
-    if (g.status !== "final" || !g.boxScore) continue;
     if (asOf && g.date.slice(0, 10) > asOf) continue;
-    const home = data.teamsByAlias.get(g.homeTeamId);
-    const away = data.teamsByAlias.get(g.awayTeamId);
-    if (!home || !away || home.id === away.id) continue;
-    const homeForms = formsFor(home.id);
-    const awayForms = formsFor(away.id);
-
-    type Resolved = { player: Player; team: Team; opp: Team; isHome: boolean };
-    const resolve = (label: string): Resolved | null => {
-      const n = normalizeName(label);
-      const candidates = [n, initialForm(n)].filter(Boolean) as string[];
-      let hit: Resolved | null = null;
-      for (const f of candidates) {
-        const h = homeForms.get(f);
-        const a = awayForms.get(f);
-        if (h && a) return null; // on both rosters — ambiguous
-        const p = h ?? a;
-        if (!p) continue;
-        const side: Resolved = h
-          ? { player: p, team: home, opp: away, isHome: true }
-          : { player: p, team: away, opp: home, isHome: false };
-        if (hit && hit.player.id !== side.player.id) return null;
-        hit = side;
-      }
-      return hit;
-    };
-
-    const add = (
-      entry: BoxScoreEntry,
-      apply: (l: RawLine, e: BoxScoreEntry) => void,
-    ) => {
-      const r = resolve(entry.playerId);
-      if (!r) return;
-      const key = `${g.id}:${r.player.id}`;
-      let l = lines.get(key);
-      if (!l) {
-        l = {
-          player: r.player, team: r.team, opp: r.opp, isHome: r.isHome, game: g,
-          weekKey: mondayKey(g.date),
-          passYds: 0, passTd: 0, passInt: 0,
-          rushYds: 0, rushTd: 0,
-          rec: 0, recYds: 0, recTd: 0,
-          tackles: 0, sacks: 0, defInt: 0, ff: 0,
-        };
-        lines.set(key, l);
-      }
-      apply(l, entry);
-    };
-
-    for (const e of g.boxScore.passing) add(e, (l, x) => {
-      l.passYds += x.yds ?? 0; l.passTd += x.td ?? 0; l.passInt += x.int ?? 0;
-    });
-    for (const e of g.boxScore.rushing) add(e, (l, x) => {
-      l.rushYds += x.yds ?? 0; l.rushTd += x.td ?? 0;
-    });
-    for (const e of g.boxScore.receiving) add(e, (l, x) => {
-      l.rec += x.rec ?? 0; l.recYds += x.yds ?? 0; l.recTd += x.td ?? 0;
-    });
-    for (const e of g.boxScore.defense) add(e, (l, x) => {
-      l.tackles += x.tackles ?? 0; l.sacks += x.sacks ?? 0;
-      l.defInt += x.int ?? 0; l.ff += x.ff ?? 0;
-    });
+    collectGameLines(data, g, formsFor, lines);
   }
+  return [...lines.values()];
+}
+
+/** Attributed stat lines for a single final game (both teams). */
+export function gameStatLines(data: Dataset, game: Game): RawLine[] {
+  const lines = new Map<string, RawLine>();
+  collectGameLines(data, game, makeFormsFor(data), lines);
   return [...lines.values()];
 }
 

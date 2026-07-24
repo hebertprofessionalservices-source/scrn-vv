@@ -60,7 +60,15 @@ export interface PriorSeasonInfo {
   keyReturners: Map<string, KeyReturner[]>;
   /** teamId -> previous season's final MaxPreps state-overall rank. */
   stateRanks: Map<string, number>;
+  /** teamId -> returning (non-senior) players, class promoted, prior stats. */
+  returningPlayers: Map<string, Player[]>;
 }
+
+const PROMOTED_CLASS: Record<string, Player["class"]> = {
+  FR: "SO",
+  SO: "JR",
+  JR: "SR",
+};
 
 /** Previous season's final ratings + returning production (no recursion). */
 export async function loadPriorSeasonInfo(
@@ -84,6 +92,13 @@ export async function loadPriorSeasonInfo(
       : t.rankings.stateOverall;
     if (rank !== null) stateRanks.set(t.id, rank);
   }
+  const returningPlayers = new Map<string, Player[]>();
+  for (const p of players) {
+    if (p.class === "SR") continue;
+    const list = returningPlayers.get(p.teamId) ?? [];
+    list.push({ ...p, class: PROMOTED_CLASS[p.class] ?? p.class });
+    returningPlayers.set(p.teamId, list);
+  }
   return {
     season: prev,
     power,
@@ -91,6 +106,7 @@ export async function loadPriorSeasonInfo(
     returningOffense: returningOffenseShares(players),
     keyReturners: keyReturnersByTeam(players),
     stateRanks,
+    returningPlayers,
   };
 }
 

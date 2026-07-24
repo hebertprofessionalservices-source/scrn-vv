@@ -1,115 +1,46 @@
 import Link from "next/link";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
+import type { SideLeaders, StatLeader } from "@/lib/game-leaders";
 import type { Player, Team } from "@/lib/types";
-
-interface Leader {
-  player: Player;
-  role: string;
-  line: string;
-}
-
-function leadersFor(team: Team, players: Player[]): { offense: Leader[]; defense: Leader[] } {
-  const top = (metric: (p: Player) => number) =>
-    players.reduce<Player | null>(
-      (best, p) => (metric(p) > (best ? metric(best) : 0) ? p : best),
-      null,
-    );
-
-  const offense: Leader[] = [];
-  const qb = top((p) => p.stats.passing.yds);
-  if (qb) {
-    const s = qb.stats.passing;
-    offense.push({
-      player: qb,
-      role: "QB",
-      line: `${s.yds.toLocaleString()} YDS · ${s.td} TD · ${s.int} INT · ${s.rating.toFixed(1)} RAT`,
-    });
-  }
-  const rb = top((p) => p.stats.rushing.yds);
-  if (rb) {
-    const s = rb.stats.rushing;
-    offense.push({
-      player: rb,
-      role: "RB",
-      line: `${s.yds.toLocaleString()} YDS · ${s.td} TD · ${s.ypc.toFixed(1)} YPC`,
-    });
-  }
-  const wr = top((p) => p.stats.receiving.yds);
-  if (wr) {
-    const s = wr.stats.receiving;
-    offense.push({
-      player: wr,
-      role: "WR",
-      line: `${s.rec} REC · ${s.yds.toLocaleString()} YDS · ${s.td} TD`,
-    });
-  }
-
-  const defense: Leader[] = [];
-  const tackler = top((p) => p.stats.defense.tackles);
-  if (tackler) {
-    const s = tackler.stats.defense;
-    defense.push({
-      player: tackler,
-      role: tackler.position,
-      line: `${s.tackles} TKL · ${s.sacks} SACK · ${s.int} INT`,
-    });
-  }
-  const rusher = top((p) => p.stats.defense.sacks);
-  if (rusher && rusher.id !== tackler?.id && rusher.stats.defense.sacks >= 3) {
-    const s = rusher.stats.defense;
-    defense.push({
-      player: rusher,
-      role: rusher.position,
-      line: `${s.sacks} SACK · ${s.tackles} TKL · ${s.ff} FF`,
-    });
-  }
-  return { offense, defense };
-}
 
 export function KeyPlayers({
   away,
   home,
-  playersByTeam,
+  leaders,
 }: {
   away: Team;
   home: Team;
-  playersByTeam: Map<string, Player[]>;
+  leaders: { away: SideLeaders; home: SideLeaders };
 }) {
   return (
     <section>
       <h2 className="font-display text-xl mb-3">Key Players</h2>
       <div className="grid md:grid-cols-2 gap-6">
-        {[away, home].map((team) => (
-          <TeamKeyPlayersCard
-            key={team.id}
-            team={team}
-            players={playersByTeam.get(team.id) ?? []}
-          />
-        ))}
+        <TeamKeyPlayersCard team={away} leaders={leaders.away} />
+        <TeamKeyPlayersCard team={home} leaders={leaders.home} />
       </div>
     </section>
   );
 }
 
 /** Single-team variant for the team page. */
-export function TeamKeyPlayers({ team, players }: { team: Team; players: Player[] }) {
+export function TeamKeyPlayers({ team, leaders }: { team: Team; leaders: SideLeaders }) {
   return (
     <section>
       <h2 className="font-display text-2xl mb-3">Key Players</h2>
       <div className="max-w-2xl">
-        <TeamKeyPlayersCard team={team} players={players} />
+        <TeamKeyPlayersCard team={team} leaders={leaders} />
       </div>
     </section>
   );
 }
 
-function TeamKeyPlayersCard({ team, players }: { team: Team; players: Player[] }) {
-  const { offense, defense } = leadersFor(team, players);
+function TeamKeyPlayersCard({ team, leaders }: { team: Team; leaders: SideLeaders }) {
   return (
     <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
       <h3 className="font-display text-lg mb-3">{team.name}</h3>
-      <LeaderGroup label="Offensive Leaders" leaders={offense} team={team} />
-      <LeaderGroup label="Defensive Leaders" leaders={defense} team={team} className="mt-4" />
+      <LeaderGroup label="Offensive Leaders" leaders={leaders.offense} team={team} />
+      <LeaderGroup label="Defensive Leaders" leaders={leaders.defense} team={team} className="mt-4" />
     </div>
   );
 }
@@ -129,7 +60,7 @@ function LeaderGroup({
   className = "",
 }: {
   label: string;
-  leaders: Leader[];
+  leaders: StatLeader[];
   team: Team;
   className?: string;
 }) {

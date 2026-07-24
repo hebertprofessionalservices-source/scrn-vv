@@ -11,6 +11,8 @@ import { buildRatings, matchupPlayoffOutlook, playoffPotentials } from "@/lib/st
 import { buildTeamEfficiency } from "@/lib/efficiency";
 import { runPassAttempts } from "@/lib/run-pass";
 import { buildMatchupSide } from "@/lib/team-outlook";
+import { matchupKeyLeaders } from "@/lib/game-leaders";
+import { displaySlug } from "@/lib/display-slug";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
 // until client revisions land. Flip to true to bring them back.
@@ -37,6 +39,7 @@ export default async function MatchupBuilderPage({
       const runPass = runPassAttempts(data.playersByTeam.get(t.id) ?? []);
       return {
         id: t.id,
+        slug: displaySlug(t),
         name: t.name,
         logoUrl: t.logoUrl,
         classification: t.classification,
@@ -97,9 +100,10 @@ export default async function MatchupBuilderPage({
           initialA={teams.some((t) => t.id === sp.a) ? sp.a : ""}
           initialB={teams.some((t) => t.id === sp.b) ? sp.b : ""}
           pairOutlook={pairOutlook}
-        />
+        >
+          <MatchupExtras a={sp.a} b={sp.b} data={data} season={season} />
+        </MatchupPicker>
       )}
-      <MatchupExtras a={sp.a} b={sp.b} data={data} season={season} />
     </main>
   );
 }
@@ -131,6 +135,9 @@ async function MatchupExtras({
     ...historyView.milestones,
   ].slice(0, 8);
   const prior = await loadPriorSeasonInfo(season);
+  const keyLeaders = matchupKeyLeaders(
+    data, teamA, teamB, h2h, prior?.returningPlayers ?? null,
+  );
 
   return (
     <div className="mt-8 space-y-8">
@@ -151,7 +158,7 @@ async function MatchupExtras({
           </ul>
         </section>
       )}
-      <KeyPlayers away={teamA} home={teamB} playersByTeam={data.playersByTeam} />
+      <KeyPlayers away={teamA} home={teamB} leaders={keyLeaders} />
       <SeriesHistory away={teamA} home={teamB} h2h={h2h} view={historyView} />
     </div>
   );
