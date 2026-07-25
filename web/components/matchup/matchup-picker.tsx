@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
 import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
+import { RankDeltaChip } from "@/components/rank-delta";
 import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg } from "@/lib/matchup-format";
 import type { MatchupOutlook } from "@/lib/standings";
 import type { MatchupSideData } from "@/lib/team-outlook";
@@ -25,7 +26,14 @@ export interface MatchupTeam {
   district: string | null;
   record: WL;
   /** priorYear set (e.g. "2025") when the rank is a prior-season projection. */
-  power: { overall: number; cls: number; priorYear: string | null } | null;
+  power: {
+    overall: number;
+    cls: number;
+    priorYear: string | null;
+    /** Week-over-week movement (positive = up); null before history exists. */
+    deltaOverall: number | null;
+    deltaClass: number | null;
+  } | null;
   /** Power rating, for the AI pick win probability. */
   rating: number | null;
   playoffPct: number | null;
@@ -296,7 +304,8 @@ function TeamHeader({
   const alignClass = align === "right" ? "items-end text-right" : "items-start text-left";
   const rank = team.power && (
     <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
-      #{team.power.overall} Overall - #{team.power.cls}{" "}
+      #{team.power.overall} <RankDeltaChip delta={team.power.deltaOverall} /> Overall
+      {" "}- #{team.power.cls} <RankDeltaChip delta={team.power.deltaClass} />{" "}
       {classificationLabel(team.classification)}
       {team.power.priorYear && (
         <span className="text-sm text-chrome-500/80"> ({team.power.priorYear})</span>

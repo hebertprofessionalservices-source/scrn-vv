@@ -5,6 +5,8 @@ import { displaySlug } from "@/lib/display-slug";
 import { fmtWLT } from "@/lib/matchup-history";
 import type { CoachSummary } from "@/lib/history";
 import type { PowerRank } from "@/lib/power";
+import type { RankDelta } from "@/lib/rank-history";
+import { RankDeltaChip } from "@/components/rank-delta";
 import type { Game, Team } from "@/lib/types";
 
 function rec(r: { wins: number; losses: number } | null | undefined): string {
@@ -54,6 +56,7 @@ export function TeamVitals({
   team,
   power,
   prior,
+  delta,
   lastLoss,
   coach,
 }: {
@@ -61,6 +64,8 @@ export function TeamVitals({
   power: PowerRank | null;
   /** Prior-season context, shown while the power rank is a preseason projection. */
   prior?: { lastRank: number | null; returning: number | null } | null;
+  /** Week-over-week rank movement. */
+  delta?: RankDelta | null;
   lastLoss: LastLoss | null;
   coach?: CoachSummary | null;
 }) {
@@ -71,9 +76,11 @@ export function TeamVitals({
         {power ? (
           <>
             <span className="font-display text-3xl">#{power.overallRank}</span>
+            <span className="ml-2"><RankDeltaChip delta={delta?.overall} /></span>
             <span className="text-chrome-500 text-sm ml-2">Overall</span>
             <div className="text-sm text-chrome-300 mt-1">
-              #{power.classRank} in {classificationLabel(team.classification)}
+              #{power.classRank} <RankDeltaChip delta={delta?.class} /> in{" "}
+              {classificationLabel(team.classification)}
             </div>
             {power.source === "prior" && (
               <div className="text-xs text-chrome-500 mt-2 space-y-0.5">

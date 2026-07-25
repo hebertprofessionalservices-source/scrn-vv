@@ -33,6 +33,11 @@ const MAXPREPS_WEIGHT = 0.75;
  *
  * Teams MaxPreps doesn't rank use our rating alone; teams with neither
  * games nor a prior stay unranked.
+ *
+ * MAIS 8-man teams (client rule): they play a different sport for ranking
+ * purposes, so they always occupy the bottom of the overall (and league)
+ * order regardless of rating — their rank only matters against other
+ * 8-man teams, where the usual rating order applies.
  */
 export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   const results = new Map<string, { margins: number[]; opps: string[] }>();
@@ -165,8 +170,13 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   }
   for (const [id, v] of blended) finalRatings.set(id, v);
 
+  // 8-man programs sink below every 11-man team; rating orders within.
+  const is8Man = (id: string) =>
+    data.teamsById.get(id)?.classification.startsWith("MAIS-8M") ?? false;
   const ordered = [...finalRatings.keys()].sort(
-    (a, b) => finalRatings.get(b)! - finalRatings.get(a)!,
+    (a, b) =>
+      Number(is8Man(a)) - Number(is8Man(b)) ||
+      finalRatings.get(b)! - finalRatings.get(a)!,
   );
   const out = new Map<string, PowerRank>();
   const classCounters = new Map<string, number>();

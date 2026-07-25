@@ -1,4 +1,4 @@
-import { loadDataset, loadPriorSeasonInfo, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam, type PairOutlook } from "@/components/matchup/matchup-picker";
 import { KeyPlayers } from "@/components/matchup/key-players";
 import { KeyReturnersSection } from "@/components/matchup/key-returners";
@@ -32,10 +32,12 @@ export default async function MatchupBuilderPage({
   const rate = buildRatings(data);
   const efficiency = buildTeamEfficiency(data);
   const prior = await loadPriorSeasonInfo(season);
+  const deltas = await loadRankDeltas(season, power);
 
   const teams: MatchupTeam[] = data.teams
     .map((t) => {
       const p = power.get(t.id);
+      const d = deltas.get(t.id);
       const runPass = runPassAttempts(data.playersByTeam.get(t.id) ?? []);
       return {
         id: t.id,
@@ -51,6 +53,8 @@ export default async function MatchupBuilderPage({
               cls: p.classRank,
               priorYear:
                 p.source === "prior" ? prior?.season.slice(0, 4) ?? "prior" : null,
+              deltaOverall: d?.overall ?? null,
+              deltaClass: d?.class ?? null,
             }
           : null,
         rating: p?.rating ?? null,

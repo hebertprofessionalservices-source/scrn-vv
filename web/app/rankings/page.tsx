@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { loadDataset, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { buildPowerRankings } from "@/lib/power";
+import { RankDeltaChip } from "@/components/rank-delta";
 import { teamRecordSplits } from "@/lib/standings";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { displaySlug } from "@/lib/display-slug";
@@ -25,6 +26,7 @@ export default async function RankingsPage({
   const season = await currentSeason();
   const data = await loadDataset(season);
   const power = buildPowerRankings(data);
+  const deltas = await loadRankDeltas(season, power);
 
   const rows = data.teams
     .map((t) => ({ team: t, rank: power.get(t.id) }))
@@ -70,6 +72,12 @@ export default async function RankingsPage({
             >
               <span className="font-display text-2xl text-crimson-500 w-16 shrink-0">
                 #{shownRank}
+              </span>
+              <span className="w-12 shrink-0 text-sm">
+                {/* Class view moves by class rank; other views by overall. */}
+                <RankDeltaChip
+                  delta={cls ? deltas.get(team.id)?.class : deltas.get(team.id)?.overall}
+                />
               </span>
               <TeamLogo src={team.logoUrl} size={32} />
               <span className="font-display text-xl text-chrome-100 truncate">

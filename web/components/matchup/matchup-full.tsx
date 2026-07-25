@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadDataset, loadPriorSeasonInfo, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
+import { RankDeltaChip } from "@/components/rank-delta";
+import type { RankDelta } from "@/lib/rank-history";
 import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
 import { FormGuide } from "@/components/matchup/form-guide";
 import { SeriesHistory } from "@/components/matchup/series-history";
@@ -76,6 +78,7 @@ export async function MatchupFull({
   const keyLeaders = matchupKeyLeaders(
     data, away, home, h2h, prior?.returningPlayers ?? null,
   );
+  const deltas = await loadRankDeltas(season, power);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -93,6 +96,7 @@ export async function MatchupFull({
             outlook={outlook?.a ?? null}
             records={sides.a.records}
             priorYear={priorYear}
+            delta={deltas.get(away.id) ?? null}
           />
           <TeamLogo src={away.logoUrl} size={64} />
         </div>
@@ -107,6 +111,7 @@ export async function MatchupFull({
             outlook={outlook?.b ?? null}
             records={sides.b.records}
             priorYear={priorYear}
+            delta={deltas.get(home.id) ?? null}
           />
         </div>
       </div>
@@ -192,6 +197,7 @@ function MatchupTeamHeader({
   outlook,
   records,
   priorYear,
+  delta,
 }: {
   team: Team;
   align: "left" | "right";
@@ -200,11 +206,12 @@ function MatchupTeamHeader({
   outlook: MatchupOutlook | null;
   records: RecordsBlockInput;
   priorYear: string | null;
+  delta: RankDelta | null;
 }) {
   const rank = power && (
     <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
-      #{power.overallRank} Overall - #{power.classRank}{" "}
-      {classificationLabel(team.classification)}
+      #{power.overallRank} <RankDeltaChip delta={delta?.overall} /> Overall - #{power.classRank}{" "}
+      <RankDeltaChip delta={delta?.class} /> {classificationLabel(team.classification)}
       {power.source === "prior" && (
         <span className="text-sm text-chrome-500/80"> ({priorYear ?? "prior"})</span>
       )}

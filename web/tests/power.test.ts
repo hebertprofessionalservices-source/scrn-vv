@@ -199,6 +199,27 @@ describe("buildPowerRankings", () => {
     expect(ranks.get("a")!.overallRank).toBe(1);
   });
 
+  it("MAIS 8-man teams always rank below 11-man teams", () => {
+    // m1/m2 dominate on rating but play 8-man; they must sit at the
+    // bottom of the overall order, in rating order among themselves.
+    const a = makeTeam("a");
+    const b = makeTeam("b");
+    const m1 = makeTeam("m1", "MAIS-8M-1A");
+    const m2 = makeTeam("m2", "MAIS-8M-1A");
+    const games = [
+      makeGame("g1", "a", "b", 21, 14),
+      makeGame("g2", "m1", "m2", 42, 0),
+      makeGame("g3", "m1", "b", 49, 0),
+      makeGame("g4", "m2", "a", 35, 7),
+    ];
+    const ranks = buildPowerRankings(buildDataset({ teams: [a, b, m1, m2], players: [], games }));
+    expect(ranks.get("a")!.overallRank).toBeLessThan(3);
+    expect(ranks.get("b")!.overallRank).toBeLessThan(3);
+    expect(ranks.get("m1")!.overallRank).toBe(3);
+    expect(ranks.get("m2")!.overallRank).toBe(4);
+    expect(ranks.get("m1")!.classRank).toBe(1); // still #1 among 8-man
+  });
+
   it("caps blowout margins", () => {
     // 100-0 should not rate higher than 28-0 against the same opponent pool.
     const teams = [makeTeam("blowout"), makeTeam("cap"), makeTeam("v1"), makeTeam("v2")];

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { loadDataset, loadPriorSeasonInfo, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { TeamStatPanel } from "@/components/team/team-stat-panel";
 import { TeamVitals, findLastLoss } from "@/components/team/team-vitals";
 import { buildPowerRankings } from "@/lib/power";
@@ -67,7 +67,9 @@ export default async function TeamDetailPage({
   ];
 
   const region = regionLabel(team);
-  const power = buildPowerRankings(data).get(team.id) ?? null;
+  const powerAll = buildPowerRankings(data);
+  const power = powerAll.get(team.id) ?? null;
+  const rankDelta = (await loadRankDeltas(season, powerAll)).get(team.id) ?? null;
   const priorInfo = await loadPriorSeasonInfo(season);
   const prior =
     power?.source === "prior" && priorInfo
@@ -151,7 +153,7 @@ export default async function TeamDetailPage({
         </Link>
       </header>
 
-      <TeamVitals team={team} power={power} prior={prior} lastLoss={lastLoss} coach={coach} />
+      <TeamVitals team={team} power={power} prior={prior} delta={rankDelta} lastLoss={lastLoss} coach={coach} />
 
       <TeamStatPanel
         team={team}
