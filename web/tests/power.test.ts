@@ -136,7 +136,7 @@ describe("buildPowerRankings", () => {
     expect(ranks.get("a")!.overallRank).toBe(1);
   });
 
-  it("MaxPreps state rank dominates the blend (70/30)", () => {
+  it("MaxPreps state rank dominates the blend (60/40)", () => {
     // Our results say a is far better, but MaxPreps ranks b #1 and a #40;
     // the blended rating should put b on top.
     const a = makeTeam("a");

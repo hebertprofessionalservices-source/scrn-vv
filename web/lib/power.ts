@@ -14,16 +14,16 @@ const ITERATIONS = 25;
 /** Fallback cutoff for teams with no region (independents). */
 const PRIOR_CUTOFF_GAMES = 2;
 /** Client-set blend: MaxPreps' opinion carries this share of the rating. */
-const MAXPREPS_WEIGHT = 0.7;
+const MAXPREPS_WEIGHT = 0.6;
 
 /**
  * SCRN Power Ranking — a weighted blend of two signals:
  *
- * 1. MaxPreps' ranking (MAXPREPS_WEIGHT = 70%) — the statewide list for
+ * 1. MaxPreps' ranking (MAXPREPS_WEIGHT = 60%) — the statewide list for
  *    MHSAA, the per-class rank for MAIS — mapped onto our rating scale by
  *    order statistics within each pool. Preseason, before MaxPreps
  *    publishes current ranks, their prior-season final rank stands in.
- * 2. Our own SRS rating (25%): average (capped) scoring margin plus the
+ * 2. Our own SRS rating (40%): average (capped) scoring margin plus the
  *    average rating of opponents, iterated to convergence — strength of
  *    schedule built in. Season-start rule: a team carries last season's
  *    final rating discounted by returning production (source "prior",
