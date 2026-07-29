@@ -9120,25 +9120,6 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/obannon-greenville-vs-riverside-avon/9-4-2026/?c=f68daac4-c73f-4238-925a-3da93fab1631"
   },
   {
-    "id": "2026-09-04-russell-christian-academy-warriors-warriors-at-faithful-explorers-alc",
-    "season": "2026-27",
-    "week": 0,
-    "date": "2026-09-04",
-    "homeTeamId": "faithful-explorers-alc",
-    "awayTeamId": "russell-christian-academy-warriors-warriors",
-    "homeScore": null,
-    "awayScore": null,
-    "quarterScores": {
-      "home": [],
-      "away": []
-    },
-    "status": "scheduled",
-    "dataStatus": "missing",
-    "venue": null,
-    "boxScore": null,
-    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/faithful-explorers-alc-byram-vs-russell-christian-academy-meridian/9-4-2026/?c=2b6658e6-d0d4-43ba-bd38-b8a290c79e30"
-  },
-  {
     "id": "2026-09-04-saltillo-at-lafayette-commodores-commodores",
     "season": "2026-27",
     "week": 0,
@@ -34787,25 +34768,6 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/rossville-christian-academy-tn-vs-washington-greenville-ms/10-23-2026/?c=2ba43e81-509d-43be-b290-88de5f01f2b1"
-  },
-  {
-    "id": "2026-10-23-russell-christian-academy-warriors-warriors-at-tabernacle",
-    "season": "2026-27",
-    "week": 0,
-    "date": "2026-10-23",
-    "homeTeamId": "tabernacle",
-    "awayTeamId": "russell-christian-academy-warriors-warriors",
-    "homeScore": null,
-    "awayScore": null,
-    "quarterScores": {
-      "home": [],
-      "away": []
-    },
-    "status": "scheduled",
-    "dataStatus": "missing",
-    "venue": null,
-    "boxScore": null,
-    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/russell-christian-academy-meridian-ms-vs-tabernacle-gardendale-al/10-23-2026/?c=723617be-d5af-40f8-811f-0ec5d2c70794"
   },
   {
     "id": "2026-10-23-sacred-heart-at-collins-tigers-tigers",

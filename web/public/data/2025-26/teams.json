@@ -13851,63 +13851,6 @@
     }
   },
   {
-    "id": "russell-christian-academy-warriors-warriors",
-    "name": "Russell Christian Academy Warriors",
-    "mascot": "Warriors",
-    "city": "Meridian",
-    "classification": "MAIS-3A",
-    "district": "Christian (8 Man)",
-    "logoUrl": "/team-logos/russell-christian-academy-warriors-warriors.png",
-    "colors": {
-      "primary": null,
-      "secondary": null
-    },
-    "season": "2025-26",
-    "record": {
-      "wins": 10,
-      "losses": 2
-    },
-    "rankings": {
-      "stateOverall": 4,
-      "stateClass": 1,
-      "national": 457
-    },
-    "stats": {
-      "pointsFor": 530,
-      "pointsAgainst": 214,
-      "yardsFor": 3853,
-      "yardsAgainst": 0,
-      "passYdsFor": 1251,
-      "rushYdsFor": 2602,
-      "passYdsAgainst": 0,
-      "rushYdsAgainst": 0,
-      "turnoversForced": 23,
-      "turnoversLost": 14
-    },
-    "headCoach": "Tim Moore",
-    "maxprepsUrl": "https://www.maxpreps.com/ms/meridian/russell-christian-academy-warriors/football/",
-    "regionRecord": {
-      "wins": 5,
-      "losses": 0
-    },
-    "homeRecord": {
-      "wins": 5,
-      "losses": 1
-    },
-    "awayRecord": {
-      "wins": 4,
-      "losses": 1
-    },
-    "neutralRecord": {
-      "wins": 1,
-      "losses": 0
-    },
-    "streak": {
-      "count": 8,
-      "result": "W"
-    }
-  },
-  {
     "id": "leake-academy-rebels-rebels",
     "name": "Leake Academy Rebels",
     "mascot": "Rebels",
