@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   Command,
   CommandEmpty,
@@ -16,7 +15,6 @@ import { buildFuse, type SearchEntry } from "@/lib/search-index";
 export function CommandPalette({ entries }: { entries: SearchEntry[] }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const router = useRouter();
 
   const fuse = useMemo(() => buildFuse(entries), [entries]);
   const results = useMemo<SearchEntry[]>(
@@ -57,7 +55,9 @@ export function CommandPalette({ entries }: { entries: SearchEntry[] }) {
                     key={`${r.kind}:${r.id}`}
                     onSelect={() => {
                       setOpen(false);
-                      router.push(r.href as any);
+                      // Full navigation — router.push can be dropped when the
+                      // closing dialog re-renders mid-transition.
+                      window.location.assign(r.href);
                     }}
                   >
                     <span className="font-medium">{r.label}</span>

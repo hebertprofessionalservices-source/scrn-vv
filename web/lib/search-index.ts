@@ -28,7 +28,11 @@ const OPTIONS: IFuseOptions<SearchEntry> = {
  * Compact entries built server-side so only ~search-relevant strings cross
  * the client boundary — never full Team/Player objects (12MB+ per page).
  */
-export function buildSearchEntries(teams: Team[], players: Player[]): SearchEntry[] {
+export function buildSearchEntries(
+  teams: Team[],
+  players: Player[],
+  playersSeasonLabel: string | null = null,
+): SearchEntry[] {
   const entries: SearchEntry[] = [];
   for (const t of teams) {
     entries.push({
@@ -45,7 +49,9 @@ export function buildSearchEntries(teams: Team[], players: Player[]): SearchEntr
       id: p.id,
       kind: "player",
       label: `${p.name} #${p.jersey ?? "?"}`,
-      subtitle: `${p.position} · ${p.class}`,
+      subtitle:
+        `${p.position} · ${p.class}` +
+        (playersSeasonLabel ? ` · ${playersSeasonLabel}` : ""),
       keywords: "",
       href: `/players/${p.id}`,
     });

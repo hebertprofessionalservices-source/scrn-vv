@@ -27,7 +27,7 @@ export async function SiteHeader() {
             Home
           </a>
           <a href="/upcoming" className="hover:text-crimson-500">
-            Upcoming Games
+            Schedules
           </a>
           <a href="/standings" className="hover:text-crimson-500">
             Standings

@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/brand/site-footer";
 import { CommandPalette } from "@/components/search/command-palette";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { buildSearchEntries } from "@/lib/search-index";
+import { previousSeason } from "@/lib/prior";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -32,6 +33,15 @@ export default async function RootLayout({
   const season = await currentSeason();
   const data = isPresent ? null : await loadDataset(season);
 
+  // Search players: current rosters, or last season's until they're scraped.
+  let searchPlayers = data?.players ?? [];
+  let playersSeasonLabel: string | null = null;
+  if (data && searchPlayers.length === 0) {
+    const prev = await loadDataset(previousSeason(season));
+    searchPlayers = prev.players;
+    playersSeasonLabel = prev.season.slice(0, 4);
+  }
+
   return (
     <html lang="en" className={`dark ${inter.variable} ${display.variable}`}>
       <body className="min-h-screen flex flex-col">
@@ -39,7 +49,9 @@ export default async function RootLayout({
         <div className="flex-1">{children}</div>
         {!isPresent && <SiteFooter />}
         {!isPresent && data && (
-          <CommandPalette entries={buildSearchEntries(data.teams, data.players)} />
+          <CommandPalette
+            entries={buildSearchEntries(data.teams, searchPlayers, playersSeasonLabel)}
+          />
         )}
       </body>
     </html>

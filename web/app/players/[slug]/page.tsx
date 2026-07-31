@@ -14,8 +14,22 @@ function formatHeight(height: string): string {
 export default async function PlayerDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const season = await currentSeason();
-  const data = await loadDataset(season);
-  const player = data.playersById.get(slug);
+  let data = await loadDataset(season);
+  let player = data.playersById.get(slug);
+  // Fall back to earlier seasons so player pages keep working before the
+  // current season's rosters are scraped.
+  if (!player) {
+    for (const other of await availableSeasons()) {
+      if (other === season) continue;
+      const d = await loadDataset(other);
+      const p = d.playersById.get(slug);
+      if (p) {
+        data = d;
+        player = p;
+        break;
+      }
+    }
+  }
   if (!player) notFound();
   const team = data.teamsById.get(player.teamId);
 
