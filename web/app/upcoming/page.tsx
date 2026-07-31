@@ -1,10 +1,13 @@
-import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
-import { TeamLogo } from "@/components/brand/team-logo";
 import { formatGameDate } from "@/lib/format-date";
 import { leagueOf, titleCaseSlug } from "@/lib/team-format";
 import { todayCentral } from "@/lib/upcoming";
 import { mondayOf } from "@/lib/rank-history";
+import {
+  ScheduleWeek,
+  type ScheduleCard,
+  type ScheduleLeague,
+} from "@/components/schedule/schedule-week";
 import type { Dataset } from "@/lib/data";
 import type { Game } from "@/lib/types";
 
@@ -13,6 +16,33 @@ function dayLabel(dateISO: string): string {
     weekday: "long",
     timeZone: "UTC",
   });
+}
+
+function toCard(game: Game, data: Dataset): ScheduleCard {
+  const away = data.teamsByAlias.get(game.awayTeamId);
+  const home = data.teamsByAlias.get(game.homeTeamId);
+  const isFinal =
+    game.status === "final" && game.homeScore !== null && game.awayScore !== null;
+  const side = (t: typeof away, raw: string, mine: number | null, theirs: number | null) => ({
+    name: t?.name ?? titleCaseSlug(raw),
+    logo: t?.logoUrl ?? null,
+    sub: isFinal
+      ? String(mine)
+      : t
+        ? `${t.record.wins}–${t.record.losses}`
+        : "",
+  });
+  return {
+    id: game.id,
+    href: away && home ? `/matchup?a=${away.id}&b=${home.id}` : null,
+    away: side(away, game.awayTeamId, game.awayScore, game.homeScore),
+    home: side(home, game.homeTeamId, game.homeScore, game.awayScore),
+    awayBold: isFinal && game.awayScore! > game.homeScore!,
+    homeBold: isFinal && game.homeScore! > game.awayScore!,
+    footer:
+      (isFinal ? "Final" : formatGameDate(game.date)) +
+      (game.venue ? ` · ${game.venue}` : ""),
+  };
 }
 
 export default async function SchedulesPage({
@@ -51,19 +81,27 @@ export default async function SchedulesPage({
       data.teamsByAlias.get(g.homeTeamId) ?? data.teamsByAlias.get(g.awayTeamId);
     return t ? leagueOf(t.classification) : "MHSAA";
   };
-  const leagues = (["MHSAA", "MAIS"] as const)
+  const leagues: ScheduleLeague[] = (["MHSAA", "MAIS"] as const)
     .map((league) => {
-      const byDay = new Map<string, Game[]>();
+      const byDay = new Map<string, ScheduleCard[]>();
       for (const g of weekGames) {
         if (gameLeague(g) !== league) continue;
         const day = g.date.slice(0, 10);
         const list = byDay.get(day) ?? [];
-        list.push(g);
+        list.push(toCard(g, data));
         byDay.set(day, list);
       }
-      return { league, byDay };
+      return {
+        league,
+        days: [...byDay.entries()].map(([day, games]) => ({
+          day,
+          weekday: dayLabel(day),
+          dateLabel: formatGameDate(day),
+          games,
+        })),
+      };
     })
-    .filter((l) => l.byDay.size > 0);
+    .filter((l) => l.days.length > 0);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
@@ -93,97 +131,7 @@ export default async function SchedulesPage({
         </div>
       </div>
 
-      {weekGames.length === 0 ? (
-        <div className="rounded-xl border border-chrome-500/15 p-12 text-center">
-          <p className="font-display text-2xl mb-2">No games scheduled</p>
-          <p className="text-chrome-500 text-sm">
-            Check back when the season is underway.
-          </p>
-        </div>
-      ) : (
-        <div className="space-y-10">
-          {leagues.map(({ league, byDay }) => (
-            <section key={league}>
-              <h2 className="font-display text-3xl mb-4 border-b border-chrome-500/15 pb-2">
-                {league}
-              </h2>
-              <div className="space-y-8">
-                {[...byDay.entries()].map(([day, games]) => (
-                  <section key={day}>
-                    <h3 className="font-display text-2xl mb-3">
-                      {dayLabel(day)}
-                      <span className="ml-3 text-base text-chrome-500">
-                        {formatGameDate(day)}
-                      </span>
-                    </h3>
-                    <div className="grid sm:grid-cols-2 gap-3">
-                      {games.map((g) => (
-                        <GameCard key={g.id} game={g} data={data} />
-                      ))}
-                    </div>
-                  </section>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      )}
+      <ScheduleWeek leagues={leagues} />
     </main>
-  );
-}
-
-function GameCard({ game, data }: { game: Game; data: Dataset }) {
-  const away = data.teamsByAlias.get(game.awayTeamId);
-  const home = data.teamsByAlias.get(game.homeTeamId);
-  const matchupHref =
-    away && home ? `/matchup?a=${away.id}&b=${home.id}` : null;
-  const isFinal =
-    game.status === "final" && game.homeScore !== null && game.awayScore !== null;
-
-  const score = (mine: number, theirs: number) => (
-    <span className={`text-sm font-display ${mine > theirs ? "text-chrome-100" : "text-chrome-500"}`}>
-      {mine}
-    </span>
-  );
-
-  const card = (
-    <div className="rounded-xl border border-chrome-500/15 bg-navy-700/30 px-4 py-3 hover:border-crimson-500 h-full">
-      <div className="flex items-center gap-2">
-        <TeamLogo src={away?.logoUrl ?? null} size={28} />
-        <span className="text-sm flex-1">
-          {away?.name ?? titleCaseSlug(game.awayTeamId)}
-        </span>
-        {isFinal ? (
-          score(game.awayScore!, game.homeScore!)
-        ) : (
-          <span className="text-xs text-chrome-500">
-            {away ? `${away.record.wins}–${away.record.losses}` : ""}
-          </span>
-        )}
-      </div>
-      <div className="flex items-center gap-2 mt-1.5">
-        <TeamLogo src={home?.logoUrl ?? null} size={28} />
-        <span className="text-sm flex-1">
-          @ {home?.name ?? titleCaseSlug(game.homeTeamId)}
-        </span>
-        {isFinal ? (
-          score(game.homeScore!, game.awayScore!)
-        ) : (
-          <span className="text-xs text-chrome-500">
-            {home ? `${home.record.wins}–${home.record.losses}` : ""}
-          </span>
-        )}
-      </div>
-      <div className="text-xs text-chrome-500 mt-2">
-        {isFinal ? "Final" : formatGameDate(game.date)}
-        {game.venue ? ` · ${game.venue}` : ""}
-      </div>
-    </div>
-  );
-
-  return matchupHref ? (
-    <Link href={matchupHref as any}>{card}</Link>
-  ) : (
-    <div>{card}</div>
   );
 }
