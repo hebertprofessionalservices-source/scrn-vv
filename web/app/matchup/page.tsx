@@ -65,7 +65,6 @@ export default async function MatchupBuilderPage({
           efficiency: efficiency.get(t.id) ?? null,
           runPass,
           retOff: prior?.returningOffense.get(t.id) ?? null,
-          retAll: prior?.returning.get(t.id) ?? null,
         }),
         stats: {
           pointsFor: t.stats.pointsFor,

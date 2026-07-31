@@ -72,7 +72,6 @@ export async function MatchupFull({
       efficiency: efficiency.get(t.id) ?? null,
       runPass: rp,
       retOff: prior?.returningOffense.get(t.id) ?? null,
-      retAll: prior?.returning.get(t.id) ?? null,
     });
   const sides = { a: sideFor(away, runPass.a), b: sideFor(home, runPass.b) };
   const keyLeaders = matchupKeyLeaders(

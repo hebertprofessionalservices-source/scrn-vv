@@ -88,7 +88,7 @@ export function TeamVitals({
                   <div>Last season: #{prior.lastRank} Overall</div>
                 )}
                 <div>
-                  Returning production:{" "}
+                  Returning off. production:{" "}
                   {prior?.returning != null
                     ? `${Math.round(prior.returning * 100)}%`
                     : "n/a"}

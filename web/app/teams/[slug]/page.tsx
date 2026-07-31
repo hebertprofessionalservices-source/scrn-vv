@@ -75,7 +75,7 @@ export default async function TeamDetailPage({
     power?.source === "prior" && priorInfo
       ? {
           lastRank: priorInfo.power.get(team.id)?.overallRank ?? null,
-          returning: priorInfo.returning.get(team.id) ?? null,
+          returning: priorInfo.returningOffense.get(team.id) ?? null,
         }
       : null;
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
@@ -89,7 +89,6 @@ export default async function TeamDetailPage({
     efficiency,
     runPass,
     retOff: priorInfo?.returningOffense.get(team.id) ?? null,
-    retAll: priorInfo?.returning.get(team.id) ?? null,
   });
   const next = nextScheduledGame(data, team);
   const nextOutlook = next ? matchupPlayoffOutlook(data, team.id, next.opp.id) : null;
@@ -162,7 +161,7 @@ export default async function TeamDetailPage({
         records={side.records}
         avgRush={side.avgRush}
         avgPass={side.avgPass}
-        returning={{ off: side.retOff, all: side.retAll }}
+        returningOff={side.retOff}
         sos={{ played: side.sosPlayed, remaining: side.sosRemaining }}
         playoff={playoffCard}
       />

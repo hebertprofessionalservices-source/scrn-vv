@@ -24,7 +24,7 @@ export function TeamStatPanel({
   records,
   avgRush,
   avgPass,
-  returning,
+  returningOff,
   sos,
   playoff,
 }: {
@@ -35,7 +35,7 @@ export function TeamStatPanel({
   records?: RecordsBlockInput | null;
   avgRush?: number | null;
   avgPass?: number | null;
-  returning?: { off: number | null; all: number | null } | null;
+  returningOff?: number | null;
   sos?: SosInfo | null;
   playoff?: TeamPlayoffCard | null;
 }) {
@@ -69,12 +69,8 @@ export function TeamStatPanel({
           }
         />
       )}
-      {returning && (
-        <Stat
-          label="Returning Off. Production"
-          value={sharePct(returning.off)}
-          sub={`${sharePct(returning.all)} overall production`}
-        />
+      {returningOff !== undefined && (
+        <Stat label="Returning Off. Production" value={sharePct(returningOff)} />
       )}
       <Stat
         label="Rushing Yards"
