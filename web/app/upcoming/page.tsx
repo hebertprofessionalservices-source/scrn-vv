@@ -2,7 +2,7 @@ import Link from "next/link";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { formatGameDate } from "@/lib/format-date";
-import { titleCaseSlug } from "@/lib/team-format";
+import { leagueOf, titleCaseSlug } from "@/lib/team-format";
 import { todayCentral } from "@/lib/upcoming";
 import { mondayOf } from "@/lib/rank-history";
 import type { Dataset } from "@/lib/data";
@@ -44,13 +44,26 @@ export default async function SchedulesPage({
         .filter((g) => mondayOf(g.date) === week.key)
         .sort((a, b) => a.date.localeCompare(b.date))
     : [];
-  const byDay = new Map<string, Game[]>();
-  for (const g of weekGames) {
-    const day = g.date.slice(0, 10);
-    const list = byDay.get(day) ?? [];
-    list.push(g);
-    byDay.set(day, list);
-  }
+
+  // MHSAA slate first, MAIS below; each grouped by day.
+  const gameLeague = (g: Game): "MHSAA" | "MAIS" => {
+    const t =
+      data.teamsByAlias.get(g.homeTeamId) ?? data.teamsByAlias.get(g.awayTeamId);
+    return t ? leagueOf(t.classification) : "MHSAA";
+  };
+  const leagues = (["MHSAA", "MAIS"] as const)
+    .map((league) => {
+      const byDay = new Map<string, Game[]>();
+      for (const g of weekGames) {
+        if (gameLeague(g) !== league) continue;
+        const day = g.date.slice(0, 10);
+        const list = byDay.get(day) ?? [];
+        list.push(g);
+        byDay.set(day, list);
+      }
+      return { league, byDay };
+    })
+    .filter((l) => l.byDay.size > 0);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
@@ -88,18 +101,27 @@ export default async function SchedulesPage({
           </p>
         </div>
       ) : (
-        <div className="space-y-8">
-          {[...byDay.entries()].map(([day, games]) => (
-            <section key={day}>
-              <h2 className="font-display text-2xl mb-3">
-                {dayLabel(day)}
-                <span className="ml-3 text-base text-chrome-500">
-                  {formatGameDate(day)}
-                </span>
+        <div className="space-y-10">
+          {leagues.map(({ league, byDay }) => (
+            <section key={league}>
+              <h2 className="font-display text-3xl mb-4 border-b border-chrome-500/15 pb-2">
+                {league}
               </h2>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {games.map((g) => (
-                  <GameCard key={g.id} game={g} data={data} />
+              <div className="space-y-8">
+                {[...byDay.entries()].map(([day, games]) => (
+                  <section key={day}>
+                    <h3 className="font-display text-2xl mb-3">
+                      {dayLabel(day)}
+                      <span className="ml-3 text-base text-chrome-500">
+                        {formatGameDate(day)}
+                      </span>
+                    </h3>
+                    <div className="grid sm:grid-cols-2 gap-3">
+                      {games.map((g) => (
+                        <GameCard key={g.id} game={g} data={data} />
+                      ))}
+                    </div>
+                  </section>
                 ))}
               </div>
             </section>
