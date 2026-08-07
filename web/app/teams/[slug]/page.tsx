@@ -7,7 +7,7 @@ import { TeamVitals, findLastLoss } from "@/components/team/team-vitals";
 import { buildPowerRankings } from "@/lib/power";
 import { buildTeamEfficiency } from "@/lib/efficiency";
 import { loadHistory } from "@/lib/history-server";
-import { teamCoachView } from "@/lib/matchup-history";
+import { coachDisplayName, teamCoachView } from "@/lib/matchup-history";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { Badge } from "@/components/ui/badge";
@@ -81,6 +81,7 @@ export default async function TeamDetailPage({
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
+  const coachName = coachDisplayName(coach, team);
   const runPass = runPassAttempts(players);
 
   const rate = buildRatings(data);
@@ -137,9 +138,9 @@ export default async function TeamDetailPage({
           <div className="mt-2 flex items-center gap-2">
             <Badge>{classificationLabel(team.classification)}</Badge>
             {region && <Badge variant="outline">{region}</Badge>}
-            {team.headCoach && (
+            {coachName && (
               <span className="text-sm text-chrome-300 ml-2">
-                Coach {team.headCoach}
+                Coach {coachName}
               </span>
             )}
           </div>
@@ -152,7 +153,7 @@ export default async function TeamDetailPage({
         </Link>
       </header>
 
-      <TeamVitals team={team} power={power} prior={prior} delta={rankDelta} lastLoss={lastLoss} coach={coach} />
+      <TeamVitals team={team} power={power} prior={prior} delta={rankDelta} lastLoss={lastLoss} coach={coach} coachName={coachName} />
 
       <TeamStatPanel
         team={team}

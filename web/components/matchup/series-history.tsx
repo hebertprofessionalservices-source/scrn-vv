@@ -122,10 +122,11 @@ function yearsSpan(start: number, end: number): string {
 function CoachLine({ view, vsName }: { view: CoachView; vsName: string }) {
   const c = view.summary;
   const displayName = c?.name ?? view.fallbackName;
+  if (!displayName) return null;
   return (
     <div>
       <span className="font-display text-base">{view.teamName}:</span>{" "}
-      <span className="text-chrome-100">{displayName ?? "n/a"}</span>
+      <span className="text-chrome-100">{displayName}</span>
       <div className="text-chrome-500 text-xs mt-0.5 space-x-3">
         <span>Years at school: <span className="text-chrome-300">{c ? c.yearsAtSchool : "n/a"}</span></span>
         <span>At school: <span className="text-chrome-300">{c ? fmtWLT(c.atSchool) : "n/a"}</span></span>

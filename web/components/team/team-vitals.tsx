@@ -59,6 +59,7 @@ export function TeamVitals({
   delta,
   lastLoss,
   coach,
+  coachName,
 }: {
   team: Team;
   power: PowerRank | null;
@@ -68,6 +69,8 @@ export function TeamVitals({
   delta?: RankDelta | null;
   lastLoss: LastLoss | null;
   coach?: CoachSummary | null;
+  /** Resolved coach display name; the card is hidden when null. */
+  coachName?: string | null;
 }) {
   const played = team.record.wins + team.record.losses > 0;
   return (
@@ -149,11 +152,10 @@ export function TeamVitals({
         </div>
       </VitalCard>
 
+      {coachName && (
       <VitalCard label="Head Coach" className="sm:col-span-2 lg:col-span-4">
         <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
-          <span className="font-display text-2xl">
-            {coach?.name ?? team.headCoach ?? "n/a"}
-          </span>
+          <span className="font-display text-2xl">{coachName}</span>
           <span className="text-sm text-chrome-500">
             Years at school:{" "}
             <span className="text-chrome-300">{coach ? coach.yearsAtSchool : "n/a"}</span>
@@ -168,6 +170,7 @@ export function TeamVitals({
           </span>
         </div>
       </VitalCard>
+      )}
     </section>
   );
 }

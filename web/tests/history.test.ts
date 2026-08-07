@@ -128,3 +128,42 @@ describe("careerMilestone", () => {
     ).toBeNull();
   });
 });
+
+describe("sanitizeCoachName", () => {
+  const team = (name: string) => ({ name }) as never;
+  it("keeps plausible names and trims whitespace", async () => {
+    const { sanitizeCoachName } = await import("@/lib/matchup-history");
+    expect(sanitizeCoachName(" Eugene Clinton ", "Brandon Bulldogs")).toBe("Eugene Clinton");
+    expect(sanitizeCoachName("g richardson", "Greenville Hornets")).toBe("g richardson");
+  });
+  it("rejects blanks, digits, and school/mascot junk", async () => {
+    const { sanitizeCoachName } = await import("@/lib/matchup-history");
+    expect(sanitizeCoachName(null, "Brandon Bulldogs")).toBeNull();
+    expect(sanitizeCoachName("  ", "Brandon Bulldogs")).toBeNull();
+    expect(sanitizeCoachName("Vaweiny 3", "Columbus Falcons")).toBeNull();
+    expect(sanitizeCoachName("Bayou Academy", "Bayou Academy Colts")).toBeNull();
+    expect(sanitizeCoachName("TC BRAVES ", "Tishomingo County Braves")).toBeNull();
+  });
+  it("coachDisplayName prefers the AFHS summary over MaxPreps", async () => {
+    const { coachDisplayName } = await import("@/lib/matchup-history");
+    const summary = { name: "Eugene Clinton", yearsAtSchool: 1, atSchool: { wins: 0, losses: 0, ties: 0 }, career: { wins: 0, losses: 0, ties: 0 } };
+    const t = { name: "Brandon Bulldogs", headCoach: "Ayden Collier" } as never;
+    expect(coachDisplayName(summary, t)).toBe("Eugene Clinton");
+    expect(coachDisplayName(null, t)).toBe("Ayden Collier");
+    expect(coachDisplayName(null, { name: "Brandon Bulldogs", headCoach: null } as never)).toBeNull();
+  });
+});
+
+describe("vacant coach entries", () => {
+  const coachPages: CoachPage[] = [
+    {
+      team: "Grenada",
+      currentCoach: "Vacant",
+      stints: [{ team: "Grenada", coach: "Vacant", startYear: 2026, endYear: 2026, wins: 0, losses: 0, ties: 0 }],
+    },
+  ];
+  it("coachSummary treats AFHS 'Vacant' as no coach", () => {
+    expect(coachSummary({ coachPages, games: [] }, "Grenada", 2026)).toBeNull();
+    expect(coachVsOpponent({ coachPages, games: [] }, "Grenada", "Oxford")).toBeNull();
+  });
+});

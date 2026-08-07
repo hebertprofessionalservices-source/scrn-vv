@@ -16,6 +16,36 @@ export interface RecordWLT {
   ties: number;
 }
 
+function normName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+/**
+ * MaxPreps coach fields are school-edited free text; reject blanks, entries
+ * with digits, and entries that are really the school or mascot name.
+ */
+export function sanitizeCoachName(raw: string | null, teamName: string): string | null {
+  const name = raw?.trim() ?? "";
+  if (!name || /\d/.test(name)) return null;
+  const n = normName(name);
+  const t = normName(teamName);
+  if (!n || t.includes(n) || n.includes(t)) return null;
+  const mascot = (teamName.trim().split(/\s+/).pop() ?? "").replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&",
+  );
+  if (mascot.length > 3 && new RegExp(`\\b${mascot}\\b`, "i").test(name)) return null;
+  return name;
+}
+
+/** Display name for a team's head coach: AFHS history first, then MaxPreps. */
+export function coachDisplayName(
+  summary: CoachSummary | null,
+  team: Team,
+): string | null {
+  return summary?.name ?? sanitizeCoachName(team.headCoach, team.name);
+}
+
 export interface CoachView {
   teamName: string;
   /** MaxPreps coach name — always shown even without AFHS history. */
@@ -47,7 +77,7 @@ export function buildMatchupHistory(
       history && school ? coachSummary(history, school, latestSeason) : null;
     return {
       teamName: team.name,
-      fallbackName: team.headCoach,
+      fallbackName: sanitizeCoachName(team.headCoach, team.name),
       summary,
       vsOpponent:
         history && school && opponent ? coachVsOpponent(history, school, opponent) : null,

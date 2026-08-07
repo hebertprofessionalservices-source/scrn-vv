@@ -165,6 +165,13 @@ export interface CoachSummary {
   career: { wins: number; losses: number; ties: number };
 }
 
+/** AFHS marks open positions with a literal "Vacant" coach entry. */
+function currentCoachOf(page: CoachPage | undefined): string | null {
+  const name = page?.currentCoach;
+  if (!name || norm(name) === "vacant") return null;
+  return name;
+}
+
 /** The school's current coach with tenure + records; null when unknown. */
 export function coachSummary(
   history: Pick<HistoryData, "coachPages" | "games">,
@@ -172,7 +179,7 @@ export function coachSummary(
   latestSeason: number,
 ): CoachSummary | null {
   const page = history.coachPages.find((p) => norm(p.team) === norm(school));
-  const name = page?.currentCoach;
+  const name = currentCoachOf(page);
   if (!page || !name) return null;
 
   const mine = page.stints.filter((s) => norm(s.coach) === norm(name));
@@ -206,7 +213,7 @@ export function coachVsOpponent(
   opponent: string,
 ): { wins: number; losses: number; ties: number } | null {
   const page = history.coachPages.find((p) => norm(p.team) === norm(school));
-  const name = page?.currentCoach;
+  const name = currentCoachOf(page);
   if (!page || !name) return null;
   const stints = page.stints.filter((s) => norm(s.coach) === norm(name));
   if (stints.length === 0) return null;
@@ -234,9 +241,11 @@ export function coachVsCoach(
 ): { aName: string; bName: string; aWins: number; bWins: number; ties: number } | null {
   const pageA = history.coachPages.find((p) => norm(p.team) === norm(schoolA));
   const pageB = history.coachPages.find((p) => norm(p.team) === norm(schoolB));
-  if (!pageA?.currentCoach || !pageB?.currentCoach) return null;
-  const stintsA = pageA.stints.filter((s) => norm(s.coach) === norm(pageA.currentCoach!));
-  const stintsB = pageB.stints.filter((s) => norm(s.coach) === norm(pageB.currentCoach!));
+  const nameA = currentCoachOf(pageA);
+  const nameB = currentCoachOf(pageB);
+  if (!nameA || !nameB) return null;
+  const stintsA = pageA!.stints.filter((s) => norm(s.coach) === norm(nameA));
+  const stintsB = pageB!.stints.filter((s) => norm(s.coach) === norm(nameB));
   if (stintsA.length === 0 || stintsB.length === 0) return null;
 
   const inA = (y: number) => stintsA.some((s) => y >= s.startYear && y <= s.endYear);
@@ -251,7 +260,7 @@ export function coachVsCoach(
     else if (g.result === "L") bWins++;
     else ties++;
   }
-  return { aName: pageA.currentCoach, bName: pageB.currentCoach, aWins, bWins, ties };
+  return { aName: nameA, bName: nameB, aWins, bWins, ties };
 }
 
 /** Upcoming round-number career milestone within reach (e.g. 200th win). */
