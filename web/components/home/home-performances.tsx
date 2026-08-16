@@ -256,7 +256,7 @@ function OutstandingRow({ line, showWeek }: { line: OutstandingLine; showWeek: b
         {line.badges.map((b) => (
           <span
             key={b}
-            className="text-xs font-display px-2 py-0.5 rounded-md border border-crimson-500/40 text-crimson-500"
+            className="text-sm font-display px-2.5 py-1 rounded-md border border-crimson-500/40 text-crimson-500"
           >
             {b}
           </span>
