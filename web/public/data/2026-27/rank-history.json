@@ -1236,5 +1236,1243 @@
    "o": 309,
    "c": 15
   }
+ },
+ "2026-08-16": {
+  "gulfport-admirals-admirals": {
+   "o": 1,
+   "c": 1
+  },
+  "oxford-chargers-chargers": {
+   "o": 2,
+   "c": 2
+  },
+  "tupelo-golden-wave-golden-wave": {
+   "o": 3,
+   "c": 3
+  },
+  "warren-central-vikings-vikings": {
+   "o": 4,
+   "c": 1
+  },
+  "ocean-springs-greyhounds-greyhounds": {
+   "o": 5,
+   "c": 4
+  },
+  "jackson-academy-raiders-raiders": {
+   "o": 6,
+   "c": 1
+  },
+  "oak-grove-warriors-warriors": {
+   "o": 7,
+   "c": 5
+  },
+  "diberville-warriors-warriors": {
+   "o": 8,
+   "c": 6
+  },
+  "petal-panthers-panthers": {
+   "o": 9,
+   "c": 7
+  },
+  "starkville-yellowjackets-yellowjackets": {
+   "o": 10,
+   "c": 8
+  },
+  "madison-central-jaguars-jaguars": {
+   "o": 11,
+   "c": 9
+  },
+  "brookhaven-panthers-panthers": {
+   "o": 12,
+   "c": 1
+  },
+  "kosciusko-whippets-whippets": {
+   "o": 13,
+   "c": 1
+  },
+  "louisville-wildcats-wildcats": {
+   "o": 14,
+   "c": 2
+  },
+  "northwest-rankin-cougars-cougars": {
+   "o": 15,
+   "c": 10
+  },
+  "brandon-bulldogs-bulldogs": {
+   "o": 16,
+   "c": 11
+  },
+  "west-point-green-wave-green-wave": {
+   "o": 17,
+   "c": 2
+  },
+  "madison-ridgeland-academy-patriots-patriots": {
+   "o": 18,
+   "c": 2
+  },
+  "germantown-mavericks-mavericks": {
+   "o": 19,
+   "c": 12
+  },
+  "parklane-academy-pioneers-pioneers": {
+   "o": 20,
+   "c": 3
+  },
+  "heidelberg-oilers-oilers": {
+   "o": 21,
+   "c": 1
+  },
+  "clinton-arrows-arrows": {
+   "o": 22,
+   "c": 13
+  },
+  "jackson-prep-patriots-patriots": {
+   "o": 23,
+   "c": 4
+  },
+  "hattiesburg-tigers-tigers": {
+   "o": 24,
+   "c": 2
+  },
+  "raleigh-lions-lions": {
+   "o": 25,
+   "c": 1
+  },
+  "ridgeland-titans-titans": {
+   "o": 26,
+   "c": 3
+  },
+  "hartfield-academy-hawks-hawks": {
+   "o": 27,
+   "c": 5
+  },
+  "picayune-maroon-tide-maroon-tide": {
+   "o": 28,
+   "c": 4
+  },
+  "poplarville-hornets-hornets": {
+   "o": 29,
+   "c": 3
+  },
+  "west-harrison-hurricanes-hurricanes": {
+   "o": 30,
+   "c": 14
+  },
+  "senatobia-warriors-warriors": {
+   "o": 31,
+   "c": 4
+  },
+  "horn-lake-eagles-eagles": {
+   "o": 32,
+   "c": 15
+  },
+  "east-webster-wolverines-wolverines": {
+   "o": 33,
+   "c": 2
+  },
+  "lake-cormorant": {
+   "o": 34,
+   "c": 5
+  },
+  "columbia-wildcats-wildcats": {
+   "o": 35,
+   "c": 5
+  },
+  "st-martin-yellow-jackets-yellow-jackets": {
+   "o": 36,
+   "c": 16
+  },
+  "new-hope-trojans-trojans": {
+   "o": 37,
+   "c": 3
+  },
+  "noxubee-county-tigers-tigers": {
+   "o": 38,
+   "c": 2
+  },
+  "hernando-tigers-tigers": {
+   "o": 39,
+   "c": 17
+  },
+  "corinth-warriors-warriors": {
+   "o": 40,
+   "c": 6
+  },
+  "leake-academy-rebels-rebels": {
+   "o": 41,
+   "c": 1
+  },
+  "tri-county-academy-rebels-rebels": {
+   "o": 42,
+   "c": 2
+  },
+  "grenada-chargers-chargers": {
+   "o": 43,
+   "c": 6
+  },
+  "mccomb-tigers-tigers": {
+   "o": 44,
+   "c": 7
+  },
+  "desoto-central-jaguars-jaguars": {
+   "o": 45,
+   "c": 18
+  },
+  "south-panola-tigers-tigers": {
+   "o": 46,
+   "c": 7
+  },
+  "holmes-county-central-jaguars-jaguars": {
+   "o": 47,
+   "c": 4
+  },
+  "southaven-chargers-chargers": {
+   "o": 48,
+   "c": 19
+  },
+  "clarksdale-wildcats-wildcats": {
+   "o": 49,
+   "c": 8
+  },
+  "biloxi-indians-indians": {
+   "o": 50,
+   "c": 20
+  },
+  "pass-christian-pirates-pirates": {
+   "o": 51,
+   "c": 9
+  },
+  "simmons-blue-devils-blue-devils": {
+   "o": 52,
+   "c": 1
+  },
+  "pearl-pirates-pirates": {
+   "o": 53,
+   "c": 21
+  },
+  "magnolia-heights-chiefs-chiefs": {
+   "o": 54,
+   "c": 6
+  },
+  "calhoun-city-wildcats-wildcats": {
+   "o": 55,
+   "c": 2
+  },
+  "laurel-tornadoes-tornadoes": {
+   "o": 56,
+   "c": 5
+  },
+  "pontotoc-warriors-warriors": {
+   "o": 57,
+   "c": 6
+  },
+  "pascagoula-panthers-panthers": {
+   "o": 58,
+   "c": 8
+  },
+  "choctaw-county-chargers-chargers": {
+   "o": 59,
+   "c": 3
+  },
+  "neshoba-central-rockets-rockets": {
+   "o": 60,
+   "c": 9
+  },
+  "new-albany-bulldogs-bulldogs": {
+   "o": 61,
+   "c": 10
+  },
+  "union-yellowjackets-yellowjackets": {
+   "o": 62,
+   "c": 4
+  },
+  "leake-central-gators-gators": {
+   "o": 63,
+   "c": 11
+  },
+  "winona-tigers-tigers": {
+   "o": 64,
+   "c": 5
+  },
+  "heritage-academy-patriots-patriots": {
+   "o": 65,
+   "c": 7
+  },
+  "cleveland-central-wolves-wolves": {
+   "o": 66,
+   "c": 7
+  },
+  "lanier-bulldogs-bulldogs": {
+   "o": 67,
+   "c": 8
+  },
+  "meridian-wildcats-wildcats": {
+   "o": 68,
+   "c": 22
+  },
+  "west-jones-mustangs-mustangs": {
+   "o": 69,
+   "c": 10
+  },
+  "stone-tomcats-tomcats": {
+   "o": 70,
+   "c": 9
+  },
+  "itawamba-agricultural-indians-indians": {
+   "o": 71,
+   "c": 12
+  },
+  "mize-bulldogs-bulldogs": {
+   "o": 72,
+   "c": 3
+  },
+  "callaway-chargers-chargers": {
+   "o": 73,
+   "c": 11
+  },
+  "forest-bearcats-bearcats": {
+   "o": 74,
+   "c": 13
+  },
+  "lamar-raiders-raiders": {
+   "o": 75,
+   "c": 8
+  },
+  "mendenhall-tigers-tigers": {
+   "o": 76,
+   "c": 14
+  },
+  "wesson-cobras-cobras": {
+   "o": 77,
+   "c": 4
+  },
+  "shannon-red-raiders-red-raiders": {
+   "o": 78,
+   "c": 15
+  },
+  "morton-panthers-panthers": {
+   "o": 79,
+   "c": 16
+  },
+  "seminary-bulldogs-bulldogs": {
+   "o": 80,
+   "c": 6
+  },
+  "north-side-gators-gators": {
+   "o": 81,
+   "c": 5
+  },
+  "kemper-county-wildcats-wildcats": {
+   "o": 82,
+   "c": 6
+  },
+  "presbyterian-christian-bobcats-bobcats": {
+   "o": 83,
+   "c": 7
+  },
+  "charleston-tigers-tigers": {
+   "o": 84,
+   "c": 7
+  },
+  "newton-county-cougars-cougars": {
+   "o": 85,
+   "c": 17
+  },
+  "vicksburg-gators-gators": {
+   "o": 86,
+   "c": 10
+  },
+  "pearl-river-central-blue-devils-blue-devils": {
+   "o": 87,
+   "c": 12
+  },
+  "center-hill-mustangs-mustangs": {
+   "o": 88,
+   "c": 13
+  },
+  "south-jones-braves-braves": {
+   "o": 89,
+   "c": 11
+  },
+  "starkville-academy-volunteers-volunteers": {
+   "o": 90,
+   "c": 9
+  },
+  "west-lauderdale-knights-knights": {
+   "o": 91,
+   "c": 18
+  },
+  "taylorsville-tartars-tartars": {
+   "o": 92,
+   "c": 3
+  },
+  "washington-generals-generals": {
+   "o": 93,
+   "c": 3
+  },
+  "west-marion-trojans-trojans": {
+   "o": 94,
+   "c": 8
+  },
+  "terry-bulldogs-bulldogs": {
+   "o": 95,
+   "c": 14
+  },
+  "sumrall-bobcats-bobcats": {
+   "o": 96,
+   "c": 12
+  },
+  "wayne-county-war-eagles-war-eagles": {
+   "o": 97,
+   "c": 13
+  },
+  "lafayette-commodores-commodores": {
+   "o": 98,
+   "c": 14
+  },
+  "biggersville-lions-lions": {
+   "o": 99,
+   "c": 4
+  },
+  "greenwood-bulldogs-bulldogs": {
+   "o": 100,
+   "c": 19
+  },
+  "canton-tigers-tigers": {
+   "o": 101,
+   "c": 15
+  },
+  "copiah-academy-colonels-colonels": {
+   "o": 102,
+   "c": 10
+  },
+  "clarkdale-bulldogs-bulldogs": {
+   "o": 103,
+   "c": 8
+  },
+  "rosa-fort-lions-lions": {
+   "o": 104,
+   "c": 20
+  },
+  "baldwyn-bearcats-bearcats": {
+   "o": 105,
+   "c": 9
+  },
+  "oak-forest-academy-yellowjackets-yellowjackets": {
+   "o": 106,
+   "c": 11
+  },
+  "hancock-hawks-hawks": {
+   "o": 107,
+   "c": 16
+  },
+  "centreville-academy-tigers-tigers": {
+   "o": 108,
+   "c": 1
+  },
+  "northeast-jones-tigers-tigers": {
+   "o": 109,
+   "c": 15
+  },
+  "nanih-waiya-warriors-warriors": {
+   "o": 110,
+   "c": 5
+  },
+  "florence-eagles-eagles": {
+   "o": 111,
+   "c": 16
+  },
+  "north-pontotoc-vikings-vikings": {
+   "o": 112,
+   "c": 21
+  },
+  "aberdeen-bulldogs-bulldogs": {
+   "o": 113,
+   "c": 9
+  },
+  "jefferson-davis-county-jaguars-jaguars": {
+   "o": 114,
+   "c": 10
+  },
+  "saltillo-tigers-tigers": {
+   "o": 115,
+   "c": 17
+  },
+  "winona-christian-stars-stars": {
+   "o": 116,
+   "c": 2
+  },
+  "magee-trojans-trojans": {
+   "o": 117,
+   "c": 11
+  },
+  "bay-springs-bulldogs-bulldogs": {
+   "o": 118,
+   "c": 10
+  },
+  "gautier-gators-gators": {
+   "o": 119,
+   "c": 18
+  },
+  "silliman-institute-wildcats-wildcats": {
+   "o": 120,
+   "c": 12
+  },
+  "brookhaven-academy-cougars-cougars": {
+   "o": 121,
+   "c": 13
+  },
+  "purvis-tornadoes-tornadoes": {
+   "o": 122,
+   "c": 17
+  },
+  "simpson-academy-cougars-cougars": {
+   "o": 123,
+   "c": 14
+  },
+  "columbia-academy-cougars-cougars": {
+   "o": 124,
+   "c": 4
+  },
+  "greene-county-wildcats-wildcats": {
+   "o": 125,
+   "c": 22
+  },
+  "harrison-central-red-rebels-red-rebels": {
+   "o": 126,
+   "c": 23
+  },
+  "hazlehurst-indians-indians": {
+   "o": 127,
+   "c": 12
+  },
+  "tylertown-chiefs-chiefs": {
+   "o": 128,
+   "c": 13
+  },
+  "cathedral-green-wave-green-wave": {
+   "o": 129,
+   "c": 15
+  },
+  "quitman-panthers-panthers": {
+   "o": 130,
+   "c": 14
+  },
+  "natchez-bulldogs-bulldogs": {
+   "o": 131,
+   "c": 18
+  },
+  "eupora-eagles-eagles": {
+   "o": 132,
+   "c": 11
+  },
+  "lee-academy-colts-colts": {
+   "o": 133,
+   "c": 3
+  },
+  "choctaw-central-ftng-warriors-ftng-warriors": {
+   "o": 134,
+   "c": 23
+  },
+  "stringer-red-devils-red-devils": {
+   "o": 135,
+   "c": 6
+  },
+  "olive-branch-conquistadors-conquistadors": {
+   "o": 136,
+   "c": 19
+  },
+  "leflore-county-tigers-tigers": {
+   "o": 137,
+   "c": 7
+  },
+  "east-marion-eagles-eagles": {
+   "o": 138,
+   "c": 12
+  },
+  "kossuth-aggies-aggies": {
+   "o": 139,
+   "c": 15
+  },
+  "yazoo-city-indians-indians": {
+   "o": 140,
+   "c": 24
+  },
+  "houston-hilltoppers-hilltoppers": {
+   "o": 141,
+   "c": 25
+  },
+  "marshall-academy-patriots-patriots": {
+   "o": 142,
+   "c": 5
+  },
+  "leake-county-alligators-alligators": {
+   "o": 143,
+   "c": 8
+  },
+  "velma-jackson-falcons-falcons": {
+   "o": 144,
+   "c": 13
+  },
+  "pillow-academy-mustangs-mustangs": {
+   "o": 145,
+   "c": 16
+  },
+  "franklin-county-bulldogs-bulldogs": {
+   "o": 146,
+   "c": 16
+  },
+  "south-pike-eagles-eagles": {
+   "o": 147,
+   "c": 26
+  },
+  "greenville-hornets-hornets": {
+   "o": 148,
+   "c": 20
+  },
+  "lewisburg-patriots-patriots": {
+   "o": 149,
+   "c": 24
+  },
+  "amite-county-trojans-trojans": {
+   "o": 150,
+   "c": 14
+  },
+  "richland-rangers-rangers": {
+   "o": 151,
+   "c": 27
+  },
+  "hamilton-lions-lions": {
+   "o": 152,
+   "c": 15
+  },
+  "forrest-county-agricultural-aggies-aggies": {
+   "o": 153,
+   "c": 28
+  },
+  "south-delta-bulldogs-bulldogs": {
+   "o": 154,
+   "c": 9
+  },
+  "east-rankin-academy-patriots-patriots": {
+   "o": 155,
+   "c": 17
+  },
+  "vancleave-bulldogs-bulldogs": {
+   "o": 156,
+   "c": 19
+  },
+  "myrtle-hawks-hawks": {
+   "o": 157,
+   "c": 16
+  },
+  "east-central-hornets-hornets": {
+   "o": 158,
+   "c": 20
+  },
+  "george-county-rebels-rebels": {
+   "o": 159,
+   "c": 21
+  },
+  "columbus-falcons-falcons": {
+   "o": 160,
+   "c": 21
+  },
+  "loyd-star-hornets-hornets": {
+   "o": 161,
+   "c": 17
+  },
+  "belmont-cardinals-cardinals": {
+   "o": 162,
+   "c": 17
+  },
+  "scott-central-rebels-rebels": {
+   "o": 163,
+   "c": 18
+  },
+  "bayou-academy-colts-colts": {
+   "o": 164,
+   "c": 18
+  },
+  "oak-hill-academy-raiders-raiders": {
+   "o": 165,
+   "c": 4
+  },
+  "lake-hornets-hornets": {
+   "o": 166,
+   "c": 19
+  },
+  "humphreys-county-cowboys-cowboys": {
+   "o": 167,
+   "c": 18
+  },
+  "water-valley-blue-devils-blue-devils": {
+   "o": 168,
+   "c": 20
+  },
+  "adams-county-christian-rebels-rebels": {
+   "o": 169,
+   "c": 6
+  },
+  "rossville-christian-academy-wolves-wolves": {
+   "o": 170,
+   "c": 7
+  },
+  "caledonia-cavaliers-cavaliers": {
+   "o": 171,
+   "c": 22
+  },
+  "north-forrest-eagles-eagles": {
+   "o": 172,
+   "c": 21
+  },
+  "noxapater-tigers-tigers": {
+   "o": 173,
+   "c": 10
+  },
+  "yazoo-county-panthers-panthers": {
+   "o": 174,
+   "c": 19
+  },
+  "coahoma-county-panthers-panthers": {
+   "o": 175,
+   "c": 20
+  },
+  "northeast-lauderdale-trojans-trojans": {
+   "o": 176,
+   "c": 29
+  },
+  "philadelphia-tornadoes-tornadoes": {
+   "o": 177,
+   "c": 22
+  },
+  "ripley-tigers-tigers": {
+   "o": 178,
+   "c": 30
+  },
+  "amory-panthers-panthers": {
+   "o": 179,
+   "c": 31
+  },
+  "tupelo-christian-prep-eagles-eagles": {
+   "o": 180,
+   "c": 11
+  },
+  "obannon-greenwaves-greenwaves": {
+   "o": 181,
+   "c": 21
+  },
+  "winston-academy-patriots-patriots": {
+   "o": 182,
+   "c": 5
+  },
+  "lumberton-panthers-panthers": {
+   "o": 183,
+   "c": 12
+  },
+  "st-joseph-catholic-bruins-bruins": {
+   "o": 184,
+   "c": 19
+  },
+  "enterprise-bulldogs-bulldogs": {
+   "o": 185,
+   "c": 23
+  },
+  "murrah-mustangs-mustangs": {
+   "o": 186,
+   "c": 25
+  },
+  "north-pike-jaguars-jaguars": {
+   "o": 187,
+   "c": 23
+  },
+  "booneville-blue-devils-blue-devils": {
+   "o": 188,
+   "c": 22
+  },
+  "wayne-academy-jaguars-jaguars": {
+   "o": 189,
+   "c": 8
+  },
+  "okolona-chieftains-chieftains": {
+   "o": 190,
+   "c": 13
+  },
+  "edwards-tigers-tigers": {
+   "o": 191,
+   "c": 23
+  },
+  "west-lowndes-panthers-panthers": {
+   "o": 192,
+   "c": 14
+  },
+  "provine-rams-rams": {
+   "o": 193,
+   "c": 24
+  },
+  "ethel-tigers-tigers": {
+   "o": 194,
+   "c": 15
+  },
+  "riverfield-academy-raiders-raiders": {
+   "o": 195,
+   "c": 9
+  },
+  "west-tallahatchie-choctaws-choctaws": {
+   "o": 196,
+   "c": 16
+  },
+  "pisgah-dragons-dragons": {
+   "o": 197,
+   "c": 24
+  },
+  "richton-rebels-rebels": {
+   "o": 198,
+   "c": 17
+  },
+  "kirk-academy-raiders-raiders": {
+   "o": 199,
+   "c": 6
+  },
+  "forest-hill-patriots-patriots": {
+   "o": 200,
+   "c": 22
+  },
+  "tishomingo-county-braves-braves": {
+   "o": 201,
+   "c": 32
+  },
+  "mooreville-troopers-troopers": {
+   "o": 202,
+   "c": 33
+  },
+  "sacred-heart-crusaders-crusaders": {
+   "o": 203,
+   "c": 24
+  },
+  "collins-tigers-tigers": {
+   "o": 204,
+   "c": 25
+  },
+  "perry-central-bulldogs-bulldogs": {
+   "o": 205,
+   "c": 26
+  },
+  "bogue-chitto-bobcats-bobcats": {
+   "o": 206,
+   "c": 18
+  },
+  "amite-school-center-rebels-rebels": {
+   "o": 207,
+   "c": 10
+  },
+  "central-hinds-academy-cougars-cougars": {
+   "o": 208,
+   "c": 11
+  },
+  "pelahatchie-chiefs-chiefs": {
+   "o": 209,
+   "c": 27
+  },
+  "st-joseph-fighting-irish-fighting-irish": {
+   "o": 210,
+   "c": 7
+  },
+  "north-panola-fightn-cougars-fightn-cougars": {
+   "o": 211,
+   "c": 25
+  },
+  "hatley-tigers-tigers": {
+   "o": 212,
+   "c": 28
+  },
+  "moss-point-tigers-tigers": {
+   "o": 213,
+   "c": 34
+  },
+  "long-beach-bearcats-bearcats": {
+   "o": 214,
+   "c": 23
+  },
+  "jefferson-county-jchs-jchs": {
+   "o": 215,
+   "c": 26
+  },
+  "leland-cubs-cubs": {
+   "o": 216,
+   "c": 29
+  },
+  "bruce-trojans-trojans": {
+   "o": 217,
+   "c": 30
+  },
+  "port-gibson-blue-waves-blue-waves": {
+   "o": 218,
+   "c": 27
+  },
+  "raymond-rangers-rangers": {
+   "o": 219,
+   "c": 35
+  },
+  "mcadams-bulldogs-bulldogs": {
+   "o": 220,
+   "c": 19
+  },
+  "independence-wildcats-wildcats": {
+   "o": 221,
+   "c": 28
+  },
+  "jim-hill-tigers-tigers": {
+   "o": 222,
+   "c": 24
+  },
+  "sebastopol-bobcats-bobcats": {
+   "o": 223,
+   "c": 20
+  },
+  "lawrence-county-cougars-cougars": {
+   "o": 224,
+   "c": 36
+  },
+  "southeast-lauderdale-tigers-tigers": {
+   "o": 225,
+   "c": 29
+  },
+  "byers-lions-lions": {
+   "o": 226,
+   "c": 21
+  },
+  "st-aloysius-flashes-flashes": {
+   "o": 227,
+   "c": 12
+  },
+  "bowling-green-buccaneers-buccaneers": {
+   "o": 228,
+   "c": 13
+  },
+  "shaw-warriors-warriors": {
+   "o": 229,
+   "c": 22
+  },
+  "falkner-eagles-eagles": {
+   "o": 230,
+   "c": 23
+  },
+  "j-z-george-jaguars-jaguars": {
+   "o": 231,
+   "c": 31
+  },
+  "park-place-christian-academy-crusaders-crusaders": {
+   "o": 232,
+   "c": 20
+  },
+  "amanda-elzy-panthers-panthers": {
+   "o": 233,
+   "c": 30
+  },
+  "gentry-rams-rams": {
+   "o": 234,
+   "c": 37
+  },
+  "north-delta-green-wave-green-wave": {
+   "o": 235,
+   "c": 8
+  },
+  "walnut-wildcats-wildcats": {
+   "o": 236,
+   "c": 32
+  },
+  "south-pontotoc-cougars-cougars": {
+   "o": 237,
+   "c": 38
+  },
+  "salem-wildcats-wildcats": {
+   "o": 238,
+   "c": 24
+  },
+  "newton-tigers-tigers": {
+   "o": 239,
+   "c": 33
+  },
+  "west-bolivar-eagles-eagles": {
+   "o": 240,
+   "c": 25
+  },
+  "carroll-academy-rebels-rebels": {
+   "o": 241,
+   "c": 9
+  },
+  "mount-olive-pirates-pirates": {
+   "o": 242,
+   "c": 26
+  },
+  "strayhorn-mustangs-mustangs": {
+   "o": 243,
+   "c": 34
+  },
+  "st-patrick-fighting-irish-fighting-irish": {
+   "o": 244,
+   "c": 31
+  },
+  "east-union-urchins-urchins": {
+   "o": 245,
+   "c": 35
+  },
+  "st-stanislaus-rock-a-chaws-rock-a-chaws": {
+   "o": 246,
+   "c": 32
+  },
+  "canton-academy-panthers-panthers": {
+   "o": 247,
+   "c": 10
+  },
+  "wilkinson-county-wildcats-wildcats": {
+   "o": 248,
+   "c": 36
+  },
+  "st-andrews-episcopal-saints-saints": {
+   "o": 249,
+   "c": 33
+  },
+  "vardaman-rams-rams": {
+   "o": 250,
+   "c": 27
+  },
+  "byhalia-indians-indians": {
+   "o": 251,
+   "c": 39
+  },
+  "palmer-dragons-dragons": {
+   "o": 252,
+   "c": 37
+  },
+  "indianola-academy-colonels-colonels": {
+   "o": 253,
+   "c": 11
+  },
+  "coffeeville-pirates-pirates": {
+   "o": 254,
+   "c": 28
+  },
+  "nettleton-tigers-tigers": {
+   "o": 255,
+   "c": 34
+  },
+  "bay-tigers-tigers": {
+   "o": 256,
+   "c": 40
+  },
+  "alcorn-central-golden-bears-golden-bears": {
+   "o": 257,
+   "c": 35
+  },
+  "resurrection-catholic-eagles-eagles": {
+   "o": 258,
+   "c": 29
+  },
+  "mantachie-mustangs-mustangs": {
+   "o": 259,
+   "c": 36
+  },
+  "regents-lions-lions": {
+   "o": 260,
+   "c": 12
+  },
+  "smithville-seminoles-seminoles": {
+   "o": 261,
+   "c": 30
+  },
+  "enterprise-yellowjackets-yellowjackets": {
+   "o": 262,
+   "c": 38
+  },
+  "greenville-christian-saints-saints": {
+   "o": 263,
+   "c": 13
+  },
+  "french-camp-academy-panthers-panthers": {
+   "o": 264,
+   "c": 31
+  },
+  "potts-camp-cardinals-cardinals": {
+   "o": 265,
+   "c": 32
+  },
+  "west-lincoln-bears-bears": {
+   "o": 266,
+   "c": 33
+  },
+  "manchester-academy-mavericks-mavericks": {
+   "o": 267,
+   "c": 14
+  },
+  "puckett-wolves-wolves": {
+   "o": 268,
+   "c": 39
+  },
+  "mclaurin-tigers-tigers": {
+   "o": 269,
+   "c": 37
+  },
+  "holly-springs-hawks-hawks": {
+   "o": 270,
+   "c": 38
+  },
+  "crystal-springs-tigers-tigers": {
+   "o": 271,
+   "c": 39
+  },
+  "riverside-bulldogs-bulldogs": {
+   "o": 272,
+   "c": 34
+  },
+  "clinton-christian-academy-warriors-warriors": {
+   "o": 273,
+   "c": 14
+  },
+  "discovery-christian": {
+   "o": 274,
+   "c": 15
+  },
+  "west-memphis-christian-black-knights-black-knights": {
+   "o": 275,
+   "c": 15
+  },
+  "ashland-blue-devils-blue-devils": {
+   "o": 276,
+   "c": 35
+  },
+  "christian-collegiate-academy-conquerors-conquerors": {
+   "o": 277,
+   "c": 16
+  },
+  "thrasher-rebels-rebels": {
+   "o": 278,
+   "c": 36
+  },
+  "river-oaks-mustangs-mustangs": {
+   "o": 279,
+   "c": 1
+  },
+  "humphreys-academy-rebels-rebels": {
+   "o": 280,
+   "c": 2
+  },
+  "briarfield-academy-rebels-rebels": {
+   "o": 281,
+   "c": 1
+  },
+  "columbus-christian-academy-rams-rams": {
+   "o": 282,
+   "c": 2
+  },
+  "newton-county-academy-generals-generals": {
+   "o": 283,
+   "c": 3
+  },
+  "benton-academy-raiders-raiders": {
+   "o": 284,
+   "c": 4
+  },
+  "desoto-thunderbirds-thunderbirds": {
+   "o": 285,
+   "c": 3
+  },
+  "claiborne-academy-rebels-rebels": {
+   "o": 286,
+   "c": 5
+  },
+  "prairie-view-academy-spartans-spartans": {
+   "o": 287,
+   "c": 6
+  },
+  "deer-creek-warriors-warriors": {
+   "o": 288,
+   "c": 7
+  },
+  "wilkinson-county-christian-academy-rams-rams": {
+   "o": 289,
+   "c": 4
+  },
+  "sylva-bay-academy-saints-saints": {
+   "o": 290,
+   "c": 8
+  },
+  "tallulah-academy-trojans-trojans": {
+   "o": 291,
+   "c": 5
+  },
+  "lee-academy-cougars-cougars": {
+   "o": 292,
+   "c": 6
+  },
+  "calhoun-academy-cougars-cougars": {
+   "o": 293,
+   "c": 7
+  },
+  "bens-ford-christian-eagles-eagles": {
+   "o": 294,
+   "c": 9
+  },
+  "porters-chapel-academy-eagles-eagles": {
+   "o": 295,
+   "c": 10
+  },
+  "christ-covenant": {
+   "o": 296,
+   "c": 11
+  },
+  "riverdale-academy-rebels-rebels": {
+   "o": 297,
+   "c": 8
+  },
+  "tunica-academy-blue-devils-blue-devils": {
+   "o": 298,
+   "c": 9
+  },
+  "delta-streets-academy-lions-lions": {
+   "o": 299,
+   "c": 12
+  },
+  "prentiss-christian-saints-saints": {
+   "o": 300,
+   "c": 13
+  },
+  "union-christian-academy-lions-lions": {
+   "o": 301,
+   "c": 10
+  },
+  "hillcrest-christian-cougars-cougars": {
+   "o": 302,
+   "c": 14
+  },
+  "heritage-christian-academy-warriors-warriors": {
+   "o": 303,
+   "c": 11
+  },
+  "marvell-academy-eagles-eagles": {
+   "o": 304,
+   "c": 12
+  },
+  "delta-academy-raiders-raiders": {
+   "o": 305,
+   "c": 15
+  },
+  "north-sunflower-academy-rebels-rebels": {
+   "o": 306,
+   "c": 16
+  },
+  "kemper-academy-rams-rams": {
+   "o": 307,
+   "c": 13
+  },
+  "tensas-academy-chiefs-chiefs": {
+   "o": 308,
+   "c": 14
+  },
+  "hebron-christian-eagles-eagles": {
+   "o": 309,
+   "c": 15
+  }
  }
 }

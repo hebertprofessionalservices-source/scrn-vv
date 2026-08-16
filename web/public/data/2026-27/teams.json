@@ -9547,7 +9547,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9556,8 +9556,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 28,
+      "pointsAgainst": 22,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9569,11 +9569,26 @@
     },
     "headCoach": "Bill Hurst",
     "maxprepsUrl": "https://www.maxpreps.com/ms/centreville/centreville-academy-tigers/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "winona-christian-stars-stars",
@@ -9589,7 +9604,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9598,8 +9613,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 40,
+      "pointsAgainst": 21,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9611,11 +9626,26 @@
     },
     "headCoach": "Ashley Kuhn",
     "maxprepsUrl": "https://www.maxpreps.com/ms/winona/winona-christian-stars/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "oak-hill-academy-raiders-raiders",
@@ -9631,7 +9661,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9640,8 +9670,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 12,
+      "pointsAgainst": 8,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9653,11 +9683,26 @@
     },
     "headCoach": "Elvina Emilia",
     "maxprepsUrl": "https://www.maxpreps.com/ms/west-point/oak-hill-academy-raiders/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "lee-academy-colts-colts",
@@ -9673,7 +9718,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9682,8 +9727,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 42,
+      "pointsAgainst": 18,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9695,11 +9740,26 @@
     },
     "headCoach": "Bobby Spinks",
     "maxprepsUrl": "https://www.maxpreps.com/ms/clarksdale/lee-academy-colts/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "kirk-academy-raiders-raiders",
@@ -9716,7 +9776,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -9724,8 +9784,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 8,
+      "pointsAgainst": 36,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9737,11 +9797,26 @@
     },
     "headCoach": "Justin Purvis",
     "maxprepsUrl": "https://www.maxpreps.com/ms/grenada/kirk-academy-raiders/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "winston-academy-patriots-patriots",
@@ -9757,7 +9832,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9766,7 +9841,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
+      "pointsFor": 37,
       "pointsAgainst": 0,
       "yardsFor": 0,
       "yardsAgainst": 0,
@@ -9779,11 +9854,26 @@
     },
     "headCoach": "Pat Byrd",
     "maxprepsUrl": "https://www.maxpreps.com/ms/louisville/winston-academy-patriots/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "canton-academy-panthers-panthers",
@@ -9841,7 +9931,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9850,8 +9940,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 36,
+      "pointsAgainst": 8,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9863,11 +9953,26 @@
     },
     "headCoach": "John Baker",
     "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/st-joseph-fighting-irish/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "carroll-academy-rebels-rebels",
@@ -9884,7 +9989,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -9893,7 +9998,7 @@
     },
     "stats": {
       "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsAgainst": 37,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9905,11 +10010,26 @@
     },
     "headCoach": "Bo Milton",
     "maxprepsUrl": "https://www.maxpreps.com/ms/carrollton/carroll-academy-rebels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "indianola-academy-colonels-colonels",
@@ -9925,7 +10045,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -9934,8 +10054,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 24,
+      "pointsAgainst": 15,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9947,11 +10067,26 @@
     },
     "headCoach": "Hayes Barrier",
     "maxprepsUrl": "https://www.maxpreps.com/ms/indianola/indianola-academy-colonels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "regents-lions-lions",
@@ -9968,7 +10103,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -9976,8 +10111,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 15,
+      "pointsAgainst": 31,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -9989,11 +10124,26 @@
     },
     "headCoach": "JoJo Pearson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/oxford/regents-lions/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "north-delta-green-wave-green-wave",
@@ -10010,7 +10160,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10018,8 +10168,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 8,
+      "pointsAgainst": 12,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10031,11 +10181,26 @@
     },
     "headCoach": "Jim Crowder",
     "maxprepsUrl": "https://www.maxpreps.com/ms/batesville/north-delta-green-wave/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "manchester-academy-mavericks-mavericks",
@@ -10052,7 +10217,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10060,8 +10225,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 15,
+      "pointsAgainst": 24,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10073,11 +10238,26 @@
     },
     "headCoach": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/yazoo-city/manchester-academy-mavericks/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "discovery-christian",
@@ -10093,7 +10273,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -10102,8 +10282,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 50,
+      "pointsAgainst": 12,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10115,11 +10295,26 @@
     },
     "headCoach": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/florence/discovery-christian/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "greenville-christian-saints-saints",
@@ -10220,7 +10415,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10228,8 +10423,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 40,
+      "pointsAgainst": 63,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10241,11 +10436,26 @@
     },
     "headCoach": "Brian Pickens",
     "maxprepsUrl": "https://www.maxpreps.com/ms/madden/leake-academy-rebels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "washington-generals-generals",
@@ -10430,7 +10640,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10438,8 +10648,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 22,
+      "pointsAgainst": 28,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10451,11 +10661,26 @@
     },
     "headCoach": "Bryce Bean",
     "maxprepsUrl": "https://www.maxpreps.com/ms/liberty/amite-school-center-rebels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "rossville-christian-academy-wolves-wolves",
@@ -10472,7 +10697,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10480,8 +10705,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 18,
+      "pointsAgainst": 42,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10493,11 +10718,26 @@
     },
     "headCoach": "Brad Kimberlin",
     "maxprepsUrl": "https://www.maxpreps.com/tn/rossville/rossville-christian-academy-wolves/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "central-hinds-academy-cougars-cougars",
@@ -10598,7 +10838,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -10606,8 +10846,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 21,
+      "pointsAgainst": 40,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10619,11 +10859,26 @@
     },
     "headCoach": "Bubba Nettles",
     "maxprepsUrl": "https://www.maxpreps.com/ms/vicksburg/st-aloysius-flashes/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "clinton-christian-academy-warriors-warriors",
@@ -10723,7 +10978,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -10732,8 +10987,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 31,
+      "pointsAgainst": 15,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10745,11 +11000,26 @@
     },
     "headCoach": "Josh Horner",
     "maxprepsUrl": "https://www.maxpreps.com/ar/west-memphis/west-memphis-christian-black-knights/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "bowling-green-buccaneers-buccaneers",
@@ -10891,7 +11161,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -10900,8 +11170,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 63,
+      "pointsAgainst": 40,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -10913,11 +11183,26 @@
     },
     "headCoach": "David Duggan",
     "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/jackson-academy-raiders/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "magnolia-heights-chiefs-chiefs",
@@ -11101,7 +11386,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -11110,8 +11395,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 29,
+      "pointsAgainst": 14,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11123,11 +11408,26 @@
     },
     "headCoach": "Jacob Land",
     "maxprepsUrl": "https://www.maxpreps.com/ms/meridian/lamar-raiders/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "brookhaven-academy-cougars-cougars",
@@ -11311,7 +11611,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -11320,8 +11620,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 58,
+      "pointsAgainst": 6,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11333,11 +11633,26 @@
     },
     "headCoach": "Teddy Dyess",
     "maxprepsUrl": "https://www.maxpreps.com/ms/pelahatchie/east-rankin-academy-patriots/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "hartfield-academy-hawks-hawks",
@@ -11606,7 +11921,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -11614,8 +11929,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 14,
+      "pointsAgainst": 29,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11627,11 +11942,26 @@
     },
     "headCoach": "Todd Mangum",
     "maxprepsUrl": "https://www.maxpreps.com/ms/mendenhall/simpson-academy-cougars/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "st-joseph-catholic-bruins-bruins",
@@ -11689,7 +12019,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -11698,8 +12028,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 36,
+      "pointsAgainst": 18,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11711,11 +12041,26 @@
     },
     "headCoach": "Bo Barton",
     "maxprepsUrl": "https://www.maxpreps.com/la/monroe/river-oaks-mustangs/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "humphreys-academy-rebels-rebels",
@@ -11815,7 +12160,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -11824,8 +12169,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 56,
+      "pointsAgainst": 14,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11837,11 +12182,26 @@
     },
     "headCoach": "Steve Nelson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/decatur/newton-county-academy-generals/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "claiborne-academy-rebels-rebels",
@@ -11941,7 +12301,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -11950,8 +12310,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 52,
+      "pointsAgainst": 12,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -11963,11 +12323,26 @@
     },
     "headCoach": "Hingle McCringleberry",
     "maxprepsUrl": "https://www.maxpreps.com/ms/benton/benton-academy-raiders/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "christ-covenant",
@@ -12151,7 +12526,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -12160,7 +12535,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
+      "pointsFor": 30,
       "pointsAgainst": 0,
       "yardsFor": 0,
       "yardsAgainst": 0,
@@ -12173,11 +12548,26 @@
     },
     "headCoach": "Terrell Luckey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/prentiss/prentiss-christian-saints/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "delta-streets-academy-lions-lions",
@@ -12194,7 +12584,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12202,8 +12592,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 14,
+      "pointsAgainst": 52,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12215,11 +12605,26 @@
     },
     "headCoach": "Travis Upshaw",
     "maxprepsUrl": "https://www.maxpreps.com/ms/greenwood/delta-streets-academy-lions/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "delta-academy-raiders-raiders",
@@ -12361,7 +12766,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -12370,8 +12775,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 42,
+      "pointsAgainst": 6,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12383,11 +12788,26 @@
     },
     "headCoach": "Randy Holloway",
     "maxprepsUrl": "https://www.maxpreps.com/ms/woodville/wilkinson-county-christian-academy-rams/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "columbus-christian-academy-rams-rams",
@@ -12445,7 +12865,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -12454,8 +12874,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 52,
+      "pointsAgainst": 14,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12467,11 +12887,26 @@
     },
     "headCoach": "Noah Odom",
     "maxprepsUrl": "https://www.maxpreps.com/ar/west-helena/desoto-thunderbirds/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "briarfield-academy-rebels-rebels",
@@ -12488,7 +12923,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12496,8 +12931,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 22,
+      "pointsAgainst": 50,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12509,11 +12944,26 @@
     },
     "headCoach": "Beau Travis",
     "maxprepsUrl": "https://www.maxpreps.com/la/lake-providence/briarfield-academy-rebels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "tallulah-academy-trojans-trojans",
@@ -12530,7 +12980,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12538,8 +12988,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 18,
+      "pointsAgainst": 36,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12551,11 +13001,26 @@
     },
     "headCoach": "Bart Wood",
     "maxprepsUrl": "https://www.maxpreps.com/la/tallulah/tallulah-academy-trojans/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "lee-academy-cougars-cougars",
@@ -12655,7 +13120,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "rankings": {
@@ -12664,8 +13129,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 50,
+      "pointsAgainst": 22,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12677,11 +13142,26 @@
     },
     "headCoach": "Noah Odom",
     "maxprepsUrl": "https://www.maxpreps.com/ms/tunica/tunica-academy-blue-devils/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 1,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "W"
+    }
   },
   {
     "id": "marvell-academy-eagles-eagles",
@@ -12698,7 +13178,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12706,8 +13186,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 18,
+      "pointsAgainst": 22,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12719,11 +13199,26 @@
     },
     "headCoach": "Justin Cunningham",
     "maxprepsUrl": "https://www.maxpreps.com/ar/marvell/marvell-academy-eagles/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "tensas-academy-chiefs-chiefs",
@@ -12740,7 +13235,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12748,8 +13243,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 12,
+      "pointsAgainst": 50,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12761,11 +13256,26 @@
     },
     "headCoach": "Stacy Sizemore",
     "maxprepsUrl": "https://www.maxpreps.com/la/st-joseph/tensas-academy-chiefs/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "heritage-christian-academy-warriors-warriors",
@@ -12782,7 +13292,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12791,7 +13301,7 @@
     },
     "stats": {
       "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsAgainst": 30,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12803,11 +13313,26 @@
     },
     "headCoach": "Trevor Lee",
     "maxprepsUrl": "https://www.maxpreps.com/ms/picayune/heritage-christian-academy-warriors/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "union-christian-academy-lions-lions",
@@ -12866,7 +13391,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12874,8 +13399,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 14,
+      "pointsAgainst": 56,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12887,11 +13412,26 @@
     },
     "headCoach": "Colt Kilpatrick",
     "maxprepsUrl": "https://www.maxpreps.com/ms/dekalb/kemper-academy-rams/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "riverdale-academy-rebels-rebels",
@@ -12908,7 +13448,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
       "stateOverall": null,
@@ -12916,8 +13456,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 0,
-      "pointsAgainst": 0,
+      "pointsFor": 6,
+      "pointsAgainst": 42,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -12929,11 +13469,26 @@
     },
     "headCoach": "Nathan Edie",
     "maxprepsUrl": "https://www.maxpreps.com/la/coushatta/riverdale-academy-rebels/football/",
-    "regionRecord": null,
-    "homeRecord": null,
-    "awayRecord": null,
-    "neutralRecord": null,
-    "streak": null
+    "regionRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "homeRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "awayRecord": {
+      "wins": 0,
+      "losses": 1
+    },
+    "neutralRecord": {
+      "wins": 0,
+      "losses": 0
+    },
+    "streak": {
+      "count": 1,
+      "result": "L"
+    }
   },
   {
     "id": "hebron-christian-eagles-eagles",

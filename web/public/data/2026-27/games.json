@@ -1,18 +1,56 @@
 [
   {
+    "id": "2026-08-14-amite-school-center-at-centreville-academy-tigers-tigers",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "centreville-academy-tigers-tigers",
+    "awayTeamId": "amite-school-center",
+    "homeScore": 28,
+    "awayScore": 22,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/amite-school-center-liberty-vs-centreville-academy/8-14-2026/?c=2521e38b-2d35-4238-832c-09d91e76aeb2"
+  },
+  {
+    "id": "2026-08-14-amite-school-center-rebels-rebels-at-centreville-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "centreville-academy",
+    "awayTeamId": "amite-school-center-rebels-rebels",
+    "homeScore": 28,
+    "awayScore": 22,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/amite-school-center-liberty-vs-centreville-academy/8-14-2026/?c=2521e38b-2d35-4238-832c-09d91e76aeb2"
+  },
+  {
     "id": "2026-08-14-briarfield-academy-at-tunica-academy-blue-devils-blue-devils",
     "season": "2026-27",
     "week": 0,
     "date": "2026-08-14",
     "homeTeamId": "tunica-academy-blue-devils-blue-devils",
     "awayTeamId": "briarfield-academy",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 50,
+    "awayScore": 22,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -25,17 +63,169 @@
     "date": "2026-08-14",
     "homeTeamId": "tunica-academy",
     "awayTeamId": "briarfield-academy-rebels-rebels",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 50,
+    "awayScore": 22,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/briarfield-academy-lake-providence-la-vs-tunica-academy-ms/8-14-2026/?c=60179639-2d13-45d2-ac70-4f7c3d83f70d"
+  },
+  {
+    "id": "2026-08-14-delta-streets-academy-at-desoto-thunderbirds-thunderbirds",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "desoto-thunderbirds-thunderbirds",
+    "awayTeamId": "delta-streets-academy",
+    "homeScore": 52,
+    "awayScore": 14,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/delta-streets-academy-greenwood-ms-vs-desoto-west-helena-ar/8-14-2026/?c=4c7dc222-85da-4b75-b749-b041b3440a4f"
+  },
+  {
+    "id": "2026-08-14-delta-streets-academy-lions-lions-at-desoto",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "desoto",
+    "awayTeamId": "delta-streets-academy-lions-lions",
+    "homeScore": 52,
+    "awayScore": 14,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/delta-streets-academy-greenwood-ms-vs-desoto-west-helena-ar/8-14-2026/?c=4c7dc222-85da-4b75-b749-b041b3440a4f"
+  },
+  {
+    "id": "2026-08-14-heritage-christian-academy-at-prentiss-christian-saints-saints",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "prentiss-christian-saints-saints",
+    "awayTeamId": "heritage-christian-academy",
+    "homeScore": 30,
+    "awayScore": 0,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/heritage-christian-academy-picayune-vs-prentiss-christian/8-14-2026/?c=a83b51b2-3901-4745-8371-f9b9900fbf91"
+  },
+  {
+    "id": "2026-08-14-heritage-christian-academy-warriors-warriors-at-prentiss-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "prentiss-christian",
+    "awayTeamId": "heritage-christian-academy-warriors-warriors",
+    "homeScore": 30,
+    "awayScore": 0,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/heritage-christian-academy-picayune-vs-prentiss-christian/8-14-2026/?c=a83b51b2-3901-4745-8371-f9b9900fbf91"
+  },
+  {
+    "id": "2026-08-14-jackson-academy-at-leake-academy-rebels-rebels",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "leake-academy-rebels-rebels",
+    "awayTeamId": "jackson-academy",
+    "homeScore": 40,
+    "awayScore": 63,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/jackson-academy-vs-leake-academy-madden/8-14-2026/?c=afb3639c-d544-4588-a467-b512941ff1d5"
+  },
+  {
+    "id": "2026-08-14-jackson-academy-raiders-raiders-at-leake-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "leake-academy",
+    "awayTeamId": "jackson-academy-raiders-raiders",
+    "homeScore": 40,
+    "awayScore": 63,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/jackson-academy-vs-leake-academy-madden/8-14-2026/?c=afb3639c-d544-4588-a467-b512941ff1d5"
+  },
+  {
+    "id": "2026-08-14-kemper-academy-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "kemper-academy",
+    "homeScore": 56,
+    "awayScore": 14,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-vs-newton-county-academy-decatur/8-14-2026/?c=214e3b36-5178-42a2-b6d6-2a9608ee61ed"
+  },
+  {
+    "id": "2026-08-14-kemper-academy-rams-rams-at-newton-county-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "newton-county-academy",
+    "awayTeamId": "kemper-academy-rams-rams",
+    "homeScore": 56,
+    "awayScore": 14,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-vs-newton-county-academy-decatur/8-14-2026/?c=214e3b36-5178-42a2-b6d6-2a9608ee61ed"
   },
   {
     "id": "2026-08-14-lamar-at-simpson-academy-cougars-cougars",
@@ -44,13 +234,13 @@
     "date": "2026-08-14",
     "homeTeamId": "simpson-academy-cougars-cougars",
     "awayTeamId": "lamar",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 14,
+    "awayScore": 29,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -63,13 +253,13 @@
     "date": "2026-08-14",
     "homeTeamId": "simpson-academy",
     "awayTeamId": "lamar-raiders-raiders",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 14,
+    "awayScore": 29,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -82,13 +272,13 @@
     "date": "2026-08-14",
     "homeTeamId": "rossville-christian-academy-wolves-wolves",
     "awayTeamId": "lee-academy",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 18,
+    "awayScore": 42,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -101,17 +291,93 @@
     "date": "2026-08-14",
     "homeTeamId": "rossville-christian-academy",
     "awayTeamId": "lee-academy-colts-colts",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 18,
+    "awayScore": 42,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/lee-academy-clarksdale-ms-vs-rossville-christian-academy-tn/8-14-2026/?c=9770bea0-41f2-449c-8bce-3f19e6bcccc2"
+  },
+  {
+    "id": "2026-08-14-lee-at-benton-academy-raiders-raiders",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "benton-academy-raiders-raiders",
+    "awayTeamId": "lee",
+    "homeScore": 52,
+    "awayScore": 12,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/benton-academy-ms-vs-lee-marianna-ar/8-14-2026/?c=6ab24857-bdda-4a36-ba21-ae9f38534022"
+  },
+  {
+    "id": "2026-08-14-manchester-academy-at-indianola-academy-colonels-colonels",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "indianola-academy-colonels-colonels",
+    "awayTeamId": "manchester-academy",
+    "homeScore": 24,
+    "awayScore": 15,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/indianola-academy-vs-manchester-academy-yazoo-city/8-14-2026/?c=4a58d455-6bb2-4c3c-a62f-568ee10d85f0"
+  },
+  {
+    "id": "2026-08-14-manchester-academy-mavericks-mavericks-at-indianola-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "indianola-academy",
+    "awayTeamId": "manchester-academy-mavericks-mavericks",
+    "homeScore": 24,
+    "awayScore": 15,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/indianola-academy-vs-manchester-academy-yazoo-city/8-14-2026/?c=4a58d455-6bb2-4c3c-a62f-568ee10d85f0"
+  },
+  {
+    "id": "2026-08-14-marvell-academy-eagles-eagles-at-franklin-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "franklin-academy",
+    "awayTeamId": "marvell-academy-eagles-eagles",
+    "homeScore": 22,
+    "awayScore": 18,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/franklin-academy-winnsboro-la-vs-marvell-academy-ar/8-14-2026/?c=e2ca5f12-685c-4cd2-8da5-fdd9c69ab567"
   },
   {
     "id": "2026-08-14-oak-hill-academy-at-north-delta-green-wave-green-wave",
@@ -120,13 +386,13 @@
     "date": "2026-08-14",
     "homeTeamId": "north-delta-green-wave-green-wave",
     "awayTeamId": "oak-hill-academy",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 8,
+    "awayScore": 12,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -139,13 +405,13 @@
     "date": "2026-08-14",
     "homeTeamId": "north-delta",
     "awayTeamId": "oak-hill-academy-raiders-raiders",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 8,
+    "awayScore": 12,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -158,13 +424,13 @@
     "date": "2026-08-14",
     "homeTeamId": "west-memphis-christian-black-knights-black-knights",
     "awayTeamId": "regents",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 31,
+    "awayScore": 15,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -177,13 +443,13 @@
     "date": "2026-08-14",
     "homeTeamId": "west-memphis-christian",
     "awayTeamId": "regents-lions-lions",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 31,
+    "awayScore": 15,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -196,13 +462,13 @@
     "date": "2026-08-14",
     "homeTeamId": "wilkinson-county-christian-academy-rams-rams",
     "awayTeamId": "riverdale-academy",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 42,
+    "awayScore": 6,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -215,13 +481,13 @@
     "date": "2026-08-14",
     "homeTeamId": "wilkinson-county-christian-academy",
     "awayTeamId": "riverdale-academy-rebels-rebels",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 42,
+    "awayScore": 6,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -234,13 +500,13 @@
     "date": "2026-08-14",
     "homeTeamId": "kirk-academy-raiders-raiders",
     "awayTeamId": "st-joseph",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 8,
+    "awayScore": 36,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -253,17 +519,150 @@
     "date": "2026-08-14",
     "homeTeamId": "kirk-academy",
     "awayTeamId": "st-joseph-fighting-irish-fighting-irish",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 8,
+    "awayScore": 36,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kirk-academy-grenada-vs-st-joseph-greenville/8-14-2026/?c=6f926e5b-278c-4dd4-a618-8b67e0db3f9b"
+  },
+  {
+    "id": "2026-08-14-tallulah-academy-at-river-oaks-mustangs-mustangs",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "river-oaks-mustangs-mustangs",
+    "awayTeamId": "tallulah-academy",
+    "homeScore": 36,
+    "awayScore": 18,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/la/football/game/river-oaks-monroe-vs-tallulah-academy/8-14-2026/?c=89413a04-a82c-4335-9f88-c5fde026b864"
+  },
+  {
+    "id": "2026-08-14-tallulah-academy-trojans-trojans-at-river-oaks",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "river-oaks",
+    "awayTeamId": "tallulah-academy-trojans-trojans",
+    "homeScore": 36,
+    "awayScore": 18,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/la/football/game/river-oaks-monroe-vs-tallulah-academy/8-14-2026/?c=89413a04-a82c-4335-9f88-c5fde026b864"
+  },
+  {
+    "id": "2026-08-14-tensas-academy-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "tensas-academy",
+    "homeScore": 50,
+    "awayScore": 12,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/discovery-christian-florence-ms-vs-tensas-academy-st-joseph-la/8-14-2026/?c=8adf5d76-1721-45f3-9181-c7cbf0c17ef5"
+  },
+  {
+    "id": "2026-08-14-tensas-academy-chiefs-chiefs-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "tensas-academy-chiefs-chiefs",
+    "homeScore": 50,
+    "awayScore": 12,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/discovery-christian-florence-ms-vs-tensas-academy-st-joseph-la/8-14-2026/?c=8adf5d76-1721-45f3-9181-c7cbf0c17ef5"
+  },
+  {
+    "id": "2026-08-14-varsity-opponent-at-east-rankin-academy-patriots-patriots",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "east-rankin-academy-patriots-patriots",
+    "awayTeamId": "varsity-opponent",
+    "homeScore": 58,
+    "awayScore": 6,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/east-rankin-academy-pelahatchie-ms-vs-varsity-opponent-intl/8-14-2026/?c=944f2da5-32df-4e1c-9b42-1325cf9c9a39"
+  },
+  {
+    "id": "2026-08-14-winona-christian-at-st-aloysius-flashes-flashes",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "st-aloysius-flashes-flashes",
+    "awayTeamId": "winona-christian",
+    "homeScore": 21,
+    "awayScore": 40,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/st-aloysius-vicksburg-vs-winona-christian/8-14-2026/?c=13981dd5-0d4a-4f1e-a8e3-8442f9a16926"
+  },
+  {
+    "id": "2026-08-14-winona-christian-stars-stars-at-st-aloysius",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-14",
+    "homeTeamId": "st-aloysius",
+    "awayTeamId": "winona-christian-stars-stars",
+    "homeScore": 21,
+    "awayScore": 40,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "final",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/st-aloysius-vicksburg-vs-winona-christian/8-14-2026/?c=13981dd5-0d4a-4f1e-a8e3-8442f9a16926"
   },
   {
     "id": "2026-08-14-winston-academy-at-carroll-academy-rebels-rebels",
@@ -272,13 +671,13 @@
     "date": "2026-08-14",
     "homeTeamId": "carroll-academy-rebels-rebels",
     "awayTeamId": "winston-academy",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 37,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -291,13 +690,13 @@
     "date": "2026-08-14",
     "homeTeamId": "carroll-academy",
     "awayTeamId": "winston-academy-patriots-patriots",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 37,
     "quarterScores": {
       "home": [],
       "away": []
     },
-    "status": "scheduled",
+    "status": "final",
     "dataStatus": "missing",
     "venue": null,
     "boxScore": null,
@@ -646,6 +1045,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/carroll-academy-carrollton-vs-regents-oxford/8-21-2026/?c=b3528a8b-9302-4b9d-8d5f-172898a797b5"
   },
   {
+    "id": "2026-08-21-central-holmes-christian-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-21",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "central-holmes-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/central-holmes-christian-lexington-vs-delta-streets-academy-greenwood/8-21-2026/?c=155c5b01-f835-47a2-a108-ffb31a97c872"
+  },
+  {
     "id": "2026-08-21-centreville-academy-at-central-hinds-academy-cougars-cougars",
     "season": "2026-27",
     "week": 0,
@@ -796,6 +1214,44 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/center-hill-olive-branch-vs-desoto-central-southaven/8-21-2026/?c=b574f0ee-a66d-443d-b973-e8d8f44e53f6"
+  },
+  {
+    "id": "2026-08-21-discovery-christian-at-kemper-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-21",
+    "homeTeamId": "kemper-academy",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-kemper-academy-dekalb/8-21-2026/?c=1fd33d8c-5e06-461b-9e8f-86ec05990c7a"
+  },
+  {
+    "id": "2026-08-21-discovery-christian-at-kemper-academy-rams-rams",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-21",
+    "homeTeamId": "kemper-academy-rams-rams",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-kemper-academy-dekalb/8-21-2026/?c=1fd33d8c-5e06-461b-9e8f-86ec05990c7a"
   },
   {
     "id": "2026-08-21-gentry-at-leland-cubs-cubs",
@@ -1461,6 +1917,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/mantachie-vs-nettleton/8-21-2026/?c=fa5c7f9a-cffb-4e5e-89d7-8009c41ea732"
+  },
+  {
+    "id": "2026-08-21-newton-county-academy-generals-generals-at-humphreys-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-21",
+    "homeTeamId": "humphreys-academy",
+    "awayTeamId": "newton-county-academy-generals-generals",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/humphreys-academy-belzoni-vs-newton-county-academy-decatur/8-21-2026/?c=ce328c5a-af34-4656-a317-4372f9ec7271"
   },
   {
     "id": "2026-08-21-north-delta-at-magnolia-heights-chiefs-chiefs",
@@ -2185,6 +2660,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/hatley-amory-vs-tishomingo-county-iuka/8-21-2026/?c=70714cc2-2765-4bd8-9527-6e7d7814b2eb"
   },
   {
+    "id": "2026-08-21-tunica-academy-at-benton-academy-raiders-raiders",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-21",
+    "homeTeamId": "benton-academy-raiders-raiders",
+    "awayTeamId": "tunica-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-tunica-academy/8-21-2026/?c=be2d3c3a-06cf-4baf-8f5c-a9d0e7e8d799"
+  },
+  {
     "id": "2026-08-21-tupelo-christian-prep-at-okolona-chieftains-chieftains",
     "season": "2026-27",
     "week": 0,
@@ -2869,6 +3363,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/belmont-ms-vs-mcnairy-central-selmer-tn/8-28-2026/?c=76e9b093-bbed-4aa5-a117-6f616b53f6ba"
   },
   {
+    "id": "2026-08-28-benton-academy-raiders-raiders-at-columbus-christian-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "columbus-christian-academy",
+    "awayTeamId": "benton-academy-raiders-raiders",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-columbus-christian-academy-steens/8-28-2026/?c=f793c26a-d1a8-4d78-a2cb-7781443bcbba"
+  },
+  {
     "id": "2026-08-28-brandon-at-tupelo-golden-wave-golden-wave",
     "season": "2026-27",
     "week": 0,
@@ -3304,6 +3817,44 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/diberville-vs-raleigh/8-28-2026/?c=fa524135-8952-465c-848e-cf0f866883c8"
+  },
+  {
+    "id": "2026-08-28-discovery-christian-at-heritage-christian-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "heritage-christian-academy",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-heritage-christian-academy-picayune/8-28-2026/?c=fc027b74-afc1-4fef-8189-3edae40dc497"
+  },
+  {
+    "id": "2026-08-28-discovery-christian-at-heritage-christian-academy-warriors-warriors",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "heritage-christian-academy-warriors-warriors",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-heritage-christian-academy-picayune/8-28-2026/?c=fc027b74-afc1-4fef-8189-3edae40dc497"
   },
   {
     "id": "2026-08-28-east-central-at-greene-county-wildcats-wildcats",
@@ -3990,6 +4541,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/crystal-springs-vs-jim-hill-jackson/8-28-2026/?c=582eb695-eca6-4202-87ec-c451943768ab"
   },
   {
+    "id": "2026-08-28-kemper-academy-rams-rams-at-porters-chapel-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "porters-chapel-academy",
+    "awayTeamId": "kemper-academy-rams-rams",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-vs-porters-chapel-academy-vicksburg/8-28-2026/?c=8dc20b4f-d87c-4fe9-b305-5a554e346cba"
+  },
+  {
     "id": "2026-08-28-kirk-academy-at-washington-generals-generals",
     "season": "2026-27",
     "week": 0,
@@ -4178,6 +4748,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/leake-central-carthage-vs-provine-jackson/8-28-2026/?c=c086d831-deed-4e6a-bb3d-6a6d2802a3d8"
+  },
+  {
+    "id": "2026-08-28-lee-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "lee",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/delta-streets-academy-greenwood-ms-vs-lee-marianna-ar/8-28-2026/?c=da31e9a1-a618-4dbc-b5f3-10bbdce76bbd"
   },
   {
     "id": "2026-08-28-leland-at-obannon-greenwaves-greenwaves",
@@ -5128,6 +5717,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/tn/football/game/fayette-academy-somerville-vs-rossville-christian-academy/8-28-2026/?c=2b622e9b-fe8b-4afd-8437-716ad925c088"
+  },
+  {
+    "id": "2026-08-28-russell-christian-academy-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-08-28",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "russell-christian-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/newton-county-academy-decatur-vs-russell-christian-academy-meridian/8-28-2026/?c=55b6dcdf-e766-4afa-9f1d-5bfa0d5d923c"
   },
   {
     "id": "2026-08-28-sebastopol-at-puckett-wolves-wolves",
@@ -6517,6 +7125,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/bay-bay-st-louis-vs-st-stanislaus-bay-st-louis/9-4-2026/?c=7e3d66d0-f33a-4823-95e8-1fba11e60921"
   },
   {
+    "id": "2026-09-04-benton-academy-raiders-raiders-at-sylva-bay-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-04",
+    "homeTeamId": "sylva-bay-academy",
+    "awayTeamId": "benton-academy-raiders-raiders",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-sylva-bay-academy-bay-springs/9-4-2026/?c=6130f593-5b27-402f-a385-96010783a8b0"
+  },
+  {
     "id": "2026-09-04-bogue-chitto-at-pisgah-dragons-dragons",
     "season": "2026-27",
     "week": 0,
@@ -6705,6 +7332,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/cherokee-nc-vs-choctaw-central-philadelphia-ms/9-4-2026/?c=55e8739b-2cce-4d02-90f1-b4d91617b6e6"
+  },
+  {
+    "id": "2026-09-04-christ-covenant-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-04",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "christ-covenant",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/christ-covenant-ridgeland-vs-delta-streets-academy-greenwood/9-4-2026/?c=308ecb3a-b432-487a-8d6e-71a3211cc1a7"
   },
   {
     "id": "2026-09-04-christ-presbyterian-academy-at-tupelo-golden-wave-golden-wave",
@@ -8873,6 +9519,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/briarfield-academy-lake-providence-la-vs-porters-chapel-academy-vicksburg-ms/9-4-2026/?c=dfeb3fc2-654c-467f-bd9f-5b7b72e34cfd"
   },
   {
+    "id": "2026-09-04-prairie-view-academy-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-04",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "prairie-view-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/newton-county-academy-decatur-ms-vs-prairie-view-academy-bastrop-la/9-4-2026/?c=cd0a0c18-bcad-4acf-b3c2-a28f32065a2b"
+  },
+  {
     "id": "2026-09-04-purvis-at-pass-christian-pirates-pirates",
     "season": "2026-27",
     "week": 0,
@@ -10355,6 +11020,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/belmont-vs-myrtle/9-11-2026/?c=53bf96a8-30ab-4ea7-9c0d-c41f3155ad67"
   },
   {
+    "id": "2026-09-11-benton-academy-raiders-raiders-at-calhoun-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-11",
+    "homeTeamId": "calhoun-academy",
+    "awayTeamId": "benton-academy-raiders-raiders",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-calhoun-academy-calhoun-city/9-11-2026/?c=48087222-88d8-4904-8fe8-67fd8815564c"
+  },
+  {
     "id": "2026-09-11-biggersville-at-east-webster-wolverines-wolverines",
     "season": "2026-27",
     "week": 0,
@@ -11018,6 +11702,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/corinth-vs-houston/9-11-2026/?c=bfde57cf-3256-4486-af7f-d9e7ddcc4376"
+  },
+  {
+    "id": "2026-09-11-delta-streets-academy-lions-lions-at-tunica-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-11",
+    "homeTeamId": "tunica-academy",
+    "awayTeamId": "delta-streets-academy-lions-lions",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/delta-streets-academy-greenwood-vs-tunica-academy/9-11-2026/?c=14bb105c-ab20-4f65-aca1-caaf2a72867e"
   },
   {
     "id": "2026-09-11-enterprise-at-union-yellowjackets-yellowjackets",
@@ -11799,6 +12502,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/jim-hill-jackson-vs-lanier-jackson/9-11-2026/?c=77f729ae-cc39-4385-8613-ae6fb0980540"
   },
   {
+    "id": "2026-09-11-kemper-academy-rams-rams-at-central-holmes-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-11",
+    "homeTeamId": "central-holmes-christian",
+    "awayTeamId": "kemper-academy-rams-rams",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/central-holmes-christian-lexington-vs-kemper-academy-dekalb/9-11-2026/?c=372d796f-1e61-464c-8b46-3a32ecf88bff"
+  },
+  {
     "id": "2026-09-11-laurel-at-gulfport-admirals-admirals",
     "season": "2026-27",
     "week": 0,
@@ -12177,6 +12899,44 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/baldwyn-vs-nettleton/9-11-2026/?c=b3dab012-8c07-4533-b81b-b12296ddbeb6"
+  },
+  {
+    "id": "2026-09-11-newton-county-academy-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-11",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "newton-county-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-newton-county-academy-decatur/9-11-2026/?c=25318955-7f84-4d0d-9c0e-935e0ae1c527"
+  },
+  {
+    "id": "2026-09-11-newton-county-academy-generals-generals-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-11",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "newton-county-academy-generals-generals",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-newton-county-academy-decatur/9-11-2026/?c=25318955-7f84-4d0d-9c0e-935e0ae1c527"
   },
   {
     "id": "2026-09-11-newton-county-at-northeast-jones-tigers-tigers",
@@ -14269,6 +15029,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/adams-county-christian-natchez-vs-cathedral-natchez/9-18-2026/?c=548ba25f-1265-4e06-94d3-0b6c691c7cd7"
   },
   {
+    "id": "2026-09-18-central-holmes-christian-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-18",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "central-holmes-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/central-holmes-christian-lexington-vs-newton-county-academy-decatur/9-18-2026/?c=072818d5-4c45-4c24-a65e-708c9f61e200"
+  },
+  {
     "id": "2026-09-18-centreville-academy-at-christian-collegiate-academy-conquerors-conquerors",
     "season": "2026-27",
     "week": 0,
@@ -14554,6 +15333,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/columbus-vs-meridian/9-18-2026/?c=5ebfbd02-4596-43cd-b0e5-e94dd7bf75ac"
   },
   {
+    "id": "2026-09-18-columbus-christian-academy-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-18",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "columbus-christian-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/columbus-christian-academy-steens-vs-delta-streets-academy-greenwood/9-18-2026/?c=3d0f868b-e280-4c5a-8d38-a578d4f6afc0"
+  },
+  {
     "id": "2026-09-18-columbus-falcons-falcons-at-meridian",
     "season": "2026-27",
     "week": 0,
@@ -14609,6 +15407,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/crystal-springs-vs-east-marion-columbia/9-18-2026/?c=2e1123d2-c030-4368-867b-151a7105fb2f"
+  },
+  {
+    "id": "2026-09-18-discovery-christian-at-prairie-view-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-18",
+    "homeTeamId": "prairie-view-academy",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/discovery-christian-florence-ms-vs-prairie-view-academy-bastrop-la/9-18-2026/?c=42828458-101a-4684-824f-b93177c00a0c"
   },
   {
     "id": "2026-09-18-east-union-at-hamilton-lions-lions",
@@ -17119,6 +17936,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/salem-tylertown-vs-stringer/9-18-2026/?c=aeb46323-d064-4ac0-a6ab-f2883c022088"
   },
   {
+    "id": "2026-09-18-sylva-bay-academy-at-kemper-academy-rams-rams",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-18",
+    "homeTeamId": "kemper-academy-rams-rams",
+    "awayTeamId": "sylva-bay-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-vs-sylva-bay-academy-bay-springs/9-18-2026/?c=99ccc8de-e836-4624-85ca-6b2fc241c392"
+  },
+  {
     "id": "2026-09-18-taylorsville-at-heidelberg-oilers-oilers",
     "season": "2026-27",
     "week": 0,
@@ -17841,6 +18677,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/ashland-vs-west-tallahatchie-webb/9-25-2026/?c=ab2b9781-9028-4b77-b65e-8e3100afbd81"
   },
   {
+    "id": "2026-09-25-benton-academy-raiders-raiders-at-humphreys-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-25",
+    "homeTeamId": "humphreys-academy",
+    "awayTeamId": "benton-academy-raiders-raiders",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-humphreys-academy-belzoni/9-25-2026/?c=504a678b-90d8-4564-b05c-432183c9d366"
+  },
+  {
     "id": "2026-09-25-bogue-chitto-at-puckett-wolves-wolves",
     "season": "2026-27",
     "week": 0,
@@ -18181,6 +19036,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/carroll-academy-carrollton-vs-central-hinds-academy-raymond/9-25-2026/?c=e5537fff-e082-40e0-8eaa-eba29c2d3e7e"
+  },
+  {
+    "id": "2026-09-25-christ-covenant-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-25",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "christ-covenant",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/christ-covenant-ridgeland-vs-newton-county-academy-decatur/9-25-2026/?c=790575ba-24d9-4e1c-9b25-f3a2146078e2"
   },
   {
     "id": "2026-09-25-claiborne-academy-at-riverdale-academy-rebels-rebels",
@@ -20159,6 +21033,44 @@
     "maxprepsUrl": "https://www.maxpreps.com/la/football/game/briarfield-academy-lake-providence-vs-prairie-view-academy-bastrop/9-25-2026/?c=67fd98cb-0605-4541-907e-2cbf608bd055"
   },
   {
+    "id": "2026-09-25-prentiss-christian-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-25",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "prentiss-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-prentiss-christian/9-25-2026/?c=8f053fdd-1fe8-429b-a278-3d61656d9051"
+  },
+  {
+    "id": "2026-09-25-prentiss-christian-saints-saints-at-discovery-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-09-25",
+    "homeTeamId": "discovery-christian",
+    "awayTeamId": "prentiss-christian-saints-saints",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-prentiss-christian/9-25-2026/?c=8f053fdd-1fe8-429b-a278-3d61656d9051"
+  },
+  {
     "id": "2026-09-25-presbyterian-christian-at-bay-tigers-tigers",
     "season": "2026-27",
     "week": 0,
@@ -21679,6 +22591,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/byhalia-vs-senatobia/10-2-2026/?c=1b589549-6fe3-40f3-87ef-8a96395d31d6"
   },
   {
+    "id": "2026-10-02-calhoun-academy-at-kemper-academy-rams-rams",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-02",
+    "homeTeamId": "kemper-academy-rams-rams",
+    "awayTeamId": "calhoun-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/calhoun-academy-calhoun-city-vs-kemper-academy-dekalb/10-2-2026/?c=1b7287c1-9c76-414f-8260-42b64d259f21"
+  },
+  {
     "id": "2026-10-02-calhoun-city-at-hamilton-lions-lions",
     "season": "2026-27",
     "week": 0,
@@ -21829,6 +22760,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/central-hinds-academy-raymond-ms-vs-riverfield-academy-rayville-la/10-2-2026/?c=116064f8-2b80-44f5-a4d2-5f654e3b481f"
+  },
+  {
+    "id": "2026-10-02-central-holmes-christian-at-benton-academy-raiders-raiders",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-02",
+    "homeTeamId": "benton-academy-raiders-raiders",
+    "awayTeamId": "central-holmes-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-central-holmes-christian-lexington/10-2-2026/?c=74fcfca0-dd6e-4044-8de8-1885be8d758a"
   },
   {
     "id": "2026-10-02-charleston-at-olive-branch-conquistadors-conquistadors",
@@ -22152,6 +23102,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/desoto-central-southaven-ms-vs-germantown-tn/10-2-2026/?c=26b5e652-3e1c-4357-813c-b2ca1e205d09"
+  },
+  {
+    "id": "2026-10-02-discovery-christian-at-bens-ford-christian",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-02",
+    "homeTeamId": "bens-ford-christian",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/bens-ford-christian-bogalusa-la-vs-discovery-christian-florence-ms/10-2-2026/?c=ace24cda-22fa-4732-b095-1b410a926298"
   },
   {
     "id": "2026-10-02-enterprise-at-heidelberg-oilers-oilers",
@@ -23085,6 +24054,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/new-albany-vs-north-pontotoc-ecru/10-2-2026/?c=db2ea725-f88f-4610-9ab9-0540fb7f29c1"
   },
   {
+    "id": "2026-10-02-north-sunflower-academy-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-02",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "north-sunflower-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/delta-streets-academy-greenwood-vs-north-sunflower-academy-drew/10-2-2026/?c=187f604e-a25f-4bcb-88c6-e5187cd77702"
+  },
+  {
     "id": "2026-10-02-northeast-lauderdale-at-newton-county-cougars-cougars",
     "season": "2026-27",
     "week": 0,
@@ -23558,6 +24546,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/porters-chapel-academy-vicksburg-vs-wilkinson-county-christian-academy-woodville/10-2-2026/?c=e71e1e28-f10c-43c6-bd9a-b3e7f2f3c882"
+  },
+  {
+    "id": "2026-10-02-prentiss-christian-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-02",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "prentiss-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/newton-county-academy-decatur-vs-prentiss-christian/10-2-2026/?c=fe9c49a5-0f08-49ef-af06-719f4a3c9e16"
   },
   {
     "id": "2026-10-02-regents-at-kirk-academy-raiders-raiders",
@@ -25612,6 +26619,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/crystal-springs-vs-jefferson-county-fayette/10-9-2026/?c=184daf66-4fb4-41b7-95e3-ee00bdfe112d"
   },
   {
+    "id": "2026-10-09-delta-streets-academy-lions-lions-at-delta-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-09",
+    "homeTeamId": "delta-academy",
+    "awayTeamId": "delta-streets-academy-lions-lions",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/delta-academy-marks-vs-delta-streets-academy-greenwood/10-9-2026/?c=82be86be-92ff-4cda-859e-cb24934d5d98"
+  },
+  {
     "id": "2026-10-09-desoto-central-at-lewisburg-patriots-patriots",
     "season": "2026-27",
     "week": 0,
@@ -27303,6 +28329,44 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/franklin-county-meadville-vs-port-gibson/10-9-2026/?c=d8154dda-cd93-4ce5-9b2d-7d5489301835"
   },
   {
+    "id": "2026-10-09-porters-chapel-academy-at-benton-academy-raiders-raiders",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-09",
+    "homeTeamId": "benton-academy-raiders-raiders",
+    "awayTeamId": "porters-chapel-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-porters-chapel-academy-vicksburg/10-9-2026/?c=3bcf6f6d-423a-4c66-bc8c-0fedd50a82d8"
+  },
+  {
+    "id": "2026-10-09-prentiss-christian-at-kemper-academy-rams-rams",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-09",
+    "homeTeamId": "kemper-academy-rams-rams",
+    "awayTeamId": "prentiss-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-vs-prentiss-christian/10-9-2026/?c=e68217dc-5612-4f8e-aa2c-f49380d774cd"
+  },
+  {
     "id": "2026-10-09-ripley-at-new-albany-bulldogs-bulldogs",
     "season": "2026-27",
     "week": 0,
@@ -27624,6 +28688,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/stone-wiggins-vs-wayne-county-war-eagleslady-war-eagles-waynesboro/10-9-2026/?c=67299316-0df3-454b-b770-eb738dd5c2a1"
+  },
+  {
+    "id": "2026-10-09-sylva-bay-academy-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-09",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "sylva-bay-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/newton-county-academy-decatur-vs-sylva-bay-academy-bay-springs/10-9-2026/?c=abd20de1-8e90-4f80-ae25-212583adc9f6"
   },
   {
     "id": "2026-10-09-taylorsville-at-resurrection-catholic-eagles-eagles",
@@ -28709,6 +29792,63 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/christian-collegiate-academy-bulldogs-gulfport-vs-park-place-christian-academy-pearl/10-16-2026/?c=5fbe021f-1905-4d81-aa25-3b64386db8c3"
   },
   {
+    "id": "2026-10-16-clinton-christian-academy-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-16",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "clinton-christian-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/clinton-christian-academy-vs-newton-county-academy-decatur/10-16-2026/?c=95ded2c9-c8d7-4746-a937-6a9b601ae945"
+  },
+  {
+    "id": "2026-10-16-deer-creek-at-delta-streets-academy-lions-lions",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-16",
+    "homeTeamId": "delta-streets-academy-lions-lions",
+    "awayTeamId": "deer-creek",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/deer-creek-arcola-vs-delta-streets-academy-greenwood/10-16-2026/?c=dbfad5f1-c5b4-4d31-8fc7-262f2cfee342"
+  },
+  {
+    "id": "2026-10-16-discovery-christian-at-sylva-bay-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-16",
+    "homeTeamId": "sylva-bay-academy",
+    "awayTeamId": "discovery-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/discovery-christian-florence-vs-sylva-bay-academy-bay-springs/10-16-2026/?c=57ba2bca-e149-44e1-be7f-d8945f53b5ae"
+  },
+  {
     "id": "2026-10-16-east-marion-at-perry-central-bulldogs-bulldogs",
     "season": "2026-27",
     "week": 0,
@@ -29353,6 +30493,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/george-county-lucedale-vs-jim-hill-jackson/10-16-2026/?c=7ea82d4d-6d9c-4eb3-8a96-cbacd4ae0263"
+  },
+  {
+    "id": "2026-10-16-kemper-academy-rams-rams-at-varsity-opponent",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-16",
+    "homeTeamId": "varsity-opponent",
+    "awayTeamId": "kemper-academy-rams-rams",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/kemper-academy-dekalb-ms-vs-varsity-opponent-intl/10-16-2026/?c=97f946d4-7c37-4dff-8435-d3647ef0f62b"
   },
   {
     "id": "2026-10-16-kirk-academy-at-north-delta-green-wave-green-wave",
@@ -32300,6 +33459,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/baldwyn-vs-hamilton/10-23-2026/?c=96b16e77-968e-44e3-a091-d91bd58bb8d1"
   },
   {
+    "id": "2026-10-23-bens-ford-christian-at-newton-county-academy-generals-generals",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-23",
+    "homeTeamId": "newton-county-academy-generals-generals",
+    "awayTeamId": "bens-ford-christian",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/bens-ford-christian-bogalusa-la-vs-newton-county-academy-decatur-ms/10-23-2026/?c=c084eec5-a275-40eb-aa22-144da6ca69f4"
+  },
+  {
     "id": "2026-10-23-biggersville-at-smithville-seminoles-seminoles",
     "season": "2026-27",
     "week": 0,
@@ -32528,6 +33706,25 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/center-hill-olive-branch-vs-olive-branch/10-23-2026/?c=4e2f715d-5fc1-4aa8-99a3-c11380971433"
   },
   {
+    "id": "2026-10-23-christ-covenant-at-benton-academy-raiders-raiders",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-23",
+    "homeTeamId": "benton-academy-raiders-raiders",
+    "awayTeamId": "christ-covenant",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/benton-academy-vs-christ-covenant-ridgeland/10-23-2026/?c=dda84469-b484-471f-82eb-a009feef2df7"
+  },
+  {
     "id": "2026-10-23-columbia-academy-at-christian-collegiate-academy-conquerors-conquerors",
     "season": "2026-27",
     "week": 0,
@@ -32564,6 +33761,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/christian-collegiate-academy-bulldogs-gulfport-vs-columbia-academy/10-23-2026/?c=3e6202b6-6e42-408a-aea1-65ed39b526c4"
+  },
+  {
+    "id": "2026-10-23-columbus-christian-academy-at-kemper-academy-rams-rams",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-23",
+    "homeTeamId": "kemper-academy-rams-rams",
+    "awayTeamId": "columbus-christian-academy",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/columbus-christian-academy-steens-vs-kemper-academy-dekalb/10-23-2026/?c=811bf8ef-160b-4bf2-ac8a-5d5003f8fab8"
   },
   {
     "id": "2026-10-23-copiah-academy-at-cathedral-green-wave-green-wave",
@@ -32640,6 +33856,25 @@
     "venue": null,
     "boxScore": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/football/game/amory-vs-corinth/10-23-2026/?c=4b1ffce6-f2da-4dc1-9619-e4d1fcefe9d9"
+  },
+  {
+    "id": "2026-10-23-delta-streets-academy-lions-lions-at-prairie-view-academy",
+    "season": "2026-27",
+    "week": 0,
+    "date": "2026-10-23",
+    "homeTeamId": "prairie-view-academy",
+    "awayTeamId": "delta-streets-academy-lions-lions",
+    "homeScore": null,
+    "awayScore": null,
+    "quarterScores": {
+      "home": [],
+      "away": []
+    },
+    "status": "scheduled",
+    "dataStatus": "missing",
+    "venue": null,
+    "boxScore": null,
+    "maxprepsUrl": "https://www.maxpreps.com/inter-state/football/game/delta-streets-academy-greenwood-ms-vs-prairie-view-academy-bastrop-la/10-23-2026/?c=56436163-b880-4f1b-a8ac-4ce42835bafa"
   },
   {
     "id": "2026-10-23-east-union-at-belmont-cardinals-cardinals",
