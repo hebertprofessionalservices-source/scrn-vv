@@ -45,6 +45,7 @@ from scraper.nextdata import (  # noqa: E402
     extract_region_record,
 )
 from scraper.normalize import build_games  # noqa: E402
+from scraper.opponents import disambiguate_opponents  # noqa: E402
 from scraper.pipeline import _fetch_html  # noqa: E402
 from scraper.schedule import parse_schedule  # noqa: E402
 
@@ -396,6 +397,15 @@ async def main() -> None:
     if new_teams:
         print("  first schedules: " + ", ".join(sorted(new_teams)))
     print(f"final rows on {args.date}: {len(finals)}")
+
+    # Runs over the whole file, not just this date, so the fix is self-healing
+    # for rows written before this check existed.
+    fixes = disambiguate_opponents(games_final, teams)
+    if fixes:
+        print(f"\ndisambiguated {len(fixes)} out-of-state opponents "
+              f"that resolved onto same-named teams:")
+        for gid, old, new in fixes:
+            print(f"  {gid}: {old} -> {new}")
 
     verify_scores(board, games_final, teams, resolve)
 

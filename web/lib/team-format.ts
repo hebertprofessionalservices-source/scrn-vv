@@ -55,11 +55,26 @@ export function opponentAliasSlug(team: Pick<Team, "name" | "mascot">): string {
   return slugify(name.trim());
 }
 
-/** Fallback display for opponents we don't carry: "brother-martin" -> "Brother Martin". */
+/**
+ * States an out-of-state opponent slug can be tagged with by the scraper's
+ * disambiguation pass. Kept to the real footprint so an ordinary school name
+ * ending in a two-letter word isn't mistaken for a state.
+ */
+const STATE_CODES = new Set([
+  "ms", "tn", "ar", "la", "al", "tx", "ga", "fl", "mo", "ok",
+]);
+
+/**
+ * Fallback display for opponents we don't carry: "brother-martin" -> "Brother
+ * Martin". A trailing state code marks a namesake of one of our teams from
+ * another state ("germantown-tn" -> "Germantown (TN)"), so it stays visible
+ * rather than reading as part of the school's name.
+ */
 export function titleCaseSlug(slug: string): string {
-  return slug
-    .split("-")
-    .filter(Boolean)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
+  const parts = slug.split("-").filter(Boolean);
+  let suffix = "";
+  if (parts.length > 1 && STATE_CODES.has(parts[parts.length - 1])) {
+    suffix = ` (${parts.pop()!.toUpperCase()})`;
+  }
+  return parts.map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ") + suffix;
 }

@@ -1,11 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { TeamLogo } from "@/components/brand/team-logo";
+import { classificationLabel, leagueOf } from "@/lib/team-format";
+import {
+  activeClassification,
+  classOptionsFor,
+  filterSchedule,
+} from "@/lib/schedule-filter";
 
 export interface ScheduleCard {
   id: string;
   href: string | null;
+  /** Both teams' classifications, so cross-class games match either filter. */
+  classes: string[];
   away: { name: string; logo: string | null; sub: string };
   home: { name: string; logo: string | null; sub: string };
   awayBold: boolean;
@@ -25,40 +33,82 @@ export interface ScheduleLeague {
   days: ScheduleDay[];
 }
 
-/** One week of games with a live team-name filter. */
+const CONTROL_CLASSES =
+  "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
+
+/** One week of games, filtered by league, classification and team name. */
 export function ScheduleWeek({ leagues }: { leagues: ScheduleLeague[] }) {
   const [query, setQuery] = useState("");
-  const q = query.trim().toLowerCase();
-  const match = (g: ScheduleCard) =>
-    !q ||
-    g.away.name.toLowerCase().includes(q) ||
-    g.home.name.toLowerCase().includes(q);
+  const [league, setLeague] = useState("");
+  const [cls, setCls] = useState("");
 
-  const filtered = leagues
-    .map((l) => ({
-      ...l,
-      days: l.days
-        .map((d) => ({ ...d, games: d.games.filter(match) }))
-        .filter((d) => d.games.length > 0),
-    }))
-    .filter((l) => l.days.length > 0);
+  const classOptions = useMemo(() => classOptionsFor(leagues, league), [leagues, league]);
+  const activeCls = activeClassification(cls, classOptions);
+  const filtered = useMemo(
+    () => filterSchedule(leagues, { league, cls, query }),
+    [leagues, league, cls, query],
+  );
+
+  const filtersActive = Boolean(query.trim() || league || activeCls);
 
   return (
     <div>
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search teams…"
-        aria-label="Search teams"
-        className="mb-8 w-full max-w-sm bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 placeholder:text-chrome-500 hover:border-crimson-500 focus:outline-none focus:border-crimson-500"
-      />
+      <div className="mb-8 flex flex-wrap items-center gap-3">
+        <select
+          className={CONTROL_CLASSES}
+          value={league}
+          onChange={(e) => setLeague(e.target.value)}
+          aria-label="Filter by league"
+        >
+          <option value="">All Leagues</option>
+          <option value="MHSAA">MHSAA</option>
+          <option value="MAIS">MAIS</option>
+        </select>
+
+        <select
+          className={CONTROL_CLASSES}
+          value={activeCls}
+          onChange={(e) => setCls(e.target.value)}
+          aria-label="Filter by classification"
+        >
+          <option value="">All Classifications</option>
+          {league
+            ? classOptions.map((c) => (
+                <option key={c} value={c}>
+                  {classificationLabel(c)}
+                </option>
+              ))
+            : (["MHSAA", "MAIS"] as const).map((lg) => {
+                const opts = classOptions.filter((c) => leagueOf(c) === lg);
+                return opts.length === 0 ? null : (
+                  <optgroup key={lg} label={lg}>
+                    {opts.map((c) => (
+                      <option key={c} value={c}>
+                        {classificationLabel(c)}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
+        </select>
+
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search teams…"
+          aria-label="Search teams"
+          className={`${CONTROL_CLASSES} w-full max-w-sm placeholder:text-chrome-500`}
+        />
+      </div>
 
       {filtered.length === 0 ? (
         <div className="rounded-xl border border-chrome-500/15 p-12 text-center">
           <p className="font-display text-2xl mb-2">No games found</p>
           <p className="text-chrome-500 text-sm">
-            {q ? `No games this week match "${query}".` : "Check back when the season is underway."}
+            {filtersActive
+              ? "No games this week match those filters."
+              : "Check back when the season is underway."}
           </p>
         </div>
       ) : (

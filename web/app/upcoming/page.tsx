@@ -35,6 +35,12 @@ function toCard(game: Game, data: Dataset): ScheduleCard {
   return {
     id: game.id,
     href: away && home ? `/matchup?a=${away.id}&b=${home.id}` : null,
+    // Both sides, so a cross-class game shows under either classification.
+    classes: [
+      ...new Set(
+        [away?.classification, home?.classification].filter(Boolean) as string[],
+      ),
+    ],
     away: side(away, game.awayTeamId, game.awayScore, game.homeScore),
     home: side(home, game.homeTeamId, game.homeScore, game.awayScore),
     awayBold: isFinal && game.awayScore! > game.homeScore!,
