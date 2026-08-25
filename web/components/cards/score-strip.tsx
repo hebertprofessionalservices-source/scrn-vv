@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { displaySlug } from "@/lib/display-slug";
 import { formatGameDate } from "@/lib/format-date";
+import { titleCaseSlug } from "@/lib/team-format";
 import type { Game, Team } from "@/lib/types";
 
 export function ScoreStrip({
@@ -22,13 +23,13 @@ export function ScoreStrip({
           <div className="rounded-lg border border-chrome-500/15 px-3 py-2 hover:border-crimson-500 text-sm">
             <div className="flex items-center justify-between">
               <span className={awayWin ? "font-semibold" : "text-chrome-300"}>
-                {away?.name ?? g.awayTeamId.replace(/-/g, " ")}
+                {away?.name ?? titleCaseSlug(g.awayTeamId)}
               </span>
               <span className="font-display">{g.awayScore ?? "—"}</span>
             </div>
             <div className="flex items-center justify-between">
               <span className={!awayWin ? "font-semibold" : "text-chrome-300"}>
-                {home?.name ?? g.homeTeamId.replace(/-/g, " ")}
+                {home?.name ?? titleCaseSlug(g.homeTeamId)}
               </span>
               <span className="font-display">{g.homeScore ?? "—"}</span>
             </div>

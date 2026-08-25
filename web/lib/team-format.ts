@@ -27,6 +27,16 @@ export function leagueOf(classification: string): "MHSAA" | "MAIS" {
   return classification.startsWith("MAIS") ? "MAIS" : "MHSAA";
 }
 
+/**
+ * MAIS 8-Man classifications. Their stats and ratings aren't comparable with
+ * the 11-man game, so they're excluded from the home page's ranked features —
+ * upsets, Game of the Week, and the Top 10 lists (client call, Aug 2026).
+ * They keep their own standings, team pages, schedules and rankings.
+ */
+export function isEightMan(classification: string | null | undefined): boolean {
+  return (classification ?? "").startsWith("MAIS-8M");
+}
+
 /** All classifications, display order. */
 export const CLASSIFICATIONS = [
   "7A", "6A", "5A", "4A", "3A", "2A", "1A",

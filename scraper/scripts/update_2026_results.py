@@ -28,6 +28,7 @@ import sys
 from datetime import date as date_cls
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -48,6 +49,7 @@ from scraper.normalize import build_games  # noqa: E402
 from scraper.opponents import disambiguate_opponents  # noqa: E402
 from scraper.pipeline import _fetch_html  # noqa: E402
 from scraper.schedule import parse_schedule  # noqa: E402
+from scraper.schedule_rows import derive_record, homeaway_truth, orient  # noqa: E402
 
 SEASON = "2026-27"
 SHORT = "26-27"
@@ -60,12 +62,21 @@ DATA_DIRS = [
 WEB_DIR = ROOT.parent / "web" / "public" / "data" / SEASON
 
 SCHOOL_HREF_RE = re.compile(r"^(?:https://www\.maxpreps\.com)?(/[a-z]{2}/[a-z0-9.'-]+/[a-z0-9.'-]+/football)/?$")
-CONTEST_RE = re.compile(r"[?&]c=([\w-]+)")
+# Modern game links carry "?c=<uuid>"; a few contests still use the legacy ASPX
+# page, which spells the same uuid "contestid=<uuid>".
+CONTEST_RE = re.compile(r"[?&](?:c|contestid)=([\w-]+)", re.I)
 
 
 def contest_id(url: str | None) -> str | None:
     m = CONTEST_RE.search(url or "")
     return m.group(1) if m else None
+
+
+def absolute_url(href: str | None) -> str | None:
+    """Scoreboard hrefs are usually absolute but legacy ones are site-relative."""
+    if not href:
+        return None
+    return urljoin(f"{config.MAXPREPS_BASE}/", href)
 
 
 def strip_rank(name: str) -> str:
@@ -96,9 +107,10 @@ def parse_scoreboard(html: str) -> list[dict[str, Any]]:
                 "score": int(raw) if raw.isdigit() else None,
             })
         details = a.select_one(".details")
+        href = absolute_url(a.get("href"))
         out.append({
-            "url": a.get("href"),
-            "contestId": contest_id(a.get("href")),
+            "url": href,
+            "contestId": contest_id(href),
             "away": sides[0],
             "home": sides[1],
             "status": (details.get_text(strip=True) if details else "").lower(),
@@ -106,65 +118,6 @@ def parse_scoreboard(html: str) -> list[dict[str, Any]]:
     return out
 
 
-def homeaway_truth(html: str) -> dict[str, tuple[str, str]]:
-    """Per-contest (awayName, homeName) from a schedule page's JSON-LD events.
-
-    parse_schedule orients rows from the box-score URL slug, but 2026 contest
-    URLs are the new /game/…/?c=… form with no "away-vs-home" .htm slug, so it
-    silently defaults every row to "away". The JSON-LD event name "Away at
-    Home" is explicit; sides use MaxPreps short names, the same vocabulary as
-    parse_schedule's opponentName. (Same fix as scrape_2026_schedules.py.)
-    """
-    truth: dict[str, tuple[str, str]] = {}
-    for chunk in html.split('{"@type":"SportsEvent"')[1:]:
-        chunk = chunk[:2500]
-        nm = re.match(r'\s*,\s*"name":"([^"]+) at ([^"]+)"', chunk)
-        cm = re.search(r'/game/[^"]*\?c=([\w-]+)', chunk)
-        if nm and cm:
-            truth[cm.group(1)] = (nm.group(1).strip(), nm.group(2).strip())
-    return truth
-
-
-def orient(rows: list[dict], truth: dict[str, tuple[str, str]]) -> tuple[int, int, int]:
-    """Set each row's homeOrAway from `truth`, then reconcile paired rows."""
-    fixed = defaulted = 0
-    by_contest: dict[str, list[dict]] = {}
-    for g in rows:
-        if g.get("contestId"):
-            by_contest.setdefault(g["contestId"], []).append(g)
-        g["_fixed"] = False
-        sides = truth.get(g.get("contestId") or "")
-        opp = (g.get("opponentName") or "").strip()
-        if sides and opp:
-            away_name, home_name = sides
-            if opp == home_name and opp != away_name:
-                g["homeOrAway"], g["_fixed"] = "away", True
-            elif opp == away_name and opp != home_name:
-                g["homeOrAway"], g["_fixed"] = "home", True
-        if g["_fixed"]:
-            fixed += 1
-        else:
-            defaulted += 1
-
-    # The two perspective rows of one contest must be complementary.
-    reconciled = 0
-    for group in by_contest.values():
-        if len(group) != 2:
-            continue
-        a, b = group
-        flip = lambda g: "away" if g["homeOrAway"] == "home" else "home"  # noqa: E731
-        if a["_fixed"] and not b["_fixed"]:
-            b["homeOrAway"] = flip(a)
-            reconciled += 1
-        elif b["_fixed"] and not a["_fixed"]:
-            a["homeOrAway"] = flip(b)
-            reconciled += 1
-        elif not a["_fixed"] and a["homeOrAway"] == b["homeOrAway"]:
-            b["homeOrAway"] = flip(a)
-            reconciled += 1
-    for g in rows:
-        g.pop("_fixed", None)
-    return fixed, defaulted, reconciled
 
 
 def parse_game_schools(html: str) -> list[str]:
@@ -248,22 +201,6 @@ def verify_scores(board, games_final, teams, resolve) -> None:
 
 
 # ── team-side derivations ─────────────────────────────────────────────────────
-def derive_record(partials: list[dict[str, Any]]) -> tuple[dict[str, int], int, int]:
-    wins = losses = pf = pa = 0
-    for g in partials:
-        if g.get("status") != "final":
-            continue
-        sf, sa = g.get("scoreFor"), g.get("scoreAgainst")
-        if sf is None or sa is None:
-            continue
-        pf += sf
-        pa += sa
-        if sf > sa:
-            wins += 1
-        elif sf < sa:
-            losses += 1
-    return {"wins": wins, "losses": losses}, pf, pa
-
 
 async def main() -> None:
     ap = argparse.ArgumentParser()
@@ -291,7 +228,15 @@ async def main() -> None:
         # Resolve each contest's schools; the scoreboard only carries short names.
         involved: dict[str, dict] = {}
         for c in board:
-            paths = parse_game_schools(await _fetch_html(h, c["url"], cache, force=force))
+            # One unreachable game page must not abort the whole slate.
+            try:
+                html = await _fetch_html(h, c["url"], cache, force=force)
+            except Exception as exc:  # noqa: BLE001
+                print(f"  !! {c['away']['name']} @ {c['home']['name']}: "
+                      f"game page unreachable ({type(exc).__name__}) — {c['url']}", flush=True)
+                c["schools"], c["ourTeams"] = [], []
+                continue
+            paths = parse_game_schools(html)
             c["schools"] = paths
             c["ourTeams"] = [by_path[p]["id"] for p in paths if p in by_path]
             for p in paths:

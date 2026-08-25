@@ -4251,7 +4251,7 @@
       "turnoversForced": 0,
       "turnoversLost": 2
     },
-    "headCoach": "Scott  Anderson",
+    "headCoach": "Scott Anderson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/marks/palmer-dragons/football/",
     "regionRecord": {
       "wins": 0,
@@ -5277,7 +5277,7 @@
       "turnoversForced": 10,
       "turnoversLost": 5
     },
-    "headCoach": "Robert  Dobbs",
+    "headCoach": "Robert Dobbs",
     "maxprepsUrl": "https://www.maxpreps.com/ms/yazoo-city/yazoo-county-panthers/football/",
     "regionRecord": {
       "wins": 2,
@@ -7069,8 +7069,8 @@
   },
   {
     "id": "leake-central-gators-gators",
-    "name": "Leake Central Gators ",
-    "mascot": "Gators ",
+    "name": "Leake Central Gators",
+    "mascot": "Gators",
     "city": "Carthage",
     "classification": "4A",
     "district": "4A Region 5",
@@ -8412,7 +8412,7 @@
       "turnoversForced": 0,
       "turnoversLost": 0
     },
-    "headCoach": "TC BRAVES ",
+    "headCoach": "TC BRAVES",
     "maxprepsUrl": "https://www.maxpreps.com/ms/iuka/tishomingo-county-braves/football/",
     "regionRecord": {
       "wins": 1,
@@ -9381,7 +9381,7 @@
       "turnoversForced": 21,
       "turnoversLost": 6
     },
-    "headCoach": "Perry  Wheat",
+    "headCoach": "Perry Wheat",
     "maxprepsUrl": "https://www.maxpreps.com/ms/purvis/purvis-tornadoes/football/",
     "regionRecord": {
       "wins": 3,
@@ -10464,7 +10464,7 @@
       "turnoversForced": 27,
       "turnoversLost": 5
     },
-    "headCoach": "Nick  Nester",
+    "headCoach": "Nick Nester",
     "maxprepsUrl": "https://www.maxpreps.com/ms/lake-cormorant/lake-cormorant/football/",
     "regionRecord": {
       "wins": 4,
@@ -10977,7 +10977,7 @@
       "turnoversForced": 10,
       "turnoversLost": 10
     },
-    "headCoach": "Michael King ",
+    "headCoach": "Michael King",
     "maxprepsUrl": "https://www.maxpreps.com/ms/kiln/hancock-hawks/football/",
     "regionRecord": {
       "wins": 3,
@@ -14422,8 +14422,8 @@
   },
   {
     "id": "clinton-christian-academy-warriors-warriors",
-    "name": "Clinton Christian Academy Warriors ",
-    "mascot": "Warriors ",
+    "name": "Clinton Christian Academy Warriors",
+    "mascot": "Warriors",
     "city": "Clinton",
     "classification": "MAIS-3A",
     "district": "MAIS 3A District 3",

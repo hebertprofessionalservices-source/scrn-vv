@@ -2,7 +2,13 @@ import type { Editorial, Game, Player, Team } from "./types";
 import { displaySlug } from "./display-slug";
 import { opponentAliasSlug } from "./team-format";
 
-export interface RawDataset { teams: Team[]; players: Player[]; games: Game[]; }
+export interface RawDataset {
+  teams: Team[];
+  players: Player[];
+  games: Game[];
+  /** Opponent slug -> logo path, for schools we don't carry as teams. */
+  opponentLogos?: Record<string, string>;
+}
 
 export interface Dataset {
   teams: Team[];
@@ -16,6 +22,12 @@ export interface Dataset {
   playersByTeam: Map<string, Player[]>;
   gamesByTeam: Map<string, Game[]>;
   gamesById: Map<string, Game>;
+  /**
+   * Logos for opponents outside our team set (out-of-state schools, homeschool
+   * co-ops). Keyed by the same slug those games store as a team id, so an
+   * unresolved opponent still gets a crest instead of a blank placeholder.
+   */
+  opponentLogos: Map<string, string>;
   season: string;
   /** Final power ratings from the previous season; preseason rating prior. */
   priorRatings: Map<string, number> | null;
@@ -101,7 +113,9 @@ export function buildDataset(
   return {
     teams: raw.teams, players: raw.players, games,
     teamsById, teamsBySlug, teamsByAlias, playersById, playersByTeam,
-    gamesByTeam, gamesById, season, priorRatings, priorStateRanks,
+    gamesByTeam, gamesById,
+    opponentLogos: new Map(Object.entries(raw.opponentLogos ?? {})),
+    season, priorRatings, priorStateRanks,
   };
 }
 

@@ -27,17 +27,18 @@ async function readJson<T>(rel: string, fallback: T): Promise<T> {
 }
 
 export async function loadDataset(season: string): Promise<Dataset> {
-  const [teams, players, games, prior] = await Promise.all([
+  const [teams, players, games, opponentLogos, prior] = await Promise.all([
     readJson<Team[]>(`${season}/teams.json`, []),
     readJson<Player[]>(`${season}/players.json`, []),
     readJson<Game[]>(`${season}/games.json`, []),
+    readJson<Record<string, string>>(`${season}/opponent-logos.json`, {}),
     loadPriorSeasonInfo(season),
   ]);
   const priorRatings = prior
     ? adjustPriorRatings(prior.power, prior.returning)
     : null;
   return buildDataset(
-    { teams, players, games },
+    { teams, players, games, opponentLogos },
     season,
     priorRatings,
     prior?.stateRanks ?? null,

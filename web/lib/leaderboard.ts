@@ -1,5 +1,6 @@
 import type { Player, Team } from "./types";
 import { displaySlug } from "./display-slug";
+import { isEightMan } from "./team-format";
 
 export type LeaderCategory = "yds" | "td" | "ypg" | "eff" | "vol";
 export type LeaderPosition = "QB" | "RB" | "WR";
@@ -158,6 +159,8 @@ export function buildLeaderboardData(teams: Team[], players: Player[]): Leaderbo
       if (yds <= 0 && td <= 0) continue;
       const team = teamsById.get(p.teamId);
       if (!team) continue;
+      // 8-Man stats aren't comparable with the 11-man game (client call).
+      if (isEightMan(team.classification)) continue;
       const entry: LeaderEntry = {
         id: p.id,
         name: p.name,
@@ -193,7 +196,7 @@ export function buildLeaderboardData(teams: Team[], players: Player[]): Leaderbo
   }
 
   const defenses: DefenseEntry[] = teams
-    .filter((t) => t.record.wins + t.record.losses > 0)
+    .filter((t) => t.record.wins + t.record.losses > 0 && !isEightMan(t.classification))
     .map((t) => ({
       slug: displaySlug(t),
       name: t.name,
@@ -204,7 +207,11 @@ export function buildLeaderboardData(teams: Team[], players: Player[]): Leaderbo
       ppg: t.stats.pointsAgainst / (t.record.wins + t.record.losses),
     }));
 
-  const present = new Set(teams.map((t) => t.classification));
+  // 8-Man is filtered out of these lists, so offering it as a classification
+  // choice would only ever yield an empty board.
+  const present = new Set(
+    teams.filter((t) => !isEightMan(t.classification)).map((t) => t.classification),
+  );
   const classes = [
     ...CLASS_ORDER.filter((c) => present.has(c as Team["classification"])),
     ...[...present].filter((c) => !CLASS_ORDER.includes(c)).sort(),

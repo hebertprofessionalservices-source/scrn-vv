@@ -1,6 +1,7 @@
 import type { Dataset } from "./data";
 import type { BoxScoreEntry, Game, Player, Team } from "./types";
 import { initialForm, normalizeName } from "./efficiency";
+import { isEightMan } from "./team-format";
 
 /**
  * Weekly player performances, rebuilt from game box scores. "Week" is the
@@ -117,6 +118,8 @@ function collectGameLines(
   const home = data.teamsByAlias.get(g.homeTeamId);
   const away = data.teamsByAlias.get(g.awayTeamId);
   if (!home || !away || home.id === away.id) return;
+  // 8-Man is left out of the ranked weekly lists (client call, Aug 2026).
+  if (isEightMan(home.classification) || isEightMan(away.classification)) return;
   const homeForms = formsFor(home.id);
   const awayForms = formsFor(away.id);
 

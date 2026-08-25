@@ -1,7 +1,7 @@
 import type { Editorial, Game, Team } from "./types";
 import type { PowerRank } from "./power";
 import { mondayKey } from "./weekly";
-import { leagueOf } from "./team-format";
+import { isEightMan, leagueOf } from "./team-format";
 
 export interface EditorialContext {
   editorial: Editorial | null;
@@ -31,6 +31,9 @@ export function pickAlgorithmGOTW(
     const away = byId.get(g.awayTeamId);
     return (
       !!home && !!away &&
+      // 8-Man is never spotlighted as Game of the Week (client call, Aug 2026).
+      !isEightMan(home.classification) &&
+      !isEightMan(away.classification) &&
       leagueOf(home.classification) === league &&
       leagueOf(away.classification) === league
     );

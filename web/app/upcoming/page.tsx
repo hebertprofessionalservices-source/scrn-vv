@@ -25,7 +25,8 @@ function toCard(game: Game, data: Dataset): ScheduleCard {
     game.status === "final" && game.homeScore !== null && game.awayScore !== null;
   const side = (t: typeof away, raw: string, mine: number | null, theirs: number | null) => ({
     name: t?.name ?? titleCaseSlug(raw),
-    logo: t?.logoUrl ?? null,
+    // Opponents outside our team set still have a crest on file.
+    logo: t?.logoUrl ?? data.opponentLogos.get(raw) ?? null,
     sub: isFinal
       ? String(mine)
       : t
