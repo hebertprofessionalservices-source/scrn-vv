@@ -206,6 +206,57 @@ export function coachSummary(
   return { name, yearsAtSchool: years, atSchool, career };
 }
 
+const FLIP = { W: "L", L: "W", T: "T" } as const;
+
+/**
+ * Meetings between two schools, told from schoolA's side, merged across both
+ * schools' logs.
+ *
+ * AFHS records each game on each school's own page, but 2,403 meetings are
+ * logged on only one of the two — so counting a single perspective gives one
+ * coach a record that the opposing coach's record contradicts. Germantown lists
+ * a 2024 win over Northwest Rankin that Northwest Rankin's page never records,
+ * which read as Mitchell 1-2 against Cooper 2-0 on the same matchup page.
+ *
+ * Merging per year rather than per game matters because 1,987 pairs met twice
+ * in a season (regular season plus playoffs); for each year we take whichever
+ * side lists more meetings, on the basis that the fuller log is the better
+ * record. Both coaches then derive from this one list, so their records are
+ * mirrors by construction.
+ */
+export function meetingsBetween(
+  games: AfhsGame[],
+  schoolA: string,
+  schoolB: string,
+): { year: number; result: "W" | "L" | "T" }[] {
+  const a = norm(schoolA);
+  const b = norm(schoolB);
+  const fromA = new Map<number, ("W" | "L" | "T")[]>();
+  const fromB = new Map<number, ("W" | "L" | "T")[]>();
+  const push = (
+    m: Map<number, ("W" | "L" | "T")[]>,
+    year: number,
+    result: "W" | "L" | "T",
+  ) => {
+    const list = m.get(year);
+    if (list) list.push(result);
+    else m.set(year, [result]);
+  };
+  for (const g of games) {
+    const t = norm(g.team);
+    const o = norm(g.opponent);
+    if (t === a && o === b) push(fromA, g.year, g.result);
+    else if (t === b && o === a) push(fromB, g.year, FLIP[g.result]);
+  }
+  const out: { year: number; result: "W" | "L" | "T" }[] = [];
+  for (const year of [...new Set([...fromA.keys(), ...fromB.keys()])].sort()) {
+    const ra = fromA.get(year) ?? [];
+    const rb = fromB.get(year) ?? [];
+    for (const result of (rb.length > ra.length ? rb : ra)) out.push({ year, result });
+  }
+  return out;
+}
+
 /** Coach's record against one opponent — meetings during their stints. */
 export function coachVsOpponent(
   history: Pick<HistoryData, "coachPages" | "games">,
@@ -221,16 +272,13 @@ export function coachVsOpponent(
   const inTenure = (year: number) =>
     stints.some((s) => year >= s.startYear && year <= s.endYear);
   const rec = { wins: 0, losses: 0, ties: 0 };
-  let found = false;
-  for (const g of history.games) {
-    if (norm(g.team) !== norm(school) || norm(g.opponent) !== norm(opponent)) continue;
-    if (!inTenure(g.year)) continue;
-    found = true;
-    if (g.result === "W") rec.wins++;
-    else if (g.result === "L") rec.losses++;
+  for (const m of meetingsBetween(history.games, school, opponent)) {
+    if (!inTenure(m.year)) continue;
+    if (m.result === "W") rec.wins++;
+    else if (m.result === "L") rec.losses++;
     else rec.ties++;
   }
-  return found ? rec : { wins: 0, losses: 0, ties: 0 };
+  return rec;
 }
 
 /** Head-to-head between the two schools' current coaches. */
@@ -253,11 +301,12 @@ export function coachVsCoach(
   let aWins = 0;
   let bWins = 0;
   let ties = 0;
-  for (const g of history.games) {
-    if (norm(g.team) !== norm(schoolA) || norm(g.opponent) !== norm(schoolB)) continue;
-    if (!inA(g.year) || !inB(g.year)) continue;
-    if (g.result === "W") aWins++;
-    else if (g.result === "L") bWins++;
+  // Same merged meeting list the individual coach records use, so this line
+  // can't disagree with the two above it.
+  for (const m of meetingsBetween(history.games, schoolA, schoolB)) {
+    if (!inA(m.year) || !inB(m.year)) continue;
+    if (m.result === "W") aWins++;
+    else if (m.result === "L") bWins++;
     else ties++;
   }
   return { aName: nameA, bName: nameB, aWins, bWins, ties };

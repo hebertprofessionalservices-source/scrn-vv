@@ -5,6 +5,7 @@ import {
   coachSummary,
   coachVsCoach,
   coachVsOpponent,
+  meetingsBetween,
   type AfhsGame,
   type CoachPage,
 } from "@/lib/history";
@@ -115,6 +116,62 @@ describe("coach vs opponent / coach vs coach", () => {
     expect(h2h.aName).toBe("Chris Cutcliffe");
     expect(h2h.bName).toBe("Ty Hardin");
     expect([h2h.aWins, h2h.bWins, h2h.ties]).toEqual([1, 1, 0]); // 2021, 2022
+  });
+});
+
+describe("one-sided meetings in the AFHS log", () => {
+  // AFHS records each game on both schools' pages, but thousands of meetings
+  // appear on only one — Germantown lists a 2024 win over Northwest Rankin
+  // that Northwest Rankin never records. Counting a single perspective gave
+  // Mitchell 1-2 while Cooper read 2-0 on the very same matchup page.
+  const games = [
+    game("Germantown", 2023, "Northwest Rankin", 7, 21),
+    game("Germantown", 2024, "Northwest Rankin", 24, 17), // only on this side
+    game("Germantown", 2025, "Northwest Rankin", 10, 28),
+    game("Northwest Rankin", 2023, "Germantown", 21, 7),
+    game("Northwest Rankin", 2025, "Germantown", 28, 10),
+  ];
+
+  it("merges both logs so a one-sided game still counts for each side", () => {
+    expect(meetingsBetween(games, "Germantown", "Northwest Rankin")).toEqual([
+      { year: 2023, result: "L" },
+      { year: 2024, result: "W" },
+      { year: 2025, result: "L" },
+    ]);
+  });
+
+  it("tells the same story from the other side", () => {
+    expect(meetingsBetween(games, "Northwest Rankin", "Germantown")).toEqual([
+      { year: 2023, result: "W" },
+      { year: 2024, result: "L" },
+      { year: 2025, result: "W" },
+    ]);
+  });
+
+  it("keeps both meetings when two schools met twice in a season", () => {
+    const twice = [
+      game("Oxford", 2021, "Tupelo", 28, 14),
+      game("Oxford", 2021, "Tupelo", 13, 20), // playoff rematch
+      game("Tupelo", 2021, "Oxford", 14, 28),
+    ];
+    // Oxford's log is the fuller one for 2021, so both meetings survive.
+    expect(meetingsBetween(twice, "Oxford", "Tupelo")).toEqual([
+      { year: 2021, result: "W" },
+      { year: 2021, result: "L" },
+    ]);
+  });
+
+  it("prefers whichever side logged more meetings that year", () => {
+    const thin = [
+      game("Oxford", 2021, "Tupelo", 28, 14),
+      game("Tupelo", 2021, "Oxford", 14, 28),
+      game("Tupelo", 2021, "Oxford", 20, 13), // Tupelo logged the rematch
+    ];
+    // Tupelo lost the first and won the rematch, so from Oxford's side: W then L.
+    expect(meetingsBetween(thin, "Oxford", "Tupelo")).toEqual([
+      { year: 2021, result: "W" },
+      { year: 2021, result: "L" },
+    ]);
   });
 });
 
