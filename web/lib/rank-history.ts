@@ -1,10 +1,14 @@
 import type { PowerRank } from "./power";
 
 /**
- * Weekly SCRN Power Ranking snapshots, written by `pnpm snapshot-ranks`
- * whenever the season's data updates. Keyed by snapshot date (ISO);
- * one entry per calendar week — a re-run within the same week replaces
- * that week's entry, earlier weeks stay frozen.
+ * SCRN Power Ranking snapshots, written by `pnpm snapshot-ranks` whenever
+ * the season's data updates. Keyed by snapshot date (ISO).
+ *
+ * Cadence follows the show: a snapshot is taken early in the game week
+ * (before that week's Friday slate), and the Sunday recap reads movement
+ * against it. So the baseline for a given day is the newest snapshot from
+ * a PRIOR DAY — not a prior week, which would hide the current week's
+ * own pre-game baseline on the very day the recap needs it.
  */
 export interface RankHistory {
   [dateISO: string]: { [teamId: string]: { o: number; c: number } };
@@ -24,7 +28,14 @@ export function mondayOf(dateISO: string): string {
 }
 
 /**
- * Movement vs the newest snapshot taken in an EARLIER week than today.
+ * Movement vs the newest snapshot taken on an EARLIER DAY than today.
+ *
+ * Today's own snapshot is excluded (it would show zero movement against
+ * itself); everything older is fair game, including one taken earlier in
+ * the same game week. That is the point: on Sunday the recap compares
+ * against Monday's pre-slate snapshot, so the arrows show what the week's
+ * games actually did.
+ *
  * Teams absent from the baseline (or with no baseline at all) get no delta.
  */
 export function computeRankDeltas(
@@ -32,9 +43,9 @@ export function computeRankDeltas(
   history: RankHistory,
   todayISO: string,
 ): Map<string, RankDelta> {
-  const thisWeek = mondayOf(todayISO);
+  const today = todayISO.slice(0, 10);
   const baselineDate = Object.keys(history)
-    .filter((d) => mondayOf(d) < thisWeek)
+    .filter((d) => d.slice(0, 10) < today)
     .sort()
     .pop();
   const out = new Map<string, RankDelta>();

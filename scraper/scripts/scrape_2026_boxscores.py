@@ -46,6 +46,8 @@ WEB_DIR = ROOT.parent / "web" / "public" / "data" / SEASON
 
 CONTEST_RE = re.compile(r"[?&]c=([\w-]+)")
 CLASS_RE = re.compile(r"\((Fr|So|Jr|Sr)\)")
+# Line-score period columns: Q1-Q4 plus overtime (OT, 2OT, 3OT...).
+PERIOD_RE = re.compile(r"Q\d+|\d*OT", re.IGNORECASE)
 
 # Tables are identified by their column signature, never by position: the
 # All-Purpose / Total Yards / Touchdowns tables repeat "Rushing Yards" etc. and
@@ -142,6 +144,76 @@ def parse_stats_tables(html: str) -> dict[str, list[dict[str, Any]]]:
     return dict(out)
 
 
+def parse_quarter_table(html: str) -> dict[str, list[int]]:
+    """Return {team label: [period scores]} from the game page's line score.
+
+    The table lives on the default (Recap) tab only — it is absent from the
+    DOM behind `&tab=Stats` — and is keyed by the school name as MaxPreps
+    prints it ("Madison Central"), not the roster toggle's fuller label.
+
+    Found by column signature, not by class: the styled-components class that
+    names this table in the browser is absent from the server-rendered markup
+    the harness receives, where the element carries no class at all.
+
+    Column count varies: a regulation game is Q1-Q4 plus Final, an overtime
+    game adds OT/2OT columns. Everything between the team name and the
+    trailing Final column is kept, so overtime periods survive.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    for table in soup.find_all("table"):
+        rows = table.find_all("tr")
+        if not rows:
+            continue
+        headers = [c.get_text(" ", strip=True) for c in rows[0].find_all(["td", "th"])]
+        if not any(h.lower() == "final" for h in headers):
+            continue
+        if not any(PERIOD_RE.fullmatch(h) for h in headers):
+            continue
+        final_col = next(i for i, h in enumerate(headers) if h.lower() == "final")
+        out: dict[str, list[int]] = {}
+        for tr in rows[1:]:
+            cells = [c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"])]
+            if len(cells) != len(headers) or not cells[0]:
+                continue
+            periods = [num(c) for c in cells[1:final_col]]
+            if not periods or any(not isinstance(p, int) for p in periods):
+                continue
+            out[cells[0]] = [int(p) for p in periods]
+        if len(out) == 2:
+            return out
+    return {}
+
+
+def assign_quarters(
+    quarters: dict[str, list[int]],
+    game: dict[str, Any],
+) -> dict[str, list[int]] | None:
+    """Orient a parsed line score onto home/away, or None if it doesn't add up.
+
+    Orientation comes from the period sums, not from name matching: half the
+    rows in games.json carry a short opponent slug that is absent from
+    teams.json, so one side frequently cannot be resolved to a team at all.
+    Sums are also self-validating, which is the point — the 2025-26 data
+    carries many games whose quarter arrays sit on the wrong team, and
+    silently storing a mismatched line score would repeat that. A game that
+    fails is left with empty quarters rather than wrong ones.
+
+    MaxPreps prints the visiting team first, which settles the otherwise
+    ambiguous case of a tied final score.
+    """
+    if len(quarters) != 2:
+        return None
+    home, away = game.get("homeScore"), game.get("awayScore")
+    if home is None or away is None:
+        return None
+    (first, second) = quarters.values()
+    if sum(first) == away and sum(second) == home:
+        return {"home": second, "away": first}
+    if sum(first) == home and sum(second) == away:
+        return {"home": first, "away": second}
+    return None
+
+
 def to_box_entries(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Shape parsed rows like the 2025-26 BoxScoreEntry records."""
     entries = []
@@ -203,8 +275,13 @@ async def activate(page, sel: str) -> bool:
     return bool(fresh) and await fresh.get_attribute("data-active") == "true"
 
 
-async def scrape_game(harness: BrowserHarness, url: str) -> dict[str, dict]:
-    """Return {teamLabel: parsed groups} for both sides of one contest.
+async def scrape_game(harness: BrowserHarness, url: str) -> tuple[dict[str, list[int]], dict[str, dict]]:
+    """Return (quarter scores, {teamLabel: parsed groups}) for one contest.
+
+    Two page loads: the default tab carries the quarter-by-quarter line score
+    (absent from the DOM under `&tab=Stats`), then the Stats tab carries the
+    player tables. Consent is dismissed on the first load; the cookie carries
+    over, so the second call is normally a no-op.
 
     The team switch is client-side with no URL parameter, so each side has to be
     clicked. Parsing straight after the click reads the *previous* team's tables
@@ -213,6 +290,12 @@ async def scrape_game(harness: BrowserHarness, url: str) -> dict[str, dict]:
     """
     result: dict[str, dict] = {}
     async with harness.page() as page:
+        await page.goto(url, wait_until="domcontentloaded")
+        with contextlib.suppress(Exception):
+            await page.wait_for_load_state("networkidle", timeout=15_000)
+        dismissed = await dismiss_consent(page)
+        quarters = parse_quarter_table(await page.content())
+
         await page.goto(f"{url}&tab=Stats", wait_until="domcontentloaded")
         with contextlib.suppress(Exception):
             await page.wait_for_load_state("networkidle", timeout=15_000)
@@ -259,7 +342,7 @@ async def scrape_game(harness: BrowserHarness, url: str) -> dict[str, dict]:
             previous = sig
             result[label] = groups
     await harness.jitter()
-    return result
+    return quarters, result
 
 
 def match_label_to_team(label: str, candidates: list[dict]) -> dict | None:
@@ -419,17 +502,28 @@ async def main() -> None:
 
     with_stats: list[str] = []
     without: list[str] = []
+    quarter_ok: list[str] = []
+    quarter_bad: list[str] = []
     async with browser_or_none(args.rebuild_only) as h:
         for _cid, rows in ({} if args.rebuild_only else contests).items():
             g = rows[0]
             sides = [teams[t] for t in (g["awayTeamId"], g["homeTeamId"]) if t in teams]
             label = f"{g['awayTeamId']} at {g['homeTeamId']}"
             try:
-                scraped = await scrape_game(h, g["maxprepsUrl"])
+                quarters, scraped = await scrape_game(h, g["maxprepsUrl"])
             except Exception as exc:  # noqa: BLE001
                 print(f"  ERROR {label}: {exc}", flush=True)
                 without.append(label)
                 continue
+
+            qs = assign_quarters(quarters, rows[0])
+            if qs:
+                for row in rows:
+                    row["quarterScores"] = qs
+                quarter_ok.append(label)
+            elif quarters:
+                quarter_bad.append(label)
+                print(f"  ..  {label}: quarter scores did not reconcile, skipped", flush=True)
 
             box: dict[str, list] = {"passing": [], "rushing": [], "receiving": [], "defense": []}
             teams_with_data = []
@@ -458,6 +552,8 @@ async def main() -> None:
     print(f"\nplayer join: {matched} stat lines matched to roster players, {unmatched} unmatched")
     if not args.rebuild_only:
         print(f"games with stats: {len(with_stats)} / {len(contests)}")
+        print(f"games with quarter scores: {len(quarter_ok)} / {len(contests)}"
+              + (f" ({len(quarter_bad)} failed to reconcile)" if quarter_bad else ""))
 
     if args.dry_run:
         print("\n[dry-run] nothing written")

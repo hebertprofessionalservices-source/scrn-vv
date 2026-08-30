@@ -14,11 +14,11 @@ describe("computeRankDeltas", () => {
     ["new", rank(11, 5)],
   ]);
 
-  it("compares against the newest snapshot from an earlier week", () => {
+  it("compares against the newest snapshot from an earlier day", () => {
     const history: RankHistory = {
-      // two weeks ago — superseded by last week's entry
+      // superseded by the more recent entry
       "2026-08-14": { up: { o: 20, c: 9 }, down: { o: 1, c: 1 }, flat: { o: 9, c: 4 } },
-      // last week — the baseline
+      // the baseline
       "2026-08-21": { up: { o: 6, c: 3 }, down: { o: 2, c: 1 }, flat: { o: 9, c: 4 } },
     };
     const deltas = computeRankDeltas(power, history, "2026-08-26");
@@ -28,9 +28,27 @@ describe("computeRankDeltas", () => {
     expect(deltas.has("new")).toBe(false); // not in baseline
   });
 
-  it("ignores snapshots taken in the current week", () => {
+  it("uses a pre-slate snapshot from earlier in the same game week", () => {
+    // The Sunday recap case: Monday's snapshot precedes Friday's games and
+    // must be the baseline, even though it shares Sunday's calendar week.
     const history: RankHistory = {
-      "2026-08-25": { up: { o: 30, c: 10 } }, // same week as today
+      "2026-08-16": { up: { o: 30, c: 10 } }, // previous week — too far back
+      "2026-08-24": { up: { o: 6, c: 3 } },   // Monday, same week as Sunday 8/30
+    };
+    const deltas = computeRankDeltas(power, history, "2026-08-30");
+    expect(deltas.get("up")).toEqual({ overall: 4, class: 2 });
+  });
+
+  it("ignores a snapshot taken today", () => {
+    const history: RankHistory = {
+      "2026-08-26": { up: { o: 30, c: 10 } }, // today — would be zero vs itself
+    };
+    expect(computeRankDeltas(power, history, "2026-08-26").size).toBe(0);
+  });
+
+  it("ignores snapshots dated after today", () => {
+    const history: RankHistory = {
+      "2026-09-02": { up: { o: 30, c: 10 } },
     };
     expect(computeRankDeltas(power, history, "2026-08-26").size).toBe(0);
   });

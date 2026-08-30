@@ -3,10 +3,11 @@
  * public/data/<season>/rank-history.json.
  *
  * Run after every data update (`pnpm snapshot-ranks` from web/): the site
- * shows week-over-week rank movement by comparing live rankings against
- * the newest snapshot from an earlier calendar week. One entry is kept
- * per week — re-running within the same week replaces that week's entry;
- * earlier weeks stay frozen.
+ * shows rank movement by comparing live rankings against the newest
+ * snapshot from an earlier day. Take it early in the game week, before
+ * that week's slate, so the Sunday recap reads the movement those games
+ * caused. Re-running on the same day replaces that day's entry; earlier
+ * snapshots stay frozen.
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
@@ -71,9 +72,13 @@ const today = new Date().toISOString().slice(0, 10);
 const historyPath = path.join(PUBLIC_DATA, season, "rank-history.json");
 const history = await readJson<RankHistory>(`${season}/rank-history.json`, {});
 
-// Replace any snapshot from the SAME week; earlier weeks stay frozen.
+// Replace only same-week snapshots taken today or later, so re-running on
+// the same day is idempotent. A snapshot from EARLIER in this game week is
+// deliberately kept: it is the pre-slate baseline the Sunday recap reads
+// movement against, and deleting it would silently push the comparison back
+// to the previous week.
 for (const date of Object.keys(history)) {
-  if (mondayOf(date) === mondayOf(today)) delete history[date];
+  if (mondayOf(date) === mondayOf(today) && date >= today) delete history[date];
 }
 history[today] = Object.fromEntries(
   [...power].map(([id, r]) => [id, { o: r.overallRank, c: r.classRank }]),
