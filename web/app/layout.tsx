@@ -28,10 +28,17 @@ export default async function RootLayout({
 }) {
   const h = await headers();
   const pathname = h.get("x-next-pathname") ?? "";
-  const isPresent = pathname.startsWith("/present");
+  /**
+   * /present pages are broadcast surfaces and drop the site chrome so nothing
+   * intrudes on a screenshot. The recap INDEX is the exception: it is a normal
+   * dashboard page you browse from the nav, and only the printed page it links
+   * to needs to be chromeless.
+   */
+  const isRecapIndex = pathname.replace(/\/$/, "") === "/present/newspaper";
+  const chromeless = pathname.startsWith("/present") && !isRecapIndex;
 
   const season = await currentSeason();
-  const data = isPresent ? null : await loadDataset(season);
+  const data = chromeless ? null : await loadDataset(season);
 
   // Search players: current rosters, or last season's until they're scraped.
   let searchPlayers = data?.players ?? [];
@@ -45,10 +52,10 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`dark ${inter.variable} ${display.variable}`}>
       <body className="min-h-screen flex flex-col">
-        {!isPresent && <SiteHeader />}
+        {!chromeless && <SiteHeader />}
         <div className="flex-1">{children}</div>
-        {!isPresent && <SiteFooter />}
-        {!isPresent && data && (
+        {!chromeless && <SiteFooter />}
+        {!chromeless && data && (
           <CommandPalette
             entries={buildSearchEntries(data.teams, searchPlayers, playersSeasonLabel)}
           />

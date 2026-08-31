@@ -1,0 +1,421 @@
+/*
+ * Broadsheet recap page, fixed at 1920x1080 so a screenshot is exactly 16:9.
+ * Scoped under .paper so it cannot leak into the rest of /present, which is a
+ * dark navy deck; this page is newsprint and owns its own world.
+ */
+.paper {
+  width: 1920px;
+  height: 1080px;
+  background: #f4f1ea;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.paper::after {
+  /* Newsprint tooth, kept faint so small type stays legible. */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    repeating-linear-gradient(0deg, #000 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, #000 0 1px, transparent 1px 3px);
+}
+.paper__rule { border-top: 2px solid #111; }
+.paper__hair { border-top: 1px solid #111; }
+
+.paper__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 17px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 10px 40px 8px;
+  font-weight: 700;
+}
+
+.paper__mastwrap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 6px 40px 0;
+}
+.paper__masthead {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 132px;
+  line-height: 0.86;
+  letter-spacing: -0.02em;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+.paper__badge {
+  background: #b3242c;
+  color: #fff;
+  text-align: center;
+  padding: 8px 20px;
+  min-width: 168px;
+  flex: none;
+}
+.paper__badge b { display: block; font-size: 54px; line-height: 1; font-weight: 900; }
+.paper__badge span { display: block; font-size: 22px; letter-spacing: 0.14em; font-weight: 700; }
+.paper__badge small { display: block; font-size: 14px; letter-spacing: 0.16em; margin-top: 2px; }
+/*
+ * Presenting-sponsor square, mirroring .paper__badge across the nameplate.
+ * Same footprint whether or not the image is present, so the masthead stays
+ * optically centred either way.
+ */
+.paper__sponsor {
+  width: 168px;
+  min-height: 96px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.paper__sponsor-img {
+  max-width: 100%;
+  max-height: 92px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.paper__tagline {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 6px 0 8px;
+}
+
+.paper__kicker {
+  text-align: center;
+  color: #b3242c;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.paper__headline {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 0.92;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  padding: 2px 40px 0;
+}
+.paper__deck {
+  text-align: center;
+  font-style: italic;
+  font-size: 23px;
+  padding: 8px 110px 12px;
+  line-height: 1.35;
+}
+
+.paper__body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 570px;
+  gap: 0;
+  min-height: 0;
+  border-top: 2px solid #111;
+}
+.paper__left { display: flex; flex-direction: column; min-height: 0; padding: 0 24px 0 40px; }
+.paper__right { border-left: 2px solid #111; padding: 0 40px 0 24px; min-height: 0; }
+
+.paper__heroes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 16px 0 12px;
+  min-height: 0;
+}
+/* min-width:0 so a wide score row shrinks inside its column instead of
+   stretching the three-across grid past the page. */
+.hero { display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+.hero__frame {
+  position: relative;
+  /* Trimmed to buy back the vertical room the larger type costs, so the page
+     still lands inside 1080px across every classification. */
+  height: 184px;
+  background: #1a1a1a;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__score {
+  font-family: Georgia, serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 62px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* Takes the space the names leave, and centres itself in it, so the score
+     stays optically centred whether a name runs one line or three. */
+  flex: 1 1 auto;
+}
+/*
+ * Schools run beneath the score across the full width of the frame, rather
+ * than under each crest: a name column beside a 62px score leaves too little
+ * room for "Columbus Christian Academy" and clips it mid-word.
+ */
+.hero__names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  flex: none;
+  padding: 0 14px 14px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.16;
+  text-align: center;
+}
+.hero__names span {
+  min-width: 0;
+  /* Three lines, fixed, so both halves stay on the same baseline. Three is
+     what the longest names in the data need ("Wilkinson County Christian
+     Academy") and the frame has the room for it. */
+  height: 54px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.hero__names span + span { color: #cfcbc2; }
+.hero__logoimg { height: 66px; width: 66px; object-fit: contain; flex: none; }
+.hero__logoimg--blank {
+  height: 66px; width: 66px; border-radius: 50%; flex: none;
+  background: rgba(255, 255, 255, 0.14);
+}
+/* One team per line: the winner above, the opponent below. */
+.hero__cap {
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  padding-top: 9px;
+}
+.hero__cap span { display: block; }
+.hero__cap span + span { color: #444; }
+.hero__sub { font-size: 17.5px; line-height: 1.3; padding-top: 5px; }
+
+.board__head {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  margin-top: 14px;
+}
+.board__row {
+  display: grid;
+  grid-template-columns: 24px 32px 1fr 32px 82px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  font-size: 18px;
+}
+.board__row:last-child { border-bottom: none; }
+.board__rank { font-weight: 700; color: #777; font-size: 16px; }
+.board__logo { height: 30px; width: 30px; object-fit: contain; }
+.board__logo--blank {
+  height: 30px; width: 30px; border-radius: 50%;
+  background: #ddd8cc; border: 1px solid rgba(0, 0, 0, 0.18);
+}
+/*
+ * Winner and opponent each get their own line. Left to wrap on its own, a
+ * matchup runs to two or three lines depending on how long the two school
+ * names happen to be, and ten unpredictable rows are what pushed the taller
+ * MAIS classifications past 1080px. Fixing it at two lines makes the column's
+ * height the same for every classification.
+ */
+/* min-width:0 so a long unbreakable name truncates instead of widening the grid. */
+.board__teams { line-height: 1.18; min-width: 0; }
+.board__teams b,
+.board__teams i {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__teams b { font-weight: 700; }
+.board__teams i { font-style: normal; font-size: 16px; color: #333; }
+.board__seed { color: #b3242c; font-weight: 700; }
+.board__final {
+  text-align: right;
+  font-weight: 900;
+  font-size: 23px;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper__modules {
+  border-top: 2px solid #111;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.45fr;
+  gap: 0;
+  min-height: 0;
+}
+.mod { padding: 12px 20px 14px; border-left: 1px solid rgba(0, 0, 0, 0.35); min-height: 0; }
+.mod:first-child { border-left: none; padding-left: 0; }
+.mod__head {
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #111;
+  padding-bottom: 5px;
+  margin-bottom: 9px;
+}
+.note { display: flex; gap: 9px; margin-bottom: 9px; align-items: flex-start; }
+.note__img { height: 28px; width: 28px; object-fit: contain; flex: none; margin-top: 1px; }
+.note__img--blank {
+  height: 28px; width: 28px; border-radius: 50%;
+  background: #ddd8cc; flex: none; margin-top: 1px;
+}
+.note b { font-weight: 900; font-size: 15.5px; display: block; text-transform: uppercase; line-height: 1.15; }
+.note span { font-size: 15.5px; line-height: 1.3; }
+
+.players { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.player { display: flex; flex-direction: column; }
+/* Fixed height so the four cards' names and stat lines sit on shared baselines
+   whether the school takes one line or two. */
+.player__top {
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 8px;
+  min-height: 44px;
+}
+.player__logoimg { height: 24px; width: 24px; object-fit: contain; flex: none; }
+.player__logoimg--blank {
+  height: 24px; width: 24px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2); flex: none;
+}
+.player__top span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.player__name { font-weight: 900; font-size: 17px; padding-top: 6px; line-height: 1.15; }
+.player__line { font-size: 15px; padding-top: 3px; line-height: 1.25; }
+
+.paper__foot {
+  background: #111;
+  color: #f4f1ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 40px;
+  font-size: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: none;
+}
+.paper__foot .url { color: #ff6b73; }
+/* Reserved for the presenting-sponsor mark, composited after export. */
+.paper__footslot { width: 190px; height: 30px; }
+
+.paper__empty {
+  padding: 60px 40px;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/*
+ * Viewing surface. The page inside stays exactly 1920x1080 and is scaled to
+ * fit, so it fills any monitor without the layout reflowing — a reflow would
+ * change what a screenshot exports.
+ */
+.paper-stage {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #0a0d14;
+}
+.paper-stage .paper {
+  transform: scale(var(--paper-scale, 1));
+  transform-origin: center center;
+  flex: none;
+}
+
+/*
+ * Deliberately outside .paper, so capturing that element for export never
+ * includes these controls.
+ */
+.paper-controls {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 50;
+  display: flex;
+  gap: 10px;
+  transition: opacity 160ms ease;
+}
+.paper-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(10, 12, 20, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #f4f1ea;
+  font-family: var(--font-display, sans-serif);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+.paper-btn:hover { border-color: #b3242c; color: #ff8f95; }
+.paper-btn:focus-visible { outline: 2px solid #ff8f95; outline-offset: 2px; }
+
+/*
+ * The controls float over the page, so anything that captures the page also
+ * captures them. They fade once the pointer settles — and stay hidden on air —
+ * which keeps screenshots clean without a dedicated export mode. Pointer or
+ * keyboard brings them straight back.
+ */
+.paper-controls--idle { opacity: 0; }
+.paper-controls--idle:hover,
+.paper-controls--idle:focus-within { opacity: 1; }
+.paper-stage:fullscreen .paper-controls { opacity: 0; }
+.paper-stage:fullscreen .paper-controls:hover,
+.paper-stage:fullscreen .paper-controls:focus-within { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .paper-controls { transition: none; }
+}
