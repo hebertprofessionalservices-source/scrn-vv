@@ -39,6 +39,9 @@ import { PaperStage } from "./paper-stage";
 const SPONSOR_SRC = "/brand/cspire-logo.png";
 const SPONSOR_FILE = join(process.cwd(), "public", "brand", "cspire-logo.png");
 
+/** House mark, standing in for a Players to Watch slot the data cannot fill. */
+const VV_MARK = "/brand/varsity-voices-square.png";
+
 /**
  * League seal, printed beside the lead story.
  *
@@ -199,8 +202,13 @@ export default async function Newspaper({
         {/* Mirrors the class badge on the right, keeping the nameplate centred. */}
         <div className="paper__sponsor">
           {sponsor ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={SPONSOR_SRC} alt="C Spire" className="paper__sponsor-img" />
+            <>
+              {/* Label only alongside the mark — on its own it reads as a
+                  caption for something that failed to load. */}
+              <span className="paper__sponsor-label">Presented by</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={SPONSOR_SRC} alt="C Spire" className="paper__sponsor-img" />
+            </>
           ) : null}
         </div>
         <div className="paper__masthead">VARSITY VOICES</div>
@@ -302,17 +310,28 @@ export default async function Newspaper({
 
             <div className="mod">
               <div className="mod__head">Players to Watch</div>
+              {/* Always four cells in a 2x2. Box scores are entered by each
+                  team's own coach, so a light week genuinely yields three
+                  namable performances or fewer; the house mark fills the gap
+                  rather than leaving a hole in the grid. */}
               <div className="players">
-                {players.map((p) => (
-                  <div className="player" key={p.name + p.teamName}>
-                    <div className="player__top">
-                      <Crest src={p.logo} className="player__logoimg" />
-                      <span>{p.school}</span>
+                {Array.from({ length: 4 }, (_, i) => players[i]).map((p, i) =>
+                  p ? (
+                    <div className="player" key={p.name + p.teamName}>
+                      <div className="player__top">
+                        <Crest src={p.logo} className="player__logoimg" />
+                        <span>{p.school}</span>
+                      </div>
+                      <div className="player__name">{p.name}</div>
+                      <div className="player__line">{p.line}</div>
                     </div>
-                    <div className="player__name">{p.name}</div>
-                    <div className="player__line">{p.line}</div>
-                  </div>
-                ))}
+                  ) : (
+                    <div className="player player--filler" key={`filler-${i}`}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={VV_MARK} alt="" />
+                    </div>
+                  ),
+                )}
               </div>
             </div>
           </div>

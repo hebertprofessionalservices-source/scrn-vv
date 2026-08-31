@@ -87,24 +87,38 @@
   min-height: 96px;
   flex: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  gap: 4px;
+  /* Trimmed from 6px to pay for the taller mark; this block and the class
+     badge opposite it drive the nameplate's height. */
+  padding: 2px;
+}
+.paper__sponsor-label {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
 }
 .paper__sponsor-img {
   max-width: 100%;
-  max-height: 92px;
+  max-height: 115px;
   width: auto;
   height: auto;
   object-fit: contain;
 }
 
+/* Padding trimmed here and on the kicker and deck below to offset the taller
+   sponsor block, so the page still lands inside 1080px. */
 .paper__tagline {
   text-align: center;
   font-size: 18px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  padding: 6px 0 8px;
+  padding: 3px 0 5px;
 }
 
 /*
@@ -132,7 +146,7 @@
   font-size: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 .paper__headline {
   text-align: center;
@@ -148,7 +162,7 @@
   text-align: center;
   font-style: italic;
   font-size: 23px;
-  padding: 8px 110px 12px;
+  padding: 6px 110px 8px;
   line-height: 1.35;
 }
 
@@ -231,7 +245,20 @@
   -webkit-line-clamp: 3;
 }
 .hero__names span + span { color: #cfcbc2; }
-.hero__logoimg { height: 66px; width: 66px; object-fit: contain; flex: none; }
+/*
+ * Crests are transparent PNGs of every shape, so border-radius alone rounds
+ * nothing visible — the art is not a filled square. The white disc behind
+ * them is what makes the circle, and object-fit keeps a wide mark from being
+ * squashed to fit it.
+ */
+.hero__logoimg {
+  height: 66px; width: 66px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  padding: 5px;
+  flex: none;
+}
 .hero__logoimg--blank {
   height: 66px; width: 66px; border-radius: 50%; flex: none;
   background: rgba(255, 255, 255, 0.14);
@@ -283,7 +310,15 @@
 }
 .board__row:last-child { border-bottom: none; }
 .board__rank { font-weight: 700; color: #777; font-size: 18px; }
-.board__logo { height: 30px; width: 30px; object-fit: contain; }
+/* Hairline ring, because a white disc on newsprint has no edge of its own. */
+.board__logo {
+  height: 30px; width: 30px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  padding: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
 .board__logo--blank {
   height: 30px; width: 30px; border-radius: 50%;
   background: #ddd8cc; border: 1px solid rgba(0, 0, 0, 0.18);
@@ -349,7 +384,16 @@
   margin-bottom: 9px;
 }
 .note { display: flex; gap: 9px; margin-bottom: 9px; align-items: flex-start; }
-.note__img { height: 28px; width: 28px; object-fit: contain; flex: none; margin-top: 1px; }
+.note__img {
+  height: 28px; width: 28px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  padding: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  flex: none;
+  margin-top: 1px;
+}
 .note__img--blank {
   height: 28px; width: 28px; border-radius: 50%;
   background: #ddd8cc; flex: none; margin-top: 1px;
@@ -357,8 +401,26 @@
 .note b { font-weight: 900; font-size: 17.5px; display: block; text-transform: uppercase; line-height: 1.15; }
 .note span { font-size: 17.5px; line-height: 1.3; }
 
-.players { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.player { display: flex; flex-direction: column; }
+/*
+ * Two by two rather than four across. Four narrow columns left the module
+ * short and wide against a tall notebook beside it; squaring it up fills the
+ * block and buys each card the width its stat line wants.
+ */
+.players {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 12px;
+}
+/* Pills: the card is a bordered box now, so the four read as a set even when
+   one of them is the house mark. */
+.player {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 0;
+}
 /* Fixed height so the four cards' names and stat lines sit on shared baselines
    whether the school takes one line or two. */
 .player__top {
@@ -370,7 +432,14 @@
   padding: 5px 8px;
   min-height: 44px;
 }
-.player__logoimg { height: 24px; width: 24px; object-fit: contain; flex: none; }
+.player__logoimg {
+  height: 24px; width: 24px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  padding: 2px;
+  flex: none;
+}
 .player__logoimg--blank {
   height: 24px; width: 24px; border-radius: 50%;
   background: rgba(255, 255, 255, 0.2); flex: none;
@@ -382,8 +451,26 @@
   text-transform: uppercase;
   line-height: 1.1;
 }
-.player__name { font-weight: 900; font-size: 19px; padding-top: 6px; line-height: 1.15; }
-.player__line { font-size: 17px; padding-top: 3px; line-height: 1.25; }
+.player__name { font-weight: 900; font-size: 19px; padding: 6px 9px 0; line-height: 1.15; }
+.player__line { font-size: 17px; padding: 3px 9px 8px; line-height: 1.25; }
+/*
+ * Empty slot. Centres the house mark in the same footprint a real card fills,
+ * so the 2x2 stays square whether the week produced four namable performances
+ * or one.
+ */
+.player--filler {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.03);
+}
+.player--filler img {
+  max-height: 74px;
+  max-width: 72%;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.72;
+}
 
 .paper__foot {
   background: #111;
