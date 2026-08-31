@@ -59,13 +59,24 @@
   background: #b3242c;
   color: #fff;
   text-align: center;
-  padding: 8px 20px;
+  padding: 6px 20px;
   min-width: 168px;
   flex: none;
 }
+/*
+ * League and sport set large enough to read on air, kept height-neutral so the
+ * page still lands inside 1080px: the growth in type is paid for by pinning
+ * both lines to line-height 1 and trimming the chip's vertical padding.
+ */
 .paper__badge b { display: block; font-size: 54px; line-height: 1; font-weight: 900; }
-.paper__badge span { display: block; font-size: 22px; letter-spacing: 0.14em; font-weight: 700; }
-.paper__badge small { display: block; font-size: 16px; letter-spacing: 0.16em; margin-top: 2px; }
+.paper__badge span {
+  display: block; font-size: 30px; line-height: 1;
+  letter-spacing: 0.1em; font-weight: 700;
+}
+.paper__badge small {
+  display: block; font-size: 22px; line-height: 1;
+  letter-spacing: 0.12em; margin-top: 3px;
+}
 /*
  * Presenting-sponsor square, mirroring .paper__badge across the nameplate.
  * Same footprint whether or not the image is present, so the masthead stays
@@ -94,6 +105,24 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   padding: 6px 0 8px;
+}
+
+/*
+ * Lead story block. Relative only so the league seal can hang off its right
+ * edge, lined up under the class badge above it — absolute, so it costs the
+ * block no height and leaves the centred headline centred.
+ */
+.paper__lede { position: relative; }
+/* Sized to the class badge above it. The served PNGs are cropped to their
+   mark — the source files carry transparent padding, and left uncropped a
+   height set here renders a seal half that tall. */
+.paper__seal {
+  position: absolute;
+  top: 8px;
+  right: 40px;
+  height: 118px;
+  width: auto;
+  object-fit: contain;
 }
 
 .paper__kicker {
@@ -215,8 +244,19 @@
   text-transform: uppercase;
   padding-top: 9px;
 }
-.hero__cap span { display: block; }
-.hero__cap span + span { color: #444; }
+/*
+ * Score in a fixed-width column, school beside it, so both schools start on
+ * the same x whether the score is "0" or "35" — the two lines read as a
+ * column of results rather than two ragged sentences. 54px carries three
+ * digits at this size, so a 100-point night still lines up.
+ */
+.hero__capline {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: baseline;
+}
+.hero__capline--foe { color: #444; }
+.hero__capscore { font-variant-numeric: tabular-nums; }
 .hero__sub { font-size: 19.5px; line-height: 1.3; padding-top: 5px; }
 
 .board__head {
@@ -233,7 +273,7 @@
 }
 .board__row {
   display: grid;
-  grid-template-columns: 24px 32px 1fr 32px 82px;
+  grid-template-columns: 24px 32px 1fr 32px 100px;
   align-items: center;
   gap: 8px;
   /* 6px, not 7: ten rows at the larger type ran 15px past 1080px otherwise. */
@@ -255,8 +295,10 @@
  * MAIS classifications past 1080px. Fixing it at two lines makes the column's
  * height the same for every classification.
  */
-/* min-width:0 so a long unbreakable name truncates instead of widening the grid. */
-.board__teams { line-height: 1.18; min-width: 0; }
+/* min-width:0 so a long unbreakable name truncates instead of widening the grid.
+   Uppercase to match the hero captions, so the two halves of the page read as
+   one voice rather than two. */
+.board__teams { line-height: 1.18; min-width: 0; text-transform: uppercase; }
 .board__teams b,
 .board__teams i {
   display: block;
@@ -272,6 +314,20 @@
   font-weight: 900;
   font-size: 23px;
   font-variant-numeric: tabular-nums;
+}
+/*
+ * Loss mark for the row's lead team. Rows lead with this page's class even
+ * when it lost, so without this a 34-35 reads as a win at a glance. Fixed
+ * width and rendered empty on wins, so every score stays on the same column.
+ */
+.board__wl {
+  display: inline-block;
+  width: 18px;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 900;
+  color: #b3242c;
+  text-align: left;
 }
 
 .paper__modules {

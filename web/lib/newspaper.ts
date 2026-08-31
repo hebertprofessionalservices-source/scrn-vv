@@ -45,6 +45,13 @@ export interface Contest {
   /** Class rank of each side entering the week, when ranked. */
   homeRank: number | null;
   awayRank: number | null;
+  /**
+   * Whether each side is in the classification the page is about. Not the same
+   * as being ranked — an in-class team can be unranked — so the scoreboard
+   * cannot infer this from the rank fields.
+   */
+  homeInClass: boolean;
+  awayInClass: boolean;
   winnerRank: number | null;
   loserRank: number | null;
   /** Periods beyond the fourth mean overtime. */
@@ -139,8 +146,9 @@ function toContest(
    * teams reads as a 7A ranking and is simply wrong, so out-of-class teams
    * carry no rank here even though the power model has one for them.
    */
+  const inClass = (t: Team | null) => !!t && t.classification === classification;
   const rankOf = (t: Team | null) =>
-    t && t.classification === classification ? ranks.get(t.id)?.classRank ?? null : null;
+    inClass(t) ? ranks.get(t!.id)?.classRank ?? null : null;
   const homeRank = rankOf(home);
   const awayRank = rankOf(away);
   const winner =
@@ -182,6 +190,8 @@ function toContest(
     awayRank,
     winnerRank: homeWon ? homeRank : awayRank,
     loserRank: homeWon ? awayRank : homeRank,
+    homeInClass: inClass(home),
+    awayInClass: inClass(away),
     overtime: hasQuarters && q.home.length > 4,
     quarters: hasQuarters ? { home: q.home, away: q.away } : null,
   };
@@ -331,6 +341,48 @@ function notebook(contests: Contest[]): NotebookItem[] {
     });
   }
   return items.slice(0, 4);
+}
+
+export interface ScoreboardSide {
+  school: string;
+  rank: number | null;
+  score: number;
+  logo: string | null;
+}
+
+/**
+ * The two sides of a scoreboard row, led by the team the page is about.
+ *
+ * A class recap has to open every row with its own class's team even when that
+ * team lost. Led by the winner instead, a 6A page prints "Petal / vs No. 2
+ * Hattiesburg" — putting 7A Petal where the eye expects the ranked 6A team and
+ * making Petal read as 6A's No. 2. Leading with Hattiesburg says what the row
+ * is actually about, and `leadWon` lets the page mark it as the loss it was.
+ *
+ * When both sides are in class — an ordinary league game — the winner leads,
+ * which is how a scoreboard normally reads.
+ */
+export function scoreboardSides(c: Contest): {
+  lead: ScoreboardSide;
+  foe: ScoreboardSide;
+  leadWon: boolean;
+} {
+  const home: ScoreboardSide = {
+    school: c.homeSchool, rank: c.homeRank, score: c.homeScore, logo: c.homeLogo,
+  };
+  const away: ScoreboardSide = {
+    school: c.awaySchool, rank: c.awayRank, score: c.awayScore, logo: c.awayLogo,
+  };
+  const winner = c.winner === "away" ? away : home;
+  const loser = c.winner === "away" ? home : away;
+  // Only a cross-class game has a side to promote; with both sides in class
+  // (or neither) there is nothing to disambiguate and the winner leads.
+  const promoted =
+    c.homeInClass !== c.awayInClass ? (c.homeInClass ? home : away) : null;
+  if (promoted && promoted !== winner) {
+    return { lead: promoted, foe: winner, leadWon: false };
+  }
+  return { lead: winner, foe: loser, leadWon: true };
 }
 
 export type League = "MHSAA" | "MAIS";

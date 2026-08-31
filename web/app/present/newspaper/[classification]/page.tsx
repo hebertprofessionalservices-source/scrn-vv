@@ -8,6 +8,7 @@ import {
   latestSlate,
   leagueOf,
   leagueWeek,
+  scoreboardSides,
   type Contest,
   type Performance,
 } from "@/lib/newspaper";
@@ -37,6 +38,20 @@ import { PaperStage } from "./paper-stage";
  */
 const SPONSOR_SRC = "/brand/cspire-logo.png";
 const SPONSOR_FILE = join(process.cwd(), "public", "brand", "cspire-logo.png");
+
+/**
+ * League seal, printed beside the lead story.
+ *
+ * Copied into public/ from the assets library — assets/ is the master library,
+ * not what the site serves. Rendered only when the file is actually there, the
+ * same way the sponsor mark is.
+ */
+function leagueSeal(league: string): string | null {
+  const file = league === "MAIS" ? "mais-logo.png" : "mhsaa-logo.png";
+  return existsSync(join(process.cwd(), "public", "brand", file))
+    ? `/brand/${file}`
+    : null;
+}
 
 /**
  * Export filename, e.g. "mais-4a-week3-2026-08-28".
@@ -92,12 +107,14 @@ function seed(rank: number | null) {
 }
 
 /**
- * One caption line per team — "NO. 22 MERIDIAN 47" over "NO. 4 OCEAN SPRINGS 9"
- * — so the winner and the loser never run together mid-line the way a single
- * wrapped sentence does.
+ * The team half of a caption line — the school, then its class rank when it
+ * has one ("Picayune — No. 4").
+ *
+ * The score is set separately, in its own fixed-width column, so both schools
+ * start on the same x whether the score beside them is "0" or "35".
  */
-function heroLine(school: string, rank: number | null, score: number): string {
-  return `${rank ? `NO. ${rank} ` : ""}${school} ${score}`;
+function capTeam(school: string, rank: number | null): string {
+  return rank === null ? school : `${school} — No. ${rank}`;
 }
 
 /**
@@ -136,6 +153,7 @@ export default async function Newspaper({
   const week = sp.week ?? (autoWeek !== null ? String(autoWeek) : "");
 
   const sponsor = existsSync(SPONSOR_FILE);
+  const seal = leagueSeal(league);
   const ranks = buildPowerRankings(data);
   const paper = buildNewspaper(data, ranks, { classification, dates });
   const heroes = paper.headliners;
@@ -172,7 +190,7 @@ export default async function Newspaper({
     <div className="paper">
       <div className="paper__topbar">
         <span>{editionDate(dates, sp.edition)}</span>
-        <span>The Voice of Mississippi High School Sports</span>
+        <span>Your #1 Source for All Things Mississippi High School Football</span>
         <span>Section B</span>
       </div>
       <div className="paper__rule" />
@@ -186,48 +204,70 @@ export default async function Newspaper({
           ) : null}
         </div>
         <div className="paper__masthead">VARSITY VOICES</div>
+        {/* League over class over sport. The week is not repeated here — the
+            kicker directly below already carries it. */}
         <div className="paper__badge">
+          <span>{league}</span>
           <b>{badgeClass(classification)}</b>
-          <span>{week ? `WEEK ${week}` : "RECAP"}</span>
-          <small>PREP FOOTBALL</small>
+          <small>FOOTBALL</small>
         </div>
       </div>
       <div className="paper__tagline">Covering high school sports across the Magnolia State</div>
       <div className="paper__rule" />
 
-      <div className="paper__kicker">
-        ★ {league} {week ? `WEEK ${week}` : "RECAP"} ★
-      </div>
-      <div className="paper__headline">{heroes[0] ? headlineFor(heroes[0]) : "RESULTS"}</div>
-      <div className="paper__deck">
-        {heroes.map((h) => `${h.winnerSchool} ${h.winnerScore}, ${h.loserSchool} ${h.loserScore}.`).join(" ")}
+      {/* Relative so the league seal can sit under the badge without pulling
+          the centred headline off centre. */}
+      <div className="paper__lede">
+        <div className="paper__kicker">
+          ★ {league} {week ? `WEEK ${week}` : "RECAP"} ★
+        </div>
+        <div className="paper__headline">{heroes[0] ? headlineFor(heroes[0]) : "RESULTS"}</div>
+        <div className="paper__deck">
+          {heroes.map((h) => `${h.winnerSchool} ${h.winnerScore}, ${h.loserSchool} ${h.loserScore}.`).join(" ")}
+        </div>
+        {seal ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={seal} alt={`${league} logo`} className="paper__seal" />
+        ) : null}
       </div>
 
       <div className="paper__body">
         <div className="paper__left">
           <div className="paper__heroes">
-            {heroes.map((h, i) => (
-              <div className="hero" key={h.game.id}>
-                <div className="hero__frame">
-                  <div className="hero__score">
-                    <Crest src={h.winnerLogo} className="hero__logoimg" />
-                    <span>{h.winnerScore}</span>
-                    <span style={{ opacity: 0.45 }}>–</span>
-                    <span style={{ opacity: 0.75 }}>{h.loserScore}</span>
-                    <Crest src={h.loserLogo} className="hero__logoimg" />
+            {heroes.map((h, i) => {
+              // Led by this class's team, win or lose — see scoreboardSides.
+              const { lead, foe, leadWon } = scoreboardSides(h);
+              return (
+                <div className="hero" key={h.game.id}>
+                  <div className="hero__frame">
+                    <div className="hero__score">
+                      <Crest src={lead.logo} className="hero__logoimg" />
+                      {/* Full strength on the winner's number, whichever side
+                          leads, so a loss never looks like a win. */}
+                      <span style={{ opacity: leadWon ? 1 : 0.75 }}>{lead.score}</span>
+                      <span style={{ opacity: 0.45 }}>–</span>
+                      <span style={{ opacity: leadWon ? 0.75 : 1 }}>{foe.score}</span>
+                      <Crest src={foe.logo} className="hero__logoimg" />
+                    </div>
+                    <div className="hero__names">
+                      <span>{lead.school}</span>
+                      <span>{foe.school}</span>
+                    </div>
                   </div>
-                  <div className="hero__names">
-                    <span>{h.winnerSchool}</span>
-                    <span>{h.loserSchool}</span>
+                  <div className="hero__cap">
+                    <div className="hero__capline">
+                      <span className="hero__capscore">{lead.score}</span>
+                      <span>{capTeam(lead.school, lead.rank)}</span>
+                    </div>
+                    <div className="hero__capline hero__capline--foe">
+                      <span className="hero__capscore">{foe.score}</span>
+                      <span>{capTeam(foe.school, foe.rank)}</span>
+                    </div>
                   </div>
+                  <div className="hero__sub">{heroSub(h, heroPerf[i])}</div>
                 </div>
-                <div className="hero__cap">
-                  <span>{heroLine(h.winnerSchool, h.winnerRank, h.winnerScore)}</span>
-                  <span>{heroLine(h.loserSchool, h.loserRank, h.loserScore)}</span>
-                </div>
-                <div className="hero__sub">{heroSub(h, heroPerf[i])}</div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="paper__modules">
@@ -283,26 +323,33 @@ export default async function Newspaper({
             <span>Top {paper.scoreboard.length} Scoreboard</span>
             <span>Final</span>
           </div>
-          {paper.scoreboard.map((c, i) => (
-            <div className="board__row" key={c.game.id}>
-              <span className="board__rank">{i + 1}</span>
-              <Crest src={c.winnerLogo} className="board__logo" />
-              <span className="board__teams">
-                <b>
-                  {seed(c.winnerRank)}
-                  {c.winnerSchool}
-                </b>
-                <i>
-                  vs {seed(c.loserRank)}
-                  {c.loserSchool}
-                </i>
-              </span>
-              <Crest src={c.loserLogo} className="board__logo" />
-              <span className="board__final">
-                {c.winnerScore}-{c.loserScore}
-              </span>
-            </div>
-          ))}
+          {paper.scoreboard.map((c, i) => {
+            // Led by this class's team, win or lose — see scoreboardSides.
+            const { lead, foe, leadWon } = scoreboardSides(c);
+            return (
+              <div className="board__row" key={c.game.id}>
+                <span className="board__rank">{i + 1}</span>
+                <Crest src={lead.logo} className="board__logo" />
+                <span className="board__teams">
+                  <b>
+                    {seed(lead.rank)}
+                    {lead.school}
+                  </b>
+                  <i>
+                    vs {seed(foe.rank)}
+                    {foe.school}
+                  </i>
+                </span>
+                <Crest src={foe.logo} className="board__logo" />
+                <span className="board__final">
+                  {/* Always rendered, so the scores stay column-aligned
+                      whether or not a row carries the mark. */}
+                  <i className="board__wl">{leadWon ? "" : "L"}</i>
+                  {lead.score}-{foe.score}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
 

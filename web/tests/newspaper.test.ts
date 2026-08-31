@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { buildNewspaper, latestSlate, leagueOf, leagueWeek } from "@/lib/newspaper";
+import {
+  buildNewspaper, latestSlate, leagueOf, leagueWeek, scoreboardSides,
+} from "@/lib/newspaper";
 import type { Dataset } from "@/lib/data";
 import type { PowerRank } from "@/lib/power";
 import type { Game, Team } from "@/lib/types";
@@ -235,6 +237,51 @@ describe("buildNewspaper", () => {
     const games = [game("g", "a", "b", null as unknown as number, null as unknown as number)];
     const paper = buildNewspaper(dataset(teams, games), ranks([]), opts);
     expect(paper.contests).toHaveLength(0);
+  });
+});
+
+describe("scoreboardSides", () => {
+  it("leads with this class's team even when it lost the game", () => {
+    // 7A Petal beat 6A Hattiesburg 35-34. On the 6A page, a row led by Petal
+    // reads as if Petal were 6A's No. 2.
+    const teams = [team("petal", "Petal", "7A"), team("hburg", "Hattiesburg", "6A")];
+    const games = [game("g", "hburg", "petal", 34, 35)];
+    const r = ranks([["petal", 7], ["hburg", 2]]);
+    const paper = buildNewspaper(dataset(teams, games), r, {
+      classification: "6A", dates: [DATE],
+    });
+    const { lead, foe, leadWon } = scoreboardSides(paper.contests[0]);
+    expect(lead.school).toBe("Hattiesburg");
+    expect(lead.rank).toBe(2);
+    expect(lead.score).toBe(34);
+    expect(foe.school).toBe("Petal");
+    expect(foe.rank).toBeNull(); // out of class: its 7A rank must not print
+    expect(foe.score).toBe(35);
+    expect(leadWon).toBe(false);
+  });
+
+  it("leads with the winner when both sides are in class", () => {
+    const teams = [team("a", "Callaway", "6A"), team("b", "Forest Hill", "6A")];
+    const games = [game("g", "a", "b", 14, 0)];
+    const paper = buildNewspaper(dataset(teams, games), ranks([["a", 11]]), {
+      classification: "6A", dates: [DATE],
+    });
+    const { lead, leadWon } = scoreboardSides(paper.contests[0]);
+    expect(lead.school).toBe("Callaway");
+    expect(leadWon).toBe(true);
+  });
+
+  it("leads with this class's team when it won a cross-class game", () => {
+    // 6A Warren Central beat 7A Clinton: already the winner, so nothing moves.
+    const teams = [team("wc", "Warren Central", "6A"), team("cl", "Clinton", "7A")];
+    const games = [game("g", "wc", "cl", 35, 24)];
+    const paper = buildNewspaper(dataset(teams, games), ranks([["wc", 1]]), {
+      classification: "6A", dates: [DATE],
+    });
+    const { lead, foe, leadWon } = scoreboardSides(paper.contests[0]);
+    expect(lead.school).toBe("Warren Central");
+    expect(foe.school).toBe("Clinton");
+    expect(leadWon).toBe(true);
   });
 });
 
