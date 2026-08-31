@@ -1,0 +1,125 @@
+===============================================================================
+VARSITY VOICES — YOUTUBE SHORT PUBLISHING ASSETS
+===============================================================================
+
+League:        MAIS
+Week:          MAIS Week 2
+Game date:     Friday, August 21, 2026
+Publish date:  Friday, August 28, 2026
+Matchup:       UMS Wright Prep (Mobile, AL) at Jackson Prep (Flowood, MS)
+Final:         Jackson Prep 42, UMS Wright 35
+Class:         MAIS 4A, District 4
+On air:        Lee Adams
+Source clip:   jackson-prep-dominates-ums-wright
+
+-------------------------------------------------------------------------------
+ASSET 1 — TITLE
+-------------------------------------------------------------------------------
+
+A 28-0 Lead Nearly Vanished — Jackson Prep Survived | Varsity Voices
+
+(68 characters)
+
+Alternate, if you prefer the numbers doing the work:
+
+28-0 Became 42-35 — Jackson Prep Hung On | Varsity Voices
+
+(57 characters)
+
+-------------------------------------------------------------------------------
+ASSET 2 — DESCRIPTION
+-------------------------------------------------------------------------------
+
+Jackson Prep led 28-0 in the second quarter. It ended 42-35. Lee Adams explains.
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. In MAIS Week 2, Jackson Prep hosted UMS Wright in Flowood — the Alabama prep program founded back in 1893 — and built a four-touchdown lead before the visitors turned it into a one-score game.
+
+IN THIS CLIP
+• Jackson Prep 42, UMS Wright 35 — 28-0 in the second quarter, 28-14 by halftime
+• A scoreless third quarter, then 35 combined points in the fourth
+• Wade Smith (RB, Sr.) — over 100 yards rushing and three touchdowns
+• Herrin Goodman (RB, Jr.) — over 100 yards rushing
+• Luke Essary (QB, Sr.) — 7-of-15 passing for over 100 yards
+• Where the name "UMS Wright" comes from — Dr. Wright's 1893 school, the girls' preparatory school that followed in the 1920s, and the 1988 merger
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MAIS #MississippiFootball #HighSchoolFootball #VarsityVoices #MAISFootball #FridayNightLights
+
+-------------------------------------------------------------------------------
+ASSET 3 — THUMBNAIL PROMPTS
+-------------------------------------------------------------------------------
+
+Attach all three logo files when generating: SCRN shield, Varsity Voices mark,
+C Spire.
+
+Dials used this generation: defender mid-collision · low-angle hero camera ·
+run-out tunnel smoke · cool blue rim light · torn paper edge texture ·
+2 cut-outs · black+red uniforms · no accent prop.
+Headline: PREP SURVIVES / 42-35.
+
+--- PROMPT A — 16:9 (1280x720, YouTube) ---------------------------------------
+
+A high-energy YouTube thumbnail in 16:9 widescreen (1280x720) format for a Mississippi high school football MAIS 4A season-opening shootout recap. Use the three attached logo files exactly as provided — do not redraw, restyle, recolor, crop, rotate, stretch, squash, distort, change the aspect ratio of, add text to, or apply any texture, grain, haze, or lighting effect to any of them. Place the attached "State Championships Radio Network" shield logo (the black shield crest containing the Mississippi state outline and a radio tower) in the TOP-LEFT corner, and the attached square "Varsity Voices — Mississippi High School Football" logo (the chrome microphone over a football with the navy banner) in the TOP-RIGHT corner. Reproduce each logo at its original aspect ratio exactly: scale it proportionally, width and height together, and never stretch, squash, skew or otherwise alter its native width-to-height ratio. Match the two to each other by HEIGHT ONLY — roughly 12 to 15 percent of the frame height — and let each logo's width fall wherever its own proportions put it, so the tall portrait shield stays narrow and the square logo stays square. Give them equal margins from the top and side edges so the two read as visually balanced despite their different shapes. Additionally, place the attached C Spire logo (the cyan starburst above the lowercase "c spire" wordmark) in the BOTTOM-LEFT area, sitting just above the red banner strip, with a small white all-caps label reading "PRESENTED BY" directly above it. Scale the C Spire logo to roughly 10 percent of the frame height, proportionally and at its original aspect ratio, and keep its cyan exactly as supplied — do not tint, desaturate or shift it toward the red palette. All three logos must stay fully visible and unobstructed: no player cut-out, headline text, stadium haze, or texture overlay may cross any of them, and their original colors are preserved, including the Varsity Voices navy and gold and the C Spire cyan, which are not recolored to match the thumbnail palette. Bold, gritty stadium-style distressed typography dominates the left two-thirds of the frame, reading "PREP SURVIVES" in huge white all-caps font, stacked above "42-35" in even larger red distressed all-caps font with a rough, weathered spray-paint texture — oversized lettering that stays readable at small thumbnail size. Directly beneath the headline, a small red chip with white all-caps text reading "MAIS." Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and thick run-out tunnel smoke rolling across the field, blurred into red-tinted bokeh. On the right third of the frame, a tight collage of 2 large dynamic action shots of generic high school football players in mid-play — a defender mid-collision, driving through the ball carrier at the point of impact with the ball jarred loose — each cut out with a bold white outline stroke and color-graded with punchy high-contrast editorial lighting, the largest figure dominating the right edge in the popular cut-out-with-glow YouTube style, shot from a low-angle hero perspective with cool blue rim lighting. Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MAIS 4A · WEEK 2 · PREP 42, UMS WRIGHT 35." Overall style: high-contrast, gritty, red-black-white color palette, torn paper edge overlays, dramatic rim lighting on the players, editorial sports photography blended with poster-style typography, optimized for maximum click-through at small sizes. Important: all players must be entirely generic — no readable text of any kind on jerseys, helmets, or scoreboards, no school names or mascots, no brand logos (no Nike swoosh, no Riddell or other manufacturer marks), and no recognizable faces. Plain solid black and red uniforms with no wordmark across the chest.
+
+--- PROMPT B — 9:16 (1080x1920, Shorts / Instagram / TikTok) -------------------
+
+A high-energy vertical social thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football MAIS 4A season-opening shootout recap, sized for Instagram Reels and TikTok covers. Use the three attached logo files exactly as provided — do not redraw, restyle, recolor, crop, rotate, stretch, squash, distort, change the aspect ratio of, add text to, or apply any texture, grain, haze, or lighting effect to any of them. Place the attached "State Championships Radio Network" shield logo (the black shield crest containing the Mississippi state outline and a radio tower) in the TOP-LEFT corner, and the attached square "Varsity Voices — Mississippi High School Football" logo (the chrome microphone over a football with the navy banner) in the TOP-RIGHT corner, the two sitting side by side across the very top of the frame. Reproduce each logo at its original aspect ratio exactly: scale it proportionally, width and height together, and never stretch, squash, skew or otherwise alter its native width-to-height ratio. Match the two to each other by HEIGHT ONLY — roughly 12 to 15 percent of the frame height — and let each logo's width fall wherever its own proportions put it, so the tall portrait shield stays narrow and the square logo stays square. Give them equal margins from the top and side edges so the two read as visually balanced despite their different shapes. Additionally, place the attached C Spire logo (the cyan starburst above the lowercase "c spire" wordmark) in the BOTTOM-LEFT area, sitting just above the red banner strip, with a small white all-caps label reading "PRESENTED BY" directly above it. Scale the C Spire logo to roughly 10 percent of the frame height, proportionally and at its original aspect ratio, and keep its cyan exactly as supplied — do not tint, desaturate or shift it toward the red palette. All three logos must stay fully visible and unobstructed: no player cut-out, headline text, stadium haze, or texture overlay may cross any of them, and their original colors are preserved, including the Varsity Voices navy and gold and the C Spire cyan, which are not recolored to match the thumbnail palette. Bold, gritty stadium-style distressed typography fills the upper third of the frame, reading "PREP SURVIVES" in huge white all-caps font, stacked above "42-35" in even larger red distressed all-caps font with a rough, weathered spray-paint texture — oversized lettering that stays readable at small thumbnail size. Directly beneath the headline, a small red chip with white all-caps text reading "MAIS." Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and thick run-out tunnel smoke rolling across the field, blurred into red-tinted bokeh. Filling the middle of the frame below the headline, a tight vertical collage of 2 large dynamic action shots of generic high school football players in mid-play — a defender mid-collision, driving through the ball carrier at the point of impact with the ball jarred loose — each cut out with a bold white outline stroke and color-graded with punchy high-contrast editorial lighting, the largest figure anchored centre-left and running tall through the frame in the popular cut-out-with-glow style, shot from a low-angle hero perspective with cool blue rim lighting. Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MAIS 4A · WEEK 2 · PREP 42, UMS WRIGHT 35." Keep the bottom 15 percent and the right 12 percent of the frame clear of important content so the vertical player controls, caption and action buttons do not cover the headline, the banner or the focal player's face. Overall style: high-contrast, gritty, red-black-white color palette, torn paper edge overlays, dramatic rim lighting on the players, editorial sports photography blended with poster-style typography, optimized for maximum click-through at small sizes. Important: all players must be entirely generic — no readable text of any kind on jerseys, helmets, or scoreboards, no school names or mascots, no brand logos (no Nike swoosh, no Riddell or other manufacturer marks), and no recognizable faces. Plain solid black and red uniforms with no wordmark across the chest.
+
+-------------------------------------------------------------------------------
+ASSET 4 — TAGS
+-------------------------------------------------------------------------------
+
+497 characters, 30 tags. Limit is 500.
+
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,football coaching strategy,football offensive schemes,college football,friday night lights,mississippi high school football,MAIS football
+
+===============================================================================
+VERIFICATION NOTES
+===============================================================================
+
+VERIFIED
+- Final score 42-35, Jackson Prep at home — dashboard games.json + MaxPreps
+- Quarter splits — MaxPreps box score:
+    UMS Wright   0  14   0  21  =  35
+    Jackson Prep 14  14   0  14  =  42
+  Confirms the 28-0 second-quarter lead and 28-14 halftime score.
+- Jackson Prep is MAIS 4A, District 4 — dashboard teams.json
+- Player name spellings — Jackson Prep 2026 roster, players.json:
+    Wade Smith     RB  Sr  #5
+    Herrin Goodman RB  Jr  #3   (transcript said "Heron Goodwin" — GOODMAN)
+    Luke Essary    QB  Sr  #8   (transcript said "Essery" — ESSARY)
+
+NOT VERIFIED — on Lee's on-air word only
+- Wade Smith's 100+ rushing yards and 3 TD
+- Herrin Goodman's 100+ rushing yards
+- Luke Essary's 7-of-15 for 100+ yards
+MaxPreps carries only UMS Wright's half of the box score; Jackson Prep never
+entered their individual stats, and the 2026 players.json stat blocks are all
+still zeroed. If Prep posts stats later and the numbers differ, edit the
+description before or after publishing.
+
+MaxPreps box score:
+https://www.maxpreps.com/inter-state/football/game/jackson-prep-ms-vs-ums-wright-prep-mobile-al/8-21-2026/?c=5ab840a9-ec7e-440f-9b57-0a08a48290ce
+
+===============================================================================
+FILE NAMING CONVENTION — assets-shorts/
+===============================================================================
+
+  <league>-short-MMDDYY.txt
+
+League is "mais" or "mhsaa", lowercase. The date is the PUBLISH date, not the
+game date. Both are recorded in the header block of each file.
+
+  mais-short-082826.txt    this file
+  mhsaa-short-MMDDYY.txt   MHSAA shorts, same folder
+
+Week numbers in the assets are that league's OWN week, not the overall count.
+MAIS opens two weeks before MHSAA, so an Aug 28 MAIS video is Week 3 and an
+Aug 28 MHSAA video is Week 1. Same Friday, different label — that is correct.

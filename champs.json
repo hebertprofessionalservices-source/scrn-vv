@@ -1,0 +1,58 @@
+{
+ "7A": {
+  "champ": "Gulfport Admirals",
+  "champId": "gulfport-admirals-admirals",
+  "runner": "Tupelo Golden Wave",
+  "runnerId": "tupelo-golden-wave-golden-wave",
+  "score": "21-20",
+  "date": "2025-12-06"
+ },
+ "6A": {
+  "champ": "Warren Central Vikings",
+  "champId": "warren-central-vikings-vikings",
+  "runner": "Hattiesburg Tigers",
+  "runnerId": "hattiesburg-tigers-tigers",
+  "score": "56-34",
+  "date": "2025-12-05"
+ },
+ "5A": {
+  "champ": "Brookhaven Panthers",
+  "champId": "brookhaven-panthers-panthers",
+  "runner": "West Point Green Wave",
+  "runnerId": "west-point-green-wave-green-wave",
+  "score": "31-19",
+  "date": "2025-12-04"
+ },
+ "4A": {
+  "champ": "Columbia Wildcats",
+  "champId": "columbia-wildcats-wildcats",
+  "runner": "Kosciusko Whippets",
+  "runnerId": "kosciusko-whippets-whippets",
+  "score": "6-0",
+  "date": "2025-12-05"
+ },
+ "3A": {
+  "champ": "Raleigh Lions",
+  "champId": "raleigh-lions-lions",
+  "runner": "Noxubee County Tigers",
+  "runnerId": "noxubee-county-tigers-tigers",
+  "score": "12-6",
+  "date": "2025-12-06"
+ },
+ "2A": {
+  "champ": "East Webster Wolverines",
+  "champId": "east-webster-wolverines-wolverines",
+  "runner": "Heidelberg Oilers",
+  "runnerId": "heidelberg-oilers-oilers",
+  "score": "28-16",
+  "date": "2025-12-06"
+ },
+ "1A": {
+  "champ": "Calhoun City Wildcats",
+  "champId": "calhoun-city-wildcats-wildcats",
+  "runner": "Simmons Blue Devils",
+  "runnerId": "simmons-blue-devils-blue-devils",
+  "score": "14-8",
+  "date": "2025-12-04"
+ }
+}

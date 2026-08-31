@@ -8,6 +8,10 @@ out/
 scraper/.venv/
 scraper/.cache/
 scraper/output/
+# Scraper run logs
+docs/.scrape*.log
+# Episode decks are large binaries; they live in Cowork, not git
+templates/decks/
 # Data and logos ARE committed for Vercel build:
 # web/public/data/*/
 # web/public/team-logos/
