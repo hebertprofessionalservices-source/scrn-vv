@@ -1,0 +1,3092 @@
+[
+  {
+    "id": "calhoun-city-wildcats-wildcats",
+    "name": "Calhoun City Wildcats",
+    "school": "Calhoun City",
+    "afhs": "M.D. Jennings",
+    "dataset": "MD Jennings",
+    "maxprepsLive": "MD Jennings",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "simmons-blue-devils-blue-devils",
+    "name": "Simmons Blue Devils",
+    "school": "Simmons",
+    "afhs": "Jarvis Williams",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "biggersville-lions-lions",
+    "name": "Biggersville Lions",
+    "school": "Biggersville",
+    "afhs": "Case Ingram",
+    "dataset": "Case Ingram",
+    "maxprepsLive": "Case Ingram",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "nanih-waiya-warriors-warriors",
+    "name": "Nanih Waiya Warriors",
+    "school": "Nanih Waiya",
+    "afhs": "James Courtney",
+    "dataset": "Paul Courtney",
+    "maxprepsLive": "James Courtney",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "stringer-red-devils-red-devils",
+    "name": "Stringer Red Devils",
+    "school": "Stringer",
+    "afhs": "Dan Brady",
+    "dataset": "Dan Brady",
+    "maxprepsLive": "Dan Brady",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "south-delta-bulldogs-bulldogs",
+    "name": "South Delta Bulldogs",
+    "school": "South Delta",
+    "afhs": "KePatrick Barnes",
+    "dataset": "Derrick Hooker",
+    "maxprepsLive": "KePatrick Barnes",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "leflore-county-tigers-tigers",
+    "name": "Leflore County Tigers",
+    "school": "Leflore County",
+    "afhs": "Eric House",
+    "dataset": "Eric House",
+    "maxprepsLive": "Eric House",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "bogue-chitto-bobcats-bobcats",
+    "name": "Bogue Chitto Bobcats",
+    "school": "Bogue Chitto",
+    "afhs": "Brandon Mancuso",
+    "dataset": "Ed Merilyndanau",
+    "maxprepsLive": "Brandon Mancuso",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "taylorsville-tartars-tartars",
+    "name": "Taylorsville Tartars",
+    "school": "Taylorsville",
+    "afhs": "Adrian Agee",
+    "dataset": "Adrian Agee",
+    "maxprepsLive": "Adrian Agee",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "ethel-tigers-tigers",
+    "name": "Ethel Tigers",
+    "school": "Ethel",
+    "afhs": "Junior Graham",
+    "dataset": "Culley Newman",
+    "maxprepsLive": "Harold Graham",
+    "category": "spelling-variant",
+    "datasetStale": true
+  },
+  {
+    "id": "byers-lions-lions",
+    "name": "Byers Lions",
+    "school": "Byers",
+    "afhs": "Lonnie Johnson",
+    "dataset": "Ditte Miller",
+    "maxprepsLive": "Mario Lane",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "west-tallahatchie-choctaws-choctaws",
+    "name": "West Tallahatchie Choctaws",
+    "school": "West Tallahatchie",
+    "afhs": "Marshall Hargett",
+    "dataset": "Shane Hargett",
+    "maxprepsLive": "Shane Hargett",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "tupelo-christian-prep-eagles-eagles",
+    "name": "Tupelo Christian Prep Eagles",
+    "school": "Tupelo Christian Prep",
+    "afhs": "Trent Hammond",
+    "dataset": "Trent Hammond",
+    "maxprepsLive": "Trent Hammond",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "richton-rebels-rebels",
+    "name": "Richton Rebels",
+    "school": "Richton",
+    "afhs": "Andrew Roberts",
+    "dataset": "Andrew Roberts",
+    "maxprepsLive": "Andrew Roberts",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "falkner-eagles-eagles",
+    "name": "Falkner Eagles",
+    "school": "Falkner",
+    "afhs": "Jesse Nelson",
+    "dataset": "Ben Ashley",
+    "maxprepsLive": "Ben Ashley",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "leake-county-alligators-alligators",
+    "name": "Leake County Alligators",
+    "school": "Leake County",
+    "afhs": "",
+    "dataset": "Kenneth Whitfield",
+    "maxprepsLive": "Kenneth Whitfield",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "west-lowndes-panthers-panthers",
+    "name": "West Lowndes Panthers",
+    "school": "West Lowndes",
+    "afhs": "Anthony King",
+    "dataset": "Anthony King",
+    "maxprepsLive": "Anthony King",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "okolona-chieftains-chieftains",
+    "name": "Okolona Chieftains",
+    "school": "Okolona",
+    "afhs": "Colbry Lathan",
+    "dataset": "Colbry Lathan",
+    "maxprepsLive": "Colbry Lathan",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "noxapater-tigers-tigers",
+    "name": "Noxapater Tigers",
+    "school": "Noxapater",
+    "afhs": "Vacant",
+    "dataset": "Caleb Kelly",
+    "maxprepsLive": "Caleb Kelly",
+    "category": "afhs-vacant",
+    "datasetStale": false
+  },
+  {
+    "id": "lumberton-panthers-panthers",
+    "name": "Lumberton Panthers",
+    "school": "Lumberton",
+    "afhs": "Jonathan Ladner",
+    "dataset": "Jonathan Ladner",
+    "maxprepsLive": "Jonathan Ladner",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "mcadams-bulldogs-bulldogs",
+    "name": "McAdams Bulldogs",
+    "school": "McAdams",
+    "afhs": "TDarryl Grays",
+    "dataset": "Kenneth Nelson",
+    "maxprepsLive": "T'Darryl Grays",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "potts-camp-cardinals-cardinals",
+    "name": "Potts Camp Cardinals",
+    "school": "Potts Camp",
+    "afhs": "Chris Daniels",
+    "dataset": "Christopher Daniels",
+    "maxprepsLive": "Christopher Daniels",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "sebastopol-bobcats-bobcats",
+    "name": "Sebastopol Bobcats",
+    "school": "Sebastopol",
+    "afhs": "Keith Brown",
+    "dataset": "Keith Brown",
+    "maxprepsLive": "Keith Brown",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "salem-wildcats-wildcats",
+    "name": "Salem Wildcats",
+    "school": "Salem",
+    "afhs": "William Frazier",
+    "dataset": "William Frazier",
+    "maxprepsLive": "William Frazier",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "smithville-seminoles-seminoles",
+    "name": "Smithville Seminoles",
+    "school": "Smithville",
+    "afhs": "Jimmy Young",
+    "dataset": "Jimmy Young",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "shaw-warriors-warriors",
+    "name": "Shaw Warriors",
+    "school": "Shaw",
+    "afhs": "Jerry Walker",
+    "dataset": "Montrelli Finley",
+    "maxprepsLive": "Jerry Walker",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "mount-olive-pirates-pirates",
+    "name": "Mount Olive Pirates",
+    "school": "Mount Olive",
+    "afhs": "Eric Nelson",
+    "dataset": "Eric Nelson",
+    "maxprepsLive": "Eric Nelson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "coffeeville-pirates-pirates",
+    "name": "Coffeeville Pirates",
+    "school": "Coffeeville",
+    "afhs": "Jerri Richson",
+    "dataset": "Jerry Richardson",
+    "maxprepsLive": "Ashton Anderson",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "vardaman-rams-rams",
+    "name": "Vardaman Rams",
+    "school": "Vardaman",
+    "afhs": "Richard Russo",
+    "dataset": "Rod Cook",
+    "maxprepsLive": "Richard Russo",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "resurrection-catholic-eagles-eagles",
+    "name": "Resurrection Catholic Eagles",
+    "school": null,
+    "afhs": null,
+    "dataset": "Eric Denmark",
+    "maxprepsLive": "Scott Sisson",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "west-bolivar-eagles-eagles",
+    "name": "West Bolivar Eagles",
+    "school": "West Bolivar",
+    "afhs": "Jeremy Banks",
+    "dataset": "Jermey Banks",
+    "maxprepsLive": "Jermey Banks",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "west-lincoln-bears-bears",
+    "name": "West Lincoln Bears",
+    "school": "West Lincoln",
+    "afhs": "Vacant",
+    "dataset": "BJ Smithhart",
+    "maxprepsLive": "bobby Smithhart",
+    "category": "afhs-vacant",
+    "datasetStale": true
+  },
+  {
+    "id": "riverside-bulldogs-bulldogs",
+    "name": "Riverside Bulldogs",
+    "school": "Riverside",
+    "afhs": "Kenneth Spencer",
+    "dataset": "Kenneth Spencer",
+    "maxprepsLive": "Kenneth Spencer",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "ashland-blue-devils-blue-devils",
+    "name": "Ashland Blue Devils",
+    "school": "Ashland",
+    "afhs": "Elliot Witt",
+    "dataset": "Elliott Witt",
+    "maxprepsLive": "Jeff Anglin",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "french-camp-academy-panthers-panthers",
+    "name": "French Camp Academy Panthers",
+    "school": "French Camp Academy",
+    "afhs": "Nathan Wright",
+    "dataset": "Nathan Wright",
+    "maxprepsLive": "Nathan Wright",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "thrasher-rebels-rebels",
+    "name": "Thrasher Rebels",
+    "school": "Thrasher",
+    "afhs": "Taylor McCutcheon",
+    "dataset": "Thomas Jamieson",
+    "maxprepsLive": "Thomas Jamieson",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "east-webster-wolverines-wolverines",
+    "name": "East Webster Wolverines",
+    "school": "East Webster",
+    "afhs": "Ron Price",
+    "dataset": "Ron Price",
+    "maxprepsLive": "Ron Price",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "wesson-cobras-cobras",
+    "name": "Wesson Cobras",
+    "school": "Wesson",
+    "afhs": "Jeremy Loy",
+    "dataset": "Jeremy Loy",
+    "maxprepsLive": "Jeremy Loy",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "north-side-gators-gators",
+    "name": "North Side Gators",
+    "school": "Northside",
+    "afhs": "Tavares Johnson",
+    "dataset": "Keyshawn Horn",
+    "maxprepsLive": "John Eubanks",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "baldwyn-bearcats-bearcats",
+    "name": "Baldwyn Bearcats",
+    "school": "Baldwyn",
+    "afhs": "Neal Allen",
+    "dataset": "Neal Allen",
+    "maxprepsLive": "Neal Allen",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "heidelberg-oilers-oilers",
+    "name": "Heidelberg Oilers",
+    "school": "Heidelberg",
+    "afhs": "Darryl Carter",
+    "dataset": "Darryl Carter",
+    "maxprepsLive": "Darryl Carter",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "water-valley-blue-devils-blue-devils",
+    "name": "Water Valley Blue Devils",
+    "school": "Water Valley",
+    "afhs": "Clint Faust",
+    "dataset": "Clint Faust",
+    "maxprepsLive": "Clint Faust",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "amite-county-trojans-trojans",
+    "name": "Amite County Trojans",
+    "school": "Amite County",
+    "afhs": "Sedric Cain",
+    "dataset": "Sedric Cain",
+    "maxprepsLive": "Sedric Cain",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "myrtle-hawks-hawks",
+    "name": "Myrtle Hawks",
+    "school": "Myrtle",
+    "afhs": "Luke Conlee",
+    "dataset": "Luke Conlee",
+    "maxprepsLive": "Luke Conlee",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "loyd-star-hornets-hornets",
+    "name": "Loyd Star Hornets",
+    "school": "Loyd Star",
+    "afhs": "Adam Smith",
+    "dataset": "Adam Smith",
+    "maxprepsLive": "Adam Smith",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "clarkdale-bulldogs-bulldogs",
+    "name": "Clarkdale Bulldogs",
+    "school": "Clarkdale",
+    "afhs": "Robert Roberts",
+    "dataset": "Rob Roberts",
+    "maxprepsLive": "Lance Wilkerson",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "bay-springs-bulldogs-bulldogs",
+    "name": "Bay Springs Bulldogs",
+    "school": "Bay Springs",
+    "afhs": "Regrick Young",
+    "dataset": "Regrick Young",
+    "maxprepsLive": "Regrick Young",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "charleston-tigers-tigers",
+    "name": "Charleston Tigers",
+    "school": "Charleston",
+    "afhs": "Don Taylor",
+    "dataset": "Rasheed DeBerry",
+    "maxprepsLive": "Rasheed DeBerry",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "hamilton-lions-lions",
+    "name": "Hamilton Lions",
+    "school": "Hamilton",
+    "afhs": "Cody Allsup",
+    "dataset": "Cody Allsup",
+    "maxprepsLive": "Cody Allsup",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "hatley-tigers-tigers",
+    "name": "Hatley Tigers",
+    "school": "Hatley",
+    "afhs": "Seth Lee",
+    "dataset": "Ken Adams",
+    "maxprepsLive": "Seth Lee",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "eupora-eagles-eagles",
+    "name": "Eupora Eagles",
+    "school": "Eupora",
+    "afhs": "Brad Gray",
+    "dataset": "Brad Gray",
+    "maxprepsLive": "Brad Gray",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "bruce-trojans-trojans",
+    "name": "Bruce Trojans",
+    "school": "Bruce",
+    "afhs": "Chuck Darbonne",
+    "dataset": "Chuck Darbonne",
+    "maxprepsLive": "Chuck Darbonne",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "lake-hornets-hornets",
+    "name": "Lake Hornets",
+    "school": "Lake",
+    "afhs": "Tate Hanna",
+    "dataset": "Tate Hanna",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "east-marion-eagles-eagles",
+    "name": "East Marion Eagles",
+    "school": "East Marion",
+    "afhs": "Jeremy Packer",
+    "dataset": "Jeremy Packer",
+    "maxprepsLive": "Jeremy Packer",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "mize-bulldogs-bulldogs",
+    "name": "Mize Bulldogs",
+    "school": "Mize",
+    "afhs": "Matt Maddox",
+    "dataset": "Matt Maddox",
+    "maxprepsLive": "Matt Maddox",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "kemper-county-wildcats-wildcats",
+    "name": "Kemper County Wildcats",
+    "school": "Kemper County",
+    "afhs": "Darius Wren",
+    "dataset": "Darius Wren",
+    "maxprepsLive": "Marcus Holmes",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "pelahatchie-chiefs-chiefs",
+    "name": "Pelahatchie Chiefs",
+    "school": "Pelahatchie",
+    "afhs": "Ryan Keeton",
+    "dataset": "Ryan Keeton",
+    "maxprepsLive": "Ryan Keeton",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "north-forrest-eagles-eagles",
+    "name": "North Forrest Eagles",
+    "school": "North Forrest",
+    "afhs": "Todd Lowery",
+    "dataset": "Anthony Dillon",
+    "maxprepsLive": "Todd Lowery",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "sacred-heart-crusaders-crusaders",
+    "name": "Sacred Heart Crusaders",
+    "school": "Sacred Heart",
+    "afhs": "Ed Smith",
+    "dataset": null,
+    "maxprepsLive": "Drew Dewease",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "velma-jackson-falcons-falcons",
+    "name": "Velma Jackson Falcons",
+    "school": "Velma Jackson",
+    "afhs": "Bernard Euell",
+    "dataset": "Quentin Euell",
+    "maxprepsLive": "Jonathan Brooks",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "j-z-george-jaguars-jaguars",
+    "name": "J.Z. George Jaguars",
+    "school": null,
+    "afhs": null,
+    "dataset": "Dustin Alford",
+    "maxprepsLive": "Dustin Alford",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "strayhorn-mustangs-mustangs",
+    "name": "Strayhorn Mustangs",
+    "school": "Strayhorn",
+    "afhs": "Michael Bradley",
+    "dataset": "Michael Bradley",
+    "maxprepsLive": "Michael Bradley",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "leland-cubs-cubs",
+    "name": "Leland Cubs",
+    "school": "Leland",
+    "afhs": "Johnny Griffin",
+    "dataset": "Johnny Lee Griffin",
+    "maxprepsLive": "Johnny Lee Griffin",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "collins-tigers-tigers",
+    "name": "Collins Tigers",
+    "school": "Collins",
+    "afhs": "Randy Craft",
+    "dataset": "Randy Craft",
+    "maxprepsLive": "Randy Craft",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "scott-central-rebels-rebels",
+    "name": "Scott Central Rebels",
+    "school": "Scott Central",
+    "afhs": "David Frey",
+    "dataset": "David Frey",
+    "maxprepsLive": "Connor Breland",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "walnut-wildcats-wildcats",
+    "name": "Walnut Wildcats",
+    "school": "Walnut",
+    "afhs": "John Meeks",
+    "dataset": "John Meeks",
+    "maxprepsLive": "John Meeks",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "perry-central-bulldogs-bulldogs",
+    "name": "Perry Central Bulldogs",
+    "school": "Perry Central",
+    "afhs": "Nick Griffin",
+    "dataset": "Nick Griffin",
+    "maxprepsLive": "Nick Griffin",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "enterprise-bulldogs-bulldogs",
+    "name": "Enterprise Bulldogs",
+    "school": null,
+    "afhs": null,
+    "dataset": "Kelly Jimmerson",
+    "maxprepsLive": "Kelly Jimmerson",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "newton-tigers-tigers",
+    "name": "Newton Tigers",
+    "school": "Newton",
+    "afhs": "Jeffrey Crosby",
+    "dataset": "JEFFERY CROSBY",
+    "maxprepsLive": "Milton Green",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "philadelphia-tornadoes-tornadoes",
+    "name": "Philadelphia Tornadoes",
+    "school": "Philadelphia",
+    "afhs": "Georgio Grace",
+    "dataset": "Danzel McCoy",
+    "maxprepsLive": "Kenneth Grace",
+    "category": "spelling-variant",
+    "datasetStale": true
+  },
+  {
+    "id": "puckett-wolves-wolves",
+    "name": "Puckett Wolves",
+    "school": "Puckett",
+    "afhs": "Alan Peacock",
+    "dataset": "Alan Peacock",
+    "maxprepsLive": "Alan Peacock",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "enterprise-yellowjackets-yellowjackets",
+    "name": "Enterprise Yellowjackets",
+    "school": null,
+    "afhs": null,
+    "dataset": "Trey Woodard",
+    "maxprepsLive": "Trey Woodard",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "wilkinson-county-wildcats-wildcats",
+    "name": "Wilkinson County Wildcats",
+    "school": "Wilkinson County",
+    "afhs": "Ocie Brown Jr.",
+    "dataset": "Ocie Brown",
+    "maxprepsLive": "Ocie Brown",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "east-union-urchins-urchins",
+    "name": "East Union Urchins",
+    "school": "East Union",
+    "afhs": "Stephen Basil",
+    "dataset": "Stephen Basil",
+    "maxprepsLive": "Stephen Basil",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "palmer-dragons-dragons",
+    "name": "Palmer Dragons",
+    "school": "Palmer",
+    "afhs": "Scott Anderson",
+    "dataset": "Scott Anderson",
+    "maxprepsLive": "Scott  Anderson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "raleigh-lions-lions",
+    "name": "Raleigh Lions",
+    "school": "Raleigh",
+    "afhs": "Ryan Higdon",
+    "dataset": "Ryan Higdon",
+    "maxprepsLive": "Ryan Higdon",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "union-yellowjackets-yellowjackets",
+    "name": "Union Yellowjackets",
+    "school": "Union",
+    "afhs": "Jordan Wren",
+    "dataset": "Cynthia Williamson",
+    "maxprepsLive": "Jordan Wren",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "noxubee-county-tigers-tigers",
+    "name": "Noxubee County Tigers",
+    "school": "Noxubee County",
+    "afhs": "Teddy Young",
+    "dataset": "Teddy Young",
+    "maxprepsLive": "Teddy Young",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "kossuth-aggies-aggies",
+    "name": "Kossuth Aggies",
+    "school": "Kossuth",
+    "afhs": "Brian Kelly",
+    "dataset": "Brian Kelly",
+    "maxprepsLive": "Brian Kelly",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "presbyterian-christian-bobcats-bobcats",
+    "name": "Presbyterian Christian Bobcats",
+    "school": null,
+    "afhs": null,
+    "dataset": "Richard Chambliss",
+    "maxprepsLive": "Richard Chambliss",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "west-marion-trojans-trojans",
+    "name": "West Marion Trojans",
+    "school": "West Marion",
+    "afhs": "Mason Woodrow",
+    "dataset": "Brad Duncan",
+    "maxprepsLive": "Mason Woodrow",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "belmont-cardinals-cardinals",
+    "name": "Belmont Cardinals",
+    "school": "Belmont",
+    "afhs": "Michael D. Jackson",
+    "dataset": "Michael D. Jackson",
+    "maxprepsLive": "Michael Jackson",
+    "category": "spelling-variant",
+    "datasetStale": true
+  },
+  {
+    "id": "winona-tigers-tigers",
+    "name": "Winona Tigers",
+    "school": "Winona",
+    "afhs": "DeAngelo Ballard",
+    "dataset": "Joey Tompkins",
+    "maxprepsLive": "DeAngelo Ballard",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "magee-trojans-trojans",
+    "name": "Magee Trojans",
+    "school": "Magee",
+    "afhs": "Chase Courtney",
+    "dataset": "Chase Courtney",
+    "maxprepsLive": "Chase Courtney",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "hazlehurst-indians-indians",
+    "name": "Hazlehurst Indians",
+    "school": "Hazlehurst",
+    "afhs": "Jesse Anderson",
+    "dataset": "damien gary",
+    "maxprepsLive": "Jesse Anderson",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "choctaw-county-chargers-chargers",
+    "name": "Choctaw County Chargers",
+    "school": "Choctaw County",
+    "afhs": "Dillon Mitchell",
+    "dataset": "Dillon Mitchell",
+    "maxprepsLive": "Dillon Mitchell",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "aberdeen-bulldogs-bulldogs",
+    "name": "Aberdeen Bulldogs",
+    "school": "Aberdeen",
+    "afhs": "Alex Williams",
+    "dataset": "Alexander Williams",
+    "maxprepsLive": "Alex Williams",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "seminary-bulldogs-bulldogs",
+    "name": "Seminary Bulldogs",
+    "school": "Seminary",
+    "afhs": "Mitch Evans",
+    "dataset": "Mitch Evans",
+    "maxprepsLive": "Mitch Evans",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "humphreys-county-cowboys-cowboys",
+    "name": "Humphreys County Cowboys",
+    "school": "Humphreys County",
+    "afhs": "Timothy Johnson",
+    "dataset": "Timothy James",
+    "maxprepsLive": "Timothy James",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "quitman-panthers-panthers",
+    "name": "Quitman Panthers",
+    "school": "Quitman",
+    "afhs": "Josh Pulphus",
+    "dataset": "Joshua Pulphus",
+    "maxprepsLive": "Joshua Pulphus",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "tylertown-chiefs-chiefs",
+    "name": "Tylertown Chiefs",
+    "school": "Tylertown",
+    "afhs": "Osborne Holmes",
+    "dataset": "Andy Davis",
+    "maxprepsLive": "Oliver Magee, Jr. ",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "franklin-county-bulldogs-bulldogs",
+    "name": "Franklin County Bulldogs",
+    "school": "Franklin County",
+    "afhs": "Jonathan Brooks",
+    "dataset": "Jonathan Brooks",
+    "maxprepsLive": "John Costilow",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "yazoo-county-panthers-panthers",
+    "name": "Yazoo County Panthers",
+    "school": "Yazoo County",
+    "afhs": "Robert Dobbs",
+    "dataset": "Robert Dobbs",
+    "maxprepsLive": "Robert Dobbs",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "obannon-greenwaves-greenwaves",
+    "name": "O'Bannon Greenwaves",
+    "school": "OBannon",
+    "afhs": "Lynn Lang",
+    "dataset": "Lynn Lang",
+    "maxprepsLive": "Lynn Lang",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "edwards-tigers-tigers",
+    "name": "Edwards Tigers",
+    "school": "Edwards",
+    "afhs": "",
+    "dataset": "Quintarus McCray",
+    "maxprepsLive": "Quintarus McCray",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "north-panola-fightn-cougars-fightn-cougars",
+    "name": "North Panola Fightn Cougars",
+    "school": "North Panola",
+    "afhs": "Vacant",
+    "dataset": "Imari Davis",
+    "maxprepsLive": "Imari Davis",
+    "category": "afhs-vacant",
+    "datasetStale": false
+  },
+  {
+    "id": "booneville-blue-devils-blue-devils",
+    "name": "Booneville Blue Devils",
+    "school": "Booneville",
+    "afhs": "Scott Brown.",
+    "dataset": "Scott Brown",
+    "maxprepsLive": "Scott Brown",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "pisgah-dragons-dragons",
+    "name": "Pisgah Dragons",
+    "school": "Pisgah",
+    "afhs": "Michael Granberry",
+    "dataset": "Michael Granberry",
+    "maxprepsLive": "Michael Granberry",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "coahoma-county-panthers-panthers",
+    "name": "Coahoma County Panthers",
+    "school": "Coahoma County",
+    "afhs": "Jeremiah Brassell",
+    "dataset": "Jeremiah Brassell",
+    "maxprepsLive": "Jeremiah Brassell",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "port-gibson-blue-waves-blue-waves",
+    "name": "Port Gibson Blue Waves",
+    "school": "Port Gibson",
+    "afhs": "Harry Brown",
+    "dataset": "Harry Brown",
+    "maxprepsLive": "HARRY BROWN",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "independence-wildcats-wildcats",
+    "name": "Independence Wildcats",
+    "school": "Independence",
+    "afhs": "Kris Clanton",
+    "dataset": "Kris Clanton",
+    "maxprepsLive": "Kristopher Clanton",
+    "category": "spelling-variant",
+    "datasetStale": true
+  },
+  {
+    "id": "jefferson-davis-county-jaguars-jaguars",
+    "name": "Jefferson Davis County Jaguars",
+    "school": "Jefferson Davis County",
+    "afhs": "Lance Mancuso",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "st-patrick-fighting-irish-fighting-irish",
+    "name": "St. Patrick Fighting Irish",
+    "school": null,
+    "afhs": null,
+    "dataset": "Nate Encrapera",
+    "maxprepsLive": "Nathan Encrapera",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "jefferson-county-jchs-jchs",
+    "name": "Jefferson County Jchs",
+    "school": "Jefferson County",
+    "afhs": "Rod Holmes",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "southeast-lauderdale-tigers-tigers",
+    "name": "Southeast Lauderdale Tigers",
+    "school": "Southeast Lauderdale",
+    "afhs": "Linc Luker",
+    "dataset": "Charles Black",
+    "maxprepsLive": "Linc Luker",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "mclaurin-tigers-tigers",
+    "name": "McLaurin Tigers",
+    "school": "McLaurin",
+    "afhs": "Will Hedgepeth",
+    "dataset": "Will Hedgepeth",
+    "maxprepsLive": "Will Hedgepeth",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "mantachie-mustangs-mustangs",
+    "name": "Mantachie Mustangs",
+    "school": "Mantachie",
+    "afhs": "Ken Adams",
+    "dataset": "Ken Adams",
+    "maxprepsLive": "Ken Adams",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "st-andrews-episcopal-saints-saints",
+    "name": "St. Andrew's Episcopal Saints",
+    "school": null,
+    "afhs": null,
+    "dataset": "Chaning Ward",
+    "maxprepsLive": "Channing Ward",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "alcorn-central-golden-bears-golden-bears",
+    "name": "Alcorn Central Golden Bears",
+    "school": "Alcorn Central",
+    "afhs": "Marty Warren",
+    "dataset": "Marty Warren",
+    "maxprepsLive": "Marty Warren",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "st-stanislaus-rock-a-chaws-rock-a-chaws",
+    "name": "St. Stanislaus Rock-a-Chaws",
+    "school": null,
+    "afhs": null,
+    "dataset": "Tate Thigpen",
+    "maxprepsLive": "Evan Gay",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "amanda-elzy-panthers-panthers",
+    "name": "Amanda Elzy Panthers",
+    "school": null,
+    "afhs": null,
+    "dataset": "sheldon hodge",
+    "maxprepsLive": "Morris Bush",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "crystal-springs-tigers-tigers",
+    "name": "Crystal Springs Tigers",
+    "school": "Crystal Springs",
+    "afhs": "Tim McNair",
+    "dataset": "tim mcnair",
+    "maxprepsLive": "Kenneth Coleman",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "nettleton-tigers-tigers",
+    "name": "Nettleton Tigers",
+    "school": "Nettleton",
+    "afhs": "Larry Gann",
+    "dataset": "Larry Gann",
+    "maxprepsLive": "Chris Reno",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "holly-springs-hawks-hawks",
+    "name": "Holly Springs Hawks",
+    "school": "Holly Springs",
+    "afhs": "Clifford Brown",
+    "dataset": "Clifford Brown",
+    "maxprepsLive": "Clifford Brown",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "columbia-wildcats-wildcats",
+    "name": "Columbia Wildcats",
+    "school": "Columbia",
+    "afhs": "Chip Bilderback",
+    "dataset": "Chip Bilderback",
+    "maxprepsLive": "Chip Bilderback",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "kosciusko-whippets-whippets",
+    "name": "Kosciusko Whippets",
+    "school": "Kosciusko",
+    "afhs": "Casey Orr",
+    "dataset": "Casey Orr",
+    "maxprepsLive": "Casey Orr",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "pass-christian-pirates-pirates",
+    "name": "Pass Christian Pirates",
+    "school": "Pass Christian",
+    "afhs": "Jeff Stockstill",
+    "dataset": "Jeff Stockstill",
+    "maxprepsLive": "Jeff Stockstill",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "senatobia-warriors-warriors",
+    "name": "Senatobia Warriors",
+    "school": "Senatobia",
+    "afhs": "Carter Norris",
+    "dataset": "Carter Norris",
+    "maxprepsLive": "Carter Norris",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "clarksdale-wildcats-wildcats",
+    "name": "Clarksdale Wildcats",
+    "school": "Clarksdale",
+    "afhs": "Curtis Kemp",
+    "dataset": "John Taylor",
+    "maxprepsLive": "Curtis Kemp Jr.",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "mccomb-tigers-tigers",
+    "name": "McComb Tigers",
+    "school": "McComb",
+    "afhs": "Alden Foster",
+    "dataset": "Alden Foster",
+    "maxprepsLive": "Alden Foster",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "north-pontotoc-vikings-vikings",
+    "name": "North Pontotoc Vikings",
+    "school": "North Pontotoc",
+    "afhs": "Andy Crotwell",
+    "dataset": "Andy Crotwell",
+    "maxprepsLive": "Matt Lindsey",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "louisville-wildcats-wildcats",
+    "name": "Louisville Wildcats",
+    "school": "Louisville",
+    "afhs": "Tyrone Shorter",
+    "dataset": "Tyrone Shorter",
+    "maxprepsLive": "Tyrone Shorter",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "corinth-warriors-warriors",
+    "name": "Corinth Warriors",
+    "school": "Corinth",
+    "afhs": "Justin Dye",
+    "dataset": "Justin Dye",
+    "maxprepsLive": "Justin Dye",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "forest-bearcats-bearcats",
+    "name": "Forest Bearcats",
+    "school": "Forest",
+    "afhs": "Tobias Lofton",
+    "dataset": "Tobias Lofton",
+    "maxprepsLive": "Anjan karmacharya",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "leake-central-gators-gators",
+    "name": "Leake Central Gators",
+    "school": "Leake Central",
+    "afhs": "Ken Whitfield",
+    "dataset": "Curtis Gideon",
+    "maxprepsLive": "Sherrod Gideon",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "itawamba-agricultural-indians-indians",
+    "name": "Itawamba Agricultural Indians",
+    "school": null,
+    "afhs": null,
+    "dataset": "clint hoots",
+    "maxprepsLive": "clint hoots",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "new-albany-bulldogs-bulldogs",
+    "name": "New Albany Bulldogs",
+    "school": "New Albany",
+    "afhs": "Cody Stubblefield",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "shannon-red-raiders-red-raiders",
+    "name": "Shannon Red Raiders",
+    "school": "Shannon",
+    "afhs": "Ken Topps",
+    "dataset": "Ken Topps",
+    "maxprepsLive": "Ken Topps",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "poplarville-hornets-hornets",
+    "name": "Poplarville Hornets",
+    "school": "Poplarville",
+    "afhs": "Jay Beech",
+    "dataset": "Jay Beech",
+    "maxprepsLive": "Jay Beech",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "forrest-county-agricultural-aggies-aggies",
+    "name": "Forrest County Agricultural Aggies",
+    "school": null,
+    "afhs": null,
+    "dataset": "Larry Dolan",
+    "maxprepsLive": "Bo Russum",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "rosa-fort-lions-lions",
+    "name": "Rosa Fort Lions",
+    "school": "Rosa Fort",
+    "afhs": "DaQuon Nickson",
+    "dataset": "DaQuon Nickson",
+    "maxprepsLive": "DaQuon Nickson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "choctaw-central-ftng-warriors-ftng-warriors",
+    "name": "Choctaw Central Ftng Warriors",
+    "school": "Choctaw Central",
+    "afhs": "Edward Routh",
+    "dataset": "Edward Routh",
+    "maxprepsLive": "Edward Routh",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "newton-county-cougars-cougars",
+    "name": "Newton County Cougars",
+    "school": "Newton County",
+    "afhs": "Bobby Bass",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "greenwood-bulldogs-bulldogs",
+    "name": "Greenwood Bulldogs",
+    "school": "Greenwood",
+    "afhs": "Clinton Gatewood",
+    "dataset": "Cary Weaver",
+    "maxprepsLive": "Clinton Gatewood",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "morton-panthers-panthers",
+    "name": "Morton Panthers",
+    "school": "Morton",
+    "afhs": "Zach Jones",
+    "dataset": "Zach Jones",
+    "maxprepsLive": "Zach Jones",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "greene-county-wildcats-wildcats",
+    "name": "Greene County Wildcats",
+    "school": "Greene County",
+    "afhs": "Larry Dolan",
+    "dataset": "Larry Dolan",
+    "maxprepsLive": "Larry Dolan",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "richland-rangers-rangers",
+    "name": "Richland Rangers",
+    "school": "Richland",
+    "afhs": "Nathan Worrell",
+    "dataset": "Nathaniel Worrell",
+    "maxprepsLive": "Nathaniel Worrell",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "mendenhall-tigers-tigers",
+    "name": "Mendenhall Tigers",
+    "school": "Mendenhall",
+    "afhs": "Chucky Allen",
+    "dataset": "Monroe Allen Jr",
+    "maxprepsLive": "Monroe Allen Jr",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "west-lauderdale-knights-knights",
+    "name": "West Lauderdale Knights",
+    "school": "West Lauderdale",
+    "afhs": "Brock Clay",
+    "dataset": "Brock Clay",
+    "maxprepsLive": "Brock Clay",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "mooreville-troopers-troopers",
+    "name": "Mooreville Troopers",
+    "school": "Mooreville",
+    "afhs": "Jacob Massey",
+    "dataset": "Jimmy Young",
+    "maxprepsLive": "Jacob Massey",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "byhalia-indians-indians",
+    "name": "Byhalia Indians",
+    "school": "Byhalia",
+    "afhs": "Johnny Loper",
+    "dataset": "Reginald Davis",
+    "maxprepsLive": "Coach Davis",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "yazoo-city-indians-indians",
+    "name": "Yazoo City Indians",
+    "school": "Yazoo City",
+    "afhs": "Justin Washington",
+    "dataset": "Justin Washington",
+    "maxprepsLive": "Justin Washington",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "south-pike-eagles-eagles",
+    "name": "South Pike Eagles",
+    "school": "South Pike",
+    "afhs": "Tyrone Varnado",
+    "dataset": "Tyrone Varnado",
+    "maxprepsLive": "Tyrone Varnado",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "ripley-tigers-tigers",
+    "name": "Ripley Tigers",
+    "school": "Ripley",
+    "afhs": "Rico McDonald",
+    "dataset": "Rico McDonald",
+    "maxprepsLive": "Rico McDonald",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "amory-panthers-panthers",
+    "name": "Amory Panthers",
+    "school": "Amory",
+    "afhs": "Brooks Dampeer",
+    "dataset": "Brooks Dampeer",
+    "maxprepsLive": "Brooks Dampeer",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "houston-hilltoppers-hilltoppers",
+    "name": "Houston Hilltoppers",
+    "school": "Houston",
+    "afhs": "Chris Walters",
+    "dataset": "Chris Walters",
+    "maxprepsLive": "Chris Walters",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "northeast-lauderdale-trojans-trojans",
+    "name": "Northeast Lauderdale Trojans",
+    "school": "Northeast Lauderdale",
+    "afhs": "Kevin Gandy",
+    "dataset": "Gabe Hood",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "tishomingo-county-braves-braves",
+    "name": "Tishomingo County Braves",
+    "school": "Tishomingo County",
+    "afhs": "Cory Quinn",
+    "dataset": "TC BRAVES",
+    "maxprepsLive": "Richard Russo",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "raymond-rangers-rangers",
+    "name": "Raymond Rangers",
+    "school": "Raymond",
+    "afhs": "Michael Fields",
+    "dataset": "michael fields",
+    "maxprepsLive": "DeMorrius Jones",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "moss-point-tigers-tigers",
+    "name": "Moss Point Tigers",
+    "school": "Moss Point",
+    "afhs": "Derrick Jenkins",
+    "dataset": "Julius Bridges",
+    "maxprepsLive": "Derrick Jenkins",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "south-pontotoc-cougars-cougars",
+    "name": "South Pontotoc Cougars",
+    "school": "South Pontotoc",
+    "afhs": "Brandon Cutrer",
+    "dataset": "Brandon Cutrer",
+    "maxprepsLive": "Jonathan Beard",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "bay-tigers-tigers",
+    "name": "Bay Tigers",
+    "school": "Bay",
+    "afhs": "Katlan French",
+    "dataset": "Katlan French",
+    "maxprepsLive": "Katlan French",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "gentry-rams-rams",
+    "name": "Gentry Rams",
+    "school": "Gentry",
+    "afhs": "Derrick Farrow",
+    "dataset": "Derrick Farrow",
+    "maxprepsLive": "Derrick Farrow",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "lawrence-county-cougars-cougars",
+    "name": "Lawrence County Cougars",
+    "school": "Lawrence County",
+    "afhs": "Benjie Merchant",
+    "dataset": "Benjie Merchant",
+    "maxprepsLive": "Joshua Milton",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "west-point-green-wave-green-wave",
+    "name": "West Point Green Wave",
+    "school": "West Point",
+    "afhs": "Roger Burton",
+    "dataset": "Roger Burton",
+    "maxprepsLive": "Roger Burton",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "lanier-bulldogs-bulldogs",
+    "name": "Lanier Bulldogs",
+    "school": "Lanier",
+    "afhs": "Tommy Kelly",
+    "dataset": "Tommy Kelly",
+    "maxprepsLive": "Tommy Kelly",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "brookhaven-panthers-panthers",
+    "name": "Brookhaven Panthers",
+    "school": "Brookhaven",
+    "afhs": "Darien Dorsey",
+    "dataset": "Darien Dorsey",
+    "maxprepsLive": "Darien Dorsey",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "holmes-county-central-jaguars-jaguars",
+    "name": "Holmes County Central Jaguars",
+    "school": "Holmes County Central",
+    "afhs": "Vacant",
+    "dataset": "Marcus Rogers",
+    "maxprepsLive": "Alan Washington",
+    "category": "afhs-vacant",
+    "datasetStale": true
+  },
+  {
+    "id": "stone-tomcats-tomcats",
+    "name": "Stone Tomcats",
+    "school": "Stone",
+    "afhs": "Jacob Aycock",
+    "dataset": "Jacob Aycock",
+    "maxprepsLive": "Jacob Aycock",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "south-jones-braves-braves",
+    "name": "South Jones Braves",
+    "school": "South Jones",
+    "afhs": "Casey Herrington",
+    "dataset": "Casey Herrington",
+    "maxprepsLive": "Casey Herrington",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "cleveland-central-wolves-wolves",
+    "name": "Cleveland Central Wolves",
+    "school": "Cleveland Central",
+    "afhs": "Kendrick Woodard",
+    "dataset": "Kendrick Woodard",
+    "maxprepsLive": "Kendrick Woodard",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "new-hope-trojans-trojans",
+    "name": "New Hope Trojans",
+    "school": "New Hope",
+    "afhs": "Allen Glenn",
+    "dataset": "Allen Glenn",
+    "maxprepsLive": "Allen Glenn",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "sumrall-bobcats-bobcats",
+    "name": "Sumrall Bobcats",
+    "school": "Sumrall",
+    "afhs": "Drew Granger",
+    "dataset": "Drew Granger",
+    "maxprepsLive": "Drew Granger",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "pontotoc-warriors-warriors",
+    "name": "Pontotoc Warriors",
+    "school": "Pontotoc",
+    "afhs": "Baylor Dampeer",
+    "dataset": "Zach Matkins",
+    "maxprepsLive": "Baylor Dampeer",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "purvis-tornadoes-tornadoes",
+    "name": "Purvis Tornadoes",
+    "school": "Purvis",
+    "afhs": "Brad Hankins",
+    "dataset": "Perry Wheat",
+    "maxprepsLive": "BRAD HANKINS",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "lafayette-commodores-commodores",
+    "name": "Lafayette Commodores",
+    "school": "Lafayette",
+    "afhs": "Anthony Hart",
+    "dataset": "Michael Fair",
+    "maxprepsLive": "Anthony Hart",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "laurel-tornadoes-tornadoes",
+    "name": "Laurel Tornadoes",
+    "school": "Laurel",
+    "afhs": "Ryan Earnest",
+    "dataset": "Ryan Earnest",
+    "maxprepsLive": "Ryan Earnest",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "northeast-jones-tigers-tigers",
+    "name": "Northeast Jones Tigers",
+    "school": "Northeast Jones",
+    "afhs": "Ryan Milner",
+    "dataset": "Ryan Milner",
+    "maxprepsLive": "Ryan Milner",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "vicksburg-gators-gators",
+    "name": "Vicksburg Gators",
+    "school": "Vicksburg",
+    "afhs": "Christopher Lacey",
+    "dataset": "Christopher Lacey",
+    "maxprepsLive": "Christopher Lacey",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "florence-eagles-eagles",
+    "name": "Florence Eagles",
+    "school": "Florence",
+    "afhs": "Rod Davis",
+    "dataset": "Rod Davis",
+    "maxprepsLive": "Rod Davis",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "wayne-county-war-eagles-war-eagles",
+    "name": "Wayne County War Eagles",
+    "school": "Wayne County",
+    "afhs": "Vacant",
+    "dataset": "Jakob Johnson",
+    "maxprepsLive": "Jack Hankins",
+    "category": "afhs-vacant",
+    "datasetStale": true
+  },
+  {
+    "id": "natchez-bulldogs-bulldogs",
+    "name": "Natchez Bulldogs",
+    "school": "Natchez",
+    "afhs": "Steve Davis",
+    "dataset": "Steve Davis",
+    "maxprepsLive": "Steve Davis",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "vancleave-bulldogs-bulldogs",
+    "name": "Vancleave Bulldogs",
+    "school": "Vancleave",
+    "afhs": "Kevin Fant",
+    "dataset": "Derek Bakker",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "east-central-hornets-hornets",
+    "name": "East Central Hornets",
+    "school": "East Central",
+    "afhs": "Sam Huff",
+    "dataset": "Sam Huff",
+    "maxprepsLive": "Sam Huff",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "provine-rams-rams",
+    "name": "Provine Rams",
+    "school": "Provine",
+    "afhs": "Marcellus Speaks",
+    "dataset": "MARCELLUS SPEAKS",
+    "maxprepsLive": "Willie Williams",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "columbus-falcons-falcons",
+    "name": "Columbus Falcons",
+    "school": "Columbus",
+    "afhs": "Vacant",
+    "dataset": "Vaweiny 3",
+    "maxprepsLive": "Vaweiny 3",
+    "category": "afhs-vacant",
+    "datasetStale": false
+  },
+  {
+    "id": "north-pike-jaguars-jaguars",
+    "name": "North Pike Jaguars",
+    "school": "North Pike",
+    "afhs": "Vacant",
+    "dataset": "Paul Anderson",
+    "maxprepsLive": "Wes McCullough",
+    "category": "afhs-vacant",
+    "datasetStale": true
+  },
+  {
+    "id": "caledonia-cavaliers-cavaliers",
+    "name": "Caledonia Cavaliers",
+    "school": "Caledonia",
+    "afhs": "Vacant",
+    "dataset": "Michael Campbell",
+    "maxprepsLive": "Michael Campbell",
+    "category": "afhs-vacant",
+    "datasetStale": false
+  },
+  {
+    "id": "warren-central-vikings-vikings",
+    "name": "Warren Central Vikings",
+    "school": "Warren Central",
+    "afhs": "Josh Morgan",
+    "dataset": "Josh Morgan",
+    "maxprepsLive": "Josh Morgan",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "ridgeland-titans-titans",
+    "name": "Ridgeland Titans",
+    "school": "Ridgeland",
+    "afhs": "Todd McDaniel",
+    "dataset": "Todd McDaniel",
+    "maxprepsLive": "Bernard Euell",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "hattiesburg-tigers-tigers",
+    "name": "Hattiesburg Tigers",
+    "school": "Hattiesburg",
+    "afhs": "Kendall Lacey",
+    "dataset": "Kendall Lacey",
+    "maxprepsLive": "Kendall Lacey",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "picayune-maroon-tide-maroon-tide",
+    "name": "Picayune Maroon Tide",
+    "school": "Picayune",
+    "afhs": "Cody Stogner",
+    "dataset": "Cody Stogner",
+    "maxprepsLive": "Cody Stogner",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "terry-bulldogs-bulldogs",
+    "name": "Terry Bulldogs",
+    "school": "Terry",
+    "afhs": "Kris Thigpen",
+    "dataset": "Bryon Johnson",
+    "maxprepsLive": "Kris Thigpen",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "lake-cormorant",
+    "name": "Lake Cormorant",
+    "school": "Lake Cormorant",
+    "afhs": "Nick Nester",
+    "dataset": "Nick Nester",
+    "maxprepsLive": "Nick Nester",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "west-jones-mustangs-mustangs",
+    "name": "West Jones Mustangs",
+    "school": "West Jones",
+    "afhs": "Scott Pierson",
+    "dataset": "Cory D. Reynolds",
+    "maxprepsLive": "Scott Pierson",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "grenada-chargers-chargers",
+    "name": "Grenada Chargers",
+    "school": "Grenada",
+    "afhs": "Vacant",
+    "dataset": "James Kuhn",
+    "maxprepsLive": "Michael Fair",
+    "category": "afhs-vacant",
+    "datasetStale": true
+  },
+  {
+    "id": "south-panola-tigers-tigers",
+    "name": "South Panola Tigers",
+    "school": "South Panola",
+    "afhs": "Michael Fair",
+    "dataset": "Brooks Oakley",
+    "maxprepsLive": "Michael Fair",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "pearl-river-central-blue-devils-blue-devils",
+    "name": "Pearl River Central Blue Devils",
+    "school": "Pearl River Central",
+    "afhs": "John Feaster",
+    "dataset": "John Feaster",
+    "maxprepsLive": "John Feaster",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "pascagoula-panthers-panthers",
+    "name": "Pascagoula Panthers",
+    "school": "Pascagoula",
+    "afhs": "Zach Green",
+    "dataset": "Lewis Sims",
+    "maxprepsLive": "Zach Green",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "callaway-chargers-chargers",
+    "name": "Callaway Chargers",
+    "school": "Callaway",
+    "afhs": "Montra Edwards",
+    "dataset": "Montra Edwards",
+    "maxprepsLive": "Montra Edwards",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "center-hill-mustangs-mustangs",
+    "name": "Center Hill Mustangs",
+    "school": "Center Hill",
+    "afhs": "Mitchell Harville",
+    "dataset": "Mitchell Harville",
+    "maxprepsLive": "Mitchell Harville",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "greenville-hornets-hornets",
+    "name": "Greenville Hornets",
+    "school": "Greenville",
+    "afhs": "George Richardson III",
+    "dataset": "g richardson",
+    "maxprepsLive": "George Richardson",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "hancock-hawks-hawks",
+    "name": "Hancock Hawks",
+    "school": "Hancock",
+    "afhs": "Michael King",
+    "dataset": "Michael King",
+    "maxprepsLive": "Michael King",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "neshoba-central-rockets-rockets",
+    "name": "Neshoba Central Rockets",
+    "school": "Neshoba Central",
+    "afhs": "Shannon Ruffin",
+    "dataset": "Shannon Ruffin",
+    "maxprepsLive": "Shannon Ruffin",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "canton-tigers-tigers",
+    "name": "Canton Tigers",
+    "school": "Canton",
+    "afhs": "Dameon Brown",
+    "dataset": "Calvin Bolton",
+    "maxprepsLive": "Dameon Brown",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "gautier-gators-gators",
+    "name": "Gautier Gators",
+    "school": "Gautier",
+    "afhs": "Marcus High",
+    "dataset": "Marc High",
+    "maxprepsLive": "Marc High",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "saltillo-tigers-tigers",
+    "name": "Saltillo Tigers",
+    "school": "Saltillo",
+    "afhs": "Ryan Finch",
+    "dataset": "Chris Chazzerly",
+    "maxprepsLive": "Ryan Finch",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "jim-hill-tigers-tigers",
+    "name": "Jim Hill Tigers",
+    "school": null,
+    "afhs": null,
+    "dataset": "Zack Grady",
+    "maxprepsLive": "Zack Grady",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "george-county-rebels-rebels",
+    "name": "George County Rebels",
+    "school": "George County",
+    "afhs": "Kelly Causey",
+    "dataset": "Kelly Causey",
+    "maxprepsLive": "Kelly Causey",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "forest-hill-patriots-patriots",
+    "name": "Forest Hill Patriots",
+    "school": "Forest Hill",
+    "afhs": "Tony Fell",
+    "dataset": "Tony Fell",
+    "maxprepsLive": "Tony Fell",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "long-beach-bearcats-bearcats",
+    "name": "Long Beach Bearcats",
+    "school": "Long Beach",
+    "afhs": "Cody Finley",
+    "dataset": "Cody Finley",
+    "maxprepsLive": "Cody Finley",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "olive-branch-conquistadors-conquistadors",
+    "name": "Olive Branch Conquistadors",
+    "school": "Olive Branch",
+    "afhs": "Marcus Jamison",
+    "dataset": "Marcus Jamison",
+    "maxprepsLive": "Marcus Jamison",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "tupelo-golden-wave-golden-wave",
+    "name": "Tupelo Golden Wave",
+    "school": "Tupelo",
+    "afhs": "Ty Hardin",
+    "dataset": "Ty Hardin",
+    "maxprepsLive": "Ty Hardin",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "gulfport-admirals-admirals",
+    "name": "Gulfport Admirals",
+    "school": "Gulfport",
+    "afhs": "Blake Pennock",
+    "dataset": "Blake Pennock",
+    "maxprepsLive": "Blake Pennock",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "oxford-chargers-chargers",
+    "name": "Oxford Chargers",
+    "school": "Oxford",
+    "afhs": "Chris Cutcliffe",
+    "dataset": "Chris Cutcliffe",
+    "maxprepsLive": "Chris Cutcliffe",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "ocean-springs-greyhounds-greyhounds",
+    "name": "Ocean Springs Greyhounds",
+    "school": "Ocean Springs",
+    "afhs": "Jake Bramlett",
+    "dataset": "Jake Bramlett",
+    "maxprepsLive": "Jake Bramlett",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "diberville-warriors-warriors",
+    "name": "D'Iberville Warriors",
+    "school": "DIberville",
+    "afhs": "Josh Ladner",
+    "dataset": "Josh Ladner",
+    "maxprepsLive": "Josh Ladner",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "oak-grove-warriors-warriors",
+    "name": "Oak Grove Warriors",
+    "school": "Oak Grove",
+    "afhs": "Drew Causey",
+    "dataset": "Sam Thomas",
+    "maxprepsLive": "Drew Causey",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "horn-lake-eagles-eagles",
+    "name": "Horn Lake Eagles",
+    "school": "Horn Lake",
+    "afhs": "Dustin Hectorne",
+    "dataset": "Dustin Hectorne",
+    "maxprepsLive": "Dustin Hectorne",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "germantown-mavericks-mavericks",
+    "name": "Germantown Mavericks",
+    "school": "Germantown",
+    "afhs": "Russell Mitchell",
+    "dataset": "Russell Mitchell",
+    "maxprepsLive": "Russell Mitchell",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "st-martin-yellow-jackets-yellow-jackets",
+    "name": "St. Martin Yellow Jackets",
+    "school": null,
+    "afhs": null,
+    "dataset": "Woody Cagnolatti",
+    "maxprepsLive": "Woody Cagnolatti",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "hernando-tigers-tigers",
+    "name": "Hernando Tigers",
+    "school": "Hernando",
+    "afhs": "Steve McCann",
+    "dataset": "Steve McCann",
+    "maxprepsLive": "Colin Boone",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "petal-panthers-panthers",
+    "name": "Petal Panthers",
+    "school": "Petal",
+    "afhs": "Marcus Boyles",
+    "dataset": "Marcus Boyles",
+    "maxprepsLive": "Marcus Boyles",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "west-harrison-hurricanes-hurricanes",
+    "name": "West Harrison Hurricanes",
+    "school": "West Harrison",
+    "afhs": "Quincy Patrick",
+    "dataset": "Quincy Patrick",
+    "maxprepsLive": "Quincy Patrick",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "desoto-central-jaguars-jaguars",
+    "name": "DeSoto Central Jaguars",
+    "school": "DeSoto Central",
+    "afhs": "Will Wolfe",
+    "dataset": "Will Wolfe",
+    "maxprepsLive": "Will Wolfe",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "madison-central-jaguars-jaguars",
+    "name": "Madison Central Jaguars",
+    "school": "Madison Central",
+    "afhs": "Toby Collums",
+    "dataset": "Toby Collums",
+    "maxprepsLive": "Toby Collums",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "northwest-rankin-cougars-cougars",
+    "name": "Northwest Rankin Cougars",
+    "school": "Northwest Rankin",
+    "afhs": "Devin Cooper",
+    "dataset": "cole ramirez",
+    "maxprepsLive": "Devin Cooper",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "starkville-yellowjackets-yellowjackets",
+    "name": "Starkville Yellowjackets",
+    "school": "Starkville",
+    "afhs": "Brett Morgan",
+    "dataset": "Brett Morgan",
+    "maxprepsLive": "Brett Morgan",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "brandon-bulldogs-bulldogs",
+    "name": "Brandon Bulldogs",
+    "school": "Brandon",
+    "afhs": "Eugene Clinton",
+    "dataset": "Ayden Collier",
+    "maxprepsLive": "Ayden Collier",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "clinton-arrows-arrows",
+    "name": "Clinton Arrows",
+    "school": "Clinton",
+    "afhs": "Hamer Morgan",
+    "dataset": "Hamer Morgan",
+    "maxprepsLive": "Hamer Morgan",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "pearl-pirates-pirates",
+    "name": "Pearl Pirates",
+    "school": "Pearl",
+    "afhs": "Patrick Schoolar",
+    "dataset": "Justin Hunter",
+    "maxprepsLive": "Patrick Schoolar",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "southaven-chargers-chargers",
+    "name": "Southaven Chargers",
+    "school": "Southaven",
+    "afhs": "Randal Montgomery",
+    "dataset": "Randal Montgomery",
+    "maxprepsLive": "Randal Montgomery",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "biloxi-indians-indians",
+    "name": "Biloxi Indians",
+    "school": "Biloxi",
+    "afhs": "Eric Collier",
+    "dataset": "Jamey DuBose",
+    "maxprepsLive": "Eric Collier",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "lewisburg-patriots-patriots",
+    "name": "Lewisburg Patriots",
+    "school": "Lewisburg",
+    "afhs": "Rusty Cagle",
+    "dataset": "Rusty Cagle",
+    "maxprepsLive": "Rusty Cagle",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "meridian-wildcats-wildcats",
+    "name": "Meridian Wildcats",
+    "school": "Meridian",
+    "afhs": "Tony Vance",
+    "dataset": "Mac Mcphee",
+    "maxprepsLive": "Tony Vance",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "harrison-central-red-rebels-red-rebels",
+    "name": "Harrison Central Red Rebels",
+    "school": "Harrison Central",
+    "afhs": "Chris Fortenberry",
+    "dataset": "Chris Fortenberry",
+    "maxprepsLive": "Chris Fortenberry",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "murrah-mustangs-mustangs",
+    "name": "Murrah Mustangs",
+    "school": "Murrah",
+    "afhs": "Marcus Gibson",
+    "dataset": "Marcus Gibson",
+    "maxprepsLive": "Marcus Gibson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "centreville-academy-tigers-tigers",
+    "name": "Centreville Academy Tigers",
+    "school": "Centreville Academy",
+    "afhs": "Brian Stutzman",
+    "dataset": "Bill Hurst",
+    "maxprepsLive": "Bill Hurst",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "winona-christian-stars-stars",
+    "name": "Winona Christian Stars",
+    "school": "Winona Christian",
+    "afhs": "Ashley Kuhn",
+    "dataset": "Ashley Kuhn",
+    "maxprepsLive": "Ashley Kuhn",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "oak-hill-academy-raiders-raiders",
+    "name": "Oak Hill Academy Raiders",
+    "school": "Oak Hill Academy",
+    "afhs": "Tom Goode Jr.",
+    "dataset": "Elvina Emilia",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "lee-academy-colts-colts",
+    "name": "Lee Academy Colts",
+    "school": "Lee Academy",
+    "afhs": "Rick Johnston",
+    "dataset": "Bobby Spinks",
+    "maxprepsLive": "Rick Johnston",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "kirk-academy-raiders-raiders",
+    "name": "Kirk Academy Raiders",
+    "school": "Kirk Academy",
+    "afhs": "Perry Liles",
+    "dataset": "Justin Purvis",
+    "maxprepsLive": "Justin Purvis",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "winston-academy-patriots-patriots",
+    "name": "Winston Academy Patriots",
+    "school": "Winston Academy",
+    "afhs": "Pat Byrd",
+    "dataset": "Pat Byrd",
+    "maxprepsLive": "Pat Byrd",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "canton-academy-panthers-panthers",
+    "name": "Canton Academy Panthers",
+    "school": "Canton Academy",
+    "afhs": "Tripp McCarty",
+    "dataset": "Tripp McCarty",
+    "maxprepsLive": "Tripp McCarty",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "st-joseph-fighting-irish-fighting-irish",
+    "name": "St. Joseph Fighting Irish",
+    "school": null,
+    "afhs": null,
+    "dataset": "John Baker",
+    "maxprepsLive": "Chris Bunio",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "carroll-academy-rebels-rebels",
+    "name": "Carroll Academy Rebels",
+    "school": "Carroll Academy",
+    "afhs": "Tommy Acy",
+    "dataset": "Bo Milton",
+    "maxprepsLive": "Bo Milton",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "indianola-academy-colonels-colonels",
+    "name": "Indianola Academy Colonels",
+    "school": "Indianola Academy",
+    "afhs": "Tommy Nester",
+    "dataset": "Hayes Barrier",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "regents-lions-lions",
+    "name": "Regents Lions",
+    "school": "Regents",
+    "afhs": "JoJo Pearson",
+    "dataset": "JoJo Pearson",
+    "maxprepsLive": "JoJo Pearson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "north-delta-green-wave-green-wave",
+    "name": "North Delta Green Wave",
+    "school": "North Delta",
+    "afhs": "R.J. Hulse",
+    "dataset": "Jim Crowder",
+    "maxprepsLive": "RJ Hulse",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "manchester-academy-mavericks-mavericks",
+    "name": "Manchester Academy Mavericks",
+    "school": "Manchester Academy",
+    "afhs": "Allen Pavatte",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "discovery-christian",
+    "name": "Discovery Christian",
+    "school": "Discovery Christian",
+    "afhs": "David Parker",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "greenville-christian-saints-saints",
+    "name": "Greenville Christian Saints",
+    "school": "Greenville Christian",
+    "afhs": "Jon Reed McLendon",
+    "dataset": "Jon Reed McLendon",
+    "maxprepsLive": "Jon Reed McLendon",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "tri-county-academy-rebels-rebels",
+    "name": "Tri-County Academy Rebels",
+    "school": "Tri-County Academy",
+    "afhs": "Philip Wasson",
+    "dataset": "Philip Wasson",
+    "maxprepsLive": "Philip Wasson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "leake-academy-rebels-rebels",
+    "name": "Leake Academy Rebels",
+    "school": "Leake Academy",
+    "afhs": "Brian Pickens",
+    "dataset": "Brian Pickens",
+    "maxprepsLive": "Brian Pickens",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "washington-generals-generals",
+    "name": "Washington Generals",
+    "school": "Washington",
+    "afhs": "",
+    "dataset": "Todd Lott",
+    "maxprepsLive": "Todd Lott",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "adams-county-christian-rebels-rebels",
+    "name": "Adams County Christian Rebels",
+    "school": null,
+    "afhs": null,
+    "dataset": "David King",
+    "maxprepsLive": "David King",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "marshall-academy-patriots-patriots",
+    "name": "Marshall Academy Patriots",
+    "school": "Marshall Academy",
+    "afhs": "Jake Hill",
+    "dataset": "Chris Bunio",
+    "maxprepsLive": "Chris Bunio",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "columbia-academy-cougars-cougars",
+    "name": "Columbia Academy Cougars",
+    "school": "Columbia Academy",
+    "afhs": "Joey Hawkins",
+    "dataset": "Joey Hawkins",
+    "maxprepsLive": "Joey Hawkins",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "amite-school-center-rebels-rebels",
+    "name": "Amite School Center Rebels",
+    "school": null,
+    "afhs": null,
+    "dataset": "Bryce Bean",
+    "maxprepsLive": "Bryce Bean",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "rossville-christian-academy-wolves-wolves",
+    "name": "Rossville Christian Academy Wolves",
+    "school": null,
+    "afhs": null,
+    "dataset": "Brad Kimberlin",
+    "maxprepsLive": "Jared Meadows",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "central-hinds-academy-cougars-cougars",
+    "name": "Central Hinds Academy Cougars",
+    "school": "Central Hinds Academy",
+    "afhs": "Ben Durham",
+    "dataset": "Sam Vincent",
+    "maxprepsLive": "Ben Durham",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "wayne-academy-jaguars-jaguars",
+    "name": "Wayne Academy Jaguars",
+    "school": "Wayne Academy",
+    "afhs": "Todd Breland",
+    "dataset": "Chad Lofton",
+    "maxprepsLive": "Todd Breland",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "st-aloysius-flashes-flashes",
+    "name": "St. Aloysius Flashes",
+    "school": null,
+    "afhs": null,
+    "dataset": "Bubba Nettles",
+    "maxprepsLive": "John Baker",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "clinton-christian-academy-warriors-warriors",
+    "name": "Clinton Christian Academy Warriors",
+    "school": null,
+    "afhs": null,
+    "dataset": "David Parker",
+    "maxprepsLive": "David Parker",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "riverfield-academy-raiders-raiders",
+    "name": "Riverfield Academy Raiders",
+    "school": null,
+    "afhs": null,
+    "dataset": "Matthew Hogan",
+    "maxprepsLive": "ALLEN WISE",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "west-memphis-christian-black-knights-black-knights",
+    "name": "West Memphis Christian Black Knights",
+    "school": null,
+    "afhs": null,
+    "dataset": "Josh Horner",
+    "maxprepsLive": "Brad Kimberlin",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "bowling-green-buccaneers-buccaneers",
+    "name": "Bowling Green Buccaneers",
+    "school": null,
+    "afhs": null,
+    "dataset": "Dean King",
+    "maxprepsLive": "Jason Johnson",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "christian-collegiate-academy-conquerors-conquerors",
+    "name": "Christian Collegiate Academy Conquerors",
+    "school": "Christian Collegiate Academy",
+    "afhs": "Steve Spinks",
+    "dataset": "Steve Spinks",
+    "maxprepsLive": "Nicholas Jones",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "parklane-academy-pioneers-pioneers",
+    "name": "Parklane Academy Pioneers",
+    "school": "Parklane Academy",
+    "afhs": "Ron Rushing",
+    "dataset": "Brian Stutzman",
+    "maxprepsLive": "Ron Rushing",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "jackson-academy-raiders-raiders",
+    "name": "Jackson Academy Raiders",
+    "school": "Jackson Academy",
+    "afhs": "Dave Duggan",
+    "dataset": "David Duggan",
+    "maxprepsLive": "David Duggan",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "magnolia-heights-chiefs-chiefs",
+    "name": "Magnolia Heights Chiefs",
+    "school": "Magnolia Heights",
+    "afhs": "Russ Whiteside",
+    "dataset": "Jim Patterson",
+    "maxprepsLive": "Jim Patterson",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "madison-ridgeland-academy-patriots-patriots",
+    "name": "Madison-Ridgeland Academy Patriots",
+    "school": null,
+    "afhs": null,
+    "dataset": "Herbert Davis",
+    "maxprepsLive": "Herbert Davis",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "heritage-academy-patriots-patriots",
+    "name": "Heritage Academy Patriots",
+    "school": "Heritage Academy",
+    "afhs": "Tobias Smith",
+    "dataset": "Tobias Smith",
+    "maxprepsLive": "Tobias Smith",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "copiah-academy-colonels-colonels",
+    "name": "Copiah Academy Colonels",
+    "school": "Copiah Academy",
+    "afhs": "Lance Teasley",
+    "dataset": "Lance Teasley",
+    "maxprepsLive": "Skyler Parker",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "lamar-raiders-raiders",
+    "name": "Lamar Raiders",
+    "school": "Lamar",
+    "afhs": "Stacy Luker",
+    "dataset": "Jacob Land",
+    "maxprepsLive": "Stacy Luker",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "brookhaven-academy-cougars-cougars",
+    "name": "Brookhaven Academy Cougars",
+    "school": "Brookhaven Academy",
+    "afhs": "Ryan Ross",
+    "dataset": "Ron Rushing",
+    "maxprepsLive": "Ryan Ross",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "jackson-prep-patriots-patriots",
+    "name": "Jackson Prep Patriots",
+    "school": "Jackson Prep",
+    "afhs": "Doug Goodwin",
+    "dataset": "Doug Goodwin",
+    "maxprepsLive": "Doug Goodwin",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "starkville-academy-volunteers-volunteers",
+    "name": "Starkville Academy Volunteers",
+    "school": "Starkville Academy",
+    "afhs": "Jonathan Worrell",
+    "dataset": "Chase Nicholson",
+    "maxprepsLive": "Chase Nicholson",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "cathedral-green-wave-green-wave",
+    "name": "Cathedral Green Wave",
+    "school": "Cathedral",
+    "afhs": "Josh Loy",
+    "dataset": "Josh Loy",
+    "maxprepsLive": "Josh Loy",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "east-rankin-academy-patriots-patriots",
+    "name": "East Rankin Academy Patriots",
+    "school": "East Rankin Academy",
+    "afhs": "Teddy Dyess",
+    "dataset": "Teddy Dyess",
+    "maxprepsLive": "Teddy Dyess",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "hartfield-academy-hawks-hawks",
+    "name": "Hartfield Academy Hawks",
+    "school": "Hartfield Academy",
+    "afhs": "Craig Bowman",
+    "dataset": "Craig Bowman",
+    "maxprepsLive": "Craig Bowman",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "park-place-christian-academy-crusaders-crusaders",
+    "name": "Park Place Christian Academy Crusaders",
+    "school": null,
+    "afhs": null,
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "silliman-institute-wildcats-wildcats",
+    "name": "Silliman Institute Wildcats",
+    "school": null,
+    "afhs": null,
+    "dataset": "TJ Davis",
+    "maxprepsLive": "TJ Davis",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "bayou-academy-colts-colts",
+    "name": "Bayou Academy Colts",
+    "school": "Bayou Academy",
+    "afhs": "Bill Beck",
+    "dataset": "Bayou Academy",
+    "maxprepsLive": "Bayou Academy",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "pillow-academy-mustangs-mustangs",
+    "name": "Pillow Academy Mustangs",
+    "school": "Pillow Academy",
+    "afhs": "R.J. Davis",
+    "dataset": "TJ Davis",
+    "maxprepsLive": "TJ Davis",
+    "category": "spelling-variant",
+    "datasetStale": false
+  },
+  {
+    "id": "oak-forest-academy-yellowjackets-yellowjackets",
+    "name": "Oak Forest Academy Yellowjackets",
+    "school": null,
+    "afhs": null,
+    "dataset": "LeShawn Booker",
+    "maxprepsLive": "Jason Brabham",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "simpson-academy-cougars-cougars",
+    "name": "Simpson Academy Cougars",
+    "school": "Simpson Academy",
+    "afhs": "Todd Mangum",
+    "dataset": "Todd Mangum",
+    "maxprepsLive": "Todd Mangum",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "st-joseph-catholic-bruins-bruins",
+    "name": "St. Joseph Catholic Bruins",
+    "school": null,
+    "afhs": null,
+    "dataset": "Jason Moore",
+    "maxprepsLive": "Sam Vincent",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "river-oaks-mustangs-mustangs",
+    "name": "River Oaks Mustangs",
+    "school": null,
+    "afhs": null,
+    "dataset": "Bo Barton",
+    "maxprepsLive": "Bo Barton",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "humphreys-academy-rebels-rebels",
+    "name": "Humphreys Academy Rebels",
+    "school": "Humphreys Academy",
+    "afhs": "Jerry Wayne McLendon",
+    "dataset": "Jerry Mclendon",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "prairie-view-academy-spartans-spartans",
+    "name": "Prairie View Academy Spartans",
+    "school": null,
+    "afhs": null,
+    "dataset": "B Jason Taylor",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "newton-county-academy-generals-generals",
+    "name": "Newton County Academy Generals",
+    "school": "Newton County Academy",
+    "afhs": "Steve Nelson",
+    "dataset": "Steve Nelson",
+    "maxprepsLive": "Steve Nelson",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "claiborne-academy-rebels-rebels",
+    "name": "Claiborne Academy Rebels",
+    "school": null,
+    "afhs": null,
+    "dataset": "Jason Williams",
+    "maxprepsLive": "Chase Hammons",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "deer-creek-warriors-warriors",
+    "name": "Deer Creek Warriors",
+    "school": "Deer Creek",
+    "afhs": "Will Rodgers",
+    "dataset": "Will Rodgers",
+    "maxprepsLive": "Will Rodgers",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "benton-academy-raiders-raiders",
+    "name": "Benton Academy Raiders",
+    "school": "Benton Academy",
+    "afhs": "Bryan Dendy",
+    "dataset": "Hingle McCringleberry",
+    "maxprepsLive": "Bryan Dendy",
+    "category": "agree",
+    "datasetStale": true
+  },
+  {
+    "id": "christ-covenant",
+    "name": "Christ Covenant",
+    "school": "Christ Covenant",
+    "afhs": "Dan Boyce",
+    "dataset": "Dylan Hambick",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "sylva-bay-academy-saints-saints",
+    "name": "Sylva Bay Academy Saints",
+    "school": "Sylva Bay Academy",
+    "afhs": "Sam McDonald",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "bens-ford-christian-eagles-eagles",
+    "name": "Ben's Ford Christian Eagles",
+    "school": null,
+    "afhs": null,
+    "dataset": "Destin Pittman",
+    "maxprepsLive": "Destin Pittman",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "porters-chapel-academy-eagles-eagles",
+    "name": "Porter's Chapel Academy Eagles",
+    "school": "Porters Chapel Academy",
+    "afhs": "Blake Purvis",
+    "dataset": "Blake Purvis",
+    "maxprepsLive": "Blake Purvis",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "prentiss-christian-saints-saints",
+    "name": "Prentiss Christian Saints",
+    "school": "Prentiss Christian",
+    "afhs": "Terrell Luckey",
+    "dataset": "Terrell Luckey",
+    "maxprepsLive": "Terrell Luckey",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "delta-streets-academy-lions-lions",
+    "name": "Delta Streets Academy Lions",
+    "school": "Delta Streets Academy",
+    "afhs": "Bo Giordano",
+    "dataset": "Travis Upshaw",
+    "maxprepsLive": "Travis Upshaw",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "delta-academy-raiders-raiders",
+    "name": "Delta Academy Raiders",
+    "school": "Delta Academy",
+    "afhs": "Brandon Sims",
+    "dataset": "Brandon Sims",
+    "maxprepsLive": "Brandon Sims",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "north-sunflower-academy-rebels-rebels",
+    "name": "North Sunflower Academy Rebels",
+    "school": "North Sunflower Academy",
+    "afhs": "Trey Goss",
+    "dataset": "Ricky Smither",
+    "maxprepsLive": "Jacob Henley",
+    "category": "different-person",
+    "datasetStale": true
+  },
+  {
+    "id": "hillcrest-christian-cougars-cougars",
+    "name": "Hillcrest Christian Cougars",
+    "school": "Hillcrest Christian",
+    "afhs": "Corey Dodson",
+    "dataset": "Connor McDavid",
+    "maxprepsLive": "Connor McDavid",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "wilkinson-county-christian-academy-rams-rams",
+    "name": "Wilkinson County Christian Academy Rams",
+    "school": null,
+    "afhs": null,
+    "dataset": "Randy Holloway",
+    "maxprepsLive": "Randy Holloway",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "columbus-christian-academy-rams-rams",
+    "name": "Columbus Christian Academy rams",
+    "school": null,
+    "afhs": null,
+    "dataset": "Rusty Mason",
+    "maxprepsLive": "Marcus Davidson",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "desoto-thunderbirds-thunderbirds",
+    "name": "DeSoto Thunderbirds",
+    "school": null,
+    "afhs": null,
+    "dataset": "Noah Odom",
+    "maxprepsLive": "Noah Odom",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "briarfield-academy-rebels-rebels",
+    "name": "Briarfield Academy Rebels",
+    "school": null,
+    "afhs": null,
+    "dataset": "Beau Travis",
+    "maxprepsLive": "Beau Travis",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "tallulah-academy-trojans-trojans",
+    "name": "Tallulah Academy Trojans",
+    "school": null,
+    "afhs": null,
+    "dataset": "Bart Wood",
+    "maxprepsLive": "Ryan Williams",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "lee-academy-cougars-cougars",
+    "name": "Lee Academy Cougars",
+    "school": "Lee Academy",
+    "afhs": "Rick Johnston",
+    "dataset": "Mitch Smith",
+    "maxprepsLive": "Mitch Smith",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "calhoun-academy-cougars-cougars",
+    "name": "Calhoun Academy Cougars",
+    "school": "Calhoun Academy",
+    "afhs": "Benny Bryant",
+    "dataset": "Benny Bryant",
+    "maxprepsLive": "Benny Bryant",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "tunica-academy-blue-devils-blue-devils",
+    "name": "Tunica Academy Blue Devils",
+    "school": "Tunica Academy",
+    "afhs": "John Holcombe",
+    "dataset": "Noah Odom",
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  },
+  {
+    "id": "marvell-academy-eagles-eagles",
+    "name": "Marvell Academy Eagles",
+    "school": null,
+    "afhs": null,
+    "dataset": "Justin Cunningham",
+    "maxprepsLive": "Justin Cunningham",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "tensas-academy-chiefs-chiefs",
+    "name": "Tensas Academy Chiefs",
+    "school": null,
+    "afhs": null,
+    "dataset": "Stacy Sizemore",
+    "maxprepsLive": "Stacy Sizemore",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "heritage-christian-academy-warriors-warriors",
+    "name": "Heritage Christian Academy Warriors",
+    "school": "Heritage Christian Academy",
+    "afhs": "Trevor Lee",
+    "dataset": "Trevor Lee",
+    "maxprepsLive": "Trevor Lee",
+    "category": "agree",
+    "datasetStale": false
+  },
+  {
+    "id": "union-christian-academy-lions-lions",
+    "name": "Union Christian Academy Lions",
+    "school": null,
+    "afhs": null,
+    "dataset": "Trey Fulton",
+    "maxprepsLive": "Trey Fulton",
+    "category": "no-afhs-history",
+    "datasetStale": false
+  },
+  {
+    "id": "kemper-academy-rams-rams",
+    "name": "Kemper Academy Rams",
+    "school": "Kemper Academy",
+    "afhs": "Charlie McNeese",
+    "dataset": "Colt Kilpatrick",
+    "maxprepsLive": "Colt Kilpatrick",
+    "category": "different-person",
+    "datasetStale": false
+  },
+  {
+    "id": "riverdale-academy-rebels-rebels",
+    "name": "Riverdale Academy Rebels",
+    "school": null,
+    "afhs": null,
+    "dataset": "Nathan Edie",
+    "maxprepsLive": "Denver Williams",
+    "category": "no-afhs-history",
+    "datasetStale": true
+  },
+  {
+    "id": "hebron-christian-eagles-eagles",
+    "name": "Hebron Christian Eagles",
+    "school": "Hebron Christian",
+    "afhs": "Nate Carr",
+    "dataset": null,
+    "maxprepsLive": null,
+    "category": "no-maxpreps-name",
+    "datasetStale": false
+  }
+]

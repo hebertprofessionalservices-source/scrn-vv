@@ -38,12 +38,22 @@ export function sanitizeCoachName(raw: string | null, teamName: string): string 
   return name;
 }
 
-/** Display name for a team's head coach: AFHS history first, then MaxPreps. */
+/**
+ * Display name for a team's head coach: MaxPreps first, then AFHS history.
+ *
+ * MaxPreps is the source of record for who is currently coaching (client call,
+ * Aug 2026). It tracks in-season hires that AFHS publishes a season late —
+ * AFHS still had John Carr at Starkville after Brett Morgan took the job.
+ *
+ * The tradeoff is that MaxPreps also carries bad names, and sanitizeCoachName
+ * only catches the mechanical ones (team name, mascot, digits). A wrong name
+ * that merely looks like a name reaches the page.
+ */
 export function coachDisplayName(
   summary: CoachSummary | null,
   team: Team,
 ): string | null {
-  return summary?.name ?? sanitizeCoachName(team.headCoach, team.name);
+  return sanitizeCoachName(team.headCoach, team.name) ?? summary?.name ?? null;
 }
 
 export interface CoachView {

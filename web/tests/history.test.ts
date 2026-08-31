@@ -201,11 +201,19 @@ describe("sanitizeCoachName", () => {
     expect(sanitizeCoachName("Bayou Academy", "Bayou Academy Colts")).toBeNull();
     expect(sanitizeCoachName("TC BRAVES ", "Tishomingo County Braves")).toBeNull();
   });
-  it("coachDisplayName prefers the AFHS summary over MaxPreps", async () => {
+  it("coachDisplayName prefers MaxPreps over the AFHS summary", async () => {
     const { coachDisplayName } = await import("@/lib/matchup-history");
     const summary = { name: "Eugene Clinton", yearsAtSchool: 1, atSchool: { wins: 0, losses: 0, ties: 0 }, career: { wins: 0, losses: 0, ties: 0 } };
     const t = { name: "Brandon Bulldogs", headCoach: "Ayden Collier" } as never;
-    expect(coachDisplayName(summary, t)).toBe("Eugene Clinton");
+    // MaxPreps wins so in-season hires show up without waiting on AFHS.
+    // This pair is the known cost of that: Brandon confirmed Eugene Clinton is
+    // the real coach and Ayden Collier is a MaxPreps fabrication, and the
+    // policy still shows Collier. Flipping this back is a client decision.
+    expect(coachDisplayName(summary, t)).toBe("Ayden Collier");
+    // AFHS is the fallback when MaxPreps has nothing usable.
+    expect(coachDisplayName(summary, { name: "Brandon Bulldogs", headCoach: null } as never)).toBe("Eugene Clinton");
+    // Mechanical junk still falls through to AFHS rather than reaching a page.
+    expect(coachDisplayName(summary, { name: "Brandon Bulldogs", headCoach: "Brandon Bulldogs" } as never)).toBe("Eugene Clinton");
     expect(coachDisplayName(null, t)).toBe("Ayden Collier");
     expect(coachDisplayName(null, { name: "Brandon Bulldogs", headCoach: null } as never)).toBeNull();
   });
