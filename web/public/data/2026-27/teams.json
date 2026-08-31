@@ -8,7 +8,7 @@
     "district": "1A Region 3",
     "logoUrl": "/team-logos/calhoun-city-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
+      "primary": "#f07010",
       "secondary": null
     },
     "season": "2026-27",
@@ -65,8 +65,8 @@
     "district": "1A Region 6",
     "logoUrl": "/team-logos/simmons-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305090",
+      "secondary": "#709090"
     },
     "season": "2026-27",
     "record": {
@@ -122,8 +122,8 @@
     "district": "1A Region 1",
     "logoUrl": "/team-logos/biggersville-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -179,8 +179,8 @@
     "district": "1A Region 5",
     "logoUrl": "/team-logos/nanih-waiya-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503030",
+      "secondary": "#503050"
     },
     "season": "2026-27",
     "record": {
@@ -236,8 +236,8 @@
     "district": "1A Region 8",
     "logoUrl": "/team-logos/stringer-red-devils-red-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701030",
+      "secondary": "#907090"
     },
     "season": "2026-27",
     "record": {
@@ -293,7 +293,7 @@
     "district": "1A Region 6",
     "logoUrl": "/team-logos/south-delta-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
+      "primary": "#b01010",
       "secondary": null
     },
     "season": "2026-27",
@@ -350,8 +350,8 @@
     "district": "1A Region 4",
     "logoUrl": "/team-logos/leflore-county-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#705030"
     },
     "season": "2026-27",
     "record": {
@@ -407,8 +407,8 @@
     "district": "1A Region 7",
     "logoUrl": "/team-logos/bogue-chitto-bobcats-bobcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0b090",
+      "secondary": "#505030"
     },
     "season": "2026-27",
     "record": {
@@ -464,8 +464,8 @@
     "district": "1A Region 8",
     "logoUrl": "/team-logos/taylorsville-tartars-tartars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#109030",
+      "secondary": "#109070"
     },
     "season": "2026-27",
     "record": {
@@ -521,8 +521,8 @@
     "district": "1A Region 5",
     "logoUrl": "/team-logos/ethel-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0d070",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -578,8 +578,8 @@
     "district": "1A Region 2",
     "logoUrl": "/team-logos/byers-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0b010",
+      "secondary": "#105030"
     },
     "season": "2026-27",
     "record": {
@@ -635,8 +635,8 @@
     "district": "1A Region 4",
     "logoUrl": "/team-logos/west-tallahatchie-choctaws-choctaws.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105010",
+      "secondary": "#305010"
     },
     "season": "2026-27",
     "record": {
@@ -692,8 +692,8 @@
     "district": "1A Region 1",
     "logoUrl": "/team-logos/tupelo-christian-prep-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305070",
+      "secondary": "#f01030"
     },
     "season": "2026-27",
     "record": {
@@ -749,8 +749,8 @@
     "district": "1A Region 8",
     "logoUrl": "/team-logos/richton-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301010",
+      "secondary": "#9090b0"
     },
     "season": "2026-27",
     "record": {
@@ -806,8 +806,8 @@
     "district": "1A Region 2",
     "logoUrl": "/team-logos/falkner-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0d070",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -863,8 +863,8 @@
     "district": "1A Region 5",
     "logoUrl": "/team-logos/leake-county-alligators-alligators.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -917,8 +917,8 @@
     "district": "1A Region 3",
     "logoUrl": "/team-logos/west-lowndes-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#d09010"
     },
     "season": "2026-27",
     "record": {
@@ -974,8 +974,8 @@
     "district": "1A Region 3",
     "logoUrl": "/team-logos/okolona-chieftains-chieftains.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0f0b0",
+      "secondary": "#f0d0b0"
     },
     "season": "2026-27",
     "record": {
@@ -1031,7 +1031,7 @@
     "district": "1A Region 5",
     "logoUrl": "/team-logos/noxapater-tigers-tigers.png",
     "colors": {
-      "primary": null,
+      "primary": "#b01030",
       "secondary": null
     },
     "season": "2026-27",
@@ -1145,8 +1145,8 @@
     "district": "1A Region 5",
     "logoUrl": "/team-logos/mcadams-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -1202,8 +1202,8 @@
     "district": "1A Region 2",
     "logoUrl": "/team-logos/potts-camp-cardinals-cardinals.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f01030",
+      "secondary": "#f0b030"
     },
     "season": "2026-27",
     "record": {
@@ -1373,8 +1373,8 @@
     "district": "1A Region 1",
     "logoUrl": "/team-logos/smithville-seminoles-seminoles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503030",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -1430,8 +1430,8 @@
     "district": "1A Region 6",
     "logoUrl": "/team-logos/shaw-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -1544,8 +1544,8 @@
     "district": "1A Region 4",
     "logoUrl": "/team-logos/coffeeville-pirates-pirates.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#f0b070"
     },
     "season": "2026-27",
     "record": {
@@ -1601,8 +1601,8 @@
     "district": "1A Region 3",
     "logoUrl": "/team-logos/vardaman-rams-rams.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#709090"
     },
     "season": "2026-27",
     "record": {
@@ -1658,8 +1658,8 @@
     "district": "1A Region 8",
     "logoUrl": "/team-logos/resurrection-catholic-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#d0d070"
     },
     "season": "2026-27",
     "record": {
@@ -1715,8 +1715,8 @@
     "district": "1A Region 6",
     "logoUrl": "/team-logos/west-bolivar-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503010",
+      "secondary": "#505010"
     },
     "season": "2026-27",
     "record": {
@@ -1772,7 +1772,7 @@
     "district": "1A Region 7",
     "logoUrl": "/team-logos/west-lincoln-bears-bears.png",
     "colors": {
-      "primary": null,
+      "primary": "#309030",
       "secondary": null
     },
     "season": "2026-27",
@@ -1829,8 +1829,8 @@
     "district": "1A Region 6",
     "logoUrl": "/team-logos/riverside-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#d01030"
     },
     "season": "2026-27",
     "record": {
@@ -1886,8 +1886,8 @@
     "district": "1A Region 2",
     "logoUrl": "/team-logos/ashland-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#9090d0"
     },
     "season": "2026-27",
     "record": {
@@ -1943,8 +1943,8 @@
     "district": "1A Region 4",
     "logoUrl": "/team-logos/french-camp-academy-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1090b0",
+      "secondary": "#1030d0"
     },
     "season": "2026-27",
     "record": {
@@ -2000,8 +2000,8 @@
     "district": "1A Region 1",
     "logoUrl": "/team-logos/thrasher-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b01010",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -2054,8 +2054,8 @@
     "district": "2A Region 4",
     "logoUrl": "/team-logos/east-webster-wolverines-wolverines.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -2111,8 +2111,8 @@
     "district": "2A Region 7",
     "logoUrl": "/team-logos/wesson-cobras-cobras.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -2168,8 +2168,8 @@
     "district": "2A Region 3",
     "logoUrl": "/team-logos/north-side-gators-gators.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#109030",
+      "secondary": "#103090"
     },
     "season": "2026-27",
     "record": {
@@ -2225,8 +2225,8 @@
     "district": "2A Region 1",
     "logoUrl": "/team-logos/baldwyn-bearcats-bearcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -2282,8 +2282,8 @@
     "district": "2A Region 6",
     "logoUrl": "/team-logos/heidelberg-oilers-oilers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1090d0",
+      "secondary": "#d09030"
     },
     "season": "2026-27",
     "record": {
@@ -2339,8 +2339,8 @@
     "district": "2A Region 2",
     "logoUrl": "/team-logos/water-valley-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303030",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -2396,8 +2396,8 @@
     "district": "2A Region 7",
     "logoUrl": "/team-logos/amite-county-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0d010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -2453,8 +2453,8 @@
     "district": "2A Region 2",
     "logoUrl": "/team-logos/myrtle-hawks-hawks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f03030",
+      "secondary": "#305030"
     },
     "season": "2026-27",
     "record": {
@@ -2510,8 +2510,8 @@
     "district": "2A Region 7",
     "logoUrl": "/team-logos/loyd-star-hornets-hornets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03050",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -2567,8 +2567,8 @@
     "district": "2A Region 6",
     "logoUrl": "/team-logos/clarkdale-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -2624,8 +2624,8 @@
     "district": "2A Region 6",
     "logoUrl": "/team-logos/bay-springs-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301010",
+      "secondary": "#301030"
     },
     "season": "2026-27",
     "record": {
@@ -2681,8 +2681,8 @@
     "district": "2A Region 3",
     "logoUrl": "/team-logos/charleston-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0d030",
+      "secondary": "#305010"
     },
     "season": "2026-27",
     "record": {
@@ -2738,8 +2738,8 @@
     "district": "2A Region 1",
     "logoUrl": "/team-logos/hamilton-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#705030",
+      "secondary": "#707030"
     },
     "season": "2026-27",
     "record": {
@@ -2795,8 +2795,8 @@
     "district": "2A Region 1",
     "logoUrl": "/team-logos/hatley-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#101050"
     },
     "season": "2026-27",
     "record": {
@@ -2909,8 +2909,8 @@
     "district": "2A Region 2",
     "logoUrl": "/team-logos/bruce-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -2966,8 +2966,8 @@
     "district": "2A Region 5",
     "logoUrl": "/team-logos/lake-hornets-hornets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#307030",
+      "secondary": "#509070"
     },
     "season": "2026-27",
     "record": {
@@ -3023,8 +3023,8 @@
     "district": "2A Region 8",
     "logoUrl": "/team-logos/east-marion-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#b01010"
     },
     "season": "2026-27",
     "record": {
@@ -3080,8 +3080,8 @@
     "district": "2A Region 6",
     "logoUrl": "/team-logos/mize-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1070d0",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -3137,8 +3137,8 @@
     "district": "2A Region 4",
     "logoUrl": "/team-logos/kemper-county-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1030d0",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -3194,8 +3194,8 @@
     "district": "2A Region 5",
     "logoUrl": "/team-logos/pelahatchie-chiefs-chiefs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -3251,8 +3251,8 @@
     "district": "2A Region 8",
     "logoUrl": "/team-logos/north-forrest-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#103070"
     },
     "season": "2026-27",
     "record": {
@@ -3308,8 +3308,8 @@
     "district": "2A Region 8",
     "logoUrl": "/team-logos/sacred-heart-crusaders-crusaders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1030d0",
+      "secondary": "#70b0d0"
     },
     "season": "2026-27",
     "record": {
@@ -3365,8 +3365,8 @@
     "district": "2A Region 4",
     "logoUrl": "/team-logos/velma-jackson-falcons-falcons.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#f0b050"
     },
     "season": "2026-27",
     "record": {
@@ -3422,8 +3422,8 @@
     "district": "2A Region 3",
     "logoUrl": "/team-logos/j-z-george-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#905070"
     },
     "season": "2026-27",
     "record": {
@@ -3479,8 +3479,8 @@
     "district": "2A Region 2",
     "logoUrl": "/team-logos/strayhorn-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#d01010"
     },
     "season": "2026-27",
     "record": {
@@ -3536,8 +3536,8 @@
     "district": "2A Region 3",
     "logoUrl": "/team-logos/leland-cubs-cubs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#901010",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -3593,8 +3593,8 @@
     "district": "2A Region 8",
     "logoUrl": "/team-logos/collins-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#301030"
     },
     "season": "2026-27",
     "record": {
@@ -3650,8 +3650,8 @@
     "district": "2A Region 5",
     "logoUrl": "/team-logos/scott-central-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#d090b0"
     },
     "season": "2026-27",
     "record": {
@@ -3707,7 +3707,7 @@
     "district": "2A Region 1",
     "logoUrl": "/team-logos/walnut-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
+      "primary": "#d01010",
       "secondary": null
     },
     "season": "2026-27",
@@ -3764,8 +3764,8 @@
     "district": "2A Region 8",
     "logoUrl": "/team-logos/perry-central-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -3878,8 +3878,8 @@
     "district": "2A Region 5",
     "logoUrl": "/team-logos/newton-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1050b0",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -3935,7 +3935,7 @@
     "district": "2A Region 4",
     "logoUrl": "/team-logos/philadelphia-tornadoes-tornadoes.png",
     "colors": {
-      "primary": null,
+      "primary": "#d01010",
       "secondary": null
     },
     "season": "2026-27",
@@ -3992,8 +3992,8 @@
     "district": "2A Region 5",
     "logoUrl": "/team-logos/puckett-wolves-wolves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501010",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -4049,8 +4049,8 @@
     "district": "2A Region 7",
     "logoUrl": "/team-logos/enterprise-yellowjackets-yellowjackets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -4106,8 +4106,8 @@
     "district": "2A Region 7",
     "logoUrl": "/team-logos/wilkinson-county-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0b010",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -4163,8 +4163,8 @@
     "district": "2A Region 2",
     "logoUrl": "/team-logos/east-union-urchins-urchins.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b07030",
+      "secondary": "#503030"
     },
     "season": "2026-27",
     "record": {
@@ -4220,8 +4220,8 @@
     "district": "2A Region 3",
     "logoUrl": "/team-logos/palmer-dragons-dragons.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -4277,8 +4277,8 @@
     "district": "3A Region 6",
     "logoUrl": "/team-logos/raleigh-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701030",
+      "secondary": "#b07050"
     },
     "season": "2026-27",
     "record": {
@@ -4334,8 +4334,8 @@
     "district": "3A Region 5",
     "logoUrl": "/team-logos/union-yellowjackets-yellowjackets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0f010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -4391,8 +4391,8 @@
     "district": "3A Region 4",
     "logoUrl": "/team-logos/noxubee-county-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#d090b0"
     },
     "season": "2026-27",
     "record": {
@@ -4448,8 +4448,8 @@
     "district": "3A Region 1",
     "logoUrl": "/team-logos/kossuth-aggies-aggies.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -4505,8 +4505,8 @@
     "district": "3A Region 8",
     "logoUrl": "/team-logos/presbyterian-christian-bobcats-bobcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1070d0",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -4562,8 +4562,8 @@
     "district": "3A Region 8",
     "logoUrl": "/team-logos/west-marion-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b01010",
+      "secondary": "#d0b090"
     },
     "season": "2026-27",
     "record": {
@@ -4619,8 +4619,8 @@
     "district": "3A Region 1",
     "logoUrl": "/team-logos/belmont-cardinals-cardinals.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#503070"
     },
     "season": "2026-27",
     "record": {
@@ -4676,7 +4676,7 @@
     "district": "3A Region 4",
     "logoUrl": "/team-logos/winona-tigers-tigers.png",
     "colors": {
-      "primary": null,
+      "primary": "#f01010",
       "secondary": null
     },
     "season": "2026-27",
@@ -4733,8 +4733,8 @@
     "district": "3A Region 6",
     "logoUrl": "/team-logos/magee-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503030",
+      "secondary": "#b0d0f0"
     },
     "season": "2026-27",
     "record": {
@@ -4790,8 +4790,8 @@
     "district": "3A Region 7",
     "logoUrl": "/team-logos/hazlehurst-indians-indians.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#905070"
     },
     "season": "2026-27",
     "record": {
@@ -4847,8 +4847,8 @@
     "district": "3A Region 4",
     "logoUrl": "/team-logos/choctaw-county-chargers-chargers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#901010"
     },
     "season": "2026-27",
     "record": {
@@ -4904,8 +4904,8 @@
     "district": "3A Region 4",
     "logoUrl": "/team-logos/aberdeen-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303050",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -4961,8 +4961,8 @@
     "district": "3A Region 6",
     "logoUrl": "/team-logos/seminary-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301010",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -5018,8 +5018,8 @@
     "district": "3A Region 3",
     "logoUrl": "/team-logos/humphreys-county-cowboys-cowboys.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#9090d0"
     },
     "season": "2026-27",
     "record": {
@@ -5072,8 +5072,8 @@
     "district": "3A Region 5",
     "logoUrl": "/team-logos/quitman-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#507070"
     },
     "season": "2026-27",
     "record": {
@@ -5186,8 +5186,8 @@
     "district": "3A Region 7",
     "logoUrl": "/team-logos/franklin-county-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101090",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -5243,8 +5243,8 @@
     "district": "3A Region 3",
     "logoUrl": "/team-logos/yazoo-county-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#101050"
     },
     "season": "2026-27",
     "record": {
@@ -5300,8 +5300,8 @@
     "district": "3A Region 3",
     "logoUrl": "/team-logos/obannon-greenwaves-greenwaves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#907070",
+      "secondary": "#907050"
     },
     "season": "2026-27",
     "record": {
@@ -5357,8 +5357,8 @@
     "district": "3A Region 3",
     "logoUrl": "/team-logos/edwards-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703010",
+      "secondary": "#507090"
     },
     "season": "2026-27",
     "record": {
@@ -5414,8 +5414,8 @@
     "district": "3A Region 2",
     "logoUrl": "/team-logos/north-panola-fightn-cougars-fightn-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#d0b090"
     },
     "season": "2026-27",
     "record": {
@@ -5471,8 +5471,8 @@
     "district": "3A Region 1",
     "logoUrl": "/team-logos/booneville-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305090",
+      "secondary": "#f0b050"
     },
     "season": "2026-27",
     "record": {
@@ -5528,8 +5528,8 @@
     "district": "3A Region 5",
     "logoUrl": "/team-logos/pisgah-dragons-dragons.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#507050",
+      "secondary": "#507070"
     },
     "season": "2026-27",
     "record": {
@@ -5585,8 +5585,8 @@
     "district": "3A Region 2",
     "logoUrl": "/team-logos/coahoma-county-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f01010",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -5642,8 +5642,8 @@
     "district": "3A Region 7",
     "logoUrl": "/team-logos/port-gibson-blue-waves-blue-waves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1050b0",
+      "secondary": "#105050"
     },
     "season": "2026-27",
     "record": {
@@ -5699,8 +5699,8 @@
     "district": "3A Region 2",
     "logoUrl": "/team-logos/independence-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01030",
+      "secondary": "#503050"
     },
     "season": "2026-27",
     "record": {
@@ -5756,8 +5756,8 @@
     "district": "3A Region 6",
     "logoUrl": "/team-logos/jefferson-davis-county-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1030b0",
+      "secondary": "#305050"
     },
     "season": "2026-27",
     "record": {
@@ -5813,8 +5813,8 @@
     "district": "3A Region 8",
     "logoUrl": "/team-logos/st-patrick-fighting-irish-fighting-irish.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105030",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -5867,8 +5867,8 @@
     "district": "3A Region 7",
     "logoUrl": "/team-logos/jefferson-county-jchs-jchs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -5924,7 +5924,7 @@
     "district": "3A Region 5",
     "logoUrl": "/team-logos/southeast-lauderdale-tigers-tigers.png",
     "colors": {
-      "primary": null,
+      "primary": "#f0d010",
       "secondary": null
     },
     "season": "2026-27",
@@ -5981,8 +5981,8 @@
     "district": "3A Region 6",
     "logoUrl": "/team-logos/mclaurin-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#107030",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -6038,8 +6038,8 @@
     "district": "3A Region 1",
     "logoUrl": "/team-logos/mantachie-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010d0",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -6095,8 +6095,8 @@
     "district": "3A Region 5",
     "logoUrl": "/team-logos/st-andrews-episcopal-saints-saints.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105070",
+      "secondary": "#707090"
     },
     "season": "2026-27",
     "record": {
@@ -6152,8 +6152,8 @@
     "district": "3A Region 1",
     "logoUrl": "/team-logos/alcorn-central-golden-bears-golden-bears.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501070",
+      "secondary": "#f09010"
     },
     "season": "2026-27",
     "record": {
@@ -6209,8 +6209,8 @@
     "district": "3A Region 8",
     "logoUrl": "/team-logos/st-stanislaus-rock-a-chaws-rock-a-chaws.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b01010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -6266,8 +6266,8 @@
     "district": "3A Region 3",
     "logoUrl": "/team-logos/amanda-elzy-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#3050b0",
+      "secondary": "#107010"
     },
     "season": "2026-27",
     "record": {
@@ -6323,8 +6323,8 @@
     "district": "3A Region 7",
     "logoUrl": "/team-logos/crystal-springs-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010f0",
+      "secondary": "#90b0d0"
     },
     "season": "2026-27",
     "record": {
@@ -6380,8 +6380,8 @@
     "district": "3A Region 4",
     "logoUrl": "/team-logos/nettleton-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01030",
+      "secondary": "#101050"
     },
     "season": "2026-27",
     "record": {
@@ -6437,8 +6437,8 @@
     "district": "3A Region 2",
     "logoUrl": "/team-logos/holly-springs-hawks-hawks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301030",
+      "secondary": "#907010"
     },
     "season": "2026-27",
     "record": {
@@ -6494,8 +6494,8 @@
     "district": "4A Region 7",
     "logoUrl": "/team-logos/columbia-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#d0b030"
     },
     "season": "2026-27",
     "record": {
@@ -6551,8 +6551,8 @@
     "district": "4A Region 4",
     "logoUrl": "/team-logos/kosciusko-whippets-whippets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#703050"
     },
     "season": "2026-27",
     "record": {
@@ -6608,8 +6608,8 @@
     "district": "4A Region 8",
     "logoUrl": "/team-logos/pass-christian-pirates-pirates.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -6665,8 +6665,8 @@
     "district": "4A Region 3",
     "logoUrl": "/team-logos/senatobia-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -6722,8 +6722,8 @@
     "district": "4A Region 3",
     "logoUrl": "/team-logos/clarksdale-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1030d0",
+      "secondary": "#305050"
     },
     "season": "2026-27",
     "record": {
@@ -6779,8 +6779,8 @@
     "district": "4A Region 7",
     "logoUrl": "/team-logos/mccomb-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -6836,8 +6836,8 @@
     "district": "4A Region 1",
     "logoUrl": "/team-logos/north-pontotoc-vikings-vikings.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#f07030"
     },
     "season": "2026-27",
     "record": {
@@ -6893,8 +6893,8 @@
     "district": "4A Region 4",
     "logoUrl": "/team-logos/louisville-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -6950,7 +6950,7 @@
     "district": "4A Region 1",
     "logoUrl": "/team-logos/corinth-warriors-warriors.png",
     "colors": {
-      "primary": null,
+      "primary": "#d01030",
       "secondary": null
     },
     "season": "2026-27",
@@ -7007,8 +7007,8 @@
     "district": "4A Region 6",
     "logoUrl": "/team-logos/forest-bearcats-bearcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -7064,8 +7064,8 @@
     "district": "4A Region 5",
     "logoUrl": "/team-logos/leake-central-gators-gators.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f09010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -7121,8 +7121,8 @@
     "district": "4A Region 2",
     "logoUrl": "/team-logos/itawamba-agricultural-indians-indians.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -7178,8 +7178,8 @@
     "district": "4A Region 1",
     "logoUrl": "/team-logos/new-albany-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501010",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -7235,8 +7235,8 @@
     "district": "4A Region 2",
     "logoUrl": "/team-logos/shannon-red-raiders-red-raiders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701030",
+      "secondary": "#505010"
     },
     "season": "2026-27",
     "record": {
@@ -7292,8 +7292,8 @@
     "district": "4A Region 7",
     "logoUrl": "/team-logos/poplarville-hornets-hornets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b09050",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -7349,8 +7349,8 @@
     "district": "4A Region 8",
     "logoUrl": "/team-logos/forrest-county-agricultural-aggies-aggies.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301010",
+      "secondary": "#301030"
     },
     "season": "2026-27",
     "record": {
@@ -7406,8 +7406,8 @@
     "district": "4A Region 3",
     "logoUrl": "/team-logos/rosa-fort-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0d050",
+      "secondary": "#d03030"
     },
     "season": "2026-27",
     "record": {
@@ -7463,8 +7463,8 @@
     "district": "4A Region 5",
     "logoUrl": "/team-logos/choctaw-central-ftng-warriors-ftng-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#907050"
     },
     "season": "2026-27",
     "record": {
@@ -7520,8 +7520,8 @@
     "district": "4A Region 5",
     "logoUrl": "/team-logos/newton-county-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f09010",
+      "secondary": "#1050b0"
     },
     "season": "2026-27",
     "record": {
@@ -7577,8 +7577,8 @@
     "district": "4A Region 4",
     "logoUrl": "/team-logos/greenwood-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -7634,8 +7634,8 @@
     "district": "4A Region 6",
     "logoUrl": "/team-logos/morton-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305050",
+      "secondary": "#305070"
     },
     "season": "2026-27",
     "record": {
@@ -7748,8 +7748,8 @@
     "district": "4A Region 6",
     "logoUrl": "/team-logos/richland-rangers-rangers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f01010",
+      "secondary": "#101070"
     },
     "season": "2026-27",
     "record": {
@@ -7805,8 +7805,8 @@
     "district": "4A Region 6",
     "logoUrl": "/team-logos/mendenhall-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b09030",
+      "secondary": "#503030"
     },
     "season": "2026-27",
     "record": {
@@ -7862,8 +7862,8 @@
     "district": "4A Region 5",
     "logoUrl": "/team-logos/west-lauderdale-knights-knights.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f03030",
+      "secondary": "#505030"
     },
     "season": "2026-27",
     "record": {
@@ -7919,8 +7919,8 @@
     "district": "4A Region 2",
     "logoUrl": "/team-logos/mooreville-troopers-troopers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -7976,8 +7976,8 @@
     "district": "4A Region 3",
     "logoUrl": "/team-logos/byhalia-indians-indians.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#501010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -8033,8 +8033,8 @@
     "district": "4A Region 4",
     "logoUrl": "/team-logos/yazoo-city-indians-indians.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03010",
+      "secondary": "#d0d030"
     },
     "season": "2026-27",
     "record": {
@@ -8087,8 +8087,8 @@
     "district": "4A Region 7",
     "logoUrl": "/team-logos/south-pike-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#309030",
+      "secondary": "#d0d090"
     },
     "season": "2026-27",
     "record": {
@@ -8201,8 +8201,8 @@
     "district": "4A Region 2",
     "logoUrl": "/team-logos/amory-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0d070",
+      "secondary": "#705030"
     },
     "season": "2026-27",
     "record": {
@@ -8258,8 +8258,8 @@
     "district": "4A Region 2",
     "logoUrl": "/team-logos/houston-hilltoppers-hilltoppers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -8315,8 +8315,8 @@
     "district": "4A Region 5",
     "logoUrl": "/team-logos/northeast-lauderdale-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#b07090"
     },
     "season": "2026-27",
     "record": {
@@ -8372,8 +8372,8 @@
     "district": "4A Region 1",
     "logoUrl": "/team-logos/tishomingo-county-braves-braves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#305070"
     },
     "season": "2026-27",
     "record": {
@@ -8429,8 +8429,8 @@
     "district": "4A Region 6",
     "logoUrl": "/team-logos/raymond-rangers-rangers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#503070"
     },
     "season": "2026-27",
     "record": {
@@ -8486,8 +8486,8 @@
     "district": "4A Region 8",
     "logoUrl": "/team-logos/moss-point-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d07010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -8543,8 +8543,8 @@
     "district": "4A Region 1",
     "logoUrl": "/team-logos/south-pontotoc-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03030",
+      "secondary": "#707030"
     },
     "season": "2026-27",
     "record": {
@@ -8600,7 +8600,7 @@
     "district": "4A Region 8",
     "logoUrl": "/team-logos/bay-tigers-tigers.png",
     "colors": {
-      "primary": null,
+      "primary": "#103090",
       "secondary": null
     },
     "season": "2026-27",
@@ -8714,8 +8714,8 @@
     "district": "4A Region 7",
     "logoUrl": "/team-logos/lawrence-county-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#903030",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -8771,8 +8771,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/west-point-green-wave-green-wave.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#107030",
+      "secondary": "#507070"
     },
     "season": "2026-27",
     "record": {
@@ -8828,8 +8828,8 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/lanier-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503010",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -8885,8 +8885,8 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/brookhaven-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01030",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -8942,8 +8942,8 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/holmes-county-central-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -8999,8 +8999,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/stone-tomcats-tomcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -9056,8 +9056,8 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/south-jones-braves-braves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f03030",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -9113,8 +9113,8 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/cleveland-central-wolves-wolves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503090",
+      "secondary": "#301030"
     },
     "season": "2026-27",
     "record": {
@@ -9170,8 +9170,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/new-hope-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d09010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -9227,7 +9227,7 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/sumrall-bobcats-bobcats.png",
     "colors": {
-      "primary": null,
+      "primary": "#1010f0",
       "secondary": null
     },
     "season": "2026-27",
@@ -9284,8 +9284,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/pontotoc-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#505030"
     },
     "season": "2026-27",
     "record": {
@@ -9341,8 +9341,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/purvis-tornadoes-tornadoes.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701090",
+      "secondary": "#d09030"
     },
     "season": "2026-27",
     "record": {
@@ -9398,8 +9398,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/lafayette-commodores-commodores.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#901010",
+      "secondary": "#d0d050"
     },
     "season": "2026-27",
     "record": {
@@ -9455,8 +9455,8 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/laurel-tornadoes-tornadoes.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d09010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -9512,8 +9512,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/northeast-jones-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0b010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -9569,8 +9569,8 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/vicksburg-gators-gators.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#30b050",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -9626,7 +9626,7 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/florence-eagles-eagles.png",
     "colors": {
-      "primary": null,
+      "primary": "#f01030",
       "secondary": null
     },
     "season": "2026-27",
@@ -9683,8 +9683,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/wayne-county-war-eagles-war-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#301050"
     },
     "season": "2026-27",
     "record": {
@@ -9740,8 +9740,8 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/natchez-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#907050"
     },
     "season": "2026-27",
     "record": {
@@ -9797,8 +9797,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/vancleave-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101090",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -9854,8 +9854,8 @@
     "district": "5A Region 4",
     "logoUrl": "/team-logos/east-central-hornets-hornets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701030",
+      "secondary": "#907090"
     },
     "season": "2026-27",
     "record": {
@@ -9911,8 +9911,8 @@
     "district": "5A Region 2",
     "logoUrl": "/team-logos/provine-rams-rams.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#907050"
     },
     "season": "2026-27",
     "record": {
@@ -9968,8 +9968,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/columbus-falcons-falcons.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -10025,8 +10025,8 @@
     "district": "5A Region 3",
     "logoUrl": "/team-logos/north-pike-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -10082,8 +10082,8 @@
     "district": "5A Region 1",
     "logoUrl": "/team-logos/caledonia-cavaliers-cavaliers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#b07090"
     },
     "season": "2026-27",
     "record": {
@@ -10139,8 +10139,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/warren-central-vikings-vikings.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1070d0",
+      "secondary": "#d05050"
     },
     "season": "2026-27",
     "record": {
@@ -10196,8 +10196,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/ridgeland-titans-titans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -10253,8 +10253,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/hattiesburg-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#7030b0",
+      "secondary": "#f0d030"
     },
     "season": "2026-27",
     "record": {
@@ -10310,8 +10310,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/picayune-maroon-tide-maroon-tide.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -10367,8 +10367,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/terry-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#703030",
+      "secondary": "#703050"
     },
     "season": "2026-27",
     "record": {
@@ -10424,8 +10424,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/lake-cormorant.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303010",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -10481,8 +10481,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/west-jones-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#505030",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -10538,8 +10538,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/grenada-chargers-chargers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b03030",
+      "secondary": "#103090"
     },
     "season": "2026-27",
     "record": {
@@ -10592,8 +10592,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/south-panola-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#7070b0"
     },
     "season": "2026-27",
     "record": {
@@ -10649,8 +10649,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/pearl-river-central-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#7050b0",
+      "secondary": "#5070b0"
     },
     "season": "2026-27",
     "record": {
@@ -10706,8 +10706,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/pascagoula-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -10763,8 +10763,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/callaway-chargers-chargers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#f07010"
     },
     "season": "2026-27",
     "record": {
@@ -10820,8 +10820,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/center-hill-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#901010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -10877,8 +10877,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/greenville-hornets-hornets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0d030",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -10934,8 +10934,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/hancock-hawks-hawks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#d01010"
     },
     "season": "2026-27",
     "record": {
@@ -10991,8 +10991,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/neshoba-central-rockets-rockets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1070b0",
+      "secondary": "#f01030"
     },
     "season": "2026-27",
     "record": {
@@ -11048,8 +11048,8 @@
     "district": "6A Region 2",
     "logoUrl": "/team-logos/canton-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -11105,8 +11105,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/gautier-gators-gators.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303070",
+      "secondary": "#107010"
     },
     "season": "2026-27",
     "record": {
@@ -11162,8 +11162,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/saltillo-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -11219,8 +11219,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/jim-hill-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b07030",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -11276,8 +11276,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/george-county-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701030",
+      "secondary": "#907030"
     },
     "season": "2026-27",
     "record": {
@@ -11333,8 +11333,8 @@
     "district": "6A Region 3",
     "logoUrl": "/team-logos/forest-hill-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#d01010"
     },
     "season": "2026-27",
     "record": {
@@ -11390,8 +11390,8 @@
     "district": "6A Region 4",
     "logoUrl": "/team-logos/long-beach-bearcats-bearcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#703050"
     },
     "season": "2026-27",
     "record": {
@@ -11447,8 +11447,8 @@
     "district": "6A Region 1",
     "logoUrl": "/team-logos/olive-branch-conquistadors-conquistadors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -11504,8 +11504,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/tupelo-golden-wave-golden-wave.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303050",
+      "secondary": "#305070"
     },
     "season": "2026-27",
     "record": {
@@ -11561,8 +11561,8 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/gulfport-admirals-admirals.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#d03010"
     },
     "season": "2026-27",
     "record": {
@@ -11618,8 +11618,8 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/oxford-chargers-chargers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305090",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -11675,7 +11675,7 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/ocean-springs-greyhounds-greyhounds.png",
     "colors": {
-      "primary": null,
+      "primary": "#103090",
       "secondary": null
     },
     "season": "2026-27",
@@ -11732,8 +11732,8 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/diberville-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f0d030",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -11789,8 +11789,8 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/oak-grove-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b09030",
+      "secondary": "#503030"
     },
     "season": "2026-27",
     "record": {
@@ -11846,8 +11846,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/horn-lake-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#701010",
+      "secondary": "#703050"
     },
     "season": "2026-27",
     "record": {
@@ -11903,8 +11903,8 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/germantown-mavericks-mavericks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d09070",
+      "secondary": "#505030"
     },
     "season": "2026-27",
     "record": {
@@ -11960,8 +11960,8 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/st-martin-yellow-jackets-yellow-jackets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010f0",
+      "secondary": "#f0b050"
     },
     "season": "2026-27",
     "record": {
@@ -12017,8 +12017,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/hernando-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0b030",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -12074,8 +12074,8 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/petal-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f03030",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -12131,8 +12131,8 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/west-harrison-hurricanes-hurricanes.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#f07010"
     },
     "season": "2026-27",
     "record": {
@@ -12188,8 +12188,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/desoto-central-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#503070",
+      "secondary": "#303070"
     },
     "season": "2026-27",
     "record": {
@@ -12245,8 +12245,8 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/madison-central-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#f03030"
     },
     "season": "2026-27",
     "record": {
@@ -12302,8 +12302,8 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/northwest-rankin-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0d090",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -12359,7 +12359,7 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/starkville-yellowjackets-yellowjackets.png",
     "colors": {
-      "primary": null,
+      "primary": "#d0b010",
       "secondary": null
     },
     "season": "2026-27",
@@ -12416,7 +12416,7 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/brandon-bulldogs-bulldogs.png",
     "colors": {
-      "primary": null,
+      "primary": "#d03030",
       "secondary": null
     },
     "season": "2026-27",
@@ -12473,8 +12473,8 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/clinton-arrows-arrows.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03030",
+      "secondary": "#501030"
     },
     "season": "2026-27",
     "record": {
@@ -12530,8 +12530,8 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/pearl-pirates-pirates.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b09070",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -12587,8 +12587,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/southaven-chargers-chargers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#d05030"
     },
     "season": "2026-27",
     "record": {
@@ -12644,7 +12644,7 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/biloxi-indians-indians.png",
     "colors": {
-      "primary": null,
+      "primary": "#b03010",
       "secondary": null
     },
     "season": "2026-27",
@@ -12701,8 +12701,8 @@
     "district": "7A Region 1",
     "logoUrl": "/team-logos/lewisburg-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -12758,8 +12758,8 @@
     "district": "7A Region 3",
     "logoUrl": "/team-logos/meridian-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101090",
+      "secondary": "#307090"
     },
     "season": "2026-27",
     "record": {
@@ -12815,7 +12815,7 @@
     "district": "7A Region 4",
     "logoUrl": "/team-logos/harrison-central-red-rebels-red-rebels.png",
     "colors": {
-      "primary": null,
+      "primary": "#d01030",
       "secondary": null
     },
     "season": "2026-27",
@@ -12872,8 +12872,8 @@
     "district": "7A Region 2",
     "logoUrl": "/team-logos/murrah-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010f0",
+      "secondary": "#7090b0"
     },
     "season": "2026-27",
     "record": {
@@ -12929,8 +12929,8 @@
     "district": "MAIS 2A District 4",
     "logoUrl": "/team-logos/centreville-academy-tigers-tigers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#d09030"
     },
     "season": "2026-27",
     "record": {
@@ -12986,8 +12986,8 @@
     "district": "MAIS 2A District 3",
     "logoUrl": "/team-logos/winona-christian-stars-stars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#307090",
+      "secondary": "#7070b0"
     },
     "season": "2026-27",
     "record": {
@@ -13043,7 +13043,7 @@
     "district": "MAIS 2A District 3",
     "logoUrl": "/team-logos/oak-hill-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
+      "primary": "#d03030",
       "secondary": null
     },
     "season": "2026-27",
@@ -13100,8 +13100,8 @@
     "district": "MAIS 2A District 1",
     "logoUrl": "/team-logos/lee-academy-colts-colts.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#109050",
+      "secondary": "#107010"
     },
     "season": "2026-27",
     "record": {
@@ -13157,8 +13157,8 @@
     "district": "MAIS 2A District 1",
     "logoUrl": "/team-logos/kirk-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#b01030"
     },
     "season": "2026-27",
     "record": {
@@ -13214,8 +13214,8 @@
     "district": "MAIS 2A District 3",
     "logoUrl": "/team-logos/winston-academy-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#b03030"
     },
     "season": "2026-27",
     "record": {
@@ -13271,8 +13271,8 @@
     "district": "MAIS 2A District 4",
     "logoUrl": "/team-logos/canton-academy-panthers-panthers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b09010",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -13328,8 +13328,8 @@
     "district": "MAIS 2A District 2",
     "logoUrl": "/team-logos/st-joseph-fighting-irish-fighting-irish.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -13385,8 +13385,8 @@
     "district": "MAIS 2A District 2",
     "logoUrl": "/team-logos/carroll-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#b01010",
+      "secondary": "#b07090"
     },
     "season": "2026-27",
     "record": {
@@ -13442,8 +13442,8 @@
     "district": "MAIS 2A District 2",
     "logoUrl": "/team-logos/indianola-academy-colonels-colonels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1050b0",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -13499,8 +13499,8 @@
     "district": "MAIS 2A District 1",
     "logoUrl": "/team-logos/regents-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#903030",
+      "secondary": "#303050"
     },
     "season": "2026-27",
     "record": {
@@ -13556,8 +13556,8 @@
     "district": "MAIS 2A District 1",
     "logoUrl": "/team-logos/north-delta-green-wave-green-wave.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105010",
+      "secondary": "#105030"
     },
     "season": "2026-27",
     "record": {
@@ -13613,8 +13613,8 @@
     "district": "MAIS 2A District 4",
     "logoUrl": "/team-logos/manchester-academy-mavericks-mavericks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105030",
+      "secondary": "#105010"
     },
     "season": "2026-27",
     "record": {
@@ -13670,7 +13670,7 @@
     "district": "MAIS 2A District 4",
     "logoUrl": "/team-logos/discovery-christian.png",
     "colors": {
-      "primary": null,
+      "primary": "#1050b0",
       "secondary": null
     },
     "season": "2026-27",
@@ -13727,8 +13727,8 @@
     "district": "MAIS 2A District 2",
     "logoUrl": "/team-logos/greenville-christian-saints-saints.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d05030",
+      "secondary": "#505090"
     },
     "season": "2026-27",
     "record": {
@@ -13784,8 +13784,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/tri-county-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#d01010"
     },
     "season": "2026-27",
     "record": {
@@ -13841,8 +13841,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/leake-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#d01050"
     },
     "season": "2026-27",
     "record": {
@@ -13898,8 +13898,8 @@
     "district": "MAIS 3A District 1",
     "logoUrl": "/team-logos/washington-generals-generals.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -13955,8 +13955,8 @@
     "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/adams-county-christian-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#507070"
     },
     "season": "2026-27",
     "record": {
@@ -14009,8 +14009,8 @@
     "district": "MAIS 3A District 1",
     "logoUrl": "/team-logos/marshall-academy-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#d01030"
     },
     "season": "2026-27",
     "record": {
@@ -14066,8 +14066,8 @@
     "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/columbia-academy-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#f07030"
     },
     "season": "2026-27",
     "record": {
@@ -14123,8 +14123,8 @@
     "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/amite-school-center-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f01030",
+      "secondary": "#1070d0"
     },
     "season": "2026-27",
     "record": {
@@ -14180,8 +14180,8 @@
     "district": "MAIS 3A District 1",
     "logoUrl": "/team-logos/rossville-christian-academy-wolves-wolves.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#303070"
     },
     "season": "2026-27",
     "record": {
@@ -14237,8 +14237,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/central-hinds-academy-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103010",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -14294,8 +14294,8 @@
     "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/wayne-academy-jaguars-jaguars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#d03030"
     },
     "season": "2026-27",
     "record": {
@@ -14351,8 +14351,8 @@
     "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/st-aloysius-flashes-flashes.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#7010d0",
+      "secondary": "#f0d030"
     },
     "season": "2026-27",
     "record": {
@@ -14408,8 +14408,8 @@
     "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/clinton-christian-academy-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#b01030"
     },
     "season": "2026-27",
     "record": {
@@ -14462,8 +14462,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/riverfield-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -14519,8 +14519,8 @@
     "district": "MAIS 3A District 1",
     "logoUrl": "/team-logos/west-memphis-christian-black-knights-black-knights.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0d090",
+      "secondary": "#f0d0b0"
     },
     "season": "2026-27",
     "record": {
@@ -14576,8 +14576,8 @@
     "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/bowling-green-buccaneers-buccaneers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -14633,8 +14633,8 @@
     "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/christian-collegiate-academy-conquerors-conquerors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301030",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -14690,8 +14690,8 @@
     "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/parklane-academy-pioneers-pioneers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301010",
+      "secondary": "#503010"
     },
     "season": "2026-27",
     "record": {
@@ -14747,8 +14747,8 @@
     "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/jackson-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#507090"
     },
     "season": "2026-27",
     "record": {
@@ -14804,8 +14804,8 @@
     "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/magnolia-heights-chiefs-chiefs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -14861,8 +14861,8 @@
     "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/madison-ridgeland-academy-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105090",
+      "secondary": "#b03030"
     },
     "season": "2026-27",
     "record": {
@@ -14918,8 +14918,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/heritage-academy-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010f0",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -14975,8 +14975,8 @@
     "district": "MAIS 4A District 4",
     "logoUrl": "/team-logos/copiah-academy-colonels-colonels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1050b0",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -15032,8 +15032,8 @@
     "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/lamar-raiders-raiders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#f03030"
     },
     "season": "2026-27",
     "record": {
@@ -15146,8 +15146,8 @@
     "district": "MAIS 4A District 4",
     "logoUrl": "/team-logos/jackson-prep-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#f03030"
     },
     "season": "2026-27",
     "record": {
@@ -15203,8 +15203,8 @@
     "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/starkville-academy-volunteers-volunteers.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f05030",
+      "secondary": "#105070"
     },
     "season": "2026-27",
     "record": {
@@ -15260,8 +15260,8 @@
     "district": "MAIS 4A District 4",
     "logoUrl": "/team-logos/cathedral-green-wave-green-wave.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105010",
+      "secondary": "#307050"
     },
     "season": "2026-27",
     "record": {
@@ -15317,8 +15317,8 @@
     "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/east-rankin-academy-patriots-patriots.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -15374,8 +15374,8 @@
     "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/hartfield-academy-hawks-hawks.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d0b070",
+      "secondary": "#90b070"
     },
     "season": "2026-27",
     "record": {
@@ -15431,8 +15431,8 @@
     "district": null,
     "logoUrl": "/team-logos/park-place-christian-academy-crusaders-crusaders.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105030",
+      "secondary": "#103030"
     },
     "season": "2026-27",
     "record": {
@@ -15485,8 +15485,8 @@
     "district": "MAIS 4A District 4",
     "logoUrl": "/team-logos/silliman-institute-wildcats-wildcats.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105030",
+      "secondary": "#105010"
     },
     "season": "2026-27",
     "record": {
@@ -15542,8 +15542,8 @@
     "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/bayou-academy-colts-colts.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#709090"
     },
     "season": "2026-27",
     "record": {
@@ -15599,8 +15599,8 @@
     "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/pillow-academy-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103010",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -15656,8 +15656,8 @@
     "district": "MAIS 4A District 4",
     "logoUrl": "/team-logos/oak-forest-academy-yellowjackets-yellowjackets.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#303010"
     },
     "season": "2026-27",
     "record": {
@@ -15713,8 +15713,8 @@
     "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/simpson-academy-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#90d0d0"
     },
     "season": "2026-27",
     "record": {
@@ -15770,8 +15770,8 @@
     "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/st-joseph-catholic-bruins-bruins.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101090",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -15827,8 +15827,8 @@
     "district": "MAIS 8-Man 1A District 4 (8 Man)",
     "logoUrl": "/team-logos/river-oaks-mustangs-mustangs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101070",
+      "secondary": "#303030"
     },
     "season": "2026-27",
     "record": {
@@ -15884,7 +15884,7 @@
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
     "logoUrl": "/team-logos/humphreys-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
+      "primary": "#f01030",
       "secondary": null
     },
     "season": "2026-27",
@@ -15941,8 +15941,8 @@
     "district": "MAIS 8-Man 1A District 4 (8 Man)",
     "logoUrl": "/team-logos/prairie-view-academy-spartans-spartans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#f0d030"
     },
     "season": "2026-27",
     "record": {
@@ -15998,8 +15998,8 @@
     "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/newton-county-academy-generals-generals.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f03030",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -16055,8 +16055,8 @@
     "district": "8-Man Freelance (8 Man)",
     "logoUrl": "/team-logos/claiborne-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103090",
+      "secondary": "#f01010"
     },
     "season": "2026-27",
     "record": {
@@ -16112,8 +16112,8 @@
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
     "logoUrl": "/team-logos/deer-creek-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#d03030"
     },
     "season": "2026-27",
     "record": {
@@ -16169,7 +16169,7 @@
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
     "logoUrl": "/team-logos/benton-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
+      "primary": "#701010",
       "secondary": null
     },
     "season": "2026-27",
@@ -16226,8 +16226,8 @@
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
     "logoUrl": "/team-logos/christ-covenant.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#f0d010"
     },
     "season": "2026-27",
     "record": {
@@ -16283,8 +16283,8 @@
     "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/sylva-bay-academy-saints-saints.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103050",
+      "secondary": "#303070"
     },
     "season": "2026-27",
     "record": {
@@ -16340,8 +16340,8 @@
     "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/bens-ford-christian-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#3030b0",
+      "secondary": "#f0b010"
     },
     "season": "2026-27",
     "record": {
@@ -16397,8 +16397,8 @@
     "district": "MAIS 8-Man 1A District 2 (8 Man)",
     "logoUrl": "/team-logos/porters-chapel-academy-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#1010b0",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -16454,8 +16454,8 @@
     "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/prentiss-christian-saints-saints.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303050",
+      "secondary": "#505030"
     },
     "season": "2026-27",
     "record": {
@@ -16511,8 +16511,8 @@
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
     "logoUrl": "/team-logos/delta-streets-academy-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#105070",
+      "secondary": "#9090b0"
     },
     "season": "2026-27",
     "record": {
@@ -16568,7 +16568,7 @@
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
     "logoUrl": "/team-logos/delta-academy-raiders-raiders.png",
     "colors": {
-      "primary": null,
+      "primary": "#303030",
       "secondary": null
     },
     "season": "2026-27",
@@ -16625,8 +16625,8 @@
     "district": "MAIS 8-Man 1A District 1 (8 Man)",
     "logoUrl": "/team-logos/north-sunflower-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03030",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -16682,8 +16682,8 @@
     "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/hillcrest-christian-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301030",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -16736,8 +16736,8 @@
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/wilkinson-county-christian-academy-rams-rams.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101030",
+      "secondary": "#305030"
     },
     "season": "2026-27",
     "record": {
@@ -16850,8 +16850,8 @@
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/desoto-thunderbirds-thunderbirds.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d01010",
+      "secondary": "#d090b0"
     },
     "season": "2026-27",
     "record": {
@@ -16907,8 +16907,8 @@
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/briarfield-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#f01030",
+      "secondary": "#103070"
     },
     "season": "2026-27",
     "record": {
@@ -16964,8 +16964,8 @@
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/tallulah-academy-trojans-trojans.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#305070",
+      "secondary": "#f09010"
     },
     "season": "2026-27",
     "record": {
@@ -17021,7 +17021,7 @@
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/lee-academy-cougars-cougars.png",
     "colors": {
-      "primary": null,
+      "primary": "#f07010",
       "secondary": null
     },
     "season": "2026-27",
@@ -17075,8 +17075,8 @@
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/calhoun-academy-cougars-cougars.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#109050",
+      "secondary": "#103010"
     },
     "season": "2026-27",
     "record": {
@@ -17132,8 +17132,8 @@
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/tunica-academy-blue-devils-blue-devils.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303050",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
@@ -17189,8 +17189,8 @@
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/marvell-academy-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103070",
+      "secondary": "#301010"
     },
     "season": "2026-27",
     "record": {
@@ -17246,8 +17246,8 @@
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/tensas-academy-chiefs-chiefs.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#303090",
+      "secondary": "#d03010"
     },
     "season": "2026-27",
     "record": {
@@ -17303,8 +17303,8 @@
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/heritage-christian-academy-warriors-warriors.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#103030",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -17360,8 +17360,8 @@
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/union-christian-academy-lions-lions.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#301090",
+      "secondary": "#d09010"
     },
     "season": "2026-27",
     "record": {
@@ -17414,8 +17414,8 @@
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/kemper-academy-rams-rams.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#107030",
+      "secondary": "#d0b030"
     },
     "season": "2026-27",
     "record": {
@@ -17471,8 +17471,8 @@
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/riverdale-academy-rebels-rebels.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#d03030",
+      "secondary": "#101030"
     },
     "season": "2026-27",
     "record": {
@@ -17528,8 +17528,8 @@
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/hebron-christian-eagles-eagles.png",
     "colors": {
-      "primary": null,
-      "secondary": null
+      "primary": "#101050",
+      "secondary": "#103050"
     },
     "season": "2026-27",
     "record": {
