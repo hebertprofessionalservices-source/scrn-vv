@@ -38,6 +38,26 @@ import { PaperStage } from "./paper-stage";
 const SPONSOR_SRC = "/brand/cspire-logo.png";
 const SPONSOR_FILE = join(process.cwd(), "public", "brand", "cspire-logo.png");
 
+/**
+ * Export filename, e.g. "mais-4a-week3-2026-08-28".
+ *
+ * Leads with league and week because these get saved a dozen at a time on
+ * show day, and "recap (3).png" in a downloads folder tells you nothing.
+ */
+function downloadName(
+  league: string,
+  classification: string,
+  week: string,
+  dates: string[],
+): string {
+  const parts = [
+    classification.toLowerCase().startsWith("mais") ? classification : `${league}-${classification}`,
+    week ? `week${week}` : "",
+    dates[dates.length - 1] ?? "",
+  ].filter(Boolean);
+  return parts.join("-").toLowerCase().replace(/[^a-z0-9-]+/g, "-");
+}
+
 const MONTHS = [
   "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
   "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER",
@@ -148,7 +168,7 @@ export default async function Newspaper({
   }
 
   return (
-    <PaperStage>
+    <PaperStage fileName={downloadName(league, classification, week, dates)}>
     <div className="paper">
       <div className="paper__topbar">
         <span>{editionDate(dates, sp.edition)}</span>

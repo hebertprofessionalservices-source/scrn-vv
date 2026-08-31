@@ -1,5 +1,6 @@
 "use client";
 
+import { toPng } from "html-to-image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
@@ -17,10 +18,17 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const PAGE_W = 1920;
 const PAGE_H = 1080;
 
-export function PaperStage({ children }: { children: React.ReactNode }) {
+export function PaperStage({
+  children,
+  fileName = "recap",
+}: {
+  children: React.ReactNode;
+  fileName?: string;
+}) {
   const stage = useRef<HTMLDivElement>(null);
   const [full, setFull] = useState(false);
   const [idle, setIdle] = useState(false);
+  const [saving, setSaving] = useState<"idle" | "working" | "failed">("idle");
 
   useEffect(() => {
     const el = stage.current;
@@ -88,12 +96,63 @@ export function PaperStage({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
+  /**
+   * Save the page as a 1920x1080 PNG.
+   *
+   * Captures .paper rather than the stage so the controls stay out of the
+   * image, and pins width/height/transform to the authored size — on screen
+   * the page is usually scaled down to fit, and without this the export would
+   * come out at whatever the preview happened to be scaled to.
+   */
+  const download = useCallback(async () => {
+    const paper = stage.current?.querySelector<HTMLElement>(".paper");
+    if (!paper) return;
+    setSaving("working");
+    try {
+      // Webfonts land mid-capture as unstyled text otherwise.
+      if (document.fonts?.ready) await document.fonts.ready;
+      const url = await toPng(paper, {
+        width: PAGE_W,
+        height: PAGE_H,
+        pixelRatio: 1,
+        cacheBust: true,
+        style: {
+          transform: "none",
+          transformOrigin: "top left",
+          margin: "0",
+          width: `${PAGE_W}px`,
+          height: `${PAGE_H}px`,
+        },
+      });
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${fileName}.png`;
+      a.click();
+      setSaving("idle");
+    } catch {
+      // Never leave the button stuck on "Saving…" — say so and let them retry.
+      setSaving("failed");
+    }
+  }, [fileName]);
+
   return (
     <div className="paper-stage" ref={stage}>
       <div className={`paper-controls${idle ? " paper-controls--idle" : ""}`}>
         <a href="/present/newspaper" className="paper-btn">
           ← All recaps
         </a>
+        <button
+          type="button"
+          onClick={download}
+          className="paper-btn"
+          disabled={saving === "working"}
+        >
+          {saving === "working"
+            ? "Saving…"
+            : saving === "failed"
+              ? "Failed — retry"
+              : "Download PNG"}
+        </button>
         <button type="button" onClick={toggle} className="paper-btn">
           {full ? "Exit fullscreen" : "Fullscreen"}
         </button>
