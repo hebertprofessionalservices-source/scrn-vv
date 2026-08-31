@@ -1,5 +1,5 @@
 import { currentSeason, loadDataset } from "@/lib/data-server";
-import { latestSlate, leagueWeek } from "@/lib/newspaper";
+import { latestSlate, leagueWeek, slateWeekRange } from "@/lib/newspaper";
 import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
 import type { Classification } from "@/lib/types";
@@ -24,6 +24,7 @@ export default async function NewspaperIndex() {
   const data = await loadDataset(season);
   const dates = latestSlate(data.games);
   const last = dates[dates.length - 1];
+  const span = slateWeekRange(dates);
 
   // Only offer a class we actually have teams for this season.
   const present = new Set(data.teams.map((t) => t.classification));
@@ -40,8 +41,9 @@ export default async function NewspaperIndex() {
     <>
       <h1 className="font-display">Weekly Recap Pages</h1>
       <p className="text-2xl text-chrome-300 mt-3">
-        {last
-          ? `Latest slate: ${dates.map((d) => formatGameDate(d)).join(" · ")}`
+        {span
+          ? // The whole Mon–Sun week the games fall in, not just the game days.
+            `Latest slate: ${formatGameDate(span[0]).replace(/, \d{4}$/, "")} – ${formatGameDate(span[1])}`
           : "No completed games yet this season."}
       </p>
 
@@ -73,7 +75,11 @@ export default async function NewspaperIndex() {
                             {classificationLabel(c)}
                           </span>
                           <span className="text-xl text-chrome-400">
-                            {hasGames ? "View page →" : "No games this slate"}
+                            {hasGames
+                              ? week !== null
+                                ? `View Week ${week} Recap →`
+                                : "View Recap →"
+                              : "No games this slate"}
                           </span>
                         </a>
                       </li>

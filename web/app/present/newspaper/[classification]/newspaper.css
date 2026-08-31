@@ -357,11 +357,23 @@
  * fit, so it fills any monitor without the layout reflowing — a reflow would
  * change what a screenshot exports.
  */
+/*
+ * Flex, not grid: an auto grid row sizes to the 1080px page rather than to the
+ * shorter viewport, so the row overflowed downward and the scaled page's bottom
+ * edge fell off screen with no way to scroll to it. Flex centring overflows
+ * symmetrically about the container's own centre, which is what the scale
+ * transform assumes.
+ */
+/* The stage covers the viewport, so the shell behind it has nothing to scroll —
+   suppress the stray scrollbar its page padding would otherwise leave. */
+body:has(.paper-stage) { overflow: hidden; }
+
 .paper-stage {
   position: fixed;
   inset: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: #0a0d14;
 }

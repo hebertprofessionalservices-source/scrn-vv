@@ -387,6 +387,26 @@ export function latestSlate(games: Game[]): string[] {
   return [...new Set(finals.filter((d) => daysBetween(d, last) <= 3))].sort();
 }
 
+/**
+ * The Monday-to-Sunday calendar week a slate belongs to.
+ *
+ * The slate itself is only the Thursday-to-Saturday dates that had finals, but
+ * the recap is spoken about as a week, so the index heads it with the whole
+ * week rather than the two or three days games happened to fall on.
+ */
+export function slateWeekRange(dates: string[]): [string, string] | null {
+  const last = dates[dates.length - 1];
+  if (!last) return null;
+  const d = new Date(`${last}T12:00:00Z`);
+  const monday = new Date(d);
+  // getUTCDay() is Sunday-based; +6 %7 makes Monday the start of the week.
+  monday.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  const sunday = new Date(monday);
+  sunday.setUTCDate(monday.getUTCDate() + 6);
+  const iso = (x: Date) => x.toISOString().slice(0, 10);
+  return [iso(monday), iso(sunday)];
+}
+
 export interface NewspaperOptions {
   classification: string;
   /** Game dates that make up this week's slate. */
