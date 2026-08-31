@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   padding: 10px 40px 8px;
@@ -65,7 +65,7 @@
 }
 .paper__badge b { display: block; font-size: 54px; line-height: 1; font-weight: 900; }
 .paper__badge span { display: block; font-size: 22px; letter-spacing: 0.14em; font-weight: 700; }
-.paper__badge small { display: block; font-size: 14px; letter-spacing: 0.16em; margin-top: 2px; }
+.paper__badge small { display: block; font-size: 16px; letter-spacing: 0.16em; margin-top: 2px; }
 /*
  * Presenting-sponsor square, mirroring .paper__badge across the nameplate.
  * Same footprint whether or not the image is present, so the masthead stays
@@ -90,7 +90,7 @@
 
 .paper__tagline {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   padding: 6px 0 8px;
@@ -100,7 +100,7 @@
   text-align: center;
   color: #b3242c;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: 10px;
@@ -183,7 +183,7 @@
   padding: 0 14px 14px;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -217,7 +217,7 @@
 }
 .hero__cap span { display: block; }
 .hero__cap span + span { color: #444; }
-.hero__sub { font-size: 17.5px; line-height: 1.3; padding-top: 5px; }
+.hero__sub { font-size: 19.5px; line-height: 1.3; padding-top: 5px; }
 
 .board__head {
   background: #111;
@@ -225,7 +225,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 7px 12px;
@@ -236,12 +236,13 @@
   grid-template-columns: 24px 32px 1fr 32px 82px;
   align-items: center;
   gap: 8px;
-  padding: 7px 6px;
+  /* 6px, not 7: ten rows at the larger type ran 15px past 1080px otherwise. */
+  padding: 6px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.22);
-  font-size: 18px;
+  font-size: 20px;
 }
 .board__row:last-child { border-bottom: none; }
-.board__rank { font-weight: 700; color: #777; font-size: 16px; }
+.board__rank { font-weight: 700; color: #777; font-size: 18px; }
 .board__logo { height: 30px; width: 30px; object-fit: contain; }
 .board__logo--blank {
   height: 30px; width: 30px; border-radius: 50%;
@@ -264,7 +265,7 @@
   text-overflow: ellipsis;
 }
 .board__teams b { font-weight: 700; }
-.board__teams i { font-style: normal; font-size: 16px; color: #333; }
+.board__teams i { font-style: normal; font-size: 18px; color: #333; }
 .board__seed { color: #b3242c; font-weight: 700; }
 .board__final {
   text-align: right;
@@ -284,7 +285,7 @@
 .mod:first-child { border-left: none; padding-left: 0; }
 .mod__head {
   font-weight: 900;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   border-bottom: 2px solid #111;
@@ -297,8 +298,8 @@
   height: 28px; width: 28px; border-radius: 50%;
   background: #ddd8cc; flex: none; margin-top: 1px;
 }
-.note b { font-weight: 900; font-size: 15.5px; display: block; text-transform: uppercase; line-height: 1.15; }
-.note span { font-size: 15.5px; line-height: 1.3; }
+.note b { font-weight: 900; font-size: 17.5px; display: block; text-transform: uppercase; line-height: 1.15; }
+.note span { font-size: 17.5px; line-height: 1.3; }
 
 .players { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .player { display: flex; flex-direction: column; }
@@ -319,14 +320,14 @@
   background: rgba(255, 255, 255, 0.2); flex: none;
 }
 .player__top span {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   line-height: 1.1;
 }
-.player__name { font-weight: 900; font-size: 17px; padding-top: 6px; line-height: 1.15; }
-.player__line { font-size: 15px; padding-top: 3px; line-height: 1.25; }
+.player__name { font-weight: 900; font-size: 19px; padding-top: 6px; line-height: 1.15; }
+.player__line { font-size: 17px; padding-top: 3px; line-height: 1.25; }
 
 .paper__foot {
   background: #111;
@@ -335,7 +336,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 11px 40px;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
@@ -393,7 +394,7 @@
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: #f4f1ea;
   font-family: var(--font-display, sans-serif);
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
