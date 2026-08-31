@@ -5,6 +5,9 @@ import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classificationLabel } from "@/lib/team-format";
 import { HomeLeaderboards, LeaderboardFilters } from "@/components/home/home-leaderboards";
+import { LastWeekScores } from "@/components/home/last-week-scores";
+import { inScope, scopeSuffix } from "@/lib/home-filter";
+import type { ScoreCard } from "@/lib/scores";
 import { CATEGORY_OPTIONS, type LeaderCategory, type LeaderboardData } from "@/lib/leaderboard";
 import type { OutstandingLine, WeeklyBucket, WeeklyLine, WeeklyView } from "@/lib/weekly";
 
@@ -28,13 +31,16 @@ const SELECT_CLASSES =
 export function HomePerformances({
   leaderboards,
   weekly,
+  scores,
 }: {
   leaderboards: LeaderboardData;
   weekly: WeeklyView;
+  scores: ScoreCard[];
 }) {
   const hasWeekly = weekly.latestKey !== null;
   const [view, setView] = useState<"week" | "season">(hasWeekly ? "week" : "season");
   const [weekKey, setWeekKey] = useState<string>(weekly.latestKey ?? "");
+  const [league, setLeague] = useState<string>("");
   const [cls, setCls] = useState<string>("");
   const [seasonCategory, setSeasonCategory] = useState<LeaderCategory>("yds");
   const [weekCategory, setWeekCategory] = useState<WeeklyCategory>("yds");
@@ -43,6 +49,15 @@ export function HomePerformances({
   // component (season switch, ?asof); fall back to the latest real week.
   const activeKey = weekly.byWeek[weekKey] ? weekKey : weekly.latestKey ?? "";
   const group = weekly.byWeek[activeKey];
+
+  const scope = scopeSuffix(league, cls);
+  const outstanding = (
+    view === "week" ? group?.outstanding ?? [] : weekly.outstandingSeason
+  ).filter((l) => inScope(l, league, cls));
+  // The season list is capped before the client filter runs, so under a filter
+  // the counts describe the pool it was drawn from, not what's on screen.
+  const outstandingCapped =
+    view === "season" && weekly.outstandingSeasonTotal > weekly.outstandingSeason.length;
 
   return (
     <div className="space-y-8">
@@ -60,6 +75,8 @@ export function HomePerformances({
         {view === "week" ? (
           <LeaderboardFilters
             classes={leaderboards.classes}
+            league={league}
+            setLeague={setLeague}
             cls={cls}
             setCls={setCls}
             category={weekCategory}
@@ -69,6 +86,8 @@ export function HomePerformances({
         ) : (
           <LeaderboardFilters
             classes={leaderboards.classes}
+            league={league}
+            setLeague={setLeague}
             cls={cls}
             setCls={setCls}
             category={seasonCategory}
@@ -93,14 +112,12 @@ export function HomePerformances({
       </div>
 
       {view === "season" ? (
-        <HomeLeaderboards data={leaderboards} controls={{ cls, category: seasonCategory }} />
+        <HomeLeaderboards data={leaderboards} controls={{ league, cls, category: seasonCategory }} />
       ) : !group ? (
         <p className="text-chrome-500 text-sm">No games played yet this season.</p>
       ) : (
         SECTIONS.map(({ bucket, heading }) => {
-          const pool = cls
-            ? group.leaders[bucket].filter((l) => l.classification === cls)
-            : group.leaders[bucket];
+          const pool = group.leaders[bucket].filter((l) => inScope(l, league, cls));
           // DEF has no TD stat; it always ranks by its tackle composite.
           const sorted = [...pool].sort(
             bucket !== "DEF" && weekCategory === "td"
@@ -112,7 +129,7 @@ export function HomePerformances({
           return (
             <WeeklySection
               key={bucket}
-              heading={`${heading} — ${group.label}${suffix}`}
+              heading={`${heading} — ${group.label}${suffix}${scope}`}
               lines={sorted.slice(0, WEEKLY_LIMIT)}
             />
           );
@@ -123,18 +140,22 @@ export function HomePerformances({
         <OutstandingSection
           heading={
             view === "week" && group
-              ? `Outstanding Performances — ${group.label}`
-              : "Outstanding Performances — Full Season"
+              ? `Outstanding Performances — ${group.label}${scope}`
+              : `Outstanding Performances — Full Season${scope}`
           }
-          lines={view === "week" ? group?.outstanding ?? [] : weekly.outstandingSeason}
+          lines={outstanding}
           showWeek={view === "season"}
           note={
-            view === "season" && weekly.outstandingSeasonTotal > weekly.outstandingSeason.length
-              ? `Showing the ${weekly.outstandingSeason.length} most recent of ${weekly.outstandingSeasonTotal} qualifying performances.`
-              : null
+            !outstandingCapped
+              ? null
+              : scope
+                ? `Drawn from the ${weekly.outstandingSeason.length} most recent of ${weekly.outstandingSeasonTotal} qualifying performances season-wide.`
+                : `Showing the ${weekly.outstandingSeason.length} most recent of ${weekly.outstandingSeasonTotal} qualifying performances.`
           }
         />
       )}
+
+      <LastWeekScores scores={scores} league={league} cls={cls} />
     </div>
   );
 }

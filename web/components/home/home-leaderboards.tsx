@@ -3,7 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { JerseyAvatar } from "@/components/player/jersey-avatar";
 import { TeamLogo } from "@/components/brand/team-logo";
-import { classificationLabel } from "@/lib/team-format";
+import { classificationLabel, leagueOf } from "@/lib/team-format";
+import { inScope, scopeSuffix } from "@/lib/home-filter";
+import { LastWeekScores, type ScoreCard } from "@/components/home/last-week-scores";
 import {
   CATEGORY_OPTIONS,
   LEADERBOARD_LIMIT,
@@ -26,19 +28,40 @@ const SECTIONS: { pos: LeaderPosition; plural: string }[] = [
 const SELECT_CLASSES =
   "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 cursor-pointer hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
 
-/** Classification + stat-category selects; shared by the weekly and season views. */
+const LEAGUES = ["MHSAA", "MAIS"] as const;
+
+/** League + classification + stat-category selects; shared by the weekly and season views. */
 export function LeaderboardFilters<C extends string>({
-  classes, cls, setCls, category, setCategory, categoryOptions,
+  classes, league, setLeague, cls, setCls, category, setCategory, categoryOptions,
 }: {
   classes: string[];
+  league: string;
+  setLeague: (v: string) => void;
   cls: string;
   setCls: (v: string) => void;
   category: C;
   setCategory: (v: C) => void;
   categoryOptions: readonly { value: C; label: string }[];
 }) {
+  const leagueClasses = league ? classes.filter((c) => leagueOf(c) === league) : classes;
   return (
     <>
+      <select
+        className={SELECT_CLASSES}
+        value={league}
+        // League sits above classification: switching it clears the class, which
+        // would otherwise be one from the other league and empty every board.
+        onChange={(e) => {
+          setLeague(e.target.value);
+          setCls("");
+        }}
+        aria-label="League"
+      >
+        <option value="">All Leagues</option>
+        {LEAGUES.map((l) => (
+          <option key={l} value={l}>{l}</option>
+        ))}
+      </select>
       <select
         className={SELECT_CLASSES}
         value={cls}
@@ -46,7 +69,7 @@ export function LeaderboardFilters<C extends string>({
         aria-label="Classification"
       >
         <option value="">All Classifications</option>
-        {classes.map((c) => (
+        {leagueClasses.map((c) => (
           <option key={c} value={c}>{classificationLabel(c)}</option>
         ))}
       </select>
@@ -67,17 +90,22 @@ export function LeaderboardFilters<C extends string>({
 export function HomeLeaderboards({
   data,
   controls,
+  scores,
 }: {
   data: LeaderboardData;
   /** When provided, the parent owns the filter selects and this renders none. */
-  controls?: { cls: string; category: LeaderCategory };
+  controls?: { league: string; cls: string; category: LeaderCategory };
+  /** Only passed when this component is the page's top-level filter owner. */
+  scores?: ScoreCard[];
 }) {
+  const [leagueState, setLeagueState] = useState<string>("");
   const [clsState, setClsState] = useState<string>("");
   const [categoryState, setCategoryState] = useState<LeaderCategory>("yds");
+  const league = controls?.league ?? leagueState;
   const cls = controls?.cls ?? clsState;
   const category = controls?.category ?? categoryState;
 
-  const clsSuffix = cls ? ` (${classificationLabel(cls)})` : "";
+  const clsSuffix = scopeSuffix(league, cls);
 
   return (
     <div className="space-y-8">
@@ -86,6 +114,8 @@ export function HomeLeaderboards({
           <label className="text-xs uppercase tracking-wider text-chrome-500">Filter</label>
           <LeaderboardFilters
             classes={data.classes}
+            league={leagueState}
+            setLeague={setLeagueState}
             cls={clsState}
             setCls={setClsState}
             category={categoryState}
@@ -96,9 +126,7 @@ export function HomeLeaderboards({
       )}
 
       {SECTIONS.map(({ pos, plural }) => {
-        const pool = cls
-          ? data.positions[pos].filter((e) => e.classification === cls)
-          : data.positions[pos];
+        const pool = data.positions[pos].filter((e) => inScope(e, league, cls));
         const leaders = rankLeaders(pool, category, pos).slice(0, LEADERBOARD_LIMIT);
         return (
           <PlayerSection
@@ -113,10 +141,13 @@ export function HomeLeaderboards({
 
       <DefenseSection
         heading={`Top ${LEADERBOARD_LIMIT} Defenses — by Points Allowed/Game${clsSuffix}`}
-        defenses={[...(cls ? data.defenses.filter((d) => d.classification === cls) : data.defenses)]
+        defenses={data.defenses
+          .filter((d) => inScope(d, league, cls))
           .sort((a, b) => a.ppg - b.ppg)
           .slice(0, LEADERBOARD_LIMIT)}
       />
+
+      {scores && <LastWeekScores scores={scores} league={league} cls={cls} />}
     </div>
   );
 }

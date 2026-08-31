@@ -1,6 +1,6 @@
 import { loadDataset, loadEditorial, currentSeason } from "@/lib/data-server";
 import { GameOfTheWeekCard } from "@/components/cards/game-of-the-week-card";
-import { ScoreStrip } from "@/components/cards/score-strip";
+import { buildScoreCards } from "@/lib/scores";
 import { UpsetList } from "@/components/home/upset-list";
 import { HomeLeaderboards } from "@/components/home/home-leaderboards";
 import { HomePerformances } from "@/components/home/home-performances";
@@ -39,7 +39,8 @@ export default async function Home({
   // ?asof=YYYY-MM-DD replays the season as of a past date (testing aid).
   const weekly = buildWeeklyView(data, asof);
 
-  const lastWeek = lastWeeksGames(data.games);
+  // Flattened here so the client-side league/class filter can narrow the strip.
+  const scores = buildScoreCards(lastWeeksGames(data.games), data.teamsById);
   const mhsaaUpsets = SHOW_UPSETS ? buildUpsets(data, "MHSAA") : [];
   const maisUpsets = SHOW_UPSETS ? buildUpsets(data, "MAIS") : [];
 
@@ -140,16 +141,12 @@ export default async function Home({
       </section>
 
       <section className="max-w-7xl mx-auto px-4 space-y-8 pb-12">
+        {/* Last week's scores live inside these so they share the filter. */}
         {SHOW_WEEKLY_FEATURES ? (
-          <HomePerformances leaderboards={leaderboards} weekly={weekly} />
+          <HomePerformances leaderboards={leaderboards} weekly={weekly} scores={scores} />
         ) : (
-          <HomeLeaderboards data={leaderboards} />
+          <HomeLeaderboards data={leaderboards} scores={scores} />
         )}
-
-        <div>
-          <h2 className="font-display text-2xl mb-3">Last Week&apos;s Scores</h2>
-          <ScoreStrip games={lastWeek} teamsById={data.teamsById} />
-        </div>
       </section>
     </>
   );
