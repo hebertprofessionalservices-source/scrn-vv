@@ -30,10 +30,11 @@ export default async function RankingsPage({
 
   const rows = data.teams
     .map((t) => ({ team: t, rank: power.get(t.id) }))
-    .filter((r) => r.rank !== undefined)
+    // Ranks are MaxPreps' own, so a team they don't rank has no row here.
+    .filter((r) => r.rank !== undefined && r.rank.overallRank !== null)
     .filter((r) => !league || leagueOf(r.team.classification) === league)
     .filter((r) => !cls || r.team.classification === cls)
-    .sort((a, b) => a.rank!.overallRank - b.rank!.overallRank)
+    .sort((a, b) => a.rank!.overallRank! - b.rank!.overallRank!)
     // Filtered views renumber 1..N within the view; Overall keeps the
     // global rank.
     .map((r, i) => ({
@@ -47,7 +48,7 @@ export default async function RankingsPage({
   return (
     <main className="max-w-3xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <h1 className="font-display text-4xl">SCRN Power Rankings</h1>
+        <h1 className="font-display text-4xl">Rankings</h1>
       </div>
 
       <div className="mb-6 flex items-center gap-3">

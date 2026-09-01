@@ -3,7 +3,7 @@ import { computeRankDeltas, mondayOf, type RankHistory } from "@/lib/rank-histor
 import type { PowerRank } from "@/lib/power";
 
 const rank = (o: number, c: number): PowerRank => ({
-  rating: 0, overallRank: o, classRank: c, source: "current",
+  rating: 0, overallRank: o, classRank: c,
 });
 
 describe("computeRankDeltas", () => {

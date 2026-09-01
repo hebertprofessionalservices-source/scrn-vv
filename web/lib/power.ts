@@ -1,43 +1,41 @@
 import type { Dataset } from "./data";
 
 export interface PowerRank {
+  /** SRS-based rating, still used for win probability and playoff odds. */
   rating: number;
-  overallRank: number;
-  classRank: number;
-  /** "prior" → rating is last season's final (display must label it). */
-  source: "current" | "prior";
+  /** MaxPreps' statewide rank; null when MaxPreps does not rank the team. */
+  overallRank: number | null;
+  /** MaxPreps' division rank; null when MaxPreps does not rank the team. */
+  classRank: number | null;
 }
 
 /** Blowout cap so 70-0 games don't dominate the rating. */
 const MARGIN_CAP = 28;
 const ITERATIONS = 25;
-/** Fallback cutoff for teams with no region (independents). */
-const PRIOR_CUTOFF_GAMES = 2;
 /** Client-set blend: MaxPreps' opinion carries this share of the rating. */
 const MAXPREPS_WEIGHT = 0.7;
 
 /**
- * SCRN Power Ranking — a weighted blend of two signals:
+ * Ranks and ratings for the season.
+ *
+ * DISPLAYED RANKS ARE MAXPREPS' OWN (client rule, Sep 1 2026: "the rankings
+ * should come from MaxPreps and MaxPreps only"). `overallRank` is their
+ * statewide list, `classRank` their per-division list, both taken straight off
+ * the team page with no reordering — a team MaxPreps does not rank has none.
+ *
+ * The rating is still ours, because a rank alone cannot produce a win
+ * probability or a playoff projection. It is a weighted blend of:
  *
  * 1. MaxPreps' ranking (MAXPREPS_WEIGHT = 70%) — the statewide list for
  *    MHSAA, the per-class rank for MAIS — mapped onto our rating scale by
- *    order statistics within each pool. Preseason, before MaxPreps
- *    publishes current ranks, their prior-season final rank stands in.
+ *    order statistics within each pool.
  * 2. Our own SRS rating (30%): average (capped) scoring margin plus the
  *    average rating of opponents, iterated to convergence — strength of
- *    schedule built in. Season-start rule: a team carries last season's
- *    final rating discounted by returning production (source "prior",
- *    labeled in the UI) until its first region game this season
- *    (independents: PRIOR_CUTOFF_GAMES finals), then switches to pure
- *    current-season SRS.
+ *    schedule built in.
  *
- * Teams MaxPreps doesn't rank use our rating alone; teams with neither
- * games nor a prior stay unranked.
- *
- * MAIS 8-man teams (client rule): they play a different sport for ranking
- * purposes, so they always occupy the bottom of the overall (and league)
- * order regardless of rating — their rank only matters against other
- * 8-man teams, where the usual rating order applies.
+ * Nothing here reaches back into last season. The prior-rating carryover and
+ * the prior-rank fallback were both removed on Sep 1 2026 so a 2026 page shows
+ * 2026 numbers only; a team with no games this season simply has no rating.
  */
 export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   const results = new Map<string, { margins: number[]; opps: string[] }>();
@@ -93,44 +91,18 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
     ratings = next;
   }
 
-  // Season-start carryover: prior rating until the first region game
-  // (independents: until PRIOR_CUTOFF_GAMES finals).
-  const prior = data.priorRatings;
-  const finalRatings = new Map<string, number>();
-  const sources = new Map<string, PowerRank["source"]>();
-  for (const id of ids) {
-    const n = results.get(id)!.margins.length;
-    const hasRegion = Boolean(data.teamsById.get(id)?.district);
-    const isCurrent = hasRegion
-      ? playedRegionGame.has(id)
-      : n >= PRIOR_CUTOFF_GAMES;
-    const p = prior?.get(id);
-    if (!isCurrent && p !== undefined) {
-      finalRatings.set(id, p);
-      sources.set(id, "prior");
-    } else {
-      finalRatings.set(id, ratings.get(id)!);
-      sources.set(id, "current");
-    }
-  }
-  if (prior) {
-    for (const [id, p] of prior) {
-      if (!finalRatings.has(id) && data.teamsById.has(id)) {
-        finalRatings.set(id, p);
-        sources.set(id, "prior");
-      }
-    }
-  }
+  const finalRatings = new Map<string, number>(
+    ids.map((id) => [id, ratings.get(id)!]),
+  );
   if (finalRatings.size === 0) return new Map();
 
-  // Blend with MaxPreps: current rank when published, else last season's
-  // final. MaxPreps ranks are only consistent WITHIN a pool — MHSAA is one
-  // statewide list (stateOverall), while MAIS academies are ranked in
-  // their home-state pools, so only their per-class rank (stateClass) is
-  // comparable. Within each pool their #k team gets the k-th highest of
-  // that pool's OWN ratings (order statistics), then MaxPreps' value is
-  // averaged in at MAXPREPS_WEIGHT. Pools never trade rating mass, so
-  // cross-league ordering stays anchored to our ratings.
+  // Blend with MaxPreps. Their ranks are only consistent WITHIN a pool —
+  // MHSAA is one statewide list (stateOverall), while MAIS academies are
+  // ranked in their home-state pools, so only their per-class rank
+  // (stateClass) is comparable. Within each pool their #k team gets the k-th
+  // highest of that pool's OWN ratings (order statistics), then MaxPreps'
+  // value is averaged in at MAXPREPS_WEIGHT. Pools never trade rating mass,
+  // so cross-league ordering stays anchored to our ratings.
   const poolOf = (id: string): string | null => {
     const t = data.teamsById.get(id);
     if (!t) return null;
@@ -140,10 +112,9 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   for (const id of finalRatings.keys()) {
     const t = data.teamsById.get(id);
     if (!t) continue;
-    const current = t.classification.startsWith("MAIS")
+    const rank = t.classification.startsWith("MAIS")
       ? t.rankings.stateClass
       : t.rankings.stateOverall;
-    const rank = current ?? data.priorStateRanks?.get(id);
     if (rank != null) mpRank.set(id, rank);
   }
   const poolMembers = new Map<string, string[]>();
@@ -170,26 +141,31 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   }
   for (const [id, v] of blended) finalRatings.set(id, v);
 
-  // 8-man programs sink below every 11-man team; rating orders within.
-  const is8Man = (id: string) =>
-    data.teamsById.get(id)?.classification.startsWith("MAIS-8M") ?? false;
-  const ordered = [...finalRatings.keys()].sort(
-    (a, b) =>
-      Number(is8Man(a)) - Number(is8Man(b)) ||
-      finalRatings.get(b)! - finalRatings.get(a)!,
-  );
   const out = new Map<string, PowerRank>();
-  const classCounters = new Map<string, number>();
-  ordered.forEach((id, i) => {
-    const cls = data.teamsById.get(id)?.classification ?? "";
-    const classRank = (classCounters.get(cls) ?? 0) + 1;
-    classCounters.set(cls, classRank);
+  for (const [id, rating] of finalRatings) {
+    const t = data.teamsById.get(id);
+    if (!t) continue;
     out.set(id, {
-      rating: finalRatings.get(id)!,
-      overallRank: i + 1,
-      classRank,
-      source: sources.get(id)!,
+      rating,
+      overallRank: displayRank(t, "stateOverall"),
+      classRank: displayRank(t, "stateClass"),
     });
-  });
+  }
   return out;
+}
+
+/**
+ * A MaxPreps rank, but only when it is a Mississippi one.
+ *
+ * 18 MAIS schools sit in Louisiana, Arkansas and Tennessee, and MaxPreps ranks
+ * each team in its OWN state's pool. Printing a Louisiana academy's "No. 3
+ * Overall" beside Mississippi teams reads as a Mississippi rank and is simply
+ * wrong, so those teams show no rank rather than a misleading one.
+ */
+function displayRank(
+  team: { maxprepsUrl: string | null; rankings: { stateOverall: number | null; stateClass: number | null } },
+  field: "stateOverall" | "stateClass",
+): number | null {
+  if (!/maxpreps\.com\/ms\//.test(team.maxprepsUrl ?? "")) return null;
+  return team.rankings[field];
 }

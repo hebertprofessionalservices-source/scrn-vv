@@ -53,7 +53,8 @@ export function computeRankDeltas(
   const baseline = history[baselineDate];
   for (const [teamId, rank] of power) {
     const prev = baseline[teamId];
-    if (!prev) continue;
+    // No current MaxPreps rank means no movement to show.
+    if (!prev || rank.overallRank === null || rank.classRank === null) continue;
     out.set(teamId, {
       overall: prev.o - rank.overallRank,
       class: prev.c - rank.classRank,

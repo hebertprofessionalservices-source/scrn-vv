@@ -24,7 +24,6 @@ export function TeamStatPanel({
   records,
   avgRush,
   avgPass,
-  returningOff,
   sos,
   playoff,
 }: {
@@ -35,7 +34,6 @@ export function TeamStatPanel({
   records?: RecordsBlockInput | null;
   avgRush?: number | null;
   avgPass?: number | null;
-  returningOff?: number | null;
   sos?: SosInfo | null;
   playoff?: TeamPlayoffCard | null;
 }) {
@@ -47,8 +45,6 @@ export function TeamStatPanel({
   const runShare = plays > 0 ? Math.round((runPass!.rush / plays) * 100) : null;
   const hasPrint = team.stats.yardsFor > 0;
   const recordLines = records ? recordsBlockLines(records) : null;
-  const sharePct = (v: number | null | undefined) =>
-    v == null ? "n/a" : `${Math.round(v * 100)}%`;
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
       {recordLines ? (
@@ -69,9 +65,6 @@ export function TeamStatPanel({
           }
         />
       )}
-      {returningOff !== undefined && (
-        <Stat label="Returning Off. Production" value={sharePct(returningOff)} />
-      )}
       <Stat
         label="Rushing Yards"
         value={hasPrint ? ydsWithAvg(team.stats.rushYdsFor, avgRush ?? null) : "n/a"}
@@ -80,24 +73,8 @@ export function TeamStatPanel({
         label="Passing Yards"
         value={hasPrint ? ydsWithAvg(team.stats.passYdsFor, avgPass ?? null) : "n/a"}
       />
-      <Stat
-        label="Off Efficiency"
-        value={e?.offIndex !== null && e?.offIndex !== undefined ? String(e.offIndex) : "n/a"}
-        sub={
-          e?.offYdsPerPlay != null
-            ? `${e.offYdsPerPlay.toFixed(1)} yds/play`
-            : undefined
-        }
-      />
-      <Stat
-        label="Def Efficiency"
-        value={e?.defIndex !== null && e?.defIndex !== undefined ? String(e.defIndex) : "n/a"}
-        sub={
-          e && e.defCoverage.covered > 0
-            ? `${e.defCoverage.covered} of ${e.defCoverage.games} games charted`
-            : undefined
-        }
-      />
+      {/* Two separate stats, one box — client call, Sep 1 2026. */}
+      <EfficiencyStat efficiency={e} />
       <Stat
         label="Yds / Play"
         value={e?.offYdsPerPlay != null ? e.offYdsPerPlay.toFixed(1) : "n/a"}
@@ -131,6 +108,41 @@ export function TeamStatPanel({
               : undefined
           }
         />
+      )}
+    </div>
+  );
+}
+
+/**
+ * Offensive and defensive efficiency share one box (client call, Sep 1 2026).
+ * They stay two distinct numbers — this is a layout change, not a blend — so
+ * each keeps its own label, value and coverage note.
+ */
+function EfficiencyStat({ efficiency }: { efficiency: TeamEfficiency | null }) {
+  const idx = (v: number | null | undefined) =>
+    v === null || v === undefined ? "n/a" : String(v);
+  return (
+    <div className="rounded-xl border border-chrome-500/15 bg-navy-700/40 p-4">
+      <div className="text-xs uppercase tracking-wider text-chrome-500">Efficiency</div>
+      <div className="mt-1 flex items-baseline gap-4">
+        <div>
+          <div className="font-display text-2xl">{idx(efficiency?.offIndex)}</div>
+          <div className="text-xs uppercase tracking-wider text-chrome-500">Off</div>
+        </div>
+        <div>
+          <div className="font-display text-2xl">{idx(efficiency?.defIndex)}</div>
+          <div className="text-xs uppercase tracking-wider text-chrome-500">Def</div>
+        </div>
+      </div>
+      {efficiency?.offYdsPerPlay != null && (
+        <div className="text-xs text-chrome-500 mt-0.5">
+          {efficiency.offYdsPerPlay.toFixed(1)} yds/play
+        </div>
+      )}
+      {efficiency && efficiency.defCoverage.covered > 0 && (
+        <div className="text-xs text-chrome-500 mt-0.5">
+          {efficiency.defCoverage.covered} of {efficiency.defCoverage.games} games charted
+        </div>
       )}
     </div>
   );

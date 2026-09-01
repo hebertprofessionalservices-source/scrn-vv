@@ -1,4 +1,4 @@
-import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam, type PairOutlook } from "@/components/matchup/matchup-picker";
 import { KeyPlayers } from "@/components/matchup/key-players";
 import { SeriesHistory } from "@/components/matchup/series-history";
@@ -30,7 +30,6 @@ export default async function MatchupBuilderPage({
   const potentials = playoffPotentials(data);
   const rate = buildRatings(data);
   const efficiency = buildTeamEfficiency(data);
-  const prior = await loadPriorSeasonInfo(season);
   const deltas = await loadRankDeltas(season, power);
 
   const teams: MatchupTeam[] = data.teams
@@ -46,16 +45,15 @@ export default async function MatchupBuilderPage({
         classification: t.classification,
         district: t.district,
         record: { wins: t.record.wins, losses: t.record.losses },
-        power: p
-          ? {
-              overall: p.overallRank,
-              cls: p.classRank,
-              priorYear:
-                p.source === "prior" ? prior?.season.slice(0, 4) ?? "prior" : null,
-              deltaOverall: d?.overall ?? null,
-              deltaClass: d?.class ?? null,
-            }
-          : null,
+        power:
+          p && p.overallRank !== null && p.classRank !== null
+            ? {
+                overall: p.overallRank,
+                cls: p.classRank,
+                deltaOverall: d?.overall ?? null,
+                deltaClass: d?.class ?? null,
+              }
+            : null,
         rating: p?.rating ?? null,
         playoffPct: potentials.get(t.id) ?? null,
         runPass,
@@ -63,7 +61,6 @@ export default async function MatchupBuilderPage({
           rate,
           efficiency: efficiency.get(t.id) ?? null,
           runPass,
-          retOff: prior?.returningOffense.get(t.id) ?? null,
         }),
         stats: {
           pointsFor: t.stats.pointsFor,

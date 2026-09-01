@@ -52,9 +52,9 @@ export function TaleOfTheTape({
 
   if (sides) {
     const extra = outlookRows(sides.a, sides.b);
-    // Client's order: returning production, then yardage w/ averages,
-    // then efficiency + strength of schedule.
-    rows.push(...extra.slice(0, 2));
+    // Client's order: offensive efficiency, then yardage w/ averages, then
+    // defensive efficiency + strength of schedule.
+    rows.push(...extra.slice(0, 1));
     rows.push({
       label: "Rushing Yards",
       a: a.stats.yardsFor > 0 ? ydsWithAvg(a.stats.rushYdsFor, sides.a.avgRush) : "—",
@@ -65,7 +65,7 @@ export function TaleOfTheTape({
       a: a.stats.yardsFor > 0 ? ydsWithAvg(a.stats.passYdsFor, sides.a.avgPass) : "—",
       b: b.stats.yardsFor > 0 ? ydsWithAvg(b.stats.passYdsFor, sides.b.avgPass) : "—",
     });
-    rows.push(...extra.slice(2));
+    rows.push(...extra.slice(1));
   }
 
   return (

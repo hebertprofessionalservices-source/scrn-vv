@@ -65,7 +65,6 @@ const idx = (v: number | null) => (v === null ? "n/a" : String(v));
 
 /** Per-side inputs for the extra comparison rows (order = client's list). */
 export interface OutlookSide {
-  retOff: number | null;
   offEff: number | null;
   defEff: number | null;
   sosPlayed: number | null;
@@ -89,7 +88,6 @@ export function outlookRows(a: OutlookSide, b: OutlookSide): CompareRow[] {
     bBetter: va !== null && vb !== null && vb > va,
   });
   return [
-    num("Returning Off. Production", a.retOff, b.retOff, sharePct),
     num("Off Efficiency", a.offEff, b.offEff, idx),
     num("Def Efficiency", a.defEff, b.defEff, idx),
     { label: "SOS Rating", a: fmtSos(a.sosPlayed), b: fmtSos(b.sosPlayed) },

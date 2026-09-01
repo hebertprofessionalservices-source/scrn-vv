@@ -55,9 +55,9 @@ describe("returningShares", () => {
 
 describe("adjustPriorRatings", () => {
   const power = new Map<string, PowerRank>([
-    ["a", { rating: 20, overallRank: 1, classRank: 1, source: "current" }],
-    ["b", { rating: 10, overallRank: 2, classRank: 2, source: "current" }],
-    ["c", { rating: -5, overallRank: 3, classRank: 3, source: "current" }],
+    ["a", { rating: 20, overallRank: 1, classRank: 1 }],
+    ["b", { rating: 10, overallRank: 2, classRank: 2 }],
+    ["c", { rating: -5, overallRank: 3, classRank: 3 }],
   ]);
 
   it("scales ratings toward league average by returning share", () => {

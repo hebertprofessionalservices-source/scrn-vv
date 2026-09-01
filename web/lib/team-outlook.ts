@@ -92,8 +92,6 @@ export interface MatchupSideData {
   /** Yards per rush / pass attempt; null without print stats or attempts. */
   avgRush: number | null;
   avgPass: number | null;
-  /** Returning offensive production share (0..1). */
-  retOff: number | null;
   offEff: number | null;
   defEff: number | null;
   sosPlayed: number | null;
@@ -107,7 +105,6 @@ export function buildMatchupSide(
     rate: Rate;
     efficiency: TeamEfficiency | null;
     runPass: RunPassSplit | null;
-    retOff: number | null;
   },
 ): MatchupSideData {
   const splits = teamRecordSplits(data, team);
@@ -131,7 +128,6 @@ export function buildMatchupSide(
       hasPrint && ctx.runPass && ctx.runPass.pass > 0
         ? team.stats.passYdsFor / ctx.runPass.pass
         : null,
-    retOff: ctx.retOff,
     offEff: ctx.efficiency?.offIndex ?? null,
     defEff: ctx.efficiency?.defIndex ?? null,
     sosPlayed: sos.played,

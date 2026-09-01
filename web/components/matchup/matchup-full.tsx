@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
+import { loadDataset, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { RankDeltaChip } from "@/components/rank-delta";
 import type { RankDelta } from "@/lib/rank-history";
 import { TaleOfTheTape } from "@/components/matchup/tale-of-the-tape";
@@ -64,14 +64,11 @@ export async function MatchupFull({
   };
   const rate = buildRatings(data);
   const efficiency = buildTeamEfficiency(data);
-  const prior = await loadPriorSeasonInfo(season);
-  const priorYear = prior?.season.slice(0, 4) ?? null;
   const sideFor = (t: Team, rp: typeof runPass.a) =>
     buildMatchupSide(data, t, {
       rate,
       efficiency: efficiency.get(t.id) ?? null,
       runPass: rp,
-      retOff: prior?.returningOffense.get(t.id) ?? null,
     });
   const sides = { a: sideFor(away, runPass.a), b: sideFor(home, runPass.b) };
   const keyLeaders = matchupKeyLeaders(data, away, home, h2h);
@@ -92,7 +89,6 @@ export async function MatchupFull({
             playoffPct={potentials.get(away.id) ?? null}
             outlook={outlook?.a ?? null}
             records={sides.a.records}
-            priorYear={priorYear}
             delta={deltas.get(away.id) ?? null}
           />
           <TeamLogo src={away.logoUrl} size={64} />
@@ -107,7 +103,6 @@ export async function MatchupFull({
             playoffPct={potentials.get(home.id) ?? null}
             outlook={outlook?.b ?? null}
             records={sides.b.records}
-            priorYear={priorYear}
             delta={deltas.get(home.id) ?? null}
           />
         </div>
@@ -179,7 +174,6 @@ function MatchupTeamHeader({
   playoffPct,
   outlook,
   records,
-  priorYear,
   delta,
 }: {
   team: Team;
@@ -188,16 +182,13 @@ function MatchupTeamHeader({
   playoffPct: number | null;
   outlook: MatchupOutlook | null;
   records: RecordsBlockInput;
-  priorYear: string | null;
   delta: RankDelta | null;
 }) {
-  const rank = power && (
+  // MaxPreps ranks only; a team they don't rank simply shows none.
+  const rank = power && power.overallRank !== null && power.classRank !== null && (
     <span className="font-display text-lg text-chrome-500 whitespace-nowrap">
       #{power.overallRank} <RankDeltaChip delta={delta?.overall} /> Overall - #{power.classRank}{" "}
       <RankDeltaChip delta={delta?.class} /> {classificationLabel(team.classification)}
-      {power.source === "prior" && (
-        <span className="text-sm text-chrome-500/80"> ({priorYear ?? "prior"})</span>
-      )}
     </span>
   );
   return (

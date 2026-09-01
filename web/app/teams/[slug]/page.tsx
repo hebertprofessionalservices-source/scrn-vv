@@ -70,13 +70,6 @@ export default async function TeamDetailPage({
   const power = powerAll.get(team.id) ?? null;
   const rankDelta = (await loadRankDeltas(season, powerAll)).get(team.id) ?? null;
   const priorInfo = await loadPriorSeasonInfo(season);
-  const prior =
-    power?.source === "prior" && priorInfo
-      ? {
-          lastRank: priorInfo.power.get(team.id)?.overallRank ?? null,
-          returning: priorInfo.returningOffense.get(team.id) ?? null,
-        }
-      : null;
   const lastLoss = findLastLoss(team, games, (id) => data.teamsByAlias.get(id));
   const efficiency = buildTeamEfficiency(data).get(team.id) ?? null;
   const coach = teamCoachView(await loadHistory(), team, Number(season.slice(0, 4)));
@@ -88,7 +81,6 @@ export default async function TeamDetailPage({
     rate,
     efficiency,
     runPass,
-    retOff: priorInfo?.returningOffense.get(team.id) ?? null,
   });
   const next = nextScheduledGame(data, team);
   const nextOutlook = next ? matchupPlayoffOutlook(data, team.id, next.opp.id) : null;
@@ -152,7 +144,7 @@ export default async function TeamDetailPage({
         </Link>
       </header>
 
-      <TeamVitals team={team} power={power} prior={prior} delta={rankDelta} lastLoss={lastLoss} coach={coach} coachName={coachName} />
+      <TeamVitals team={team} power={power} delta={rankDelta} lastLoss={lastLoss} coach={coach} coachName={coachName} />
 
       <TeamStatPanel
         team={team}
@@ -161,7 +153,6 @@ export default async function TeamDetailPage({
         records={side.records}
         avgRush={side.avgRush}
         avgPass={side.avgPass}
-        returningOff={side.retOff}
         sos={{ played: side.sosPlayed, remaining: side.sosRemaining }}
         playoff={playoffCard}
       />

@@ -25,11 +25,10 @@ export interface MatchupTeam {
   classification: Team["classification"];
   district: string | null;
   record: WL;
-  /** priorYear set (e.g. "2025") when the rank is a prior-season projection. */
+  /** MaxPreps' ranks; null when MaxPreps does not rank the team. */
   power: {
     overall: number;
     cls: number;
-    priorYear: string | null;
     /** Week-over-week movement (positive = up); null before history exists. */
     deltaOverall: number | null;
     deltaClass: number | null;
@@ -303,9 +302,6 @@ function TeamHeader({
       #{team.power.overall} <RankDeltaChip delta={team.power.deltaOverall} /> Overall
       {" "}- #{team.power.cls} <RankDeltaChip delta={team.power.deltaClass} />{" "}
       {classificationLabel(team.classification)}
-      {team.power.priorYear && (
-        <span className="text-sm text-chrome-500/80"> ({team.power.priorYear})</span>
-      )}
     </span>
   );
   return (

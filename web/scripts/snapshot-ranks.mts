@@ -1,5 +1,5 @@
 /**
- * Snapshot today's SCRN Power Rankings into
+ * Snapshot today's MaxPreps rankings into
  * public/data/<season>/rank-history.json.
  *
  * Run after every data update (`pnpm snapshot-ranks` from web/): the site
@@ -8,13 +8,15 @@
  * that week's slate, so the Sunday recap reads the movement those games
  * caused. Re-running on the same day replaces that day's entry; earlier
  * snapshots stay frozen.
+ *
+ * Snapshots must all be on the same footing. When the rank SOURCE changes,
+ * old entries are not comparable and the file has to be cleared — mixing a
+ * power-model snapshot with a MaxPreps one reports the switch as movement.
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { buildDataset } from "../lib/data";
 import { buildPowerRankings } from "../lib/power";
-import { adjustPriorRatings } from "../lib/returning";
-import { buildPriorSeasonInfo, previousSeason } from "../lib/prior";
 import { mondayOf, type RankHistory } from "../lib/rank-history";
 import type { Game, Player, Team } from "../lib/types";
 
@@ -53,19 +55,9 @@ const [teams, players, games] = await Promise.all([
   readJson<Player[]>(`${season}/players.json`, []),
   readJson<Game[]>(`${season}/games.json`, []),
 ]);
-const prev = previousSeason(season);
-const prior = buildPriorSeasonInfo(
-  prev,
-  await readJson<Team[]>(`${prev}/teams.json`, []),
-  await readJson<Player[]>(`${prev}/players.json`, []),
-  await readJson<Game[]>(`${prev}/games.json`, []),
-);
-const data = buildDataset(
-  { teams, players, games },
-  season,
-  prior ? adjustPriorRatings(prior.power, prior.returning) : null,
-  prior?.stateRanks ?? null,
-);
+// No prior-season inputs: ranks are MaxPreps' current list and nothing is
+// carried over from last season.
+const data = buildDataset({ teams, players, games }, season);
 const power = buildPowerRankings(data);
 
 const today = new Date().toISOString().slice(0, 10);
@@ -80,12 +72,17 @@ const history = await readJson<RankHistory>(`${season}/rank-history.json`, {});
 for (const date of Object.keys(history)) {
   if (mondayOf(date) === mondayOf(today) && date >= today) delete history[date];
 }
+// Only teams MaxPreps actually ranks; a null would make the next run's
+// subtraction produce a bogus delta.
+const ranked = [...power].filter(
+  ([, r]) => r.overallRank !== null && r.classRank !== null,
+);
 history[today] = Object.fromEntries(
-  [...power].map(([id, r]) => [id, { o: r.overallRank, c: r.classRank }]),
+  ranked.map(([id, r]) => [id, { o: r.overallRank!, c: r.classRank! }]),
 );
 
 await fs.writeFile(historyPath, JSON.stringify(history, null, 1), "utf-8");
 console.log(
-  `snapshot ${today}: ${power.size} teams -> ${historyPath} ` +
+  `snapshot ${today}: ${ranked.length} ranked teams -> ${historyPath} ` +
   `(${Object.keys(history).length} snapshots)`,
 );
