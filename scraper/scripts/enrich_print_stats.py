@@ -8,7 +8,8 @@ complete season tables for every player, with semantic td classes
 title attribute.
 
 This script:
-  1. Extracts each team's print URL from its cached 25-26 stats page.
+  1. Extracts each team's print URL from that season's stats page (fetched if
+     it isn't cached yet — the print URL's ssid is season-specific).
   2. Fetches the print pages (cached in crawl.db, so re-runs are free).
   3. Parses every stat table into per-athlete flat dicts.
   4. Joins athletes to players.json rows by normalized name (fallback:
@@ -16,12 +17,17 @@ This script:
   5. Rebuilds team-level yardage/turnover totals from the Season Totals rows.
   6. Writes enriched players.json / teams.json and a match-rate report.
 
+Team totals here are SEASON-TO-DATE, not per-week: the print page's tfoot rows
+are "Season Totals". MaxPreps exposes no weekly split, so an in-season re-run
+just refreshes the cumulative numbers.
+
 Usage:
-    .venv/Scripts/python scripts/enrich_print_stats.py [--season 2025-26]
+    .venv/Scripts/python scripts/enrich_print_stats.py [--season 2026-27]
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -37,11 +43,13 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from scraper.cache import CrawlCache  # noqa: E402
 
-SEASON = "2025-26"
-SEASON_URL_FRAGMENT = "25-26"
-DATA_DIR = ROOT / "output" / "data" / SEASON
 CACHE_PATH = ROOT / ".cache" / "crawl.db"
-REPORT_PATH = ROOT / "output" / "enrich-report.md"
+
+
+def season_fragment(season: str) -> str:
+    """'2026-27' -> '26-27', the form MaxPreps puts in stats-page URLs."""
+    start, end = season.split("-")
+    return f"{start[2:]}-{end}"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -61,43 +69,46 @@ def normalize_name(name: str) -> str:
     return " ".join(cleaned.split())
 
 
-def extract_print_urls(cache: CrawlCache, teams: list[dict]) -> dict[str, str]:
-    """Map teamId -> print stats URL using cached 25-26 stats pages."""
-    prefix_to_team: dict[str, str] = {}
-    for team in teams:
-        prefix = team["maxprepsUrl"].rstrip("/")
-        prefix_to_team[prefix] = team["id"]
+def print_url_from_stats_page(html: str) -> str | None:
+    """The Print link out of a stats page's __NEXT_DATA__ payload."""
+    match = NEXT_DATA_RE.search(html)
+    if not match:
+        return None
+    try:
+        payload = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return None
+    page_props = payload.get("props", {}).get("pageProps", {})
+    for link in page_props.get("sharedStatsLinks") or []:
+        if link.get("displayText") == "Print":
+            return link["canonicalUrl"]
+    return None
 
+
+def extract_print_urls(
+    client: httpx.Client,
+    cache: CrawlCache,
+    teams: list[dict],
+    fragment: str,
+) -> dict[str, str]:
+    """Map teamId -> print stats URL, fetching stats pages not yet cached.
+
+    The print URL carries a season-specific ssid, so it has to come from that
+    season's own stats page — it can't be constructed.
+    """
     result: dict[str, str] = {}
-    rows = cache._db["responses"].rows_where(  # noqa: SLF001
-        "url LIKE ?", [f"%{SEASON_URL_FRAGMENT}/stats%"]
-    )
-    for row in rows:
-        url: str = row["url"]
-        team_id = None
-        for prefix, tid in prefix_to_team.items():
-            if url.startswith(prefix):
-                team_id = tid
-                break
-        if team_id is None:
+    for team in teams:
+        stats_url = f"{team['maxprepsUrl'].rstrip('/')}/{fragment}/stats"
+        html = fetch_page(client, cache, stats_url)
+        if html is None:
             continue
-
-        match = NEXT_DATA_RE.search(row["body"])
-        if not match:
-            continue
-        try:
-            payload = json.loads(match.group(1))
-        except json.JSONDecodeError:
-            continue
-        page_props = payload.get("props", {}).get("pageProps", {})
-        for link in page_props.get("sharedStatsLinks") or []:
-            if link.get("displayText") == "Print":
-                result[team_id] = link["canonicalUrl"]
-                break
+        url = print_url_from_stats_page(html)
+        if url is not None:
+            result[team["id"]] = url
     return result
 
 
-def fetch_print_page(client: httpx.Client, cache: CrawlCache, url: str) -> str | None:
+def fetch_page(client: httpx.Client, cache: CrawlCache, url: str) -> str | None:
     hit = cache.get(url)
     if hit is not None and hit.status == 200:
         return hit.body
@@ -273,21 +284,30 @@ def dedupe_players(players: list[dict]) -> list[dict]:
 
 
 def main() -> None:
-    teams = json.loads((DATA_DIR / "teams.json").read_text(encoding="utf-8"))
-    players = json.loads((DATA_DIR / "players.json").read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--season", default="2025-26", help="e.g. 2026-27")
+    args = parser.parse_args()
+
+    season: str = args.season
+    fragment = season_fragment(season)
+    data_dir = ROOT / "output" / "data" / season
+    report_path = ROOT / "output" / f"enrich-report-{season}.md"
+
+    teams = json.loads((data_dir / "teams.json").read_text(encoding="utf-8"))
+    players = json.loads((data_dir / "players.json").read_text(encoding="utf-8"))
     cache = CrawlCache(CACHE_PATH)
 
-    print(f"Teams: {len(teams)}, players: {len(players)}", flush=True)
-    print_urls = extract_print_urls(cache, teams)
+    client = httpx.Client(
+        headers={"User-Agent": USER_AGENT}, timeout=30, follow_redirects=True
+    )
+
+    print(f"Season {season}: {len(teams)} teams, {len(players)} players", flush=True)
+    print_urls = extract_print_urls(client, cache, teams, fragment)
     print(f"Print URLs resolved: {len(print_urls)}/{len(teams)}", flush=True)
 
     players_by_team: dict[str, list[dict]] = {}
     for player in players:
         players_by_team.setdefault(player["teamId"], []).append(player)
-
-    client = httpx.Client(
-        headers={"User-Agent": USER_AGENT}, timeout=30, follow_redirects=True
-    )
 
     matched = 0
     unmatched_athletes: list[str] = []
@@ -308,7 +328,7 @@ def main() -> None:
             enriched_teams.append(new_team)
             continue
 
-        html = fetch_print_page(client, cache, url)
+        html = fetch_page(client, cache, url)
         if html is None:
             enriched_players.extend(roster)
             enriched_teams.append(new_team)
@@ -375,15 +395,15 @@ def main() -> None:
     enriched_players = dedupe_players(enriched_players)
     print(f"Deduped {before - len(enriched_players)} duplicate roster rows.", flush=True)
 
-    (DATA_DIR / "players.json").write_text(
+    (data_dir / "players.json").write_text(
         json.dumps(enriched_players, indent=2), encoding="utf-8"
     )
-    (DATA_DIR / "teams.json").write_text(
+    (data_dir / "teams.json").write_text(
         json.dumps(enriched_teams, indent=2), encoding="utf-8"
     )
 
     report = [
-        "# Print-stats enrichment report",
+        f"# Print-stats enrichment report — {season}",
         "",
         f"- Teams with print URL: {len(print_urls)}/{len(teams)}",
         f"- Roster players matched to print stats: {matched}/{len(players)}",
@@ -397,9 +417,9 @@ def main() -> None:
         "",
         *[f"- {line}" for line in unmatched_athletes[:200]],
     ]
-    REPORT_PATH.write_text("\n".join(report), encoding="utf-8")
+    report_path.write_text("\n".join(report), encoding="utf-8")
     print(f"DONE. Matched {matched}/{len(players)} players.", flush=True)
-    print(f"Report: {REPORT_PATH}", flush=True)
+    print(f"Report: {report_path}", flush=True)
 
 
 if __name__ == "__main__":
