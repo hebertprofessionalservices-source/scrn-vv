@@ -4,7 +4,8 @@ import { toPng } from "html-to-image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
- * Fits the fixed 1920x1080 recap page to whatever screen it is opened on.
+ * Fits a fixed 1920x1080 broadcast page to whatever screen it is opened on.
+ * Shared by the weekly recap and the week-ahead preview.
  *
  * The page itself must stay exactly 1920x1080 — that rigidity is what makes a
  * screenshot a ready-to-post 16:9 graphic — so this scales it rather than
@@ -21,9 +22,13 @@ const PAGE_H = 1080;
 export function PaperStage({
   children,
   fileName = "recap",
+  backHref = "/present/newspaper",
+  backLabel = "← All recaps",
 }: {
   children: React.ReactNode;
   fileName?: string;
+  backHref?: string;
+  backLabel?: string;
 }) {
   const stage = useRef<HTMLDivElement>(null);
   const [full, setFull] = useState(false);
@@ -138,8 +143,8 @@ export function PaperStage({
   return (
     <div className="paper-stage" ref={stage}>
       <div className={`paper-controls${idle ? " paper-controls--idle" : ""}`}>
-        <a href="/present/newspaper" className="paper-btn">
-          ← All recaps
+        <a href={backHref} className="paper-btn">
+          {backLabel}
         </a>
         <button
           type="button"

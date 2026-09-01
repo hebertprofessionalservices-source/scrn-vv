@@ -1,4 +1,4 @@
-import "./newspaper.css";
+import "../../paper.css";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { currentSeason, loadDataset } from "@/lib/data-server";
@@ -13,7 +13,7 @@ import {
   type Performance,
 } from "@/lib/newspaper";
 import { classificationLabel } from "@/lib/team-format";
-import { PaperStage } from "./paper-stage";
+import { PaperStage } from "@/components/present/paper-stage";
 
 
 /**

@@ -1,0 +1,22 @@
+/*
+ * Preview-only additions on top of paper.css.
+ *
+ * The recap's hero block is built around a final score; a preview has no score
+ * to set, so the same frame carries crests either side of a VS, and the board's
+ * final-score column carries the day instead. Everything else — masthead,
+ * heroes, modules, board — is shared.
+ */
+
+.hero__vs {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  color: #8d1a25;
+  letter-spacing: 0.02em;
+}
+
+.board__day {
+  font-family: var(--font-display), sans-serif;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+

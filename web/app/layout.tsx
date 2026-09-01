@@ -30,12 +30,13 @@ export default async function RootLayout({
   const pathname = h.get("x-next-pathname") ?? "";
   /**
    * /present pages are broadcast surfaces and drop the site chrome so nothing
-   * intrudes on a screenshot. The recap INDEX is the exception: it is a normal
-   * dashboard page you browse from the nav, and only the printed page it links
-   * to needs to be chromeless.
+   * intrudes on a screenshot. The recap and preview INDEXES are the exception:
+   * they are normal dashboard pages you browse from the nav, and only the
+   * printed pages they link to need to be chromeless.
    */
-  const isRecapIndex = pathname.replace(/\/$/, "") === "/present/newspaper";
-  const chromeless = pathname.startsWith("/present") && !isRecapIndex;
+  const path = pathname.replace(/\/$/, "");
+  const isPaperIndex = path === "/present/newspaper" || path === "/present/preview";
+  const chromeless = pathname.startsWith("/present") && !isPaperIndex;
 
   const season = await currentSeason();
   const data = chromeless ? null : await loadDataset(season);

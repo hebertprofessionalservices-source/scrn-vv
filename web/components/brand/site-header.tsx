@@ -44,6 +44,9 @@ export async function SiteHeader() {
           <a href="/matchup" className="hover:text-crimson-500">
             Match Up
           </a>
+          <a href="/present/preview" className="hover:text-crimson-500">
+            Preview
+          </a>
           <a href="/present/newspaper" className="hover:text-crimson-500">
             Recaps
           </a>
