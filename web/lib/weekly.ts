@@ -113,13 +113,16 @@ function collectGameLines(
   g: Game,
   formsFor: (teamId: string) => Map<string, Player | null>,
   lines: Map<string, RawLine>,
+  { includeEightMan = false }: { includeEightMan?: boolean } = {},
 ): void {
   if (g.status !== "final" || !g.boxScore) return;
   const home = data.teamsByAlias.get(g.homeTeamId);
   const away = data.teamsByAlias.get(g.awayTeamId);
   if (!home || !away || home.id === away.id) return;
-  // 8-Man is left out of the ranked weekly lists (client call, Aug 2026).
-  if (isEightMan(home.classification) || isEightMan(away.classification)) return;
+  // 8-Man is left out of the ranked weekly lists (client call, Aug 2026), but
+  // an 8-Man matchup still shows its own game's stats.
+  if (!includeEightMan
+    && (isEightMan(home.classification) || isEightMan(away.classification))) return;
   const homeForms = formsFor(home.id);
   const awayForms = formsFor(away.id);
 
@@ -205,7 +208,7 @@ function extractLines(data: Dataset, asOf?: string): RawLine[] {
 /** Attributed stat lines for a single final game (both teams). */
 export function gameStatLines(data: Dataset, game: Game): RawLine[] {
   const lines = new Map<string, RawLine>();
-  collectGameLines(data, game, makeFormsFor(data), lines);
+  collectGameLines(data, game, makeFormsFor(data), lines, { includeEightMan: true });
   return [...lines.values()];
 }
 

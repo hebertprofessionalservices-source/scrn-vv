@@ -1,7 +1,6 @@
 import { loadDataset, loadPriorSeasonInfo, loadRankDeltas, currentSeason } from "@/lib/data-server";
 import { MatchupPicker, type MatchupTeam, type PairOutlook } from "@/components/matchup/matchup-picker";
 import { KeyPlayers } from "@/components/matchup/key-players";
-import { KeyReturnersSection } from "@/components/matchup/key-returners";
 import { SeriesHistory } from "@/components/matchup/series-history";
 import { buildStorylines } from "@/lib/storylines";
 import { loadHistory } from "@/lib/history-server";
@@ -137,17 +136,12 @@ async function MatchupExtras({
     ...buildStorylines(data, teamA, teamB, h2h),
     ...historyView.milestones,
   ].slice(0, 8);
-  const prior = await loadPriorSeasonInfo(season);
-  const keyLeaders = matchupKeyLeaders(
-    data, teamA, teamB, h2h, prior?.returningPlayers ?? null,
-  );
+  const keyLeaders = matchupKeyLeaders(data, teamA, teamB, h2h);
 
   return (
     <div className="mt-8 space-y-8">
-      <KeyReturnersSection
-        a={{ teamName: teamA.name, returners: prior?.keyReturners.get(teamA.id) ?? [] }}
-        b={{ teamName: teamB.name, returners: prior?.keyReturners.get(teamB.id) ?? [] }}
-      />
+      {keyLeaders && <KeyPlayers away={teamA} home={teamB} leaders={keyLeaders} />}
+      <SeriesHistory away={teamA} home={teamB} h2h={h2h} view={historyView} />
       {storylines.length > 0 && (
         <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
           <h2 className="font-display text-xl mb-3">Storylines</h2>
@@ -161,8 +155,6 @@ async function MatchupExtras({
           </ul>
         </section>
       )}
-      <KeyPlayers away={teamA} home={teamB} leaders={keyLeaders} />
-      <SeriesHistory away={teamA} home={teamB} h2h={h2h} view={historyView} />
     </div>
   );
 }

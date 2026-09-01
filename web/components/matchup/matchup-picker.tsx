@@ -4,8 +4,8 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
-import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
 import { RankDeltaChip } from "@/components/rank-delta";
+import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
 import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg } from "@/lib/matchup-format";
 import type { MatchupOutlook } from "@/lib/standings";
 import type { MatchupSideData } from "@/lib/team-outlook";
@@ -152,16 +152,8 @@ export function MatchupPicker({
             </div>
           </div>
 
-          <div className="mb-6 flex items-center gap-4">
-            <div className="flex-1">
-              <AiPickBanner a={teamA} b={teamB} />
-            </div>
-            <a
-              href={`/present/matchup/${teamA.slug}-vs-${teamB.slug}`}
-              className="shrink-0 px-4 py-2 rounded-lg border border-crimson-500 text-crimson-500 font-display"
-            >
-              Broadcast →
-            </a>
+          <div className="mb-6">
+            <AiPickBanner a={teamA} b={teamB} />
           </div>
 
           <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
@@ -273,8 +265,12 @@ function TeamSelect({
   );
 }
 
-function pairMatches(outlook: PairOutlook | null, aId: string, bId: string): boolean {
-  return outlook !== null && outlook.aId === aId && outlook.bId === bId;
+function pairMatches(
+  pair: { aId: string; bId: string } | null,
+  aId: string,
+  bId: string,
+): boolean {
+  return pair !== null && pair.aId === aId && pair.bId === bId;
 }
 
 function AiPickBanner({ a, b }: { a: MatchupTeam; b: MatchupTeam }) {

@@ -72,11 +72,10 @@ function finalGame(): Game {
 }
 
 describe("matchupKeyLeaders", () => {
-  it("uses the concluded game's box score once available", () => {
+  it("uses the concluded game's box score", () => {
     const g = finalGame();
     const data = buildDataset({ teams, players, games: [g] });
-    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [g], null);
-    expect(leaders.mode).toBe("game");
+    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [g])!;
     expect(leaders.away.offense[0].player.name).toBe("Alan Quarter");
     expect(leaders.away.offense[0].line).toContain("250");
     expect(leaders.home.offense[0].player.name).toBe("Bob Thrower");
@@ -84,26 +83,19 @@ describe("matchupKeyLeaders", () => {
     expect(leaders.home.defense[0].line).toContain("14 TKL");
   });
 
-  it("projects from season stats before the game concludes", () => {
+  it("returns null before the game concludes, season stats notwithstanding", () => {
     const data = buildDataset({ teams, players, games: [] });
-    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [], null);
-    expect(leaders.mode).toBe("season");
-    expect(leaders.away.offense[0].player.name).toBe("Alan Quarter");
-    expect(leaders.home.offense[0].player.name).toBe("Bob Thrower");
+    expect(
+      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, []),
+    ).toBeNull();
   });
 
-  it("falls back to returning players when no current stats exist", () => {
-    const bare = players.map((p) => ({
-      ...p,
-      stats: { ...p.stats, passing: { ...p.stats.passing, yds: 0 }, rushing: { ...p.stats.rushing, yds: 0 }, defense: { ...p.stats.defense, tackles: 0 } },
-    }));
-    const data = buildDataset({ teams, players: bare, games: [] });
-    const returning = new Map([
-      ["a", [player("ret", "a", "Vet Passer", "QB", { passYds: 1500 })]],
-    ]);
-    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [], returning);
-    expect(leaders.mode).toBe("returning");
-    expect(leaders.away.offense[0].player.name).toBe("Vet Passer");
+  it("returns null when the game is final but has no box score", () => {
+    const g = { ...finalGame(), boxScore: null };
+    const data = buildDataset({ teams, players, games: [g] });
+    expect(
+      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [g]),
+    ).toBeNull();
   });
 });
 

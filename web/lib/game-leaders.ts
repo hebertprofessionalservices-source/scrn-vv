@@ -17,8 +17,6 @@ export interface SideLeaders {
 export interface MatchupLeaders {
   away: SideLeaders;
   home: SideLeaders;
-  /** "game" → stats from the concluded matchup; otherwise a projection. */
-  mode: "game" | "season" | "returning";
 }
 
 /** Season stat leaders from a roster (current or returning players). */
@@ -137,43 +135,30 @@ function gameSideLeaders(lines: RawLine[]): SideLeaders {
 const hasAny = (s: SideLeaders) => s.offense.length + s.defense.length > 0;
 
 /**
- * Key Players for a matchup:
- * 1. Once the head-to-head game has concluded (box score in), the leaders
- *    FROM THAT GAME.
- * 2. Before then, the projected impact players — current-season stat
- *    leaders, or last season's returning leaders while stats are empty.
+ * Key Players for a matchup: the leaders FROM THAT GAME, and nothing else.
+ * Season and prior-season projections used to stand in before kickoff; the
+ * client wants only what happened in this game, so an unplayed matchup (or
+ * one with no box score) returns null and the section is dropped.
  */
 export function matchupKeyLeaders(
   data: Dataset,
   away: Team,
   home: Team,
   h2h: Game[],
-  returningPlayers: Map<string, Player[]> | null,
-): MatchupLeaders {
+): MatchupLeaders | null {
   const finals = h2h
     .filter((g) => g.status === "final" && g.boxScore)
     .sort((a, b) => b.date.localeCompare(a.date));
   for (const g of finals) {
     const lines = gameStatLines(data, g);
     if (lines.length === 0) continue;
-    return {
-      mode: "game",
+    const leaders = {
       away: gameSideLeaders(lines.filter((l) => l.team.id === away.id)),
       home: gameSideLeaders(lines.filter((l) => l.team.id === home.id)),
     };
+    if (hasAny(leaders.away) || hasAny(leaders.home)) return leaders;
   }
-
-  const seasonAway = leadersFor(data.playersByTeam.get(away.id) ?? []);
-  const seasonHome = leadersFor(data.playersByTeam.get(home.id) ?? []);
-  if (hasAny(seasonAway) || hasAny(seasonHome)) {
-    return { mode: "season", away: seasonAway, home: seasonHome };
-  }
-
-  return {
-    mode: "returning",
-    away: leadersFor(returningPlayers?.get(away.id) ?? []),
-    home: leadersFor(returningPlayers?.get(home.id) ?? []),
-  };
+  return null;
 }
 
 /** Team-page variant: current season leaders, else returning projection. */

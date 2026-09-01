@@ -23,21 +23,32 @@ export function KeyPlayers({
   );
 }
 
-/** Single-team variant for the team page. */
+/**
+ * Single-team variant for the team page, where it sits beside the schedule.
+ * The column stretches so the card matches the schedule's height.
+ */
 export function TeamKeyPlayers({ team, leaders }: { team: Team; leaders: SideLeaders }) {
   return (
-    <section>
+    <section className="flex flex-col">
       <h2 className="font-display text-2xl mb-3">Key Players</h2>
-      <div className="max-w-2xl">
-        <TeamKeyPlayersCard team={team} leaders={leaders} />
-      </div>
+      <TeamKeyPlayersCard team={team} leaders={leaders} className="flex-1" />
     </section>
   );
 }
 
-function TeamKeyPlayersCard({ team, leaders }: { team: Team; leaders: SideLeaders }) {
+function TeamKeyPlayersCard({
+  team,
+  leaders,
+  className = "",
+}: {
+  team: Team;
+  leaders: SideLeaders;
+  className?: string;
+}) {
   return (
-    <div className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
+    <div
+      className={`rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5 ${className}`}
+    >
       <h3 className="font-display text-lg mb-3">{team.name}</h3>
       <LeaderGroup label="Offensive Leaders" leaders={leaders.offense} team={team} />
       <LeaderGroup label="Defensive Leaders" leaders={leaders.defense} team={team} className="mt-4" />

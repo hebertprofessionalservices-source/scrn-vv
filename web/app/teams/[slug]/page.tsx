@@ -21,7 +21,6 @@ import {
   gameWinProbability,
   nextScheduledGame,
 } from "@/lib/team-outlook";
-import { ReturnersList } from "@/components/matchup/key-returners";
 import { TeamKeyPlayers } from "@/components/matchup/key-players";
 import { teamKeyLeaders } from "@/lib/game-leaders";
 import type { Player } from "@/lib/types";
@@ -99,11 +98,11 @@ export default async function TeamDetailPage({
     ifLoss: nextOutlook?.a.ifLoss ?? null,
     oppName: next?.opp.name ?? null,
   };
-  const keyReturners = priorInfo?.keyReturners.get(team.id) ?? [];
   const keyLeaders = teamKeyLeaders(
     players,
     priorInfo?.returningPlayers.get(team.id) ?? null,
   );
+  const showKeyPlayers = keyLeaders.offense.length + keyLeaders.defense.length > 0;
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 py-8 space-y-8">
@@ -167,22 +166,15 @@ export default async function TeamDetailPage({
         playoff={playoffCard}
       />
 
-      {keyLeaders.offense.length + keyLeaders.defense.length > 0 && (
-        <TeamKeyPlayers team={team} leaders={keyLeaders} />
-      )}
-
-      {keyReturners.length > 0 && (
-        <section>
-          <h2 className="font-display text-2xl mb-3">Key Returning Players</h2>
-          <div className="max-w-2xl">
-            <ReturnersList side={{ teamName: team.name, returners: keyReturners }} />
-          </div>
-        </section>
-      )}
-
-      <section>
+      {/* Schedule and Key Players share a row; the grid keeps them level. */}
+      <div
+        className={
+          showKeyPlayers ? "grid lg:grid-cols-3 gap-6 items-stretch" : undefined
+        }
+      >
+      <section className={`flex flex-col ${showKeyPlayers ? "lg:col-span-2" : ""}`}>
         <h2 className="font-display text-2xl mb-3">Schedule</h2>
-        <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
+        <div className="flex-1 rounded-xl border border-chrome-500/15 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-navy-700/50 text-chrome-500 uppercase">
               <tr>
@@ -245,6 +237,9 @@ export default async function TeamDetailPage({
           </table>
         </div>
       </section>
+
+      {showKeyPlayers && <TeamKeyPlayers team={team} leaders={keyLeaders} />}
+      </div>
 
       <section>
         <h2 className="font-display text-2xl mb-3">Roster</h2>

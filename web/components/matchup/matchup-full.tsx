@@ -21,7 +21,7 @@ import { runPassAttempts } from "@/lib/run-pass";
 import { buildMatchupSide } from "@/lib/team-outlook";
 import { matchupKeyLeaders } from "@/lib/game-leaders";
 import { fmtPct, recordsBlockLines, type RecordsBlockInput } from "@/lib/matchup-format";
-import { AiPick, KeyReturnersSection } from "@/components/matchup/key-returners";
+import { AiPick } from "@/components/matchup/ai-pick";
 import type { Team } from "@/lib/types";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
@@ -74,9 +74,7 @@ export async function MatchupFull({
       retOff: prior?.returningOffense.get(t.id) ?? null,
     });
   const sides = { a: sideFor(away, runPass.a), b: sideFor(home, runPass.b) };
-  const keyLeaders = matchupKeyLeaders(
-    data, away, home, h2h, prior?.returningPlayers ?? null,
-  );
+  const keyLeaders = matchupKeyLeaders(data, away, home, h2h);
   const deltas = await loadRankDeltas(season, power);
 
   return (
@@ -123,28 +121,9 @@ export async function MatchupFull({
         bRating={power.get(home.id)?.rating ?? null}
       />
 
-      {SHOW_MATCHUP_EXTRAS && storylines.length > 0 && (
-        <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
-          <h2 className="font-display text-xl mb-3">Storylines</h2>
-          <ul className="space-y-2 text-sm">
-            {storylines.map((line) => (
-              <li key={line} className="flex gap-2">
-                <span className="text-crimson-500 shrink-0">—</span>
-                <span className="text-chrome-100">{line}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
       <TaleOfTheTape a={away} b={home} runPass={runPass} sides={sides} />
 
-      <KeyReturnersSection
-        a={{ teamName: away.name, returners: prior?.keyReturners.get(away.id) ?? [] }}
-        b={{ teamName: home.name, returners: prior?.keyReturners.get(home.id) ?? [] }}
-      />
-
-      {SHOW_MATCHUP_EXTRAS && (
+      {SHOW_MATCHUP_EXTRAS && keyLeaders && (
         <KeyPlayers away={away} home={home} leaders={keyLeaders} />
       )}
 
@@ -176,13 +155,18 @@ export async function MatchupFull({
         </section>
       )}
 
-      {!broadcast && (
-        <Link
-          href={`/present/matchup/${matchup}` as any}
-          className="inline-block px-4 py-2 rounded-lg border border-crimson-500 text-crimson-500 font-display"
-        >
-          Broadcast →
-        </Link>
+      {SHOW_MATCHUP_EXTRAS && storylines.length > 0 && (
+        <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5">
+          <h2 className="font-display text-xl mb-3">Storylines</h2>
+          <ul className="space-y-2 text-sm">
+            {storylines.map((line) => (
+              <li key={line} className="flex gap-2">
+                <span className="text-crimson-500 shrink-0">—</span>
+                <span className="text-chrome-100">{line}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
     </main>
   );
