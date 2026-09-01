@@ -288,17 +288,24 @@ describe("scoreboardSides", () => {
 describe("leagueWeek", () => {
   const S = "2026-27";
 
-  it("gives each league its own count, offset by two weeks", () => {
-    // Same Friday, different label — MAIS opens two weeks earlier.
-    expect(leagueWeek(S, "MAIS", "2026-08-28")).toBe(3);
+  it("gives each league its own count, offset by one week", () => {
+    // Same Friday, different label — MAIS opens one week earlier.
+    expect(leagueWeek(S, "MAIS", "2026-08-28")).toBe(2);
     expect(leagueWeek(S, "MHSAA", "2026-08-28")).toBe(1);
   });
 
   it("advances a week per slate", () => {
-    expect(leagueWeek(S, "MAIS", "2026-08-14")).toBe(1);
-    expect(leagueWeek(S, "MAIS", "2026-08-21")).toBe(2);
+    expect(leagueWeek(S, "MAIS", "2026-08-21")).toBe(1);
+    expect(leagueWeek(S, "MAIS", "2026-09-04")).toBe(3);
     expect(leagueWeek(S, "MHSAA", "2026-09-04")).toBe(2);
     expect(leagueWeek(S, "MHSAA", "2026-09-11")).toBe(3);
+  });
+
+  it("counts in calendar weeks, not days from the anchor", () => {
+    // Aug 31 is only 3 days past the MHSAA anchor but is the Monday of the
+    // next week, so it is Week 2 — day arithmetic used to call it Week 1.
+    expect(leagueWeek(S, "MHSAA", "2026-08-31")).toBe(2);
+    expect(leagueWeek(S, "MAIS", "2026-08-31")).toBe(3);
   });
 
   it("counts a Thursday opener as part of its Friday slate", () => {
@@ -306,6 +313,9 @@ describe("leagueWeek", () => {
   });
 
   it("returns null before a league opens or for an unknown season", () => {
+    // MAIS plays Aug 14, a week before its Week 1; that slate is labelled by
+    // date, not by number.
+    expect(leagueWeek(S, "MAIS", "2026-08-14")).toBeNull();
     expect(leagueWeek(S, "MHSAA", "2026-08-14")).toBeNull();
     expect(leagueWeek("2099-00", "MHSAA", "2026-08-28")).toBeNull();
   });

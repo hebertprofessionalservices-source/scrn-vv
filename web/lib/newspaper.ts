@@ -93,7 +93,7 @@ export interface Newspaper {
  * sports page reads, and it keeps long MAIS names ("St. Joseph Catholic
  * Bruins") from wrapping a fixed-height page past its bottom edge.
  */
-function schoolName(team: Team | null, fallback: string): string {
+export function schoolName(team: Team | null, fallback: string): string {
   if (!team) return fallback;
   const { name, mascot } = team;
   if (mascot && name.toLowerCase().endsWith(mascot.toLowerCase())) {
@@ -104,7 +104,7 @@ function schoolName(team: Team | null, fallback: string): string {
 }
 
 /** A team-name-shaped fallback for opponents that aren't in teams.json. */
-function prettifySlug(slug: string): string {
+export function prettifySlug(slug: string): string {
   return slug
     .split("-")
     .filter(Boolean)
@@ -120,7 +120,7 @@ function prettifySlug(slug: string): string {
  * is the stable identity; when it is missing, the date plus the two resolved
  * team ids is.
  */
-function contestKey(g: Game, data: Dataset): string {
+export function contestKey(g: Game, data: Dataset): string {
   if (g.maxprepsUrl) return g.maxprepsUrl;
   const ids = [g.homeTeamId, g.awayTeamId]
     .map((t) => data.teamsByAlias.get(t)?.id ?? t)
@@ -394,12 +394,16 @@ export function leagueOf(classification: string): League {
 /**
  * The date each league's Week 1 slate is played.
  *
- * The two leagues are NOT on the same count — MAIS opens two weeks earlier —
- * so an Aug 28 2026 game is MAIS Week 3 but MHSAA Week 1. Published graphics
- * must carry that league's own number, never a shared season-wide count.
+ * The two leagues are NOT on the same count — MAIS opens ONE week earlier — so
+ * an Aug 28 2026 game is MAIS Week 2 but MHSAA Week 1. Published graphics must
+ * carry that league's own number, never a shared season-wide count.
+ *
+ * MAIS also plays a slate on Aug 14, a week before its Week 1. That one sits
+ * outside the count and is labelled by date ("Aug 14"), so anchoring Week 1 to
+ * it — as this table used to — pushed every MAIS week one too high.
  */
 const WEEK_ONE: Record<string, Record<League, string>> = {
-  "2026-27": { MAIS: "2026-08-14", MHSAA: "2026-08-28" },
+  "2026-27": { MAIS: "2026-08-21", MHSAA: "2026-08-28" },
 };
 
 const DAY_MS = 86_400_000;
@@ -410,7 +414,21 @@ function daysBetween(a: string, b: string): number {
   );
 }
 
-/** That league's own week number for a slate date, or null if unknown. */
+/** The Monday of the calendar week a date falls in. */
+export function mondayOf(date: string): string {
+  const d = new Date(`${date.slice(0, 10)}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * That league's own week number for a slate date, or null if unknown.
+ *
+ * Counted in Monday-anchored calendar weeks, not in 7-day blocks from the
+ * anchor date. A Thursday anchor with plain day arithmetic put the Monday four
+ * days later in the same week, so a Monday-to-Sunday slate that everyone calls
+ * Week 2 still reported Week 1.
+ */
 export function leagueWeek(
   season: string,
   league: League,
@@ -418,9 +436,9 @@ export function leagueWeek(
 ): number | null {
   const anchor = WEEK_ONE[season]?.[league];
   if (!anchor) return null;
-  const diff = daysBetween(anchor, date.slice(0, 10));
-  if (diff < -1) return null;
-  return Math.floor(Math.max(0, diff) / 7) + 1;
+  const diff = daysBetween(mondayOf(anchor), mondayOf(date));
+  if (diff < 0) return null;
+  return Math.floor(diff / 7) + 1;
 }
 
 /**
