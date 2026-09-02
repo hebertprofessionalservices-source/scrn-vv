@@ -72,8 +72,8 @@ export function TeamVitals({
   const played = team.record.wins + team.record.losses > 0;
   return (
     <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {/* MaxPreps' own ranks — nothing carried over from last season. */}
-      <VitalCard label="MaxPreps Ranking">
+      {/* The source is never named on the dashboard (client rule, Sep 2 2026). */}
+      <VitalCard label="Rank">
         {power && power.overallRank !== null ? (
           <>
             <span className="font-display text-3xl">#{power.overallRank}</span>

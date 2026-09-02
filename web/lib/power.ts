@@ -1,8 +1,12 @@
 import type { Dataset } from "./data";
 
 export interface PowerRank {
-  /** SRS-based rating, still used for win probability and playoff odds. */
-  rating: number;
+  /**
+   * SRS-based rating, still used for win probability and playoff odds. Null
+   * when we have no resolvable results for the team — a rank does not depend
+   * on it, so the entry still exists.
+   */
+  rating: number | null;
   /** MaxPreps' statewide rank; null when MaxPreps does not rank the team. */
   overallRank: number | null;
   /** MaxPreps' division rank; null when MaxPreps does not rank the team. */
@@ -91,10 +95,11 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
     ratings = next;
   }
 
+  // No early return on an empty map: MaxPreps ranks stand without a rating,
+  // so a season where nothing has been played yet still has ranks to show.
   const finalRatings = new Map<string, number>(
     ids.map((id) => [id, ratings.get(id)!]),
   );
-  if (finalRatings.size === 0) return new Map();
 
   // Blend with MaxPreps. Their ranks are only consistent WITHIN a pool —
   // MHSAA is one statewide list (stateOverall), while MAIS academies are
@@ -141,15 +146,17 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   }
   for (const [id, v] of blended) finalRatings.set(id, v);
 
+  // A rank is MaxPreps' and stands on its own, so entries are NOT gated on
+  // having a rating. Oxford's only final was against an out-of-state school
+  // that isn't in the dataset, which left it unrated — and it was showing no
+  // rank at all even though MaxPreps had it 7th in the state.
   const out = new Map<string, PowerRank>();
-  for (const [id, rating] of finalRatings) {
-    const t = data.teamsById.get(id);
-    if (!t) continue;
-    out.set(id, {
-      rating,
-      overallRank: displayRank(t, "stateOverall"),
-      classRank: displayRank(t, "stateClass"),
-    });
+  for (const t of data.teams) {
+    const rating = finalRatings.get(t.id) ?? null;
+    const overallRank = displayRank(t, "stateOverall");
+    const classRank = displayRank(t, "stateClass");
+    if (rating === null && overallRank === null && classRank === null) continue;
+    out.set(t.id, { rating, overallRank, classRank });
   }
   return out;
 }

@@ -83,6 +83,18 @@ describe("buildPowerRankings — displayed ranks", () => {
     expect(ranks.get("la-team")!.classRank).toBeNull();
   });
 
+  it("shows a rank for a team with no rating", () => {
+    // Oxford's only final was against an out-of-state school that is not in
+    // the dataset, so that game is skipped and Oxford has no rating. Its rank
+    // is MaxPreps' and does not depend on ours, so it must still show.
+    const teams = [makeTeam("oxford", "7A", null, { stateOverall: 7, stateClass: 6 })];
+    const games = [makeGame("g1", "oxford", "out-of-state-school", 34, 24)];
+    const ranks = buildPowerRankings(buildDataset({ teams, players: [], games }));
+    expect(ranks.get("oxford")!.overallRank).toBe(7);
+    expect(ranks.get("oxford")!.classRank).toBe(6);
+    expect(ranks.get("oxford")!.rating).toBeNull();
+  });
+
   it("reaches back to no prior season at all", () => {
     // A prior-rating map used to carry teams with no current games onto the
     // board. 2026 shows 2026 only, so a team that has not played is absent.
@@ -119,8 +131,8 @@ describe("buildPowerRankings — rating", () => {
       makeGame("g3", "b", "c", 21, 14),
     ];
     const ranks = buildPowerRankings(buildDataset({ teams, players: [], games }));
-    expect(ranks.get("a")!.rating).toBeGreaterThan(ranks.get("b")!.rating);
-    expect(ranks.get("b")!.rating).toBeGreaterThan(ranks.get("c")!.rating);
+    expect(ranks.get("a")!.rating!).toBeGreaterThan(ranks.get("b")!.rating!);
+    expect(ranks.get("b")!.rating!).toBeGreaterThan(ranks.get("c")!.rating!);
   });
 
   it("rewards strength of schedule", () => {
@@ -135,7 +147,7 @@ describe("buildPowerRankings — rating", () => {
       makeGame("g6", "w2", "y", 21, 14),
     ];
     const ranks = buildPowerRankings(buildDataset({ teams, players: [], games }));
-    expect(ranks.get("x")!.rating).toBeGreaterThan(ranks.get("y")!.rating);
+    expect(ranks.get("x")!.rating!).toBeGreaterThan(ranks.get("y")!.rating!);
   });
 
   it("skips teams with no games", () => {

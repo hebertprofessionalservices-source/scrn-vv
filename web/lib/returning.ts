@@ -131,6 +131,8 @@ export function adjustPriorRatings(
   const fallback = known.length ? known[Math.floor(known.length / 2)] : 0.6;
   const out = new Map<string, number>();
   for (const [id, p] of power) {
+    // Entries can now be rank-only, with no rating to discount.
+    if (p.rating === null) continue;
     out.set(id, p.rating * (returning.get(id) ?? fallback));
   }
   return out;
