@@ -83,8 +83,10 @@ export function buildMatchupHistory(
   const schoolB = history?.teamMap[home.id];
 
   const coachView = (team: Team, school?: string, opponent?: string): CoachView => {
-    const summary =
-      history && school ? coachSummary(history, school, latestSeason) : null;
+    const summary = withCurrentSeason(
+      history && school ? coachSummary(history, school, latestSeason) : null,
+      team,
+    );
     return {
       teamName: team.name,
       fallbackName: sanitizeCoachName(team.headCoach, team.name),
@@ -100,7 +102,9 @@ export function buildMatchupHistory(
     [home, schoolB],
   ] as const) {
     if (!history || !school) continue;
-    const c = coachSummary(history, school, latestSeason);
+    // Milestones count this season too, or a coach sitting on 199 career wins
+    // after a Week 1 win would still be reported as chasing #200.
+    const c = withCurrentSeason(coachSummary(history, school, latestSeason), team);
     if (!c) continue;
     const m = careerMilestone(c);
     if (m) {
@@ -120,7 +124,44 @@ export function buildMatchupHistory(
   };
 }
 
-/** Team-page coach card data. */
+/**
+ * Roll the current season into a coach's totals.
+ *
+ * MaxPreps publishes coach NAMES only — no records of any kind — and the AFHS
+ * history behind these numbers ends at 2025, so the card was showing records
+ * a full season out of date. This adds the team's current-season W-L from our
+ * own game data on top.
+ *
+ * Only applied when the AFHS coach is still the coach MaxPreps lists. If the
+ * school changed coaches, crediting this season to the departed one would be
+ * wrong, so the totals are left as the history has them.
+ */
+export function withCurrentSeason(
+  summary: CoachSummary | null,
+  team: Team,
+): CoachSummary | null {
+  if (!summary) return null;
+  const current = sanitizeCoachName(team.headCoach, team.name);
+  if (!current || normName(current) !== normName(summary.name)) return summary;
+  const { wins, losses } = team.record;
+  if (wins + losses === 0) return summary;
+  return {
+    ...summary,
+    yearsAtSchool: summary.yearsAtSchool + 1,
+    atSchool: {
+      ...summary.atSchool,
+      wins: summary.atSchool.wins + wins,
+      losses: summary.atSchool.losses + losses,
+    },
+    career: {
+      ...summary.career,
+      wins: summary.career.wins + wins,
+      losses: summary.career.losses + losses,
+    },
+  };
+}
+
+/** Team-page coach card data, current through this season. */
 export function teamCoachView(
   history: HistoryData | null,
   team: Team,
@@ -128,7 +169,7 @@ export function teamCoachView(
 ): CoachSummary | null {
   const school = history?.teamMap[team.id];
   if (!history || !school) return null;
-  return coachSummary(history, school, latestSeason);
+  return withCurrentSeason(coachSummary(history, school, latestSeason), team);
 }
 
 export function fmtWLT(r: RecordWLT): string {
