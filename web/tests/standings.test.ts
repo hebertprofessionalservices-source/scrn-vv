@@ -106,7 +106,11 @@ describe("buildStandings", () => {
     const rows = standings.regions[0].rows;
     const get = (n: string) => rows.find((r) => r.name === n)!.playoffPct!;
     expect(get("strong")).toBeGreaterThan(90);
-    expect(get("weak")).toBeLessThan(20);
+    // Ratings are shrunk by sample size, and "weak" has only two games on
+    // record here, so the model is deliberately less certain than it used to
+    // be. What must hold is that it is clearly last and well below the field.
+    expect(get("weak")).toBeLessThan(30);
+    expect(get("weak")).toBeLessThan(get("t5"));
     for (const r of rows) expect(r.playoffPct).not.toBeNull();
   });
 

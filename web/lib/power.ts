@@ -15,7 +15,11 @@ export interface PowerRank {
 
 /** Blowout cap so 70-0 games don't dominate the rating. */
 const MARGIN_CAP = 28;
-const ITERATIONS = 25;
+const ITERATIONS = 200;
+/** Under-relaxation factor; below 1 it damps the SRS into convergence. */
+const RELAXATION = 0.5;
+/** Games of evidence a rating needs before it carries half its weight. */
+const SHRINKAGE_GAMES = 2;
 /** Client-set blend: MaxPreps' opinion carries this share of the rating. */
 const MAXPREPS_WEIGHT = 0.7;
 
@@ -81,18 +85,50 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
     avgMargin.set(id, e.margins.reduce((a, b) => a + b, 0) / e.margins.length);
   }
 
+  /**
+   * Solve the SRS by DAMPED iteration.
+   *
+   * The undamped form — rating = avgMargin + meanOppRating, applied to every
+   * team at once — oscillates instead of converging. Early in a season most
+   * teams sit in a tiny disconnected component (one game against one
+   * opponent), where the update flips between {margin, -margin} and {0, 0}
+   * every pass. At a fixed iteration count they all land on the same phase,
+   * so hundreds of teams came out with an identical rating and every AI pick
+   * between them read 50%. Teams in larger connected components diverged the
+   * other way, stretching the scale until the logistic saturated at 100%.
+   *
+   * Under-relaxation (RELAXATION) averages each pass with the previous one,
+   * which kills the oscillation and converges on the true least-squares
+   * answer: an isolated pair settles at +margin/2 and -margin/2, which is
+   * what a one-game sample can honestly support.
+   */
   let ratings = new Map<string, number>(avgMargin);
   for (let k = 0; k < ITERATIONS && ids.length > 0; k++) {
     const next = new Map<string, number>();
     for (const id of ids) {
       const e = results.get(id)!;
       const sos = e.opps.reduce((sum, o) => sum + (ratings.get(o) ?? 0), 0) / e.opps.length;
-      next.set(id, avgMargin.get(id)! + sos);
+      const target = avgMargin.get(id)! + sos;
+      next.set(id, ratings.get(id)! + RELAXATION * (target - ratings.get(id)!));
     }
     // Re-center so ratings don't drift.
     const mean = [...next.values()].reduce((a, b) => a + b, 0) / ids.length;
     for (const id of ids) next.set(id, next.get(id)! - mean);
     ratings = next;
+  }
+
+  /**
+   * Shrink toward the mean by sample size.
+   *
+   * A converged rating off one game is still one game: a week-one blowout
+   * put teams at +53, implying a 75-point spread and a 100% pick against a
+   * league opponent. Weighting by n/(n+SHRINKAGE_GAMES) keeps a third of the
+   * signal after one game and most of it by season's end, so confidence grows
+   * with evidence instead of arriving in week one.
+   */
+  for (const id of ids) {
+    const n = results.get(id)!.margins.length;
+    ratings.set(id, ratings.get(id)! * (n / (n + SHRINKAGE_GAMES)));
   }
 
   // No early return on an empty map: MaxPreps ranks stand without a rating,
