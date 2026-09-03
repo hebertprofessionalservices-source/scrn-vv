@@ -50,8 +50,12 @@ function TeamKeyPlayersCard({
       className={`rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-5 ${className}`}
     >
       <h3 className="font-display text-lg mb-3">{team.name}</h3>
-      <LeaderGroup label="Offensive Leaders" leaders={leaders.offense} team={team} />
-      <LeaderGroup label="Defensive Leaders" leaders={leaders.defense} team={team} className="mt-4" />
+      {/* Offense and defense sit side by side (client call, Sep 2 2026), so a
+          team's card is half as tall and both units read at a glance. */}
+      <div className="grid sm:grid-cols-2 gap-x-5 gap-y-4">
+        <LeaderGroup label="Offensive Leaders" leaders={leaders.offense} team={team} />
+        <LeaderGroup label="Defensive Leaders" leaders={leaders.defense} team={team} />
+      </div>
     </div>
   );
 }
