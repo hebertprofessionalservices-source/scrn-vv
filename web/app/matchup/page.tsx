@@ -82,7 +82,7 @@ export default async function MatchupBuilderPage({
   }
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-8">
+    <main className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-6">
         <h1 className="font-display text-4xl">Match Up</h1>
       </div>

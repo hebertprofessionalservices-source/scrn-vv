@@ -6,6 +6,7 @@ import {
   type CompareRow,
 } from "@/lib/matchup-format";
 import type { MatchupSideData } from "@/lib/team-outlook";
+import { CompareTable } from "@/components/matchup/compare-table";
 
 function games(t: Team) { return t.record.wins + t.record.losses; }
 function ppg(t: Team) { return games(t) ? t.stats.pointsFor / games(t) : 0; }
@@ -68,25 +69,5 @@ export function TaleOfTheTape({
     rows.push(...extra.slice(1));
   }
 
-  return (
-    <div className="rounded-2xl border border-chrome-500/15 overflow-hidden">
-      <table className="w-full">
-        <tbody>
-          {rows.map((row) => (
-            <tr key={row.label} className="border-t border-chrome-500/10 first:border-t-0">
-              <td className={`px-4 py-3 text-right font-display text-xl ${row.aBetter ? "text-crimson-500" : ""}`}>
-                {row.a}
-              </td>
-              <td className="px-2 py-3 text-center text-xs uppercase text-chrome-500 w-40">
-                {row.label}
-              </td>
-              <td className={`px-4 py-3 text-left font-display text-xl ${row.bBetter ? "text-crimson-500" : ""}`}>
-                {row.b}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+  return <CompareTable rows={rows} />;
 }

@@ -6,7 +6,8 @@ import { TeamLogo } from "@/components/brand/team-logo";
 import { classRegionLabel, classificationLabel } from "@/lib/team-format";
 import { RankDeltaChip } from "@/components/rank-delta";
 import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
-import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg } from "@/lib/matchup-format";
+import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg, type CompareRow } from "@/lib/matchup-format";
+import { CompareTable } from "@/components/matchup/compare-table";
 import type { MatchupOutlook } from "@/lib/standings";
 import type { MatchupSideData } from "@/lib/team-outlook";
 import type { Team } from "@/lib/types";
@@ -155,64 +156,7 @@ export function MatchupPicker({
             <AiPickBanner a={teamA} b={teamB} />
           </div>
 
-          <div className="rounded-xl border border-chrome-500/15 overflow-hidden">
-            <table className="w-full text-sm">
-              <tbody>
-                {STAT_ROWS.flatMap((row) => {
-                  const va = row.value(teamA);
-                  const vb = row.value(teamB);
-                  const aMissing = Boolean(row.needsPrintStats) && !hasPrintStats(teamA);
-                  const bMissing = Boolean(row.needsPrintStats) && !hasPrintStats(teamB);
-                  const comparable = !aMissing && !bMissing;
-                  const aBetter = comparable && (row.lowerIsBetter ? va < vb : va > vb);
-                  const bBetter = comparable && (row.lowerIsBetter ? vb < va : vb > va);
-                  // Yardage rows carry the per-attempt average in parentheses.
-                  const avgFor = (t: MatchupTeam) =>
-                    row.label === "Passing Yards" ? t.side.avgPass
-                    : row.label === "Rushing Yards" ? t.side.avgRush
-                    : null;
-                  const cell = (t: MatchupTeam, v: number, missing: boolean) => {
-                    if (missing) return "—";
-                    const avg = avgFor(t);
-                    return avg !== null ? ydsWithAvg(v, avg) : row.format(v);
-                  };
-                  const tr = (
-                    <tr key={row.label} className="border-t border-chrome-500/10 first:border-t-0">
-                      <td className={cellClass("right", aBetter)}>{cell(teamA, va, aMissing)}</td>
-                      <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
-                        {row.label}
-                      </td>
-                      <td className={cellClass("left", bBetter)}>{cell(teamB, vb, bMissing)}</td>
-                    </tr>
-                  );
-                  if (row.label !== "Rushing Yards") return [tr];
-                  return [
-                    tr,
-                    <tr key="run-pass" className="border-t border-chrome-500/10">
-                      <td className={cellClass("right", false)}>
-                        {teamA.runPass ? runPassLabel(teamA.runPass) : "—"}
-                      </td>
-                      <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
-                        Run / Pass %
-                      </td>
-                      <td className={cellClass("left", false)}>
-                        {teamB.runPass ? runPassLabel(teamB.runPass) : "—"}
-                      </td>
-                    </tr>,
-                  ];
-                })}
-                {outlookRows(teamA.side, teamB.side).map((row) => (
-                  <tr key={row.label} className="border-t border-chrome-500/10">
-                    <td className={cellClass("right", Boolean(row.aBetter))}>{row.a}</td>
-                    <td className="px-3 py-2.5 text-center text-xs uppercase tracking-wider text-chrome-500 whitespace-nowrap">
-                      {row.label}
-                    </td>
-                    <td className={cellClass("left", Boolean(row.bBetter))}>{row.b}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <CompareTable rows={compareRows(teamA, teamB)} highlightClass="text-green-400" />
 
           {children}
         </div>
@@ -228,12 +172,46 @@ export function MatchupPicker({
   );
 }
 
-function cellClass(align: "left" | "right", better: boolean): string {
-  return [
-    "px-4 py-2.5 w-2/5 font-display text-lg",
-    align === "right" ? "text-right" : "text-left",
-    better ? "text-green-400" : "text-chrome-100",
-  ].join(" ");
+/**
+ * The season comparison rows for a pair, in the client's order: the stat
+ * block, run/pass immediately after the yardage it explains, then the
+ * efficiency and strength-of-schedule rows.
+ */
+function compareRows(a: MatchupTeam, b: MatchupTeam): CompareRow[] {
+  const rows: CompareRow[] = [];
+  for (const row of STAT_ROWS) {
+    const va = row.value(a);
+    const vb = row.value(b);
+    const aMissing = Boolean(row.needsPrintStats) && !hasPrintStats(a);
+    const bMissing = Boolean(row.needsPrintStats) && !hasPrintStats(b);
+    const comparable = !aMissing && !bMissing;
+    // Yardage rows carry the per-attempt average in parentheses.
+    const avgFor = (t: MatchupTeam) =>
+      row.label === "Passing Yards" ? t.side.avgPass
+      : row.label === "Rushing Yards" ? t.side.avgRush
+      : null;
+    const cell = (t: MatchupTeam, v: number, missing: boolean) => {
+      if (missing) return "—";
+      const avg = avgFor(t);
+      return avg !== null ? ydsWithAvg(v, avg) : row.format(v);
+    };
+    rows.push({
+      label: row.label,
+      a: cell(a, va, aMissing),
+      b: cell(b, vb, bMissing),
+      aBetter: comparable && (row.lowerIsBetter ? va < vb : va > vb),
+      bBetter: comparable && (row.lowerIsBetter ? vb < va : vb > va),
+    });
+    if (row.label === "Rushing Yards") {
+      rows.push({
+        label: "Run / Pass %",
+        a: a.runPass ? runPassLabel(a.runPass) : "—",
+        b: b.runPass ? runPassLabel(b.runPass) : "—",
+      });
+    }
+  }
+  rows.push(...outlookRows(a.side, b.side));
+  return rows;
 }
 
 function TeamSelect({
