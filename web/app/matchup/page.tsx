@@ -133,7 +133,7 @@ async function MatchupExtras({
     ...buildStorylines(data, teamA, teamB, h2h),
     ...historyView.milestones,
   ].slice(0, 8);
-  const keyLeaders = matchupKeyLeaders(data, teamA, teamB, h2h);
+  const keyLeaders = matchupKeyLeaders(data, teamA, teamB);
 
   return (
     <div className="mt-8 space-y-8">

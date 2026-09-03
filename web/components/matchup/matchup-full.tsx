@@ -71,7 +71,7 @@ export async function MatchupFull({
       runPass: rp,
     });
   const sides = { a: sideFor(away, runPass.a), b: sideFor(home, runPass.b) };
-  const keyLeaders = matchupKeyLeaders(data, away, home, h2h);
+  const keyLeaders = matchupKeyLeaders(data, away, home);
   const deltas = await loadRankDeltas(season, power);
 
   return (

@@ -72,29 +72,37 @@ function finalGame(): Game {
 }
 
 describe("matchupKeyLeaders", () => {
-  it("uses the concluded game's box score", () => {
-    const g = finalGame();
-    const data = buildDataset({ teams, players, games: [g] });
-    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [g])!;
+  it("uses each side's current-season stat leaders", () => {
+    const data = buildDataset({ teams, players, games: [] });
+    const leaders = matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!)!;
     expect(leaders.away.offense[0].player.name).toBe("Alan Quarter");
-    expect(leaders.away.offense[0].line).toContain("250");
+    expect(leaders.away.offense[0].line).toContain("900");
     expect(leaders.home.offense[0].player.name).toBe("Bob Thrower");
     expect(leaders.home.defense[0].player.name).toBe("Dave Tackler");
-    expect(leaders.home.defense[0].line).toContain("14 TKL");
+    expect(leaders.home.defense[0].line).toContain("80 TKL");
   });
 
-  it("returns null before the game concludes, season stats notwithstanding", () => {
+  it("shows season leaders even when the two have never played", () => {
+    // The section used to blank on an unplayed matchup; it must not.
     const data = buildDataset({ teams, players, games: [] });
     expect(
-      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, []),
-    ).toBeNull();
+      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!),
+    ).not.toBeNull();
   });
 
-  it("returns null when the game is final but has no box score", () => {
-    const g = { ...finalGame(), boxScore: null };
-    const data = buildDataset({ teams, players, games: [g] });
+  it("returns null when neither side has published stats", () => {
+    const bare = players.map((p) => ({
+      ...p,
+      stats: {
+        ...p.stats,
+        passing: { ...p.stats.passing, yds: 0 },
+        rushing: { ...p.stats.rushing, yds: 0 },
+        defense: { ...p.stats.defense, tackles: 0 },
+      },
+    }));
+    const data = buildDataset({ teams, players: bare, games: [] });
     expect(
-      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!, [g]),
+      matchupKeyLeaders(data, data.teamsById.get("a")!, data.teamsById.get("b")!),
     ).toBeNull();
   });
 });

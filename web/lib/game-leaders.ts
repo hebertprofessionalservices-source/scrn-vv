@@ -1,6 +1,5 @@
 import type { Dataset } from "./data";
-import type { Game, Player, Team } from "./types";
-import { gameStatLines, type RawLine } from "./weekly";
+import type { Player, Team } from "./types";
 
 /** One entry in a Key Players card. */
 export interface StatLeader {
@@ -78,87 +77,27 @@ export function leadersFor(players: Player[]): SideLeaders {
   return { offense, defense };
 }
 
-/** Leaders of one side of a played game, from attributed box-score lines. */
-function gameSideLeaders(lines: RawLine[]): SideLeaders {
-  const top = (metric: (l: RawLine) => number) =>
-    lines.reduce<RawLine | null>(
-      (best, l) => (metric(l) > (best ? metric(best) : 0) ? l : best),
-      null,
-    );
-
-  const offense: StatLeader[] = [];
-  const qb = top((l) => l.passYds);
-  if (qb) {
-    offense.push({
-      player: qb.player,
-      role: "QB",
-      line: `${qb.passYds.toLocaleString()} YDS · ${qb.passTd} TD · ${qb.passInt} INT`,
-    });
-  }
-  const rb = top((l) => l.rushYds);
-  if (rb) {
-    offense.push({
-      player: rb.player,
-      role: "RB",
-      line: `${rb.rushYds.toLocaleString()} YDS · ${rb.rushTd} TD`,
-    });
-  }
-  const wr = top((l) => l.recYds);
-  if (wr) {
-    offense.push({
-      player: wr.player,
-      role: "WR",
-      line: `${wr.rec} REC · ${wr.recYds.toLocaleString()} YDS · ${wr.recTd} TD`,
-    });
-  }
-
-  const defense: StatLeader[] = [];
-  const tackler = top((l) => l.tackles);
-  if (tackler) {
-    defense.push({
-      player: tackler.player,
-      role: tackler.player.position,
-      line: `${tackler.tackles} TKL · ${tackler.sacks} SACK · ${tackler.defInt} INT`,
-    });
-  }
-  const rusher = top((l) => l.sacks);
-  if (rusher && rusher.player.id !== tackler?.player.id && rusher.sacks >= 2) {
-    defense.push({
-      player: rusher.player,
-      role: rusher.player.position,
-      line: `${rusher.sacks} SACK · ${rusher.tackles} TKL · ${rusher.ff} FF`,
-    });
-  }
-  return { offense, defense };
-}
-
 const hasAny = (s: SideLeaders) => s.offense.length + s.defense.length > 0;
 
 /**
- * Key Players for a matchup: the leaders FROM THAT GAME, and nothing else.
- * Season and prior-season projections used to stand in before kickoff; the
- * client wants only what happened in this game, so an unplayed matchup (or
- * one with no box score) returns null and the section is dropped.
+ * Key Players for a matchup: each side's current-season stat leaders.
+ *
+ * This was briefly narrowed to the head-to-head game's own box score, which
+ * blanked the section on any matchup that had not been played. The client
+ * wants it back on 2026 season stats (Sep 2 2026) — the same numbers the team
+ * page shows. Nothing reaches into last season; null means neither side has
+ * published stats yet, and the section is dropped.
  */
 export function matchupKeyLeaders(
   data: Dataset,
   away: Team,
   home: Team,
-  h2h: Game[],
 ): MatchupLeaders | null {
-  const finals = h2h
-    .filter((g) => g.status === "final" && g.boxScore)
-    .sort((a, b) => b.date.localeCompare(a.date));
-  for (const g of finals) {
-    const lines = gameStatLines(data, g);
-    if (lines.length === 0) continue;
-    const leaders = {
-      away: gameSideLeaders(lines.filter((l) => l.team.id === away.id)),
-      home: gameSideLeaders(lines.filter((l) => l.team.id === home.id)),
-    };
-    if (hasAny(leaders.away) || hasAny(leaders.home)) return leaders;
-  }
-  return null;
+  const leaders = {
+    away: leadersFor(data.playersByTeam.get(away.id) ?? []),
+    home: leadersFor(data.playersByTeam.get(home.id) ?? []),
+  };
+  return hasAny(leaders.away) || hasAny(leaders.home) ? leaders : null;
 }
 
 /** Team-page variant: current season leaders, else returning projection. */

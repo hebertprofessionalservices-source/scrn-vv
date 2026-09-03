@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { displaySlug } from "@/lib/display-slug";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
@@ -19,7 +18,9 @@ export function GameOfTheWeekCard({
       </div>
     );
   }
-  const href = `/matchup/${displaySlug(away)}-vs-${displaySlug(home)}`;
+  // Same destination as the team page's "View Match Up" button, so both
+  // routes into a matchup land on the identical page.
+  const href = `/matchup?a=${away.id}&b=${home.id}`;
   return (
     <Link href={href as any} className="block h-full">
       <div className="flex h-full flex-col rounded-2xl border border-chrome-500/15 bg-navy-700/40 hover:border-crimson-500 p-6">
