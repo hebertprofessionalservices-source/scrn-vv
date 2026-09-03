@@ -22,6 +22,7 @@ import { buildMatchupSide } from "@/lib/team-outlook";
 import { matchupKeyLeaders } from "@/lib/game-leaders";
 import { fmtPct, recordsBlockLines, type RecordsBlockInput } from "@/lib/matchup-format";
 import { AiPick } from "@/components/matchup/ai-pick";
+import { StickyMatchupHeader } from "@/components/matchup/sticky-matchup-header";
 import type { Team } from "@/lib/types";
 
 // Storylines / Key Players / Coaches / Series History hidden from production
@@ -76,12 +77,13 @@ export async function MatchupFull({
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 space-y-8">
-      {/* Frozen like a header row: sticks below the site header on scroll. */}
-      <div
-        className={`sticky ${broadcast ? "top-0" : "top-24"} z-30 -mx-4 px-4 py-3 bg-navy-900/95 backdrop-blur border-b border-chrome-500/15`}
-      >
+      {/* Frozen like a header row; condenses to crest + name once scrolled. */}
+      <StickyMatchupHeader broadcast={broadcast}>
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+        {/* Crests sit on the OUTER edge of each side, beyond the name and
+            info rather than tucked in against the VS (client, Sep 2 2026). */}
         <div className="flex items-center justify-end gap-3">
+          <TeamLogo src={away.logoUrl} size={64} />
           <MatchupTeamHeader
             team={away}
             align="right"
@@ -91,11 +93,9 @@ export async function MatchupFull({
             records={sides.a.records}
             delta={deltas.get(away.id) ?? null}
           />
-          <TeamLogo src={away.logoUrl} size={64} />
         </div>
         <div className="font-display text-5xl text-crimson-500">VS</div>
         <div className="flex items-center gap-3">
-          <TeamLogo src={home.logoUrl} size={64} />
           <MatchupTeamHeader
             team={home}
             align="left"
@@ -105,9 +105,10 @@ export async function MatchupFull({
             records={sides.b.records}
             delta={deltas.get(home.id) ?? null}
           />
+          <TeamLogo src={home.logoUrl} size={64} />
         </div>
       </div>
-      </div>
+      </StickyMatchupHeader>
 
       <AiPick
         aName={away.name}
@@ -193,7 +194,7 @@ function MatchupTeamHeader({
   );
   return (
     <div className={align === "right" ? "text-right" : "text-left"}>
-      <div className="text-xs text-chrome-500">
+      <div className="text-xs text-chrome-500 group-data-[condensed=true]:hidden">
         {classRegionLabel(team)}
         {playoffPct !== null && ` (Current Playoff Potential: ${playoffPct.toFixed(2)}%)`}
       </div>
@@ -205,13 +206,13 @@ function MatchupTeamHeader({
         </Link>
         {align === "left" && rank && <> {rank}</>}
       </div>
-      <div className="text-sm text-chrome-500">
+      <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
         {recordsBlockLines(records).map((line) => (
           <div key={line}>{line}</div>
         ))}
       </div>
       {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
-        <div className="text-sm text-chrome-500">
+        <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
           Playoff Potential if win/loss:{" "}
           <span className="text-chrome-300">
             {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}

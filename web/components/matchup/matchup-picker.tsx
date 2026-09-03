@@ -8,6 +8,7 @@ import { RankDeltaChip } from "@/components/rank-delta";
 import { runPassLabel, type RunPassSplit } from "@/lib/run-pass";
 import { fmtPct, outlookRows, recordsBlockLines, ydsWithAvg, type CompareRow } from "@/lib/matchup-format";
 import { CompareTable } from "@/components/matchup/compare-table";
+import { StickyMatchupHeader } from "@/components/matchup/sticky-matchup-header";
 import type { MatchupOutlook } from "@/lib/standings";
 import type { MatchupSideData } from "@/lib/team-outlook";
 import type { Team } from "@/lib/types";
@@ -135,8 +136,8 @@ export function MatchupPicker({
 
       {teamA && teamB ? (
         <div>
-          {/* Frozen like a header row: sticks below the site header on scroll. */}
-          <div className="sticky top-24 z-30 -mx-4 px-4 py-3 mb-6 bg-navy-900/95 backdrop-blur border-b border-chrome-500/15">
+          {/* Frozen like a header row; condenses to crest + name once scrolled. */}
+          <StickyMatchupHeader className="mb-6">
             <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-4">
               <TeamHeader
                 team={teamA}
@@ -150,7 +151,7 @@ export function MatchupPicker({
                 outlook={pairMatches(pairOutlook, aId, bId) ? pairOutlook!.b : null}
               />
             </div>
-          </div>
+          </StickyMatchupHeader>
 
           <div className="mb-6">
             <AiPickBanner a={teamA} b={teamB} />
@@ -282,33 +283,39 @@ function TeamHeader({
       {classificationLabel(team.classification)}
     </span>
   );
+  const crest = <TeamLogo src={team.logoUrl} size={72} />;
   return (
-    <div className={`flex flex-col gap-2 ${alignClass}`}>
-      <TeamLogo src={team.logoUrl} size={72} />
+    // Crest on the OUTER edge, beside the name and info rather than stacked
+    // above it (client, Sep 2 2026).
+    <div className="flex items-start gap-3">
+      {align === "right" && crest}
+      <div className={`flex flex-col gap-2 min-w-0 flex-1 ${alignClass}`}>
       <div className="font-display text-2xl xl:text-3xl leading-tight">
         {/* Name never wraps; sides mirror — rank sits VS-far on both. */}
         {align === "right" && rank && <>{rank} </>}
         <span className="whitespace-nowrap">{team.name}</span>
         {align === "left" && rank && <> {rank}</>}
       </div>
-      <div className="text-sm text-chrome-300">
+      <div className="text-sm text-chrome-300 group-data-[condensed=true]:hidden">
         {classRegionLabel(team)}
         {team.playoffPct !== null &&
           ` (Current Playoff Potential: ${team.playoffPct.toFixed(2)}%)`}
       </div>
-      <div className="text-sm text-chrome-500">
+      <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
         {recordsBlockLines(team.side.records).map((line) => (
           <div key={line}>{line}</div>
         ))}
       </div>
       {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
-        <div className="text-sm text-chrome-500">
+        <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
           Playoff Potential if win/loss:{" "}
           <span className="text-chrome-300">
             {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}
           </span>
         </div>
       )}
+      </div>
+      {align === "left" && crest}
     </div>
   );
 }
