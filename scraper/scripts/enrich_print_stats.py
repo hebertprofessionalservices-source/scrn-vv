@@ -22,7 +22,8 @@ are "Season Totals". MaxPreps exposes no weekly split, so an in-season re-run
 just refreshes the cumulative numbers.
 
 Usage:
-    .venv/Scripts/python scripts/enrich_print_stats.py [--season 2026-27]
+    .venv/Scripts/python scripts/enrich_print_stats.py --season 2026-27
+    .venv/Scripts/python scripts/enrich_print_stats.py --season 2026-27 --fresh
 """
 
 from __future__ import annotations
@@ -90,6 +91,7 @@ def extract_print_urls(
     cache: CrawlCache,
     teams: list[dict],
     fragment: str,
+    fresh: bool = False,
 ) -> dict[str, str]:
     """Map teamId -> print stats URL, fetching stats pages not yet cached.
 
@@ -99,7 +101,7 @@ def extract_print_urls(
     result: dict[str, str] = {}
     for team in teams:
         stats_url = f"{team['maxprepsUrl'].rstrip('/')}/{fragment}/stats"
-        html = fetch_page(client, cache, stats_url)
+        html = fetch_page(client, cache, stats_url, fresh)
         if html is None:
             continue
         url = print_url_from_stats_page(html)
@@ -108,10 +110,20 @@ def extract_print_urls(
     return result
 
 
-def fetch_page(client: httpx.Client, cache: CrawlCache, url: str) -> str | None:
-    hit = cache.get(url)
-    if hit is not None and hit.status == 200:
-        return hit.body
+def fetch_page(
+    client: httpx.Client, cache: CrawlCache, url: str, fresh: bool = False
+) -> str | None:
+    """Page from cache unless --fresh forces a re-fetch.
+
+    Season totals grow every week, so a cached hit is the wrong default when
+    the point of the run is to pick up the games just played. Without this the
+    yardage silently stayed at the previous run's numbers while the scores
+    beside it moved on.
+    """
+    if not fresh:
+        hit = cache.get(url)
+        if hit is not None and hit.status == 200:
+            return hit.body
     try:
         response = client.get(url)
     except httpx.HTTPError as exc:
@@ -286,6 +298,11 @@ def dedupe_players(players: list[dict]) -> list[dict]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--season", default="2025-26", help="e.g. 2026-27")
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="re-fetch every page instead of reusing the crawl cache",
+    )
     args = parser.parse_args()
 
     season: str = args.season
@@ -302,7 +319,7 @@ def main() -> None:
     )
 
     print(f"Season {season}: {len(teams)} teams, {len(players)} players", flush=True)
-    print_urls = extract_print_urls(client, cache, teams, fragment)
+    print_urls = extract_print_urls(client, cache, teams, fragment, args.fresh)
     print(f"Print URLs resolved: {len(print_urls)}/{len(teams)}", flush=True)
 
     players_by_team: dict[str, list[dict]] = {}
@@ -328,7 +345,7 @@ def main() -> None:
             enriched_teams.append(new_team)
             continue
 
-        html = fetch_page(client, cache, url)
+        html = fetch_page(client, cache, url, args.fresh)
         if html is None:
             enriched_players.extend(roster)
             enriched_teams.append(new_team)
