@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { computeRankDeltas, mondayOf, todayISO, type RankHistory } from "@/lib/rank-history";
+import { computeRankDeltas, mondayOf, showWeekStart, todayISO, type RankHistory } from "@/lib/rank-history";
 import type { PowerRank } from "@/lib/power";
 
 const rank = (o: number, c: number): PowerRank => ({
@@ -77,5 +77,42 @@ describe("todayISO", () => {
 
   it("pads single-digit months and days", () => {
     expect(todayISO(new Date(2026, 0, 4, 12, 0, 0))).toBe("2026-01-04");
+  });
+});
+
+describe("showWeekStart", () => {
+  it("anchors the week to Sunday so Sunday and Monday pair up", () => {
+    // MHSAA records Sunday, MAIS the Monday after — same show week.
+    expect(showWeekStart("2026-09-13")).toBe("2026-09-13"); // Sunday
+    expect(showWeekStart("2026-09-14")).toBe("2026-09-13"); // Monday after
+    expect(showWeekStart("2026-09-19")).toBe("2026-09-13"); // Saturday
+    expect(showWeekStart("2026-09-20")).toBe("2026-09-20"); // next Sunday
+  });
+});
+
+describe("computeRankDeltas — weekly snapshot cadence", () => {
+  const power = new Map<string, PowerRank>([
+    ["gulfport", { rating: 0, overallRank: 4, classRank: 4 }],
+  ]);
+  // Snapshots taken Sunday 3pm each week, after MaxPreps republishes.
+  const history: RankHistory = {
+    "2026-09-06": { gulfport: { o: 2, c: 2 } },
+    "2026-09-13": { gulfport: { o: 4, c: 4 } },
+  };
+
+  it("shows the week's movement on Sunday, after that day's snapshot", () => {
+    const d = computeRankDeltas(power, history, "2026-09-13").get("gulfport")!;
+    expect(d.overall).toBe(-2);
+  });
+
+  it("shows the SAME movement on Monday for the MAIS show", () => {
+    // The old rule took Sunday's snapshot as Monday's baseline and compared
+    // the ranks to themselves, flattening every arrow.
+    const d = computeRankDeltas(power, history, "2026-09-14").get("gulfport")!;
+    expect(d.overall).toBe(-2);
+  });
+
+  it("holds that baseline through the week until the next Sunday", () => {
+    expect(computeRankDeltas(power, history, "2026-09-17").get("gulfport")!.overall).toBe(-2);
   });
 });

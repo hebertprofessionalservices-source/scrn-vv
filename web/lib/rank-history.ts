@@ -43,13 +43,31 @@ export function mondayOf(dateISO: string): string {
 }
 
 /**
- * Movement vs the newest snapshot taken on an EARLIER DAY than today.
+ * ISO date of the Sunday that opens the SHOW WEEK containing this date.
  *
- * Today's own snapshot is excluded (it would show zero movement against
- * itself); everything older is fair game, including one taken earlier in
- * the same game week. That is the point: on Sunday the recap compares
- * against Monday's pre-slate snapshot, so the arrows show what the week's
- * games actually did.
+ * The two podcasts are one editorial unit: MHSAA records Sunday and MAIS
+ * records the Monday after, both recapping the same slate off the same
+ * numbers. Anchoring the week to Sunday keeps that pair together.
+ */
+export function showWeekStart(dateISO: string): string {
+  const d = new Date(dateISO.slice(0, 10) + "T12:00");
+  d.setDate(d.getDate() - d.getDay()); // getDay() 0 = Sunday
+  return todayISO(d);
+}
+
+/**
+ * Movement vs the newest snapshot from an EARLIER SHOW WEEK.
+ *
+ * Snapshots are taken Sunday at 3pm, once MaxPreps has published the
+ * post-slate rankings, and consecutive snapshots are what the arrows compare:
+ * last Sunday's ranks against this Sunday's. Both shows read the same numbers.
+ *
+ * This used to select the newest snapshot from an earlier DAY, which was right
+ * on Sunday but broke on Monday: yesterday's snapshot became the baseline, and
+ * since MaxPreps does not republish between Sunday and Monday it held the very
+ * ranks the page was displaying, so every delta came out zero and the MAIS show
+ * had no arrows. Selecting by show week keeps Sunday and Monday on the same
+ * baseline — the previous Sunday's snapshot — which is what both shows need.
  *
  * Teams absent from the baseline (or with no baseline at all) get no delta.
  */
@@ -58,9 +76,9 @@ export function computeRankDeltas(
   history: RankHistory,
   todayISO: string,
 ): Map<string, RankDelta> {
-  const today = todayISO.slice(0, 10);
+  const thisWeek = showWeekStart(todayISO);
   const baselineDate = Object.keys(history)
-    .filter((d) => d.slice(0, 10) < today)
+    .filter((d) => showWeekStart(d) < thisWeek)
     .sort()
     .pop();
   const out = new Map<string, RankDelta>();
