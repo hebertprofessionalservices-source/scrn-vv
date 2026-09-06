@@ -20,6 +20,21 @@ export interface RankDelta {
   class: number;
 }
 
+/**
+ * Today's date in LOCAL time, not UTC.
+ *
+ * toISOString() rolls over at 19:00 Central, so an evening snapshot was
+ * stamped with tomorrow's date while the site still thought it was today —
+ * which made the fresh snapshot its own baseline and zeroed every arrow.
+ * Snapshots are a local-evening act; the comparison has to agree.
+ */
+export function todayISO(now: Date = new Date()): string {
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 /** ISO date of the Monday of the date's calendar week. */
 export function mondayOf(dateISO: string): string {
   const d = new Date(dateISO.slice(0, 10) + "T12:00");

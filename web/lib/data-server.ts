@@ -11,7 +11,7 @@ import {
   previousSeason,
   type PriorSeasonInfo,
 } from "./prior";
-import { computeRankDeltas, type RankDelta, type RankHistory } from "./rank-history";
+import { computeRankDeltas, todayISO, type RankDelta, type RankHistory } from "./rank-history";
 
 export type { PriorSeasonInfo } from "./prior";
 
@@ -64,7 +64,7 @@ export async function loadRankDeltas(
   power: Map<string, PowerRank>,
 ): Promise<Map<string, RankDelta>> {
   const history = await readJson<RankHistory>(`${season}/rank-history.json`, {});
-  return computeRankDeltas(power, history, new Date().toISOString().slice(0, 10));
+  return computeRankDeltas(power, history, todayISO());
 }
 
 export async function loadEditorial(): Promise<Editorial | null> {

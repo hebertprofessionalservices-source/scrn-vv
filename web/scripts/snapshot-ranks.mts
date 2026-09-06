@@ -4,10 +4,21 @@
  *
  * Run after every data update (`pnpm snapshot-ranks` from web/): the site
  * shows rank movement by comparing live rankings against the newest
- * snapshot from an earlier day. Take it early in the game week, before
- * that week's slate, so the Sunday recap reads the movement those games
- * caused. Re-running on the same day replaces that day's entry; earlier
- * snapshots stay frozen.
+ * snapshot from an earlier day. Re-running on the same day replaces that
+ * day's entry; earlier snapshots stay frozen.
+ *
+ * TIMING MATTERS, AND IT IS EASY TO GET WRONG. Both shows read the arrows:
+ * MHSAA records Sunday, MAIS records Monday. Both need to see the movement
+ * the weekend's games caused, which means the baseline has to predate the
+ * slate and must NOT be replaced until both shows are done.
+ *
+ *   Mon (after the MAIS show) or Tue — take the snapshot. Pre-slate baseline.
+ *   Thu-Sat — games; refresh results and rankings, but DO NOT snapshot.
+ *   Sun — MHSAA show reads movement vs Monday's snapshot.
+ *   Mon — MAIS show reads the same movement, still vs that snapshot.
+ *
+ * Snapshotting on the Saturday after the games, or on Sunday morning, makes
+ * the fresh snapshot its own baseline and every arrow silently goes to zero.
  *
  * Snapshots must all be on the same footing. When the rank SOURCE changes,
  * old entries are not comparable and the file has to be cleared — mixing a
@@ -17,7 +28,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { buildDataset } from "../lib/data";
 import { buildPowerRankings } from "../lib/power";
-import { mondayOf, type RankHistory } from "../lib/rank-history";
+import { mondayOf, todayISO, type RankHistory } from "../lib/rank-history";
 import type { Game, Player, Team } from "../lib/types";
 
 const PUBLIC_DATA = path.join(process.cwd(), "public", "data");
@@ -60,7 +71,7 @@ const [teams, players, games] = await Promise.all([
 const data = buildDataset({ teams, players, games }, season);
 const power = buildPowerRankings(data);
 
-const today = new Date().toISOString().slice(0, 10);
+const today = todayISO();
 const historyPath = path.join(PUBLIC_DATA, season, "rank-history.json");
 const history = await readJson<RankHistory>(`${season}/rank-history.json`, {});
 

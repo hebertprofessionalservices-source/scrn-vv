@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { computeRankDeltas, mondayOf, type RankHistory } from "@/lib/rank-history";
+import { computeRankDeltas, mondayOf, todayISO, type RankHistory } from "@/lib/rank-history";
 import type { PowerRank } from "@/lib/power";
 
 const rank = (o: number, c: number): PowerRank => ({
@@ -63,5 +63,19 @@ describe("mondayOf", () => {
     expect(mondayOf("2026-08-26")).toBe("2026-08-24"); // Wednesday
     expect(mondayOf("2026-08-24")).toBe("2026-08-24"); // Monday
     expect(mondayOf("2026-08-30")).toBe("2026-08-24"); // Sunday
+  });
+});
+
+describe("todayISO", () => {
+  it("uses the local date, not UTC", () => {
+    // 19:01 Central on Sep 5 is already Sep 6 in UTC. A snapshot taken then
+    // was stamped tomorrow, became its own baseline, and zeroed every arrow.
+    const evening = new Date(2026, 8, 5, 19, 1, 0);
+    expect(todayISO(evening)).toBe("2026-09-05");
+    expect(evening.toISOString().slice(0, 10)).not.toBe(todayISO(evening));
+  });
+
+  it("pads single-digit months and days", () => {
+    expect(todayISO(new Date(2026, 0, 4, 12, 0, 0))).toBe("2026-01-04");
   });
 });
