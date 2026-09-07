@@ -8,6 +8,8 @@ import { buildEditorialContext } from "@/lib/editorial";
 import { buildLeaderboardData } from "@/lib/leaderboard";
 import { buildPowerRankings } from "@/lib/power";
 import { buildWeeklyView } from "@/lib/weekly";
+import { leagueWeek } from "@/lib/newspaper";
+import type { WeekOption } from "@/lib/schedule-filter";
 import { lastWeeksGames, seasonConcluded } from "@/lib/stats";
 import { buildUpsets } from "@/lib/upsets";
 
@@ -38,6 +40,13 @@ export default async function Home({
   const leaderboards = buildLeaderboardData(data.teams, data.players);
   // ?asof=YYYY-MM-DD replays the season as of a past date (testing aid).
   const weekly = buildWeeklyView(data, asof);
+  // Each week carries BOTH leagues' own numbers; they do not agree, so the
+  // label depends on which league is filtered. Same rule as the Schedules page.
+  const weekOptions: WeekOption[] = weekly.weeks.map((w) => ({
+    key: w.key,
+    mais: leagueWeek(season, "MAIS", w.key),
+    mhsaa: leagueWeek(season, "MHSAA", w.key),
+  }));
 
   // Flattened here so the client-side league/class filter can narrow the strip.
   const scores = buildScoreCards(lastWeeksGames(data.games), data.teamsById);
@@ -143,7 +152,12 @@ export default async function Home({
       <section className="max-w-7xl mx-auto px-4 space-y-8 pb-12">
         {/* Last week's scores live inside these so they share the filter. */}
         {SHOW_WEEKLY_FEATURES ? (
-          <HomePerformances leaderboards={leaderboards} weekly={weekly} scores={scores} />
+          <HomePerformances
+            leaderboards={leaderboards}
+            weekly={weekly}
+            weekOptions={weekOptions}
+            scores={scores}
+          />
         ) : (
           <HomeLeaderboards data={leaderboards} scores={scores} />
         )}

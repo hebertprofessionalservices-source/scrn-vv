@@ -7,6 +7,11 @@ import { classificationLabel } from "@/lib/team-format";
 import { HomeLeaderboards, LeaderboardFilters } from "@/components/home/home-leaderboards";
 import { LastWeekScores } from "@/components/home/last-week-scores";
 import { inScope, scopeSuffix } from "@/lib/home-filter";
+import {
+  weekLabel,
+  weekLabelParts,
+  type WeekOption,
+} from "@/lib/schedule-filter";
 import type { ScoreCard } from "@/lib/scores";
 import { CATEGORY_OPTIONS, type LeaderCategory, type LeaderboardData } from "@/lib/leaderboard";
 import type { OutstandingLine, WeeklyBucket, WeeklyLine, WeeklyView } from "@/lib/weekly";
@@ -31,10 +36,13 @@ const SELECT_CLASSES =
 export function HomePerformances({
   leaderboards,
   weekly,
+  weekOptions,
   scores,
 }: {
   leaderboards: LeaderboardData;
   weekly: WeeklyView;
+  /** Each week's own number in each league; they do not agree. */
+  weekOptions: WeekOption[];
   scores: ScoreCard[];
 }) {
   const hasWeekly = weekly.latestKey !== null;
@@ -50,6 +58,23 @@ export function HomePerformances({
   const activeKey = weekly.byWeek[weekKey] ? weekKey : weekly.latestKey ?? "";
   const group = weekly.byWeek[activeKey];
 
+  /*
+   * Only weeks the filtered league actually played — MHSAA has nothing in
+   * mid-August while MAIS is two weeks in. The active week is always kept so
+   * the select has a value to show.
+   */
+  const visibleWeeks = weekOptions.filter(
+    (w) => w.key === activeKey || weekLabelParts(w, league).length > 0,
+  );
+  const activeWeek = weekOptions.find((w) => w.key === activeKey);
+  // With no league filtered the prefix would read "MHSAA Week 2 / MAIS Week 3",
+  // which sets the width of the whole control for no gain — the week picker
+  // beside it already says which week is showing.
+  const weekViewLabel =
+    activeWeek && league
+      ? `${weekLabel(activeWeek, league)} Top Performers`
+      : "Top Performers";
+
   const scope = scopeSuffix(league, cls);
   const outstanding = (
     view === "week" ? group?.outstanding ?? [] : weekly.outstandingSeason
@@ -61,54 +86,52 @@ export function HomePerformances({
 
   return (
     <div className="space-y-8">
+      {/* League > Week > Class > Stat, matching the Schedules page. The week
+          picker sits between league and class via LeaderboardFilters' slot. */}
       <div className="flex flex-wrap items-center gap-3">
-        <label className="text-xs uppercase tracking-wider text-chrome-500">View</label>
         <select
           className={SELECT_CLASSES}
           value={view}
           onChange={(e) => setView(e.target.value as "week" | "season")}
           aria-label="Leaderboard view"
         >
-          <option value="week">Top Performances by Week</option>
+          <option value="week">{weekViewLabel}</option>
           <option value="season">Season Leaders</option>
         </select>
-        {view === "week" ? (
-          <LeaderboardFilters
-            classes={leaderboards.classes}
-            league={league}
-            setLeague={setLeague}
-            cls={cls}
-            setCls={setCls}
-            category={weekCategory}
-            setCategory={setWeekCategory}
-            categoryOptions={WEEKLY_CATEGORY_OPTIONS}
-          />
-        ) : (
-          <LeaderboardFilters
-            classes={leaderboards.classes}
-            league={league}
-            setLeague={setLeague}
-            cls={cls}
-            setCls={setCls}
-            category={seasonCategory}
-            setCategory={setSeasonCategory}
-            categoryOptions={CATEGORY_OPTIONS}
-          />
-        )}
-        {view === "week" && hasWeekly && (
-          <select
-            className={`${SELECT_CLASSES} ml-auto`}
-            value={activeKey}
-            onChange={(e) => setWeekKey(e.target.value)}
-            aria-label="Week"
-          >
-            {[...weekly.weeks].reverse().map((w) => (
-              <option key={w.key} value={w.key}>
-                {w.label} · {w.range}
-              </option>
-            ))}
-          </select>
-        )}
+        <LeaderboardFilters
+          classes={leaderboards.classes}
+          league={league}
+          setLeague={setLeague}
+          cls={cls}
+          setCls={setCls}
+          category={view === "week" ? weekCategory : seasonCategory}
+          setCategory={
+            view === "week"
+              ? (setWeekCategory as (v: string) => void)
+              : (setSeasonCategory as (v: string) => void)
+          }
+          categoryOptions={
+            (view === "week"
+              ? WEEKLY_CATEGORY_OPTIONS
+              : CATEGORY_OPTIONS) as readonly { value: string; label: string }[]
+          }
+          between={
+            view === "week" && hasWeekly ? (
+              <select
+                className={SELECT_CLASSES}
+                value={activeKey}
+                onChange={(e) => setWeekKey(e.target.value)}
+                aria-label="Week"
+              >
+                {[...visibleWeeks].reverse().map((w) => (
+                  <option key={w.key} value={w.key}>
+                    {weekLabel(w, league)}
+                  </option>
+                ))}
+              </select>
+            ) : null
+          }
+        />
       </div>
 
       {view === "season" ? (

@@ -33,6 +33,7 @@ const LEAGUES = ["MHSAA", "MAIS"] as const;
 /** League + classification + stat-category selects; shared by the weekly and season views. */
 export function LeaderboardFilters<C extends string>({
   classes, league, setLeague, cls, setCls, category, setCategory, categoryOptions,
+  between,
 }: {
   classes: string[];
   league: string;
@@ -42,6 +43,8 @@ export function LeaderboardFilters<C extends string>({
   category: C;
   setCategory: (v: C) => void;
   categoryOptions: readonly { value: C; label: string }[];
+  /** Rendered between League and Classification — the home page puts Week there. */
+  between?: React.ReactNode;
 }) {
   const leagueClasses = league ? classes.filter((c) => leagueOf(c) === league) : classes;
   return (
@@ -62,6 +65,7 @@ export function LeaderboardFilters<C extends string>({
           <option key={l} value={l}>{l}</option>
         ))}
       </select>
+      {between}
       <select
         className={SELECT_CLASSES}
         value={cls}
