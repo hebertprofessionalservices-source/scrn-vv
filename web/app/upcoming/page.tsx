@@ -1,12 +1,14 @@
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { formatGameDate } from "@/lib/format-date";
 import { leagueOf, titleCaseSlug } from "@/lib/team-format";
+import { leagueWeek } from "@/lib/newspaper";
 import { todayCentral } from "@/lib/upcoming";
 import { mondayOf } from "@/lib/rank-history";
 import {
   ScheduleWeek,
   type ScheduleCard,
   type ScheduleLeague,
+  type WeekOption,
 } from "@/components/schedule/schedule-week";
 import type { Dataset } from "@/lib/data";
 import type { Game } from "@/lib/types";
@@ -55,15 +57,24 @@ function toCard(game: Game, data: Dataset): ScheduleCard {
 export default async function SchedulesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ week?: string }>;
+  searchParams: Promise<{ week?: string; league?: string; cls?: string }>;
 }) {
   const sp = await searchParams;
   const season = await currentSeason();
   const data = await loadDataset(season);
 
-  // Season weeks (Monday-anchored), numbered like the rest of the site.
+  /*
+   * Every week carries BOTH leagues' own numbers, because they do not agree:
+   * MAIS opens two weeks earlier but calls its first slate Week 0, so its
+   * number runs one ahead of MHSAA's all season. The label shown depends on
+   * which league is filtered — see weekLabel in the client component.
+   */
   const weekKeys = [...new Set(data.games.map((g) => mondayOf(g.date)))].sort();
-  const weeks = weekKeys.map((key, i) => ({ key, label: `Week ${i + 1}` }));
+  const weeks: WeekOption[] = weekKeys.map((key) => ({
+    key,
+    mais: leagueWeek(season, "MAIS", key),
+    mhsaa: leagueWeek(season, "MHSAA", key),
+  }));
 
   // Default to the current week, else the next week with games, else the last.
   const todayWeek = mondayOf(todayCentral());
@@ -112,33 +123,16 @@ export default async function SchedulesPage({
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-8">
-        <div>
-          {idx > 0 && (
-            <a
-              href={`/upcoming?week=${idx}`}
-              className="inline-block px-4 py-2 rounded-lg border border-chrome-500/30 font-display hover:border-crimson-500"
-            >
-              ← {weeks[idx - 1].label}
-            </a>
-          )}
-        </div>
-        <h1 className="font-display text-4xl text-center">
-          {week ? week.label : "Schedules"}
-        </h1>
-        <div className="text-right">
-          {idx < weeks.length - 1 && (
-            <a
-              href={`/upcoming?week=${idx + 2}`}
-              className="inline-block px-4 py-2 rounded-lg border border-chrome-500/30 font-display hover:border-crimson-500"
-            >
-              {weeks[idx + 1].label} →
-            </a>
-          )}
-        </div>
-      </div>
-
-      <ScheduleWeek leagues={leagues} />
+      {/* Header, week navigation and the filter row all live in the client
+          component: the week label depends on the selected league, and the
+          filters have to survive a week change. */}
+      <ScheduleWeek
+        leagues={leagues}
+        weeks={weeks}
+        weekIndex={idx}
+        initialLeague={sp.league ?? ""}
+        initialCls={sp.cls ?? ""}
+      />
     </main>
   );
 }

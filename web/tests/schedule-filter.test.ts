@@ -115,3 +115,50 @@ describe("filterSchedule", () => {
     expect(out).toEqual([]);
   });
 });
+
+describe("classOptionsFor — league purity", () => {
+  // Lamar (MAIS-3A) hosting Caledonia (5A) tags the card with BOTH classes so
+  // it matches either filter. The MAIS dropdown must still not offer "5A".
+  const leagues = [
+    {
+      league: "MAIS",
+      days: [
+        {
+          games: [
+            { classes: ["MAIS-3A", "5A"], away: { name: "Caledonia" }, home: { name: "Lamar" } },
+            { classes: ["MAIS-4A"], away: { name: "Prep" }, home: { name: "MRA" } },
+          ],
+        },
+      ],
+    },
+    {
+      league: "MHSAA",
+      days: [
+        {
+          games: [
+            { classes: ["5A", "MAIS-3A"], away: { name: "Caledonia" }, home: { name: "Lamar" } },
+          ],
+        },
+      ],
+    },
+  ];
+
+  it("offers only MAIS classes when MAIS is selected", () => {
+    expect(classOptionsFor(leagues, "MAIS")).toEqual(["MAIS-4A", "MAIS-3A"]);
+  });
+
+  it("offers only MHSAA classes when MHSAA is selected", () => {
+    expect(classOptionsFor(leagues, "MHSAA")).toEqual(["5A"]);
+  });
+
+  it("still offers both when no league is selected", () => {
+    expect(classOptionsFor(leagues, "").sort()).toEqual(["5A", "MAIS-3A", "MAIS-4A"]);
+  });
+
+  it("keeps matching the cross-class card from either side", () => {
+    const mais = filterSchedule(leagues, { league: "MAIS", cls: "MAIS-3A", query: "" });
+    expect(mais[0].days[0].games).toHaveLength(1);
+    const mhsaa = filterSchedule(leagues, { league: "MHSAA", cls: "5A", query: "" });
+    expect(mhsaa[0].days[0].games).toHaveLength(1);
+  });
+});

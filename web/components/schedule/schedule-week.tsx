@@ -7,6 +7,10 @@ import {
   activeClassification,
   classOptionsFor,
   filterSchedule,
+  weekLabel,
+  weekLabelParts,
+  weekOptionsFor,
+  type WeekOption,
 } from "@/lib/schedule-filter";
 
 export interface ScheduleCard {
@@ -28,6 +32,8 @@ export interface ScheduleDay {
   games: ScheduleCard[];
 }
 
+export type { WeekOption };
+
 export interface ScheduleLeague {
   league: string;
   days: ScheduleDay[];
@@ -37,10 +43,22 @@ const CONTROL_CLASSES =
   "bg-navy-700 border border-chrome-500/20 rounded-lg px-3 py-2 text-sm text-chrome-100 hover:border-crimson-500 focus:outline-none focus:border-crimson-500";
 
 /** One week of games, filtered by league, classification and team name. */
-export function ScheduleWeek({ leagues }: { leagues: ScheduleLeague[] }) {
+export function ScheduleWeek({
+  leagues,
+  weeks,
+  weekIndex,
+  initialLeague = "",
+  initialCls = "",
+}: {
+  leagues: ScheduleLeague[];
+  weeks: WeekOption[];
+  weekIndex: number;
+  initialLeague?: string;
+  initialCls?: string;
+}) {
   const [query, setQuery] = useState("");
-  const [league, setLeague] = useState("");
-  const [cls, setCls] = useState("");
+  const [league, setLeague] = useState(initialLeague);
+  const [cls, setCls] = useState(initialCls);
 
   const classOptions = useMemo(() => classOptionsFor(leagues, league), [leagues, league]);
   const activeCls = activeClassification(cls, classOptions);
@@ -51,8 +69,57 @@ export function ScheduleWeek({ leagues }: { leagues: ScheduleLeague[] }) {
 
   const filtersActive = Boolean(query.trim() || league || activeCls);
 
+  /*
+   * Week changes are navigations, so the filters ride along in the URL and
+   * come back as initialLeague/initialCls. Leaving the page — including the
+   * nav bar's own Schedules link, which points at a bare /upcoming — drops
+   * them, which is the reset Garret asked for.
+   */
+  const hrefFor = (i: number) => {
+    const sp = new URLSearchParams({ week: String(i + 1) });
+    if (league) sp.set("league", league);
+    if (activeCls) sp.set("cls", activeCls);
+    return `/upcoming?${sp.toString()}`;
+  };
+
+  const current = weeks[weekIndex];
+
   return (
     <div>
+      {/* One line per league, named — a bare "Week 4" means different things
+          to the two audiences. */}
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-8">
+        <div>
+          {weekIndex > 0 && (
+            <a
+              href={hrefFor(weekIndex - 1)}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-chrome-500/30 font-display hover:border-crimson-500"
+            >
+              <span aria-hidden>←</span>
+              <WeekLines week={weeks[weekIndex - 1]} league={league} className="text-sm leading-tight" />
+            </a>
+          )}
+        </div>
+        <h1 className="font-display text-4xl text-center leading-tight">
+          {current ? (
+            <WeekLines week={current} league={league} />
+          ) : (
+            "Schedules"
+          )}
+        </h1>
+        <div className="text-right">
+          {weekIndex < weeks.length - 1 && (
+            <a
+              href={hrefFor(weekIndex + 1)}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-chrome-500/30 font-display hover:border-crimson-500"
+            >
+              <WeekLines week={weeks[weekIndex + 1]} league={league} className="text-sm leading-tight" />
+              <span aria-hidden>→</span>
+            </a>
+          )}
+        </div>
+      </div>
+
       <div className="mb-8 flex flex-wrap items-center gap-3">
         <select
           className={CONTROL_CLASSES}
@@ -63,6 +130,23 @@ export function ScheduleWeek({ leagues }: { leagues: ScheduleLeague[] }) {
           <option value="">All Leagues</option>
           <option value="MHSAA">MHSAA</option>
           <option value="MAIS">MAIS</option>
+        </select>
+
+        {/* Filter order is League > Week > Classification: the league decides
+            which weeks and which classes are even on offer. */}
+        <select
+          className={CONTROL_CLASSES}
+          value={String(weekIndex)}
+          onChange={(e) => {
+            window.location.assign(hrefFor(Number(e.target.value)));
+          }}
+          aria-label="Jump to week"
+        >
+          {weekOptionsFor(weeks, league, weekIndex).map(({ week: w, index }) => (
+            <option key={w.key} value={index}>
+              {weekLabel(w, league)}
+            </option>
+          ))}
         </select>
 
         <select
@@ -138,6 +222,29 @@ export function ScheduleWeek({ leagues }: { leagues: ScheduleLeague[] }) {
         </div>
       )}
     </div>
+  );
+}
+
+/** The week, one named line per league in play. */
+function WeekLines({
+  week,
+  league,
+  className = "",
+}: {
+  week: WeekOption;
+  league: string;
+  className?: string;
+}) {
+  const parts = weekLabelParts(week, league);
+  if (parts.length === 0) return <span className={className}>Off week</span>;
+  return (
+    <span className={`inline-block ${className}`}>
+      {parts.map((p) => (
+        <span key={p} className="block whitespace-nowrap">
+          {p}
+        </span>
+      ))}
+    </span>
   );
 }
 

@@ -1,3 +1,4 @@
+import { leagueOf } from "./team-format";
 import { CLASS_ORDER } from "./leaderboard";
 
 export interface FilterableCard {
@@ -21,6 +22,11 @@ export interface ScheduleFilters {
 /**
  * Classifications actually playing, narrowed to the selected league so the two
  * dropdowns can never be combined into an empty result.
+ *
+ * A card carries BOTH teams' classifications so a cross-class game matches
+ * either filter, which meant a MAIS side hosting an MHSAA school put bare "5A"
+ * and "4A" in the MAIS dropdown. The options are therefore filtered to the
+ * selected league's own classifications; the cards still match on either.
  */
 export function classOptionsFor<C extends FilterableCard>(
   leagues: FilterableLeague<C>[],
@@ -29,7 +35,12 @@ export function classOptionsFor<C extends FilterableCard>(
   const present = new Set<string>();
   for (const l of leagues) {
     if (league && l.league !== league) continue;
-    for (const d of l.days) for (const g of d.games) for (const c of g.classes) present.add(c);
+    for (const d of l.days)
+      for (const g of d.games)
+        for (const c of g.classes) {
+          if (league && leagueOf(c) !== league) continue;
+          present.add(c);
+        }
   }
   return [
     ...CLASS_ORDER.filter((c) => present.has(c)),
@@ -67,4 +78,55 @@ export function filterSchedule<C extends FilterableCard, L extends FilterableLea
         .filter((d) => d.games.length > 0),
     }))
     .filter((l) => l.days.length > 0) as L[];
+}
+
+/** One calendar week, carrying each league's own number for it. */
+export interface WeekOption {
+  key: string;
+  mais: number | null;
+  mhsaa: number | null;
+}
+
+/**
+ * How a week is labelled depends on who is looking.
+ *
+ * The leagues do not share a count: MAIS opens two weeks before MHSAA but calls
+ * its first slate Week 0, leaving its number one ahead all season — Sep 11 2026
+ * is MHSAA Week 3 and MAIS Week 4. The league is always named, because a bare
+ * "Week 4" means different things to the two audiences.
+ *
+ * Returns one part per league in play, so a caller can stack them on separate
+ * lines or join them, whichever its space allows.
+ */
+export function weekLabelParts(w: WeekOption, league: string): string[] {
+  const parts: string[] = [];
+  if (league !== "MAIS" && w.mhsaa !== null) parts.push(`MHSAA Week ${w.mhsaa}`);
+  if (league !== "MHSAA" && w.mais !== null) parts.push(`MAIS Week ${w.mais}`);
+  return parts;
+}
+
+/** Single-line form, for a <select> option where a line break is not possible. */
+export function weekLabel(w: WeekOption, league: string): string {
+  const parts = weekLabelParts(w, league);
+  return parts.length ? parts.join(" / ") : "Off week";
+}
+
+/**
+ * The weeks worth offering for a league — one it actually plays.
+ *
+ * MHSAA has nothing in mid-August while MAIS is already two weeks in, so
+ * listing those weeks under an MHSAA filter would offer a guaranteed empty
+ * page. The current week is always kept so the select has a value to show.
+ */
+export function weekOptionsFor(
+  weeks: WeekOption[],
+  league: string,
+  currentIndex: number,
+): { week: WeekOption; index: number }[] {
+  return weeks
+    .map((week, index) => ({ week, index }))
+    .filter(
+      ({ week, index }) =>
+        index === currentIndex || weekLabelParts(week, league).length > 0,
+    );
 }
