@@ -872,9 +872,9 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 145,
-      "stateClass": 8,
-      "national": 6500
+      "stateOverall": null,
+      "stateClass": null,
+      "national": null
     },
     "stats": {
       "pointsFor": 0,

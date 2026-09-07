@@ -30,19 +30,25 @@ export default async function RankingsPage({
 
   const rows = data.teams
     .map((t) => ({ team: t, rank: power.get(t.id) }))
-    // Ranks are MaxPreps' own, so a team they don't rank has no row here.
-    .filter((r) => r.rank !== undefined && r.rank.overallRank !== null)
+    .filter((r) => r.rank !== undefined)
     .filter((r) => !league || leagueOf(r.team.classification) === league)
     .filter((r) => !cls || r.team.classification === cls)
-    .sort((a, b) => a.rank!.overallRank! - b.rank!.overallRank!)
-    // Filtered views renumber 1..N within the view; Overall keeps the
-    // global rank.
-    .map((r, i) => ({
+    /*
+     * The number shown is always MaxPreps' own — their per-division rank in a
+     * classification view, their statewide rank otherwise. It used to be the
+     * row's position after sorting on the statewide rank, which quietly
+     * re-derived a number MaxPreps already publishes: 1A showed Ethel 6th when
+     * MaxPreps has them 5th, and gave a 5th place to a team MaxPreps does not
+     * rank in 1A at all.
+     */
+    .map((r) => ({
       ...r,
-      shownRank: league || cls ? i + 1 : r.rank!.overallRank,
+      shownRank: cls ? r.rank!.classRank : r.rank!.overallRank,
       // Classification view: top 10 with each team's region record.
       regionRecord: cls ? teamRecordSplits(data, r.team).region : null,
     }))
+    .filter((r) => r.shownRank !== null)
+    .sort((a, b) => a.shownRank! - b.shownRank!)
     .slice(0, cls ? CLASS_VIEW_LIMIT : undefined);
 
   return (

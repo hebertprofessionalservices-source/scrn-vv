@@ -66,8 +66,21 @@ def find_key(obj: Any, key: str, depth: int = 0) -> Any:
     return None
 
 
-def parse_rankings(html: str) -> dict[str, int | None] | None:
-    """The three ranks off a team home page, or None if the page has none."""
+def season_cutoff(season: str) -> str:
+    """Earliest timestamp that can belong to this season, e.g. '2026-07-01'."""
+    return f"{season.split('-')[0]}-07-01"
+
+
+def parse_rankings(html: str, cutoff: str | None = None) -> dict[str, int | None] | None:
+    """The three ranks off a team home page, or None if the page has none.
+
+    MaxPreps only recomputes a team once it has results, and until then its
+    page keeps serving LAST season's ranking — stamped with last December's
+    date and carrying last year's record. Leake County was ranked 8th in 1A off
+    a 2025-12-23 payload while sitting 0-0, which put a team MaxPreps does not
+    currently rank onto the site's 1A board. Anything stamped before the season
+    opened is therefore discarded rather than published as current.
+    """
     match = NEXT_DATA_RE.search(html)
     if not match:
         return None
@@ -78,6 +91,12 @@ def parse_rankings(html: str) -> dict[str, int | None] | None:
     data = find_key(payload, "rankingsData")
     if not isinstance(data, dict):
         return None
+
+    stamp = data.get("timeStamp") or ""
+    if cutoff and stamp and stamp < cutoff:
+        print(f"  STALE RANKS ({stamp[:10]}) — dropping", flush=True)
+        return {"stateOverall": None, "stateClass": None, "national": None}
+
     out: dict[str, int | None] = {
         "stateOverall": None, "stateClass": None, "national": None,
     }
@@ -147,7 +166,7 @@ def main() -> None:
         html = fetch(client, cache, url, args.fresh)
         if html is None:
             continue
-        parsed = parse_rankings(html)
+        parsed = parse_rankings(html, season_cutoff(season))
         if parsed is None:
             continue
         ranks[team["id"]] = parsed
