@@ -312,11 +312,17 @@ describe("leagueWeek", () => {
     expect(leagueWeek(S, "MHSAA", "2026-08-27")).toBe(1);
   });
 
+  it("counts the MAIS opener as Week 0", () => {
+    // MAIS plays two weeks of games before MHSAA but calls the first Week 0,
+    // which is why the printed numbers end up only one apart.
+    expect(leagueWeek(S, "MAIS", "2026-08-14")).toBe(0);
+    expect(leagueWeek(S, "MAIS", "2026-09-11")).toBe(4);
+    expect(leagueWeek(S, "MHSAA", "2026-09-11")).toBe(3);
+  });
+
   it("returns null before a league opens or for an unknown season", () => {
-    // MAIS plays Aug 14, a week before its Week 1; that slate is labelled by
-    // date, not by number.
-    expect(leagueWeek(S, "MAIS", "2026-08-14")).toBeNull();
     expect(leagueWeek(S, "MHSAA", "2026-08-14")).toBeNull();
+    expect(leagueWeek(S, "MHSAA", "2026-08-21")).toBeNull();
     expect(leagueWeek("2099-00", "MHSAA", "2026-08-28")).toBeNull();
   });
 });

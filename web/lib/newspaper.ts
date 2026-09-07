@@ -392,18 +392,23 @@ export function leagueOf(classification: string): League {
 }
 
 /**
- * The date each league's Week 1 slate is played.
+ * Where each league's count starts: a known slate date and the number that
+ * slate carries.
  *
- * The two leagues are NOT on the same count — MAIS opens ONE week earlier — so
- * an Aug 28 2026 game is MAIS Week 2 but MHSAA Week 1. Published graphics must
- * carry that league's own number, never a shared season-wide count.
+ * The leagues are NOT on the same count. MAIS opens two weeks of games before
+ * MHSAA, but calls its first slate WEEK 0, so the printed numbers end up only
+ * one apart: Sep 11 2026 is MHSAA Week 3 and MAIS Week 4. Published graphics
+ * and the schedule page must use that league's own number, never a shared
+ * season-wide count.
  *
- * MAIS also plays a slate on Aug 14, a week before its Week 1. That one sits
- * outside the count and is labelled by date ("Aug 14"), so anchoring Week 1 to
- * it — as this table used to — pushed every MAIS week one too high.
+ * MAIS's Aug 14 slate used to return null here and be labelled by date. Garret
+ * settled it on Sep 7 2026: it is Week 0, and it anchors the MAIS count.
  */
-const WEEK_ONE: Record<string, Record<League, string>> = {
-  "2026-27": { MAIS: "2026-08-21", MHSAA: "2026-08-28" },
+const WEEK_ANCHOR: Record<string, Record<League, { date: string; week: number }>> = {
+  "2026-27": {
+    MAIS: { date: "2026-08-14", week: 0 },
+    MHSAA: { date: "2026-08-28", week: 1 },
+  },
 };
 
 const DAY_MS = 86_400_000;
@@ -434,11 +439,12 @@ export function leagueWeek(
   league: League,
   date: string,
 ): number | null {
-  const anchor = WEEK_ONE[season]?.[league];
+  const anchor = WEEK_ANCHOR[season]?.[league];
   if (!anchor) return null;
-  const diff = daysBetween(mondayOf(anchor), mondayOf(date));
-  if (diff < 0) return null;
-  return Math.floor(diff / 7) + 1;
+  const diff = daysBetween(mondayOf(anchor.date), mondayOf(date));
+  const week = anchor.week + Math.floor(diff / 7);
+  // Before the league's first slate — MHSAA has nothing in mid-August.
+  return week < anchor.week ? null : week;
 }
 
 /**
