@@ -5431,7 +5431,7 @@
       },
       "defense": {
         "tackles": 9,
-        "sacks": 0,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -26845,12 +26845,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 7,
-        "td": 0
+        "rec": 12,
+        "yds": 228,
+        "td": 2
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 1
@@ -26862,7 +26862,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-5-johnson",
@@ -26884,10 +26884,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 4,
-        "yds": 2,
+        "att": 9,
+        "yds": 51,
         "td": 0,
-        "ypc": 0.5
+        "ypc": 5.7
       },
       "receiving": {
         "rec": 0,
@@ -26907,7 +26907,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-7-curtis",
@@ -26974,10 +26974,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 6,
-        "yds": 71,
+        "att": 8,
+        "yds": 75,
         "td": 1,
-        "ypc": 11.8
+        "ypc": 9.4
       },
       "receiving": {
         "rec": 0,
@@ -26997,7 +26997,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-8-ellis",
@@ -27025,15 +27025,15 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 85,
+        "rec": 3,
+        "yds": 90,
         "td": 1
       },
       "defense": {
-        "tackles": 3,
-        "sacks": 1.0,
+        "tackles": 10,
+        "sacks": 3.0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -27042,7 +27042,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-10-brown",
@@ -27115,12 +27115,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 16,
+        "rec": 3,
+        "yds": 26,
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 4,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27132,7 +27132,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-11-thomas",
@@ -27154,20 +27154,20 @@
         "rating": 0
       },
       "rushing": {
-        "att": 1,
-        "yds": 10,
+        "att": 5,
+        "yds": 33,
         "td": 0,
-        "ypc": 10.0
+        "ypc": 6.6
       },
       "receiving": {
-        "rec": 2,
-        "yds": 16,
-        "td": 0
+        "rec": 6,
+        "yds": 77,
+        "td": 1
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 11,
         "sacks": 0,
-        "int": 0,
+        "int": 1,
         "ff": 0
       },
       "kicking": {
@@ -27177,7 +27177,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-12-shannon",
@@ -27210,9 +27210,9 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 2,
         "sacks": 0,
-        "int": 0,
+        "int": 1,
         "ff": 0
       },
       "kicking": {
@@ -27222,7 +27222,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-13-robbins",
@@ -27244,10 +27244,10 @@
         "rating": 89.6
       },
       "rushing": {
-        "att": 5,
-        "yds": 26,
-        "td": 2,
-        "ypc": 5.2
+        "att": 7,
+        "yds": 33,
+        "td": 3,
+        "ypc": 4.7
       },
       "receiving": {
         "rec": 0,
@@ -27267,7 +27267,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-14-miller",
@@ -27326,12 +27326,12 @@
     "weight": 165,
     "stats": {
       "passing": {
-        "att": 8,
-        "cmp": 4,
-        "yds": 115,
-        "td": 1,
+        "att": 34,
+        "cmp": 21,
+        "yds": 412,
+        "td": 4,
         "int": 0,
-        "rating": 135.4
+        "rating": 143.3
       },
       "rushing": {
         "att": 0,
@@ -27357,7 +27357,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-17-goodwin",
@@ -27416,12 +27416,12 @@
     "weight": null,
     "stats": {
       "passing": {
-        "att": 0,
+        "att": 1,
         "cmp": 0,
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0
+        "rating": 39.6
       },
       "rushing": {
         "att": 0,
@@ -27435,7 +27435,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27447,7 +27447,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-21-hughes",
@@ -27514,10 +27514,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 9,
-        "yds": 40,
+        "att": 25,
+        "yds": 82,
         "td": 0,
-        "ypc": 4.4
+        "ypc": 3.3
       },
       "receiving": {
         "rec": 0,
@@ -27525,7 +27525,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 18,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27537,7 +27537,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-25-thomas",
@@ -27570,8 +27570,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
-        "sacks": 0,
+        "tackles": 9,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -27582,7 +27582,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-27-johnson",
@@ -27756,13 +27756,13 @@
         "ff": 0
       },
       "kicking": {
-        "fgm": 0,
-        "fga": 0,
-        "xpm": 5,
-        "xpa": 5
+        "fgm": 1,
+        "fga": 1,
+        "xpm": 8,
+        "xpa": 9
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-35-mcmanus",
@@ -27885,7 +27885,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 12,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27897,7 +27897,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-44-cloy",
@@ -27930,7 +27930,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 18,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27942,7 +27942,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-51-earls",
@@ -27975,7 +27975,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -27987,7 +27987,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-52-wilson",
@@ -28096,13 +28096,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -28111,7 +28111,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -28122,7 +28122,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "wesson-cobras-cobras-55-floyd",
@@ -28245,8 +28245,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
-        "sacks": 0,
+        "tackles": 2,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -28257,7 +28257,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-58-brooks",
@@ -28515,7 +28515,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -28527,7 +28527,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-63-cook",
@@ -28560,7 +28560,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -28572,7 +28572,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "wesson-cobras-cobras-64-morris",
@@ -42100,8 +42100,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 28,
+        "rec": 2,
+        "yds": 53,
         "td": 0
       },
       "defense": {
@@ -42117,7 +42117,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-2-conley",
@@ -42152,7 +42152,7 @@
       "defense": {
         "tackles": 11,
         "sacks": 0,
-        "int": 0,
+        "int": 1,
         "ff": 0
       },
       "kicking": {
@@ -42162,7 +42162,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-3-yates",
@@ -42207,7 +42207,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-4-perkins",
@@ -42274,10 +42274,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
-        "td": 0,
-        "ypc": 0
+        "att": 14,
+        "yds": 147,
+        "td": 3,
+        "ypc": 10.5
       },
       "receiving": {
         "rec": 0,
@@ -42297,7 +42297,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-5-wofford",
@@ -42409,10 +42409,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 1,
-        "yds": 9,
+        "att": 2,
+        "yds": 12,
         "td": 0,
-        "ypc": 9.0
+        "ypc": 6.0
       },
       "receiving": {
         "rec": 0,
@@ -42432,7 +42432,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-7-pittman",
@@ -42477,7 +42477,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-8-gray",
@@ -42496,58 +42496,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
-        "td": 0,
-        "ypc": 0.0
-      },
-      "receiving": {
-        "rec": 0,
-        "yds": 0,
-        "td": 0
-      },
-      "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
-        "int": 0,
-        "ff": 0
-      },
-      "kicking": {
-        "fgm": 0,
-        "fga": 0,
-        "xpm": 0,
-        "xpa": 0
-      }
-    },
-    "gamesPlayed": 0
-  },
-  {
-    "id": "eupora-eagles-eagles-9-boatman",
-    "teamId": "eupora-eagles-eagles",
-    "season": "2026-27",
-    "name": "Tripp Boatman",
-    "jersey": "9",
-    "position": "RB",
-    "class": "SR",
-    "height": "6-3",
-    "weight": 220,
-    "stats": {
-      "passing": {
-        "att": 1,
-        "cmp": 0,
-        "yds": 0,
-        "td": 0,
-        "int": 0,
-        "rating": 39.6
-      },
-      "rushing": {
-        "att": 16,
-        "yds": 194,
-        "td": 3,
-        "ypc": 12.1
+        "att": 3,
+        "yds": 19,
+        "td": 1,
+        "ypc": 6.3
       },
       "receiving": {
         "rec": 0,
@@ -42568,6 +42523,51 @@
       }
     },
     "gamesPlayed": 1
+  },
+  {
+    "id": "eupora-eagles-eagles-9-boatman",
+    "teamId": "eupora-eagles-eagles",
+    "season": "2026-27",
+    "name": "Tripp Boatman",
+    "jersey": "9",
+    "position": "RB",
+    "class": "SR",
+    "height": "6-3",
+    "weight": 220,
+    "stats": {
+      "passing": {
+        "att": 5,
+        "cmp": 3,
+        "yds": 23,
+        "td": 0,
+        "int": 0,
+        "rating": 71.3
+      },
+      "rushing": {
+        "att": 35,
+        "yds": 340,
+        "td": 5,
+        "ypc": 9.7
+      },
+      "receiving": {
+        "rec": 0,
+        "yds": 0,
+        "td": 0
+      },
+      "defense": {
+        "tackles": 0,
+        "sacks": 0,
+        "int": 0,
+        "ff": 0
+      },
+      "kicking": {
+        "fgm": 0,
+        "fga": 0,
+        "xpm": 0,
+        "xpa": 0
+      }
+    },
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-10-cullum",
@@ -42612,7 +42612,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-11-stroup",
@@ -42640,8 +42640,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": -3,
         "td": 0
       },
       "defense": {
@@ -42657,7 +42657,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-13-ashford",
@@ -42811,13 +42811,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -42826,7 +42826,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -42837,7 +42837,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "eupora-eagles-eagles-17-lee",
@@ -42924,10 +42924,10 @@
         "fgm": 0,
         "fga": 0,
         "xpm": 0,
-        "xpa": 0
+        "xpa": 1
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-19-alvarado",
@@ -42991,22 +42991,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 1,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -43017,7 +43017,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "eupora-eagles-eagles-22-turner",
@@ -43354,10 +43354,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 2,
-        "yds": 18,
+        "att": 4,
+        "yds": 20,
         "td": 0,
-        "ypc": 9.0
+        "ypc": 5.0
       },
       "receiving": {
         "rec": 0,
@@ -43377,7 +43377,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-50-swindle",
@@ -43411,7 +43411,7 @@
       },
       "defense": {
         "tackles": 6,
-        "sacks": 1.0,
+        "sacks": 0.5,
         "int": 0,
         "ff": 0
       },
@@ -43422,7 +43422,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-51-robinson",
@@ -43501,7 +43501,7 @@
       },
       "defense": {
         "tackles": 4,
-        "sacks": 1.0,
+        "sacks": 0.5,
         "int": 0,
         "ff": 0
       },
@@ -43512,7 +43512,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-53-totton",
@@ -43647,7 +43647,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "eupora-eagles-eagles-56-tindall",
@@ -74820,7 +74820,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 13,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -74832,7 +74832,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-2-whitehead",
@@ -74910,7 +74910,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 8,
+        "tackles": 20,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -74922,7 +74922,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-4-hinton",
@@ -75000,7 +75000,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 2,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75012,7 +75012,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-6-tomlinson",
@@ -75040,12 +75040,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 5,
-        "yds": 98,
+        "rec": 10,
+        "yds": 151,
         "td": 1
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75057,7 +75057,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-7-bridges",
@@ -75085,15 +75085,15 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 5,
-        "yds": 106,
-        "td": 1
+        "rec": 14,
+        "yds": 239,
+        "td": 2
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -75102,7 +75102,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-8-morris",
@@ -75188,11 +75188,11 @@
       "kicking": {
         "fgm": 1,
         "fga": 1,
-        "xpm": 4,
-        "xpa": 4
+        "xpm": 7,
+        "xpa": 7
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-10-welford",
@@ -75220,12 +75220,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 28,
         "td": 0
       },
       "defense": {
-        "tackles": 9,
+        "tackles": 15,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75237,7 +75237,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-11-thoms",
@@ -75436,22 +75436,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
-        "td": 0
+        "rec": 2,
+        "yds": 11,
+        "td": 1
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -75462,7 +75462,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-15-didier",
@@ -75490,12 +75490,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 27,
+        "rec": 4,
+        "yds": 39,
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75507,7 +75507,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-16-stringer",
@@ -75521,18 +75521,18 @@
     "weight": 170,
     "stats": {
       "passing": {
-        "att": 19,
-        "cmp": 12,
-        "yds": 232,
-        "td": 2,
-        "int": 0,
-        "rating": 140.7
+        "att": 56,
+        "cmp": 33,
+        "yds": 489,
+        "td": 4,
+        "int": 1,
+        "rating": 103.9
       },
       "rushing": {
-        "att": 4,
-        "yds": 22,
+        "att": 5,
+        "yds": 39,
         "td": 0,
-        "ypc": 5.5
+        "ypc": 7.8
       },
       "receiving": {
         "rec": 0,
@@ -75552,7 +75552,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-17-shemper",
@@ -75616,22 +75616,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 3,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -75642,7 +75642,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-19-brown",
@@ -75675,10 +75675,10 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 13,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -75687,7 +75687,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-20-conn",
@@ -75810,7 +75810,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75822,7 +75822,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-23-scott",
@@ -75900,7 +75900,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -75912,7 +75912,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-25-smith",
@@ -76125,7 +76125,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -76137,7 +76137,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-31-smith",
@@ -76215,7 +76215,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -76227,7 +76227,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-34-ekunwe",
@@ -76575,10 +76575,10 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -76587,7 +76587,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-45-robertson",
@@ -76609,21 +76609,21 @@
         "rating": 0
       },
       "rushing": {
-        "att": 20,
-        "yds": 113,
-        "td": 2,
-        "ypc": 5.7
+        "att": 35,
+        "yds": 171,
+        "td": 3,
+        "ypc": 4.9
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 17,
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -76632,7 +76632,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-47-kosko",
@@ -76741,13 +76741,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -76755,8 +76755,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -76767,7 +76767,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-51-lott",
@@ -76966,13 +76966,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -76980,8 +76980,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -76992,7 +76992,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-57-fairchild",
@@ -77520,7 +77520,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 2,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -77532,7 +77532,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "presbyterian-christian-bobcats-bobcats-73-shifalo",
@@ -111529,18 +111529,18 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 3,
+        "yds": 26,
         "td": 0,
-        "ypc": 0
+        "ypc": 8.7
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 12,
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -111552,7 +111552,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-2-mcmillen",
@@ -111574,10 +111574,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 7,
-        "yds": 57,
+        "att": 8,
+        "yds": 60,
         "td": 1,
-        "ypc": 8.1
+        "ypc": 7.5
       },
       "receiving": {
         "rec": 1,
@@ -111585,7 +111585,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -111597,7 +111597,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-3-eldridge",
@@ -111630,7 +111630,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 1
@@ -111642,7 +111642,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-4-hopkins",
@@ -111709,21 +111709,21 @@
         "rating": 0
       },
       "rushing": {
-        "att": 6,
-        "yds": 35,
+        "att": 10,
+        "yds": 50,
         "td": 0,
-        "ypc": 5.8
+        "ypc": 5.0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 20,
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -111732,7 +111732,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-5-wood",
@@ -111754,10 +111754,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 1,
-        "yds": 9,
-        "td": 0,
-        "ypc": 9.0
+        "att": 7,
+        "yds": 98,
+        "td": 1,
+        "ypc": 14.0
       },
       "receiving": {
         "rec": 1,
@@ -111765,8 +111765,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
-        "sacks": 0,
+        "tackles": 10,
+        "sacks": 0.5,
         "int": 0,
         "ff": 0
       },
@@ -111777,7 +111777,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-6-hood",
@@ -111799,10 +111799,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 20,
-        "yds": 130,
-        "td": 1,
-        "ypc": 6.5
+        "att": 31,
+        "yds": 192,
+        "td": 3,
+        "ypc": 6.2
       },
       "receiving": {
         "rec": 0,
@@ -111822,7 +111822,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-7-ford",
@@ -111889,10 +111889,10 @@
         "rating": 81.3
       },
       "rushing": {
-        "att": 14,
-        "yds": 41,
-        "td": 2,
-        "ypc": 2.9
+        "att": 19,
+        "yds": 139,
+        "td": 4,
+        "ypc": 7.3
       },
       "receiving": {
         "rec": 0,
@@ -111912,7 +111912,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-9-ellison",
@@ -111971,18 +111971,18 @@
     "weight": null,
     "stats": {
       "passing": {
-        "att": 4,
-        "cmp": 1,
-        "yds": 34,
+        "att": 10,
+        "cmp": 5,
+        "yds": 108,
         "td": 0,
-        "int": 0,
-        "rating": 62.5
+        "int": 2,
+        "rating": 49.2
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 2,
+        "yds": 15,
         "td": 0,
-        "ypc": 0
+        "ypc": 7.5
       },
       "receiving": {
         "rec": 0,
@@ -112002,7 +112002,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-11-jenkins",
@@ -112030,12 +112030,12 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 22,
-        "td": 0
+        "rec": 3,
+        "yds": 64,
+        "td": 1
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 8,
         "sacks": 0,
         "int": 1,
         "ff": 0
@@ -112047,7 +112047,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-12-yusti",
@@ -112088,11 +112088,11 @@
       "kicking": {
         "fgm": 0,
         "fga": 0,
-        "xpm": 1,
-        "xpa": 1
+        "xpm": 4,
+        "xpa": 6
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-13-witcher",
@@ -112114,10 +112114,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 3,
+        "yds": 9,
         "td": 0,
-        "ypc": 0
+        "ypc": 3.0
       },
       "receiving": {
         "rec": 0,
@@ -112125,7 +112125,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -112137,7 +112137,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-15-holley",
@@ -112561,13 +112561,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -112576,7 +112576,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -112587,7 +112587,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "mantachie-mustangs-mustangs-24-scott",
@@ -112609,10 +112609,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
-        "td": 0,
-        "ypc": 0
+        "att": 1,
+        "yds": 6,
+        "td": 1,
+        "ypc": 6.0
       },
       "receiving": {
         "rec": 0,
@@ -112620,8 +112620,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 10,
-        "sacks": 0,
+        "tackles": 19,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -112632,7 +112632,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-25-cleveland",
@@ -112741,13 +112741,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -112755,8 +112755,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -112767,7 +112767,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "mantachie-mustangs-mustangs-28-davis",
@@ -112935,8 +112935,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
-        "sacks": 0,
+        "tackles": 2,
+        "sacks": 0.5,
         "int": 0,
         "ff": 0
       },
@@ -112947,7 +112947,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-45-hubbard",
@@ -112966,13 +112966,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -112980,8 +112980,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 3,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -112992,7 +112992,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "mantachie-mustangs-mustangs-50-johnson",
@@ -113326,13 +113326,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -113341,7 +113341,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -113352,7 +113352,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "mantachie-mustangs-mustangs-58-williams",
@@ -113430,8 +113430,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
-        "sacks": 0,
+        "tackles": 2,
+        "sacks": 0.5,
         "int": 0,
         "ff": 0
       },
@@ -113442,7 +113442,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "mantachie-mustangs-mustangs-60-franks",
@@ -118504,18 +118504,18 @@
         "rating": 0
       },
       "rushing": {
-        "att": 13,
-        "yds": 108,
+        "att": 17,
+        "yds": 118,
         "td": 1,
-        "ypc": 8.3
+        "ypc": 6.9
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
-        "td": 0
+        "rec": 5,
+        "yds": 196,
+        "td": 2
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 4,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -118527,7 +118527,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-2-roebuck",
@@ -118560,7 +118560,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -118572,7 +118572,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-3-shumpert",
@@ -118636,13 +118636,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -118650,8 +118650,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -118662,7 +118662,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "nettleton-tigers-tigers-5-cunnnigham",
@@ -118819,10 +118819,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 4,
+        "yds": 6,
         "td": 0,
-        "ypc": 0
+        "ypc": 1.5
       },
       "receiving": {
         "rec": 0,
@@ -118830,7 +118830,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 9,
+        "tackles": 15,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -118842,7 +118842,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-8-moore",
@@ -118909,14 +118909,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 1,
-        "yds": 1,
+        "att": 14,
+        "yds": 11,
         "td": 0,
-        "ypc": 1.0
+        "ypc": 0.8
       },
       "receiving": {
-        "rec": 5,
-        "yds": 46,
+        "rec": 8,
+        "yds": 77,
         "td": 0
       },
       "defense": {
@@ -118932,7 +118932,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-10-dabbs",
@@ -118946,18 +118946,18 @@
     "weight": 180,
     "stats": {
       "passing": {
-        "att": 11,
-        "cmp": 9,
-        "yds": 88,
-        "td": 0,
+        "att": 24,
+        "cmp": 16,
+        "yds": 315,
+        "td": 2,
         "int": 0,
-        "rating": 103.6
+        "rating": 137.5
       },
       "rushing": {
-        "att": 9,
-        "yds": 65,
-        "td": 2,
-        "ypc": 7.2
+        "att": 16,
+        "yds": 68,
+        "td": 3,
+        "ypc": 4.3
       },
       "receiving": {
         "rec": 0,
@@ -118965,7 +118965,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 11,
+        "tackles": 20,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -118977,7 +118977,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-11-dykes",
@@ -119010,7 +119010,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -119022,7 +119022,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-12-holland",
@@ -119145,7 +119145,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 12,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -119157,7 +119157,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-16-brownlee",
@@ -119190,7 +119190,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 17,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -119202,7 +119202,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-17-patterson",
@@ -119221,13 +119221,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -119235,8 +119235,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -119247,7 +119247,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "nettleton-tigers-tigers-18-coggin",
@@ -119325,7 +119325,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -119337,7 +119337,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-20-red",
@@ -119671,13 +119671,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -119685,8 +119685,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -119697,7 +119697,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "nettleton-tigers-tigers-25-hodges",
@@ -120360,7 +120360,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 9,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -120372,7 +120372,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-51-dilworth",
@@ -120405,7 +120405,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 11,
+        "tackles": 14,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -120417,7 +120417,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "nettleton-tigers-tigers-52-humble",
@@ -122295,7 +122295,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122307,7 +122307,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-1-wade",
@@ -122321,18 +122321,18 @@
     "weight": 210,
     "stats": {
       "passing": {
-        "att": 29,
-        "cmp": 19,
-        "yds": 347,
-        "td": 3,
-        "int": 0,
-        "rating": 141.0
+        "att": 45,
+        "cmp": 31,
+        "yds": 554,
+        "td": 4,
+        "int": 1,
+        "rating": 131.2
       },
       "rushing": {
-        "att": 10,
-        "yds": 111,
-        "td": 3,
-        "ypc": 11.1
+        "att": 14,
+        "yds": 121,
+        "td": 4,
+        "ypc": 8.6
       },
       "receiving": {
         "rec": 0,
@@ -122352,7 +122352,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-2-roundtree",
@@ -122374,14 +122374,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 2,
+        "yds": 63,
         "td": 0,
-        "ypc": 0
+        "ypc": 31.5
       },
       "receiving": {
-        "rec": 7,
-        "yds": 205,
+        "rec": 9,
+        "yds": 233,
         "td": 3
       },
       "defense": {
@@ -122397,7 +122397,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-3-williams",
@@ -122416,13 +122416,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -122430,8 +122430,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -122442,7 +122442,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "kosciusko-whippets-whippets-4-sandifer",
@@ -122464,10 +122464,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 15,
-        "yds": 116,
-        "td": 2,
-        "ypc": 7.7
+        "att": 36,
+        "yds": 265,
+        "td": 5,
+        "ypc": 7.4
       },
       "receiving": {
         "rec": 0,
@@ -122487,7 +122487,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-5-stewart",
@@ -122520,7 +122520,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122532,7 +122532,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-6-winters",
@@ -122565,7 +122565,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122577,7 +122577,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-7-latiker",
@@ -122605,8 +122605,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 5,
+        "rec": 3,
+        "yds": 64,
         "td": 0
       },
       "defense": {
@@ -122622,7 +122622,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-8-williams",
@@ -122655,7 +122655,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122667,7 +122667,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-9-toliver",
@@ -122689,10 +122689,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 8,
-        "yds": 23,
+        "att": 9,
+        "yds": 34,
         "td": 0,
-        "ypc": 2.9
+        "ypc": 3.8
       },
       "receiving": {
         "rec": 0,
@@ -122712,7 +122712,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-10-mcbride",
@@ -122740,14 +122740,14 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 6,
-        "yds": 50,
-        "td": 0
+        "rec": 13,
+        "yds": 160,
+        "td": 1
       },
       "defense": {
         "tackles": 5,
         "sacks": 0,
-        "int": 1,
+        "int": 2,
         "ff": 0
       },
       "kicking": {
@@ -122757,7 +122757,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-11-newell",
@@ -122790,7 +122790,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122802,7 +122802,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-12-coats",
@@ -122835,7 +122835,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 4,
         "sacks": 1.0,
         "int": 0,
         "ff": 0
@@ -122847,7 +122847,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-13-harmon",
@@ -122925,7 +122925,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 8,
+        "tackles": 13,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122937,7 +122937,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-15-winters",
@@ -122970,7 +122970,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -122982,7 +122982,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-16-talley",
@@ -123046,13 +123046,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -123060,8 +123060,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 5,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -123072,7 +123072,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "kosciusko-whippets-whippets-18-foster",
@@ -123195,10 +123195,10 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
-        "ff": 0
+        "ff": 1
       },
       "kicking": {
         "fgm": 0,
@@ -123207,7 +123207,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-21-mcneal",
@@ -123240,7 +123240,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 10,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -123252,7 +123252,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-22-rogers",
@@ -123361,13 +123361,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -123375,8 +123375,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -123387,7 +123387,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "kosciusko-whippets-whippets-25-veasley",
@@ -123465,7 +123465,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -123477,7 +123477,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-27-cummins",
@@ -124590,7 +124590,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -124602,7 +124602,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-55-stewart",
@@ -125406,13 +125406,13 @@
         "ff": 0
       },
       "kicking": {
-        "fgm": 0,
-        "fga": 0,
-        "xpm": 7,
-        "xpa": 8
+        "fgm": 1,
+        "fga": 1,
+        "xpm": 12,
+        "xpa": 14
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "kosciusko-whippets-whippets-84-hanna",
@@ -125575,8 +125575,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 4,
-        "yds": 82,
+        "rec": 5,
+        "yds": 92,
         "td": 0
       },
       "defense": {
@@ -125592,7 +125592,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pass-christian-pirates-pirates-0-mooney",
@@ -128308,7 +128308,7 @@
       "passing": {
         "att": 11,
         "cmp": 7,
-        "yds": 154,
+        "yds": 155,
         "td": 3,
         "int": 1,
         "rating": 108.9
@@ -144267,7 +144267,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-3-ii",
@@ -144312,7 +144312,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-12-clifton",
@@ -144326,18 +144326,18 @@
     "weight": 200,
     "stats": {
       "passing": {
-        "att": 0,
-        "cmp": 0,
-        "yds": 0,
+        "att": 26,
+        "cmp": 10,
+        "yds": 87,
         "td": 0,
         "int": 0,
-        "rating": 0
+        "rating": 48.1
       },
       "rushing": {
-        "att": 7,
-        "yds": 21,
+        "att": 11,
+        "yds": 7,
         "td": 0,
-        "ypc": 3.0
+        "ypc": 0.6
       },
       "receiving": {
         "rec": 0,
@@ -144357,7 +144357,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-13-morris",
@@ -144466,13 +144466,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -144481,7 +144481,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -144492,7 +144492,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "shannon-red-raiders-red-raiders-18-crump",
@@ -144582,7 +144582,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-20-deans",
@@ -144604,14 +144604,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 12,
-        "yds": 113,
+        "att": 13,
+        "yds": 117,
         "td": 2,
-        "ypc": 9.4
+        "ypc": 9.0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 43,
+        "rec": 6,
+        "yds": 74,
         "td": 0
       },
       "defense": {
@@ -144627,7 +144627,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-21-harris",
@@ -144672,7 +144672,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-23-nichols",
@@ -144717,7 +144717,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-24-walker",
@@ -144762,7 +144762,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-25-moore",
@@ -144897,7 +144897,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-28-conner",
@@ -144919,14 +144919,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 18,
-        "yds": 92,
+        "att": 25,
+        "yds": 111,
         "td": 1,
-        "ypc": 5.1
+        "ypc": 4.4
       },
       "receiving": {
-        "rec": 1,
-        "yds": 8,
+        "rec": 2,
+        "yds": 7,
         "td": 0
       },
       "defense": {
@@ -144942,7 +144942,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-33-shannon",
@@ -145960,8 +145960,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 58,
+        "rec": 4,
+        "yds": 66,
         "td": 1
       },
       "defense": {
@@ -145977,7 +145977,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-82-perry",
@@ -146005,8 +146005,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 29,
+        "rec": 5,
+        "yds": 78,
         "td": 0
       },
       "defense": {
@@ -146022,7 +146022,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-85-riley",
@@ -146089,10 +146089,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 1,
+        "yds": -1,
         "td": 0,
-        "ypc": 0
+        "ypc": -1.0
       },
       "receiving": {
         "rec": 0,
@@ -146112,7 +146112,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-88-bowdry",
@@ -146202,7 +146202,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "shannon-red-raiders-red-raiders-98-gillard",
@@ -146292,7 +146292,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "poplarville-hornets-hornets-0-duffy",
@@ -170701,13 +170701,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -170716,7 +170716,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170727,7 +170727,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-1-boykin",
@@ -170741,18 +170741,18 @@
     "weight": 185,
     "stats": {
       "passing": {
-        "att": 0,
-        "cmp": 0,
-        "yds": 0,
+        "att": 23,
+        "cmp": 13,
+        "yds": 154,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 77.1
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
-        "td": 0,
-        "ypc": 0.0
+        "att": 9,
+        "yds": 14,
+        "td": 1,
+        "ypc": 1.6
       },
       "receiving": {
         "rec": 0,
@@ -170761,7 +170761,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170772,7 +170772,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-2-gates",
@@ -170791,22 +170791,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 5,
+        "yds": 83,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170817,7 +170817,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-3-parks",
@@ -170836,22 +170836,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 15,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170862,7 +170862,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-4-pack",
@@ -170881,13 +170881,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 1,
+        "yds": 10,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 10.0
       },
       "receiving": {
         "rec": 0,
@@ -170896,7 +170896,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170907,7 +170907,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-5-eddie",
@@ -170921,27 +170921,27 @@
     "weight": 188,
     "stats": {
       "passing": {
-        "att": 0,
-        "cmp": 0,
-        "yds": 0,
+        "att": 1,
+        "cmp": 1,
+        "yds": 16,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 137.5
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 5,
+        "yds": 21,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 4.2
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 2,
+        "yds": 24,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170952,7 +170952,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-6-moore",
@@ -170971,22 +170971,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 9,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -170997,7 +170997,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-8-sykes",
@@ -171016,13 +171016,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -171031,7 +171031,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -171042,7 +171042,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-11-randle",
@@ -171106,13 +171106,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -171121,7 +171121,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -171132,7 +171132,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-13-robinson",
@@ -171236,18 +171236,18 @@
     "weight": 142,
     "stats": {
       "passing": {
-        "att": 0,
+        "att": 4,
         "cmp": 0,
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 39.6
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -171256,7 +171256,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -171267,7 +171267,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-16-williams",
@@ -171376,22 +171376,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 3,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -171402,7 +171402,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-21-tumblin",
@@ -171511,13 +171511,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -171526,7 +171526,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -171537,7 +171537,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-24-twyner",
@@ -171601,13 +171601,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -171616,18 +171616,18 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
       "kicking": {
         "fgm": 0,
         "fga": 0,
-        "xpm": 0,
-        "xpa": 0
+        "xpm": 1,
+        "xpa": 1
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "amory-panthers-panthers-26-hughes",
@@ -173671,22 +173671,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 6,
+        "yds": 19,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 3.2
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
-        "td": 0
+        "rec": 2,
+        "yds": 39,
+        "td": 1
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -173697,7 +173697,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-1-townsend",
@@ -173716,22 +173716,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 3,
+        "yds": -6,
         "td": 0,
-        "ypc": 0.0
+        "ypc": -2.0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 2,
+        "yds": 4,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -173742,7 +173742,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-2-hamilton",
@@ -173761,23 +173761,23 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 14,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
-        "int": 0,
+        "sacks": 0,
+        "int": 2,
         "ff": 0
       },
       "kicking": {
@@ -173787,7 +173787,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-3-pulliam",
@@ -173806,13 +173806,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -173821,7 +173821,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -173832,7 +173832,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-4-hamilton",
@@ -173851,22 +173851,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": -7,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -173877,7 +173877,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-5-knox",
@@ -173896,13 +173896,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -173911,7 +173911,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -173922,7 +173922,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-6-cardwell",
@@ -173986,13 +173986,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174001,7 +174001,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174012,7 +174012,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-8-robinson",
@@ -174031,22 +174031,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 3,
+        "yds": 2,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0.7
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
-        "td": 0
+        "rec": 3,
+        "yds": 65,
+        "td": 1
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174057,7 +174057,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-9-nance",
@@ -174121,13 +174121,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174136,7 +174136,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174147,7 +174147,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-11-rogers",
@@ -174161,18 +174161,18 @@
     "weight": 155,
     "stats": {
       "passing": {
-        "att": 0,
-        "cmp": 0,
-        "yds": 0,
-        "td": 0,
-        "int": 0,
-        "rating": 0.0
+        "att": 15,
+        "cmp": 9,
+        "yds": 115,
+        "td": 2,
+        "int": 1,
+        "rating": 95.8
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 16,
+        "yds": 108,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 6.8
       },
       "receiving": {
         "rec": 0,
@@ -174181,7 +174181,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174192,7 +174192,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-13-barr",
@@ -174211,13 +174211,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174226,7 +174226,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174237,7 +174237,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-15-tumblin",
@@ -174256,13 +174256,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174271,7 +174271,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174282,7 +174282,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-16-watkins",
@@ -174481,13 +174481,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174496,7 +174496,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174507,7 +174507,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-22-turner",
@@ -174706,13 +174706,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -174721,7 +174721,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -174732,7 +174732,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-30-dearing",
@@ -175336,13 +175336,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -175351,7 +175351,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -175362,7 +175362,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-51-marble",
@@ -175381,13 +175381,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -175396,7 +175396,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -175407,7 +175407,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-52-kilgore",
@@ -175606,13 +175606,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -175621,7 +175621,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -175632,7 +175632,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-62-haig",
@@ -175831,13 +175831,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -175846,7 +175846,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -175857,7 +175857,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "houston-hilltoppers-hilltoppers-72-tate",
@@ -176011,13 +176011,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -176026,7 +176026,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -176037,7 +176037,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "northeast-lauderdale-trojans-trojans-4-wilson",
@@ -193710,7 +193710,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -218306,18 +218306,18 @@
     "weight": 170,
     "stats": {
       "passing": {
-        "att": 12,
-        "cmp": 3,
-        "yds": 84,
+        "att": 25,
+        "cmp": 12,
+        "yds": 149,
         "td": 0,
         "int": 2,
-        "rating": 16.7
+        "rating": 33.6
       },
       "rushing": {
-        "att": 12,
-        "yds": 6,
-        "td": 2,
-        "ypc": 0.5
+        "att": 22,
+        "yds": 7,
+        "td": 3,
+        "ypc": 0.3
       },
       "receiving": {
         "rec": 0,
@@ -218337,7 +218337,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "northeast-jones-tigers-tigers-2-herrington",
@@ -218491,22 +218491,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": -2,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -218517,7 +218517,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "northeast-jones-tigers-tigers-6-dyess",
@@ -218539,10 +218539,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 20,
-        "yds": 78,
-        "td": 1,
-        "ypc": 3.9
+        "att": 40,
+        "yds": 162,
+        "td": 2,
+        "ypc": 4.1
       },
       "receiving": {
         "rec": 0,
@@ -218562,7 +218562,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "northeast-jones-tigers-tigers-7-cooley",
@@ -218725,8 +218725,8 @@
         "ypc": 2.5
       },
       "receiving": {
-        "rec": 2,
-        "yds": 74,
+        "rec": 6,
+        "yds": 112,
         "td": 0
       },
       "defense": {
@@ -218742,7 +218742,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "northeast-jones-tigers-tigers-11-maxey",
@@ -218851,22 +218851,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 3,
+        "yds": 25,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -218877,7 +218877,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "northeast-jones-tigers-tigers-14-reid",
@@ -219031,22 +219031,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 4,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -219057,7 +219057,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "northeast-jones-tigers-tigers-18-williams",
@@ -219593,11 +219593,11 @@
       "kicking": {
         "fgm": 1,
         "fga": 1,
-        "xpm": 0,
-        "xpa": 3
+        "xpm": 2,
+        "xpa": 5
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "northeast-jones-tigers-tigers-32-lewis",
@@ -241455,7 +241455,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -241467,7 +241467,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-1-zellous",
@@ -241481,12 +241481,12 @@
     "weight": 175,
     "stats": {
       "passing": {
-        "att": 0,
+        "att": 1,
         "cmp": 0,
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0
+        "rating": 39.6
       },
       "rushing": {
         "att": 0,
@@ -241495,8 +241495,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 43,
+        "rec": 2,
+        "yds": 71,
         "td": 0
       },
       "defense": {
@@ -241512,7 +241512,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-2-morgan",
@@ -241540,8 +241540,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 3,
-        "yds": 64,
+        "rec": 5,
+        "yds": 83,
         "td": 0
       },
       "defense": {
@@ -241557,7 +241557,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-3-green",
@@ -241590,7 +241590,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 13,
+        "tackles": 26,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -241602,7 +241602,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-4-scott",
@@ -241624,14 +241624,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 9,
-        "yds": 73,
-        "td": 1,
-        "ypc": 8.1
+        "att": 24,
+        "yds": 163,
+        "td": 2,
+        "ypc": 6.8
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 1,
         "td": 0
       },
       "defense": {
@@ -241647,7 +241647,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-5-davenport",
@@ -241680,7 +241680,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 8,
+        "tackles": 15,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -241692,7 +241692,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-6-jackson",
@@ -241714,10 +241714,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 7,
-        "yds": 68,
-        "td": 1,
-        "ypc": 9.7
+        "att": 16,
+        "yds": 205,
+        "td": 3,
+        "ypc": 12.8
       },
       "receiving": {
         "rec": 0,
@@ -241737,7 +241737,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-7-wynn",
@@ -241759,14 +241759,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 1,
-        "yds": 9,
+        "att": 4,
+        "yds": 42,
         "td": 0,
-        "ypc": 9.0
+        "ypc": 10.5
       },
       "receiving": {
-        "rec": 2,
-        "yds": 1,
+        "rec": 3,
+        "yds": 7,
         "td": 0
       },
       "defense": {
@@ -241782,7 +241782,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-8-moore",
@@ -241827,7 +241827,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-9-lynch",
@@ -241860,7 +241860,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -241872,7 +241872,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-10-morgan",
@@ -241886,18 +241886,18 @@
     "weight": 195,
     "stats": {
       "passing": {
-        "att": 13,
-        "cmp": 10,
-        "yds": 163,
+        "att": 30,
+        "cmp": 19,
+        "yds": 254,
         "td": 0,
         "int": 1,
-        "rating": 86.2
+        "rating": 76.3
       },
       "rushing": {
-        "att": 15,
-        "yds": 147,
-        "td": 3,
-        "ypc": 9.8
+        "att": 23,
+        "yds": 211,
+        "td": 4,
+        "ypc": 9.2
       },
       "receiving": {
         "rec": 0,
@@ -241905,7 +241905,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -241917,7 +241917,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-11-lee",
@@ -241962,7 +241962,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-12-southerland",
@@ -241981,13 +241981,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -241995,8 +241995,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -242007,7 +242007,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "warren-central-vikings-vikings-13-lee",
@@ -242046,13 +242046,13 @@
         "ff": 0
       },
       "kicking": {
-        "fgm": 0,
-        "fga": 0,
-        "xpm": 5,
-        "xpa": 5
+        "fgm": 2,
+        "fga": 2,
+        "xpm": 9,
+        "xpa": 9
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-14-williams",
@@ -242175,7 +242175,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -242187,7 +242187,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-16-fuller",
@@ -242400,7 +242400,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 5,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -242412,7 +242412,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-21-selvy",
@@ -242434,14 +242434,14 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 6,
+        "yds": 18,
         "td": 0,
-        "ypc": 0
+        "ypc": 3.0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 12,
+        "rec": 3,
+        "yds": 30,
         "td": 0
       },
       "defense": {
@@ -242457,7 +242457,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-22-demby",
@@ -242485,12 +242485,12 @@
         "ypc": 3.0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 11,
+        "rec": 2,
+        "yds": 20,
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 4,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -242502,7 +242502,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-23-trisby",
@@ -242575,8 +242575,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 1,
-        "yds": 13,
+        "rec": 2,
+        "yds": 23,
         "td": 0
       },
       "defense": {
@@ -242592,7 +242592,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-25-brown",
@@ -242656,13 +242656,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -242670,8 +242670,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -242682,7 +242682,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-27-nolan",
@@ -242715,7 +242715,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -242727,7 +242727,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-28-malone",
@@ -242746,13 +242746,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -242760,8 +242760,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -242772,7 +242772,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-29-jenkins",
@@ -242817,7 +242817,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-30-williams",
@@ -242850,7 +242850,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 1
@@ -242862,7 +242862,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-31-claiborne",
@@ -242940,7 +242940,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -242952,7 +242952,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-34-lumpkin",
@@ -242971,13 +242971,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
-        "td": 0,
-        "ypc": 0.0
+        "att": 9,
+        "yds": 38,
+        "td": 1,
+        "ypc": 4.2
       },
       "receiving": {
         "rec": 0,
@@ -242986,7 +242986,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -242997,7 +242997,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "warren-central-vikings-vikings-35-king",
@@ -243151,13 +243151,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -243165,8 +243165,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -243177,7 +243177,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "warren-central-vikings-vikings-43-ford",
@@ -243196,13 +243196,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -243211,7 +243211,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -243222,7 +243222,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-43-jr",
@@ -243300,7 +243300,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -243312,7 +243312,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-45-montgomery",
@@ -243435,7 +243435,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -243447,7 +243447,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-48-washington",
@@ -243480,7 +243480,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -243492,7 +243492,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-50-woods",
@@ -243525,7 +243525,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 9,
+        "tackles": 12,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -243537,7 +243537,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-51-ozherelev",
@@ -243556,13 +243556,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -243570,8 +243570,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -243582,7 +243582,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "warren-central-vikings-vikings-52-allen",
@@ -243705,7 +243705,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -243717,7 +243717,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-55-johnson",
@@ -243795,8 +243795,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
-        "sacks": 2.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -244785,7 +244785,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 4,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -244797,7 +244797,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-78-woods",
@@ -244816,13 +244816,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -244830,8 +244830,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -244842,7 +244842,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-79-bowman",
@@ -245311,13 +245311,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -245326,7 +245326,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -245334,10 +245334,10 @@
         "fgm": 0,
         "fga": 0,
         "xpm": 0,
-        "xpa": 0
+        "xpa": 1
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "warren-central-vikings-vikings-89-glasper",
@@ -245446,13 +245446,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -245460,8 +245460,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -245472,7 +245472,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "warren-central-vikings-vikings-94-anderson",
@@ -264040,9 +264040,9 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 2,
-        "yds": 51,
-        "td": 1
+        "rec": 4,
+        "yds": 66,
+        "td": 2
       },
       "defense": {
         "tackles": 0,
@@ -264057,7 +264057,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-1-bailey",
@@ -264121,22 +264121,22 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
-        "rec": 0,
-        "yds": 0,
+        "rec": 1,
+        "yds": 7,
         "td": 0
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -264147,7 +264147,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-4-brown",
@@ -264180,7 +264180,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 10,
         "sacks": 0,
         "int": 0,
         "ff": 1
@@ -264192,7 +264192,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-4-morrison",
@@ -264214,15 +264214,15 @@
         "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 1,
+        "yds": 14,
         "td": 0,
-        "ypc": 0
+        "ypc": 14.0
       },
       "receiving": {
-        "rec": 4,
-        "yds": 101,
-        "td": 2
+        "rec": 10,
+        "yds": 159,
+        "td": 3
       },
       "defense": {
         "tackles": 0,
@@ -264237,7 +264237,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-6-herring",
@@ -264270,9 +264270,9 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 6,
         "sacks": 0,
-        "int": 0,
+        "int": 1,
         "ff": 0
       },
       "kicking": {
@@ -264282,7 +264282,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-6-russell",
@@ -264540,7 +264540,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 13,
+        "tackles": 16,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -264552,7 +264552,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-13-waltman",
@@ -264571,13 +264571,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -264585,8 +264585,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -264597,7 +264597,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-13-lambert",
@@ -264616,13 +264616,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -264630,8 +264630,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -264642,7 +264642,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-15-feaster",
@@ -264656,18 +264656,18 @@
     "weight": 215,
     "stats": {
       "passing": {
-        "att": 17,
-        "cmp": 12,
-        "yds": 190,
-        "td": 3,
+        "att": 33,
+        "cmp": 24,
+        "yds": 314,
+        "td": 6,
         "int": 0,
-        "rating": 147.1
+        "rating": 141.9
       },
       "rushing": {
-        "att": 14,
-        "yds": 100,
+        "att": 17,
+        "yds": 130,
         "td": 0,
-        "ypc": 7.1
+        "ypc": 7.6
       },
       "receiving": {
         "rec": 0,
@@ -264675,9 +264675,9 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 5,
         "sacks": 0,
-        "int": 0,
+        "int": 1,
         "ff": 0
       },
       "kicking": {
@@ -264687,7 +264687,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-18-craw",
@@ -264765,7 +264765,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -264777,7 +264777,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-23-dubuisson",
@@ -264810,7 +264810,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 8,
+        "tackles": 9,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -264822,7 +264822,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-24-fowler",
@@ -264844,10 +264844,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 6,
-        "yds": 42,
-        "td": 1,
-        "ypc": 7.0
+        "att": 13,
+        "yds": 105,
+        "td": 2,
+        "ypc": 8.1
       },
       "receiving": {
         "rec": 0,
@@ -264855,7 +264855,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -264867,7 +264867,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-26-smith",
@@ -264900,7 +264900,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -264912,7 +264912,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-26-white",
@@ -264931,13 +264931,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
-        "att": 0,
-        "yds": 0,
+        "att": 1,
+        "yds": 3,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 3.0
       },
       "receiving": {
         "rec": 0,
@@ -264946,7 +264946,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -264957,7 +264957,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-27-hinton",
@@ -264979,10 +264979,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 7,
-        "yds": 52,
-        "td": 0,
-        "ypc": 7.4
+        "att": 18,
+        "yds": 161,
+        "td": 1,
+        "ypc": 8.9
       },
       "receiving": {
         "rec": 2,
@@ -264990,7 +264990,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
+        "tackles": 2,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -265002,7 +265002,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-27-marshall",
@@ -265080,7 +265080,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 6,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -265092,7 +265092,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-34-cedotal",
@@ -265294,10 +265294,10 @@
         "rating": 0
       },
       "rushing": {
-        "att": 2,
-        "yds": 29,
-        "td": 0,
-        "ypc": 14.5
+        "att": 7,
+        "yds": 81,
+        "td": 1,
+        "ypc": 11.6
       },
       "receiving": {
         "rec": 0,
@@ -265305,7 +265305,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 13,
+        "tackles": 20,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -265317,7 +265317,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-42-carter",
@@ -265435,8 +265435,8 @@
         "ypc": 0
       },
       "receiving": {
-        "rec": 3,
-        "yds": 20,
+        "rec": 5,
+        "yds": 38,
         "td": 0
       },
       "defense": {
@@ -265452,7 +265452,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-50-white",
@@ -265988,11 +265988,11 @@
       "kicking": {
         "fgm": 0,
         "fga": 0,
-        "xpm": 4,
-        "xpa": 4
+        "xpm": 10,
+        "xpa": 10
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-85-vicknair",
@@ -266115,7 +266115,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 4,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -266127,7 +266127,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "pearl-river-central-blue-devils-blue-devils-96-fleming",
@@ -266146,13 +266146,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -266160,8 +266160,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -266172,7 +266172,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "pascagoula-panthers-panthers-0-harness",
@@ -318225,7 +318225,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -318237,7 +318237,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-1-sullivan",
@@ -318301,13 +318301,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -318316,7 +318316,7 @@
       },
       "defense": {
         "tackles": 0,
-        "sacks": 0.0,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -318327,7 +318327,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-3-sullivan",
@@ -318405,7 +318405,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 4,
+        "tackles": 8,
         "sacks": 0,
         "int": 1,
         "ff": 0
@@ -318417,7 +318417,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-5-riley",
@@ -318450,7 +318450,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
+        "tackles": 12,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -318462,7 +318462,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-6-crockett",
@@ -318495,7 +318495,7 @@
         "td": 1
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 10,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -318630,7 +318630,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 8,
+        "tackles": 13,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -318642,7 +318642,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-10-reeder",
@@ -318675,7 +318675,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -318687,7 +318687,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-11-jackson",
@@ -318720,7 +318720,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 9,
+        "tackles": 20,
         "sacks": 0,
         "int": 1,
         "ff": 0
@@ -318810,7 +318810,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 6,
+        "tackles": 7,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -319002,7 +319002,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-17-locke",
@@ -319156,13 +319156,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -319170,8 +319170,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -319182,7 +319182,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-21-matthews",
@@ -319485,7 +319485,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 10,
+        "tackles": 18,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -319497,7 +319497,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-28-schultz",
@@ -319516,13 +319516,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -319530,8 +319530,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 3,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -319542,7 +319542,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-29-williams",
@@ -319741,13 +319741,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -319755,8 +319755,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 5,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -319767,7 +319767,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-34-peterman",
@@ -319845,8 +319845,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 7,
-        "sacks": 0,
+        "tackles": 15,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -319857,7 +319857,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-36-hanberry",
@@ -321117,7 +321117,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-62-davis",
@@ -321162,7 +321162,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-63-branan",
@@ -321207,7 +321207,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-64-christian",
@@ -321252,7 +321252,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-65-motes",
@@ -321297,7 +321297,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-66-grant",
@@ -321747,7 +321747,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 2
   },
   {
     "id": "st-martin-yellow-jackets-yellow-jackets-78-taylor",
@@ -396030,7 +396030,7 @@
         "td": 1
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -396075,8 +396075,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
-        "sacks": 0,
+        "tackles": 22,
+        "sacks": 2.0,
         "int": 1,
         "ff": 0
       },
@@ -396120,7 +396120,7 @@
         "td": 1
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 11,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -396165,7 +396165,7 @@
         "td": 4
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 3,
         "ff": 0
@@ -396210,8 +396210,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0,
+        "tackles": 10,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -396222,7 +396222,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 4
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-7-morgan",
@@ -396390,7 +396390,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 3,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -396435,7 +396435,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -396447,7 +396447,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 4
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-12-hayes",
@@ -396570,7 +396570,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
+        "tackles": 1,
         "sacks": 0,
         "int": 1,
         "ff": 0
@@ -396582,7 +396582,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 2
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-14-phillips",
@@ -396736,13 +396736,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -396750,8 +396750,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 4,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -396762,7 +396762,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-44-barkley",
@@ -396795,7 +396795,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 5,
+        "tackles": 21,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -396807,7 +396807,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 2
+    "gamesPlayed": 4
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-51-stalls",
@@ -396840,7 +396840,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 2,
+        "tackles": 7,
         "sacks": 2.0,
         "int": 0,
         "ff": 0
@@ -396852,7 +396852,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-52-wright",
@@ -396885,8 +396885,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 1,
-        "sacks": 0,
+        "tackles": 14,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -396897,7 +396897,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 4
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-53-parnell",
@@ -396961,13 +396961,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -396975,8 +396975,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 6,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -396987,7 +396987,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-56-horner",
@@ -397020,8 +397020,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
-        "sacks": 1.0,
+        "tackles": 20,
+        "sacks": 2.0,
         "int": 0,
         "ff": 0
       },
@@ -397032,7 +397032,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 4
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-57-loyer",
@@ -397065,7 +397065,7 @@
         "td": 0
       },
       "defense": {
-        "tackles": 3,
+        "tackles": 8,
         "sacks": 0,
         "int": 0,
         "ff": 0
@@ -397077,7 +397077,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 1
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-59-stackhouse",
@@ -397096,13 +397096,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -397110,8 +397110,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 5,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -397122,7 +397122,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-60-hudson",
@@ -397276,13 +397276,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -397290,8 +397290,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 6,
+        "sacks": 1.0,
         "int": 0,
         "ff": 0
       },
@@ -397302,7 +397302,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 3
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-75-taylor",
@@ -397321,13 +397321,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -397335,8 +397335,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 3,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -397347,7 +397347,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "west-memphis-christian-black-knights-black-knights-77-carter",
@@ -410281,13 +410281,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410295,8 +410295,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 11,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410307,7 +410307,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-4-hill",
@@ -410416,13 +410416,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410430,8 +410430,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 14,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410442,7 +410442,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-8-newell",
@@ -410506,13 +410506,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410520,8 +410520,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 8,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410532,7 +410532,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-10-smith",
@@ -410551,13 +410551,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410565,8 +410565,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 14,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410577,7 +410577,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-12-evans",
@@ -410596,13 +410596,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410610,8 +410610,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 5,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410622,7 +410622,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-13-smith",
@@ -410641,13 +410641,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410655,8 +410655,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 22,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410667,7 +410667,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-15-tarver",
@@ -410686,13 +410686,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410700,8 +410700,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 14,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410712,7 +410712,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 2
   },
   {
     "id": "brookhaven-academy-cougars-cougars-16-newman",
@@ -410731,13 +410731,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410745,8 +410745,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 11,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410757,7 +410757,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "brookhaven-academy-cougars-cougars-20-holmes",
@@ -410821,13 +410821,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -410835,8 +410835,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -410847,7 +410847,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "brookhaven-academy-cougars-cougars-33-weeks",
@@ -411046,13 +411046,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -411060,8 +411060,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -411072,7 +411072,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "brookhaven-academy-cougars-cougars-60-case",
@@ -411136,13 +411136,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -411150,8 +411150,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 1,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -411162,7 +411162,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "brookhaven-academy-cougars-cougars-67-hall",
@@ -411181,13 +411181,13 @@
         "yds": 0,
         "td": 0,
         "int": 0,
-        "rating": 0.0
+        "rating": 0
       },
       "rushing": {
         "att": 0,
         "yds": 0,
         "td": 0,
-        "ypc": 0.0
+        "ypc": 0
       },
       "receiving": {
         "rec": 0,
@@ -411195,8 +411195,8 @@
         "td": 0
       },
       "defense": {
-        "tackles": 0,
-        "sacks": 0.0,
+        "tackles": 2,
+        "sacks": 0,
         "int": 0,
         "ff": 0
       },
@@ -411207,7 +411207,7 @@
         "xpa": 0
       }
     },
-    "gamesPlayed": 0
+    "gamesPlayed": 1
   },
   {
     "id": "brookhaven-academy-cougars-cougars-71-edwards",
