@@ -202,7 +202,10 @@ function toContest(
  *
  * Ranked upsets lead, then one-score games between ranked teams, then routs
  * of ranked teams. An unranked-vs-unranked blowout scores near zero however
- * lopsided it was — nobody leads the section with it.
+ * lopsided it was — nobody leads the section with it. A marquee matchup
+ * between two well-ranked teams also earns a bonus on its own, independent of
+ * how it was decided — a Top 4 vs Top 6 game belongs on the front page even
+ * when the favorite wins by a comfortable, unremarkable margin.
  */
 function newsworthiness(c: Contest): number {
   let score = 0;
@@ -213,6 +216,10 @@ function newsworthiness(c: Contest): number {
     if (c.margin <= 3) score += 25;
     else if (c.margin <= 7) score += 12;
     if (c.margin >= 28) score += 15;
+    const best = Math.min(c.winnerRank, c.loserRank);
+    const worst = Math.max(c.winnerRank, c.loserRank);
+    score += Math.max(0, 44 - (best - 1) * 3);
+    score += Math.max(0, 36 - (worst - 1) * 3);
   } else if (c.loserRank !== null) {
     // An unranked team beat a ranked one.
     score += 45 + Math.max(0, 20 - c.loserRank);
