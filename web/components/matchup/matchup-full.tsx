@@ -143,8 +143,19 @@ export async function MatchupFull({
           <h2 className="font-display text-xl mb-2">Head-to-Head</h2>
           <ul className="space-y-1 text-sm">
             {h2h.map((g) => (
-              <li key={g.id} className="text-chrome-300">
-                {formatGameDate(g.date)}: {g.awayScore} – {g.homeScore}
+              <li key={g.id}>
+                {g.status === "final" ? (
+                  <Link
+                    href={`/game/${g.id}` as any}
+                    className="text-chrome-300 hover:text-crimson-500"
+                  >
+                    {formatGameDate(g.date)}: {g.awayScore} – {g.homeScore} · box score →
+                  </Link>
+                ) : (
+                  <span className="text-chrome-300">
+                    {formatGameDate(g.date)}: {g.awayScore} – {g.homeScore}
+                  </span>
+                )}
               </li>
             ))}
           </ul>

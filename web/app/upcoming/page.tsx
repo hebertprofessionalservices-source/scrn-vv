@@ -37,7 +37,12 @@ function toCard(game: Game, data: Dataset): ScheduleCard {
   });
   return {
     id: game.id,
-    href: away && home ? `/matchup?a=${away.id}&b=${home.id}` : null,
+    // A played game opens its box score; an upcoming one opens the matchup.
+    href: isFinal
+      ? `/game/${game.id}`
+      : away && home
+        ? `/matchup?a=${away.id}&b=${home.id}`
+        : null,
     // Both sides, so a cross-class game shows under either classification.
     classes: [
       ...new Set(
