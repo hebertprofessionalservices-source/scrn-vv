@@ -71,9 +71,9 @@ const STAT_ROWS: StatRow[] = [
   { label: "Points / Game", value: (t) => perGame(t, t.stats.pointsFor), format: f1 },
   { label: "Points Allowed / Game", value: (t) => perGame(t, t.stats.pointsAgainst), format: f1, lowerIsBetter: true },
   { label: "Total Points", value: (t) => t.stats.pointsFor, format: f0 },
-  { label: "Total Yards", value: (t) => perGame(t, t.stats.yardsFor), format: f1, needsPrintStats: true },
-  { label: "Passing Yards", value: (t) => perGame(t, t.stats.passYdsFor), format: f1, needsPrintStats: true },
-  { label: "Rushing Yards", value: (t) => perGame(t, t.stats.rushYdsFor), format: f1, needsPrintStats: true },
+  { label: "Total YDs / Game", value: (t) => perGame(t, t.stats.yardsFor), format: f1, needsPrintStats: true },
+  { label: "Passing YDs / Game", value: (t) => perGame(t, t.stats.passYdsFor), format: f1, needsPrintStats: true },
+  { label: "Rushing YDs / Game", value: (t) => perGame(t, t.stats.rushYdsFor), format: f1, needsPrintStats: true },
   { label: "Turnovers Forced", value: (t) => t.stats.turnoversForced, format: f0, needsPrintStats: true },
   { label: "Turnovers Lost", value: (t) => t.stats.turnoversLost, format: f0, lowerIsBetter: true, needsPrintStats: true },
 ];
@@ -189,8 +189,8 @@ function compareRows(a: MatchupTeam, b: MatchupTeam): CompareRow[] {
     // Passing/Rushing Yards show the per-game average, with the
     // per-attempt average in parentheses.
     const avgFor = (t: MatchupTeam) =>
-      row.label === "Passing Yards" ? t.side.avgPass
-      : row.label === "Rushing Yards" ? t.side.avgRush
+      row.label === "Passing YDs / Game" ? t.side.avgPass
+      : row.label === "Rushing YDs / Game" ? t.side.avgRush
       : null;
     const cell = (t: MatchupTeam, v: number, missing: boolean) => {
       if (missing) return "—";
@@ -204,7 +204,7 @@ function compareRows(a: MatchupTeam, b: MatchupTeam): CompareRow[] {
       aBetter: comparable && (row.lowerIsBetter ? va < vb : va > vb),
       bBetter: comparable && (row.lowerIsBetter ? vb < va : vb > va),
     });
-    if (row.label === "Rushing Yards") {
+    if (row.label === "Rushing YDs / Game") {
       rows.push({
         label: "Run / Pass %",
         a: a.runPass ? runPassLabel(a.runPass) : "—",

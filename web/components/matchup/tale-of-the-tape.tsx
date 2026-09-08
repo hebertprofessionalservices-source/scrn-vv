@@ -60,12 +60,12 @@ export function TaleOfTheTape({
     // defensive efficiency + strength of schedule.
     rows.push(...extra.slice(0, 1));
     rows.push({
-      label: "Rushing Yards",
+      label: "Rushing YDs / Game",
       a: a.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(a, a.stats.rushYdsFor), sides.a.avgRush) : "—",
       b: b.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(b, b.stats.rushYdsFor), sides.b.avgRush) : "—",
     });
     rows.push({
-      label: "Passing Yards",
+      label: "Passing YDs / Game",
       a: a.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(a, a.stats.passYdsFor), sides.a.avgPass) : "—",
       b: b.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(b, b.stats.passYdsFor), sides.b.avgPass) : "—",
     });
