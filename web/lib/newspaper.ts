@@ -434,6 +434,34 @@ export function mondayOf(date: string): string {
 }
 
 /**
+ * Every Monday-anchored week that has at least one game (any status) in a
+ * classification, mapped to the exact dates games fall on within it.
+ *
+ * Shared by the Recap and Preview pages' prev/next-week arrows: both need to
+ * know which weeks actually have something to show for a class before
+ * linking to them, regardless of whether those games are final (Recap) or
+ * still scheduled (Preview) — a class's off week should not get a link.
+ */
+export function classificationWeeks(
+  games: Game[],
+  data: Dataset,
+  classification: string,
+): Map<string, string[]> {
+  const inClass = (id: string) => data.teamsByAlias.get(id)?.classification === classification;
+  const byMonday = new Map<string, Set<string>>();
+  for (const g of games) {
+    if (!inClass(g.homeTeamId) && !inClass(g.awayTeamId)) continue;
+    const date = g.date.slice(0, 10);
+    const monday = mondayOf(date);
+    if (!byMonday.has(monday)) byMonday.set(monday, new Set());
+    byMonday.get(monday)!.add(date);
+  }
+  const out = new Map<string, string[]>();
+  for (const [monday, dates] of byMonday) out.set(monday, [...dates].sort());
+  return out;
+}
+
+/**
  * That league's own week number for a slate date, or null if unknown.
  *
  * Counted in Monday-anchored calendar weeks, not in 7-day blocks from the

@@ -5,9 +5,11 @@ import { currentSeason, loadDataset } from "@/lib/data-server";
 import { buildPowerRankings } from "@/lib/power";
 import {
   buildNewspaper,
+  classificationWeeks,
   latestSlate,
   leagueOf,
   leagueWeek,
+  mondayOf,
   scoreboardSides,
   type Contest,
   type Performance,
@@ -160,6 +162,24 @@ export default async function Newspaper({
   const ranks = buildPowerRankings(data);
   const paper = buildNewspaper(data, ranks, { classification, dates });
   const heroes = paper.headliners;
+
+  // Prev/next week arrows: only link to a neighbouring week when this class
+  // actually has a game in it, so an off week never gets a dead link.
+  const weeks = classificationWeeks(data.games, data, classification);
+  const mondays = [...weeks.keys()].sort();
+  const currentMonday = dates.length > 0 ? mondayOf(dates[dates.length - 1]) : null;
+  const weekIdx = currentMonday ? mondays.indexOf(currentMonday) : -1;
+  const prevMonday = weekIdx > 0 ? mondays[weekIdx - 1] : null;
+  const nextMonday = weekIdx >= 0 && weekIdx < mondays.length - 1 ? mondays[weekIdx + 1] : null;
+  const weekHref = (monday: string): string => {
+    const wDates = weeks.get(monday) ?? [monday];
+    const w = leagueWeek(season, league, wDates[0]);
+    const qs = new URLSearchParams({ dates: wDates.join(",") });
+    if (w !== null) qs.set("week", String(w));
+    return `/present/newspaper/${encodeURIComponent(classification)}?${qs.toString()}`;
+  };
+  const prevWeekHref = prevMonday ? weekHref(prevMonday) : null;
+  const nextWeekHref = nextMonday ? weekHref(nextMonday) : null;
   // Give each hero its own best stat line; never repeat a player across cards.
   const used = new Set<string>();
   const heroPerf = heroes.map((h) => {
@@ -176,7 +196,7 @@ export default async function Newspaper({
 
   if (paper.contests.length === 0) {
     return (
-      <PaperStage>
+      <PaperStage prevWeekHref={prevWeekHref} nextWeekHref={nextWeekHref}>
       <div className="paper">
         <p className="paper__empty">
           No final games found for {classificationLabel(classification)} on{" "}
@@ -189,7 +209,11 @@ export default async function Newspaper({
   }
 
   return (
-    <PaperStage fileName={downloadName(league, classification, week, dates)}>
+    <PaperStage
+      fileName={downloadName(league, classification, week, dates)}
+      prevWeekHref={prevWeekHref}
+      nextWeekHref={nextWeekHref}
+    >
     <div className="paper">
       <div className="paper__topbar">
         <span>{editionDate(dates, sp.edition)}</span>

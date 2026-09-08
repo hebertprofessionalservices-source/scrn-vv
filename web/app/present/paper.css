@@ -572,6 +572,53 @@ body:has(.paper-stage) { overflow: hidden; }
 .paper-stage:fullscreen .paper-controls:hover,
 .paper-stage:fullscreen .paper-controls:focus-within { opacity: 1; }
 
+/*
+ * Week-switch arrows. Centred at the very top of the stage, below the
+ * paper-controls row in the top-left corner — deliberately outside .paper,
+ * same as those controls, so exporting the page never captures them.
+ */
+.paper-weeknav {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  gap: 10px;
+  transition: opacity 160ms ease;
+}
+.paper-navbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: rgba(10, 12, 20, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #f4f1ea;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+.paper-navbtn:hover { border-color: #b3242c; color: #ff8f95; }
+.paper-navbtn:focus-visible { outline: 2px solid #ff8f95; outline-offset: 2px; }
+.paper-navbtn--disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.paper-weeknav--idle { opacity: 0; }
+.paper-weeknav--idle:hover,
+.paper-weeknav--idle:focus-within { opacity: 1; }
+.paper-stage:fullscreen .paper-weeknav { opacity: 0; }
+.paper-stage:fullscreen .paper-weeknav:hover,
+.paper-stage:fullscreen .paper-weeknav:focus-within { opacity: 1; }
+
 @media (prefers-reduced-motion: reduce) {
-  .paper-controls { transition: none; }
+  .paper-controls,
+  .paper-weeknav { transition: none; }
 }

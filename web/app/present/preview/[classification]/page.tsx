@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { currentSeason, loadDataset } from "@/lib/data-server";
 import { loadHistory } from "@/lib/history-server";
 import { buildPowerRankings } from "@/lib/power";
-import { leagueOf, leagueWeek } from "@/lib/newspaper";
+import { classificationWeeks, leagueOf, leagueWeek, mondayOf } from "@/lib/newspaper";
 import {
   buildPreview,
   currentWeekRange,
@@ -145,9 +145,32 @@ export default async function PreviewPaper({
   const heroes = preview.headliners;
   const watch = preview.watch.slice(0, 4);
 
+  // Prev/next week arrows: only link to a neighbouring week when this class
+  // actually has a game in it, so an off week never gets a dead link.
+  const weeks = classificationWeeks(data.games, data, classification);
+  const mondays = [...weeks.keys()].sort();
+  const currentMonday = dates.length > 0 ? mondayOf(dates[0]) : monday;
+  const weekIdx = mondays.indexOf(currentMonday);
+  const prevMonday = weekIdx > 0 ? mondays[weekIdx - 1] : null;
+  const nextMonday = weekIdx >= 0 && weekIdx < mondays.length - 1 ? mondays[weekIdx + 1] : null;
+  const weekHref = (targetMonday: string): string => {
+    const wDates = weeks.get(targetMonday) ?? [targetMonday];
+    const w = leagueWeek(season, league, wDates[0]);
+    const qs = new URLSearchParams({ dates: wDates.join(",") });
+    if (w !== null) qs.set("week", String(w));
+    return `/present/preview/${encodeURIComponent(classification)}?${qs.toString()}`;
+  };
+  const prevWeekHref = prevMonday ? weekHref(prevMonday) : null;
+  const nextWeekHref = nextMonday ? weekHref(nextMonday) : null;
+
   if (preview.fixtures.length === 0) {
     return (
-      <PaperStage backHref="/present/preview" backLabel="← All previews">
+      <PaperStage
+        backHref="/present/preview"
+        backLabel="← All previews"
+        prevWeekHref={prevWeekHref}
+        nextWeekHref={nextWeekHref}
+      >
         <div className="paper">
           <p className="paper__empty">
             No scheduled games found for {classificationLabel(classification)} in{" "}
@@ -164,6 +187,8 @@ export default async function PreviewPaper({
       fileName={downloadName(league, classification, week, dates)}
       backHref="/present/preview"
       backLabel="← All previews"
+      prevWeekHref={prevWeekHref}
+      nextWeekHref={nextWeekHref}
     >
       <div className="paper">
         <div className="paper__topbar">

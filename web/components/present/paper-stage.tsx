@@ -24,11 +24,16 @@ export function PaperStage({
   fileName = "recap",
   backHref = "/present/newspaper",
   backLabel = "← All recaps",
+  prevWeekHref = null,
+  nextWeekHref = null,
 }: {
   children: React.ReactNode;
   fileName?: string;
   backHref?: string;
   backLabel?: string;
+  /** Link to the neighbouring week's page, or null when there isn't one. */
+  prevWeekHref?: string | null;
+  nextWeekHref?: string | null;
 }) {
   const stage = useRef<HTMLDivElement>(null);
   const [full, setFull] = useState(false);
@@ -161,6 +166,26 @@ export function PaperStage({
         <button type="button" onClick={toggle} className="paper-btn">
           {full ? "Exit fullscreen" : "Fullscreen"}
         </button>
+      </div>
+      <div className={`paper-weeknav${idle ? " paper-weeknav--idle" : ""}`}>
+        {prevWeekHref ? (
+          <a href={prevWeekHref} className="paper-navbtn" aria-label="Previous week">
+            ←
+          </a>
+        ) : (
+          <span className="paper-navbtn paper-navbtn--disabled" aria-hidden>
+            ←
+          </span>
+        )}
+        {nextWeekHref ? (
+          <a href={nextWeekHref} className="paper-navbtn" aria-label="Next week">
+            →
+          </a>
+        ) : (
+          <span className="paper-navbtn paper-navbtn--disabled" aria-hidden>
+            →
+          </span>
+        )}
       </div>
       {children}
     </div>
