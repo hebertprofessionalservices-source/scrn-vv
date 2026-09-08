@@ -433,24 +433,10 @@ export function mondayOf(date: string): string {
   return d.toISOString().slice(0, 10);
 }
 
-/**
- * Every Monday-anchored week that has at least one game (any status) in a
- * classification, mapped to the exact dates games fall on within it.
- *
- * Shared by the Recap and Preview pages' prev/next-week arrows: both need to
- * know which weeks actually have something to show for a class before
- * linking to them, regardless of whether those games are final (Recap) or
- * still scheduled (Preview) — a class's off week should not get a link.
- */
-export function classificationWeeks(
-  games: Game[],
-  data: Dataset,
-  classification: string,
-): Map<string, string[]> {
-  const inClass = (id: string) => data.teamsByAlias.get(id)?.classification === classification;
+function groupByMonday(games: Game[], include: (g: Game) => boolean): Map<string, string[]> {
   const byMonday = new Map<string, Set<string>>();
   for (const g of games) {
-    if (!inClass(g.homeTeamId) && !inClass(g.awayTeamId)) continue;
+    if (!include(g)) continue;
     const date = g.date.slice(0, 10);
     const monday = mondayOf(date);
     if (!byMonday.has(monday)) byMonday.set(monday, new Set());
@@ -459,6 +445,52 @@ export function classificationWeeks(
   const out = new Map<string, string[]>();
   for (const [monday, dates] of byMonday) out.set(monday, [...dates].sort());
   return out;
+}
+
+/**
+ * Every Monday-anchored week that has at least one game (any status) in a
+ * classification, mapped to the exact dates games fall on within it.
+ *
+ * Powers the Recap and Preview classification pages' prev/next-week arrows:
+ * both need to know which weeks actually have something to show for a class
+ * before linking to them, regardless of whether those games are final
+ * (Recap) or still scheduled (Preview) — a class's off week should not get a
+ * link.
+ */
+export function classificationWeeks(
+  games: Game[],
+  data: Dataset,
+  classification: string,
+): Map<string, string[]> {
+  const inClass = (id: string) => data.teamsByAlias.get(id)?.classification === classification;
+  return groupByMonday(games, (g) => inClass(g.homeTeamId) || inClass(g.awayTeamId));
+}
+
+/**
+ * Every Monday-anchored week that has at least one game, any classification,
+ * any status. Powers the Recap/Preview index pages' week-switch arrows, which
+ * move across the whole season rather than one classification.
+ */
+export function seasonWeeks(games: Game[]): Map<string, string[]> {
+  return groupByMonday(games, () => true);
+}
+
+/**
+ * The nearest listed week before and after `current`, whether or not
+ * `current` itself is in the list — an override date that does not land
+ * exactly on a real slate still gets sensible neighbours.
+ */
+export function neighborWeeks(
+  mondays: string[],
+  current: string,
+): { prev: string | null; next: string | null } {
+  let prev: string | null = null;
+  let next: string | null = null;
+  for (const m of mondays) {
+    if (m < current) prev = m;
+    else if (m > current && next === null) next = m;
+  }
+  return { prev, next };
 }
 
 /**

@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { currentSeason, loadDataset } from "@/lib/data-server";
 import { loadHistory } from "@/lib/history-server";
 import { buildPowerRankings } from "@/lib/power";
-import { classificationWeeks, leagueOf, leagueWeek, mondayOf } from "@/lib/newspaper";
+import { classificationWeeks, leagueOf, leagueWeek, mondayOf, neighborWeeks } from "@/lib/newspaper";
 import {
   buildPreview,
   currentWeekRange,
@@ -150,9 +150,7 @@ export default async function PreviewPaper({
   const weeks = classificationWeeks(data.games, data, classification);
   const mondays = [...weeks.keys()].sort();
   const currentMonday = dates.length > 0 ? mondayOf(dates[0]) : monday;
-  const weekIdx = mondays.indexOf(currentMonday);
-  const prevMonday = weekIdx > 0 ? mondays[weekIdx - 1] : null;
-  const nextMonday = weekIdx >= 0 && weekIdx < mondays.length - 1 ? mondays[weekIdx + 1] : null;
+  const { prev: prevMonday, next: nextMonday } = neighborWeeks(mondays, currentMonday);
   const weekHref = (targetMonday: string): string => {
     const wDates = weeks.get(targetMonday) ?? [targetMonday];
     const w = leagueWeek(season, league, wDates[0]);

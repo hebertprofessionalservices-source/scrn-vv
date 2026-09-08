@@ -10,6 +10,7 @@ import {
   leagueOf,
   leagueWeek,
   mondayOf,
+  neighborWeeks,
   scoreboardSides,
   type Contest,
   type Performance,
@@ -167,10 +168,9 @@ export default async function Newspaper({
   // actually has a game in it, so an off week never gets a dead link.
   const weeks = classificationWeeks(data.games, data, classification);
   const mondays = [...weeks.keys()].sort();
-  const currentMonday = dates.length > 0 ? mondayOf(dates[dates.length - 1]) : null;
-  const weekIdx = currentMonday ? mondays.indexOf(currentMonday) : -1;
-  const prevMonday = weekIdx > 0 ? mondays[weekIdx - 1] : null;
-  const nextMonday = weekIdx >= 0 && weekIdx < mondays.length - 1 ? mondays[weekIdx + 1] : null;
+  const currentMonday = dates.length > 0 ? mondayOf(dates[dates.length - 1]) : mondays[mondays.length - 1];
+  const { prev: prevMonday, next: nextMonday } =
+    currentMonday ? neighborWeeks(mondays, currentMonday) : { prev: null, next: null };
   const weekHref = (monday: string): string => {
     const wDates = weeks.get(monday) ?? [monday];
     const w = leagueWeek(season, league, wDates[0]);
