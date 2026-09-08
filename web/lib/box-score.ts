@@ -1,6 +1,7 @@
 import type { Dataset } from "./data";
 import type { BoxScoreEntry, Game, Team } from "./types";
 import { initialForm, normalizeName } from "./efficiency";
+import { titleCaseSlug } from "./team-format";
 import { gameStatLines } from "./weekly";
 
 /**
@@ -179,7 +180,7 @@ export function buildBoxScore(data: Dataset, game: Game): GameBox | null {
   const q = game.quarterScores;
   const side = (team: Team | null, key: string, score: number, quarters: number[]): BoxSide => ({
     team,
-    name: team?.name ?? key,
+    name: team?.name ?? titleCaseSlug(key),
     logo: team?.logoUrl ?? data.opponentLogos.get(key) ?? null,
     score,
     quarters,
