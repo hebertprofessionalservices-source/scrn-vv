@@ -11,6 +11,9 @@ import { CompareTable } from "@/components/matchup/compare-table";
 function games(t: Team) { return t.record.wins + t.record.losses; }
 function ppg(t: Team) { return games(t) ? t.stats.pointsFor / games(t) : 0; }
 function papg(t: Team) { return games(t) ? t.stats.pointsAgainst / games(t) : 0; }
+function ydsPerGame(t: Team, total: number) {
+  return games(t) ? Math.round((total / games(t)) * 10) / 10 : 0;
+}
 
 const ROWS: Array<{ label: string; value: (t: Team) => number; betterIsHigher: boolean; format?: (n: number) => string }> = [
   { label: "Wins", value: (t) => t.record.wins, betterIsHigher: true, format: (n) => `${n}` },
@@ -58,13 +61,13 @@ export function TaleOfTheTape({
     rows.push(...extra.slice(0, 1));
     rows.push({
       label: "Rushing Yards",
-      a: a.stats.yardsFor > 0 ? ydsWithAvg(a.stats.rushYdsFor, sides.a.avgRush) : "—",
-      b: b.stats.yardsFor > 0 ? ydsWithAvg(b.stats.rushYdsFor, sides.b.avgRush) : "—",
+      a: a.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(a, a.stats.rushYdsFor), sides.a.avgRush) : "—",
+      b: b.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(b, b.stats.rushYdsFor), sides.b.avgRush) : "—",
     });
     rows.push({
       label: "Passing Yards",
-      a: a.stats.yardsFor > 0 ? ydsWithAvg(a.stats.passYdsFor, sides.a.avgPass) : "—",
-      b: b.stats.yardsFor > 0 ? ydsWithAvg(b.stats.passYdsFor, sides.b.avgPass) : "—",
+      a: a.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(a, a.stats.passYdsFor), sides.a.avgPass) : "—",
+      b: b.stats.yardsFor > 0 ? ydsWithAvg(ydsPerGame(b, b.stats.passYdsFor), sides.b.avgPass) : "—",
     });
     rows.push(...extra.slice(1));
   }

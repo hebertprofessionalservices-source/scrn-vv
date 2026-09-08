@@ -71,9 +71,9 @@ const STAT_ROWS: StatRow[] = [
   { label: "Points / Game", value: (t) => perGame(t, t.stats.pointsFor), format: f1 },
   { label: "Points Allowed / Game", value: (t) => perGame(t, t.stats.pointsAgainst), format: f1, lowerIsBetter: true },
   { label: "Total Points", value: (t) => t.stats.pointsFor, format: f0 },
-  { label: "Total Yards", value: (t) => t.stats.yardsFor, format: f0, needsPrintStats: true },
-  { label: "Passing Yards", value: (t) => t.stats.passYdsFor, format: f0, needsPrintStats: true },
-  { label: "Rushing Yards", value: (t) => t.stats.rushYdsFor, format: f0, needsPrintStats: true },
+  { label: "Total Yards", value: (t) => perGame(t, t.stats.yardsFor), format: f1, needsPrintStats: true },
+  { label: "Passing Yards", value: (t) => perGame(t, t.stats.passYdsFor), format: f1, needsPrintStats: true },
+  { label: "Rushing Yards", value: (t) => perGame(t, t.stats.rushYdsFor), format: f1, needsPrintStats: true },
   { label: "Turnovers Forced", value: (t) => t.stats.turnoversForced, format: f0, needsPrintStats: true },
   { label: "Turnovers Lost", value: (t) => t.stats.turnoversLost, format: f0, lowerIsBetter: true, needsPrintStats: true },
 ];
@@ -186,7 +186,8 @@ function compareRows(a: MatchupTeam, b: MatchupTeam): CompareRow[] {
     const aMissing = Boolean(row.needsPrintStats) && !hasPrintStats(a);
     const bMissing = Boolean(row.needsPrintStats) && !hasPrintStats(b);
     const comparable = !aMissing && !bMissing;
-    // Yardage rows carry the per-attempt average in parentheses.
+    // Passing/Rushing Yards show the per-game average, with the
+    // per-attempt average in parentheses.
     const avgFor = (t: MatchupTeam) =>
       row.label === "Passing Yards" ? t.side.avgPass
       : row.label === "Rushing Yards" ? t.side.avgRush
@@ -194,7 +195,7 @@ function compareRows(a: MatchupTeam, b: MatchupTeam): CompareRow[] {
     const cell = (t: MatchupTeam, v: number, missing: boolean) => {
       if (missing) return "—";
       const avg = avgFor(t);
-      return avg !== null ? ydsWithAvg(v, avg) : row.format(v);
+      return avg !== null ? ydsWithAvg(Math.round(v * 10) / 10, avg) : row.format(v);
     };
     rows.push({
       label: row.label,
