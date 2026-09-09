@@ -5,7 +5,14 @@ import { join } from "node:path";
 import { currentSeason, loadDataset } from "@/lib/data-server";
 import { loadHistory } from "@/lib/history-server";
 import { buildPowerRankings } from "@/lib/power";
-import { classificationWeeks, leagueOf, leagueWeek, mondayOf, neighborWeeks } from "@/lib/newspaper";
+import {
+  classificationWeeks,
+  headlineFontSize,
+  leagueOf,
+  leagueWeek,
+  mondayOf,
+  neighborWeeks,
+} from "@/lib/newspaper";
 import {
   buildPreview,
   currentWeekRange,
@@ -224,7 +231,14 @@ export default async function PreviewPaper({
           <div className="paper__kicker">
             ★ {league} {week ? `WEEK ${week}` : "THIS WEEK"} PREVIEW ★
           </div>
-          <div className="paper__headline">{headlineFor(heroes[0])}</div>
+          {(() => {
+            const headline = headlineFor(heroes[0]);
+            return (
+              <div className="paper__headline" style={{ fontSize: headlineFontSize(headline) }}>
+                {headline}
+              </div>
+            );
+          })()}
           <div className="paper__deck">
             {heroes.map((h) => `${h.awaySchool} at ${h.homeSchool}.`).join(" ")}
           </div>

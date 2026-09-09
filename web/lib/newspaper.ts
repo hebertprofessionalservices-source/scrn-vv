@@ -103,6 +103,19 @@ export function schoolName(team: Team | null, fallback: string): string {
   return name;
 }
 
+/**
+ * Headline type size, in px. The banner is one fixed-width line over a
+ * league seal hanging off its right edge — a long line ("THE PECKING ORDER
+ * TORE UP") at the short-headline size runs under the seal, so longer text
+ * scales down to keep clearing it.
+ */
+export function headlineFontSize(text: string): number {
+  const base = 92;
+  const shrinkAfter = 14;
+  if (text.length <= shrinkAfter) return base;
+  return Math.max(52, base - (text.length - shrinkAfter) * 3.2);
+}
+
 /** A team-name-shaped fallback for opponents that aren't in teams.json. */
 export function prettifySlug(slug: string): string {
   return slug
@@ -597,4 +610,160 @@ export function buildNewspaper(
     performances: performances(contests, data, classification),
     notebook: notebook(contests),
   };
+}
+
+/**
+ * Headline options per result shape. Every line in a bank has to be true for
+ * ANY result that lands in it, since the pick inside a bank is arbitrary —
+ * and every line across every bank has to be a distinct string, since a bank
+ * can lose an option to a sibling classification (see `weeklyHeadlines`).
+ */
+const HEADLINES = {
+  bigUpset: [
+    "SHOCK TO THE SYSTEM",
+    "ORDER UPENDED",
+    "NOBODY SAW THIS",
+    "THE PECKING ORDER TORE UP",
+    "AN UPSET, AND A ROUT",
+    "CHALK GOES OUT THE WINDOW",
+    "THE UPSET HAD STYLE POINTS",
+    "A ROUT NOBODY PREDICTED",
+  ],
+  upset: [
+    "UPSET SPECIAL",
+    "THE FAVORITE FALLS",
+    "RANKINGS MEAN NOTHING",
+    "TABLES TURNED",
+    "SEEDS DON'T MATTER TONIGHT",
+    "SO MUCH FOR THE RANKINGS",
+    "SCRIPT FLIPPED",
+  ],
+  overtime: [
+    "EXTRA TIME",
+    "SETTLED IN OVERTIME",
+    "FOUR QUARTERS WEREN'T ENOUGH",
+    "IT WENT LONGER",
+    "REGULATION WASN'T ENOUGH",
+    "OVERTIME HAD THE LAST WORD",
+    "DECIDED IN EXTRA TIME",
+  ],
+  nailBiter: [
+    "DECIDED BY INCHES",
+    "DOWN TO THE WIRE",
+    "ONE POSSESSION",
+    "NO ROOM TO BREATHE",
+    "A GAME OF FEET",
+    "DECIDED ON THE FINAL PLAY",
+    "STAYED WITHIN A SCORE",
+    "TIGHT ALL THE WAY",
+  ],
+  shutout: [
+    "SHUT THE DOOR",
+    "NOTHING GOT THROUGH",
+    "ZERO ON THE BOARD",
+    "BLANKED",
+    "NOT A POINT ALLOWED",
+    "A CLEAN SHEET",
+    "NOTHING TO SHOW FOR IT",
+    "SILENCED FROM THE START",
+  ],
+  rout: [
+    "NEVER IN DOUBT",
+    "FOOT ON THE GAS",
+    "RUNAWAY",
+    "A STATEMENT MADE",
+    "NO CONTEST",
+    "OVER EARLY",
+    "COMFORTABLE FROM THE START",
+    "PUT IT AWAY EARLY",
+  ],
+  standard: [
+    "STATEMENTS MADE",
+    "BUSINESS HANDLED",
+    "WIN AND MOVE ON",
+    "ANOTHER ONE BANKED",
+    "TAKEN CARE OF",
+    "GETS IT DONE",
+    "CHECKS THE BOX",
+    "ONE MORE IN THE WIN COLUMN",
+  ],
+} satisfies Record<string, string[]>;
+
+type HeadlineBank = keyof typeof HEADLINES;
+
+/**
+ * Last-resort lines for the rare week a bank runs out of unused options
+ * (every classification in the league landed in the same bank). True of any
+ * completed game, so they're always safe to fall back to.
+ */
+const GENERIC_HEADLINES = [
+  "FRIDAY NIGHT IN THE BOOKS",
+  "ANOTHER WEEK, ANOTHER RESULT",
+  "ON TO NEXT WEEK",
+  "LOGGED AND MOVING ON",
+  "LATEST FROM THE SCOREBOARD",
+];
+
+/** Stable hash, so a pick depends only on the game, never on render timing. */
+function hash(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
+/** Which bank of headlines a result's shape qualifies for. */
+function headlineBank(c: Contest): HeadlineBank {
+  const upset = c.winnerRank !== null && c.loserRank !== null && c.winnerRank > c.loserRank;
+  const unrankedUpset = c.winnerRank === null && c.loserRank !== null;
+  if ((upset || unrankedUpset) && c.margin >= 21) return "bigUpset";
+  if (upset || unrankedUpset) return "upset";
+  if (c.overtime) return "overtime";
+  if (c.margin <= 3) return "nailBiter";
+  if (c.loserScore === 0) return "shutout";
+  if (c.margin >= 28) return "rout";
+  return "standard";
+}
+
+/** The first option in `options`, starting from the hash, not already in `used`. */
+function pickUnused(options: readonly string[], seed: string, used: Set<string>): string | null {
+  const start = hash(seed) % options.length;
+  for (let i = 0; i < options.length; i++) {
+    const candidate = options[(start + i) % options.length];
+    if (!used.has(candidate)) return candidate;
+  }
+  return null;
+}
+
+/**
+ * Headlines for every classification airing in the same episode, guaranteed
+ * distinct from one another.
+ *
+ * Each classification still picks from the bank its own result shape earns —
+ * two blowouts can still read similarly — but two classes never print the
+ * identical line together, the way independent per-page picks used to
+ * collide almost every week once more than a couple of classes were "standard"
+ * wins. Deterministic and order-independent within a bank pick, but which
+ * option a class LOSES to a sibling depends on `order`, so pass a stable list
+ * (e.g. `CLASSIFICATIONS` filtered to one league) rather than re-deriving it
+ * per call.
+ */
+export function weeklyHeadlines(
+  order: string[],
+  headlinerFor: (classification: string) => Contest | null,
+): Map<string, string> {
+  const used = new Set<string>();
+  const out = new Map<string, string>();
+  for (const classification of order) {
+    const c = headlinerFor(classification);
+    if (!c) {
+      out.set(classification, "RESULTS");
+      continue;
+    }
+    const bank = HEADLINES[headlineBank(c)];
+    const seed = c.game.id;
+    const text = pickUnused(bank, seed, used) ?? pickUnused(GENERIC_HEADLINES, seed, used) ?? bank[hash(seed) % bank.length];
+    used.add(text);
+    out.set(classification, text);
+  }
+  return out;
 }

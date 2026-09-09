@@ -6,16 +6,18 @@ import { buildPowerRankings } from "@/lib/power";
 import {
   buildNewspaper,
   classificationWeeks,
+  headlineFontSize,
   latestSlate,
   leagueOf,
   leagueWeek,
   mondayOf,
   neighborWeeks,
   scoreboardSides,
+  weeklyHeadlines,
   type Contest,
   type Performance,
 } from "@/lib/newspaper";
-import { classificationLabel } from "@/lib/team-format";
+import { CLASSIFICATIONS, classificationLabel } from "@/lib/team-format";
 import { PaperStage } from "@/components/present/paper-stage";
 
 
@@ -164,6 +166,15 @@ export default async function Newspaper({
   const paper = buildNewspaper(data, ranks, { classification, dates });
   const heroes = paper.headliners;
 
+  // Every classification airing in the same episode picks from the same
+  // week's results, so their headlines are assigned together and guaranteed
+  // not to repeat one another — a sibling class re-running buildNewspaper
+  // here is cheap; it's the same in-memory data and ranks already loaded above.
+  const leagueClasses = CLASSIFICATIONS.filter((c) => leagueOf(c) === league);
+  const headline = weeklyHeadlines(leagueClasses, (c) =>
+    (c === classification ? paper : buildNewspaper(data, ranks, { classification: c, dates })).headliners[0] ?? null,
+  ).get(classification) ?? "RESULTS";
+
   // Prev/next week arrows: only link to a neighbouring week when this class
   // actually has a game in it, so an off week never gets a dead link.
   const weeks = classificationWeeks(data.games, data, classification);
@@ -253,7 +264,9 @@ export default async function Newspaper({
         <div className="paper__kicker">
           ★ {league} {week ? `WEEK ${week}` : "RECAP"} ★
         </div>
-        <div className="paper__headline">{heroes[0] ? headlineFor(heroes[0]) : "RESULTS"}</div>
+        <div className="paper__headline" style={{ fontSize: headlineFontSize(headline) }}>
+          {headline}
+        </div>
         <div className="paper__deck">
           {heroes.map((h) => `${h.winnerSchool} ${h.winnerScore}, ${h.loserSchool} ${h.loserScore}.`).join(" ")}
         </div>
@@ -407,89 +420,3 @@ export default async function Newspaper({
   );
 }
 
-/** Headline chosen from the shape of the lead result, never invented. */
-/**
- * Headline options per result shape. Every line in a bank has to be true for
- * ANY result that lands in it, since the pick inside a bank is arbitrary.
- */
-const HEADLINES: Record<string, string[]> = {
-  bigUpset: [
-    "SHOCK TO THE SYSTEM",
-    "ORDER UPENDED",
-    "NOBODY SAW THIS",
-    "THE PECKING ORDER TORE UP",
-    "AN UPSET, AND A ROUT",
-  ],
-  upset: [
-    "ORDER UPENDED",
-    "UPSET SPECIAL",
-    "THE FAVORITE FALLS",
-    "RANKINGS MEAN NOTHING",
-    "TABLES TURNED",
-  ],
-  overtime: [
-    "EXTRA TIME",
-    "SETTLED IN OVERTIME",
-    "FOUR QUARTERS WEREN'T ENOUGH",
-    "IT WENT LONGER",
-  ],
-  nailBiter: [
-    "DECIDED BY INCHES",
-    "DOWN TO THE WIRE",
-    "ONE POSSESSION",
-    "NO ROOM TO BREATHE",
-    "A GAME OF FEET",
-  ],
-  shutout: [
-    "SHUT THE DOOR",
-    "NOTHING GOT THROUGH",
-    "ZERO ON THE BOARD",
-    "BLANKED",
-    "NOT A POINT ALLOWED",
-  ],
-  rout: [
-    "NEVER IN DOUBT",
-    "FOOT ON THE GAS",
-    "RUNAWAY",
-    "A STATEMENT MADE",
-    "NO CONTEST",
-  ],
-  standard: [
-    "STATEMENTS MADE",
-    "BUSINESS HANDLED",
-    "WIN AND MOVE ON",
-    "ANOTHER ONE BANKED",
-    "TAKEN CARE OF",
-  ],
-};
-
-/** Stable hash, so a page renders the same headline every time it is opened. */
-function hash(s: string): number {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
-  return Math.abs(h);
-}
-
-/**
- * Headline chosen from the shape of the lead result, never invented.
- *
- * Each shape has a bank of interchangeable lines rather than one fixed string
- * — the client was seeing "SHOCK TO THE SYSTEM" week after week, and two
- * branches used to return the same "STATEMENTS MADE" so shutouts never got
- * their own line. The choice is keyed off the game id, so it varies between
- * games but never changes between opening the page and screenshotting it.
- */
-function headlineFor(c: Contest): string {
-  const upset = c.winnerRank !== null && c.loserRank !== null && c.winnerRank > c.loserRank;
-  const unrankedUpset = c.winnerRank === null && c.loserRank !== null;
-  const bank =
-    (upset || unrankedUpset) && c.margin >= 21 ? "bigUpset"
-    : upset || unrankedUpset ? "upset"
-    : c.overtime ? "overtime"
-    : c.margin <= 3 ? "nailBiter"
-    : c.loserScore === 0 ? "shutout"
-    : c.margin >= 28 ? "rout"
-    : "standard";
-  const options = HEADLINES[bank];
-  return options[hash(c.game.id) % options.length];
-}
