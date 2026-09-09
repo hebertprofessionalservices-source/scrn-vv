@@ -108,8 +108,12 @@ function headlineFor(f: Fixture | undefined): string {
   if (!f) return "THE WEEK AHEAD";
   const bothRanked = f.homeRank !== null && f.awayRank !== null;
   const bothTop5 = bothRanked && f.homeRank! <= 5 && f.awayRank! <= 5;
+  const bothTop10 = bothRanked && f.homeRank! <= 10 && f.awayRank! <= 10;
   if (bothTop5) return "TOP-FIVE COLLISION";
   if (bothRanked && f.ratingGap !== null && f.ratingGap <= 3) return "TOO CLOSE TO CALL";
+  if (bothTop10) return "TOP-TEN SHOWDOWN";
+  if (bothRanked && f.region) return "RANKED REGION SHOWDOWN";
+  if (bothRanked && f.meetings >= 10) return "RANKED RIVALS RENEW IT";
   if (bothRanked) return "RANKED AND READY";
   if (f.meetings >= 10) return "OLD SCORES TO SETTLE";
   if (f.region) return "REGION ON THE LINE";
