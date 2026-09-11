@@ -14363,7 +14363,7 @@
     "mascot": "Flashes",
     "city": "Vicksburg",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 3",
+    "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/st-aloysius-flashes-flashes.png",
     "colors": {
       "primary": "#7010d0",
@@ -14645,7 +14645,7 @@
     "mascot": "Conquerors",
     "city": "Gulfport",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 4",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/christian-collegiate-academy-conquerors-conquerors.png",
     "colors": {
       "primary": "#301030",
@@ -14816,7 +14816,7 @@
     "mascot": "Chiefs",
     "city": "Senatobia",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 1",
+    "district": "MAIS 4A District (TBD)",
     "logoUrl": "/team-logos/magnolia-heights-chiefs-chiefs.png",
     "colors": {
       "primary": "#101030",
@@ -14873,7 +14873,7 @@
     "mascot": "Patriots",
     "city": "Madison",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 3",
+    "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/madison-ridgeland-academy-patriots-patriots.png",
     "colors": {
       "primary": "#105090",
@@ -14930,7 +14930,7 @@
     "mascot": "Patriots",
     "city": "Columbus",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 2",
+    "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/heritage-academy-patriots-patriots.png",
     "colors": {
       "primary": "#1010f0",
@@ -14987,7 +14987,7 @@
     "mascot": "Colonels",
     "city": "Gallman",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/copiah-academy-colonels-colonels.png",
     "colors": {
       "primary": "#1050b0",
@@ -15044,7 +15044,7 @@
     "mascot": "Raiders",
     "city": "Meridian",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 2",
+    "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/lamar-raiders-raiders.png",
     "colors": {
       "primary": "#101070",
@@ -15101,7 +15101,7 @@
     "mascot": "Cougars",
     "city": "Brookhaven",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 3",
+    "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/brookhaven-academy-cougars-cougars.png",
     "colors": {
       "primary": null,
@@ -15158,7 +15158,7 @@
     "mascot": "Patriots",
     "city": "Jackson",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/jackson-prep-patriots-patriots.png",
     "colors": {
       "primary": "#103070",
@@ -15329,7 +15329,7 @@
     "mascot": "Patriots",
     "city": "Pelahatchie",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 2",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/east-rankin-academy-patriots-patriots.png",
     "colors": {
       "primary": "#103030",
@@ -15386,7 +15386,7 @@
     "mascot": "Hawks",
     "city": "Flowood",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 2",
+    "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/hartfield-academy-hawks-hawks.png",
     "colors": {
       "primary": "#d0b070",
@@ -15557,7 +15557,7 @@
     "mascot": "Colts",
     "city": "Cleveland",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 1",
+    "district": "MAIS 4A District (TBD)",
     "logoUrl": "/team-logos/bayou-academy-colts-colts.png",
     "colors": {
       "primary": "#103070",
@@ -15614,7 +15614,7 @@
     "mascot": "Mustangs",
     "city": "Greenwood",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 1",
+    "district": "MAIS 4A District (TBD)",
     "logoUrl": "/team-logos/pillow-academy-mustangs-mustangs.png",
     "colors": {
       "primary": "#103010",
@@ -15671,7 +15671,7 @@
     "mascot": "Yellowjackets",
     "city": "Amite",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/oak-forest-academy-yellowjackets-yellowjackets.png",
     "colors": {
       "primary": "#103030",
@@ -15785,7 +15785,7 @@
     "mascot": "Bruins",
     "city": "Madison",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 1",
+    "district": null,
     "logoUrl": "/team-logos/st-joseph-catholic-bruins-bruins.png",
     "colors": {
       "primary": "#101090",
