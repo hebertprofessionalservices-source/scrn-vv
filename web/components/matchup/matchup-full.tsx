@@ -222,14 +222,20 @@ function MatchupTeamHeader({
           <div key={line}>{line}</div>
         ))}
       </div>
-      {outlook && (outlook.ifWin !== null || outlook.ifLoss !== null) && (
-        <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
-          Playoff Potential if win/loss:{" "}
-          <span className="text-chrome-300">
-            {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}
-          </span>
-        </div>
-      )}
+      {/* Suppressed when a win and a loss project to the same number
+          (e.g. a district too small to miss the playoffs either way) —
+          showing identical odds for opposite outcomes reads as broken. */}
+      {outlook &&
+        outlook.ifWin !== null &&
+        outlook.ifLoss !== null &&
+        outlook.ifWin.toFixed(2) !== outlook.ifLoss.toFixed(2) && (
+          <div className="text-sm text-chrome-500 group-data-[condensed=true]:hidden">
+            Playoff Potential if win/loss:{" "}
+            <span className="text-chrome-300">
+              {fmtPct(outlook.ifWin)} / {fmtPct(outlook.ifLoss)}
+            </span>
+          </div>
+        )}
     </div>
   );
 }
