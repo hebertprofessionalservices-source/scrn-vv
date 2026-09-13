@@ -268,6 +268,27 @@ async def main() -> None:
             ]
             for cid_, sides in homeaway_truth(html).items():
                 truth.setdefault(cid_, sides)
+            # orient() matches truth against opponentName, which fails whenever
+            # the scoreboard renders that opponent's name abbreviated (small or
+            # out-of-state schools, e.g. "MASAE" for Memphis Academy of Science
+            # and Engineering) — it silently keeps parse_schedule's "away"
+            # default, swapping the score sides. Matching truth against this
+            # team's OWN name instead sidesteps the abbreviation problem, since
+            # boards render the in-state home/away team's name in full.
+            own_name = t["name"]
+            mascot = t.get("mascot")
+            if mascot and own_name.lower().endswith(mascot.lower()):
+                own_name = own_name[: len(own_name) - len(mascot)]
+            own_name = own_name.strip()
+            for g in partials:
+                sides = truth.get(g.get("contestId") or "")
+                if not sides:
+                    continue
+                away_name, home_name = sides
+                if own_name == home_name and own_name != away_name:
+                    g["homeOrAway"] = "home"
+                elif own_name == away_name and own_name != home_name:
+                    g["homeOrAway"] = "away"
             scraped.append((tid, partials))
             record, pf, pa = derive_record(partials)
             team_patch[tid] = {
