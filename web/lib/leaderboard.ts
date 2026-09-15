@@ -17,7 +17,7 @@ export const CATEGORY_OPTIONS: { value: LeaderCategory; label: string }[] = [
 export const CLASS_ORDER = [
   "7A", "6A", "5A", "4A", "3A", "2A", "1A",
   "MAIS-6A", "MAIS-5A", "MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-1A",
-  "MAIS-8M-2A", "MAIS-8M-1A",
+  "MAIS-8M-1A",
 ];
 
 export interface LeaderEntry {

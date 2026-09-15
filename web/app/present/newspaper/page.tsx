@@ -23,7 +23,7 @@ const COLUMNS: { league: "MHSAA" | "MAIS"; classes: Classification[] }[] = [
   { league: "MHSAA", classes: ["7A", "6A", "5A", "4A", "3A", "2A", "1A"] },
   {
     league: "MAIS",
-    classes: ["MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A"],
+    classes: ["MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-1A"],
   },
 ];
 

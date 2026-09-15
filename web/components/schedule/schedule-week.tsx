@@ -57,8 +57,8 @@ export function ScheduleWeek({
   initialCls?: string;
 }) {
   const [query, setQuery] = useState("");
-  const [league, setLeague] = useState(initialLeague);
-  const [cls, setCls] = useState(initialCls);
+  const league = initialLeague;
+  const cls = initialCls;
 
   const classOptions = useMemo(() => classOptionsFor(leagues, league), [leagues, league]);
   const activeCls = activeClassification(cls, classOptions);
@@ -70,16 +70,36 @@ export function ScheduleWeek({
   const filtersActive = Boolean(query.trim() || league || activeCls);
 
   /*
-   * Week changes are navigations, so the filters ride along in the URL and
-   * come back as initialLeague/initialCls. Leaving the page — including the
-   * nav bar's own Schedules link, which points at a bare /upcoming — drops
+   * League/classification/week all live in the URL (not just React state) so
+   * that clicking into a matchup and hitting Back restores the same filter
+   * instead of resetting to "All Classifications" — the previous state-only
+   * version lost the filter on Back because the URL it returned to never
+   * reflected the dropdown selection. Leaving the page — including the nav
+   * bar's own Schedules link, which points at a bare /upcoming — still drops
    * them, which is the reset Garret asked for.
+   *
+   * Full navigation, not router.push: the client router silently drops
+   * transitions issued while a previous one is still in flight, which made
+   * filter changes randomly "not work" (see team-filters.tsx).
    */
-  const hrefFor = (i: number) => {
+  const hrefFor = (i: number, overrides: { league?: string; cls?: string } = {}) => {
     const sp = new URLSearchParams({ week: String(i + 1) });
-    if (league) sp.set("league", league);
-    if (activeCls) sp.set("cls", activeCls);
+    const nextLeague = overrides.league ?? league;
+    const nextCls = overrides.cls ?? activeCls;
+    if (nextLeague) sp.set("league", nextLeague);
+    if (nextCls) sp.set("cls", nextCls);
     return `/upcoming?${sp.toString()}`;
+  };
+
+  // Hierarchy is League > Week > Classification: changing the league can
+  // strip the chosen classification (activeClassification below falls back
+  // to "" for us), and both reset when the league itself changes.
+  const goToLeague = (nextLeague: string) => {
+    const nextCls = activeClassification(activeCls, classOptionsFor(leagues, nextLeague));
+    window.location.assign(hrefFor(weekIndex, { league: nextLeague, cls: nextCls }));
+  };
+  const goToCls = (nextCls: string) => {
+    window.location.assign(hrefFor(weekIndex, { cls: nextCls }));
   };
 
   const current = weeks[weekIndex];
@@ -124,7 +144,7 @@ export function ScheduleWeek({
         <select
           className={CONTROL_CLASSES}
           value={league}
-          onChange={(e) => setLeague(e.target.value)}
+          onChange={(e) => goToLeague(e.target.value)}
           aria-label="Filter by league"
         >
           <option value="">All Leagues</option>
@@ -152,7 +172,7 @@ export function ScheduleWeek({
         <select
           className={CONTROL_CLASSES}
           value={activeCls}
-          onChange={(e) => setCls(e.target.value)}
+          onChange={(e) => goToCls(e.target.value)}
           aria-label="Filter by classification"
         >
           <option value="">All Classifications</option>

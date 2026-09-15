@@ -23,6 +23,14 @@ CLASS_SLUGS: dict[str, str] = {
 }
 _SLUG_TO_CLASS: dict[str, str] = {v: k for k, v in CLASS_SLUGS.items()}
 
+# MAIS ran 8-man as two divisions ("1A"/"2A") through the 25-26 season and
+# collapsed it to a single division starting 26-27 — MaxPreps still lists two
+# class-directory URLs (so we still fetch both to enumerate every team), but
+# both should be labelled with the surviving classification from this season
+# on. Historical seasons keep their true two-division labels.
+EIGHT_MAN_MERGE_SEASON = "26-27"
+EIGHT_MAN_ALIAS: dict[str, str] = {"MAIS-8M-2A": "MAIS-8M-1A"}
+
 # statedivisionid values are season-specific: MaxPreps assigns a new UUID per
 # class per season.  When live discovery (anchors / __NEXT_DATA__) misses a
 # class, these per-season dicts are used as the fallback.
@@ -165,5 +173,14 @@ def discover_class_links(landing_html: str, *, season_short: str) -> list[dict[s
                 f"?statedivisionid={sdid}"
             )
 
-    # Return in classification order.
-    return [{"classification": c, "url": hits[c]} for c in TARGET_CLASSES if c in hits]
+    # Return in classification order. From EIGHT_MAN_MERGE_SEASON on, alias the
+    # second 8-man directory's label onto the first so callers see one class.
+    merge_eight_man = season_short >= EIGHT_MAN_MERGE_SEASON
+    return [
+        {
+            "classification": EIGHT_MAN_ALIAS.get(c, c) if merge_eight_man else c,
+            "url": hits[c],
+        }
+        for c in TARGET_CLASSES
+        if c in hits
+    ]

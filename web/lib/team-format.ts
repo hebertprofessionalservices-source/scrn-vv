@@ -40,7 +40,7 @@ export function isEightMan(classification: string | null | undefined): boolean {
 /** All classifications, display order. */
 export const CLASSIFICATIONS = [
   "7A", "6A", "5A", "4A", "3A", "2A", "1A",
-  "MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A",
+  "MAIS-4A", "MAIS-3A", "MAIS-2A", "MAIS-8M-1A",
 ];
 
 /** "7A Region 2" / "MAIS 4A District 3" — class plus region, compact. */

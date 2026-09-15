@@ -30,7 +30,7 @@ const LEAGUES = [
         games: [
           card("Winston Academy Patriots", "Carroll Academy Rebels", ["MAIS-2A"]),
           card("Kemper Academy Rams", "Newton County Academy Generals", [
-            "MAIS-8M-2A",
+            "MAIS-4A",
             "MAIS-8M-1A",
           ]),
         ],
@@ -47,14 +47,14 @@ const NO_FILTERS = { league: "", cls: "", query: "" };
 describe("classOptionsFor", () => {
   it("returns every playing classification in display order", () => {
     expect(classOptionsFor(LEAGUES, "")).toEqual([
-      "7A", "3A", "1A", "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A",
+      "7A", "3A", "1A", "MAIS-4A", "MAIS-2A", "MAIS-8M-1A",
     ]);
   });
 
   it("narrows to the selected league", () => {
     expect(classOptionsFor(LEAGUES, "MHSAA")).toEqual(["7A", "3A", "1A"]);
     expect(classOptionsFor(LEAGUES, "MAIS")).toEqual([
-      "MAIS-2A", "MAIS-8M-2A", "MAIS-8M-1A",
+      "MAIS-4A", "MAIS-2A", "MAIS-8M-1A",
     ]);
   });
 });
