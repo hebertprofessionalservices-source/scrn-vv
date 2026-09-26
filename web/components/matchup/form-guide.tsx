@@ -1,4 +1,5 @@
 import { formatGameDate } from "@/lib/format-date";
+import { resultFor } from "@/lib/result";
 import type { Game } from "@/lib/types";
 
 export function FormGuide({ teamId, games }: { teamId: string; games: Game[] }) {
@@ -14,7 +15,7 @@ export function FormGuide({ teamId, games }: { teamId: string; games: Game[] }) 
         const sf = isHome ? g.homeScore : g.awayScore;
         const sa = isHome ? g.awayScore : g.homeScore;
         if (sf == null || sa == null) return <span key={g.id} className="w-6 h-6 rounded bg-chrome-500/20" />;
-        const win = sf > sa;
+        const win = resultFor(g, isHome) === "W";
         return (
           <span key={g.id}
             title={`${formatGameDate(g.date)}: ${sf}-${sa}`}

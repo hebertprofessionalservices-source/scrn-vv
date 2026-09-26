@@ -2,6 +2,7 @@ import type { Dataset } from "./data";
 import type { BoxScoreEntry, Game, Player, Team } from "./types";
 import { initialForm, normalizeName } from "./efficiency";
 import { isEightMan } from "./team-format";
+import { resultFor } from "./result";
 
 /**
  * Weekly player performances, rebuilt from game box scores. "Week" is the
@@ -219,7 +220,7 @@ function context(l: RawLine): string {
   if (g.homeScore !== null && g.awayScore !== null) {
     const mine = l.isHome ? g.homeScore : g.awayScore;
     const theirs = l.isHome ? g.awayScore : g.homeScore;
-    const letter = mine > theirs ? "W" : mine < theirs ? "L" : "T";
+    const letter = resultFor(g, l.isHome);
     result = ` · ${letter} ${mine}–${theirs}`;
   }
   return `${ha} ${l.opp.name}${result}`;

@@ -1,5 +1,6 @@
 import type { Dataset } from "./data";
 import type { PowerRank } from "./power";
+import { winnerSide } from "./result";
 import type { BoxScoreEntry, Game, Team } from "./types";
 
 /**
@@ -164,8 +165,7 @@ function toContest(
     inClass(t) ? ranks.get(t!.id)?.classRank ?? null : null;
   const homeRank = rankOf(home);
   const awayRank = rankOf(away);
-  const winner =
-    g.homeScore === g.awayScore ? "tie" : g.homeScore > g.awayScore ? "home" : "away";
+  const winner = winnerSide(g) ?? "tie";
   const homeWon = winner === "home";
   const homeSchool = schoolName(home, homeName);
   const awaySchool = schoolName(away, awayName);

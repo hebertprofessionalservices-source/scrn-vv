@@ -98,6 +98,8 @@ export interface Game {
   venue: string | null;
   boxScore: BoxScore | null;
   maxprepsUrl: string | null;
+  /** Side awarded the win by forfeit; the game is stored 0–0. */
+  forfeit?: "home" | "away" | null;
 }
 
 export interface Editorial {

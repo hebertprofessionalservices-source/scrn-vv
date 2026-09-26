@@ -3,6 +3,7 @@ import type { Team } from "./types";
 import { displaySlug } from "./display-slug";
 import { CLASS_ORDER } from "./leaderboard";
 import { buildPowerRankings } from "./power";
+import { winnerSide } from "./result";
 
 export interface RecordWL {
   wins: number;
@@ -102,8 +103,9 @@ function collectRegionState(data: Dataset, todayKey: string): RegionState {
     const district = home.district;
 
     if (g.status === "final" && g.homeScore !== null && g.awayScore !== null) {
-      if (g.homeScore === g.awayScore) continue;
-      const winner = g.homeScore > g.awayScore ? home : away;
+      const side = winnerSide(g);
+      if (side === "tie" || side === null) continue;
+      const winner = side === "home" ? home : away;
       const loser = winner === home ? away : home;
       bump(derived, winner.id, "wins");
       bump(derived, loser.id, "losses");
@@ -308,14 +310,15 @@ export function teamRecordSplits(
   const region: RecordWL = { wins: 0, losses: 0 };
   for (const g of data.games) {
     if (g.status !== "final" || g.homeScore === null || g.awayScore === null) continue;
-    if (g.homeScore === g.awayScore) continue;
+    const side = winnerSide(g);
+    if (side === "tie" || side === null) continue;
     const home = data.teamsByAlias.get(g.homeTeamId);
     const away = data.teamsByAlias.get(g.awayTeamId);
     if (!home || !away || home.id === away.id) continue;
     const isHome = home.id === team.id;
     if (!isHome && away.id !== team.id) continue;
     const opp = isHome ? away : home;
-    const won = isHome === (g.homeScore > g.awayScore);
+    const won = isHome === (side === "home");
     if (opp.classification === team.classification) {
       cls[won ? "wins" : "losses"] += 1;
     }

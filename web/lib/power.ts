@@ -59,6 +59,7 @@ export function buildPowerRankings(data: Dataset): Map<string, PowerRank> {
   const playedRegionGame = new Set<string>();
   for (const g of data.games) {
     if (g.status !== "final" || g.homeScore === null || g.awayScore === null) continue;
+    if (g.forfeit) continue; // a forfeit has no scoring margin to rate
     const home = data.teamsByAlias.get(g.homeTeamId);
     const away = data.teamsByAlias.get(g.awayTeamId);
     if (!home || !away || home.id === away.id) continue;

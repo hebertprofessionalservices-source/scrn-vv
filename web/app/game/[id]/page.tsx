@@ -5,6 +5,7 @@ import { buildBoxScore, type BoxLine, type BoxSide } from "@/lib/box-score";
 import { TeamLogo } from "@/components/brand/team-logo";
 import { classificationLabel } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
+import { winnerSide } from "@/lib/result";
 
 /**
  * One game's box score — the recap show's page for diving into a single
@@ -26,6 +27,7 @@ export default async function GamePage({
   if (!box) notFound();
 
   const { away, home } = box;
+  const winner = winnerSide(game);
   const periods = Math.max(away.quarters.length, home.quarters.length);
   const matchupHref =
     away.team && home.team ? `/matchup?a=${away.team.id}&b=${home.team.id}` : null;
@@ -41,20 +43,20 @@ export default async function GamePage({
 
       <section className="rounded-2xl border border-chrome-500/15 bg-navy-700/40 p-6 !mt-3">
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
-          <TeamSide side={away} align="right" won={away.score > home.score} />
+          <TeamSide side={away} align="right" won={winner === "away"} />
           <div className="text-center">
             <div className="font-display text-4xl">
-              <span className={away.score > home.score ? "" : "text-chrome-500"}>
+              <span className={winner === "away" ? "" : "text-chrome-500"}>
                 {away.score}
               </span>
               <span className="text-chrome-500 mx-2">–</span>
-              <span className={home.score > away.score ? "" : "text-chrome-500"}>
+              <span className={winner === "home" ? "" : "text-chrome-500"}>
                 {home.score}
               </span>
             </div>
-            <div className="text-xs uppercase tracking-wider text-chrome-500 mt-1">Final</div>
+            <div className="text-xs uppercase tracking-wider text-chrome-500 mt-1">{game.forfeit ? "Final · Forfeit" : "Final"}</div>
           </div>
-          <TeamSide side={home} align="left" won={home.score > away.score} />
+          <TeamSide side={home} align="left" won={winner === "home"} />
         </div>
         <p className="text-sm text-chrome-500 text-center mt-4">
           {formatGameDate(game.date)}

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { loadDataset, currentSeason } from "@/lib/data-server";
 import { formatGameDate } from "@/lib/format-date";
+import { resultFor } from "@/lib/result";
 import { loadHistory } from "@/lib/history-server";
 import { coachDisplayName, teamCoachView } from "@/lib/matchup-history";
 import { classificationLabel, titleCaseSlug } from "@/lib/team-format";
@@ -31,7 +32,7 @@ export default async function PresentTeam({ params }: { params: Promise<{ slug: 
               <tr key={g.id} className="border-t border-chrome-500/20">
                 <td className="py-2">{formatGameDate(g.date)}</td>
                 <td className="py-2">{isHome ? "vs" : "@"} {opp?.name ?? titleCaseSlug(oppId)}</td>
-                <td className="py-2 text-right">{g.status === "final" && sf != null && sa != null ? `${sf > sa ? "W" : "L"} ${sf}–${sa}` : "—"}</td>
+                <td className="py-2 text-right">{g.status === "final" && sf != null && sa != null ? `${resultFor(g, isHome)} ${sf}–${sa}${g.forfeit ? " (forfeit)" : ""}` : "—"}</td>
               </tr>
             );
           })}

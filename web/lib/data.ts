@@ -141,5 +141,6 @@ function mergeDuplicateGame(
     venue: a.venue ?? b.venue,
     boxScore: a.boxScore ?? b.boxScore,
     maxprepsUrl: a.maxprepsUrl ?? b.maxprepsUrl,
+    forfeit: a.forfeit ?? b.forfeit,
   };
 }

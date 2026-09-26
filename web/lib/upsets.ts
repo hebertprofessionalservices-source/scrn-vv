@@ -52,7 +52,7 @@ export function buildUpsets(
     const away = data.teamsByAlias.get(g.awayTeamId);
     if (!home || !away || home.id === away.id) continue;
     if (g.homeScore === null || g.awayScore === null) continue;
-    if (g.homeScore === g.awayScore) continue; // ties aren't upsets
+    if (g.homeScore === g.awayScore) continue; // ties aren't upsets (forfeits are stored 0–0 too)
     // 8-Man ratings aren't comparable with the 11-man game, so a cross-code
     // "upset" is a modelling artefact rather than a result worth surfacing.
     if (isEightMan(home.classification) || isEightMan(away.classification)) continue;

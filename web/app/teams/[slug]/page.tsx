@@ -14,6 +14,7 @@ import { Badge } from "@/components/ui/badge";
 import { displaySlug } from "@/lib/display-slug";
 import { classificationLabel, regionLabel, titleCaseSlug } from "@/lib/team-format";
 import { formatGameDate } from "@/lib/format-date";
+import { resultFor } from "@/lib/result";
 import { runPassAttempts } from "@/lib/run-pass";
 import { buildRatings, matchupPlayoffOutlook, playoffPotentials } from "@/lib/standings";
 import {
@@ -216,7 +217,7 @@ export default async function TeamDetailPage({
                     </td>
                     <td className="px-3 py-2 text-right">
                       {g.status === "final" && sf !== null && sa !== null
-                        ? `${sf > sa ? "W" : "L"} ${sf}–${sa}`
+                        ? `${resultFor(g, isHome)} ${sf}–${sa}${g.forfeit ? " (forfeit)" : ""}`
                         : g.status === "scheduled"
                           ? "—"
                           : g.status}
