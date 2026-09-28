@@ -13692,7 +13692,7 @@
     },
     "rankings": {
       "stateOverall": 6,
-      "stateClass": 1,
+      "stateClass": null,
       "national": 700
     },
     "stats": {
@@ -15117,7 +15117,7 @@
     },
     "rankings": {
       "stateOverall": 100,
-      "stateClass": 11,
+      "stateClass": null,
       "national": null
     },
     "stats": {
@@ -15288,7 +15288,7 @@
     },
     "rankings": {
       "stateOverall": 141,
-      "stateClass": 14,
+      "stateClass": null,
       "national": null
     },
     "stats": {

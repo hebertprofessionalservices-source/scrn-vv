@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
 sys.path.insert(0, str(ROOT / "src"))
 
+from scraper.alignment import class_rank_is_comparable  # noqa: E402
 from scraper.cache import CrawlCache  # noqa: E402
 
 CACHE_PATH = ROOT / ".cache" / "crawl.db"
@@ -180,8 +181,15 @@ def main() -> None:
         rows = json.loads(path.read_text(encoding="utf-8"))
         for row in rows:
             found = ranks.get(row["id"])
-            if found is not None:
-                row["rankings"] = found
+            if found is None:
+                continue
+            # A team we moved across classes ahead of MaxPreps is still ranked
+            # among its old classmates, so that number would read as a rank in
+            # the class we now show it in. Drop it rather than mislead; see
+            # scraper/alignment.py.
+            if not class_rank_is_comparable(row["id"], season):
+                found = {**found, "stateClass": None}
+            row["rankings"] = found
         path.write_text(json.dumps(rows, indent=2) + "\n", encoding="utf-8")
         print(f"wrote {path}", flush=True)
 

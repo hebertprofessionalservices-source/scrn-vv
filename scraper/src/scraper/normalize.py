@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from scraper import slugify as slug_mod
-from scraper.alignment import apply_alignment
+from scraper.alignment import apply_alignment, class_rank_is_comparable
 from scraper.models import (
     BoxScore,
     BoxScoreEntry,
@@ -75,7 +75,14 @@ def build_team(
     rankings_raw = team_home.get("rankings", {}) or {}
     rankings = TeamRankings(
         stateOverall=rankings_raw.get("stateOverall"),
-        stateClass=rankings_raw.get("stateClass"),
+        # Dropped when we have moved the team across classes ahead of MaxPreps:
+        # its rank is then counted among its OLD classmates and would read as a
+        # rank in the new class. stateOverall is one statewide list, so it stays.
+        stateClass=(
+            rankings_raw.get("stateClass")
+            if class_rank_is_comparable(team_id, season)
+            else None
+        ),
         national=rankings_raw.get("national"),
     )
 

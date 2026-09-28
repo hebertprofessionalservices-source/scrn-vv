@@ -1,7 +1,7 @@
 """The association's alignment must survive a scrape that disagrees with it."""
 import collections
 
-from scraper.alignment import _load, apply_alignment
+from scraper.alignment import _load, apply_alignment, class_rank_is_comparable
 from scraper.normalize import build_team
 
 SEASON = "2026-27"
@@ -67,3 +67,45 @@ def test_published_class_and_district_counts():
     assert counts["MAIS-4A"] == 14 and len(shape["MAIS-4A"]) == 3
     assert counts["MAIS-3A"] == 21 and len(shape["MAIS-3A"]) == 5
     assert len(shape["MAIS-2A"]) == 4
+
+
+def test_cross_class_mover_loses_its_stale_class_rank():
+    """Brookhaven's 4A rank of 11 must not reappear as "No. 11 in 3A"."""
+    assert class_rank_is_comparable("brookhaven-academy-cougars-cougars", SEASON) is False
+    team = build_team(
+        season=SEASON,
+        team_home={
+            "name": "Brookhaven Academy Cougars",
+            "mascot": "Cougars",
+            "classification": "MAIS-4A",
+            "district": "MAIS 4A District 3",
+            "rankings": {"stateOverall": 100, "stateClass": 11, "national": None},
+            "maxprepsUrl": "https://example.invalid/brookhaven",
+        },
+    )
+    assert team.classification == "MAIS-3A"
+    assert team.rankings.stateClass is None
+    # One statewide list, so it survives the class move.
+    assert team.rankings.stateOverall == 100
+
+
+def test_eight_man_relabel_keeps_its_rank():
+    """MaxPreps kept 8-man split, so those ranks were never cross-pool."""
+    assert class_rank_is_comparable("tunica-academy-blue-devils-blue-devils", SEASON) is True
+    team = build_team(
+        season=SEASON,
+        team_home={
+            "name": "Tunica Academy Blue Devils",
+            "mascot": "Blue Devils",
+            "classification": "MAIS-8M-1A",
+            "district": "MAIS 8-Man 2A District 5 (8 Man)",
+            "rankings": {"stateOverall": 200, "stateClass": 1, "national": None},
+            "maxprepsUrl": "https://example.invalid/tunica",
+        },
+    )
+    assert team.classification == "MAIS-8M-2A"
+    assert team.rankings.stateClass == 1
+
+
+def test_untouched_team_keeps_its_rank():
+    assert class_rank_is_comparable("meridian-wildcats-wildcats", SEASON) is True

@@ -36,6 +36,7 @@
       "name": "Briarfield Academy Rebels"
     },
     "brookhaven-academy-cougars-cougars": {
+      "classRankPool": "MAIS-4A",
       "classification": "MAIS-3A",
       "district": "MAIS 3A District 4",
       "name": "Brookhaven Academy Cougars"
@@ -56,6 +57,7 @@
       "name": "Carroll Academy Rebels"
     },
     "cathedral-green-wave-green-wave": {
+      "classRankPool": "MAIS-4A",
       "classification": "MAIS-3A",
       "district": "MAIS 3A District 4",
       "name": "Cathedral Green Wave"
@@ -126,6 +128,7 @@
       "name": "DeSoto Thunderbirds"
     },
     "discovery-christian": {
+      "classRankPool": "MAIS-2A",
       "classification": "MAIS-8M-1A",
       "district": "MAIS 8-Man 1A District 3 (8 Man)",
       "name": "Discovery Christian"
@@ -316,6 +319,7 @@
       "name": "Rossville Christian Academy Wolves"
     },
     "silliman-institute-wildcats-wildcats": {
+      "classRankPool": "MAIS-4A",
       "classification": "MAIS-3A",
       "district": "MAIS 3A District 5",
       "name": "Silliman Institute Wildcats"

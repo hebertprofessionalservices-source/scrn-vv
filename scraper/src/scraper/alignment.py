@@ -52,3 +52,28 @@ def apply_alignment(
         entry.get("classification", classification),
         entry.get("district", district),
     )
+
+
+def class_rank_is_comparable(team_id: str, season: str) -> bool:
+    """False when MaxPreps' per-class rank belongs to a different pool than ours.
+
+    MaxPreps ranks a team inside whatever class IT has the team in.  When we
+    move a team across classes ahead of MaxPreps, its ``stateClass`` number is
+    drawn from its old classmates and means nothing beside its new ones —
+    Brookhaven Academy went 4A -> 3A and kept a 4A rank of 11, which the
+    dashboard then printed as "No. 11 in 3A" for an unbeaten team.
+
+    An entry declares this by carrying ``classRankPool`` — the class MaxPreps
+    still ranks it in.  Teams whose rank pool did not move are not tagged and
+    keep their rank, which is why the 8-man division split is absent here:
+    MaxPreps kept 8-man as two divisions all along and only our own scraper
+    merged the label, so those ranks already line up.
+
+    Delete the tag when MaxPreps adopts the new alignment and the rank becomes
+    meaningful again.
+    """
+    entry = _load().get(season, {}).get(team_id)
+    if entry is None:
+        return True
+    pool = entry.get("classRankPool")
+    return pool is None or pool == entry.get("classification")
