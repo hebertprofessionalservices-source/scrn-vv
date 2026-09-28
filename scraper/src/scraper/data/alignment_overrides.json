@@ -1,0 +1,409 @@
+{
+  "2026-27": {
+    "adams-county-christian-rebels-rebels": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 4",
+      "name": "Adams County Christian Rebels"
+    },
+    "amite-school-center-rebels-rebels": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 5",
+      "name": "Amite School Center Rebels"
+    },
+    "bayou-academy-colts-colts": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 1",
+      "name": "Bayou Academy Colts"
+    },
+    "bens-ford-christian-eagles-eagles": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Ben's Ford Christian Eagles"
+    },
+    "benton-academy-raiders-raiders": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 2 (8 Man)",
+      "name": "Benton Academy Raiders"
+    },
+    "bowling-green-buccaneers-buccaneers": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 5",
+      "name": "Bowling Green Buccaneers"
+    },
+    "briarfield-academy-rebels-rebels": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 8 (8 Man)",
+      "name": "Briarfield Academy Rebels"
+    },
+    "brookhaven-academy-cougars-cougars": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 4",
+      "name": "Brookhaven Academy Cougars"
+    },
+    "calhoun-academy-cougars-cougars": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 6 (8 Man)",
+      "name": "Calhoun Academy Cougars"
+    },
+    "canton-academy-panthers-panthers": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 4",
+      "name": "Canton Academy Panthers"
+    },
+    "carroll-academy-rebels-rebels": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 2",
+      "name": "Carroll Academy Rebels"
+    },
+    "cathedral-green-wave-green-wave": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 4",
+      "name": "Cathedral Green Wave"
+    },
+    "central-hinds-academy-cougars-cougars": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 3",
+      "name": "Central Hinds Academy Cougars"
+    },
+    "centreville-academy-tigers-tigers": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 4",
+      "name": "Centreville Academy Tigers"
+    },
+    "christ-covenant": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 2 (8 Man)",
+      "name": "Christ Covenant"
+    },
+    "christian-collegiate-academy-conquerors-conquerors": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 5",
+      "name": "Christian Collegiate Academy Conquerors"
+    },
+    "claiborne-academy-rebels-rebels": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 4 (8 Man)",
+      "name": "Claiborne Academy Rebels"
+    },
+    "clinton-christian-academy-warriors-warriors": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 4",
+      "name": "Clinton Christian Academy Warriors"
+    },
+    "columbia-academy-cougars-cougars": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 5",
+      "name": "Columbia Academy Cougars"
+    },
+    "columbus-christian-academy-rams-rams": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 6 (8 Man)",
+      "name": "Columbus Christian Academy rams"
+    },
+    "copiah-academy-colonels-colonels": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 3",
+      "name": "Copiah Academy Colonels"
+    },
+    "deer-creek-warriors-warriors": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 1 (8 Man)",
+      "name": "Deer Creek Warriors"
+    },
+    "delta-academy-raiders-raiders": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 1 (8 Man)",
+      "name": "Delta Academy Raiders"
+    },
+    "delta-streets-academy-lions-lions": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 1 (8 Man)",
+      "name": "Delta Streets Academy Lions"
+    },
+    "desoto-thunderbirds-thunderbirds": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 5 (8 Man)",
+      "name": "DeSoto Thunderbirds"
+    },
+    "discovery-christian": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Discovery Christian"
+    },
+    "east-rankin-academy-patriots-patriots": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 3",
+      "name": "East Rankin Academy Patriots"
+    },
+    "greenville-christian-saints-saints": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 2",
+      "name": "Greenville Christian Saints"
+    },
+    "hartfield-academy-hawks-hawks": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 2",
+      "name": "Hartfield Academy Hawks"
+    },
+    "hebron-christian-eagles-eagles": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 6 (8 Man)",
+      "name": "Hebron Christian Eagles"
+    },
+    "heritage-academy-patriots-patriots": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 2",
+      "name": "Heritage Academy Patriots"
+    },
+    "heritage-christian-academy-warriors-warriors": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 7 (8 Man)",
+      "name": "Heritage Christian Academy Warriors"
+    },
+    "hillcrest-christian-cougars-cougars": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Hillcrest Christian Cougars"
+    },
+    "humphreys-academy-rebels-rebels": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 1 (8 Man)",
+      "name": "Humphreys Academy Rebels"
+    },
+    "indianola-academy-colonels-colonels": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 2",
+      "name": "Indianola Academy Colonels"
+    },
+    "jackson-academy-raiders-raiders": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 2",
+      "name": "Jackson Academy Raiders"
+    },
+    "jackson-prep-patriots-patriots": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 2",
+      "name": "Jackson Prep Patriots"
+    },
+    "kemper-academy-rams-rams": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 6 (8 Man)",
+      "name": "Kemper Academy Rams"
+    },
+    "kirk-academy-raiders-raiders": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 1",
+      "name": "Kirk Academy Raiders"
+    },
+    "lamar-raiders-raiders": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 2",
+      "name": "Lamar Raiders"
+    },
+    "leake-academy-rebels-rebels": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 2",
+      "name": "Leake Academy Rebels"
+    },
+    "lee-academy-colts-colts": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 1",
+      "name": "Lee Academy Colts"
+    },
+    "lee-academy-cougars-cougars": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 5 (8 Man)",
+      "name": "Lee Academy Cougars"
+    },
+    "madison-ridgeland-academy-patriots-patriots": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 2",
+      "name": "Madison-Ridgeland Academy Patriots"
+    },
+    "magnolia-heights-chiefs-chiefs": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 1",
+      "name": "Magnolia Heights Chiefs"
+    },
+    "manchester-academy-mavericks-mavericks": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 4",
+      "name": "Manchester Academy Mavericks"
+    },
+    "marshall-academy-patriots-patriots": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 1",
+      "name": "Marshall Academy Patriots"
+    },
+    "marvell-academy-eagles-eagles": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 5 (8 Man)",
+      "name": "Marvell Academy Eagles"
+    },
+    "newton-county-academy-generals-generals": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Newton County Academy Generals"
+    },
+    "north-delta-green-wave-green-wave": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 1",
+      "name": "North Delta Green Wave"
+    },
+    "north-sunflower-academy-rebels-rebels": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 1 (8 Man)",
+      "name": "North Sunflower Academy Rebels"
+    },
+    "oak-forest-academy-yellowjackets-yellowjackets": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 3",
+      "name": "Oak Forest Academy Yellowjackets"
+    },
+    "oak-hill-academy-raiders-raiders": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 3",
+      "name": "Oak Hill Academy Raiders"
+    },
+    "parklane-academy-pioneers-pioneers": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 3",
+      "name": "Parklane Academy Pioneers"
+    },
+    "pillow-academy-mustangs-mustangs": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 1",
+      "name": "Pillow Academy Mustangs"
+    },
+    "porters-chapel-academy-eagles-eagles": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 2 (8 Man)",
+      "name": "Porter's Chapel Academy Eagles"
+    },
+    "prairie-view-academy-spartans-spartans": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 4 (8 Man)",
+      "name": "Prairie View Academy Spartans"
+    },
+    "prentiss-christian-saints-saints": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Prentiss Christian Saints"
+    },
+    "regents-lions-lions": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 1",
+      "name": "Regents Lions"
+    },
+    "river-oaks-mustangs-mustangs": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 4 (8 Man)",
+      "name": "River Oaks Mustangs"
+    },
+    "riverdale-academy-rebels-rebels": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 8 (8 Man)",
+      "name": "Riverdale Academy Rebels"
+    },
+    "riverfield-academy-raiders-raiders": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 3",
+      "name": "Riverfield Academy Raiders"
+    },
+    "rossville-christian-academy-wolves-wolves": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 1",
+      "name": "Rossville Christian Academy Wolves"
+    },
+    "silliman-institute-wildcats-wildcats": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 5",
+      "name": "Silliman Institute Wildcats"
+    },
+    "simpson-academy-cougars-cougars": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 3",
+      "name": "Simpson Academy Cougars"
+    },
+    "st-aloysius-flashes-flashes": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 3",
+      "name": "St. Aloysius Flashes"
+    },
+    "st-joseph-catholic-bruins-bruins": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 1",
+      "name": "St. Joseph Catholic Bruins"
+    },
+    "st-joseph-fighting-irish-fighting-irish": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 2",
+      "name": "St. Joseph Fighting Irish"
+    },
+    "starkville-academy-volunteers-volunteers": {
+      "classification": "MAIS-4A",
+      "district": "MAIS 4A District 1",
+      "name": "Starkville Academy Volunteers"
+    },
+    "sylva-bay-academy-saints-saints": {
+      "classification": "MAIS-8M-1A",
+      "district": "MAIS 8-Man 1A District 3 (8 Man)",
+      "name": "Sylva Bay Academy Saints"
+    },
+    "tallulah-academy-trojans-trojans": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 8 (8 Man)",
+      "name": "Tallulah Academy Trojans"
+    },
+    "tensas-academy-chiefs-chiefs": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 7 (8 Man)",
+      "name": "Tensas Academy Chiefs"
+    },
+    "tri-county-academy-rebels-rebels": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 3",
+      "name": "Tri-County Academy Rebels"
+    },
+    "tunica-academy-blue-devils-blue-devils": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 5 (8 Man)",
+      "name": "Tunica Academy Blue Devils"
+    },
+    "union-christian-academy-lions-lions": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 8 (8 Man)",
+      "name": "Union Christian Academy Lions"
+    },
+    "washington-generals-generals": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 1",
+      "name": "Washington Generals"
+    },
+    "wayne-academy-jaguars-jaguars": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 2",
+      "name": "Wayne Academy Jaguars"
+    },
+    "west-memphis-christian-black-knights-black-knights": {
+      "classification": "MAIS-3A",
+      "district": "MAIS 3A District 1",
+      "name": "West Memphis Christian Black Knights"
+    },
+    "wilkinson-county-christian-academy-rams-rams": {
+      "classification": "MAIS-8M-2A",
+      "district": "MAIS 8-Man 2A District 7 (8 Man)",
+      "name": "Wilkinson County Christian Academy Rams"
+    },
+    "winona-christian-stars-stars": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 2",
+      "name": "Winona Christian Stars"
+    },
+    "winston-academy-patriots-patriots": {
+      "classification": "MAIS-2A",
+      "district": "MAIS 2A District 3",
+      "name": "Winston Academy Patriots"
+    }
+  }
+}

@@ -12995,7 +12995,7 @@
     "mascot": "Stars",
     "city": "Winona",
     "classification": "MAIS-2A",
-    "district": "MAIS 2A District 3",
+    "district": "MAIS 2A District 2",
     "logoUrl": "/team-logos/winona-christian-stars-stars.png",
     "colors": {
       "primary": "#307090",
@@ -13678,8 +13678,8 @@
     "name": "Discovery Christian",
     "mascot": null,
     "city": "Florence",
-    "classification": "MAIS-2A",
-    "district": "MAIS 2A District 4",
+    "classification": "MAIS-8M-1A",
+    "district": "MAIS 8-Man 1A District 3 (8 Man)",
     "logoUrl": "/team-logos/discovery-christian.png",
     "colors": {
       "primary": "#1050b0",
@@ -13793,7 +13793,7 @@
     "mascot": "Rebels",
     "city": "Flora",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 2",
+    "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/tri-county-academy-rebels-rebels.png",
     "colors": {
       "primary": "#103030",
@@ -13964,7 +13964,7 @@
     "mascot": "Rebels",
     "city": "Natchez",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 3",
+    "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/adams-county-christian-rebels-rebels.png",
     "colors": {
       "primary": "#103070",
@@ -14078,7 +14078,7 @@
     "mascot": "Cougars",
     "city": "Columbia",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 4",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/columbia-academy-cougars-cougars.png",
     "colors": {
       "primary": "#103070",
@@ -14135,7 +14135,7 @@
     "mascot": "Rebels",
     "city": "Liberty",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 3",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/amite-school-center-rebels-rebels.png",
     "colors": {
       "primary": "#f01030",
@@ -14249,7 +14249,7 @@
     "mascot": "Cougars",
     "city": "Raymond",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 2",
+    "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/central-hinds-academy-cougars-cougars.png",
     "colors": {
       "primary": "#103010",
@@ -14306,7 +14306,7 @@
     "mascot": "Jaguars",
     "city": "Waynesboro",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 4",
+    "district": "MAIS 3A District 2",
     "logoUrl": "/team-logos/wayne-academy-jaguars-jaguars.png",
     "colors": {
       "primary": "#303090",
@@ -14420,7 +14420,7 @@
     "mascot": "Warriors",
     "city": "Clinton",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 3",
+    "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/clinton-christian-academy-warriors-warriors.png",
     "colors": {
       "primary": "#105090",
@@ -14477,7 +14477,7 @@
     "mascot": "Raiders",
     "city": "Rayville",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 2",
+    "district": "MAIS 3A District 3",
     "logoUrl": "/team-logos/riverfield-academy-raiders-raiders.png",
     "colors": {
       "primary": "#303010",
@@ -14591,7 +14591,7 @@
     "mascot": "Buccaneers",
     "city": "Franklinton",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 4",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/bowling-green-buccaneers-buccaneers.png",
     "colors": {
       "primary": "#103030",
@@ -14648,7 +14648,7 @@
     "mascot": "Conquerors",
     "city": "Gulfport",
     "classification": "MAIS-3A",
-    "district": "MAIS 3A District 4",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/christian-collegiate-academy-conquerors-conquerors.png",
     "colors": {
       "primary": "#301030",
@@ -14762,7 +14762,7 @@
     "mascot": "Raiders",
     "city": "Jackson",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 1",
+    "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/jackson-academy-raiders-raiders.png",
     "colors": {
       "primary": "#101070",
@@ -14876,7 +14876,7 @@
     "mascot": "Patriots",
     "city": "Madison",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 3",
+    "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/madison-ridgeland-academy-patriots-patriots.png",
     "colors": {
       "primary": "#105090",
@@ -14990,7 +14990,7 @@
     "mascot": "Colonels",
     "city": "Gallman",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/copiah-academy-colonels-colonels.png",
     "colors": {
       "primary": "#1050b0",
@@ -15103,8 +15103,8 @@
     "name": "Brookhaven Academy Cougars",
     "mascot": "Cougars",
     "city": "Brookhaven",
-    "classification": "MAIS-4A",
-    "district": "MAIS 4A District 3",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/brookhaven-academy-cougars-cougars.png",
     "colors": {
       "primary": null,
@@ -15161,7 +15161,7 @@
     "mascot": "Patriots",
     "city": "Jackson",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 2",
     "logoUrl": "/team-logos/jackson-prep-patriots-patriots.png",
     "colors": {
       "primary": "#103070",
@@ -15218,7 +15218,7 @@
     "mascot": "Volunteers",
     "city": "Starkville",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 2",
+    "district": "MAIS 4A District 1",
     "logoUrl": "/team-logos/starkville-academy-volunteers-volunteers.png",
     "colors": {
       "primary": "#f05030",
@@ -15274,8 +15274,8 @@
     "name": "Cathedral Green Wave",
     "mascot": "Green Wave",
     "city": "Natchez",
-    "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 4",
     "logoUrl": "/team-logos/cathedral-green-wave-green-wave.png",
     "colors": {
       "primary": "#105010",
@@ -15332,7 +15332,7 @@
     "mascot": "Patriots",
     "city": "Pelahatchie",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 2",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/east-rankin-academy-patriots-patriots.png",
     "colors": {
       "primary": "#103030",
@@ -15502,8 +15502,8 @@
     "name": "Silliman Institute Wildcats",
     "mascot": "Wildcats",
     "city": "Clinton",
-    "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "classification": "MAIS-3A",
+    "district": "MAIS 3A District 5",
     "logoUrl": "/team-logos/silliman-institute-wildcats-wildcats.png",
     "colors": {
       "primary": "#105030",
@@ -15674,7 +15674,7 @@
     "mascot": "Yellowjackets",
     "city": "Amite",
     "classification": "MAIS-4A",
-    "district": "MAIS 4A District 4",
+    "district": "MAIS 4A District 3",
     "logoUrl": "/team-logos/oak-forest-academy-yellowjackets-yellowjackets.png",
     "colors": {
       "primary": "#103030",
@@ -15902,7 +15902,7 @@
     "mascot": "Rebels",
     "city": "Belzoni",
     "classification": "MAIS-8M-1A",
-    "district": "MAIS 8-Man 1A District 2 (8 Man)",
+    "district": "MAIS 8-Man 1A District 1 (8 Man)",
     "logoUrl": "/team-logos/humphreys-academy-rebels-rebels.png",
     "colors": {
       "primary": "#f01030",
@@ -16073,7 +16073,7 @@
     "mascot": "Rebels",
     "city": "Haynesville",
     "classification": "MAIS-8M-1A",
-    "district": "8-Man Freelance (8 Man)",
+    "district": "MAIS 8-Man 1A District 4 (8 Man)",
     "logoUrl": "/team-logos/claiborne-academy-rebels-rebels.png",
     "colors": {
       "primary": "#103090",
@@ -16753,7 +16753,7 @@
     "name": "Wilkinson County Christian Academy Rams",
     "mascot": "Rams",
     "city": "Woodville",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/wilkinson-county-christian-academy-rams-rams.png",
     "colors": {
@@ -16810,7 +16810,7 @@
     "name": "Columbus Christian Academy rams",
     "mascot": "rams",
     "city": "Steens",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/columbus-christian-academy-rams-rams.png",
     "colors": {
@@ -16867,7 +16867,7 @@
     "name": "DeSoto Thunderbirds",
     "mascot": "Thunderbirds",
     "city": "West Helena",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/desoto-thunderbirds-thunderbirds.png",
     "colors": {
@@ -16924,7 +16924,7 @@
     "name": "Briarfield Academy Rebels",
     "mascot": "Rebels",
     "city": "Lake Providence",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/briarfield-academy-rebels-rebels.png",
     "colors": {
@@ -16981,7 +16981,7 @@
     "name": "Tallulah Academy Trojans",
     "mascot": "Trojans",
     "city": "Tallulah",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/tallulah-academy-trojans-trojans.png",
     "colors": {
@@ -17038,7 +17038,7 @@
     "name": "Lee Academy Cougars",
     "mascot": "Cougars",
     "city": "Marianna",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/lee-academy-cougars-cougars.png",
     "colors": {
@@ -17095,7 +17095,7 @@
     "name": "Calhoun Academy Cougars",
     "mascot": "Cougars",
     "city": "Calhoun City",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/calhoun-academy-cougars-cougars.png",
     "colors": {
@@ -17152,7 +17152,7 @@
     "name": "Tunica Academy Blue Devils",
     "mascot": "Blue Devils",
     "city": "Tunica",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/tunica-academy-blue-devils-blue-devils.png",
     "colors": {
@@ -17209,7 +17209,7 @@
     "name": "Marvell Academy Eagles",
     "mascot": "Eagles",
     "city": "Marvell",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 5 (8 Man)",
     "logoUrl": "/team-logos/marvell-academy-eagles-eagles.png",
     "colors": {
@@ -17266,7 +17266,7 @@
     "name": "Tensas Academy Chiefs",
     "mascot": "Chiefs",
     "city": "St. Joseph",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/tensas-academy-chiefs-chiefs.png",
     "colors": {
@@ -17323,7 +17323,7 @@
     "name": "Heritage Christian Academy Warriors",
     "mascot": "Warriors",
     "city": "Picayune",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 7 (8 Man)",
     "logoUrl": "/team-logos/heritage-christian-academy-warriors-warriors.png",
     "colors": {
@@ -17380,7 +17380,7 @@
     "name": "Union Christian Academy Lions",
     "mascot": "Lions",
     "city": "Farmerville",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/union-christian-academy-lions-lions.png",
     "colors": {
@@ -17437,7 +17437,7 @@
     "name": "Kemper Academy Rams",
     "mascot": "Rams",
     "city": "DeKalb",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/kemper-academy-rams-rams.png",
     "colors": {
@@ -17494,7 +17494,7 @@
     "name": "Riverdale Academy Rebels",
     "mascot": "Rebels",
     "city": "Coushatta",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 8 (8 Man)",
     "logoUrl": "/team-logos/riverdale-academy-rebels-rebels.png",
     "colors": {
@@ -17551,7 +17551,7 @@
     "name": "Hebron Christian Eagles",
     "mascot": "Eagles",
     "city": "Pheba",
-    "classification": "MAIS-8M-1A",
+    "classification": "MAIS-8M-2A",
     "district": "MAIS 8-Man 2A District 6 (8 Man)",
     "logoUrl": "/team-logos/hebron-christian-eagles-eagles.png",
     "colors": {

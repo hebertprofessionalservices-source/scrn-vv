@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Any
 
 from scraper import slugify as slug_mod
+from scraper.alignment import apply_alignment
 from scraper.models import (
     BoxScore,
     BoxScoreEntry,
@@ -92,13 +93,23 @@ def build_team(
 
     stats = TeamStats(pointsFor=points_for, pointsAgainst=points_against)
 
+    # The association's published alignment wins over the scraped class/district
+    # — MaxPreps lags realignment, and a hand-edit to teams.json would only
+    # survive until the next nightly scrape.  See scraper/alignment.py.
+    classification, district = apply_alignment(
+        team_id,
+        season,
+        team_home.get("classification", ""),
+        team_home.get("district"),
+    )
+
     return Team(
         id=team_id,
         name=name,
         mascot=mascot,
         city=team_home.get("city"),
-        classification=team_home.get("classification", ""),
-        district=team_home.get("district"),
+        classification=classification,
+        district=district,
         logoUrl=team_home.get("logoUrl"),
         season=season,
         record=record,
