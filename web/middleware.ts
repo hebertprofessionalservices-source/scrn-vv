@@ -3,10 +3,20 @@ import { ADMIN_COOKIE_NAME, verifyToken } from "@/lib/auth";
 
 const PUBLIC_PATHS = ["/unlock", "/api/unlock", "/_next", "/brand", "/favicon.ico"];
 
-export const config = { matcher: "/((?!api/admin/editorial).*)" };
+// Skip static assets: middleware on every logo and chunk only adds edge
+// invocations. /data stays matched so the block below can refuse it.
+export const config = {
+  matcher: "/((?!api/admin/editorial|_next/static|_next/image|team-logos|brand|favicon.ico).*)",
+};
 
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  // The scraped JSON lives in public/ so server code can read it from disk,
+  // but nothing in the browser fetches it. Serving it publicly let
+  // anyone (or any crawler) pull 40 MB+ files straight off the CDN.
+  if (pathname.startsWith("/data/")) {
+    return new NextResponse("Not found", { status: 404 });
+  }
   if (PUBLIC_PATHS.some((p) => pathname.startsWith(p))) {
     const res = NextResponse.next();
     res.headers.set("x-next-pathname", pathname);

@@ -1,11 +1,35 @@
 """Download and dedupe team logos."""
 from __future__ import annotations
 
+import io
 from pathlib import Path
 
 import httpx
+from PIL import Image, UnidentifiedImageError
 
 from scraper.http import StaticFetcher
+
+# Logos render at 96px at most (192px on 2x screens). MaxPreps serves up to
+# 1500px originals, and ~290 of them on one rankings page cost ~20 MB per visit.
+LOGO_MAX_PX = 256
+
+
+def shrink_logo(path: Path) -> None:
+    """Downscale to LOGO_MAX_PX and palette-quantize in place, if smaller.
+
+    Leaves the file alone when it isn't a readable image.
+    """
+    raw = path.read_bytes()
+    try:
+        im = Image.open(io.BytesIO(raw)).convert("RGBA")
+    except (UnidentifiedImageError, OSError):
+        return
+    im.thumbnail((LOGO_MAX_PX, LOGO_MAX_PX), Image.LANCZOS)
+    q = im.quantize(colors=256, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE)
+    buf = io.BytesIO()
+    q.save(buf, "PNG", optimize=True)
+    if buf.tell() < len(raw):
+        path.write_bytes(buf.getvalue())
 
 
 async def download_team_logo(
@@ -32,4 +56,7 @@ async def download_team_logo(
         ok = await fetcher.download(logo_url, target)
     finally:
         await fetcher.aclose()
-    return target if ok else None
+    if not ok:
+        return None
+    shrink_logo(target)
+    return target

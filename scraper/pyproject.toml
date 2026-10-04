@@ -12,6 +12,7 @@ dependencies = [
     "structlog>=24.4",
     "anyio>=4.4",
     "beautifulsoup4>=4.12",
+    "pillow>=10.0",
 ]
 
 [project.optional-dependencies]

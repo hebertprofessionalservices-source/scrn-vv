@@ -64,3 +64,17 @@ async def test_download_returns_none_on_404(tmp_path: Path, transport_404):
         transport=transport_404,
     )
     assert out is None
+
+
+def test_shrink_logo_downscales_large_png(tmp_path: Path):
+    from PIL import Image
+
+    from scraper.logos import LOGO_MAX_PX, shrink_logo
+
+    target = tmp_path / "big.png"
+    Image.new("RGBA", (1200, 900), (200, 30, 30, 255)).save(target)
+    before = target.stat().st_size
+    shrink_logo(target)
+    with Image.open(target) as im:
+        assert max(im.size) == LOGO_MAX_PX
+    assert target.stat().st_size <= before
