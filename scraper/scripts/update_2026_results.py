@@ -26,6 +26,7 @@ import json
 import re
 import sys
 from datetime import date as date_cls
+from datetime import datetime, time, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
@@ -220,9 +221,25 @@ async def main() -> None:
     by_path.pop(None, None)
 
     cache = CrawlCache(config.CACHE_DB_PATH)
+    # --use-cache must never replay a page saved before the games were over:
+    # a schedule page cached on an earlier night has no score for this date, so
+    # every row comes back unplayed and verification fails (2026-10-04). Pages
+    # fetched before midnight after game day are refetched even with --use-cache.
+    fresh_after = datetime.combine(day + timedelta(days=1), time.min).timestamp()
+    refetched = 0
+
+    async def fetch(h: BrowserHarness, url: str) -> str:
+        nonlocal refetched
+        stale = False
+        if not force:
+            hit = cache.get(url)
+            stale = hit is not None and hit.fetched_at < fresh_after
+            refetched += stale
+        return await _fetch_html(h, url, cache, force=force or stale)
+
     async with BrowserHarness(headless=True) as h:
         board_url = f"{config.MAXPREPS_BASE}/ms/football/scores/?date={mp_date}"
-        board = parse_scoreboard(await _fetch_html(h, board_url, cache, force=force))
+        board = parse_scoreboard(await fetch(h, board_url))
         print(f"scoreboard: {len(board)} contests on {args.date}", flush=True)
 
         # Resolve each contest's schools; the scoreboard only carries short names.
@@ -230,7 +247,7 @@ async def main() -> None:
         for c in board:
             # One unreachable game page must not abort the whole slate.
             try:
-                html = await _fetch_html(h, c["url"], cache, force=force)
+                html = await fetch(h, c["url"])
             except Exception as exc:  # noqa: BLE001
                 print(f"  !! {c['away']['name']} @ {c['home']['name']}: "
                       f"game page unreachable ({type(exc).__name__}) — {c['url']}", flush=True)
@@ -257,7 +274,7 @@ async def main() -> None:
         team_patch: dict[str, dict] = {}
         for i, (tid, t) in enumerate(sorted(involved.items()), 1):
             urls = derive_team_season_urls(team_url=t["maxprepsUrl"], season_short=SHORT)
-            html = await _fetch_html(h, urls["schedule"], cache, force=force)
+            html = await fetch(h, urls["schedule"])
             payload = extract_next_data_payload(html)
             if payload is None:
                 print(f"  [{i}] {t['name']}: no schedule data", flush=True)
@@ -301,6 +318,8 @@ async def main() -> None:
             print(f"  [{i}] {t['name']}: {len(partials)} games, "
                   f"{record['wins']}-{record['losses']}", flush=True)
 
+    if refetched:
+        print(f"\nrefetched {refetched} cached pages saved before {args.date} ended")
     all_partials = [g for _, rows in scraped for g in rows]
     fixed, defaulted, reconciled = orient(all_partials, truth)
     print(f"\nhome/away: {fixed} from MaxPreps, {defaulted} defaulted, "
