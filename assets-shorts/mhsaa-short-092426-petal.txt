@@ -1,0 +1,101 @@
+VARSITY VOICES — MHSAA SHORT — PETAL 40, GULFPORT 39 (OT, WEEK 4)
+Publish date: Sep 24, 2026
+Source video: https://youtube.com/shorts/5BYAtbYrVqg
+
+Verified in games.json (2026-09-18-gulfport-admirals-admirals-at-petal):
+  Petal 40, Gulfport 39 — Sep 18, 2026, at Petal.
+  Quarter scores, Petal: 7 / 10 / 7 / 8 — plus 8 in a fifth period (overtime).
+  Quarter scores, Gulfport: 0 / 13 / 0 / 19 — plus 7 in overtime.
+  So: Petal led 24-13 after three, Gulfport scored 19 in the fourth to tie it
+    32-32, and Petal took the overtime 8-7 (TD + two-point vs. TD + PAT).
+  Petal (teams.json): 7A, 7A Region 3, 4-0, No. 3 in class and statewide.
+  Gulfport (teams.json): 7A, 7A Region 4, 2-1, No. 4 in class and statewide.
+
+THE BOX SCORE IN THIS GAME IS GULFPORT'S, NOT PETAL'S. Every name in it maps to
+a Gulfport player in players.json — J. Wolverton is Jackson Wolverton (So, QB,
+Gulfport), plus Amijai Frederick, Javious Hales, Camden Morgan and Mylan Stubbs.
+Petal's side has no box score (dataStatus "incomplete"). The 393-yard passing
+game belongs to the team that LOST. Bullets below are written accordingly — do
+not credit any of those numbers to Petal on air.
+
+"UPSET" DOESN'T HOLD UP against the repo data: Petal went in 3-0 and ranked No.
+3; Gulfport was 2-1 and No. 4; Petal was at home. The supplied hook calls it an
+upset — I left that out of the title and copy. Say the word if the show framed
+it that way for a reason I can't see here and I'll put it back.
+
+Not a Player of the Week package.
+
+=== ASSET 1 — TITLE ===
+Petal 40, Gulfport 39 in OT — Panthers Survive the Rally | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+Petal 40, Gulfport 39 in OT — Panthers Survive the Rally | Varsity Voices
+
+https://youtube.com/shorts/5BYAtbYrVqg
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. A one-point overtime classic on the road to nowhere but 7A: Petal holds off Gulfport 40-39 after the Admirals nearly stole it in the fourth.
+
+IN THIS CLIP
+• Petal 40, Gulfport 39 — decided in overtime
+• The Panthers lead 24-13 after three quarters and look to be in control
+• Gulfport answers with 19 points in the fourth to force overtime at 32-32
+• Petal wins it on a touchdown and a two-point conversion; Gulfport's overtime answer is a TD and the extra point
+• Jackson Wolverton throws for 393 yards and 4 TDs for Gulfport in a losing effort
+• Camden Morgan (8-121) and Javious Hales (8-97) go over the century mark for the Admirals
+• Petal moves to 4-0; Gulfport falls to 2-1
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night football stadium seen through light rain drifting across the light beams, shot with sideline telephoto compression so the packed bleachers crush into a soft warm-gold bokeh wall behind the field.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "ONE POINT" in huge white all-caps distressed font, stacked above "IN OVERTIME" in even larger red distressed all-caps font, rough torn-paper and spray-paint texture, strong outline/drop shadow.
+
+Below the headline, one matchup block centered in the frame: two bare, unlabeled dark-charcoal/red-rim circular wells side by side — left well for the Petal Panthers, right well for the Gulfport Admirals — separated by a small red "VS" chip with bold white all-caps text. Beneath the matchup block, a torn-poster card spanning most of the frame's width with bold white distressed all-caps text reading "40-39". This block and card fill the space between the headline and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip and the "VS" chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · PETAL 4-0"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image.
+
+Overall style: high-contrast, gritty, red-black-white color palette with warm gold highlights, heavy torn-paper edge and rain-streak texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Petal Panthers · Gulfport Admirals. (No MHSAA logo — it's rendered as text.) Both team logos are in assets/logos-teams/.
+
+=== ASSET 4 — TAGS (423 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Petal Panthers,Gulfport Admirals,7A football,overtime
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+The supplied hook mentions a "2-minute drill win." Nothing in the repo data
+confirms who ran it or when — the quarter-by-quarter only shows Gulfport's
+19-point fourth and Petal's 8-point overtime. I left the specific 2-minute-drill
+claim out of the copy rather than guess at it; if the broadcast described it,
+tell me whose drive it was and I'll work it into a bullet.
+
+Season totals for the Gulfport names (players.json, through 3 games): Jackson
+Wolverton 59/79, 773 yds, 8 TD, 3 INT; Camden Morgan 13 rec, 202 yds; Javious
+Hales 15 rec, 173 yds.
+
+Dials: sideline telephoto compression, light rain through the beams, warm gold
+rim light, torn-paper edge texture — a combination not used on the Wade,
+Trivillion, Hudson, or Brandon Shorts.

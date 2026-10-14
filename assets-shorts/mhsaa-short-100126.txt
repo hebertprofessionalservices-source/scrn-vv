@@ -1,0 +1,65 @@
+MHSAA SHORT — WEEK 6 PREVIEW: BEST & WORST SEGMENT
+Publish date: 2026-10-01 · Source: edit-03-jared-bd.txt (Jared Shotts, Brandon Davis) · Dials: packed crowd · warm gold · chalk dust · clockwise tilt
+
+=== ASSET 1 — TITLE ===
+Tupelo Best, West Point 0-4 — MHSAA Best & Worst | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+Tupelo Best, West Point 0-4 — MHSAA Best & Worst | Varsity Voices
+
+https://youtu.be/-lTMyNoWDhw
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. In the MHSAA Week 6 preview, Jared Shotts hands out his best and worst awards of the season so far, with Brandon Davis agreeing on the best defense.
+
+IN THIS CLIP
+• Best team — Tupelo
+• Best player — Ty Keys, Poplarville: 18 total touchdowns
+• Best coach — Eugene Clinton, Brandon: four straight wins since the opening loss to Tupelo
+• Best game — Petal 40, Gulfport 39
+• Best offense — Kosciusko, about 52 points a game, led by Caden Wade
+• Best defense — Amite County: zero points allowed in five games
+• Biggest surprise — Canton: 5-0 for the first time since 1978
+• Biggest disappointment — West Point: 0-4 for the first time since 1998
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL 9:16 ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 6 preview Short about the best and worst of the season so far, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a packed big-school crowd blurred into warm-gold-tinted bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Do not write any text, caption, initials, or name on or beside any well except the C Spire "PRESENTED BY" label — every other well is a bare, unlabeled circle, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "THE BEST" in huge white all-caps distressed font, stacked above "& WORST" in even larger red distressed all-caps font, rough chalk-dust-and-spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Filling the middle of the frame below the headline, one very large real-team matchup block, a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. The matchup is Tupelo vs West Point.
+
+Below the matchup card, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text reading "BEST TEAM VS BIGGEST DISAPPOINTMENT" — no trailing period inside the quoted text. This card fills the space between the matchup card and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 6 · PREVIEW".
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row. No periods anywhere in the image: none of the rendered text — headline, context card, league chip, or banner — ends with or contains a period or full stop.
+
+Overall style: high-contrast, gritty, red-black-white color palette, chalk dust in the light beams overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Tupelo · West Point. (No MHSAA logo — it's rendered as text, not a composited file.)
+
+=== ASSET 4 — TAGS (494 chars) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,college football,friday night lights,Tupelo,West Point,Ty Keys,Eugene Clinton,Amite County,Canton Tigers,Kosciusko,Poplarville,Brandon
+
+=== VERIFICATION (dashboard data) ===
+Tupelo 5-0, Amite County 5-0 (216-0), Poplarville 5-0, Canton Tigers 5-0, Kosciusko 5-0 (264 points, 52.8 a game; Jared said 262 and 52), West Point 0-4, Brandon 4-1 (opening loss 38-14 to Tupelo, then four wins). Tupelo 34, West Point 6 on 2026-09-25.

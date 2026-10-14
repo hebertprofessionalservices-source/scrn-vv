@@ -1,0 +1,53 @@
+MAIS Week 5 Preview Short — Coop's Pick, Jackson Prep vs. MRA
+Publish date: 2026-09-16
+
+=== ASSET 1 — TITLE ===
+3 TDs of Revenge — Coop's Pick for Prep Over MRA | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+3 TDs of Revenge — Coop's Pick for Prep Over MRA | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Co-Host Cooper Sanders makes his call on Friday's biggest MAIS Week 5 showdown, Jackson Prep at Madison-Ridgeland Academy.
+
+ON THIS EPISODE
+• Coop's pick — Jackson Prep over MRA in Friday's Big Four showdown
+• Wade Smith, held in check by Tri-County last week, predicted for a 3-touchdown revenge game
+• A win vaults Jackson Prep into the number two spot in the MAIS, per Coop
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MAIS #MississippiFootball #HighSchoolFootball #VarsityVoices #MAISFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 5 preview Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with a packed big-school crowd blurred into warm-gold-tinted haze bokeh, bright stadium lights flaring.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MAIS" — this is real rendered text, not a logo or placeholder.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "REVENGE" in huge white all-caps distressed font, stacked above "GAME" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Filling the middle of the frame below the headline, one large real-team matchup/rivalry block: a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron for Jackson Prep Patriots and Madison-Ridgeland Academy Patriots, no player photography. Size the card generously so it fills most of the frame's width and a large share of its height, since it is the only matchup block in this composition.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MAIS WEEK 5 · PREVIEW."
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, card, or banner.
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white color palette, heavy film grain texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Jackson Prep Patriots · Madison-Ridgeland Academy Patriots. (No MAIS logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (489 characters) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,football coaching strategy,football offensive schemes,college football,friday night lights,Jackson Prep,Madison-Ridgeland Academy

@@ -1,0 +1,100 @@
+VARSITY VOICES — MHSAA SHORT — LOYD STAR 36, BOGUE CHITTO 0 (POSSUM BOWL, WEEK 4)
+Publish date: Sep 24, 2026
+Source video: https://youtube.com/shorts/G2LTkJ7cjmg
+
+Verified in games.json (2026-09-18-loyd-star-at-bogue-chitto-bobcats-bobcats):
+  Loyd Star 36, Bogue Chitto 0 — Sep 18, 2026, at Bogue Chitto. Shutout.
+  Quarters, Loyd Star: 8 / 7 / 14 / 7. Bogue Chitto: 0 / 0 / 0 / 0.
+  Loyd Star rushing: 54 carries, 425 yards, 5 TD.
+  Loyd Star passing: 1-of-4, 5 yards — the whole passing game.
+  P. Spencer (Sr, QB): 33 car, 173 yds, 1 TD.
+  T. Fortenberry (Sr, ATH): 14 car, 123 yds, 2 TD.
+  B. Richardson (Sr, RB): 3 car, 114 yds, 2 TD — 38 yards a carry.
+  Names confirmed against players.json (all Loyd Star): Phillip Ross Spencer,
+    Tristan Fortenberry, Brayden Richardson.
+  Loyd Star (teams.json): 2A, 2A Region 7, 3-1, No. 22 in class.
+  Bogue Chitto (teams.json): 1A, 1A Region 7, 1-3, No. 23 in class.
+
+SPELLING: it is "Loyd Star," one L — the invocation typed "Lloyd Starr." Used
+the repo/school spelling throughout.
+
+"SHOCKER" DOESN'T HOLD UP against the repo data: Loyd Star is a 2A team that
+went in 3-1 against a 1-3 1A team. A 36-0 win is a rout, not an upset — I built
+the copy around the run/pass split instead, which is the genuinely striking
+number. Tell me if the show framed it as a shocker for a reason not in the data.
+
+Not a Player of the Week package.
+
+=== ASSET 1 — TITLE ===
+Possum Bowl: 425 Rushing Yards, 5 Passing — Loyd Star 36-0 | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+Possum Bowl: 425 Rushing Yards, 5 Passing — Loyd Star 36-0 | Varsity Voices
+
+https://youtube.com/shorts/G2LTkJ7cjmg
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Loyd Star ran it 54 times, threw it four, and shut out Bogue Chitto 36-0 in the Possum Bowl. The box score has to be seen to be believed.
+
+IN THIS CLIP
+• Loyd Star 36, Bogue Chitto 0 — a Week 4 shutout in the Possum Bowl
+• 54 carries, 425 rushing yards, 5 rushing touchdowns
+• 1-of-4 for 5 yards through the air — five passing yards all night
+• Phillip Ross Spencer carries it 33 times for 173 yards and a score
+• Tristan Fortenberry runs for 123 and two more
+• Brayden Richardson needs just 3 carries for 114 yards and 2 TDs — 38 yards a pop
+• The Hornets are 3-1
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a small-town country football field at night lit by a single bank of harsh white-hot floodlights over modest metal bleachers, torn-up muddy turf and kicked-up sod spray hanging in the glare, cold hard shadows, shot at a slight dutch tilt.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "425 RUSHING" in huge white all-caps distressed font, stacked above "5 PASSING" in even larger red distressed all-caps font, rough mud-spatter and heavy film-grain texture, strong outline/drop shadow.
+
+Below the headline, one matchup block centered in the frame: two bare, unlabeled dark-charcoal/red-rim circular wells side by side — left well for the Loyd Star Hornets, right well for the Bogue Chitto Bobcats — separated by a small red "VS" chip with bold white all-caps text. Beneath the matchup block, a torn-poster card spanning most of the frame's width with bold white distressed all-caps text reading "36-0 SHUTOUT". This block and card fill the space between the headline and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip and the "VS" chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · POSSUM BOWL"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image.
+
+Overall style: high-contrast, gritty, red-black-white color palette with harsh white floodlight highlights, heavy film-grain and mud-spatter texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Loyd Star Hornets · Bogue Chitto Bobcats. (No MHSAA logo — it's rendered as text.) Both team logos are in assets/logos-teams/.
+
+=== ASSET 4 — TAGS (432 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Loyd Star Hornets,Bogue Chitto Bobcats,Possum Bowl,2A football
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+"Possum Bowl" is used as supplied — it's Garret's name for the Loyd Star /
+Bogue Chitto rivalry game. Nothing in the repo names the rivalry, so nothing is
+claimed about its history, trophy, or series record.
+
+Season totals (players.json, through 4 games): Spencer 77 car, 419 yds, 4 TD
+rushing and 9/22, 88 yds, 1 TD, 2 INT passing; Fortenberry 51 car, 506 yds,
+6 TD; Richardson 29 car, 289 yds, 4 TD.
+
+Dials: single bank of harsh white floodlights over modest bleachers, slight
+dutch tilt, mud/sod spray, heavy film grain, no trophy — small-class grit tone,
+and a combination not used on the Wade, Trivillion, Hudson, Brandon, or Petal
+Shorts.

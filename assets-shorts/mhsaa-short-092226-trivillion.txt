@@ -1,0 +1,91 @@
+VARSITY VOICES — MHSAA SHORT — PARIS TRIVILLION (WEEK 4 vs. ST. STANISLAUS)
+Publish date: Sep 22, 2026
+Source video: https://youtube.com/shorts/zSMCHasGAuw
+
+REGENERATED 2026-09-22 per Garret: the earlier version of this package pointed
+at the wrong game (the Week 2 Purvis POTW performance). Correct game is the
+Sep 18, 2026 Week 4 meeting with St. Stanislaus — Pass Christian 49,
+St. Stanislaus 14.
+
+Verified in games.json (2026-09-18-st-stanislaus-at-pass-christian-pirates-pirates):
+  Pass Christian 49, St. Stanislaus 14 — quarters 14/21/14/0 to 7/7/0/0.
+  P. Trivillion passing: 16/28, 294 yds, 4 TD, 1 INT — matches the box score
+    Garret attached exactly.
+  P. Trivillion rushing: 8 car, 79 yds, 2 TD — matches.
+  Totals: 373 yards, 6 TDs.
+  M. Burks: 9 rec, 176 yds, 3 TD (Trivillion's top target).
+  Pass Christian is 4-0 (48-3 Long Beach, 55-19 Purvis, 40-38 Presbyterian
+    Christian, 49-14 St. Stanislaus).
+
+Not a Player of the Week package — MHSAA Week 4 POTW was Yoshawn Hudson.
+
+=== ASSET 1 — TITLE ===
+373 Yards, 6 TDs — Trivillion Torches St. Stanislaus | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+373 Yards, 6 TDs — Trivillion Torches St. Stanislaus | Varsity Voices
+
+https://youtube.com/shorts/zSMCHasGAuw
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Pass Christian senior quarterback Paris Trivillion puts up six touchdowns in a 49-14 Week 4 rout of St. Stanislaus to push the Pirates to 4-0.
+
+IN THIS CLIP
+• Trivillion goes 16-of-28 for 294 yards and 4 TDs through the air
+• Adds 8 carries for 79 yards and 2 more scores on the ground
+• 373 total yards, 6 total touchdowns in a 49-14 win over St. Stanislaus
+• Pass Christian scores 35 unanswered from the second quarter on
+• Malik Burks hauls in 9 catches for 176 yards and 3 TDs
+• The Pirates move to 4-0
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football highlight Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic coastal night football stadium under a deep indigo evening sky, low sea fog rolling across the field, cool silver-white light flares from the towers and soft blue-white bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "373 YARDS" in huge white all-caps distressed font, stacked above "6 TDS" in even larger red distressed all-caps font, rough halftone newsprint dot texture, strong outline/drop shadow.
+
+Below the headline, a torn-poster nameplate card with bold white distressed all-caps text reading "PARIS TRIVILLION". Beside or beneath the nameplate, one bare, unlabeled dark-charcoal/red-rim well — the Pass Christian Pirates, and the ONLY team logo in this composition, no second team, no "VS" card.
+
+Below the nameplate card, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text reading "49-14 OVER SAINT STANISLAUS". This card fills the space between the nameplate and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · PIRATES 4-0"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image — this clip is not being presented as that segment.
+
+Overall style: high-contrast, gritty, red-black-white color palette with cool silver highlights, heavy halftone newsprint texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Pass Christian Pirates — exactly one team logo, never two. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (449 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Paris Trivillion,Pass Christian Pirates,quarterback,St. Stanislaus Rock-a-Chaws
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+Malik Burks: first name taken from the 2026-27 roster entry matching box-score
+"M. Burks(Jr)" — verify on air if it gets read aloud.
+
+Dials varied from the four existing Trivillion thumbnails (packed crowd/warm
+gold/spray-paint scuff; single light bank/cool blue/heavy film grain; light
+rain/warm gold/torn paper edges; tunnel smoke/red haze/film grain): this one
+uses a coastal indigo sky with sea fog, cool silver-white rim light, and
+halftone newsprint dot texture.

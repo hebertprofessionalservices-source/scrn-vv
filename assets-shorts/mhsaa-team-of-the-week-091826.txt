@@ -1,0 +1,87 @@
+VARSITY VOICES — MHSAA WEEK 3 TEAM OF THE WEEK — LEAKE CENTRAL GATORS — FULL EPISODE FORMAT
+Publish date: Sep 18, 2026 (assumed — Garret did not specify a publish date on invocation; adjust filename/date if wrong)
+
+TITLE
+Varsity Voices | MHSAA Week 3 Team of the Week — Leake Central Gators
+
+DESCRIPTION
+Varsity Voices | MHSAA Week 3 Team of the Week — Leake Central Gators
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Co-Host Jared Shotts sits down with Leake Central head coach Kenneth Whitfield, whose Gators are the Mississippi Sports Medicine MHSAA Team of the Week after opening 3-0.
+
+ON THIS SEGMENT
+• Leake Central improves to 3-0 — a 35-0 shutout of Provine, a 34-18 win over Vicksburg, and a 59-26 rout of Holmes County
+• Davion Townsend does it all: 7-of-9 passing for 140 yards and 2 TDs, 9 carries for 141 yards and 2 more TDs, plus a 43-yard pick-six against Holmes County
+• Coach Whitfield on leading the newly consolidated Leake Central/Leake County program: "winning cures all... we built it through hard work and raising the level of expectation"
+• A coaching tree running through Louisville, a JUCO stop under Coach Underwood, Delta State under Ryan Roberts, and stints at Ole Miss and Forest Hill
+• Other key contributors: running back Michelle LaFleur, linebacker Grant Allen, Richard Harris, Damarian Moore and the offensive line
+• Next up — Friday night against Lanier and Coach Tommy Kelly, with Heidelberg and Cleveland Central still to come
+
+This segment is brought to you by Mississippi Sports Medicine.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+THUMBNAIL PROMPT — 16:9 (YOUTUBE)
+A high-energy YouTube thumbnail in 16:9 widescreen (1280x720) format for a Mississippi high school football Team of the Week segment. Composition reads like a torn-newspaper / poster cutout: white and red torn-paper stripe edges, layered card shapes with jagged edges and slight dynamic tilt, drop shadows throughout, high energy — not a flat dark-card layout. Reserve clean-edged circular placeholder zones for logos to be composited in later, each sized smaller than its reserved space so the real PNG drops in without overflow. Fill every placeholder circle with a solid dark charcoal-black tone that matches the poster's night-stadium shadow values — NOT white, not a flat pale color — finished with a thin red rim-light ring around the edge so each one reads as a sunken logo well built into the poster rather than a blank white stamp: the State Championships Radio Network shield well in the TOP-LEFT, the Varsity Voices mark well in the TOP-RIGHT, and the C Spire logo well in the BOTTOM-LEFT area just above the bottom banner, with a small white all-caps "PRESENTED BY" label directly above it, center-aligned to the C Spire circle. Do not draw, letter, outline in white, recolor, or imply the actual contents of any placeholder circle — they are genuinely empty dark circular wells, not sketched logos and not white stamps. Bold, gritty, heavy impact-style stadium poster typography with rough spray-paint/torn edges and a strong outline stroke dominates the upper-left portion of the frame, reading "TEAM OF" in huge white all-caps font, stacked above "THE WEEK" in even larger red distressed all-caps font — oversized, legible at small thumbnail size (judge scale as if viewed at ~250px wide). Directly beneath the headline, a small red chip with bold white all-caps text reading "MHSAA." On the right side of the frame, one large torn-paper card with slight dynamic tilt: a single circular placeholder zone — filled with the same dark charcoal-black tone and thin red rim-light ring as the corner logo wells (NOT white) — reserved for the Leake Central Gators team logo only, with no second or opponent logo anywhere in the frame. Directly beneath that logo well, on its own torn-paper strip, a bold white all-caps nameplate reads "LEAKE CENTRAL" in the same distressed poster typography as the headline, sized to be clearly legible at small thumbnail size. Below the nameplate, one more torn-poster card spanning most of the frame's width, with bold white distressed all-caps text stating "3-0 · 128 POINTS SCORED," closing the gap between the nameplate and the presented-by section. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a single light bank over modest bleachers blurred into cool-blue-tinted bokeh — no crowd spectacle, no trophy prop, a gritty small-classification look. Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "WEEK 3 · TEAM OF THE WEEK," positioned so it does not overlap the C Spire circle or its label. Overall style: high-contrast, gritty, red-black-white color palette, heavy film grain texture overlays, dramatic cool-blue-tinted rim lighting, editorial poster-style typography, optimized for maximum click-through at small sizes. Keep it uncluttered: no anonymous player cutouts, no second/opponent team logo, no invented matchup or "VS" card, no section labels, no publish date, no tagline copy, no social platform icon row, no website URL.
+
+THUMBNAIL PROMPT — 3:4 (PORTRAIT CONVERSION)
+Using the finished, logo-composited 16:9 thumbnail as the source image, convert it into a 3:4 portrait (1080x1440) version. Do not stretch, squash, skew, or distort anything — retain all styling, fonts, colors, and textures exactly as in the source. Every logo keeps its original aspect ratio unchanged; in particular, keep every circular logo (SCRN, Varsity Voices, C Spire, and Leake Central) a perfect 1:1 circle, scaled uniformly by the same amount horizontally and vertically — never compressed into an oval to fit a row's height. Reflow (don't just crop) the existing elements to fill the taller portrait frame: SCRN and Varsity Voices logos stay in a top row, the "TEAM OF / THE WEEK" headline and MHSAA chip stack full-width below that, the single Leake Central logo card with the "LEAKE CENTRAL" nameplate and the "3-0 · 128 POINTS SCORED" stat card sit centered beneath that, filling the frame with no large empty gaps, and the C Spire logo with its centered "PRESENTED BY" label plus the bottom red banner stay at the bottom, center-aligned to each other.
+
+TAGS (460 characters)
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,friday night lights,mississippi high school football,mhsaa football,Leake Central Gators,Kenneth Whitfield,Davion Townsend
+
+LOGOS NEEDED FOR THIS PROMPT
+- SCRN shield (top-left)
+- Varsity Voices mark (top-right)
+- C Spire logo (bottom-left, "Presented By")
+- Leake Central Gators — single team logo, right-side card (no opponent logo per the POTW/TOTW rule)
+
+NOTES
+
+TEAM IDENTITY CORRECTION — supersedes the last episode's fix: earlier today, in
+the MHSAA Week 4 Preview full episode, I corrected the transcript's "League
+Central"/"Leak" Gators to "Leake County Alligators" (coach Kenneth Whitfield),
+reasoning from teams.json's headCoach field alone. That was backwards. This
+transcript's own schedule account — Provine, then Vicksburg, then Holmes
+County, then "Lanier this Friday," then Heidelberg, then Cleveland Central —
+matches games.json's actual 2026-27 schedule for LEAKE CENTRAL GATORS
+(Carthage) exactly, including the Aug 28 Provine game (35-0, confirmed below)
+and the Sep 18 Lanier game. Leake County Alligators (Walnut Grove) has no
+games logged this season at all. teams.json's headCoach fields for both
+entries appear stale from before the consolidation — Leake County still shows
+Whitfield from his prior stop there, and Leake Central still shows Sherrod
+Gideon from before he presumably moved over. The active, currently-playing
+program is Leake Central. Recommend fixing the Week 4 Preview episode's
+description/thumbnail to Leake Central Gators, and flagging teams.json's
+headCoach fields as needing a data update — did not edit that file or the
+data myself.
+
+Repo-verified facts (web/public/data/2026-27/games.json):
+  Aug 28: Leake Central Gators 35, Provine 0 — matches "shutout win over
+    Provine, 35 to nothing" exactly.
+  Sep 4 at Vicksburg: game exists in games.json but is still marked
+    "scheduled" with null scores — a data gap, not a contradiction. Used the
+    34-18 final as stated by Coach Whitfield on air (a direct primary-source
+    account), since the dashboard hasn't caught the result yet.
+  The Holmes County game (59-26) isn't in games.json at all — same kind of
+    gap. Used as stated on air.
+  Sep 18: Lanier at Leake Central — matches "Friday night" and "Lanier and
+    Coach Tommy Kelly" exactly.
+  Sep 25: Heidelberg at Leake Central. Oct 2: Leake Central at Cleveland
+    Central — both match "the week after" and "then Cleveland Central."
+
+Not used, because unverifiable: Davion Townsend's individual stat line (2026
+player stat lines are empty in players.json, a known gap) — used as stated by
+Coach Whitfield. The full assistant-coach/mentor list (Damien Cadwell, Lamir
+Goldhi, Coach Franch, Skylar McGee, Coach Montgomery, Terrence Pope, etc.) is
+as-spoken only; trimmed the description to the clearest, most confidently
+transcribed names (Ryan Roberts at Delta State, Ole Miss, Forest Hill,
+Terrence Pope) rather than risk misspelling the others.

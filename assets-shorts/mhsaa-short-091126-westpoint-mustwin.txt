@@ -1,0 +1,53 @@
+TITLE
+0-2 and On the Brink — West Point's Must-Win | Varsity Voices
+
+DESCRIPTION
+0-2 and On the Brink — West Point's Must-Win | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Jared Shotts and Brandon Davis break down why West Point's Week 3 trip to Noxubee County is a must-win — and what's still wide open at the top of 5A North.
+
+MHSAA WEEK 3 PREVIEW
+• West Point (0-2) at Noxubee County — a loss makes it 0-3, a skid Brandon Davis can't recall happening under Chambless or Brett
+• Brandon Davis: "Three is a trend" — good or bad
+• 5A North is still up for grabs behind South Panola's slide: Pontotoc, New Hope, and Cleveland Central all unproven so far
+• Kickoff Friday night
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+LOGOS NEEDED FOR THIS PROMPT
+SCRN · Varsity Voices · C Spire · West Point Green Wave · Noxubee County Tigers. No MHSAA logo — it's rendered as text, not a composited file.
+
+THUMBNAIL PROMPT — 9:16 (Short main crop, 1080x1920)
+A high-energy vertical poster-style thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 3 preview. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with light rain or mist drifting through the stadium lights, atmospheric haze, red-tinted haze.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge so it reads as a sunken "logo well" built into the poster. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Bold, gritty stadium poster typography: "WEEK 3" in huge white all-caps distressed font, stacked above "MUST WIN" in even larger red distressed all-caps font with rough, weathered spray-paint texture and a strong outline/drop shadow so it pops at small size — heavy impact-style caps, not clean/flat lettering.
+
+Below the headline, one large real-team matchup card filling most of the remaining frame height: a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, one for West Point's Green Wave and one for Noxubee County's Tigers, no player photography.
+
+Along the bottom of the frame, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 3 · PREVIEW." Keep the bottom 15 percent and right 12 percent of the frame clear of important content for Shorts/Reels UI overlap.
+
+Explicitly exclude: any section label in a corner, publish date or kickoff time, ad-style tagline text ("your home for Mississippi high school football," "watch · listen · follow," etc.), and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white palette, torn paper edge texture, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+THUMBNAIL PROMPT — 3:4 conversion (1080x1440, run against the finished logo-composited 9:16 image, not a standalone prompt)
+Take the finished, logo-composited 9:16 image above and convert it into a 3:4 portrait ratio (1080x1440) version. Do not add, invent, or render any logo, brand mark, or text that is not already visibly present in the source image — reproduce only what's actually there. Do not stretch, squash, or distort anything — retain all styling, fonts, colors, and textures exactly, including the rendered "MHSAA" league-chip text (leave it as text — do not turn it into a logo). Reflow (don't just crop) the existing elements to fill the taller-but-less-extreme portrait frame: SCRN and Varsity Voices logos stay in a top row; the "WEEK 3" / "MUST WIN" headline and MHSAA chip stack below that; the West Point vs. Noxubee County matchup card sits below that, filling the frame with no large empty gaps; the presented-by sponsor logo (whatever was actually composited into the source image) and its "PRESENTED BY" label stay bottom, center-aligned to each other above the banner. Every composited logo must stay at its original aspect ratio and remain a perfect 1:1 circle, scaled uniformly (same amount horizontally and vertically), never compressed into an oval to fit a row's height.
+
+TAGS (481 characters)
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,football coaching strategy,football offensive schemes,college football,friday night lights,Noxubee County Tigers,5A North

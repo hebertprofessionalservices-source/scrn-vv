@@ -1,0 +1,81 @@
+MHSAA Week 4 Recap Short — Warren Central 45, Vicksburg 3
+Publish date: 2026-09-22
+(Third Short publishing 9/22 — see also mhsaa-short-092226-leflore-northside.txt
+and mhsaa-short-092226-tupelo-oxford.txt)
+
+FIRST PACKAGE ON THE TRIMMED TAG BASE — "football coaching strategy" and
+"football offensive schemes" removed per Garret, 2026-09-21. Base is now
+26 tags / 396 chars, leaving 104 of episode budget.
+
+VERIFIED (web/public/data/2026-27/teams.json + games.json):
+- 2026-09-18, at Vicksburg: Warren Central 45, Vicksburg 3 — MHSAA Week 4
+- Warren Central Vikings — 6A, Region 2, Vicksburg, 4-0, No. 1 in 6A, No. 8 overall
+  state rank, PF 162 / PA 76, coach Josh Morgan. Results: 35-24 Clinton,
+  40-14 Pearl, 42-35 at Germantown, 45-3 at Vicksburg
+- Vicksburg Gators — 5A, Region 2, Vicksburg, 0-4, PF 59 / PA 133,
+  coach Christopher Lacey
+- Both schools are listed in the city of Vicksburg — that's the crosstown angle
+- This game carries dataStatus "missing" with no box score and no quarter splits,
+  so NO player stats or quarter-by-quarter detail are claimed anywhere in the copy
+
+=== ASSET 1 — TITLE (65 chars) ===
+45-3 in the City Rivalry — Warren Central Is 4-0 | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+45-3 in the City Rivalry — Warren Central Is 4-0 | Varsity Voices
+
+https://youtube.com/shorts/D26qXgd_sDM
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Host Breck Riley and Co-Hosts Jared Shotts, Brandon Davis, and Jake Wimberly recap the MHSAA Week 4 crosstown game in Vicksburg, where Warren Central held the Gators to a field goal and rolled 45-3.
+
+ON THIS EPISODE
+• Final — Warren Central 45, Vicksburg 3 at Vicksburg
+• Crosstown rivalry — both schools call Vicksburg home, and the Vikings gave up only a field goal
+• Warren Central moves to 4-0, No. 1 in Class 6A and No. 8 in the overall state rankings
+• A 6A-over-5A result — Vicksburg drops to 0-4
+• The Vikings' closest call so far was a 42-35 win at Germantown on Sept. 11
+• Warren Central is up to 162 points through four games
+• Full 6A and 5A scores, standings and rankings at scrn.live/varsity-voices
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone — Shorts get one block, no 3:4) ===
+Dials moved off the Tupelo package: run-out tunnel smoke backdrop, cool-blue rim
+light, torn paper edge texture, counter-clockwise tilt, no trophy.
+
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 4 recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with thick run-out tunnel smoke billowing across the frame, bright stadium lights flaring through it, blurred into cool-blue-tinted haze bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "CROSSTOWN" in huge white all-caps distressed font, stacked above "45-3" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Filling the middle of the frame below the headline, one very large real-team matchup block: a jagged/torn poster card with a bold diagonal "VS" chevron, heavy drop shadow, and a slight counter-clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. Size this card generously so it fills most of the frame's width and a large share of its height, since it is the only matchup block in this composition, with torn-paper stripe fragments layered behind it so no plain background shows through.
+
+Do not write any text, caption, initials, or team name on or beside any well. Every well in this image is a bare, unlabeled circle, identified only by its position in the frame for whoever composites the real logo in later — the only labeled elements in the whole image are the red "MHSAA" chip, the headline, the "PRESENTED BY" label, and the bottom banner.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · RECAP."
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, card, or banner.
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white color palette, rough torn-paper edge texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Warren Central Vikings · Vicksburg Gators. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (496 characters) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,college football,friday night lights,Warren Central Vikings,Vicksburg Gators,mississippi high school football,6A football,mhsaa football

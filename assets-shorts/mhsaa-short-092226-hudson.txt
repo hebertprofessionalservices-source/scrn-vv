@@ -1,0 +1,88 @@
+VARSITY VOICES — MHSAA SHORT — YOSHAWN HUDSON (MHSAA WEEK 4 PLAYER OF THE WEEK RE-CUT)
+Publish date: Sep 22, 2026 (assumed — not stated in this invocation; same batch as mhsaa-player-of-the-week-092226-full.txt, published today. Confirm if different.)
+Source video (for reference, not verified — YouTube oembed returned 403 again for this link, same as every other link tried this session): https://youtube.com/shorts/sfeJ5mDQEbU
+
+Same underlying subject/stats as mhsaa-player-of-the-week-092226-full.txt
+(Winona senior RB Yoshawn Hudson, Week 4, 50-26 win over Houston) — this is
+just a new Short cut/title, no new facts to verify. Corrected "Yoshan" (in
+Garret's invocation text) to the roster spelling "Yoshawn Hudson," same as
+the full-episode package.
+
+=== ASSET 1 — TITLE ===
+26 Yards a Carry — Yoshawn Hudson Is a Cheat Code | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+26 Yards a Carry — Yoshawn Hudson Is a Cheat Code | Varsity Voices
+
+https://youtube.com/shorts/sfeJ5mDQEbU
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Winona senior running back Yoshawn Hudson, the Mississippi Army National Guard MHSAA Player of the Week, off a blowout win over Houston.
+
+IN THIS CLIP
+• Hudson erupts for 130 rush yards on just 5 carries (26.0 per carry), 3 rushing TDs, a kickoff-return TD, and a two-point conversion in a 50-26 win over Houston
+• Season numbers: 29 carries, 657 yards, 10 TDs — a 22.7 yards-per-carry average as Winona improves to 4-0
+• On the team's chemistry: "we got a deep relationship... been playing with each other since Pee-Wee"
+• Committed to Mississippi State and Jeff Lebby
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Player of the Week Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with light rain drifting through the beams blurred into cool-blue-tinted haze bokeh, bright stadium lights flaring.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "PLAYER OF THE WEEK" in huge white all-caps distressed font, stacked above a nameplate reading "YOSHAWN HUDSON" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow. Beside or beneath the nameplate, one additional bare, unlabeled dark-charcoal/red-rim well — the Winona Tigers, and the ONLY team logo in this composition, no second team, no "VS" card.
+
+Below the nameplate, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text stating the subject's headline stat: "130 RUSH YDS · 4 TDS." This card fills the space between the nameplate and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · PLAYER OF THE WEEK."
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows.
+
+Overall style: high-contrast, gritty, red-black-white color palette, chalk-dust-in-light-beams texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Winona Tigers — exactly one team logo, never two. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (469 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,friday night lights,mississippi high school football,mhsaa football,Yoshawn Hudson,Winona Tigers,running back,Houston Hilltoppers,Mississippi State
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion, per the standing crop rule.
+
+All stats/facts reused verbatim from the already-verified full-episode POTW
+package (mhsaa-player-of-the-week-092226-full.txt) — same game, no new
+verification needed:
+  Winona Tigers, MHSAA-3A, "3A Region 4."
+  2026-09-18: Winona 50, Houston 26.
+  Season line (players.json, gamesPlayed: 4): 29 att / 657 yds / 10 TD
+    rushing, 22.7 ypc.
+
+Dials varied from the full-episode package (which used single light
+bank/warm-gold/spray-paint scuff): this Short uses light rain, cool-blue
+haze, chalk dust texture instead.
+
+Title uses "26 Yards a Carry" (the verified season average, 657/29=22.7 —
+wait, the SINGLE-GAME average against Houston was 130/5=26.0, which is what
+the title cites) rather than Garret's supplied "Cheat Code DOMINATES"
+phrasing verbatim, per the Short title-format rule (hard number first, Title
+Case, no ALL CAPS/exclamation points). Kept "Cheat Code" as the descriptive
+claim half since it's color commentary, not a factual claim that needs
+verification.
+
+Source YouTube Shorts link (https://youtube.com/shorts/sfeJ5mDQEbU) placed
+in the description per [[episode-assets-output-formatting]].

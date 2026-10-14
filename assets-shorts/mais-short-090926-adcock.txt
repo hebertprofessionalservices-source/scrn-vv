@@ -1,0 +1,66 @@
+VARSITY VOICES — MAIS SHORT — GARRETT ADCOCK RB PERFORMANCE
+Publish date: Sep 9, 2026
+
+TITLE
+279 Yards, 4 TDs — Garrett Adcock Breaks Ankles | Varsity Voices
+
+DESCRIPTION
+279 Yards, 4 TDs — Garrett Adcock Breaks Ankles | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Co-Host Cooper Sanders breaks down Leake Academy senior running back Garrett Adcock's 20-carry, 279-yard, 4-touchdown night in a 48-6 win over Winston Academy.
+
+IN THIS CLIP
+• Adcock goes 20 carries for 279 yards and 4 touchdowns in Leake's 48-6 win over Winston
+• 236 of those yards and all 4 scores came in the first half alone
+• Touchdown runs from 60, 40, and roughly 15 and 20 yards out
+• Cooper Sanders: one cut left three defenders grasping air — "breaking ankles out there"
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MAIS #MississippiFootball #HighSchoolFootball #VarsityVoices #MAISFootball #FridayNightLights
+
+THUMBNAIL PROMPT — 9:16 (INSTAGRAM / TIKTOK / YOUTUBE SHORTS)
+A high-energy vertical social thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football player-spotlight Short, sized for Instagram Reels, TikTok covers, and YouTube Shorts. Composition reads like a torn-newspaper / poster cutout: white and red torn-paper stripe edges, layered card shapes with jagged edges and slight dynamic tilt, drop shadows throughout, high energy — not a flat dark-card layout. Reserve clean-edged circular placeholder zones for logos to be composited in later, each sized smaller than its reserved space so the real PNG drops in without overflow. Fill every placeholder circle with a solid dark charcoal-black tone that matches the poster's night-stadium shadow values — NOT white, not a flat pale color — finished with a thin red rim-light ring around the edge so each one reads as a sunken logo well built into the poster rather than a blank white stamp. Place the State Championships Radio Network shield well in the TOP-LEFT and the Varsity Voices mark well in the TOP-RIGHT, the two sitting side by side across the very top of the frame with equal margins. Place the C Spire logo well in the BOTTOM-LEFT area just above the bottom banner, with a small white all-caps "PRESENTED BY" label directly above it, center-aligned to the C Spire circle. Do not draw, letter, outline in white, recolor, or imply the actual contents of any placeholder circle — they are genuinely empty dark circular wells, not sketched logos and not white stamps. Bold, gritty, heavy impact-style stadium poster typography with rough spray-paint/torn edges and a strong outline stroke fills the upper third of the frame, reading "279 YARDS" in huge white all-caps font, stacked above "4 TDS" in even larger red distressed all-caps font — oversized, legible at small thumbnail size (judge scale as if viewed at ~250px wide). Directly beneath the headline, a small red chip with bold white all-caps text reading "MAIS." Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a single light bank over modest bleachers blurred into cool-blue-tinted bokeh (small-school grit tone, not a packed big-school crowd). Filling the middle of the frame below the headline, one large torn-paper matchup card with slight dynamic tilt, ESPN/Bleacher-Report comparison-graphic style: two circular placeholder zones — filled with the same dark charcoal-black tone and thin red rim-light ring as the corner logo wells (NOT white) — reserved for the Leake Academy logo on the left and the Winston Academy logo on the right, separated by a bold diagonal red "VS" chevron with a drop shadow. Keep the bottom 15 percent and the right 12 percent of the frame clear of important content so the vertical player controls, caption and action buttons do not cover the headline, the banner, or the matchup card. Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "GARRETT ADCOCK · 20 CARRIES · 279 YDS," positioned so it does not overlap the C Spire circle or its label. Overall style: high-contrast, gritty, red-black-white color palette, heavy film grain and torn-paper texture overlays, dramatic cool-blue rim lighting, editorial poster-style typography, optimized for maximum click-through at small sizes. Keep it uncluttered: no anonymous player cutouts, no invented team logos, no section labels, no publish date, no tagline copy, no social platform icon row, no website URL.
+
+THUMBNAIL PROMPT — 3:4 (PORTRAIT CONVERSION)
+Using the finished, logo-composited 9:16 thumbnail as the source image, convert it into a 3:4 portrait (1080x1440) version. Do not stretch, squash, skew, or distort anything — retain all styling, fonts, colors, and textures exactly as in the source. Every logo keeps its original aspect ratio unchanged; in particular, keep every circular logo (SCRN, Varsity Voices, C Spire, Leake Academy, and Winston Academy) a perfect 1:1 circle, scaled uniformly by the same amount horizontally and vertically — never compressed into an oval to fit a row's height. Because 3:4 is less extreme than 9:16, reflow the existing elements with generous breathing room rather than crowding them: SCRN and Varsity Voices logos stay in a top row, the "279 YARDS / 4 TDS" headline and MAIS chip stack full-width below that, the Leake-vs-Winston matchup card sits centered beneath that with clear space around it, and the C Spire logo with its centered "PRESENTED BY" label plus the bottom red banner stay at the bottom, center-aligned to each other.
+
+TAGS (481 characters, per Garret's confirmed counting rule: each tag's length + 1 for its comma)
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,mississippi high school football,mhsaa football,touchdown,football,MHSAA,MAIS,Garrett Adcock,Leake Academy,Winston Academy,running back,player spotlight,MAIS football,big play
+
+LOGOS NEEDED FOR THIS PROMPT
+- SCRN shield (top-left)
+- Varsity Voices mark (top-right)
+- C Spire logo (bottom-left, "Presented By")
+- Leake Academy — matchup card, left
+- Winston Academy — matchup card, right
+
+NOTES
+Stats verified against web/public/data/2026-27/games.json in the MAIS Week 3
+recap package (assets-shorts/mais-full-episode-090826.txt): Leake Academy 48,
+Winston Academy 6. G. Adcock (Sr) 20 att, 279 yds, 4 TD — matches this
+transcript exactly. The 236-yard/4-TD first-half split and the individual
+touchdown-distance breakdown (60, 40, ~15, ~20 yards) are on-air claims only
+— no play-by-play data in the repo to verify them against, so they're kept
+as Coop's stated numbers, not independently confirmed.
+
+Only Cooper Sanders has lines in this transcript excerpt, so the description
+credits him alone rather than naming Cliff Barker or a guest as present —
+per the hard rule against inventing hosts not evidenced in the clip.
+
+Thumbnail built to the current rivalry-matchup standing style (dark
+charcoal-black circular logo wells with a red rim-light ring, not white —
+Garret's Sep 9 2026 fix) with one real matchup block (Leake vs Winston, the
+actual game this performance happened in) rather than an invented multi-game
+collage, since this Short covers a single performance in a single game.
+Small-class MAIS 3A tone: single light bank, cool-blue rim light, no
+trophy, per the tone guide.
+
+Crops are 9:16 (main) + 3:4 (portrait conversion) per the Short crop rule —
+not 16:9, which is full-episode only.

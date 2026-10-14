@@ -1,0 +1,62 @@
+MHSAA SHORT — WEEK 6 PREVIEW: SOUTH PANOLA AT LAKE CORMORANT
+Recorded: 2026-09-30 · Assumed publish date: 2026-10-01 · Source: panola-vs-cormorant-a-defensive-showdown.txt (Brandon Davis, Jared Shotts) · Dials: rain/mist · cool blue · spray-paint scuff · counter-clockwise tilt
+
+=== ASSET 1 — TITLE ===
+4 Points Allowed a Game — Lake Cormorant vs. Panola | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+4 Points Allowed a Game — Lake Cormorant vs. Panola | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. In the MHSAA Week 6 preview, Brandon Davis and Jared Shotts size up South Panola at Lake Cormorant and a Lake Cormorant defense that is giving up about four points a game.
+
+IN THIS CLIP
+• South Panola at Lake Cormorant on Friday, October 2, with both teams in 6A Region 1
+• Lake Cormorant is 5-0, scoring about 24 points a game and allowing about 4
+• Brandon Davis on the defense: Rashad Bobo, Eric Voss and Jordan Robertson
+• Davis compares it to the Horn Lake defense with Nakobe Dean, which Jared likens to running into a concrete wall
+• That Horn Lake team beat Warren Central and later played for a state title
+• Davis calls it a great test for Lake Cormorant
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+Listen to the Varsity Voices podcast on Spotify: https://open.spotify.com/show/2CeFipDI38NrwLhkhCX1jL?si=0787fe8af3334aed
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL 9:16 ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 6 preview Short about a defensive showdown, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and light rain and mist blurred into cool-blue-tinted bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Do not write any text, caption, initials, or name on or beside any well except the C Spire "PRESENTED BY" label — every other well is a bare, unlabeled circle, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "4 POINTS" in huge white all-caps distressed font, stacked above "ALLOWED" in even larger red distressed all-caps font, rough spray-paint scuff texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Filling the middle of the frame below the headline, one very large real-team matchup block, a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight counter-clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. The matchup is South Panola vs Lake Cormorant.
+
+Below the matchup card, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text reading "SOUTH PANOLA AT LAKE CORMORANT" — no trailing period inside the quoted text. This card fills the space between the matchup card and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 6 · PREVIEW".
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row. No periods anywhere in the image: none of the rendered text — headline, context card, league chip, or banner — ends with or contains a period or full stop.
+
+Overall style: high-contrast, gritty, red-black-white color palette, spray-paint scuff overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · South Panola · Lake Cormorant. (No MHSAA logo — it's rendered as text, not a composited file.)
+
+=== ASSET 4 — TAGS (485 chars) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,college football,friday night lights,South Panola,Lake Cormorant,Rashad Bobo,Eric Voss,Jordan Robertson,Horn Lake,6A football
+
+=== VERIFICATION (dashboard data) ===
+2026-10-02: South Panola at Lake Cormorant (6A Region 1, scheduled). Lake Cormorant 5-0: 24.0 points for and 4.2 against per game. South Panola 2-2 per the dashboard (one game row unplayed). Player names are as spelled in the transcript; 'N'Kobe Dean' is read as Nakobe Dean of Horn Lake. The Horn Lake history is as Brandon said it on air.

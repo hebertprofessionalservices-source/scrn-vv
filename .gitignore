@@ -16,3 +16,8 @@ templates/decks/
 # web/public/data/*/
 # web/public/team-logos/
 # web/public/logos/
+# Episode and social media files (multi-GB video/audio) live locally, not in git
+episodes/
+social/**/*.mp4
+social/**/*.wav
+from-old-cowork/

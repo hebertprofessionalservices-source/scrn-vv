@@ -1,0 +1,107 @@
+VARSITY VOICES — MAIS WEEK 5 RECAP / WEEK 6 PREVIEW — FULL EPISODE
+Publish date: Sep 22, 2026 (broadcast/recorded Sep 21, 2026)
+YouTube link supplied: https://youtube.com/live/qov7rFSFptA?feature=share (placed in the description per Garret's 2026-09-22 formatting rule — see [[episode-assets-output-formatting]])
+
+=== ASSET 1 — TITLE ===
+Varsity Voices | MAIS 2026 Week 5 Recap / Week 6 Preview — Tri-County vs. Leake Academy Rematch — S2 E06
+
+=== ASSET 2 — DESCRIPTION ===
+Varsity Voices | MAIS 2026 Week 5 Recap / Week 6 Preview — Tri-County vs. Leake Academy Rematch — S2 E06
+
+https://youtube.com/live/qov7rFSFptA?feature=share
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Host Lee Adams and Co-Hosts Cliff Barker and Cooper Sanders are joined by guest Bryan Eubank, the voice of Jackson Academy, to break down a loaded MAIS Week 5 and preview a Week 6 headlined by a rematch of last year's 3A Division I state championship.
+
+ON THIS EPISODE
+• Game of the Week — Tri-County at Leake Academy, a rematch of last year's 3A Division I title game (Leake won 25-24)
+• Player of the Week — Heritage Academy's Joshua "Juice" Tate: over 500 total yards and six TDs in a 44-36 comeback win over Leake Academy, snapping the team's 0-4 start
+• Madison-Ridgeland Academy stuns Jackson Prep 28-25 on a gutsy 4th-and-4 call, emerging in a loaded 4A field with Prep, Jackson Academy, and Hartfield
+• Columbia stays unbeaten and unscored-on, blanking Silliman 42-0; Central Hinds rolls past St. Aloysius 49-14 in 3A
+• Canton Academy climbs the 2A rankings after learning from its Week 1 loss to Tri-County, beating Winston Academy 36-19
+• Pick'em — Cliff and Lee both go 7-for-9, Cooper 6-for-9, and guest picker Bryan Eubank joins the board for Week 6
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MAIS #MississippiFootball #HighSchoolFootball #VarsityVoices #MAISFootball #FridayNightLights
+
+=== ASSET 3a — THUMBNAIL PROMPT (16:9, generation) ===
+A high-energy 16:9 widescreen (1280x720) thumbnail for a Mississippi high school football Week 5 recap / Week 6 preview show. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with a packed big-school crowd blurred into warm-gold-tinted haze bokeh, bright stadium lights flaring.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MAIS" — this is real rendered text, not a logo or placeholder.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Bold, gritty stadium poster typography fills a large share of the left two-thirds of the frame: "TITLE GAME" in huge white all-caps distressed font, stacked above "REMATCH" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size. A small gold championship-trophy graphic sits tucked beside the headline, nodding to the title-game stakes without crowding the type.
+
+Three large real-team matchup/rivalry blocks on the right side of the frame, filling most of the remaining frame height, each a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. Top card: Tri-County Academy Rebels vs. Leake Academy Rebels. Middle card: Madison-Ridgeland Academy Patriots vs. Jackson Prep Patriots. Bottom card: Parklane Academy Pioneers vs. Capaya Academy Colonels.
+
+Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MAIS WEEK 5 RECAP · WEEK 6 PREVIEW."
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white color palette, chalk-dust-in-light-beams texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Tri-County Academy Rebels · Leake Academy Rebels · Madison-Ridgeland Academy Patriots · Jackson Prep Patriots · Parklane Academy Pioneers · Capaya Academy Colonels. (No MAIS logo — it's rendered as text.)
+
+=== ASSET 3b — THUMBNAIL PROMPT (3:4, conversion — run against the finished, logo-composited 16:9 image) ===
+Take the finished, logo-composited image above and convert it into a 3:4 portrait ratio (1080x1440) version. Do not add, invent, or render any logo, brand mark, or text that is not already visibly present in the source image — reproduce only what's actually there. Do not stretch, squash, or distort anything — retain all styling, fonts, colors, and textures exactly, including the rendered "MAIS" league-chip text (leave it as text — do not turn it into a logo). Reflow (don't just crop) the existing elements to fill the taller-but-less-extreme portrait frame: the SCRN and Varsity Voices logos stay in a top row; the headline, trophy graphic, and league chip stack below that; the three matchup cards sit below that, stacked to fill the frame with no large empty gaps; the presented-by sponsor logo (whatever was actually composited into the source image) and its "PRESENTED BY" label stay bottom, center-aligned to each other above the banner. Every composited logo must stay at its original aspect ratio and remain a perfect 1:1 circle, scaled uniformly (same amount horizontally and vertically), never compressed into an oval to fit a row's height.
+
+=== ASSET 4 — TAGS (460 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,friday night lights,mississippi high school football,MAIS football,Tri-County Academy,Leake Academy,Madison-Ridgeland Academy,Jackson Prep
+
+NOTES
+Episode number: continues the MAIS-only Season 2 count from
+mais-full-episode-091526.txt (Week 4 Recap/Week 5 Preview = S2 E05), so
+this Week 5 Recap/Week 6 Preview episode is S2 E06.
+
+Verified against web/public/data/2026-27/games.json (all 2026-09-18 unless noted):
+  Madison-Ridgeland Academy 28, Jackson Prep 25 — matches "28-25," Austin Banks.
+  Tri-County Academy 35, Wayne Academy 7 — matches "35 to seven."
+  Columbia Academy 42, Silliman Institute 0 — matches "absolutely blanking
+    Silliman" / "not scored on."
+  Central Hinds Academy 49, St. Aloysius 14 — matches "49 points."
+  Canton Academy 36, Winston Academy 19 — win confirmed; the "number six in
+    the rankings" claim is editorial/on-air only, not repo-verified.
+  Heritage Academy 44, Leake Academy 36 (verified previously in
+    mais-player-of-the-week-092226-full.txt) — matches "44-36," "over 500
+    total yards, six touchdowns" for Juice Tate.
+  2026-09-25 (Week 6): Leake Academy vs. Tri-County Academy at Leake (Madden)
+    — confirms the Game of the Week matchup and site.
+
+Verified against web/public/data/2025-26/games.json:
+  2025-11-20: Leake Academy 25, Tri-County Academy 24 (both teams' final
+    game of the 2025-26 season, one-point margin) — confirms "rematch of
+    last year's 3A Division I state championship game," Leake won.
+
+Not verified / on-air claims only: MRA's 4th-and-4 decision detail, Parklane
+vs. Capaya Academy stat comparisons (points/yards per game), the "number six"
+2A ranking for Canton, and all personal/color commentary — repo has no
+rankings data or single-game box scores beyond final scores for most of these.
+
+Guest co-host Bryan Eubank (the voice of Jackson Academy) is named in the
+intro per [[episode-assets-invocation-contract]]'s guest-co-host rule — not
+added to the standing MAIS panel (Lee Adams, Cliff Barker, Cooper Sanders).
+
+Thumbnail matchup cards: picked the 3 most talked-about games from this
+episode (Game of the Week, last week's 4A classic, this week's featured 4A
+Division II pick) rather than an exhaustive list — well under the 4-game cap,
+no need to ask Garret to narrow further.
+
+Dials varied from the last two MAIS full episodes (091526: light rain/
+cool-blue haze/spray-paint scuff; 090826 unreviewed this session): this one
+uses packed big-school crowd, warm-gold rim light, chalk dust texture, and a
+gold trophy accent (justified by the title-game rematch angle) with a
+clockwise card tilt.
+
+FORMATTING: applying Garret's 2026-09-22 rules — YouTube link sits in the
+description between the title line and the body paragraph; "LOGOS NEEDED"
+sits between the two Asset 3 blocks, not inside either copy-paste block. See
+[[episode-assets-output-formatting]].

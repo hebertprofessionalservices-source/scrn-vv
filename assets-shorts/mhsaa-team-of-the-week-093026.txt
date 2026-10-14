@@ -1,0 +1,64 @@
+MHSAA TEAM OF THE WEEK (FULL EPISODE) — WEEK 5: AMITE COUNTY TROJANS
+Broadcast/publish date: 2026-09-30 · Source: sedric-bd.txt (Brandon Davis interviewing coach Sedric Cain) · Dials: single light bank · red haze · spray-paint scuff (TOTW single-subject layout)
+
+=== ASSET 1 — TITLE ===
+Varsity Voices | MHSAA Week 5 Team of the Week — Amite County Trojans
+
+=== ASSET 2 — DESCRIPTION ===
+Varsity Voices | MHSAA Week 5 Team of the Week — Amite County Trojans
+
+https://youtube.com/live/af6OIwc-ERA
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Brandon Davis sits down with Amite County Trojans head coach Sedric Cain for the Mississippi Sports Medicine Team of the Week, a 5-0 team averaging 43 points a game that hasn't allowed a point all season.
+
+ON THIS EPISODE
+• Team of the Week — Amite County Trojans: 5-0, 43 points a game and zero points allowed
+• Coach Cain's offense: spread it out, run or pass, but be physical at the point of attack
+• Key players: captain Keegan Handy, running back Shamar Anderson, athlete Kevin Bailey and 6-foot-6, 330-pound defensive tackle Darion Tolliver
+• The defense: a 3-4 base with most starters back and hard-hitting linebackers
+• Replacing three offensive linemen, with a freshman starting center
+• Next up: region play opens on Friday, October 9 at home against Wilkinson County in the County Line Classic
+• Cain's message to Liberty: one game at a time, and "we believe"
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+Listen to the Varsity Voices podcast on Spotify: https://open.spotify.com/show/2CeFipDI38NrwLhkhCX1jL?si=0787fe8af3334aed
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3a — THUMBNAIL 16:9 ===
+A high-energy 16:9 widescreen (1280x720) thumbnail for a Mississippi high school football Team of the Week feature. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a single light bank over modest bleachers blurred into red-tinted bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Do not write any text, caption, initials, or name on or beside any well except the C Spire "PRESENTED BY" label — every other well is a bare, unlabeled circle, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography: "TEAM OF THE WEEK" in huge white all-caps distressed font, stacked above a nameplate reading "AMITE COUNTY TROJANS" in even larger red distressed all-caps font, rough spray-paint scuff texture, strong outline/drop shadow. Beside or beneath the nameplate, one additional bare, unlabeled dark-charcoal/red-rim well — the subject's own team, and the ONLY team logo in this composition, no second team, no "VS" card.
+
+Below the nameplate, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text stating the headline stat: "5-0 · ZERO POINTS ALLOWED" — no trailing period inside the quoted text. This card fills the space between the nameplate and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 5 · TEAM OF THE WEEK".
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows. No periods anywhere in the image: none of the rendered text — headline, nameplate, stat card, league chip, or banner — ends with or contains a period or full stop.
+
+Overall style: high-contrast, gritty, red-black-white color palette, spray-paint scuff overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Amite County Trojans — exactly one team logo. (No MHSAA logo — it's rendered as text, not a composited file.)
+
+=== ASSET 3b — THUMBNAIL 3:4 CONVERSION ===
+Take the finished, logo-composited image above and convert it into a 3:4 portrait ratio (1080x1440) version. Do not add, invent, or render any logo, brand mark, or text that is not already visibly present in the source image — reproduce only what's actually there. Do not stretch, squash, or distort anything — retain all styling, fonts, colors, and textures exactly, including the rendered "MHSAA" league-chip text (leave it as text — do not turn it into a logo). Reflow (don't just crop) the existing elements to fill the taller-but-less-extreme portrait frame: the SCRN and Varsity Voices logos stay in a top row; the headline and league chip stack below that; the single team well, nameplate and stat card sit below that, filling the frame with no large empty gaps; the presented-by sponsor logo (whatever was actually composited into the source image) and its "PRESENTED BY" label stay bottom, center-aligned to each other above the banner. Every composited logo must stay at its original aspect ratio and remain a perfect 1:1 circle, scaled uniformly (same amount horizontally and vertically), never compressed into an oval to fit a row's height. No periods anywhere in the image: none of the rendered text — headline, nameplate, stat card, league chip, or banner — ends with or contains a period or full stop.
+
+=== ASSET 4 — TAGS (495 chars) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,college football,friday night lights,Amite County Trojans,Amite County,Sedric Cain,Darion Tolliver,Wilkinson County,Liberty Mississippi
+
+=== VERIFICATION (dashboard data) ===
+Amite County Trojans 5-0 (2A Region 7): 216 points for, 0 against (43.2 a game). 2026-10-09: Wilkinson County at Amite County (scheduled); no game 2026-10-02 (bye). Coach name per MaxPreps is Sedric Cain (transcript: Cedric Keene/Kane). Rushing numbers (about 240 yards and four rushing touchdowns a game) are as Brandon said them. The freshman center is Jeremy Tate in one line of the transcript and Cameron Tate in another, so he is left out.

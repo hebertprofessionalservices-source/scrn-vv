@@ -1,0 +1,69 @@
+VARSITY VOICES — MAIS SHORT — PILLOW'S SURPRISING COMEBACK
+Publish date: Sep 9, 2026
+
+TITLE
+35-26 — Pillow Shocks Starkville Academy | Varsity Voices
+
+DESCRIPTION
+35-26 — Pillow Shocks Starkville Academy | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Guest co-host Phillip Palmertree of MRA breaks down Pillow Academy's surprising 35-26 win over Starkville Academy in MAIS 4A.
+
+IN THIS CLIP
+• Pillow Academy upsets Starkville Academy 35-26 in a MAIS 4A showdown
+• Most expected the Volunteers (Starkville Academy) to win this one
+• Phillip Palmertree on Pillow's turnaround: "they've come out of the rut they're in"
+• "Pillow, man, they've come to play this year"
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MAIS #MississippiFootball #HighSchoolFootball #VarsityVoices #MAISFootball #FridayNightLights
+
+THUMBNAIL PROMPT — 9:16 (INSTAGRAM / TIKTOK / YOUTUBE SHORTS)
+A high-energy vertical social thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football upset-recap Short, sized for Instagram Reels, TikTok covers, and YouTube Shorts. Composition reads like a torn-newspaper / poster cutout: white and red torn-paper stripe edges, layered card shapes with jagged edges and slight dynamic tilt, drop shadows throughout, high energy — not a flat dark-card layout. Reserve clean-edged circular placeholder zones for logos to be composited in later, each sized smaller than its reserved space so the real PNG drops in without overflow. Fill every placeholder circle with a solid dark charcoal-black tone that matches the poster's night-stadium shadow values — NOT white, not a flat pale color — finished with a thin red rim-light ring around the edge so each one reads as a sunken logo well built into the poster rather than a blank white stamp. Place the State Championships Radio Network shield well in the TOP-LEFT and the Varsity Voices mark well in the TOP-RIGHT, the two sitting side by side across the very top of the frame with equal margins. Place the C Spire logo well in the BOTTOM-LEFT area just above the bottom banner, with a small white all-caps "PRESENTED BY" label directly above it, center-aligned to the C Spire circle. Do not draw, letter, outline in white, recolor, or imply the actual contents of any placeholder circle — they are genuinely empty dark circular wells, not sketched logos and not white stamps. Bold, gritty, heavy impact-style stadium poster typography with rough spray-paint/torn edges and a strong outline stroke fills the upper third of the frame, reading "35-26" in huge white all-caps font, stacked above "UPSET" in even larger red distressed all-caps font — oversized, legible at small thumbnail size (judge scale as if viewed at ~250px wide). Directly beneath the headline, a small red chip with bold white all-caps text reading "MAIS." Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a packed big-school crowd blurred into warm-gold-tinted bokeh (big-class spectacle tone, MAIS 4A). Filling the middle of the frame below the headline, one large torn-paper matchup card with slight dynamic tilt, ESPN/Bleacher-Report comparison-graphic style: two circular placeholder zones — filled with the same dark charcoal-black tone and thin red rim-light ring as the corner logo wells (NOT white) — reserved for the Pillow Academy logo on the left and the Starkville Academy logo on the right, separated by a bold diagonal red "VS" chevron with a drop shadow. Keep the bottom 15 percent and the right 12 percent of the frame clear of important content so the vertical player controls, caption and action buttons do not cover the headline, the banner, or the matchup card. Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "PILLOW ACADEMY · MAIS 4A UPSET," positioned so it does not overlap the C Spire circle or its label. Overall style: high-contrast, gritty, red-black-white color palette, spray-paint scuff texture overlays, dramatic warm-gold rim lighting, editorial poster-style typography, optimized for maximum click-through at small sizes. Keep it uncluttered: no anonymous player cutouts, no invented team logos, no section labels, no publish date, no tagline copy, no social platform icon row, no website URL.
+
+THUMBNAIL PROMPT — 3:4 (PORTRAIT CONVERSION)
+Using the finished, logo-composited 9:16 thumbnail as the source image, convert it into a 3:4 portrait (1080x1440) version. Do not stretch, squash, skew, or distort anything — retain all styling, fonts, colors, and textures exactly as in the source. Every logo keeps its original aspect ratio unchanged; in particular, keep every circular logo (SCRN, Varsity Voices, C Spire, Pillow Academy, and Starkville Academy) a perfect 1:1 circle, scaled uniformly by the same amount horizontally and vertically — never compressed into an oval to fit a row's height. Because 3:4 is less extreme than 9:16, reflow the existing elements with generous breathing room rather than crowding them: SCRN and Varsity Voices logos stay in a top row, the "35-26 / UPSET" headline and MAIS chip stack full-width below that, the Pillow-vs-Starkville matchup card sits centered beneath that with clear space around it, and the C Spire logo with its centered "PRESENTED BY" label plus the bottom red banner stay at the bottom, center-aligned to each other.
+
+TAGS (463 characters, per Garret's confirmed counting rule: each tag's length + 1 for its comma)
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,mississippi high school football,mhsaa football,touchdown,football,MHSAA,MAIS,Pillow Academy,Starkville Academy,upset,underdog,MAIS football,comeback,MAIS 4A
+
+LOGOS NEEDED FOR THIS PROMPT
+- SCRN shield (top-left)
+- Varsity Voices mark (top-right)
+- C Spire logo (bottom-left, "Presented By")
+- Pillow Academy — matchup card, left
+- Starkville Academy — matchup card, right
+
+NOTES
+Both schools and the result verified against web/public/data/2026-27/teams.json
+and games.json: Pillow Academy Mustangs (MAIS-4A) and Starkville Academy
+Volunteers (MAIS-4A) — "Pillow" is a real school name, not a mishearing.
+Game 2026-09-04: Pillow Academy 35, Starkville Academy 26 (status: final,
+dataStatus: missing — no box score, so no player-level stats available or
+claimed). Matches the "35-26" score already used in the MAIS Week 3 recap
+package (assets-shorts/mais-full-episode-090826.txt).
+
+Only Phillip Palmertree has lines in this transcript excerpt, so the
+description credits him alone (as "guest co-host ... of MRA," matching how
+he's identified in that week's full episode) rather than naming Cliff,
+Cooper, or Lee as present — per the hard rule against inventing hosts not
+evidenced in the clip.
+
+Thumbnail follows the current rivalry-matchup standing style (dark
+charcoal-black circular logo wells with a red rim-light ring, not white)
+with one real matchup block (Pillow vs Starkville Academy, the actual game
+this story is about). MAIS 4A is a bigger classification, so this leans
+spectacle per the tone guide — packed crowd, warm-gold rim light — as
+opposed to the small-school grit tone used on the Garrett Adcock Short
+(MAIS 3A) published the same day. Dials varied from that prior Short: sideline
+packed-crowd background instead of single light bank, warm gold instead of
+cool blue, spray-paint scuff texture instead of heavy film grain.
+
+Crops are 9:16 (main) + 3:4 (portrait conversion) per the Short crop rule.

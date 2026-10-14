@@ -1,0 +1,96 @@
+VARSITY VOICES — MHSAA SHORT — BRANDON 40, WEST MONROE 23 (WEEK 4)
+Publish date: Sep 24, 2026
+Source video: https://youtube.com/shorts/u6SeVdlvBLY
+
+Verified in games.json (2026-09-18-west-monroe-at-brandon-bulldogs-bulldogs):
+  Brandon 40, West Monroe 23 — Sep 18, 2026, at Brandon. Inter-state game
+    (MaxPreps URL is /inter-state/; West Monroe is a Louisiana program).
+  S. Shack (Sr, QB): 12/21, 186 yds, 2 TD.
+  T. Robinson (Sr): 15 car, 121 yds.
+  K. Mays (Sr): 15 car, 102 yds.
+  J. Parker (Jr): 6 rec, 119 yds.
+  Team rushing: 258 yards on 39 carries.
+  Brandon (teams.json): 7A, 7A Region 3, record 3-1, No. 7 in class and No. 7
+    statewide.
+
+Box score is flagged dataStatus "incomplete" — quarter scores are empty and the
+rushing touchdowns aren't attributed, so the bullets below stick to the lines
+that are actually populated. Do not read a rushing-TD count on air from this.
+No 2026-27 record or classification is stored for West Monroe (out-of-state),
+so nothing is claimed about their record.
+
+Not a Player of the Week package.
+
+=== ASSET 1 — TITLE ===
+Brandon Shocks West Monroe 40-23 — How It Happened | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+Brandon Shocks West Monroe 40-23 — How It Happened | Varsity Voices
+
+https://youtube.com/shorts/u6SeVdlvBLY
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. The crew breaks down how Brandon went out and beat Louisiana power West Monroe 40-23 in Week 4.
+
+IN THIS CLIP
+• Brandon 40, West Monroe 23 — an inter-state win over a Louisiana program
+• The Bulldogs pile up 258 rushing yards on 39 carries
+• Tyler Robinson runs for 121, Kelvin Mays adds 102 — two backs over the century mark
+• Semaj Shack goes 12-of-21 for 186 yards and 2 TDs
+• Jaylen Parker leads the receivers with 6 catches for 119 yards
+• Brandon is 3-1 and No. 7 in 7A heading into Starkville
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic big-school night football stadium shot from an end-zone perspective, a packed roaring crowd blurred behind the uprights, chalk dust and field haze hanging in the light beams, cool blue-tinted flares and bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "BULLDOGS SHOCK" in huge white all-caps distressed font, stacked above "WEST MONROE" in even larger red distressed all-caps font, rough chalk-dust and spray-paint texture, strong outline/drop shadow.
+
+Below the headline, one matchup block centered in the frame: two bare, unlabeled dark-charcoal/red-rim circular wells side by side — left well for the Brandon Bulldogs, right well for West Monroe — separated by a small red "VS" chip with bold white all-caps text. Beneath the matchup block, a torn-poster card spanning most of the frame's width with bold white distressed all-caps text reading "40-23". This block and card fill the space between the headline and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip and the "VS" chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · BRANDON 3-1"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image.
+
+Overall style: high-contrast, gritty, red-black-white color palette with cool blue highlights, heavy chalk-dust and film-grain texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Brandon Bulldogs · West Monroe. (No MHSAA logo — it's rendered as text.)
+NOTE: West Monroe is a Louisiana school and has no logo in assets/logos-teams/ — it has to be sourced before compositing, or drop the second well and run this as a single-team layout.
+
+=== ASSET 4 — TAGS (436 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Brandon Bulldogs,West Monroe football,7A football,game of the week
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+FIRST NAMES ARE UNVERIFIED. players.json has no 2026-27 Brandon roster entries
+for "S. Shack," "T. Robinson," "K. Mays," or "J. Parker," so the first names in
+the description bullets (Semaj Shack, Tyler Robinson, Kelvin Mays, Jaylen
+Parker) are NOT sourced from repo data. Confirm them before publishing, or cut
+back to the initials the box score actually carries.
+
+Shorts URL supplied after the first pass and placed between the title line and
+the body paragraph per [[episode-assets-output-formatting]].
+
+Dials: end-zone perspective, packed big-school crowd, chalk dust in the light
+beams, cool blue rim light, no trophy — a combination not used on the Wade,
+Trivillion, or Hudson Shorts.

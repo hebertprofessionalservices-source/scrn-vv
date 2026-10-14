@@ -1,0 +1,94 @@
+VARSITY VOICES — MHSAA SHORT — MERIDIAN 50, COLUMBUS 9 (WEEK 4)
+Publish date: Sep 24, 2026 (carried from the other two packages in this batch —
+no date was given on this invocation; say the word if it's different)
+Source video: https://youtube.com/shorts/ako9ENKUT_0
+
+Verified in games.json (2026-09-18-columbus-at-meridian-wildcats-wildcats):
+  Meridian 50, Columbus 9 — Sep 18, 2026, at Meridian.
+  Meridian (teams.json): 7A, 7A Region 3, 2-2, No. 15 in class.
+  Columbus (teams.json): 5A, 5A Region 1, 0-4, No. 25 in class.
+  Meridian's season: 47-9 at Ocean Springs (W), 28-36 at Neshoba Central (L),
+    24-42 at Starkville (L), 50-9 Columbus (W).
+  50 is Meridian's season high — the Ocean Springs opener was 47.
+  Next up: Hattiesburg at Meridian, Sep 25.
+
+THERE IS NO BOX SCORE FOR THIS GAME. dataStatus is "missing" — no quarter
+scores, no passing/rushing/receiving lines, no player stats at all. Everything
+below is built from the final score, the records, and the schedule. If the clip
+names a player or a stat line, I can't verify it — send me what was said and
+I'll check it or add it.
+
+Hook says "50+ POINTS" — it was exactly 50, so the copy says 50.
+
+Not a Player of the Week package.
+
+=== ASSET 1 — TITLE ===
+50 Points, 9 Allowed — Meridian Rolls Columbus | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+50 Points, 9 Allowed — Meridian Rolls Columbus | Varsity Voices
+
+https://youtube.com/shorts/ako9ENKUT_0
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Meridian puts up a season-high 50 on Columbus and gets back to even after two straight losses.
+
+IN THIS CLIP
+• Meridian 50, Columbus 9 — Week 4 at Meridian
+• A season high for the Wildcats, past the 47 they hung on Ocean Springs in the opener
+• Meridian is back to 2-2 after dropping games to Neshoba Central and Starkville
+• 7A Meridian handles a 5A opponent that falls to 0-4
+• Hattiesburg comes to Meridian next
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic big-school night stadium with run-out tunnel smoke billowing across the field and a packed roaring crowd behind it, stadium lights flaring through the smoke into red-tinted haze and bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "50 POINTS" in huge white all-caps distressed font, stacked above "9 ALLOWED" in even larger red distressed all-caps font, rough spray-paint scuff texture, strong outline/drop shadow.
+
+Below the headline, one matchup block centered in the frame, tilted slightly counter-clockwise: two bare, unlabeled dark-charcoal/red-rim circular wells side by side — left well for the Meridian Wildcats, right well for the Columbus Falcons — separated by a small red "VS" chip with bold white all-caps text. Beneath the matchup block, a torn-poster card spanning most of the frame's width with bold white distressed all-caps text reading "SEASON HIGH". This block and card fill the space between the headline and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip and the "VS" chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · RECAP"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image.
+
+Overall style: high-contrast, gritty, red-black-white color palette, heavy spray-paint scuff and red-haze texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Meridian Wildcats · Columbus Falcons. (No MHSAA logo — it's rendered as text.) Both team logos are in assets/logos-teams/.
+
+=== ASSET 4 — TAGS (433 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Meridian Wildcats,Columbus Falcons,7A football,game of the week
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+Shorts URL supplied after the first pass and placed between the title line and
+the body paragraph per [[episode-assets-output-formatting]].
+
+The bullet list is short because the data is short: with no box score there is
+nothing verifiable to say about how the 50 points were scored. It's still
+within the 6-9 bullet guidance, at the low end.
+
+Dials: run-out tunnel smoke, packed big-school crowd, red-tinted haze,
+spray-paint scuff, counter-clockwise card tilt — 7A spectacle tone, and a
+combination not used on the Wade, Trivillion, Hudson, Brandon, Petal, or
+Loyd Star Shorts.

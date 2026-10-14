@@ -1,0 +1,67 @@
+MHSAA FULL EPISODE — WEEK 6 PREVIEW (S2 E06-1)
+Broadcast/publish date: 2026-09-30 · Source: jared-bd.txt (Brandon Davis, Jared Shotts) · Dials: single light bank · cool blue · chalk dust · counter-clockwise tilt
+Matchups on thumbnail: McComb–Poplarville, Madison Central–Oxford, South Panola–Lake Cormorant
+
+=== ASSET 1 — TITLE ===
+Varsity Voices | MHSAA 2026 Week 6 Preview — 7A Through 1A — S2 E06-1
+
+=== ASSET 2 — DESCRIPTION ===
+Varsity Voices | MHSAA 2026 Week 6 Preview — 7A Through 1A — S2 E06-1
+
+https://youtube.com/live/JAEvS60SdZQ
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Brandon Davis and Jared Shotts preview MHSAA Week 6 from 7A through 1A, from McComb at Poplarville to Madison Central at Oxford, then make their pick'em picks and name the best and worst of the season so far.
+
+ON THIS EPISODE
+• McComb at Poplarville — AI gives Poplarville 85%, with McComb's quarterback situation in question
+• Madison Central at Oxford — a 7A District 2 opener between two teams scoring about 26 points a game
+• South Panola at Lake Cormorant — Lake Cormorant's defense is allowing about 4 points a game
+• Leake High School at Cleveland Central — Leake looks to bounce back after a 47-0 loss to Heidelberg
+• D'Iberville — the quietest 5-0 start in the state, hosting West Harrison
+• Brandon at Northwest Rankin — AI gives Brandon 81%
+• Winona at Aberdeen and Seminary at Sumrall in 3A
+• Clarkdale vs. Bay Springs and Enterprise at Heidelberg in 2A
+• Pick'em picks, plus the best and worst of the season so far: Tupelo, Ty Keys, Eugene Clinton, Canton and West Point
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+Listen to the Varsity Voices podcast on Spotify: https://open.spotify.com/show/2CeFipDI38NrwLhkhCX1jL?si=0787fe8af3334aed
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3a — THUMBNAIL 16:9 ===
+A high-energy 16:9 widescreen (1280x720) thumbnail for a Mississippi high school football Week 6 preview. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and a single light bank over modest bleachers blurred into cool-blue-tinted bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Do not write any text, caption, initials, or name on or beside any well except the C Spire "PRESENTED BY" label — every other well is a bare, unlabeled circle, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills a large share of the left two-thirds of the frame: "WEEK 6" in huge white all-caps distressed font, stacked above "BANGERS" in even larger red distressed all-caps font, rough chalk-dust-and-spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Three large real-team matchup blocks stacked on the right side of the frame, filling most of the remaining frame height, each a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight counter-clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. The three matchups, top to bottom: McComb vs Poplarville, Madison Central vs Oxford, South Panola vs Lake Cormorant.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 6 · PREVIEW".
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row. No periods anywhere in the image: none of the rendered text — headline, league chip, or banner — ends with or contains a period or full stop.
+
+Overall style: high-contrast, gritty, red-black-white color palette, chalk dust in the light beams overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · McComb · Poplarville · Madison Central · Oxford · South Panola · Lake Cormorant. (No MHSAA logo — it's rendered as text, not a composited file.)
+
+=== ASSET 3b — THUMBNAIL 3:4 CONVERSION ===
+Take the finished, logo-composited image above and convert it into a 3:4 portrait ratio (1080x1440) version. Do not add, invent, or render any logo, brand mark, or text that is not already visibly present in the source image — reproduce only what's actually there. Do not stretch, squash, or distort anything — retain all styling, fonts, colors, and textures exactly, including the rendered "MHSAA" league-chip text (leave it as text — do not turn it into a logo). Reflow (don't just crop) the existing elements to fill the taller-but-less-extreme portrait frame: the SCRN and Varsity Voices logos stay in a top row; the headline and league chip stack below that; the three matchup cards sit below that, filling the frame with no large empty gaps; the presented-by sponsor logo (whatever was actually composited into the source image) and its "PRESENTED BY" label stay bottom, center-aligned to each other above the banner. Every composited logo must stay at its original aspect ratio and remain a perfect 1:1 circle, scaled uniformly (same amount horizontally and vertically), never compressed into an oval to fit a row's height. No periods anywhere in the image: none of the rendered text — headline, league chip, or banner — ends with or contains a period or full stop.
+
+=== ASSET 4 — TAGS (487 chars) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,college football,friday night lights,Poplarville,McComb,Madison Central,Oxford,South Panola,Lake Cormorant,mhsaa football,mhsaa
+
+=== VERIFICATION (dashboard data) ===
+All of these are scheduled for 2026-10-02 in the dashboard: McComb at Poplarville (McComb 4-1, Poplarville 5-0), Madison Central at Oxford (2-3 and 4-1), South Panola at Lake Cormorant, Brandon vs Northwest Rankin (Rankin 2-3), West Harrison at D'Iberville, Winona at Aberdeen, Seminary at Sumrall, Clarkdale/Bay Springs, Enterprise at Heidelberg. D'Iberville 5-0, 34.8 points for and 8.0 against per game. AI percentages, McComb's quarterback status and the stat lines are as said on air.

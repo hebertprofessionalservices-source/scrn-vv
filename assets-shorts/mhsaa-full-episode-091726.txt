@@ -1,0 +1,58 @@
+VARSITY VOICES — MHSAA WEEK 4 PREVIEW — FULL EPISODE
+Publish date: Sep 17, 2026 (assumed — Garret did not specify a publish date on invocation; adjust filename/date if wrong)
+
+=== ASSET 1 — TITLE ===
+Varsity Voices | MHSAA 2026 Week 4 Preview — 7A Through 1A — S2 E04-1
+
+=== ASSET 2 — DESCRIPTION ===
+Varsity Voices | MHSAA 2026 Week 4 Preview — 7A Through 1A — S2 E04-1
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Host Breck Riley and Co-Hosts Jared Shotts and Brandon Davis (Jake Wimberly is out this week) preview a loaded Week 4 slate — two Top 10 7A showdowns, a 15th straight for Warren Central, and an upset alert in 3A — from 7A down to 1A.
+
+ON THIS EPISODE
+• Two Top 10 showdowns lead 7A — #1 Tupelo hosts #7 Oxford (both 3-0), while unbeaten Petal meets Gulfport's shutout defense in South Mississippi
+• New segment debut — Team of the Week honors the Leake County Alligators and Coach Kenneth Whitfield after their breakout win
+• Warren Central goes for a 15th straight win in the rivalry with Vicksburg
+• Old rivals renew it — South Panola and Clarksdale headline a 6A throwback that used to be the game of the week
+• Upset alert — Mize, coming off a one-point loss to McGee, gets a real shot (58%) against defending 3A champ Raleigh
+• Rivalry week across the state — the County Line Clash (Belmont-Tishomingo County) and the Possum Bowl (Lloyd Star-Bogue Chitto) headline the smaller classes
+• Lafayette County at Northside is a virtual coin flip (51%) in the week's best 1A-3A crossover
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3a — THUMBNAIL PROMPT (16:9, generation) ===
+A high-energy 16:9 widescreen (1280x720) thumbnail for a Mississippi high school football Week 4 preview show. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time football stadium with a single light bank over modest bleachers blurred into warm-gold-tinted haze bokeh, bright stadium lights flaring.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Bold, gritty stadium poster typography fills a large share of the left two-thirds of the frame: "WEEK 4" in huge white all-caps distressed font, stacked above "PREVIEW" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Four large real-team matchup/rivalry blocks on the right side of the frame, filling most of the remaining frame height, each a jagged/torn poster card with a bold diagonal "VS" chevron, drop shadow, and a slight counter-clockwise dynamic tilt — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. Top card: Tupelo Golden Wave vs. Oxford Chargers. Second card: Petal Panthers vs. Gulfport Admirals. Third card: Warren Central Vikings vs. Vicksburg Gators. Fourth card: South Panola Tigers vs. Clarksdale Wildcats.
+
+Along the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · PREVIEW."
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white color palette, spray-paint scuff texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Tupelo Golden Wave · Oxford Chargers · Petal Panthers · Gulfport Admirals · Warren Central Vikings · Vicksburg Gators · South Panola Tigers · Clarksdale Wildcats. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 3b — THUMBNAIL PROMPT (3:4, conversion — run against the finished, logo-composited 16:9 image) ===
+Take the finished, logo-composited image above and convert it into a 3:4 portrait ratio (1080x1440) version. Do not add, invent, or render any logo, brand mark, or text that is not already visibly present in the source image — reproduce only what's actually there. Do not stretch, squash, or distort anything — retain all styling, fonts, colors, and textures exactly, including the rendered "MHSAA" league-chip text (leave it as text — do not turn it into a logo). Reflow (don't just crop) the existing elements to fill the taller-but-less-extreme portrait frame: the SCRN and Varsity Voices logos stay in a top row; the headline and league chip stack below that; the four matchup cards sit below that, stacked to fill the frame with no large empty gaps; the presented-by sponsor logo (whatever was actually composited into the source image) and its "PRESENTED BY" label stay bottom, center-aligned to each other above the banner. Every composited logo must stay at its original aspect ratio and remain a perfect 1:1 circle, scaled uniformly (same amount horizontally and vertically), never compressed into an oval to fit a row's height.
+
+=== ASSET 4 — TAGS (491 characters) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,football coaching strategy,football offensive schemes,college football,friday night lights,Tupelo Golden Wave,Oxford Chargers,mhsaa

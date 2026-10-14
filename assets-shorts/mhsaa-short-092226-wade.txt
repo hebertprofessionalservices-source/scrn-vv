@@ -1,0 +1,97 @@
+VARSITY VOICES — MHSAA SHORT — CAIDEN WADE (WEEK 4 vs. OLIVE BRANCH)
+Publish date: Sep 22, 2026
+Source video: https://youtube.com/shorts/ujEPP0pz-to
+
+REGENERATED 2026-09-22 per Garret: the earlier version of this package pointed
+at the wrong game (the Week 3 double-overtime Hernando POTW performance).
+Correct game is the Sep 18, 2026 Week 4 meeting with Olive Branch —
+Kosciusko 45, Olive Branch 27.
+
+Verified in games.json (2026-09-18-olive-branch-at-kosciusko-whippets-whippets):
+  Kosciusko 45, Olive Branch 27 — quarters 7/14/10/14 to 7/7/7/6.
+  C. Wade passing: 16/23, 342 yds, 4 TD.
+  C. Wade rushing: 5 car, 30 yds, 2 TD.
+  Totals: 372 yards, 6 TDs.
+  J. Roundtree: 7 rec, 247 yds, 3 TD (Wade's top target).
+  Kosciusko is 4-0 (55-35 Neshoba Central, 46-16 Florence, 60-58 2OT Hernando,
+    45-27 Olive Branch).
+  Classification check (teams.json): Kosciusko 4A, Olive Branch 6A.
+
+Not a Player of the Week package — MHSAA Week 4 POTW was Yoshawn Hudson.
+
+=== ASSET 1 — TITLE ===
+372 Yards, 6 TDs — Caiden Wade Runs Past 6A Olive Branch | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+372 Yards, 6 TDs — Caiden Wade Runs Past 6A Olive Branch | Varsity Voices
+
+https://youtube.com/shorts/ujEPP0pz-to
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Kosciusko senior quarterback Caiden Wade accounts for six touchdowns as 4A Kosciusko handles 6A Olive Branch 45-27 to stay unbeaten.
+
+IN THIS CLIP
+• Wade goes 16-of-23 for 342 yards and 4 TDs — better than 70 percent passing
+• Adds 5 carries for 30 yards and 2 more scores on the ground
+• 372 total yards, 6 total touchdowns in a 45-27 win over Olive Branch
+• 4A Kosciusko takes down a 6A opponent to move to 4-0
+• Jontavious Roundtree goes off for 7 catches, 247 yards and 3 TDs
+• The Southern Miss commit is up over 1,200 passing yards on the season
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football highlight Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic small-town football stadium at dusk under a deep violet sky, a packed standing student section blurred behind the light towers, warm amber flares and golden bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "372 YARDS" in huge white all-caps distressed font, stacked above "6 TDS" in even larger red distressed all-caps font, rough cracked-concrete texture, strong outline/drop shadow.
+
+Below the headline, a torn-poster nameplate card with bold white distressed all-caps text reading "CAIDEN WADE". Beside or beneath the nameplate, one bare, unlabeled dark-charcoal/red-rim well — the Kosciusko Whippets, and the ONLY team logo in this composition, no second team, no "VS" card.
+
+Below the nameplate card, one more torn-poster card in the same style, spanning most of the frame's width, with bold white distressed all-caps text reading "45-27 OVER OLIVE BRANCH". This card fills the space between the nameplate and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · WHIPPETS 4-0"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image — this clip is not being presented as that segment.
+
+Overall style: high-contrast, gritty, red-black-white color palette with warm amber highlights, heavy cracked-concrete and grain texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Kosciusko Whippets — exactly one team logo, never two. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (439 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Caiden Wade,Kosciusko Whippets,quarterback,Olive Branch Conquistadors
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+Season total (players.json, kosciusko-whippets-whippets-1-wade, 4 games):
+1,202 passing yards, 12 TDs, 1 INT; 216 rushing yards, 8 TDs — supports the
+"up over 1,200 passing yards" bullet.
+
+Jontavious Roundtree: full name from players.json
+(kosciusko-whippets-whippets-2-roundtree), matching box-score "J. Roundtree(Sr)".
+
+Southern Miss commitment carried over from the verified Week 3 POTW package
+(mhsaa-player-of-the-week-091826.txt) — unchanged since.
+
+Dials varied from the prior Wade thumbnails (single light bank/warm gold/
+spray-paint scuff; light rain/red haze/film grain): this one uses a packed
+student section at dusk under a violet sky, warm amber rim light, and
+cracked-concrete texture.

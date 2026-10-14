@@ -1,0 +1,82 @@
+MHSAA Week 4 Recap Short — Leflore County 16, North Side 14
+Publish date: 2026-09-22
+
+SUBJECT CORRECTION: Garret's invocation said "LaFleur County SHOCKS South Delta!
+Unbelievable 60-0 WIN!" — that game does not exist in the data. Leflore County
+beat South Delta 50-14 on 2026-09-11 (MHSAA Week 3), and neither team has a 60-0
+result anywhere this season (Leflore PF 110 = 30+14+50+16; South Delta PA 76 =
+18+8+50+0). The only real 60-0 on the Sep 18 slate is Heidelberg 60, Taylorsville
+0. Garret confirmed on 2026-09-21 that the intended game is Leflore County vs.
+North Side, 16-14. Package below is built on that.
+
+VERIFIED (web/public/data/2026-27/teams.json + games.json):
+- 2026-09-18, at North Side (Shelby): Leflore County 16, North Side 14 — MHSAA Week 4
+- Leflore County Tigers — 1A, Region 4, Itta Bena, 4-0, No. 1 in 1A, coach Eric House
+  Results: 30-0 at Shaw, 14-6 vs Simmons, 50-14 vs South Delta, 16-14 at North Side
+- North Side Gators — 2A, Region 3, Shelby, now 2-1, No. 3 in 2A, coach John Eubanks
+  Results: 27-6 at Jefferson County, 44-0 vs Shaw, 14-16 vs Leflore County (PF 85 / PA 22)
+- Leflore County next plays Oct. 2 at home vs Coahoma County (no Sep 25 game listed)
+Yardage/turnover totals in teams.json are partial for both teams (yardsAgainst 0,
+no box scores on these games) and were deliberately left out.
+
+=== ASSET 1 — TITLE (69 chars) ===
+16-14 on the Road — Leflore County Is Still Unbeaten | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+16-14 on the Road — Leflore County Is Still Unbeaten | Varsity Voices
+
+https://youtube.com/shorts/Hnnj0Lk0qVA
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Host Breck Riley and Co-Hosts Jared Shotts, Brandon Davis, and Jake Wimberly break down the MHSAA Week 4 result that kept Leflore County perfect — two points on the road at North Side.
+
+ON THIS EPISODE
+• Final — Leflore County 16, North Side 14 at Shelby
+• The Tigers move to 4-0 and hold the No. 1 spot in Class 1A
+• A 1A team goes on the road and takes down an unbeaten 2A club — North Side drops to 2-1
+• North Side had allowed just 22 points in three games, including a 44-0 win over Shaw
+• By far Leflore County's tightest game of the year — they'd won 30-0, 14-6 and 50-14
+• Next up — Leflore County is back Oct. 2 at home against Coahoma County
+• Full 1A scores, standings and rankings at scrn.live/varsity-voices
+
+Broadcasting from the Environment Masters Studio — hassle-free plumbing and AC.
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone — Shorts get one block, no 3:4) ===
+Dials moved off the 9/21 Amite County Short: light rain/mist backdrop, cool-blue
+haze, spray-paint scuff texture, flat card tilt, no trophy.
+
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football Week 4 recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic night-time small-town football stadium in light rain and mist, bright stadium lights flaring through the drizzle, blurred into cool-blue-tinted haze bokeh.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Size each well modestly smaller than its final reserved space so a real PNG composited in later drops in cleanly without overflow. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "SURVIVED BY TWO" in huge white all-caps distressed font, stacked above "STILL 4-0" in even larger red distressed all-caps font, rough spray-paint texture, strong outline/drop shadow, heavy impact-style caps that stay readable at small thumbnail size.
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Filling the middle of the frame below the headline, one very large real-team matchup block: a jagged/torn poster card with a bold diagonal "VS" chevron, heavy drop shadow, and no tilt (sitting flat) — a bare, unlabeled team-logo well (same dark-charcoal/red-rim treatment, no text) on each side of the chevron, no player photography. Size this card generously so it fills most of the frame's width and a large share of its height, since it is the only matchup block in this composition, with torn-paper stripe fragments layered behind it so no plain background shows through.
+
+Do not write any text, caption, initials, or team name on or beside any well. Every well in this image is a bare, unlabeled circle, identified only by its position in the frame for whoever composites the real logo in later — the only labeled elements in the whole image are the red "MHSAA" chip, the headline, the "PRESENTED BY" label, and the bottom banner.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · RECAP."
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, card, or banner.
+
+Explicitly exclude: section labels in a corner, publish date or kickoff time, ad-style tagline copy, and any social platform icon row.
+
+Overall style: high-contrast, gritty, red-black-white color palette, spray-paint scuff texture overlays, matching the visual energy of major sports YouTube/podcast thumbnails (ESPN, Bleacher Report style) — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Leflore County Tigers · North Side Gators. (No MHSAA logo — it's rendered as text.)
+
+=== ASSET 4 — TAGS (496 characters) ===
+SCRN,SCRN live,SCRN podcast,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,coach interview,player spotlight,high school,athletics,sports news,recruiting news,mississippi,mississippi sports,West Point football,football coaching strategy,football offensive schemes,college football,friday night lights,Leflore County Tigers,North Side Gators,mhsaa

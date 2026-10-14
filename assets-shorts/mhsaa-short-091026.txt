@@ -1,0 +1,79 @@
+VARSITY VOICES — MHSAA SHORT — CLARKSDALE AT CHARLESTON (BATTLE OF THE DELTA)
+Publish date: Sep 10, 2026
+
+TITLE
+AI Likes Clarksdale 70% — Battle of the Delta Is On | Varsity Voices
+
+DESCRIPTION
+AI Likes Clarksdale 70% — Battle of the Delta Is On | Varsity Voices
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Co-Hosts Jared Shotts and Brandon Davis preview the Battle of the Delta as Clarksdale travels to Charleston this Friday night.
+
+IN THIS CLIP
+• Charleston is 2-0, averaging 33 points a game while allowing just a touchdown a contest on defense
+• Clarksdale is 1-1, averaging 38 points a game and allowing just over 23
+• The panel's AI model likes Clarksdale 70% in this one
+• Both offenses run downhill — Clarksdale averages 8 yards a carry, Charleston 9.5
+• Jared, on the rushing numbers: "something's gonna have to give"
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+THUMBNAIL PROMPT — 9:16 (INSTAGRAM / TIKTOK)
+A high-energy vertical social thumbnail in 9:16 (1080x1920) format for a Mississippi high school football preview clip, sized for Instagram Reels and TikTok covers. Composition reads like a torn-newspaper / poster cutout: white and red torn-paper stripe edges, layered card shapes with jagged edges and slight dynamic tilt, drop shadows throughout, high energy — not a flat dark-card layout. Reserve clean-edged circular placeholder zones for logos to be composited in later, each sized smaller than its reserved space so the real PNG drops in without overflow. Fill every placeholder circle with a solid dark charcoal-black tone that matches the poster's night-stadium shadow values — NOT white, not a flat pale color — finished with a thin red rim-light ring around the edge so each one reads as a sunken logo well built into the poster rather than a blank white stamp: the State Championships Radio Network shield well and the Varsity Voices mark well sitting side by side across the very top of the frame, and the C Spire logo well in the BOTTOM-LEFT area just above the bottom banner, with a small white all-caps "PRESENTED BY" label directly above it, center-aligned to the C Spire circle. Do not draw, letter, outline in white, recolor, or imply the actual contents of any placeholder circle — they are genuinely empty dark circular wells, not sketched logos and not white stamps. Bold, gritty, heavy impact-style stadium poster typography with rough spray-paint/torn edges and a strong outline stroke fills the upper third of the frame, below the top logo row, reading "BATTLE OF" in huge white all-caps font, stacked above "THE DELTA" in even larger red distressed all-caps font — oversized, legible at small thumbnail size (judge scale as if viewed at ~250px wide). Directly beneath the headline, a small red chip with bold white all-caps text reading "MHSAA." Filling the middle of the frame below the headline, one large torn-paper matchup card with slight dynamic tilt, ESPN/Bleacher-Report comparison-graphic style: two circular placeholder zones — each filled with the same dark charcoal-black tone and thin red rim-light ring as the corner logo wells (NOT white) — reserved for the Clarksdale logo on the left and the Charleston logo on the right, separated by a bold diagonal red "VS" chevron with a drop shadow. Background is a dramatic night-time football stadium with bright stadium lights flaring, atmospheric haze, and light mist drifting through the beams blurred into red-tinted bokeh. Keep the bottom 15 percent and the right 12 percent of the frame clear of important content so the vertical player controls, caption and action buttons do not cover the headline, matchup card or banner. Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "WEEK 3 PREVIEW · CLARKSDALE AT CHARLESTON," positioned so it does not overlap the C Spire circle or its label. Overall style: high-contrast, gritty, red-black-white color palette, heavy film grain and torn-paper texture overlays, dramatic red-tinted rim lighting, editorial poster-style typography, optimized for maximum click-through at small sizes. Keep it uncluttered: no anonymous player cutouts, no invented team logos, no section labels, no publish date, no tagline copy, no social platform icon row, no website URL.
+
+THUMBNAIL PROMPT — 3:4 (PORTRAIT CONVERSION)
+Using the finished, logo-composited 9:16 thumbnail as the source image, convert it into a 3:4 portrait (1080x1440) version. Do not stretch, squash, skew, or distort anything — retain all styling, fonts, colors, and textures exactly as in the source. Every logo keeps its original aspect ratio unchanged; in particular, keep every circular logo (SCRN, Varsity Voices, C Spire, Clarksdale, and Charleston) a perfect 1:1 circle, scaled uniformly by the same amount horizontally and vertically — never compressed into an oval to fit a row's height. Because 3:4 is less extreme than 9:16, reflow (don't just crop) the existing elements with more breathing room between them: SCRN and Varsity Voices stay in a top row, the "BATTLE OF / THE DELTA" headline and MHSAA chip stack full-width below that, the Clarksdale-vs-Charleston matchup card sits centered beneath that with clear space around it, and the C Spire logo with its centered "PRESENTED BY" label plus the bottom red banner stay at the bottom, center-aligned to each other.
+
+TAGS (460 characters, per Garret's confirmed counting rule: each tag's length + 1 for its comma)
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,high school,athletics,sports news,mississippi,mississippi sports,West Point football,college football,mississippi high school football,mhsaa football,touchdown,football,MHSAA,MAIS,Clarksdale Wildcats,Charleston Tigers,Mississippi Delta football,rivalry game
+
+LOGOS NEEDED FOR THIS PROMPT
+- SCRN shield (top-left)
+- Varsity Voices mark (top-right)
+- C Spire logo (bottom-left, "Presented By")
+- Clarksdale Wildcats — matchup card, left
+- Charleston Tigers — matchup card, right
+
+NOTES
+Clipped from the MHSAA Week 3 Preview full episode
+(assets-shorts/mhsaa-full-episode-090926.txt) — the "Battle of the Delta"
+segment. Same underlying game as one of that episode's discussion points,
+but not one of the 4 matchup-block games Garret picked for that episode's
+thumbnail, so this Short gives Clarksdale-Charleston its own dedicated
+matchup card.
+
+Format = Short, so crops are 9:16 + 3:4 per the standing crop table (not
+16:9 + 3:4, which is full-episode only).
+
+Verified against web/public/data/2026-27/games.json (2026-09-11, Charleston
+home vs. Clarksdale away):
+  Charleston: W 42-0 over Amanda Elzy (8/28), W 24-14 over North Panola
+    (9/4) — 2-0. Points for: (42+24)/2 = 33 ppg, matches exactly. Points
+    against: (0+14)/2 = 7 ppg — "only surrendering a touchdown," matches
+    exactly.
+  Clarksdale: L 29-35 to Cleveland Central (8/28), W 46-12 over Coahoma
+    County (9/4) — 1-1. Points for: (29+46)/2 = 37.5, rounds to the "38
+    points a ballgame" stated on air. Points against: (35+12)/2 = 23.5 —
+    "just over 23," matches exactly.
+
+Not used, because unverifiable from the repo: the 8 yards/9.5 yards per
+carry rushing averages and the "70%" AI model figure — all outside-source
+numbers cited by the hosts, not present in the repo's team/player stat
+fields.
+
+Tags built from the current MUST-have 26-tag base list in
+templates/youtube/tags-template.md, per the correction found while building
+the Week 3 Preview full-episode package earlier today.
+
+Thumbnail dial notes: light mist (vs. the full episode's packed crowd),
+red-tinted rim light, torn-paper texture, single matchup card (not the
+2x2 grid used on the full-episode thumbnail published the same day) since
+this Short covers exactly one game.

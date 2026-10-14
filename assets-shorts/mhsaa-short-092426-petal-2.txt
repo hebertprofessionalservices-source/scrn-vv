@@ -1,0 +1,102 @@
+VARSITY VOICES — MHSAA SHORT — PETAL 40, GULFPORT 39 (OT, WEEK 4) — SECOND CLIP
+Publish date: Sep 24, 2026
+Source video: https://youtube.com/shorts/MeN-WmGBLdI
+
+SECOND PACKAGE ON THE SAME GAME. mhsaa-short-092426-petal.txt already covers
+Petal 40, Gulfport 39 from a different clip
+(https://youtube.com/shorts/5BYAtbYrVqg), also publishing Sep 24. This one is
+built on a different angle — Gulfport's 19-point fourth quarter — with a
+different title, headline, and thumbnail dials so the two don't look or read
+like the same upload. If you only meant to do one, this is the duplicate.
+
+Verified in games.json (2026-09-18-gulfport-admirals-admirals-at-petal):
+  Petal 40, Gulfport 39 — Sep 18, 2026, at Petal.
+  Quarters, Petal: 7 / 10 / 7 / 8, plus 8 in overtime.
+  Quarters, Gulfport: 0 / 13 / 0 / 19, plus 7 in overtime.
+  Petal led 24-13 after three; Gulfport's 19-point fourth tied it 32-32;
+    Petal took the overtime 8-7 (TD + two-point vs. TD + PAT).
+  Petal (teams.json): 7A, 7A Region 3, 4-0, No. 3 in class and statewide.
+  Gulfport (teams.json): 7A, 7A Region 4, 2-1, No. 4 in class and statewide.
+
+THE BOX SCORE IN THIS GAME IS GULFPORT'S, NOT PETAL'S — same as the first
+package. J. Wolverton is Jackson Wolverton (So, QB, Gulfport); Amijai
+Frederick, Javious Hales, Camden Morgan and Mylan Stubbs are all Gulfport.
+Petal has no box score (dataStatus "incomplete"). The 393-yard passing game
+belongs to the team that lost.
+
+"UPSET" STILL DOESN'T HOLD UP: Petal went in 3-0 and ranked No. 3, at home,
+against a 2-1 No. 4 Gulfport. Left out of the title and copy again.
+
+Not a Player of the Week package.
+
+=== ASSET 1 — TITLE ===
+19 Points in the 4th — Gulfport Still Lost by One | Varsity Voices
+
+=== ASSET 2 — DESCRIPTION ===
+19 Points in the 4th — Gulfport Still Lost by One | Varsity Voices
+
+https://youtube.com/shorts/MeN-WmGBLdI
+
+The State Championships Radio Network presents Varsity Voices — your home for Mississippi high school football. Gulfport scored 19 in the fourth quarter to erase an 11-point hole, forced overtime, and still walked off a one-point loser at Petal.
+
+IN THIS CLIP
+• Petal 40, Gulfport 39 — decided in overtime
+• Petal is up 24-13 through three quarters
+• Gulfport answers with 19 unanswered-quarter points to tie it 32-32
+• Petal wins the overtime with a touchdown and a two-point conversion; Gulfport gets a TD and the extra point
+• Jackson Wolverton throws for 393 yards and 4 TDs for Gulfport in the loss
+• Camden Morgan (8-121) and Javious Hales (8-97) both clear 100 receiving yards
+• Petal moves to 4-0; Gulfport falls to 2-1
+
+THANKS TO OUR PARTNERS
+C SPIRE — Rick's Pro Truck — Environment Masters — Entergy Mississippi — Cherokee Brick — Explore Ridgeland — Farm Families of Mississippi — Hinds Community College — Mississippi Department of Transportation — Lighthouse Limo Services — Mississippi Army National Guard — Mississippi Sports Medicine & Orthopedic — Hebert Professional Services — Case Flooring — Pine Straw America — Genuine MS — Oxford Falls
+
+FOLLOW THE NETWORK
+@STATECHAMPRADIO on YouTube, Instagram, TikTok, Facebook & Twitter
+
+New episodes every week.
+
+#MHSAA #MississippiFootball #HighSchoolFootball #VarsityVoices #MHSAAFootball #FridayNightLights
+
+=== ASSET 3 — THUMBNAIL PROMPT (9:16, standalone generation — Short, no 3:4) ===
+A high-energy vertical thumbnail in 9:16 vertical (1080x1920) format for a Mississippi high school football recap Short, sized for YouTube Shorts / Instagram Reels / TikTok. Composition reads like a torn-newspaper / poster cutout: layered card shapes, white/red torn-paper stripe edges, high energy, filling the frame edge-to-edge with no large uninterrupted empty background gaps — not a flat, clean, minimal, or sparse layout. Background is a dramatic big-school night stadium shot from a low field-level angle looking up into the light towers, a packed standing crowd filling the bleachers behind them, cold blue-white flares and haze with chalk dust drifting through the beams.
+
+Reserve clean circular logo wells as empty placeholders for SCRN and Varsity Voices, side by side across the very top of the frame — do not render, invent, or approximate any logo artwork inside them. Each well is filled with a solid dark charcoal/near-black tone matching the poster's night-stadium shadow values (explicitly not white, not transparent), with a thin red rim-light ring at the edge. Neither well carries any text, caption, initials, or name rendered on or beside it — they are bare unlabeled circles, distinguishable only by position (top-left, top-right).
+
+Directly beneath the headline, a small red chip with bold white all-caps text actually reading "MHSAA" — this is real rendered text, not a logo or placeholder.
+
+Bold, gritty stadium poster typography fills the upper third of the frame, below the top logo row: "19-POINT RALLY" in huge white all-caps distressed font, stacked above "STILL LOST" in even larger red distressed all-caps font, rough torn-paper and heavy film-grain texture, strong outline/drop shadow.
+
+Below the headline, one matchup block centered in the frame, tilted slightly clockwise: two bare, unlabeled dark-charcoal/red-rim circular wells side by side — left well for the Petal Panthers, right well for the Gulfport Admirals — separated by a small red "VS" chip with bold white all-caps text. Beneath the matchup block, a torn-poster card spanning most of the frame's width with bold white distressed all-caps text reading "40-39 IN OT". This block and card fill the space between the headline and the "PRESENTED BY" section so the lower half of the frame doesn't read as empty background.
+
+Bottom-left, just above the banner, a matching dark-charcoal/red-rim circular well for C Spire, with a small white all-caps "PRESENTED BY" label centered directly above it — this is the only OTHER labeled element in the image besides the league chip and the "VS" chip.
+
+Above the bottom edge, a thin red banner strip with bold white distressed all-caps text reads "MHSAA WEEK 4 · OVERTIME THRILLER"
+
+Keep the bottom 15 percent and right 12 percent of the frame clear of important content so Shorts/Reels UI does not cover the headline, cards, or banner.
+
+No periods anywhere in the image: none of the rendered text — headline, nameplate, cards, score, league chip, or banner — ends with or contains a period or full stop.
+
+Explicitly exclude: section labels, publish date/kickoff time, ad-style tagline copy, social platform icon rows, and any "Player of the Week" text or badge anywhere in the image.
+
+Overall style: high-contrast, gritty, red-black-white color palette with cold blue-white highlights, heavy film-grain and torn-paper edge overlays, matching the visual energy of major sports YouTube/podcast thumbnails — bold, dynamic, legible at ~250px wide.
+
+LOGOS NEEDED FOR THIS PROMPT: SCRN · Varsity Voices · C Spire · Petal Panthers · Gulfport Admirals. (No MHSAA logo — it's rendered as text.) Both team logos are in assets/logos-teams/.
+
+=== ASSET 4 — TAGS (432 characters) ===
+SCRN,sports podcast,high school sports,varsity sports,sports talk,sports commentary,college recruiting,sports recruiting,high school football,sports highlights,game analysis,hot takes,sports predictions,player spotlight,high school,athletics,sports news,mississippi,mississippi sports,college football,friday night lights,mississippi high school football,mhsaa football,Petal Panthers,Gulfport Admirals,7A football,overtime,comeback
+
+NOTES
+Format = Short: one thumbnail block only (standalone 9:16 generation), no
+3:4 companion.
+
+Written deliberately off a different angle than
+mhsaa-short-092426-petal.txt so the two Shorts on this game don't compete:
+that one leads on Petal surviving, this one leads on Gulfport's fourth-quarter
+rally coming up a point short. Title, headline, banner, and dials are all
+different.
+
+Dials: packed big-school crowd, low field-level angle into the towers, cold
+blue-white rim light, chalk dust in the beams, torn-paper + heavy film grain,
+clockwise card tilt — differs from the first Petal package (light rain,
+sideline telephoto, warm gold, torn-paper only).
