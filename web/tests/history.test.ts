@@ -206,9 +206,8 @@ describe("sanitizeCoachName", () => {
     const summary = { name: "Eugene Clinton", yearsAtSchool: 1, atSchool: { wins: 0, losses: 0, ties: 0 }, career: { wins: 0, losses: 0, ties: 0 } };
     const t = { name: "Brandon Bulldogs", headCoach: "Ayden Collier" } as never;
     // MaxPreps wins so in-season hires show up without waiting on AFHS.
-    // This pair is the known cost of that: Brandon confirmed Eugene Clinton is
-    // the real coach and Ayden Collier is a MaxPreps fabrication, and the
-    // policy still shows Collier. Flipping this back is a client decision.
+    // (Brandon's real data is corrected upstream via HEAD_COACH_OVERRIDES in
+    // scraper/normalize.py; this fixture just exercises the precedence.)
     expect(coachDisplayName(summary, t)).toBe("Ayden Collier");
     // AFHS is the fallback when MaxPreps has nothing usable.
     expect(coachDisplayName(summary, { name: "Brandon Bulldogs", headCoach: null } as never)).toBe("Eugene Clinton");

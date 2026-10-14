@@ -52,6 +52,14 @@ _SUB_MODEL_FACTORIES = {
 }
 
 
+# Coaches confirmed by the school where MaxPreps shows a wrong name.  Applied
+# at normalize time so the fix survives the nightly scrape.
+HEAD_COACH_OVERRIDES: dict[str, str] = {
+    # Brandon confirmed Eugene Clinton; MaxPreps lists a fabricated "Ayden Collier".
+    "brandon-bulldogs-bulldogs": "Eugene Clinton",
+}
+
+
 def build_team(
     *,
     season: str,
@@ -122,7 +130,7 @@ def build_team(
         record=record,
         rankings=rankings,
         stats=stats,
-        headCoach=team_home.get("headCoach"),
+        headCoach=HEAD_COACH_OVERRIDES.get(team_id, team_home.get("headCoach")),
         maxprepsUrl=team_home.get("maxprepsUrl"),
         regionRecord=TeamRecord(**region_record) if region_record else None,
         **_standing_fields(overall_standing),
