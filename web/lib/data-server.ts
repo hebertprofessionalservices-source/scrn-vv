@@ -45,7 +45,11 @@ async function refreshLive(rel: string, entry: LiveEntry): Promise<void> {
       signal: AbortSignal.timeout(LIVE_TIMEOUT_MS),
     });
     if (res.status === 200) {
-      entry.text = await res.text();
+      const text = await res.text();
+      // A file that won't parse is rejected here, so readers keep the last
+      // good copy (or the bundled one) instead of rendering empty pages.
+      JSON.parse(text);
+      entry.text = text;
       entry.etag = res.headers.get("etag");
     } else if (res.status !== 304) {
       console.warn(`live data ${rel}: HTTP ${res.status}, keeping previous copy`);
