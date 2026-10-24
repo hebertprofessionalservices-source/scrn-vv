@@ -1,0 +1,14 @@
+# Netlify build config. The Next.js app lives in web/; Netlify's OpenNext
+# runtime (@netlify/plugin-nextjs) is picked up automatically.
+[build]
+  base = "web"
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Server code reads the scraped JSON off disk (lib/data-server.ts,
+# lib/history-server.ts), so make sure it ships with the SSR function.
+[functions]
+  included_files = ["public/data/**"]

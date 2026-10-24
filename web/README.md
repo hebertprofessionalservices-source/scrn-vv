@@ -10,7 +10,6 @@ Next.js 15 dashboard for Mississippi HS varsity football. Reads JSON output of t
 - shadcn/ui primitives
 - Fuse.js (cmd-K search)
 - Recharts (charts)
-- jose (signed cookies)
 - pnpm
 
 ## Setup
@@ -18,14 +17,9 @@ Next.js 15 dashboard for Mississippi HS varsity football. Reads JSON output of t
 ```bash
 cd web
 pnpm install
-cp .env.example .env.local
-# Fill in SITE_PASSWORD, ADMIN_PASSWORD, COOKIE_SECRET, GITHUB_PAT, GITHUB_REPO
 ```
 
-Generate a strong `COOKIE_SECRET`:
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-```
+No environment variables are required.
 
 ## Sync data (local development)
 
@@ -50,7 +44,7 @@ The GitHub Actions scraper workflow does this automatically on every scheduled r
 pnpm dev
 ```
 
-Opens at http://localhost:3000. The site password gate redirects you to `/unlock` first.
+Opens at http://localhost:3000.
 
 ## Build
 
@@ -77,18 +71,6 @@ Push the repo to GitHub and create a new Vercel project:
 
 The first build takes ~3–5 minutes and generates ~250 static pages.
 
-### 2. Environment Variables
-
-In **Vercel project settings → Environment Variables**, add:
-
-| Variable | Value |
-|----------|-------|
-| `SITE_PASSWORD` | Shared password for all viewers |
-| `ADMIN_PASSWORD` | Host-only password for `/admin/editorial` |
-| `COOKIE_SECRET` | 32-byte hex string (see Setup above) |
-| `GITHUB_PAT` | Fine-grained PAT with `Contents: read+write` on this repo |
-| `GITHUB_REPO` | e.g. `garret/varsity-voices-dashboard` |
-
 ### 3. Custom Domain
 
 Point a custom domain (e.g. `dashboard.scrn.live`) at the Vercel CNAME in project settings.
@@ -114,12 +96,10 @@ No manual intervention needed — the site stays fresh automatically.
 | `/players/[id]` | Player detail |
 | `/matchup/[a-vs-b]` | Side-by-side comparison |
 | `/present/*` | Broadcast-mode variants (no chrome, larger type) |
-| `/admin/editorial` | Host-only editorial controls |
-| `/unlock` | Site password form |
 
 ## On-Air Broadcast Checklist
 
-1. **Set editorial content** — Open `/admin/editorial`, set the current week, Game of the Week, and storyline. Click **PUBLISH**.
+1. **Set editorial content** — Edit `public/data/editorial.json` (current week, Game of the Week, storyline) and push.
 2. **Wait for rebuild** — Vercel rebuilds within 60 seconds.
 3. **Verify on home page** — Open `/` in broadcast view to confirm the host pick appears.
 4. **Navigate segments** — For each on-air segment, open the relevant `/present/...` path in a full-screen browser window:
@@ -132,25 +112,19 @@ No manual intervention needed — the site stays fresh automatically.
 ## Architecture
 
 - **Data loading**: All data is loaded server-side at request time (or build time for static pages) from `public/data/<season>/*.json`.
-- **Authentication**: Site-wide password gate via edge middleware (`middleware.ts`). Every route except `/unlock`, `/api/unlock`, and static assets requires a signed cookie.
-- **Admin layer**: Editorial route (`/admin/editorial`) has a second cookie scope (`"admin"`) for host-only access.
+- **Access**: The site is public; there are no logins. `middleware.ts` only blocks direct requests for `/data/*`.
 - **Search**: cmd-K search palette uses Fuse.js, fully client-side, no external API calls.
-- **Publishing**: Only external call is `api/admin/editorial` → GitHub Contents API when the host publishes editorial updates.
 
 ## Troubleshooting
 
 **Build fails with "cannot find module"**
-- Ensure `.env.local` has all required variables (see Setup).
 - Check that team logo directory exists: `web/public/team-logos/`.
 
 **404 page always shows**
-- Verify you're logged in (check `/unlock` if needed).
 - Check middleware redirects in `middleware.ts`.
 
 **Editorial updates don't appear**
-- Verify `GITHUB_PAT` has `Contents: read+write` scope.
-- Check that `GITHUB_REPO` is in format `owner/repo`.
-- Wait ~60 sec for Vercel rebuild after publish.
+- Wait ~60 sec for the rebuild after pushing `editorial.json`.
 
 **Search (cmd-K) is slow or empty**
 - Search indexes all teams and players at runtime — first load may take a moment.
