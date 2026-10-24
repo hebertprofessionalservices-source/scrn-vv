@@ -17,9 +17,74 @@ export type { PriorSeasonInfo } from "./prior";
 
 const PUBLIC_DATA = path.join(process.cwd(), "public", "data");
 
+/**
+ * Production reads the current season and editorial.json straight from the
+ * repo on GitHub, so a scraper push shows up without a redeploy (Netlify
+ * skips builds for those commits, see scripts/netlify-ignore.mjs). Past
+ * seasons are frozen and stay on the bundled copy. Empty in dev, so local
+ * edits to public/data show up as before.
+ */
+const LIVE_DATA_URL = process.env.LIVE_DATA_URL ?? "";
+// raw.githubusercontent.com caches for 5 minutes, so polling faster buys nothing.
+const LIVE_TTL_MS = 5 * 60 * 1000;
+const LIVE_TIMEOUT_MS = 10_000;
+
+interface LiveEntry {
+  text: string | null;
+  etag: string | null;
+  checkedAt: number;
+  refresh: Promise<void> | null;
+}
+const liveCache = new Map<string, LiveEntry>();
+
+async function refreshLive(rel: string, entry: LiveEntry): Promise<void> {
+  try {
+    const res = await fetch(`${LIVE_DATA_URL}/${rel}`, {
+      cache: "no-store",
+      headers: entry.etag ? { "If-None-Match": entry.etag } : {},
+      signal: AbortSignal.timeout(LIVE_TIMEOUT_MS),
+    });
+    if (res.status === 200) {
+      entry.text = await res.text();
+      entry.etag = res.headers.get("etag");
+    } else if (res.status !== 304) {
+      console.warn(`live data ${rel}: HTTP ${res.status}, keeping previous copy`);
+    }
+  } catch (err) {
+    console.warn(`live data ${rel}: ${(err as Error).message}, keeping previous copy`);
+  } finally {
+    entry.checkedAt = Date.now();
+    entry.refresh = null;
+  }
+}
+
+/** Latest GitHub copy of a file, or null to fall back to the bundled one. */
+async function readLive(rel: string): Promise<string | null> {
+  let entry = liveCache.get(rel);
+  if (!entry) {
+    entry = { text: null, etag: null, checkedAt: 0, refresh: null };
+    liveCache.set(rel, entry);
+  }
+  if (Date.now() - entry.checkedAt > LIVE_TTL_MS && !entry.refresh) {
+    entry.refresh = refreshLive(rel, entry);
+  }
+  // Only the first read waits; after that a stale copy is served while
+  // the refresh runs, so no visitor sits through a multi-MB download.
+  if (entry.text === null && entry.refresh) await entry.refresh;
+  return entry.text;
+}
+
+async function isLiveFile(rel: string): Promise<boolean> {
+  if (!LIVE_DATA_URL) return false;
+  if (rel === "editorial.json") return true;
+  const [newest] = await availableSeasons();
+  return newest !== undefined && rel.startsWith(`${newest}/`);
+}
+
 async function readJson<T>(rel: string, fallback: T): Promise<T> {
   try {
-    const buf = await fs.readFile(path.join(PUBLIC_DATA, rel), "utf-8");
+    const live = (await isLiveFile(rel)) ? await readLive(rel) : null;
+    const buf = live ?? (await fs.readFile(path.join(PUBLIC_DATA, rel), "utf-8"));
     return JSON.parse(buf) as T;
   } catch {
     return fallback;

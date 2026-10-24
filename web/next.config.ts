@@ -7,6 +7,13 @@ const nextConfig: NextConfig = {
   // Lets a production build run against a separate output dir while the dev
   // server keeps using .next — they corrupt each other when they share one.
   distDir: process.env.NEXT_DIST_DIR || ".next",
+  // Netlify sets NETLIFY=true during its builds. Baked in at build time
+  // because netlify.toml env doesn't reach functions at runtime.
+  env: {
+    LIVE_DATA_URL: process.env.NETLIFY === "true"
+      ? "https://raw.githubusercontent.com/hebertprofessionalservices-source/scrn-vv/main/web/public/data"
+      : "",
+  },
   // Logos are rendered on most pages; let browsers keep them for a day
   // instead of revalidating every one on each visit.
   async headers() {

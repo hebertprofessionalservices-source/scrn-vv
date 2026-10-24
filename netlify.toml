@@ -4,6 +4,8 @@
   base = "web"
   command = "pnpm build"
   publish = ".next"
+  # Data-only pushes go live from GitHub without a rebuild.
+  ignore = "node scripts/netlify-ignore.mjs"
 
 [build.environment]
   NODE_VERSION = "24"
