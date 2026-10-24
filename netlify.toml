@@ -8,6 +8,11 @@
 [build.environment]
   NODE_VERSION = "24"
 
+# Auto-install didn't happen for this API-created site, so declare it.
+# Left unpinned so Netlify keeps it current.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # Server code reads the scraped JSON off disk (lib/data-server.ts,
 # lib/history-server.ts), so make sure it ships with the SSR function.
 [functions]
