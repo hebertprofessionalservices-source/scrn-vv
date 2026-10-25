@@ -1,6 +1,6 @@
 "use client";
 
-import { toPng } from "html-to-image";
+import { toBlob } from "html-to-image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
@@ -121,7 +121,7 @@ export function PaperStage({
     try {
       // Webfonts land mid-capture as unstyled text otherwise.
       if (document.fonts?.ready) await document.fonts.ready;
-      const url = await toPng(paper, {
+      const blob = await toBlob(paper, {
         width: PAGE_W,
         height: PAGE_H,
         pixelRatio: 1,
@@ -134,10 +134,19 @@ export function PaperStage({
           height: `${PAGE_H}px`,
         },
       });
+      if (!blob) throw new Error("render produced no image");
+      // A Blob URL on a link attached to the page. A detached link carrying
+      // a ~1 MB data: URL gets silently dropped by some browsers.
+      const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
       a.download = `${fileName}.png`;
+      a.style.display = "none";
+      document.body.appendChild(a);
       a.click();
+      a.remove();
+      // Revoking straight away can cancel the download in Firefox and Safari.
+      window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
       setSaving("idle");
     } catch {
       // Never leave the button stuck on "Saving…" — say so and let them retry.
