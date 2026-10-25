@@ -14,8 +14,10 @@ export function middleware(req: NextRequest) {
   if (pathname.startsWith("/data/")) {
     return new NextResponse("Not found", { status: 404 });
   }
-  // The root layout reads this to decide when to drop the site chrome.
-  const res = NextResponse.next();
-  res.headers.set("x-next-pathname", pathname);
-  return res;
+  // The root layout reads this to decide when to drop the site chrome. It
+  // must ride on the request: a response header only reaches headers() on
+  // some hosts, and on Netlify it never does.
+  const headers = new Headers(req.headers);
+  headers.set("x-next-pathname", pathname);
+  return NextResponse.next({ request: { headers } });
 }
