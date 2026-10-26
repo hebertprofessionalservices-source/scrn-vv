@@ -24,13 +24,13 @@
     "stats": {
       "pointsFor": 216,
       "pointsAgainst": 210,
-      "yardsFor": 1552,
+      "yardsFor": 1786,
       "yardsAgainst": 0,
-      "passYdsFor": 903,
-      "rushYdsFor": 649,
+      "passYdsFor": 1013,
+      "rushYdsFor": 773,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 5,
+      "turnoversForced": 6,
       "turnoversLost": 3
     },
     "headCoach": "MD Jennings",
@@ -252,14 +252,14 @@
     "stats": {
       "pointsFor": 290,
       "pointsAgainst": 145,
-      "yardsFor": 2206,
+      "yardsFor": 2446,
       "yardsAgainst": 0,
-      "passYdsFor": 563,
-      "rushYdsFor": 1643,
+      "passYdsFor": 575,
+      "rushYdsFor": 1871,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 14,
-      "turnoversLost": 9
+      "turnoversLost": 10
     },
     "headCoach": "Dan Brady",
     "maxprepsUrl": "https://www.maxpreps.com/ms/stringer/stringer-red-devils/football/",
@@ -309,14 +309,14 @@
     "stats": {
       "pointsFor": 246,
       "pointsAgainst": 139,
-      "yardsFor": 2448,
+      "yardsFor": 2903,
       "yardsAgainst": 0,
-      "passYdsFor": 840,
-      "rushYdsFor": 1608,
+      "passYdsFor": 1025,
+      "rushYdsFor": 1878,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 16,
-      "turnoversLost": 9
+      "turnoversForced": 18,
+      "turnoversLost": 10
     },
     "headCoach": "KePatrick Barnes",
     "maxprepsUrl": "https://www.maxpreps.com/ms/rolling-fork/south-delta-bulldogs/football/",
@@ -1161,14 +1161,14 @@
     "stats": {
       "pointsFor": 206,
       "pointsAgainst": 182,
-      "yardsFor": 2513,
+      "yardsFor": 2888,
       "yardsAgainst": 0,
-      "passYdsFor": 194,
-      "rushYdsFor": 2319,
+      "passYdsFor": 290,
+      "rushYdsFor": 2598,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 8,
-      "turnoversLost": 13
+      "turnoversForced": 10,
+      "turnoversLost": 15
     },
     "headCoach": "T'Darryl Grays",
     "maxprepsUrl": "https://www.maxpreps.com/ms/mcadams/mcadams-bulldogs/football/",
@@ -1503,13 +1503,13 @@
     "stats": {
       "pointsFor": 50,
       "pointsAgainst": 303,
-      "yardsFor": 819,
+      "yardsFor": 1198,
       "yardsAgainst": 0,
-      "passYdsFor": 447,
-      "rushYdsFor": 372,
+      "passYdsFor": 571,
+      "rushYdsFor": 627,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 3,
+      "turnoversForced": 6,
       "turnoversLost": 3
     },
     "headCoach": "Eric Nelson",
@@ -1617,14 +1617,14 @@
     "stats": {
       "pointsFor": 105,
       "pointsAgainst": 272,
-      "yardsFor": 1410,
+      "yardsFor": 1601,
       "yardsAgainst": 0,
-      "passYdsFor": 428,
-      "rushYdsFor": 982,
+      "passYdsFor": 504,
+      "rushYdsFor": 1097,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 7,
-      "turnoversLost": 19
+      "turnoversLost": 21
     },
     "headCoach": "Richard Russo",
     "maxprepsUrl": "https://www.maxpreps.com/ms/vardaman/vardaman-rams/football/",
@@ -1959,14 +1959,14 @@
     "stats": {
       "pointsFor": 137,
       "pointsAgainst": 270,
-      "yardsFor": 1330,
+      "yardsFor": 1492,
       "yardsAgainst": 0,
-      "passYdsFor": 620,
-      "rushYdsFor": 710,
+      "passYdsFor": 648,
+      "rushYdsFor": 844,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 8,
-      "turnoversLost": 10
+      "turnoversForced": 12,
+      "turnoversLost": 12
     },
     "headCoach": "Nathan Wright",
     "maxprepsUrl": "https://www.maxpreps.com/ms/french-camp/french-camp-academy-panthers/football/",
@@ -2070,13 +2070,13 @@
     "stats": {
       "pointsFor": 315,
       "pointsAgainst": 124,
-      "yardsFor": 2758,
+      "yardsFor": 3268,
       "yardsAgainst": 0,
-      "passYdsFor": 1686,
-      "rushYdsFor": 1072,
+      "passYdsFor": 1926,
+      "rushYdsFor": 1342,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 18,
+      "turnoversForced": 19,
       "turnoversLost": 7
     },
     "headCoach": "Ron Price",
@@ -2127,13 +2127,13 @@
     "stats": {
       "pointsFor": 289,
       "pointsAgainst": 40,
-      "yardsFor": 2495,
+      "yardsFor": 2832,
       "yardsAgainst": 0,
-      "passYdsFor": 1204,
-      "rushYdsFor": 1291,
+      "passYdsFor": 1331,
+      "rushYdsFor": 1501,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
+      "turnoversForced": 21,
       "turnoversLost": 4
     },
     "headCoach": "Jeremy Loy",
@@ -2298,14 +2298,14 @@
     "stats": {
       "pointsFor": 377,
       "pointsAgainst": 54,
-      "yardsFor": 2991,
+      "yardsFor": 3386,
       "yardsAgainst": 0,
-      "passYdsFor": 1699,
-      "rushYdsFor": 1292,
+      "passYdsFor": 1808,
+      "rushYdsFor": 1578,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
-      "turnoversLost": 6
+      "turnoversForced": 19,
+      "turnoversLost": 7
     },
     "headCoach": "Darryl Carter",
     "maxprepsUrl": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
@@ -2355,14 +2355,14 @@
     "stats": {
       "pointsFor": 268,
       "pointsAgainst": 223,
-      "yardsFor": 2252,
+      "yardsFor": 2572,
       "yardsAgainst": 0,
-      "passYdsFor": 1062,
-      "rushYdsFor": 1190,
+      "passYdsFor": 1156,
+      "rushYdsFor": 1416,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
-      "turnoversLost": 12
+      "turnoversForced": 24,
+      "turnoversLost": 13
     },
     "headCoach": "Clint Faust",
     "maxprepsUrl": "https://www.maxpreps.com/ms/water-valley/water-valley-blue-devils/football/",
@@ -2401,7 +2401,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 1
     },
     "rankings": {
@@ -2410,8 +2410,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 274,
-      "pointsAgainst": 21,
+      "pointsFor": 338,
+      "pointsAgainst": 27,
       "yardsFor": 2257,
       "yardsAgainst": 0,
       "passYdsFor": 452,
@@ -2424,11 +2424,11 @@
     "headCoach": "Sedric Cain",
     "maxprepsUrl": "https://www.maxpreps.com/ms/liberty/amite-county-trojans/football/",
     "regionRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -2441,7 +2441,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -2640,13 +2640,13 @@
     "stats": {
       "pointsFor": 184,
       "pointsAgainst": 208,
-      "yardsFor": 2570,
+      "yardsFor": 2578,
       "yardsAgainst": 0,
       "passYdsFor": 791,
-      "rushYdsFor": 1779,
+      "rushYdsFor": 1787,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 15,
       "turnoversLost": 7
     },
     "headCoach": "Regrick Young",
@@ -2824,11 +2824,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/amory/hatley-tigers/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 1,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 3,
@@ -2839,7 +2839,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -2874,7 +2874,7 @@
       "rushYdsFor": 2314,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 14,
       "turnoversLost": 3
     },
     "headCoach": "Brad Gray",
@@ -3153,14 +3153,14 @@
     "stats": {
       "pointsFor": 325,
       "pointsAgainst": 243,
-      "yardsFor": 3372,
+      "yardsFor": 3481,
       "yardsAgainst": 0,
-      "passYdsFor": 1622,
-      "rushYdsFor": 1750,
+      "passYdsFor": 1686,
+      "rushYdsFor": 1795,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 14,
-      "turnoversLost": 3
+      "turnoversForced": 16,
+      "turnoversLost": 4
     },
     "headCoach": "Marcus Holmes",
     "maxprepsUrl": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/",
@@ -3209,7 +3209,7 @@
     },
     "stats": {
       "pointsFor": 174,
-      "pointsAgainst": 243,
+      "pointsAgainst": 245,
       "yardsFor": 294,
       "yardsAgainst": 0,
       "passYdsFor": 35,
@@ -3273,7 +3273,7 @@
       "rushYdsFor": 0,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 11,
+      "turnoversForced": 15,
       "turnoversLost": 0
     },
     "headCoach": "Todd Lowery",
@@ -3381,10 +3381,10 @@
     "stats": {
       "pointsFor": 322,
       "pointsAgainst": 342,
-      "yardsFor": 2434,
+      "yardsFor": 2657,
       "yardsAgainst": 0,
-      "passYdsFor": 805,
-      "rushYdsFor": 1629,
+      "passYdsFor": 928,
+      "rushYdsFor": 1729,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 5,
@@ -3438,13 +3438,13 @@
     "stats": {
       "pointsFor": 168,
       "pointsAgainst": 260,
-      "yardsFor": 1750,
+      "yardsFor": 1972,
       "yardsAgainst": 0,
-      "passYdsFor": 490,
-      "rushYdsFor": 1260,
+      "passYdsFor": 495,
+      "rushYdsFor": 1477,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 15,
       "turnoversLost": 10
     },
     "headCoach": "Dustin Alford",
@@ -3609,10 +3609,10 @@
     "stats": {
       "pointsFor": 173,
       "pointsAgainst": 230,
-      "yardsFor": 1360,
+      "yardsFor": 1779,
       "yardsAgainst": 0,
-      "passYdsFor": 739,
-      "rushYdsFor": 621,
+      "passYdsFor": 861,
+      "rushYdsFor": 918,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 10,
@@ -3664,7 +3664,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 276,
+      "pointsFor": 278,
       "pointsAgainst": 127,
       "yardsFor": 2156,
       "yardsAgainst": 0,
@@ -3672,7 +3672,7 @@
       "rushYdsFor": 1780,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 19,
       "turnoversLost": 1
     },
     "headCoach": "Connor Breland",
@@ -3837,10 +3837,10 @@
     "stats": {
       "pointsFor": 263,
       "pointsAgainst": 193,
-      "yardsFor": 2227,
+      "yardsFor": 2502,
       "yardsAgainst": 0,
-      "passYdsFor": 210,
-      "rushYdsFor": 2017,
+      "passYdsFor": 235,
+      "rushYdsFor": 2267,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
@@ -4008,14 +4008,14 @@
     "stats": {
       "pointsFor": 215,
       "pointsAgainst": 150,
-      "yardsFor": 2037,
+      "yardsFor": 2323,
       "yardsAgainst": 0,
-      "passYdsFor": 1074,
-      "rushYdsFor": 963,
+      "passYdsFor": 1189,
+      "rushYdsFor": 1134,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
-      "turnoversLost": 10
+      "turnoversForced": 23,
+      "turnoversLost": 11
     },
     "headCoach": "Alan Peacock",
     "maxprepsUrl": "https://www.maxpreps.com/ms/puckett/puckett-wolves/football/",
@@ -4055,7 +4055,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 201,
@@ -4063,22 +4063,22 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 225,
-      "pointsAgainst": 210,
+      "pointsFor": 231,
+      "pointsAgainst": 274,
       "yardsFor": 2876,
       "yardsAgainst": 0,
       "passYdsFor": 1474,
       "rushYdsFor": 1402,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
+      "turnoversForced": 20,
       "turnoversLost": 4
     },
     "headCoach": "Trey Woodard",
     "maxprepsUrl": "https://www.maxpreps.com/ms/brookhaven/enterprise-yellowjackets/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "homeRecord": {
       "wins": 2,
@@ -4086,14 +4086,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -4464,10 +4464,10 @@
     "stats": {
       "pointsFor": 200,
       "pointsAgainst": 174,
-      "yardsFor": 1875,
+      "yardsFor": 2199,
       "yardsAgainst": 0,
-      "passYdsFor": 731,
-      "rushYdsFor": 1144,
+      "passYdsFor": 933,
+      "rushYdsFor": 1266,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 14,
@@ -4521,10 +4521,10 @@
     "stats": {
       "pointsFor": 285,
       "pointsAgainst": 177,
-      "yardsFor": 2862,
+      "yardsFor": 3304,
       "yardsAgainst": 0,
-      "passYdsFor": 1590,
-      "rushYdsFor": 1272,
+      "passYdsFor": 1872,
+      "rushYdsFor": 1432,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 7,
@@ -4692,14 +4692,14 @@
     "stats": {
       "pointsFor": 420,
       "pointsAgainst": 107,
-      "yardsFor": 3087,
+      "yardsFor": 3531,
       "yardsAgainst": 0,
-      "passYdsFor": 1170,
-      "rushYdsFor": 1917,
+      "passYdsFor": 1279,
+      "rushYdsFor": 2252,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
-      "turnoversLost": 1
+      "turnoversForced": 17,
+      "turnoversLost": 2
     },
     "headCoach": "DeAngelo Ballard",
     "maxprepsUrl": "https://www.maxpreps.com/ms/winona/winona-tigers/football/",
@@ -4806,13 +4806,13 @@
     "stats": {
       "pointsFor": 303,
       "pointsAgainst": 196,
-      "yardsFor": 2362,
+      "yardsFor": 2764,
       "yardsAgainst": 0,
-      "passYdsFor": 355,
-      "rushYdsFor": 2007,
+      "passYdsFor": 395,
+      "rushYdsFor": 2369,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
+      "turnoversForced": 20,
       "turnoversLost": 3
     },
     "headCoach": "Jesse Anderson",
@@ -4869,7 +4869,7 @@
       "rushYdsFor": 1694,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 4,
+      "turnoversForced": 5,
       "turnoversLost": 9
     },
     "headCoach": "Dillon Mitchell",
@@ -4977,14 +4977,14 @@
     "stats": {
       "pointsFor": 334,
       "pointsAgainst": 115,
-      "yardsFor": 2781,
+      "yardsFor": 3339,
       "yardsAgainst": 0,
-      "passYdsFor": 1658,
-      "rushYdsFor": 1123,
+      "passYdsFor": 1893,
+      "rushYdsFor": 1446,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 23,
-      "turnoversLost": 5
+      "turnoversForced": 24,
+      "turnoversLost": 6
     },
     "headCoach": "Mitch Evans",
     "maxprepsUrl": "https://www.maxpreps.com/ms/seminary/seminary-bulldogs/football/",
@@ -5097,7 +5097,7 @@
       "rushYdsFor": 1798,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 18,
       "turnoversLost": 1
     },
     "headCoach": "Joshua Pulphus",
@@ -5376,10 +5376,10 @@
     "stats": {
       "pointsFor": 264,
       "pointsAgainst": 42,
-      "yardsFor": 2311,
+      "yardsFor": 2644,
       "yardsAgainst": 0,
-      "passYdsFor": 1107,
-      "rushYdsFor": 1204,
+      "passYdsFor": 1299,
+      "rushYdsFor": 1345,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 17,
@@ -5490,10 +5490,10 @@
     "stats": {
       "pointsFor": 318,
       "pointsAgainst": 107,
-      "yardsFor": 2476,
+      "yardsFor": 2753,
       "yardsAgainst": 0,
-      "passYdsFor": 1089,
-      "rushYdsFor": 1387,
+      "passYdsFor": 1254,
+      "rushYdsFor": 1499,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 1,
@@ -5593,7 +5593,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 2,
+      "wins": 3,
       "losses": 5
     },
     "rankings": {
@@ -5602,25 +5602,25 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 108,
-      "pointsAgainst": 200,
-      "yardsFor": 1460,
+      "pointsFor": 160,
+      "pointsAgainst": 222,
+      "yardsFor": 1833,
       "yardsAgainst": 0,
-      "passYdsFor": 341,
-      "rushYdsFor": 1119,
+      "passYdsFor": 444,
+      "rushYdsFor": 1389,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 4,
-      "turnoversLost": 10
+      "turnoversForced": 5,
+      "turnoversLost": 12
     },
     "headCoach": "Jeremiah Brassell",
     "maxprepsUrl": "https://www.maxpreps.com/ms/clarksdale/coahoma-county-red-panthers/football/",
     "regionRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "homeRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 2
     },
     "awayRecord": {
@@ -5632,8 +5632,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -5718,14 +5718,14 @@
     "stats": {
       "pointsFor": 217,
       "pointsAgainst": 182,
-      "yardsFor": 2202,
+      "yardsFor": 2491,
       "yardsAgainst": 0,
-      "passYdsFor": 440,
-      "rushYdsFor": 1762,
+      "passYdsFor": 553,
+      "rushYdsFor": 1938,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 14,
-      "turnoversLost": 10
+      "turnoversForced": 16,
+      "turnoversLost": 11
     },
     "headCoach": "Kristopher Clanton",
     "maxprepsUrl": "https://www.maxpreps.com/ms/independence/independence-wildcats/football/",
@@ -5764,7 +5764,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 1,
+      "wins": 2,
       "losses": 7
     },
     "rankings": {
@@ -5773,8 +5773,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 129,
-      "pointsAgainst": 268,
+      "pointsFor": 178,
+      "pointsAgainst": 282,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -5787,7 +5787,7 @@
     "headCoach": null,
     "maxprepsUrl": "https://www.maxpreps.com/ms/bassfield/jefferson-davis-county-jaguars/football/",
     "regionRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 2
     },
     "homeRecord": {
@@ -5795,7 +5795,7 @@
       "losses": 4
     },
     "awayRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 3
     },
     "neutralRecord": {
@@ -5803,8 +5803,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -5832,10 +5832,10 @@
     "stats": {
       "pointsFor": 181,
       "pointsAgainst": 233,
-      "yardsFor": 2086,
+      "yardsFor": 2334,
       "yardsAgainst": 0,
-      "passYdsFor": 1155,
-      "rushYdsFor": 931,
+      "passYdsFor": 1274,
+      "rushYdsFor": 1060,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 5,
@@ -5993,7 +5993,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 256,
@@ -6001,8 +6001,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 126,
-      "pointsAgainst": 328,
+      "pointsFor": 140,
+      "pointsAgainst": 377,
       "yardsFor": 1097,
       "yardsAgainst": 0,
       "passYdsFor": 517,
@@ -6016,11 +6016,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/florence/mclaurin-tigers/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "homeRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 1,
@@ -6031,7 +6031,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -6231,10 +6231,10 @@
     "stats": {
       "pointsFor": 222,
       "pointsAgainst": 239,
-      "yardsFor": 2514,
+      "yardsFor": 2888,
       "yardsAgainst": 0,
-      "passYdsFor": 1678,
-      "rushYdsFor": 836,
+      "passYdsFor": 1934,
+      "rushYdsFor": 954,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
@@ -6449,7 +6449,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 237,
@@ -6457,8 +6457,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 144,
-      "pointsAgainst": 160,
+      "pointsFor": 166,
+      "pointsAgainst": 212,
       "yardsFor": 400,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -6472,7 +6472,7 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/holly-springs/holly-springs-hawks/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 1,
@@ -6480,14 +6480,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 0
+      "losses": 1
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -6630,13 +6630,13 @@
     "stats": {
       "pointsFor": 421,
       "pointsAgainst": 143,
-      "yardsFor": 4410,
+      "yardsFor": 4426,
       "yardsAgainst": 0,
-      "passYdsFor": 2081,
+      "passYdsFor": 2097,
       "rushYdsFor": 2329,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 16,
+      "turnoversForced": 17,
       "turnoversLost": 8
     },
     "headCoach": "Jeff Stockstill",
@@ -6687,14 +6687,14 @@
     "stats": {
       "pointsFor": 286,
       "pointsAgainst": 67,
-      "yardsFor": 2235,
+      "yardsFor": 2325,
       "yardsAgainst": 0,
-      "passYdsFor": 700,
-      "rushYdsFor": 1535,
+      "passYdsFor": 718,
+      "rushYdsFor": 1607,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 22,
-      "turnoversLost": 6
+      "turnoversForced": 27,
+      "turnoversLost": 7
     },
     "headCoach": "Carter Norris",
     "maxprepsUrl": "https://www.maxpreps.com/ms/senatobia/senatobia-warriors/football/",
@@ -6744,10 +6744,10 @@
     "stats": {
       "pointsFor": 218,
       "pointsAgainst": 136,
-      "yardsFor": 1835,
+      "yardsFor": 2177,
       "yardsAgainst": 0,
-      "passYdsFor": 445,
-      "rushYdsFor": 1390,
+      "passYdsFor": 510,
+      "rushYdsFor": 1667,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
@@ -6921,7 +6921,7 @@
       "rushYdsFor": 2462,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 6,
+      "turnoversForced": 10,
       "turnoversLost": 2
     },
     "headCoach": "Tyrone Shorter",
@@ -7035,7 +7035,7 @@
       "rushYdsFor": 674,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 16,
       "turnoversLost": 4
     },
     "headCoach": "Anjan karmacharya",
@@ -7200,13 +7200,13 @@
     "stats": {
       "pointsFor": 291,
       "pointsAgainst": 155,
-      "yardsFor": 2493,
+      "yardsFor": 2798,
       "yardsAgainst": 0,
-      "passYdsFor": 1025,
-      "rushYdsFor": 1468,
+      "passYdsFor": 1167,
+      "rushYdsFor": 1631,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 11,
+      "turnoversForced": 13,
       "turnoversLost": 6
     },
     "headCoach": null,
@@ -7314,14 +7314,14 @@
     "stats": {
       "pointsFor": 340,
       "pointsAgainst": 136,
-      "yardsFor": 2936,
+      "yardsFor": 3241,
       "yardsAgainst": 0,
-      "passYdsFor": 456,
-      "rushYdsFor": 2480,
+      "passYdsFor": 514,
+      "rushYdsFor": 2727,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 10,
-      "turnoversLost": 2
+      "turnoversLost": 3
     },
     "headCoach": "Jay Beech",
     "maxprepsUrl": "https://www.maxpreps.com/ms/poplarville/poplarville-hornets/football/",
@@ -7428,10 +7428,10 @@
     "stats": {
       "pointsFor": 286,
       "pointsAgainst": 105,
-      "yardsFor": 1893,
+      "yardsFor": 2160,
       "yardsAgainst": 0,
-      "passYdsFor": 347,
-      "rushYdsFor": 1546,
+      "passYdsFor": 487,
+      "rushYdsFor": 1673,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
@@ -7833,7 +7833,7 @@
       "rushYdsFor": 1901,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 9,
+      "turnoversForced": 11,
       "turnoversLost": 1
     },
     "headCoach": "Monroe Allen Jr",
@@ -8517,7 +8517,7 @@
       "rushYdsFor": 933,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 12,
       "turnoversLost": 7
     },
     "headCoach": "Derrick Jenkins",
@@ -8625,14 +8625,14 @@
     "stats": {
       "pointsFor": 60,
       "pointsAgainst": 230,
-      "yardsFor": 1358,
+      "yardsFor": 1554,
       "yardsAgainst": 0,
-      "passYdsFor": 675,
-      "rushYdsFor": 683,
+      "passYdsFor": 792,
+      "rushYdsFor": 762,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 7,
-      "turnoversLost": 10
+      "turnoversLost": 11
     },
     "headCoach": "Katlan French",
     "maxprepsUrl": "https://www.maxpreps.com/ms/bay-st-louis/bay-tigers/football/",
@@ -8796,10 +8796,10 @@
     "stats": {
       "pointsFor": 127,
       "pointsAgainst": 241,
-      "yardsFor": 1835,
+      "yardsFor": 2299,
       "yardsAgainst": 0,
-      "passYdsFor": 258,
-      "rushYdsFor": 1577,
+      "passYdsFor": 259,
+      "rushYdsFor": 2040,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 1,
@@ -8910,14 +8910,14 @@
     "stats": {
       "pointsFor": 344,
       "pointsAgainst": 123,
-      "yardsFor": 2015,
+      "yardsFor": 2270,
       "yardsAgainst": 0,
-      "passYdsFor": 747,
-      "rushYdsFor": 1268,
+      "passYdsFor": 795,
+      "rushYdsFor": 1475,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
-      "turnoversLost": 8
+      "turnoversForced": 18,
+      "turnoversLost": 9
     },
     "headCoach": "Darien Dorsey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/brookhaven/brookhaven-panthers/football/",
@@ -9024,13 +9024,13 @@
     "stats": {
       "pointsFor": 241,
       "pointsAgainst": 279,
-      "yardsFor": 2601,
+      "yardsFor": 3154,
       "yardsAgainst": 0,
-      "passYdsFor": 597,
-      "rushYdsFor": 2004,
+      "passYdsFor": 669,
+      "rushYdsFor": 2485,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 14,
       "turnoversLost": 5
     },
     "headCoach": "Jacob Aycock",
@@ -9138,14 +9138,14 @@
     "stats": {
       "pointsFor": 284,
       "pointsAgainst": 174,
-      "yardsFor": 2146,
+      "yardsFor": 2635,
       "yardsAgainst": 0,
-      "passYdsFor": 695,
-      "rushYdsFor": 1451,
+      "passYdsFor": 803,
+      "rushYdsFor": 1832,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 6,
-      "turnoversLost": 5
+      "turnoversLost": 6
     },
     "headCoach": "Kendrick Woodard",
     "maxprepsUrl": "https://www.maxpreps.com/ms/cleveland/cleveland-central-wolves/football/",
@@ -9309,14 +9309,14 @@
     "stats": {
       "pointsFor": 254,
       "pointsAgainst": 132,
-      "yardsFor": 2553,
+      "yardsFor": 2963,
       "yardsAgainst": 0,
-      "passYdsFor": 507,
-      "rushYdsFor": 2046,
+      "passYdsFor": 698,
+      "rushYdsFor": 2265,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 5,
-      "turnoversLost": 12
+      "turnoversForced": 6,
+      "turnoversLost": 16
     },
     "headCoach": "Baylor Dampeer",
     "maxprepsUrl": "https://www.maxpreps.com/ms/pontotoc/pontotoc-warriors/football/",
@@ -9423,14 +9423,14 @@
     "stats": {
       "pointsFor": 375,
       "pointsAgainst": 215,
-      "yardsFor": 3076,
+      "yardsFor": 3256,
       "yardsAgainst": 0,
-      "passYdsFor": 493,
-      "rushYdsFor": 2583,
+      "passYdsFor": 512,
+      "rushYdsFor": 2744,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 9,
-      "turnoversLost": 6
+      "turnoversForced": 12,
+      "turnoversLost": 8
     },
     "headCoach": "Anthony Hart",
     "maxprepsUrl": "https://www.maxpreps.com/ms/oxford/lafayette-commodores/football/",
@@ -9469,7 +9469,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 2,
+      "wins": 3,
       "losses": 5
     },
     "rankings": {
@@ -9478,25 +9478,25 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 186,
-      "pointsAgainst": 321,
-      "yardsFor": 1519,
+      "pointsFor": 235,
+      "pointsAgainst": 342,
+      "yardsFor": 2275,
       "yardsAgainst": 0,
-      "passYdsFor": 824,
-      "rushYdsFor": 695,
+      "passYdsFor": 1068,
+      "rushYdsFor": 1207,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 5,
-      "turnoversLost": 5
+      "turnoversForced": 8,
+      "turnoversLost": 6
     },
     "headCoach": "Ryan Earnest",
     "maxprepsUrl": "https://www.maxpreps.com/ms/laurel/laurel-tornadoes/football/",
     "regionRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 1
     },
     "homeRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 2
     },
     "awayRecord": {
@@ -9508,7 +9508,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -9594,10 +9594,10 @@
     "stats": {
       "pointsFor": 147,
       "pointsAgainst": 174,
-      "yardsFor": 1702,
+      "yardsFor": 1950,
       "yardsAgainst": 0,
-      "passYdsFor": 856,
-      "rushYdsFor": 846,
+      "passYdsFor": 1027,
+      "rushYdsFor": 923,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
@@ -9708,14 +9708,14 @@
     "stats": {
       "pointsFor": 264,
       "pointsAgainst": 174,
-      "yardsFor": 2576,
+      "yardsFor": 2911,
       "yardsAgainst": 0,
-      "passYdsFor": 995,
-      "rushYdsFor": 1581,
+      "passYdsFor": 1245,
+      "rushYdsFor": 1666,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 6,
-      "turnoversLost": 4
+      "turnoversForced": 10,
+      "turnoversLost": 6
     },
     "headCoach": "Jack Hankins",
     "maxprepsUrl": "https://www.maxpreps.com/ms/waynesboro/wayne-county-war-eagleslady-war-eagles/football/",
@@ -9765,14 +9765,14 @@
     "stats": {
       "pointsFor": 315,
       "pointsAgainst": 208,
-      "yardsFor": 2589,
+      "yardsFor": 3205,
       "yardsAgainst": 0,
-      "passYdsFor": 996,
-      "rushYdsFor": 1593,
+      "passYdsFor": 1288,
+      "rushYdsFor": 1917,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 11,
-      "turnoversLost": 4
+      "turnoversForced": 12,
+      "turnoversLost": 5
     },
     "headCoach": "Steve Davis",
     "maxprepsUrl": "https://www.maxpreps.com/ms/natchez/natchez-bulldogs/football/",
@@ -9936,14 +9936,14 @@
     "stats": {
       "pointsFor": 102,
       "pointsAgainst": 182,
-      "yardsFor": 1491,
+      "yardsFor": 1741,
       "yardsAgainst": 0,
-      "passYdsFor": 1088,
-      "rushYdsFor": 403,
+      "passYdsFor": 1235,
+      "rushYdsFor": 506,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
-      "turnoversLost": 4
+      "turnoversLost": 5
     },
     "headCoach": "Willie Williams",
     "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/provine-rams/football/",
@@ -10040,7 +10040,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 168,
@@ -10048,8 +10048,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 119,
-      "pointsAgainst": 238,
+      "pointsFor": 140,
+      "pointsAgainst": 287,
       "yardsFor": 1838,
       "yardsAgainst": 0,
       "passYdsFor": 887,
@@ -10063,7 +10063,7 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/summit/north-pike-jaguars/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "homeRecord": {
       "wins": 1,
@@ -10071,14 +10071,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 6,
+      "count": 7,
       "result": "L"
     }
   },
@@ -10107,13 +10107,13 @@
     "stats": {
       "pointsFor": 169,
       "pointsAgainst": 221,
-      "yardsFor": 2084,
+      "yardsFor": 2355,
       "yardsAgainst": 0,
-      "passYdsFor": 650,
-      "rushYdsFor": 1434,
+      "passYdsFor": 879,
+      "rushYdsFor": 1476,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 5,
+      "turnoversForced": 6,
       "turnoversLost": 6
     },
     "headCoach": "Michael Campbell",
@@ -10335,13 +10335,13 @@
     "stats": {
       "pointsFor": 233,
       "pointsAgainst": 216,
-      "yardsFor": 2254,
+      "yardsFor": 2507,
       "yardsAgainst": 0,
-      "passYdsFor": 175,
-      "rushYdsFor": 2079,
+      "passYdsFor": 230,
+      "rushYdsFor": 2277,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 8,
+      "turnoversForced": 9,
       "turnoversLost": 9
     },
     "headCoach": "Cody Stogner",
@@ -10506,14 +10506,14 @@
     "stats": {
       "pointsFor": 327,
       "pointsAgainst": 223,
-      "yardsFor": 3436,
+      "yardsFor": 3821,
       "yardsAgainst": 0,
-      "passYdsFor": 2071,
-      "rushYdsFor": 1365,
+      "passYdsFor": 2326,
+      "rushYdsFor": 1495,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
-      "turnoversLost": 8
+      "turnoversLost": 9
     },
     "headCoach": "Scott Pierson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/laurel/west-jones-mustangs/football/",
@@ -10683,7 +10683,7 @@
       "rushYdsFor": 1802,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 12,
       "turnoversLost": 7
     },
     "headCoach": "John Feaster",
@@ -10968,7 +10968,7 @@
       "rushYdsFor": 1010,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 2,
+      "turnoversForced": 6,
       "turnoversLost": 17
     },
     "headCoach": "Michael King",
@@ -11139,7 +11139,7 @@
       "rushYdsFor": 1287,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 12,
       "turnoversLost": 11
     },
     "headCoach": "Marc High",
@@ -11237,7 +11237,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 235,
@@ -11245,8 +11245,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 75,
-      "pointsAgainst": 251,
+      "pointsFor": 78,
+      "pointsAgainst": 283,
       "yardsFor": 411,
       "yardsAgainst": 0,
       "passYdsFor": 61,
@@ -11260,11 +11260,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/jackson/jim-hill-tigers/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "homeRecord": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -11275,7 +11275,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -11304,14 +11304,14 @@
     "stats": {
       "pointsFor": 210,
       "pointsAgainst": 227,
-      "yardsFor": 1966,
+      "yardsFor": 1997,
       "yardsAgainst": 0,
       "passYdsFor": 331,
-      "rushYdsFor": 1635,
+      "rushYdsFor": 1666,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 6,
-      "turnoversLost": 9
+      "turnoversForced": 8,
+      "turnoversLost": 11
     },
     "headCoach": "Kelly Causey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/lucedale/george-county-rebels/football/",
@@ -11475,14 +11475,14 @@
     "stats": {
       "pointsFor": 204,
       "pointsAgainst": 237,
-      "yardsFor": 2616,
+      "yardsFor": 2838,
       "yardsAgainst": 0,
-      "passYdsFor": 1201,
-      "rushYdsFor": 1415,
+      "passYdsFor": 1283,
+      "rushYdsFor": 1555,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 18,
-      "turnoversLost": 20
+      "turnoversForced": 22,
+      "turnoversLost": 21
     },
     "headCoach": "Marcus Jamison",
     "maxprepsUrl": "https://www.maxpreps.com/ms/olive-branch/olive-branch-conquistadors/football/",
@@ -11532,14 +11532,14 @@
     "stats": {
       "pointsFor": 392,
       "pointsAgainst": 71,
-      "yardsFor": 2802,
+      "yardsFor": 3183,
       "yardsAgainst": 0,
-      "passYdsFor": 1419,
-      "rushYdsFor": 1383,
+      "passYdsFor": 1648,
+      "rushYdsFor": 1535,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
-      "turnoversLost": 2
+      "turnoversForced": 21,
+      "turnoversLost": 4
     },
     "headCoach": "Ty Hardin",
     "maxprepsUrl": "https://www.maxpreps.com/ms/tupelo/tupelo-golden-wave/football/",
@@ -11589,14 +11589,14 @@
     "stats": {
       "pointsFor": 332,
       "pointsAgainst": 73,
-      "yardsFor": 2832,
+      "yardsFor": 3142,
       "yardsAgainst": 0,
-      "passYdsFor": 1786,
-      "rushYdsFor": 1046,
+      "passYdsFor": 1994,
+      "rushYdsFor": 1148,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 17,
-      "turnoversLost": 6
+      "turnoversLost": 7
     },
     "headCoach": "Blake Pennock",
     "maxprepsUrl": "https://www.maxpreps.com/ms/gulfport/gulfport-admirals/football/",
@@ -11646,14 +11646,14 @@
     "stats": {
       "pointsFor": 239,
       "pointsAgainst": 184,
-      "yardsFor": 2471,
+      "yardsFor": 3043,
       "yardsAgainst": 0,
-      "passYdsFor": 1382,
-      "rushYdsFor": 1089,
+      "passYdsFor": 1816,
+      "rushYdsFor": 1227,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 6,
-      "turnoversLost": 7
+      "turnoversLost": 9
     },
     "headCoach": "Chris Cutcliffe",
     "maxprepsUrl": "https://www.maxpreps.com/ms/oxford/oxford-chargers/football/",
@@ -11709,7 +11709,7 @@
       "rushYdsFor": 783,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 7,
+      "turnoversForced": 9,
       "turnoversLost": 9
     },
     "headCoach": "Jake Bramlett",
@@ -11817,14 +11817,14 @@
     "stats": {
       "pointsFor": 247,
       "pointsAgainst": 218,
-      "yardsFor": 2882,
+      "yardsFor": 3351,
       "yardsAgainst": 0,
-      "passYdsFor": 1705,
-      "rushYdsFor": 1177,
+      "passYdsFor": 2015,
+      "rushYdsFor": 1336,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
-      "turnoversLost": 5
+      "turnoversLost": 9
     },
     "headCoach": "Drew Causey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/hattiesburg/oak-grove-warriors/football/",
@@ -11874,14 +11874,14 @@
     "stats": {
       "pointsFor": 86,
       "pointsAgainst": 253,
-      "yardsFor": 1640,
+      "yardsFor": 1809,
       "yardsAgainst": 0,
-      "passYdsFor": 750,
-      "rushYdsFor": 890,
+      "passYdsFor": 898,
+      "rushYdsFor": 911,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 9,
-      "turnoversLost": 8
+      "turnoversForced": 11,
+      "turnoversLost": 9
     },
     "headCoach": "Dustin Hectorne",
     "maxprepsUrl": "https://www.maxpreps.com/ms/horn-lake/horn-lake-eagles/football/",
@@ -11988,10 +11988,10 @@
     "stats": {
       "pointsFor": 382,
       "pointsAgainst": 211,
-      "yardsFor": 3377,
+      "yardsFor": 3823,
       "yardsAgainst": 0,
-      "passYdsFor": 1686,
-      "rushYdsFor": 1691,
+      "passYdsFor": 1839,
+      "rushYdsFor": 1984,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 7,
@@ -12045,13 +12045,13 @@
     "stats": {
       "pointsFor": 309,
       "pointsAgainst": 185,
-      "yardsFor": 2545,
+      "yardsFor": 2643,
       "yardsAgainst": 0,
-      "passYdsFor": 1077,
-      "rushYdsFor": 1468,
+      "passYdsFor": 1171,
+      "rushYdsFor": 1472,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 14,
       "turnoversLost": 5
     },
     "headCoach": "Colin Boone",
@@ -12159,13 +12159,13 @@
     "stats": {
       "pointsFor": 215,
       "pointsAgainst": 297,
-      "yardsFor": 1951,
+      "yardsFor": 2257,
       "yardsAgainst": 0,
-      "passYdsFor": 219,
-      "rushYdsFor": 1732,
+      "passYdsFor": 245,
+      "rushYdsFor": 2012,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 4,
+      "turnoversForced": 7,
       "turnoversLost": 1
     },
     "headCoach": "Quincy Patrick",
@@ -12216,14 +12216,14 @@
     "stats": {
       "pointsFor": 274,
       "pointsAgainst": 139,
-      "yardsFor": 2670,
+      "yardsFor": 3061,
       "yardsAgainst": 0,
-      "passYdsFor": 655,
-      "rushYdsFor": 2015,
+      "passYdsFor": 794,
+      "rushYdsFor": 2267,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 21,
-      "turnoversLost": 3
+      "turnoversLost": 4
     },
     "headCoach": "Will Wolfe",
     "maxprepsUrl": "https://www.maxpreps.com/ms/southaven/desoto-central-jaguars/football/",
@@ -12273,14 +12273,14 @@
     "stats": {
       "pointsFor": 247,
       "pointsAgainst": 223,
-      "yardsFor": 2176,
+      "yardsFor": 2660,
       "yardsAgainst": 0,
-      "passYdsFor": 1256,
-      "rushYdsFor": 920,
+      "passYdsFor": 1661,
+      "rushYdsFor": 999,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 10,
-      "turnoversLost": 9
+      "turnoversLost": 10
     },
     "headCoach": "Toby Collums",
     "maxprepsUrl": "https://www.maxpreps.com/ms/madison/madison-central-jaguars/football/",
@@ -12387,10 +12387,10 @@
     "stats": {
       "pointsFor": 264,
       "pointsAgainst": 168,
-      "yardsFor": 2325,
+      "yardsFor": 2682,
       "yardsAgainst": 0,
-      "passYdsFor": 932,
-      "rushYdsFor": 1393,
+      "passYdsFor": 1199,
+      "rushYdsFor": 1483,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 13,
@@ -12444,13 +12444,13 @@
     "stats": {
       "pointsFor": 266,
       "pointsAgainst": 210,
-      "yardsFor": 2812,
+      "yardsFor": 3372,
       "yardsAgainst": 0,
-      "passYdsFor": 1350,
-      "rushYdsFor": 1462,
+      "passYdsFor": 1510,
+      "rushYdsFor": 1862,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 6,
+      "turnoversForced": 10,
       "turnoversLost": 7
     },
     "headCoach": "Eugene Clinton",
@@ -12507,7 +12507,7 @@
       "rushYdsFor": 1444,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 6,
+      "turnoversForced": 8,
       "turnoversLost": 10
     },
     "headCoach": "Hamer Morgan",
@@ -12678,7 +12678,7 @@
       "rushYdsFor": 1003,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 7,
+      "turnoversForced": 8,
       "turnoversLost": 11
     },
     "headCoach": "Eric Collier",
@@ -12786,10 +12786,10 @@
     "stats": {
       "pointsFor": 263,
       "pointsAgainst": 136,
-      "yardsFor": 2471,
+      "yardsFor": 2778,
       "yardsAgainst": 0,
       "passYdsFor": 902,
-      "rushYdsFor": 1569,
+      "rushYdsFor": 1876,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
@@ -12843,14 +12843,14 @@
     "stats": {
       "pointsFor": 107,
       "pointsAgainst": 198,
-      "yardsFor": 1721,
+      "yardsFor": 1859,
       "yardsAgainst": 0,
-      "passYdsFor": 685,
-      "rushYdsFor": 1036,
+      "passYdsFor": 741,
+      "rushYdsFor": 1118,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
-      "turnoversLost": 9
+      "turnoversForced": 14,
+      "turnoversLost": 11
     },
     "headCoach": "Chris Fortenberry",
     "maxprepsUrl": "https://www.maxpreps.com/ms/gulfport/harrison-central-red-rebels/football/",
@@ -13071,14 +13071,14 @@
     "stats": {
       "pointsFor": 358,
       "pointsAgainst": 122,
-      "yardsFor": 0,
+      "yardsFor": 3299,
       "yardsAgainst": 0,
-      "passYdsFor": 0,
-      "rushYdsFor": 0,
+      "passYdsFor": 773,
+      "rushYdsFor": 2526,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 0,
-      "turnoversLost": 0
+      "turnoversLost": 1
     },
     "headCoach": "Elvina Emilia",
     "maxprepsUrl": "https://www.maxpreps.com/ms/west-point/oak-hill-academy-raiders/football/",
@@ -13242,10 +13242,10 @@
     "stats": {
       "pointsFor": 144,
       "pointsAgainst": 339,
-      "yardsFor": 1603,
+      "yardsFor": 1860,
       "yardsAgainst": 0,
-      "passYdsFor": 755,
-      "rushYdsFor": 848,
+      "passYdsFor": 931,
+      "rushYdsFor": 929,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 11,
@@ -13299,10 +13299,10 @@
     "stats": {
       "pointsFor": 261,
       "pointsAgainst": 232,
-      "yardsFor": 2409,
+      "yardsFor": 2851,
       "yardsAgainst": 0,
       "passYdsFor": 534,
-      "rushYdsFor": 1875,
+      "rushYdsFor": 2317,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 15,
@@ -13356,14 +13356,14 @@
     "stats": {
       "pointsFor": 368,
       "pointsAgainst": 161,
-      "yardsFor": 3267,
+      "yardsFor": 3593,
       "yardsAgainst": 0,
-      "passYdsFor": 1032,
-      "rushYdsFor": 2235,
+      "passYdsFor": 1224,
+      "rushYdsFor": 2369,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 19,
-      "turnoversLost": 9
+      "turnoversForced": 21,
+      "turnoversLost": 10
     },
     "headCoach": "Chris Bunio",
     "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/st-joseph-fighting-irish/football/",
@@ -13527,14 +13527,14 @@
     "stats": {
       "pointsFor": 196,
       "pointsAgainst": 244,
-      "yardsFor": 2619,
+      "yardsFor": 2776,
       "yardsAgainst": 0,
-      "passYdsFor": 1850,
-      "rushYdsFor": 769,
+      "passYdsFor": 1993,
+      "rushYdsFor": 783,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 20,
-      "turnoversLost": 13
+      "turnoversForced": 23,
+      "turnoversLost": 16
     },
     "headCoach": "JoJo Pearson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/oxford/regents-lions/football/",
@@ -13812,10 +13812,10 @@
     "stats": {
       "pointsFor": 380,
       "pointsAgainst": 120,
-      "yardsFor": 3077,
+      "yardsFor": 3525,
       "yardsAgainst": 0,
-      "passYdsFor": 1289,
-      "rushYdsFor": 1788,
+      "passYdsFor": 1446,
+      "rushYdsFor": 2079,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 1,
@@ -13926,14 +13926,14 @@
     "stats": {
       "pointsFor": 349,
       "pointsAgainst": 235,
-      "yardsFor": 3278,
+      "yardsFor": 3570,
       "yardsAgainst": 0,
-      "passYdsFor": 788,
-      "rushYdsFor": 2490,
+      "passYdsFor": 824,
+      "rushYdsFor": 2746,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 0,
-      "turnoversLost": 8
+      "turnoversLost": 11
     },
     "headCoach": "Todd Lott",
     "maxprepsUrl": "https://www.maxpreps.com/ms/greenville/washington-generals/football/",
@@ -14029,7 +14029,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 2,
+      "wins": 3,
       "losses": 7
     },
     "rankings": {
@@ -14038,8 +14038,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 268,
-      "pointsAgainst": 294,
+      "pointsFor": 309,
+      "pointsAgainst": 309,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14052,7 +14052,7 @@
     "headCoach": "Chris Bunio",
     "maxprepsUrl": "https://www.maxpreps.com/ms/holly-springs/marshall-academy-patriots/football/",
     "regionRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "homeRecord": {
@@ -14060,7 +14060,7 @@
       "losses": 5
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "neutralRecord": {
@@ -14069,7 +14069,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -14103,7 +14103,7 @@
       "rushYdsFor": 1674,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 9,
+      "turnoversForced": 13,
       "turnoversLost": 8
     },
     "headCoach": "Joey Hawkins",
@@ -14211,14 +14211,14 @@
     "stats": {
       "pointsFor": 195,
       "pointsAgainst": 369,
-      "yardsFor": 2435,
+      "yardsFor": 2635,
       "yardsAgainst": 0,
-      "passYdsFor": 1481,
-      "rushYdsFor": 954,
+      "passYdsFor": 1591,
+      "rushYdsFor": 1044,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
-      "turnoversLost": 12
+      "turnoversLost": 14
     },
     "headCoach": "Jared Meadows",
     "maxprepsUrl": "https://www.maxpreps.com/tn/rossville/rossville-christian-academy-wolves/football/",
@@ -14325,13 +14325,13 @@
     "stats": {
       "pointsFor": 243,
       "pointsAgainst": 196,
-      "yardsFor": 2268,
+      "yardsFor": 2593,
       "yardsAgainst": 0,
-      "passYdsFor": 1224,
-      "rushYdsFor": 1044,
+      "passYdsFor": 1402,
+      "rushYdsFor": 1191,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 11,
       "turnoversLost": 6
     },
     "headCoach": "Todd Breland",
@@ -14428,7 +14428,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 2
     },
     "rankings": {
@@ -14437,8 +14437,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 235,
-      "pointsAgainst": 198,
+      "pointsFor": 281,
+      "pointsAgainst": 218,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14455,7 +14455,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -14468,7 +14468,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -14543,7 +14543,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 154,
@@ -14551,8 +14551,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 215,
-      "pointsAgainst": 291,
+      "pointsFor": 230,
+      "pointsAgainst": 332,
       "yardsFor": 2382,
       "yardsAgainst": 0,
       "passYdsFor": 1269,
@@ -14566,11 +14566,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ar/west-memphis/west-memphis-christian-black-knights/football/",
     "regionRecord": {
       "wins": 1,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 1,
@@ -14581,7 +14581,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -14599,7 +14599,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 3
     },
     "rankings": {
@@ -14608,8 +14608,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 215,
-      "pointsAgainst": 136,
+      "pointsFor": 274,
+      "pointsAgainst": 166,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14626,7 +14626,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 1
     },
     "awayRecord": {
@@ -14638,7 +14638,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -14781,13 +14781,13 @@
     "stats": {
       "pointsFor": 384,
       "pointsAgainst": 134,
-      "yardsFor": 3650,
+      "yardsFor": 4010,
       "yardsAgainst": 0,
-      "passYdsFor": 1386,
-      "rushYdsFor": 2264,
+      "passYdsFor": 1493,
+      "rushYdsFor": 2517,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 12,
+      "turnoversForced": 13,
       "turnoversLost": 9
     },
     "headCoach": "David Duggan",
@@ -14884,7 +14884,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2
     },
     "rankings": {
@@ -14893,16 +14893,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 243,
-      "pointsAgainst": 198,
-      "yardsFor": 2675,
+      "pointsFor": 292,
+      "pointsAgainst": 211,
+      "yardsFor": 3487,
       "yardsAgainst": 0,
-      "passYdsFor": 1871,
-      "rushYdsFor": 804,
+      "passYdsFor": 2432,
+      "rushYdsFor": 1055,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 7,
-      "turnoversLost": 2
+      "turnoversForced": 8,
+      "turnoversLost": 3
     },
     "headCoach": "Herbert Davis",
     "maxprepsUrl": "https://www.maxpreps.com/ms/madison/madison-ridgeland-academy-patriots/football/",
@@ -14911,7 +14911,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -14923,7 +14923,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -14942,7 +14942,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 136,
@@ -14951,7 +14951,7 @@
     },
     "stats": {
       "pointsFor": 151,
-      "pointsAgainst": 299,
+      "pointsAgainst": 347,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14973,14 +14973,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -14998,7 +14998,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -15007,12 +15007,12 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 288,
-      "pointsAgainst": 173,
-      "yardsFor": 3339,
+      "pointsFor": 336,
+      "pointsAgainst": 187,
+      "yardsFor": 3877,
       "yardsAgainst": 0,
-      "passYdsFor": 2297,
-      "rushYdsFor": 1042,
+      "passYdsFor": 2649,
+      "rushYdsFor": 1228,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 1,
@@ -15029,7 +15029,7 @@
       "losses": 1
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "neutralRecord": {
@@ -15037,7 +15037,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -15056,7 +15056,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 111,
@@ -15064,8 +15064,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 184,
-      "pointsAgainst": 155,
+      "pointsFor": 191,
+      "pointsAgainst": 197,
       "yardsFor": 2311,
       "yardsAgainst": 0,
       "passYdsFor": 774,
@@ -15083,7 +15083,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 3,
@@ -15094,7 +15094,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -15123,10 +15123,10 @@
     "stats": {
       "pointsFor": 268,
       "pointsAgainst": 192,
-      "yardsFor": 1817,
+      "yardsFor": 2410,
       "yardsAgainst": 0,
-      "passYdsFor": 1223,
-      "rushYdsFor": 594,
+      "passYdsFor": 1431,
+      "rushYdsFor": 979,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 16,
@@ -15169,7 +15169,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 1
     },
     "rankings": {
@@ -15178,8 +15178,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 372,
-      "pointsAgainst": 174,
+      "pointsFor": 414,
+      "pointsAgainst": 181,
       "yardsFor": 3677,
       "yardsAgainst": 0,
       "passYdsFor": 1483,
@@ -15200,7 +15200,7 @@
       "losses": 1
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 0
     },
     "neutralRecord": {
@@ -15208,7 +15208,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -15237,14 +15237,14 @@
     "stats": {
       "pointsFor": 326,
       "pointsAgainst": 183,
-      "yardsFor": 2854,
+      "yardsFor": 3413,
       "yardsAgainst": 0,
-      "passYdsFor": 1826,
-      "rushYdsFor": 1028,
+      "passYdsFor": 2308,
+      "rushYdsFor": 1105,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 25,
-      "turnoversLost": 10
+      "turnoversForced": 29,
+      "turnoversLost": 12
     },
     "headCoach": "Chase Nicholson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/starkville/starkville-academy-volunteers/football/",
@@ -15284,7 +15284,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 176,
@@ -15292,8 +15292,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 255,
-      "pointsAgainst": 216,
+      "pointsFor": 269,
+      "pointsAgainst": 264,
       "yardsFor": 1473,
       "yardsAgainst": 0,
       "passYdsFor": 577,
@@ -15311,7 +15311,7 @@
     },
     "homeRecord": {
       "wins": 4,
-      "losses": 0
+      "losses": 1
     },
     "awayRecord": {
       "wins": 1,
@@ -15323,7 +15323,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -15397,7 +15397,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 4
     },
     "rankings": {
@@ -15406,7 +15406,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 216,
+      "pointsFor": 264,
       "pointsAgainst": 225,
       "yardsFor": 2479,
       "yardsAgainst": 0,
@@ -15424,7 +15424,7 @@
       "losses": 3
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "awayRecord": {
@@ -15436,7 +15436,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -15625,7 +15625,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -15634,8 +15634,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 246,
-      "pointsAgainst": 184,
+      "pointsFor": 289,
+      "pointsAgainst": 198,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15656,7 +15656,7 @@
       "losses": 0
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "neutralRecord": {
@@ -15664,7 +15664,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -15740,7 +15740,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 163,
@@ -15748,8 +15748,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 119,
-      "pointsAgainst": 212,
+      "pointsFor": 132,
+      "pointsAgainst": 261,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15771,14 +15771,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -15797,7 +15797,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 196,
@@ -15805,16 +15805,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 141,
-      "pointsAgainst": 376,
-      "yardsFor": 2665,
+      "pointsFor": 155,
+      "pointsAgainst": 419,
+      "yardsFor": 2840,
       "yardsAgainst": 0,
-      "passYdsFor": 1570,
-      "rushYdsFor": 1095,
+      "passYdsFor": 1740,
+      "rushYdsFor": 1100,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 12,
-      "turnoversLost": 27
+      "turnoversForced": 15,
+      "turnoversLost": 28
     },
     "headCoach": "Sam Vincent",
     "maxprepsUrl": "https://www.maxpreps.com/ms/madison/st-joseph-catholic-bruins/football/",
@@ -15824,7 +15824,7 @@
     },
     "homeRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 0,
@@ -15835,7 +15835,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -15967,7 +15967,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
@@ -15976,8 +15976,8 @@
       "national": 434
     },
     "stats": {
-      "pointsFor": 334,
-      "pointsAgainst": 231,
+      "pointsFor": 388,
+      "pointsAgainst": 237,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15994,7 +15994,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 1
     },
     "awayRecord": {
@@ -16006,7 +16006,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -16139,7 +16139,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 19,
@@ -16147,8 +16147,8 @@
       "national": 1405
     },
     "stats": {
-      "pointsFor": 160,
-      "pointsAgainst": 371,
+      "pointsFor": 180,
+      "pointsAgainst": 427,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16162,11 +16162,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/arcola/deer-creek-warriors/football/",
     "regionRecord": {
       "wins": 1,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 1,
@@ -16178,7 +16178,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -16196,7 +16196,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 7,
@@ -16204,8 +16204,8 @@
       "national": 779
     },
     "stats": {
-      "pointsFor": 306,
-      "pointsAgainst": 226,
+      "pointsFor": 326,
+      "pointsAgainst": 268,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16219,11 +16219,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/benton/benton-academy-raiders/football/",
     "regionRecord": {
       "wins": 1,
-      "losses": 2
+      "losses": 3
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 3,
@@ -16234,8 +16234,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -16252,7 +16252,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
@@ -16261,8 +16261,8 @@
       "national": 279
     },
     "stats": {
-      "pointsFor": 317,
-      "pointsAgainst": 52,
+      "pointsFor": 359,
+      "pointsAgainst": 72,
       "yardsFor": 1414,
       "yardsAgainst": 0,
       "passYdsFor": 848,
@@ -16275,7 +16275,7 @@
     "headCoach": "Dylan Hambick",
     "maxprepsUrl": "https://www.maxpreps.com/ms/ridgeland/christ-covenant/football/",
     "regionRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 0
     },
     "homeRecord": {
@@ -16283,7 +16283,7 @@
       "losses": 0
     },
     "awayRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "neutralRecord": {
@@ -16291,7 +16291,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -16424,7 +16424,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 18,
@@ -16432,8 +16432,8 @@
       "national": 1395
     },
     "stats": {
-      "pointsFor": 190,
-      "pointsAgainst": 387,
+      "pointsFor": 196,
+      "pointsAgainst": 429,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16447,11 +16447,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/vicksburg/porters-chapel-academy-eagles/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "homeRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 0,
@@ -16462,7 +16462,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -16491,14 +16491,14 @@
     "stats": {
       "pointsFor": 272,
       "pointsAgainst": 307,
-      "yardsFor": 2382,
+      "yardsFor": 2780,
       "yardsAgainst": 0,
-      "passYdsFor": 660,
-      "rushYdsFor": 1722,
+      "passYdsFor": 762,
+      "rushYdsFor": 2018,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
-      "turnoversLost": 15
+      "turnoversForced": 17,
+      "turnoversLost": 16
     },
     "headCoach": "Terrell Luckey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/prentiss/prentiss-christian-saints/football/",
@@ -16538,7 +16538,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 15,
@@ -16546,8 +16546,8 @@
       "national": 1284
     },
     "stats": {
-      "pointsFor": 220,
-      "pointsAgainst": 341,
+      "pointsFor": 226,
+      "pointsAgainst": 395,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16569,14 +16569,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -16594,7 +16594,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 3
     },
     "rankings": {
@@ -16603,8 +16603,8 @@
       "national": 958
     },
     "stats": {
-      "pointsFor": 316,
-      "pointsAgainst": 310,
+      "pointsFor": 372,
+      "pointsAgainst": 330,
       "yardsFor": 2363,
       "yardsAgainst": 0,
       "passYdsFor": 858,
@@ -16617,7 +16617,7 @@
     "headCoach": "Brandon Sims",
     "maxprepsUrl": "https://www.maxpreps.com/ms/marks/delta-academy-raiders/football/",
     "regionRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 0
     },
     "homeRecord": {
@@ -16625,7 +16625,7 @@
       "losses": 2
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 1
     },
     "neutralRecord": {
@@ -16633,7 +16633,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -16819,7 +16819,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 2,
+      "wins": 3,
       "losses": 6
     },
     "rankings": {
@@ -16828,8 +16828,8 @@
       "national": 1320
     },
     "stats": {
-      "pointsFor": 168,
-      "pointsAgainst": 314,
+      "pointsFor": 228,
+      "pointsAgainst": 352,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16842,7 +16842,7 @@
     "headCoach": "Marcus Davidson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/steens/columbus-christian-academy-rams/football/",
     "regionRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "homeRecord": {
@@ -16850,7 +16850,7 @@
       "losses": 4
     },
     "awayRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 2
     },
     "neutralRecord": {
@@ -16859,7 +16859,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -16990,7 +16990,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -16999,7 +16999,7 @@
       "national": 390
     },
     "stats": {
-      "pointsFor": 398,
+      "pointsFor": 414,
       "pointsAgainst": 146,
       "yardsFor": 1070,
       "yardsAgainst": 0,
@@ -17013,7 +17013,7 @@
     "headCoach": "Ryan Williams",
     "maxprepsUrl": "https://www.maxpreps.com/la/tallulah/tallulah-academy-trojans/football/",
     "regionRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "homeRecord": {
@@ -17021,7 +17021,7 @@
       "losses": 1
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "neutralRecord": {
@@ -17030,7 +17030,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -17333,7 +17333,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 23,
@@ -17341,8 +17341,8 @@
       "national": 1541
     },
     "stats": {
-      "pointsFor": 168,
-      "pointsAgainst": 266,
+      "pointsFor": 204,
+      "pointsAgainst": 304,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -17356,11 +17356,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/ms/picayune/heritage-christian-academy-warriors/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 2
+      "losses": 3
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 0,
@@ -17371,7 +17371,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -17447,7 +17447,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 20,
@@ -17455,26 +17455,26 @@
       "national": 1421
     },
     "stats": {
-      "pointsFor": 320,
-      "pointsAgainst": 420,
-      "yardsFor": 2999,
+      "pointsFor": 358,
+      "pointsAgainst": 480,
+      "yardsFor": 3365,
       "yardsAgainst": 0,
-      "passYdsFor": 1706,
-      "rushYdsFor": 1293,
+      "passYdsFor": 1793,
+      "rushYdsFor": 1572,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 11,
-      "turnoversLost": 7
+      "turnoversLost": 8
     },
     "headCoach": "Colt Kilpatrick",
     "maxprepsUrl": "https://www.maxpreps.com/ms/dekalb/kemper-academy-rams/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -17485,8 +17485,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -17504,7 +17504,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 12,
@@ -17513,7 +17513,7 @@
     },
     "stats": {
       "pointsFor": 54,
-      "pointsAgainst": 333,
+      "pointsAgainst": 349,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -17527,11 +17527,11 @@
     "maxprepsUrl": "https://www.maxpreps.com/la/coushatta/riverdale-academy-rebels/football/",
     "regionRecord": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "homeRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "awayRecord": {
       "wins": 0,
@@ -17542,7 +17542,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 8,
+      "count": 9,
       "result": "L"
     }
   },
