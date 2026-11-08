@@ -17,7 +17,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 108,
+      "stateOverall": 107,
       "stateClass": 4,
       "national": null
     },
@@ -70,16 +70,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 49,
+      "stateOverall": 52,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 318,
+      "pointsFor": 360,
       "pointsAgainst": 60,
       "yardsFor": 0,
       "yardsAgainst": 0,
@@ -97,7 +97,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -109,7 +109,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
+      "count": 7,
       "result": "W"
     }
   },
@@ -128,7 +128,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 225,
@@ -136,8 +136,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 82,
-      "pointsAgainst": 310,
+      "pointsFor": 96,
+      "pointsAgainst": 344,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -159,14 +159,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -184,7 +184,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -193,8 +193,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 349,
-      "pointsAgainst": 260,
+      "pointsFor": 397,
+      "pointsAgainst": 267,
       "yardsFor": 3407,
       "yardsAgainst": 0,
       "passYdsFor": 1180,
@@ -211,7 +211,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -223,7 +223,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -241,7 +241,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 3
     },
     "rankings": {
@@ -250,16 +250,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 336,
+      "pointsFor": 398,
       "pointsAgainst": 152,
-      "yardsFor": 2711,
+      "yardsFor": 3006,
       "yardsAgainst": 0,
-      "passYdsFor": 659,
-      "rushYdsFor": 2052,
+      "passYdsFor": 695,
+      "rushYdsFor": 2311,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
-      "turnoversLost": 10
+      "turnoversForced": 20,
+      "turnoversLost": 11
     },
     "headCoach": "Dan Brady",
     "maxprepsUrl": "https://www.maxpreps.com/ms/stringer/stringer-red-devils/football/",
@@ -268,7 +268,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -280,7 +280,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -298,17 +298,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 140,
+      "stateOverall": 139,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 246,
-      "pointsAgainst": 139,
+      "pointsFor": 298,
+      "pointsAgainst": 145,
       "yardsFor": 2903,
       "yardsAgainst": 0,
       "passYdsFor": 1025,
@@ -325,7 +325,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -337,7 +337,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -355,17 +355,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 48,
+      "stateOverall": 51,
       "stateClass": 1,
       "national": null
     },
     "stats": {
-      "pointsFor": 302,
-      "pointsAgainst": 67,
+      "pointsFor": 350,
+      "pointsAgainst": 73,
       "yardsFor": 2122,
       "yardsAgainst": 0,
       "passYdsFor": 823,
@@ -382,7 +382,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -394,7 +394,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -412,17 +412,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 228,
+      "stateOverall": 227,
       "stateClass": 20,
       "national": null
     },
     "stats": {
-      "pointsFor": 210,
-      "pointsAgainst": 262,
+      "pointsFor": 223,
+      "pointsAgainst": 274,
       "yardsFor": 638,
       "yardsAgainst": 0,
       "passYdsFor": 185,
@@ -439,7 +439,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "awayRecord": {
@@ -451,7 +451,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -526,17 +526,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 165,
+      "stateOverall": 163,
       "stateClass": 8,
       "national": null
     },
     "stats": {
-      "pointsFor": 193,
-      "pointsAgainst": 100,
+      "pointsFor": 249,
+      "pointsAgainst": 107,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -553,7 +553,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -565,7 +565,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -584,7 +584,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 269,
@@ -592,8 +592,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 111,
-      "pointsAgainst": 295,
+      "pointsFor": 117,
+      "pointsAgainst": 343,
       "yardsFor": 352,
       "yardsAgainst": 0,
       "passYdsFor": 82,
@@ -615,14 +615,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 8,
+      "count": 9,
       "result": "L"
     }
   },
@@ -640,7 +640,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 5
     },
     "rankings": {
@@ -649,8 +649,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 184,
-      "pointsAgainst": 222,
+      "pointsFor": 232,
+      "pointsAgainst": 228,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -667,7 +667,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 3
     },
     "awayRecord": {
@@ -680,7 +680,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -697,25 +697,25 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 71,
+      "stateOverall": 69,
       "stateClass": 3,
       "national": null
     },
     "stats": {
-      "pointsFor": 392,
-      "pointsAgainst": 47,
-      "yardsFor": 2595,
+      "pointsFor": 443,
+      "pointsAgainst": 53,
+      "yardsFor": 2832,
       "yardsAgainst": 0,
-      "passYdsFor": 614,
-      "rushYdsFor": 1981,
+      "passYdsFor": 682,
+      "rushYdsFor": 2150,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 18,
-      "turnoversLost": 2
+      "turnoversForced": 22,
+      "turnoversLost": 3
     },
     "headCoach": "Trent Hammond",
     "maxprepsUrl": "https://www.maxpreps.com/ms/belden/tupelo-christian-prep-eagles/football/",
@@ -724,7 +724,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -736,7 +736,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -755,7 +755,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 241,
@@ -764,7 +764,7 @@
     },
     "stats": {
       "pointsFor": 117,
-      "pointsAgainst": 178,
+      "pointsAgainst": 220,
       "yardsFor": 1609,
       "yardsAgainst": 0,
       "passYdsFor": 290,
@@ -786,14 +786,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -812,16 +812,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 249,
+      "stateOverall": 248,
       "stateClass": 24,
       "national": null
     },
     "stats": {
-      "pointsFor": 224,
-      "pointsAgainst": 236,
+      "pointsFor": 238,
+      "pointsAgainst": 291,
       "yardsFor": 2397,
       "yardsAgainst": 0,
       "passYdsFor": 818,
@@ -839,7 +839,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 2,
@@ -850,7 +850,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -923,7 +923,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 264,
@@ -931,8 +931,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 88,
-      "pointsAgainst": 330,
+      "pointsFor": 94,
+      "pointsAgainst": 381,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -954,14 +954,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 8,
+      "count": 9,
       "result": "L"
     }
   },
@@ -979,7 +979,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
@@ -988,8 +988,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 269,
-      "pointsAgainst": 268,
+      "pointsFor": 303,
+      "pointsAgainst": 282,
       "yardsFor": 2735,
       "yardsAgainst": 0,
       "passYdsFor": 1012,
@@ -1006,7 +1006,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -1018,7 +1018,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -1036,16 +1036,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 176,
+      "stateOverall": 174,
       "stateClass": 10,
       "national": null
     },
     "stats": {
-      "pointsFor": 173,
+      "pointsFor": 209,
       "pointsAgainst": 218,
       "yardsFor": 0,
       "yardsAgainst": 0,
@@ -1067,7 +1067,7 @@
       "losses": 2
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 4
     },
     "neutralRecord": {
@@ -1076,7 +1076,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -1093,21 +1093,21 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 171,
+      "stateOverall": 168,
       "stateClass": 9,
       "national": null
     },
     "stats": {
-      "pointsFor": 232,
-      "pointsAgainst": 163,
-      "yardsFor": 3134,
+      "pointsFor": 286,
+      "pointsAgainst": 169,
+      "yardsFor": 3656,
       "yardsAgainst": 0,
-      "passYdsFor": 425,
-      "rushYdsFor": 2709,
+      "passYdsFor": 458,
+      "rushYdsFor": 3198,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 13,
@@ -1120,7 +1120,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "awayRecord": {
@@ -1132,7 +1132,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -1154,7 +1154,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 217,
+      "stateOverall": 216,
       "stateClass": 15,
       "national": null
     },
@@ -1207,7 +1207,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2
     },
     "rankings": {
@@ -1216,8 +1216,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 325,
-      "pointsAgainst": 183,
+      "pointsFor": 351,
+      "pointsAgainst": 205,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -1234,7 +1234,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -1246,7 +1246,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -1265,16 +1265,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
-      "stateOverall": 193,
+      "stateOverall": 191,
       "stateClass": 12,
       "national": null
     },
     "stats": {
-      "pointsFor": 194,
-      "pointsAgainst": 229,
+      "pointsFor": 206,
+      "pointsAgainst": 242,
       "yardsFor": 2272,
       "yardsAgainst": 0,
       "passYdsFor": 1097,
@@ -1296,14 +1296,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -1322,7 +1322,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 255,
@@ -1330,8 +1330,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 150,
-      "pointsAgainst": 256,
+      "pointsFor": 157,
+      "pointsAgainst": 304,
       "yardsFor": 1192,
       "yardsAgainst": 0,
       "passYdsFor": 566,
@@ -1353,14 +1353,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -1379,7 +1379,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 219,
@@ -1387,8 +1387,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 241,
-      "pointsAgainst": 213,
+      "pointsFor": 262,
+      "pointsAgainst": 242,
       "yardsFor": 1965,
       "yardsAgainst": 0,
       "passYdsFor": 746,
@@ -1406,7 +1406,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 3,
@@ -1417,7 +1417,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -1436,16 +1436,16 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
-      "stateOverall": 222,
+      "stateOverall": 221,
       "stateClass": 17,
       "national": null
     },
     "stats": {
       "pointsFor": 100,
-      "pointsAgainst": 250,
+      "pointsAgainst": 312,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -1467,7 +1467,7 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
@@ -1475,7 +1475,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -1493,7 +1493,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 254,
@@ -1502,7 +1502,7 @@
     },
     "stats": {
       "pointsFor": 86,
-      "pointsAgainst": 323,
+      "pointsAgainst": 359,
       "yardsFor": 1556,
       "yardsAgainst": 0,
       "passYdsFor": 688,
@@ -1520,7 +1520,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 0,
@@ -1531,8 +1531,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -1550,23 +1550,23 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
-      "stateOverall": 229,
+      "stateOverall": 230,
       "stateClass": 21,
       "national": null
     },
     "stats": {
-      "pointsFor": 244,
-      "pointsAgainst": 278,
-      "yardsFor": 3209,
+      "pointsFor": 266,
+      "pointsAgainst": 304,
+      "yardsFor": 3558,
       "yardsAgainst": 0,
-      "passYdsFor": 897,
-      "rushYdsFor": 2312,
+      "passYdsFor": 999,
+      "rushYdsFor": 2559,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 3,
+      "turnoversForced": 6,
       "turnoversLost": 1
     },
     "headCoach": "Ashton Anderson",
@@ -1581,14 +1581,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -1606,7 +1606,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 1,
+      "wins": 2,
       "losses": 7
     },
     "rankings": {
@@ -1615,8 +1615,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 113,
-      "pointsAgainst": 315,
+      "pointsFor": 142,
+      "pointsAgainst": 336,
       "yardsFor": 1701,
       "yardsAgainst": 0,
       "passYdsFor": 534,
@@ -1637,7 +1637,7 @@
       "losses": 4
     },
     "awayRecord": {
-      "wins": 0,
+      "wins": 1,
       "losses": 3
     },
     "neutralRecord": {
@@ -1645,8 +1645,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -1664,7 +1664,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 259,
@@ -1672,8 +1672,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 92,
-      "pointsAgainst": 332,
+      "pointsFor": 98,
+      "pointsAgainst": 384,
       "yardsFor": 1679,
       "yardsAgainst": 0,
       "passYdsFor": 490,
@@ -1695,14 +1695,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -1721,7 +1721,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 239,
@@ -1729,8 +1729,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 98,
-      "pointsAgainst": 335,
+      "pointsFor": 104,
+      "pointsAgainst": 389,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -1752,14 +1752,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -1778,7 +1778,7 @@
     "season": "2026-27",
     "record": {
       "wins": 0,
-      "losses": 10
+      "losses": 11
     },
     "rankings": {
       "stateOverall": 271,
@@ -1786,8 +1786,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 63,
-      "pointsAgainst": 354,
+      "pointsFor": 70,
+      "pointsAgainst": 410,
       "yardsFor": 385,
       "yardsAgainst": 0,
       "passYdsFor": 190,
@@ -1809,14 +1809,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 10,
+      "count": 11,
       "result": "L"
     }
   },
@@ -1892,7 +1892,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 9
+      "losses": 10
     },
     "rankings": {
       "stateOverall": 268,
@@ -1900,8 +1900,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 96,
-      "pointsAgainst": 442,
+      "pointsFor": 102,
+      "pointsAgainst": 490,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -1923,7 +1923,7 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 7
+      "losses": 8
     },
     "neutralRecord": {
       "wins": 0,
@@ -1931,7 +1931,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -1948,17 +1948,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 224,
+      "stateOverall": 223,
       "stateClass": 18,
       "national": null
     },
     "stats": {
-      "pointsFor": 158,
-      "pointsAgainst": 284,
+      "pointsFor": 213,
+      "pointsAgainst": 298,
       "yardsFor": 1677,
       "yardsAgainst": 0,
       "passYdsFor": 701,
@@ -1979,7 +1979,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 4
     },
     "neutralRecord": {
@@ -1987,7 +1987,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -2059,17 +2059,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 59,
+      "stateOverall": 56,
       "stateClass": 4,
       "national": null
     },
     "stats": {
-      "pointsFor": 335,
-      "pointsAgainst": 138,
+      "pointsFor": 385,
+      "pointsAgainst": 146,
       "yardsFor": 3558,
       "yardsAgainst": 0,
       "passYdsFor": 2071,
@@ -2086,7 +2086,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -2098,7 +2098,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -2116,16 +2116,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 46,
+      "stateOverall": 47,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 289,
+      "pointsFor": 336,
       "pointsAgainst": 40,
       "yardsFor": 2832,
       "yardsAgainst": 0,
@@ -2143,7 +2143,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -2155,7 +2155,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -2173,7 +2173,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -2182,8 +2182,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 301,
-      "pointsAgainst": 96,
+      "pointsFor": 349,
+      "pointsAgainst": 102,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -2200,7 +2200,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 2
     },
     "awayRecord": {
@@ -2212,7 +2212,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -2230,7 +2230,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
@@ -2239,8 +2239,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 355,
-      "pointsAgainst": 236,
+      "pointsFor": 390,
+      "pointsAgainst": 250,
       "yardsFor": 3482,
       "yardsAgainst": 0,
       "passYdsFor": 1021,
@@ -2257,7 +2257,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -2269,7 +2269,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
+      "count": 6,
       "result": "W"
     }
   },
@@ -2287,7 +2287,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 1
     },
     "rankings": {
@@ -2296,16 +2296,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 423,
+      "pointsFor": 471,
       "pointsAgainst": 68,
-      "yardsFor": 3860,
+      "yardsFor": 4322,
       "yardsAgainst": 0,
-      "passYdsFor": 2180,
-      "rushYdsFor": 1680,
+      "passYdsFor": 2435,
+      "rushYdsFor": 1887,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 20,
-      "turnoversLost": 7
+      "turnoversForced": 21,
+      "turnoversLost": 8
     },
     "headCoach": "Darryl Carter",
     "maxprepsUrl": "https://www.maxpreps.com/ms/heidelberg/heidelberg-oilers/football/",
@@ -2314,7 +2314,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -2326,7 +2326,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 8,
+      "count": 9,
       "result": "W"
     }
   },
@@ -2345,7 +2345,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 159,
@@ -2353,8 +2353,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 316,
-      "pointsAgainst": 243,
+      "pointsFor": 324,
+      "pointsAgainst": 293,
       "yardsFor": 2956,
       "yardsAgainst": 0,
       "passYdsFor": 1349,
@@ -2376,15 +2376,15 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -2401,7 +2401,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 1
     },
     "rankings": {
@@ -2410,8 +2410,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 368,
-      "pointsAgainst": 39,
+      "pointsFor": 414,
+      "pointsAgainst": 45,
       "yardsFor": 2992,
       "yardsAgainst": 0,
       "passYdsFor": 728,
@@ -2428,7 +2428,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -2440,7 +2440,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -2458,7 +2458,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 1
     },
     "rankings": {
@@ -2467,8 +2467,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 295,
-      "pointsAgainst": 114,
+      "pointsFor": 341,
+      "pointsAgainst": 138,
       "yardsFor": 2820,
       "yardsAgainst": 0,
       "passYdsFor": 938,
@@ -2485,7 +2485,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -2497,7 +2497,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 7,
+      "count": 8,
       "result": "W"
     }
   },
@@ -2515,7 +2515,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "rankings": {
@@ -2524,8 +2524,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 267,
-      "pointsAgainst": 255,
+      "pointsFor": 294,
+      "pointsAgainst": 279,
       "yardsFor": 3185,
       "yardsAgainst": 0,
       "passYdsFor": 309,
@@ -2546,7 +2546,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "neutralRecord": {
@@ -2554,8 +2554,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -2573,16 +2573,16 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 135,
+      "stateOverall": 133,
       "stateClass": 16,
       "national": null
     },
     "stats": {
       "pointsFor": 215,
-      "pointsAgainst": 164,
+      "pointsAgainst": 210,
       "yardsFor": 2727,
       "yardsAgainst": 0,
       "passYdsFor": 522,
@@ -2604,14 +2604,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -2633,7 +2633,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 172,
+      "stateOverall": 169,
       "stateClass": 21,
       "national": null
     },
@@ -2686,17 +2686,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 111,
+      "stateOverall": 110,
       "stateClass": 12,
       "national": null
     },
     "stats": {
-      "pointsFor": 308,
-      "pointsAgainst": 188,
+      "pointsFor": 354,
+      "pointsAgainst": 196,
       "yardsFor": 2211,
       "yardsAgainst": 0,
       "passYdsFor": 874,
@@ -2713,7 +2713,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -2725,7 +2725,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -2743,25 +2743,25 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 190,
+      "stateOverall": 189,
       "stateClass": 25,
       "national": null
     },
     "stats": {
-      "pointsFor": 368,
-      "pointsAgainst": 338,
-      "yardsFor": 3295,
+      "pointsFor": 412,
+      "pointsAgainst": 358,
+      "yardsFor": 3695,
       "yardsAgainst": 0,
-      "passYdsFor": 2357,
-      "rushYdsFor": 938,
+      "passYdsFor": 2688,
+      "rushYdsFor": 1007,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 3,
-      "turnoversLost": 6
+      "turnoversLost": 7
     },
     "headCoach": "Cody Allsup",
     "maxprepsUrl": "https://www.maxpreps.com/ms/hamilton/hamilton-lions/football/",
@@ -2770,7 +2770,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "awayRecord": {
@@ -2782,7 +2782,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -2801,7 +2801,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 218,
@@ -2809,8 +2809,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 279,
-      "pointsAgainst": 231,
+      "pointsFor": 287,
+      "pointsAgainst": 277,
       "yardsFor": 2710,
       "yardsAgainst": 0,
       "passYdsFor": 788,
@@ -2832,14 +2832,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -2857,7 +2857,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
@@ -2866,15 +2866,15 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 312,
-      "pointsAgainst": 139,
+      "pointsFor": 350,
+      "pointsAgainst": 159,
       "yardsFor": 3153,
       "yardsAgainst": 0,
       "passYdsFor": 341,
       "rushYdsFor": 2812,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
+      "turnoversForced": 18,
       "turnoversLost": 5
     },
     "headCoach": "Brad Gray",
@@ -2888,7 +2888,7 @@
       "losses": 0
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "neutralRecord": {
@@ -2897,7 +2897,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -2915,24 +2915,24 @@
     "season": "2026-27",
     "record": {
       "wins": 9,
-      "losses": 1
+      "losses": 2
     },
     "rankings": {
-      "stateOverall": 157,
+      "stateOverall": 156,
       "stateClass": 17,
       "national": null
     },
     "stats": {
-      "pointsFor": 385,
-      "pointsAgainst": 166,
-      "yardsFor": 3829,
+      "pointsFor": 405,
+      "pointsAgainst": 204,
+      "yardsFor": 4073,
       "yardsAgainst": 0,
-      "passYdsFor": 1994,
-      "rushYdsFor": 1835,
+      "passYdsFor": 2124,
+      "rushYdsFor": 1949,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 24,
-      "turnoversLost": 8
+      "turnoversLost": 9
     },
     "headCoach": "Chuck Darbonne",
     "maxprepsUrl": "https://www.maxpreps.com/ms/bruce/bruce-trojans/football/",
@@ -2942,7 +2942,7 @@
     },
     "homeRecord": {
       "wins": 5,
-      "losses": 0
+      "losses": 1
     },
     "awayRecord": {
       "wins": 4,
@@ -2954,7 +2954,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -2972,16 +2972,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 166,
+      "stateOverall": 164,
       "stateClass": 19,
       "national": null
     },
     "stats": {
-      "pointsFor": 224,
-      "pointsAgainst": 201,
+      "pointsFor": 230,
+      "pointsAgainst": 247,
       "yardsFor": 112,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -3003,14 +3003,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -3028,16 +3028,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 72,
+      "stateOverall": 71,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 411,
+      "pointsFor": 457,
       "pointsAgainst": 121,
       "yardsFor": 3955,
       "yardsAgainst": 0,
@@ -3055,7 +3055,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -3067,7 +3067,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 7,
+      "count": 8,
       "result": "W"
     }
   },
@@ -3085,16 +3085,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 101,
+      "stateOverall": 99,
       "stateClass": 10,
       "national": null
     },
     "stats": {
-      "pointsFor": 188,
+      "pointsFor": 242,
       "pointsAgainst": 177,
       "yardsFor": 1010,
       "yardsAgainst": 0,
@@ -3112,7 +3112,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 3
     },
     "awayRecord": {
@@ -3124,7 +3124,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -3142,7 +3142,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
@@ -3151,16 +3151,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 366,
-      "pointsAgainst": 243,
-      "yardsFor": 3986,
+      "pointsFor": 416,
+      "pointsAgainst": 255,
+      "yardsFor": 4373,
       "yardsAgainst": 0,
-      "passYdsFor": 1946,
-      "rushYdsFor": 2040,
+      "passYdsFor": 2174,
+      "rushYdsFor": 2199,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
-      "turnoversLost": 5
+      "turnoversForced": 22,
+      "turnoversLost": 6
     },
     "headCoach": "Marcus Holmes",
     "maxprepsUrl": "https://www.maxpreps.com/ms/dekalb/kemper-county-wildcats/football/",
@@ -3169,7 +3169,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "awayRecord": {
@@ -3181,7 +3181,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -3203,7 +3203,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 221,
+      "stateOverall": 220,
       "stateClass": 31,
       "national": null
     },
@@ -3257,16 +3257,16 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
-      "stateOverall": 210,
+      "stateOverall": 211,
       "stateClass": 28,
       "national": null
     },
     "stats": {
       "pointsFor": 202,
-      "pointsAgainst": 303,
+      "pointsAgainst": 357,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -3288,14 +3288,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -3371,16 +3371,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 169,
+      "stateOverall": 166,
       "stateClass": 20,
       "national": null
     },
     "stats": {
-      "pointsFor": 322,
-      "pointsAgainst": 342,
+      "pointsFor": 346,
+      "pointsAgainst": 388,
       "yardsFor": 2657,
       "yardsAgainst": 0,
       "passYdsFor": 928,
@@ -3402,14 +3402,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -3428,7 +3428,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 215,
@@ -3436,8 +3436,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 184,
-      "pointsAgainst": 260,
+      "pointsFor": 204,
+      "pointsAgainst": 304,
       "yardsFor": 2047,
       "yardsAgainst": 0,
       "passYdsFor": 502,
@@ -3459,15 +3459,15 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -3542,16 +3542,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
-      "stateOverall": 246,
+      "stateOverall": 245,
       "stateClass": 36,
       "national": null
     },
     "stats": {
-      "pointsFor": 58,
-      "pointsAgainst": 280,
+      "pointsFor": 72,
+      "pointsAgainst": 315,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -3573,14 +3573,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -3599,16 +3599,16 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
-      "stateOverall": 188,
+      "stateOverall": 187,
       "stateClass": 24,
       "national": null
     },
     "stats": {
       "pointsFor": 195,
-      "pointsAgainst": 280,
+      "pointsAgainst": 328,
       "yardsFor": 2169,
       "yardsAgainst": 0,
       "passYdsFor": 1044,
@@ -3630,14 +3630,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -3655,7 +3655,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -3664,7 +3664,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 320,
+      "pointsFor": 358,
       "pointsAgainst": 139,
       "yardsFor": 2909,
       "yardsAgainst": 0,
@@ -3682,7 +3682,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -3694,7 +3694,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -3713,7 +3713,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 235,
@@ -3721,8 +3721,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 151,
-      "pointsAgainst": 238,
+      "pointsFor": 157,
+      "pointsAgainst": 286,
       "yardsFor": 312,
       "yardsAgainst": 0,
       "passYdsFor": 97,
@@ -3744,14 +3744,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -3769,7 +3769,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "rankings": {
@@ -3778,7 +3778,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 298,
+      "pointsFor": 335,
       "pointsAgainst": 170,
       "yardsFor": 2988,
       "yardsAgainst": 0,
@@ -3796,7 +3796,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "awayRecord": {
@@ -3808,7 +3808,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -3827,24 +3827,24 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
-      "stateOverall": 126,
+      "stateOverall": 125,
       "stateClass": 15,
       "national": null
     },
     "stats": {
       "pointsFor": 263,
-      "pointsAgainst": 202,
-      "yardsFor": 2723,
+      "pointsAgainst": 239,
+      "yardsFor": 2904,
       "yardsAgainst": 0,
-      "passYdsFor": 273,
-      "rushYdsFor": 2450,
+      "passYdsFor": 272,
+      "rushYdsFor": 2632,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
-      "turnoversLost": 10
+      "turnoversForced": 12,
+      "turnoversLost": 12
     },
     "headCoach": "Kelly Jimmerson",
     "maxprepsUrl": "https://www.maxpreps.com/ms/enterprise/enterprise-bulldogs/football/",
@@ -3858,14 +3858,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -3884,7 +3884,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 236,
@@ -3893,7 +3893,7 @@
     },
     "stats": {
       "pointsFor": 170,
-      "pointsAgainst": 308,
+      "pointsAgainst": 355,
       "yardsFor": 3157,
       "yardsAgainst": 0,
       "passYdsFor": 1407,
@@ -3915,7 +3915,7 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
@@ -3923,7 +3923,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -3998,16 +3998,16 @@
     "season": "2026-27",
     "record": {
       "wins": 8,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
-      "stateOverall": 195,
+      "stateOverall": 193,
       "stateClass": 26,
       "national": null
     },
     "stats": {
-      "pointsFor": 235,
-      "pointsAgainst": 164,
+      "pointsFor": 259,
+      "pointsAgainst": 191,
       "yardsFor": 2482,
       "yardsAgainst": 0,
       "passYdsFor": 1214,
@@ -4025,7 +4025,7 @@
     },
     "homeRecord": {
       "wins": 4,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 4,
@@ -4036,8 +4036,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -4112,16 +4112,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 174,
+      "stateOverall": 173,
       "stateClass": 22,
       "national": null
     },
     "stats": {
       "pointsFor": 232,
-      "pointsAgainst": 182,
+      "pointsAgainst": 220,
       "yardsFor": 2057,
       "yardsAgainst": 0,
       "passYdsFor": 1865,
@@ -4143,7 +4143,7 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
@@ -4151,7 +4151,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -4169,7 +4169,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 256,
@@ -4177,8 +4177,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 227,
-      "pointsAgainst": 421,
+      "pointsFor": 239,
+      "pointsAgainst": 471,
       "yardsFor": 2610,
       "yardsAgainst": 0,
       "passYdsFor": 1615,
@@ -4200,14 +4200,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -4283,16 +4283,16 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
-      "stateOverall": 60,
+      "stateOverall": 57,
       "stateClass": 4,
       "national": null
     },
     "stats": {
-      "pointsFor": 272,
-      "pointsAgainst": 155,
+      "pointsFor": 285,
+      "pointsAgainst": 170,
       "yardsFor": 2341,
       "yardsAgainst": 0,
       "passYdsFor": 373,
@@ -4314,7 +4314,7 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
@@ -4322,7 +4322,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -4340,16 +4340,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 163,
+      "stateOverall": 162,
       "stateClass": 20,
       "national": null
     },
     "stats": {
-      "pointsFor": 227,
-      "pointsAgainst": 219,
+      "pointsFor": 256,
+      "pointsAgainst": 267,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -4367,7 +4367,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -4378,8 +4378,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -4396,16 +4396,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 28,
+      "stateOverall": 29,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 385,
+      "pointsFor": 426,
       "pointsAgainst": 230,
       "yardsFor": 3486,
       "yardsAgainst": 0,
@@ -4423,7 +4423,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -4435,7 +4435,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -4453,17 +4453,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 129,
+      "stateOverall": 128,
       "stateClass": 11,
       "national": null
     },
     "stats": {
-      "pointsFor": 229,
-      "pointsAgainst": 180,
+      "pointsFor": 267,
+      "pointsAgainst": 186,
       "yardsFor": 2584,
       "yardsAgainst": 0,
       "passYdsFor": 1053,
@@ -4480,7 +4480,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "awayRecord": {
@@ -4492,7 +4492,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -4510,17 +4510,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 90,
+      "stateOverall": 91,
       "stateClass": 9,
       "national": null
     },
     "stats": {
-      "pointsFor": 307,
-      "pointsAgainst": 207,
+      "pointsFor": 322,
+      "pointsAgainst": 220,
       "yardsFor": 3694,
       "yardsAgainst": 0,
       "passYdsFor": 2057,
@@ -4537,7 +4537,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -4550,7 +4550,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -4568,7 +4568,7 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
       "stateOverall": 206,
@@ -4577,7 +4577,7 @@
     },
     "stats": {
       "pointsFor": 154,
-      "pointsAgainst": 369,
+      "pointsAgainst": 403,
       "yardsFor": 1662,
       "yardsAgainst": 0,
       "passYdsFor": 572,
@@ -4599,14 +4599,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -4625,16 +4625,16 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
-      "stateOverall": 196,
+      "stateOverall": 194,
       "stateClass": 25,
       "national": null
     },
     "stats": {
       "pointsFor": 245,
-      "pointsAgainst": 268,
+      "pointsAgainst": 314,
       "yardsFor": 2749,
       "yardsAgainst": 0,
       "passYdsFor": 608,
@@ -4656,15 +4656,15 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -4681,21 +4681,21 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 10,
+      "wins": 11,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 24,
+      "stateOverall": 23,
       "stateClass": 1,
       "national": null
     },
     "stats": {
-      "pointsFor": 470,
-      "pointsAgainst": 129,
-      "yardsFor": 3894,
+      "pointsFor": 532,
+      "pointsAgainst": 143,
+      "yardsFor": 4320,
       "yardsAgainst": 0,
-      "passYdsFor": 1357,
-      "rushYdsFor": 2537,
+      "passYdsFor": 1450,
+      "rushYdsFor": 2870,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 18,
@@ -4708,7 +4708,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 6,
+      "wins": 7,
       "losses": 0
     },
     "awayRecord": {
@@ -4720,7 +4720,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 10,
+      "count": 11,
       "result": "W"
     }
   },
@@ -4738,7 +4738,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
@@ -4747,8 +4747,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 302,
-      "pointsAgainst": 157,
+      "pointsFor": 344,
+      "pointsAgainst": 172,
       "yardsFor": 2506,
       "yardsAgainst": 0,
       "passYdsFor": 1001,
@@ -4765,7 +4765,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -4778,7 +4778,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -4795,24 +4795,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 100,
+      "stateOverall": 98,
       "stateClass": 10,
       "national": null
     },
     "stats": {
-      "pointsFor": 347,
-      "pointsAgainst": 204,
-      "yardsFor": 3178,
+      "pointsFor": 378,
+      "pointsAgainst": 225,
+      "yardsFor": 3614,
       "yardsAgainst": 0,
-      "passYdsFor": 398,
-      "rushYdsFor": 2780,
+      "passYdsFor": 514,
+      "rushYdsFor": 3100,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 20,
+      "turnoversForced": 22,
       "turnoversLost": 3
     },
     "headCoach": "Jesse Anderson",
@@ -4822,7 +4822,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 3
     },
     "awayRecord": {
@@ -4834,7 +4834,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -4852,17 +4852,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 62,
+      "stateOverall": 61,
       "stateClass": 5,
       "national": null
     },
     "stats": {
-      "pointsFor": 270,
-      "pointsAgainst": 254,
+      "pointsFor": 312,
+      "pointsAgainst": 261,
       "yardsFor": 3123,
       "yardsAgainst": 0,
       "passYdsFor": 1273,
@@ -4883,7 +4883,7 @@
       "losses": 4
     },
     "awayRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 2
     },
     "neutralRecord": {
@@ -4891,8 +4891,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -4909,17 +4909,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 147,
+      "stateOverall": 146,
       "stateClass": 14,
       "national": null
     },
     "stats": {
-      "pointsFor": 274,
-      "pointsAgainst": 350,
+      "pointsFor": 310,
+      "pointsAgainst": 378,
       "yardsFor": 2213,
       "yardsAgainst": 0,
       "passYdsFor": 716,
@@ -4940,7 +4940,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -4948,8 +4948,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -4966,16 +4966,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 38,
+      "stateOverall": 37,
       "stateClass": 3,
       "national": null
     },
     "stats": {
-      "pointsFor": 369,
+      "pointsFor": 403,
       "pointsAgainst": 122,
       "yardsFor": 3671,
       "yardsAgainst": 0,
@@ -4993,7 +4993,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -5005,7 +5005,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 7,
+      "count": 8,
       "result": "W"
     }
   },
@@ -5080,17 +5080,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 187,
+      "stateOverall": 186,
       "stateClass": 23,
       "national": null
     },
     "stats": {
-      "pointsFor": 246,
-      "pointsAgainst": 268,
+      "pointsFor": 274,
+      "pointsAgainst": 290,
       "yardsFor": 2701,
       "yardsAgainst": 0,
       "passYdsFor": 640,
@@ -5111,7 +5111,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -5119,7 +5119,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -5138,16 +5138,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 161,
+      "stateOverall": 160,
       "stateClass": 18,
       "national": null
     },
     "stats": {
-      "pointsFor": 184,
-      "pointsAgainst": 293,
+      "pointsFor": 200,
+      "pointsAgainst": 333,
       "yardsFor": 2441,
       "yardsAgainst": 0,
       "passYdsFor": 1220,
@@ -5165,7 +5165,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -5176,8 +5176,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -5194,17 +5194,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 133,
+      "stateOverall": 132,
       "stateClass": 12,
       "national": null
     },
     "stats": {
-      "pointsFor": 292,
-      "pointsAgainst": 255,
+      "pointsFor": 340,
+      "pointsAgainst": 284,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -5225,7 +5225,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "neutralRecord": {
@@ -5233,7 +5233,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -5252,7 +5252,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 207,
@@ -5261,7 +5261,7 @@
     },
     "stats": {
       "pointsFor": 155,
-      "pointsAgainst": 165,
+      "pointsAgainst": 178,
       "yardsFor": 1188,
       "yardsAgainst": 0,
       "passYdsFor": 347,
@@ -5283,14 +5283,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -5308,17 +5308,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 139,
+      "stateOverall": 138,
       "stateClass": 13,
       "national": null
     },
     "stats": {
-      "pointsFor": 269,
-      "pointsAgainst": 93,
+      "pointsFor": 311,
+      "pointsAgainst": 106,
       "yardsFor": 2080,
       "yardsAgainst": 0,
       "passYdsFor": 873,
@@ -5335,7 +5335,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 0
     },
     "awayRecord": {
@@ -5347,7 +5347,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -5365,16 +5365,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 80,
+      "stateOverall": 78,
       "stateClass": 8,
       "national": null
     },
     "stats": {
-      "pointsFor": 304,
+      "pointsFor": 350,
       "pointsAgainst": 42,
       "yardsFor": 3277,
       "yardsAgainst": 0,
@@ -5392,7 +5392,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -5404,7 +5404,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -5423,16 +5423,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
-      "stateOverall": 154,
+      "stateOverall": 153,
       "stateClass": 16,
       "national": null
     },
     "stats": {
-      "pointsFor": 236,
-      "pointsAgainst": 148,
+      "pointsFor": 264,
+      "pointsAgainst": 184,
       "yardsFor": 2683,
       "yardsAgainst": 0,
       "passYdsFor": 1027,
@@ -5450,7 +5450,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 2,
@@ -5461,8 +5461,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -5479,7 +5479,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
@@ -5488,7 +5488,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 346,
+      "pointsFor": 359,
       "pointsAgainst": 115,
       "yardsFor": 3168,
       "yardsAgainst": 0,
@@ -5506,7 +5506,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 6,
+      "wins": 7,
       "losses": 0
     },
     "awayRecord": {
@@ -5518,7 +5518,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -5537,7 +5537,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 202,
@@ -5545,8 +5545,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 214,
-      "pointsAgainst": 237,
+      "pointsFor": 235,
+      "pointsAgainst": 268,
       "yardsFor": 2760,
       "yardsAgainst": 0,
       "passYdsFor": 250,
@@ -5568,14 +5568,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -5594,7 +5594,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 201,
@@ -5603,7 +5603,7 @@
     },
     "stats": {
       "pointsFor": 178,
-      "pointsAgainst": 257,
+      "pointsAgainst": 298,
       "yardsFor": 2149,
       "yardsAgainst": 0,
       "passYdsFor": 457,
@@ -5625,14 +5625,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -5651,7 +5651,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 151,
@@ -5659,8 +5659,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 234,
-      "pointsAgainst": 206,
+      "pointsFor": 256,
+      "pointsAgainst": 234,
       "yardsFor": 3665,
       "yardsAgainst": 0,
       "passYdsFor": 1770,
@@ -5678,7 +5678,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 3,
@@ -5689,7 +5689,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -5708,7 +5708,7 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 155,
@@ -5716,8 +5716,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 252,
-      "pointsAgainst": 200,
+      "pointsFor": 259,
+      "pointsAgainst": 242,
       "yardsFor": 2928,
       "yardsAgainst": 0,
       "passYdsFor": 739,
@@ -5735,7 +5735,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 3,
@@ -5747,7 +5747,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -5764,17 +5764,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 2,
+      "wins": 3,
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 162,
+      "stateOverall": 161,
       "stateClass": 19,
       "national": null
     },
     "stats": {
-      "pointsFor": 191,
-      "pointsAgainst": 317,
+      "pointsFor": 231,
+      "pointsAgainst": 333,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -5795,7 +5795,7 @@
       "losses": 5
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -5804,7 +5804,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -5879,16 +5879,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
-      "stateOverall": 189,
+      "stateOverall": 188,
       "stateClass": 24,
       "national": null
     },
     "stats": {
-      "pointsFor": 160,
-      "pointsAgainst": 242,
+      "pointsFor": 172,
+      "pointsAgainst": 276,
       "yardsFor": 1076,
       "yardsAgainst": 0,
       "passYdsFor": 538,
@@ -5910,14 +5910,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -5935,17 +5935,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 177,
+      "stateOverall": 175,
       "stateClass": 22,
       "national": null
     },
     "stats": {
-      "pointsFor": 244,
-      "pointsAgainst": 198,
+      "pointsFor": 278,
+      "pointsAgainst": 210,
       "yardsFor": 973,
       "yardsAgainst": 0,
       "passYdsFor": 375,
@@ -5962,7 +5962,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -5975,7 +5975,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -6053,7 +6053,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 230,
+      "stateOverall": 229,
       "stateClass": 32,
       "national": null
     },
@@ -6110,7 +6110,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 248,
+      "stateOverall": 249,
       "stateClass": 36,
       "national": null
     },
@@ -6164,7 +6164,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 204,
@@ -6172,8 +6172,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 190,
-      "pointsAgainst": 210,
+      "pointsFor": 203,
+      "pointsAgainst": 252,
       "yardsFor": 2697,
       "yardsAgainst": 0,
       "passYdsFor": 879,
@@ -6195,14 +6195,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -6221,16 +6221,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
-      "stateOverall": 168,
+      "stateOverall": 165,
       "stateClass": 21,
       "national": null
     },
     "stats": {
-      "pointsFor": 264,
-      "pointsAgainst": 239,
+      "pointsFor": 279,
+      "pointsAgainst": 281,
       "yardsFor": 2888,
       "yardsAgainst": 0,
       "passYdsFor": 1934,
@@ -6252,7 +6252,7 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
@@ -6260,7 +6260,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -6278,7 +6278,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 203,
@@ -6286,8 +6286,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 96,
-      "pointsAgainst": 337,
+      "pointsFor": 102,
+      "pointsAgainst": 375,
       "yardsFor": 2018,
       "yardsAgainst": 0,
       "passYdsFor": 811,
@@ -6309,14 +6309,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -6449,7 +6449,7 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 242,
@@ -6457,8 +6457,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 174,
-      "pointsAgainst": 266,
+      "pointsFor": 188,
+      "pointsAgainst": 328,
       "yardsFor": 648,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -6480,14 +6480,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 5,
+      "count": 6,
       "result": "L"
     }
   },
@@ -6505,24 +6505,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "rankings": {
       "stateOverall": 55,
-      "stateClass": 8,
+      "stateClass": 9,
       "national": null
     },
     "stats": {
-      "pointsFor": 362,
-      "pointsAgainst": 217,
+      "pointsFor": 383,
+      "pointsAgainst": 224,
       "yardsFor": 46,
       "yardsAgainst": 0,
       "passYdsFor": 0,
       "rushYdsFor": 46,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 11,
       "turnoversLost": 0
     },
     "headCoach": "Chip Bilderback",
@@ -6536,7 +6536,7 @@
       "losses": 1
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -6545,7 +6545,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -6562,17 +6562,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 35,
+      "stateOverall": 34,
       "stateClass": 3,
       "national": null
     },
     "stats": {
-      "pointsFor": 479,
-      "pointsAgainst": 264,
+      "pointsFor": 527,
+      "pointsAgainst": 285,
       "yardsFor": 4478,
       "yardsAgainst": 0,
       "passYdsFor": 2374,
@@ -6589,7 +6589,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "awayRecord": {
@@ -6601,7 +6601,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -6619,24 +6619,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 10,
+      "wins": 11,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 44,
+      "stateOverall": 41,
       "stateClass": 7,
       "national": null
     },
     "stats": {
-      "pointsFor": 476,
-      "pointsAgainst": 150,
-      "yardsFor": 4813,
+      "pointsFor": 538,
+      "pointsAgainst": 183,
+      "yardsFor": 5316,
       "yardsAgainst": 0,
-      "passYdsFor": 2342,
-      "rushYdsFor": 2471,
+      "passYdsFor": 2632,
+      "rushYdsFor": 2684,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 21,
+      "turnoversForced": 22,
       "turnoversLost": 8
     },
     "headCoach": "Jeff Stockstill",
@@ -6646,7 +6646,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -6658,7 +6658,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 10,
+      "count": 11,
       "result": "W"
     }
   },
@@ -6676,17 +6676,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 10,
+      "wins": 11,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 42,
+      "stateOverall": 40,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 319,
-      "pointsAgainst": 74,
+      "pointsFor": 366,
+      "pointsAgainst": 88,
       "yardsFor": 2756,
       "yardsAgainst": 0,
       "passYdsFor": 737,
@@ -6703,7 +6703,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 6,
+      "wins": 7,
       "losses": 0
     },
     "awayRecord": {
@@ -6715,7 +6715,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 10,
+      "count": 11,
       "result": "W"
     }
   },
@@ -6733,24 +6733,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 86,
+      "stateOverall": 85,
       "stateClass": 13,
       "national": null
     },
     "stats": {
-      "pointsFor": 238,
-      "pointsAgainst": 144,
-      "yardsFor": 2537,
+      "pointsFor": 279,
+      "pointsAgainst": 150,
+      "yardsFor": 2897,
       "yardsAgainst": 0,
-      "passYdsFor": 572,
-      "rushYdsFor": 1965,
+      "passYdsFor": 605,
+      "rushYdsFor": 2292,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 13,
       "turnoversLost": 5
     },
     "headCoach": "Curtis Kemp Jr.",
@@ -6760,7 +6760,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -6772,7 +6772,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -6790,25 +6790,25 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 41,
+      "stateOverall": 39,
       "stateClass": 5,
       "national": null
     },
     "stats": {
-      "pointsFor": 345,
-      "pointsAgainst": 163,
-      "yardsFor": 3590,
+      "pointsFor": 406,
+      "pointsAgainst": 177,
+      "yardsFor": 3904,
       "yardsAgainst": 0,
-      "passYdsFor": 2333,
-      "rushYdsFor": 1257,
+      "passYdsFor": 2616,
+      "rushYdsFor": 1288,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
-      "turnoversLost": 6
+      "turnoversLost": 7
     },
     "headCoach": "Alden Foster",
     "maxprepsUrl": "https://www.maxpreps.com/ms/mccomb/mccomb-tigers/football/",
@@ -6817,7 +6817,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -6829,7 +6829,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -6848,7 +6848,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 183,
@@ -6856,8 +6856,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 291,
-      "pointsAgainst": 287,
+      "pointsFor": 305,
+      "pointsAgainst": 334,
       "yardsFor": 2731,
       "yardsAgainst": 0,
       "passYdsFor": 1331,
@@ -6879,14 +6879,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -6904,7 +6904,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
@@ -6913,7 +6913,7 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 366,
+      "pointsFor": 415,
       "pointsAgainst": 122,
       "yardsFor": 3589,
       "yardsAgainst": 0,
@@ -6931,7 +6931,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 2
     },
     "awayRecord": {
@@ -6943,7 +6943,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
+      "count": 7,
       "result": "W"
     }
   },
@@ -6961,16 +6961,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 56,
-      "stateClass": 9,
+      "stateOverall": 54,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
-      "pointsFor": 282,
+      "pointsFor": 324,
       "pointsAgainst": 111,
       "yardsFor": 120,
       "yardsAgainst": 0,
@@ -6988,7 +6988,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "awayRecord": {
@@ -7000,7 +7000,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -7019,7 +7019,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 114,
@@ -7027,8 +7027,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 269,
-      "pointsAgainst": 234,
+      "pointsFor": 302,
+      "pointsAgainst": 296,
       "yardsFor": 3134,
       "yardsAgainst": 0,
       "passYdsFor": 2186,
@@ -7050,14 +7050,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -7133,16 +7133,16 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
-      "stateOverall": 63,
+      "stateOverall": 62,
       "stateClass": 11,
       "national": null
     },
     "stats": {
-      "pointsFor": 304,
-      "pointsAgainst": 182,
+      "pointsFor": 325,
+      "pointsAgainst": 230,
       "yardsFor": 3722,
       "yardsAgainst": 0,
       "passYdsFor": 762,
@@ -7164,7 +7164,7 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
@@ -7172,7 +7172,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -7189,24 +7189,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 79,
+      "stateOverall": 77,
       "stateClass": 12,
       "national": null
     },
     "stats": {
-      "pointsFor": 291,
-      "pointsAgainst": 178,
+      "pointsFor": 343,
+      "pointsAgainst": 192,
       "yardsFor": 2979,
       "yardsAgainst": 0,
       "passYdsFor": 1221,
       "rushYdsFor": 1758,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 16,
       "turnoversLost": 8
     },
     "headCoach": null,
@@ -7216,7 +7216,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "awayRecord": {
@@ -7229,7 +7229,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -7246,7 +7246,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
@@ -7255,8 +7255,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 344,
-      "pointsAgainst": 161,
+      "pointsFor": 384,
+      "pointsAgainst": 169,
       "yardsFor": 3525,
       "yardsAgainst": 0,
       "passYdsFor": 1636,
@@ -7273,7 +7273,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -7285,7 +7285,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
+      "count": 7,
       "result": "W"
     }
   },
@@ -7303,24 +7303,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 25,
+      "stateOverall": 26,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 385,
+      "pointsFor": 441,
       "pointsAgainst": 164,
-      "yardsFor": 3753,
+      "yardsFor": 4195,
       "yardsAgainst": 0,
       "passYdsFor": 563,
-      "rushYdsFor": 3190,
+      "rushYdsFor": 3632,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
+      "turnoversForced": 15,
       "turnoversLost": 4
     },
     "headCoach": "Jay Beech",
@@ -7330,7 +7330,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -7342,7 +7342,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 9,
+      "count": 10,
       "result": "W"
     }
   },
@@ -7361,16 +7361,16 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
-      "stateOverall": 179,
+      "stateOverall": 178,
       "stateClass": 26,
       "national": null
     },
     "stats": {
-      "pointsFor": 141,
-      "pointsAgainst": 204,
+      "pointsFor": 183,
+      "pointsAgainst": 253,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -7392,14 +7392,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -7418,16 +7418,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 105,
+      "stateOverall": 104,
       "stateClass": 18,
       "national": null
     },
     "stats": {
-      "pointsFor": 294,
-      "pointsAgainst": 125,
+      "pointsFor": 308,
+      "pointsAgainst": 177,
       "yardsFor": 2371,
       "yardsAgainst": 0,
       "passYdsFor": 566,
@@ -7449,14 +7449,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -7475,16 +7475,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 173,
+      "stateOverall": 170,
       "stateClass": 25,
       "national": null
     },
     "stats": {
-      "pointsFor": 207,
-      "pointsAgainst": 176,
+      "pointsFor": 221,
+      "pointsAgainst": 237,
       "yardsFor": 1693,
       "yardsAgainst": 0,
       "passYdsFor": 1325,
@@ -7506,14 +7506,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -7532,7 +7532,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 124,
@@ -7540,8 +7540,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 213,
-      "pointsAgainst": 195,
+      "pointsFor": 220,
+      "pointsAgainst": 216,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -7559,7 +7559,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 1,
@@ -7570,8 +7570,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -7588,7 +7588,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 5
     },
     "rankings": {
@@ -7597,8 +7597,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 188,
-      "pointsAgainst": 148,
+      "pointsFor": 234,
+      "pointsAgainst": 186,
       "yardsFor": 242,
       "yardsAgainst": 0,
       "passYdsFor": 134,
@@ -7619,7 +7619,7 @@
       "losses": 4
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "neutralRecord": {
@@ -7628,7 +7628,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -7645,24 +7645,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 87,
+      "stateOverall": 86,
       "stateClass": 14,
       "national": null
     },
     "stats": {
-      "pointsFor": 311,
-      "pointsAgainst": 241,
-      "yardsFor": 3690,
+      "pointsFor": 360,
+      "pointsAgainst": 283,
+      "yardsFor": 4268,
       "yardsAgainst": 0,
-      "passYdsFor": 1678,
-      "rushYdsFor": 2012,
+      "passYdsFor": 2100,
+      "rushYdsFor": 2168,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 21,
+      "turnoversForced": 25,
       "turnoversLost": 6
     },
     "headCoach": "Zach Jones",
@@ -7672,7 +7672,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
@@ -7684,7 +7684,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -7702,7 +7702,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 3
     },
     "rankings": {
@@ -7711,8 +7711,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 307,
-      "pointsAgainst": 260,
+      "pointsFor": 342,
+      "pointsAgainst": 286,
       "yardsFor": 3579,
       "yardsAgainst": 0,
       "passYdsFor": 1087,
@@ -7729,7 +7729,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -7741,7 +7741,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -7760,16 +7760,16 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
-      "stateOverall": 110,
+      "stateOverall": 108,
       "stateClass": 19,
       "national": null
     },
     "stats": {
-      "pointsFor": 364,
-      "pointsAgainst": 211,
+      "pointsFor": 390,
+      "pointsAgainst": 246,
       "yardsFor": 3184,
       "yardsAgainst": 0,
       "passYdsFor": 721,
@@ -7791,15 +7791,15 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -7816,16 +7816,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 61,
+      "stateOverall": 59,
       "stateClass": 10,
       "national": null
     },
     "stats": {
-      "pointsFor": 358,
+      "pointsFor": 400,
       "pointsAgainst": 226,
       "yardsFor": 2736,
       "yardsAgainst": 0,
@@ -7843,7 +7843,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -7855,7 +7855,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -7873,7 +7873,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4
     },
     "rankings": {
@@ -7882,8 +7882,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 217,
-      "pointsAgainst": 172,
+      "pointsFor": 244,
+      "pointsAgainst": 184,
       "yardsFor": 2323,
       "yardsAgainst": 0,
       "passYdsFor": 444,
@@ -7900,7 +7900,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "awayRecord": {
@@ -7912,7 +7912,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -7934,7 +7934,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 197,
+      "stateOverall": 196,
       "stateClass": 30,
       "national": null
     },
@@ -8045,7 +8045,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
       "stateOverall": 212,
@@ -8053,8 +8053,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 62,
-      "pointsAgainst": 257,
+      "pointsFor": 70,
+      "pointsAgainst": 297,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -8076,7 +8076,7 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
@@ -8084,7 +8084,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -8102,16 +8102,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 146,
+      "stateOverall": 147,
       "stateClass": 24,
       "national": null
     },
     "stats": {
-      "pointsFor": 208,
-      "pointsAgainst": 273,
+      "pointsFor": 220,
+      "pointsAgainst": 300,
       "yardsFor": 2038,
       "yardsAgainst": 0,
       "passYdsFor": 533,
@@ -8133,14 +8133,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -8159,16 +8159,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
-      "stateOverall": 180,
+      "stateOverall": 179,
       "stateClass": 27,
       "national": null
     },
     "stats": {
       "pointsFor": 164,
-      "pointsAgainst": 306,
+      "pointsAgainst": 348,
       "yardsFor": 2228,
       "yardsAgainst": 0,
       "passYdsFor": 984,
@@ -8190,14 +8190,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "L"
     }
   },
@@ -8216,16 +8216,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 98,
+      "stateOverall": 97,
       "stateClass": 17,
       "national": null
     },
     "stats": {
       "pointsFor": 249,
-      "pointsAgainst": 201,
+      "pointsAgainst": 250,
       "yardsFor": 423,
       "yardsAgainst": 0,
       "passYdsFor": 252,
@@ -8247,14 +8247,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -8273,16 +8273,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 91,
+      "stateOverall": 90,
       "stateClass": 15,
       "national": null
     },
     "stats": {
-      "pointsFor": 227,
-      "pointsAgainst": 237,
+      "pointsFor": 265,
+      "pointsAgainst": 283,
       "yardsFor": 3118,
       "yardsAgainst": 0,
       "passYdsFor": 1686,
@@ -8300,7 +8300,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -8311,8 +8311,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -8330,7 +8330,7 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 9
+      "losses": 10
     },
     "rankings": {
       "stateOverall": 234,
@@ -8339,7 +8339,7 @@
     },
     "stats": {
       "pointsFor": 94,
-      "pointsAgainst": 356,
+      "pointsAgainst": 412,
       "yardsFor": 741,
       "yardsAgainst": 0,
       "passYdsFor": 284,
@@ -8361,14 +8361,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 8,
+      "count": 9,
       "result": "L"
     }
   },
@@ -8387,7 +8387,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 182,
@@ -8395,8 +8395,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 251,
-      "pointsAgainst": 281,
+      "pointsFor": 257,
+      "pointsAgainst": 322,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -8418,7 +8418,7 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
@@ -8426,7 +8426,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -8504,7 +8504,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 213,
+      "stateOverall": 214,
       "stateClass": 33,
       "national": null
     },
@@ -8615,16 +8615,16 @@
     "season": "2026-27",
     "record": {
       "wins": 1,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
-      "stateOverall": 223,
+      "stateOverall": 224,
       "stateClass": 34,
       "national": null
     },
     "stats": {
       "pointsFor": 67,
-      "pointsAgainst": 285,
+      "pointsAgainst": 327,
       "yardsFor": 1718,
       "yardsAgainst": 0,
       "passYdsFor": 904,
@@ -8646,14 +8646,14 @@
     },
     "awayRecord": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -8675,7 +8675,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 227,
+      "stateOverall": 226,
       "stateClass": 35,
       "national": null
     },
@@ -8732,7 +8732,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 199,
+      "stateOverall": 198,
       "stateClass": 31,
       "national": null
     },
@@ -8789,7 +8789,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 29,
+      "stateOverall": 30,
       "stateClass": 2,
       "national": null
     },
@@ -8846,7 +8846,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 97,
+      "stateOverall": 102,
       "stateClass": 10,
       "national": null
     },
@@ -8960,8 +8960,8 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 160,
-      "stateClass": 21,
+      "stateOverall": 152,
+      "stateClass": 20,
       "national": null
     },
     "stats": {
@@ -9017,8 +9017,8 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 123,
-      "stateClass": 14,
+      "stateOverall": 111,
+      "stateClass": 12,
       "national": null
     },
     "stats": {
@@ -9074,17 +9074,17 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 125,
-      "stateClass": 15,
+      "stateOverall": 120,
+      "stateClass": 14,
       "national": null
     },
     "stats": {
       "pointsFor": 303,
       "pointsAgainst": 300,
-      "yardsFor": 3219,
+      "yardsFor": 4127,
       "yardsAgainst": 0,
-      "passYdsFor": 1261,
-      "rushYdsFor": 1958,
+      "passYdsFor": 1586,
+      "rushYdsFor": 2541,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 18,
@@ -9131,20 +9131,20 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 78,
+      "stateOverall": 79,
       "stateClass": 7,
       "national": null
     },
     "stats": {
       "pointsFor": 342,
       "pointsAgainst": 206,
-      "yardsFor": 2917,
+      "yardsFor": 3166,
       "yardsAgainst": 0,
-      "passYdsFor": 877,
-      "rushYdsFor": 2040,
+      "passYdsFor": 971,
+      "rushYdsFor": 2195,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
+      "turnoversForced": 13,
       "turnoversLost": 7
     },
     "headCoach": "Kendrick Woodard",
@@ -9188,7 +9188,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 40,
+      "stateOverall": 44,
       "stateClass": 4,
       "national": null
     },
@@ -9245,8 +9245,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 132,
-      "stateClass": 16,
+      "stateOverall": 127,
+      "stateClass": 15,
       "national": null
     },
     "stats": {
@@ -9302,7 +9302,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 37,
+      "stateOverall": 38,
       "stateClass": 3,
       "national": null
     },
@@ -9359,17 +9359,17 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 153,
-      "stateClass": 20,
+      "stateOverall": 143,
+      "stateClass": 19,
       "national": null
     },
     "stats": {
       "pointsFor": 216,
       "pointsAgainst": 253,
-      "yardsFor": 2404,
+      "yardsFor": 3017,
       "yardsAgainst": 0,
-      "passYdsFor": 1155,
-      "rushYdsFor": 1249,
+      "passYdsFor": 1419,
+      "rushYdsFor": 1598,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
@@ -9416,7 +9416,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 73,
+      "stateOverall": 76,
       "stateClass": 6,
       "national": null
     },
@@ -9473,7 +9473,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 47,
+      "stateOverall": 63,
       "stateClass": 5,
       "national": null
     },
@@ -9530,8 +9530,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 150,
-      "stateClass": 19,
+      "stateOverall": 158,
+      "stateClass": 21,
       "national": null
     },
     "stats": {
@@ -9587,8 +9587,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 136,
-      "stateClass": 18,
+      "stateOverall": 135,
+      "stateClass": 16,
       "national": null
     },
     "stats": {
@@ -9644,8 +9644,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 134,
-      "stateClass": 17,
+      "stateOverall": 142,
+      "stateClass": 18,
       "national": null
     },
     "stats": {
@@ -9701,7 +9701,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 85,
+      "stateOverall": 83,
       "stateClass": 8,
       "national": null
     },
@@ -9758,7 +9758,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 92,
+      "stateOverall": 96,
       "stateClass": 9,
       "national": null
     },
@@ -9815,8 +9815,8 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 186,
-      "stateClass": 23,
+      "stateOverall": 197,
+      "stateClass": 24,
       "national": null
     },
     "stats": {
@@ -9872,8 +9872,8 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 115,
-      "stateClass": 13,
+      "stateOverall": 136,
+      "stateClass": 17,
       "national": null
     },
     "stats": {
@@ -9929,17 +9929,17 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 191,
-      "stateClass": 24,
+      "stateOverall": 195,
+      "stateClass": 23,
       "national": null
     },
     "stats": {
       "pointsFor": 137,
       "pointsAgainst": 257,
-      "yardsFor": 2043,
+      "yardsFor": 2261,
       "yardsAgainst": 0,
-      "passYdsFor": 1419,
-      "rushYdsFor": 624,
+      "passYdsFor": 1598,
+      "rushYdsFor": 663,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 11,
@@ -9986,7 +9986,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 220,
+      "stateOverall": 217,
       "stateClass": 25,
       "national": null
     },
@@ -10043,7 +10043,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 167,
+      "stateOverall": 180,
       "stateClass": 22,
       "national": null
     },
@@ -10100,8 +10100,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 107,
-      "stateClass": 12,
+      "stateOverall": 115,
+      "stateClass": 13,
       "national": null
     },
     "stats": {
@@ -10157,7 +10157,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 7,
+      "stateOverall": 6,
       "stateClass": 1,
       "national": null
     },
@@ -10214,7 +10214,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 96,
+      "stateOverall": 92,
       "stateClass": 14,
       "national": null
     },
@@ -10227,7 +10227,7 @@
       "rushYdsFor": 3206,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 3,
+      "turnoversForced": 5,
       "turnoversLost": 4
     },
     "headCoach": "Bernard Euell",
@@ -10271,7 +10271,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 57,
+      "stateOverall": 60,
       "stateClass": 8,
       "national": null
     },
@@ -10328,21 +10328,21 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 26,
+      "stateOverall": 27,
       "stateClass": 4,
       "national": null
     },
     "stats": {
       "pointsFor": 289,
       "pointsAgainst": 251,
-      "yardsFor": 2769,
+      "yardsFor": 3170,
       "yardsAgainst": 0,
       "passYdsFor": 230,
-      "rushYdsFor": 2539,
+      "rushYdsFor": 2940,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 9,
-      "turnoversLost": 11
+      "turnoversLost": 12
     },
     "headCoach": "Cody Stogner",
     "maxprepsUrl": "https://www.maxpreps.com/ms/picayune/picayune-maroon-tide/football/",
@@ -10385,17 +10385,17 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 104,
+      "stateOverall": 105,
       "stateClass": 16,
       "national": null
     },
     "stats": {
       "pointsFor": 331,
       "pointsAgainst": 181,
-      "yardsFor": 3526,
+      "yardsFor": 3746,
       "yardsAgainst": 0,
-      "passYdsFor": 1639,
-      "rushYdsFor": 1887,
+      "passYdsFor": 1665,
+      "rushYdsFor": 2081,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 10,
@@ -10499,8 +10499,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 74,
-      "stateClass": 10,
+      "stateOverall": 75,
+      "stateClass": 11,
       "national": null
     },
     "stats": {
@@ -10556,7 +10556,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 45,
+      "stateOverall": 48,
       "stateClass": 6,
       "national": null
     },
@@ -10670,7 +10670,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 68,
+      "stateOverall": 72,
       "stateClass": 9,
       "national": null
     },
@@ -10683,7 +10683,7 @@
       "rushYdsFor": 2735,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 16,
       "turnoversLost": 7
     },
     "headCoach": "John Feaster",
@@ -10727,21 +10727,21 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 81,
-      "stateClass": 12,
+      "stateOverall": 87,
+      "stateClass": 13,
       "national": null
     },
     "stats": {
       "pointsFor": 185,
       "pointsAgainst": 232,
-      "yardsFor": 2333,
+      "yardsFor": 2758,
       "yardsAgainst": 0,
-      "passYdsFor": 1159,
-      "rushYdsFor": 1174,
+      "passYdsFor": 1438,
+      "rushYdsFor": 1320,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
-      "turnoversLost": 4
+      "turnoversLost": 6
     },
     "headCoach": "Zach Green",
     "maxprepsUrl": "https://www.maxpreps.com/ms/pascagoula/pascagoula-panthers/football/",
@@ -10784,7 +10784,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 142,
+      "stateOverall": 141,
       "stateClass": 19,
       "national": null
     },
@@ -10841,7 +10841,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 54,
+      "stateOverall": 50,
       "stateClass": 7,
       "national": null
     },
@@ -10898,8 +10898,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 156,
-      "stateClass": 21,
+      "stateOverall": 177,
+      "stateClass": 22,
       "national": null
     },
     "stats": {
@@ -11012,7 +11012,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 34,
+      "stateOverall": 35,
       "stateClass": 5,
       "national": null
     },
@@ -11069,8 +11069,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 76,
-      "stateClass": 11,
+      "stateOverall": 73,
+      "stateClass": 10,
       "national": null
     },
     "stats": {
@@ -11127,7 +11127,7 @@
     },
     "rankings": {
       "stateOverall": 84,
-      "stateClass": 13,
+      "stateClass": 12,
       "national": null
     },
     "stats": {
@@ -11139,7 +11139,7 @@
       "rushYdsFor": 1488,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 14,
+      "turnoversForced": 16,
       "turnoversLost": 12
     },
     "headCoach": "Marc High",
@@ -11183,8 +11183,8 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 164,
-      "stateClass": 22,
+      "stateOverall": 171,
+      "stateClass": 21,
       "national": null
     },
     "stats": {
@@ -11240,7 +11240,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 245,
+      "stateOverall": 246,
       "stateClass": 24,
       "national": null
     },
@@ -11297,20 +11297,20 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 137,
+      "stateOverall": 130,
       "stateClass": 18,
       "national": null
     },
     "stats": {
       "pointsFor": 278,
       "pointsAgainst": 266,
-      "yardsFor": 2336,
+      "yardsFor": 2590,
       "yardsAgainst": 0,
-      "passYdsFor": 349,
-      "rushYdsFor": 1987,
+      "passYdsFor": 417,
+      "rushYdsFor": 2173,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 8,
+      "turnoversForced": 12,
       "turnoversLost": 13
     },
     "headCoach": "Kelly Causey",
@@ -11354,7 +11354,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 216,
+      "stateOverall": 222,
       "stateClass": 23,
       "national": null
     },
@@ -11411,7 +11411,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 149,
+      "stateOverall": 154,
       "stateClass": 20,
       "national": null
     },
@@ -11424,7 +11424,7 @@
       "rushYdsFor": 1530,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 14,
+      "turnoversForced": 15,
       "turnoversLost": 2
     },
     "headCoach": "Cody Finley",
@@ -11468,21 +11468,21 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 99,
+      "stateOverall": 101,
       "stateClass": 15,
       "national": null
     },
     "stats": {
       "pointsFor": 232,
       "pointsAgainst": 327,
-      "yardsFor": 3252,
+      "yardsFor": 3672,
       "yardsAgainst": 0,
-      "passYdsFor": 1647,
-      "rushYdsFor": 1605,
+      "passYdsFor": 1945,
+      "rushYdsFor": 1727,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 22,
-      "turnoversLost": 25
+      "turnoversLost": 28
     },
     "headCoach": "Marcus Jamison",
     "maxprepsUrl": "https://www.maxpreps.com/ms/olive-branch/olive-branch-conquistadors/football/",
@@ -11532,14 +11532,14 @@
     "stats": {
       "pointsFor": 474,
       "pointsAgainst": 71,
-      "yardsFor": 3914,
+      "yardsFor": 3917,
       "yardsAgainst": 0,
       "passYdsFor": 1998,
-      "rushYdsFor": 1916,
+      "rushYdsFor": 1919,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 23,
-      "turnoversLost": 4
+      "turnoversForced": 27,
+      "turnoversLost": 5
     },
     "headCoach": "Ty Hardin",
     "maxprepsUrl": "https://www.maxpreps.com/ms/tupelo/tupelo-golden-wave/football/",
@@ -11589,14 +11589,14 @@
     "stats": {
       "pointsFor": 395,
       "pointsAgainst": 118,
-      "yardsFor": 3564,
+      "yardsFor": 3912,
       "yardsAgainst": 0,
-      "passYdsFor": 2261,
-      "rushYdsFor": 1303,
+      "passYdsFor": 2506,
+      "rushYdsFor": 1406,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 18,
-      "turnoversLost": 8
+      "turnoversForced": 20,
+      "turnoversLost": 11
     },
     "headCoach": "Blake Pennock",
     "maxprepsUrl": "https://www.maxpreps.com/ms/gulfport/gulfport-admirals/football/",
@@ -11639,8 +11639,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 4,
-      "stateClass": 4,
+      "stateOverall": 10,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -11753,20 +11753,20 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 11,
-      "stateClass": 8,
+      "stateOverall": 15,
+      "stateClass": 10,
       "national": null
     },
     "stats": {
       "pointsFor": 367,
       "pointsAgainst": 170,
-      "yardsFor": 3869,
+      "yardsFor": 4205,
       "yardsAgainst": 0,
-      "passYdsFor": 1753,
-      "rushYdsFor": 2116,
+      "passYdsFor": 1808,
+      "rushYdsFor": 2397,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 16,
+      "turnoversForced": 18,
       "turnoversLost": 3
     },
     "headCoach": "Josh Ladner",
@@ -11810,21 +11810,21 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 10,
-      "stateClass": 7,
+      "stateOverall": 9,
+      "stateClass": 6,
       "national": null
     },
     "stats": {
       "pointsFor": 334,
       "pointsAgainst": 238,
-      "yardsFor": 3666,
+      "yardsFor": 4137,
       "yardsAgainst": 0,
-      "passYdsFor": 2225,
-      "rushYdsFor": 1441,
+      "passYdsFor": 2463,
+      "rushYdsFor": 1674,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 12,
-      "turnoversLost": 10
+      "turnoversLost": 11
     },
     "headCoach": "Drew Causey",
     "maxprepsUrl": "https://www.maxpreps.com/ms/hattiesburg/oak-grove-warriors/football/",
@@ -11867,7 +11867,7 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 51,
+      "stateOverall": 46,
       "stateClass": 19,
       "national": null
     },
@@ -11924,8 +11924,8 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 8,
-      "stateClass": 6,
+      "stateOverall": 7,
+      "stateClass": 5,
       "national": null
     },
     "stats": {
@@ -11981,8 +11981,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 32,
-      "stateClass": 14,
+      "stateOverall": 33,
+      "stateClass": 15,
       "national": null
     },
     "stats": {
@@ -12038,7 +12038,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 39,
+      "stateOverall": 42,
       "stateClass": 16,
       "national": null
     },
@@ -12095,8 +12095,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 15,
-      "stateClass": 10,
+      "stateOverall": 16,
+      "stateClass": 11,
       "national": null
     },
     "stats": {
@@ -12152,8 +12152,8 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 50,
-      "stateClass": 18,
+      "stateOverall": 49,
+      "stateClass": 20,
       "national": null
     },
     "stats": {
@@ -12209,8 +12209,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 33,
-      "stateClass": 15,
+      "stateOverall": 25,
+      "stateClass": 14,
       "national": null
     },
     "stats": {
@@ -12273,10 +12273,10 @@
     "stats": {
       "pointsFor": 296,
       "pointsAgainst": 261,
-      "yardsFor": 2875,
+      "yardsFor": 3219,
       "yardsAgainst": 0,
-      "passYdsFor": 1753,
-      "rushYdsFor": 1122,
+      "passYdsFor": 1917,
+      "rushYdsFor": 1302,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 12,
@@ -12380,8 +12380,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 6,
-      "stateClass": 5,
+      "stateOverall": 4,
+      "stateClass": 4,
       "national": null
     },
     "stats": {
@@ -12494,7 +12494,7 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 23,
+      "stateOverall": 24,
       "stateClass": 13,
       "national": null
     },
@@ -12551,8 +12551,8 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 52,
-      "stateClass": 20,
+      "stateOverall": 58,
+      "stateClass": 21,
       "national": null
     },
     "stats": {
@@ -12608,7 +12608,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 77,
+      "stateOverall": 81,
       "stateClass": 22,
       "national": null
     },
@@ -12665,8 +12665,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 58,
-      "stateClass": 21,
+      "stateOverall": 45,
+      "stateClass": 18,
       "national": null
     },
     "stats": {
@@ -12722,8 +12722,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 128,
-      "stateClass": 23,
+      "stateOverall": 149,
+      "stateClass": 24,
       "national": null
     },
     "stats": {
@@ -12779,8 +12779,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 16,
-      "stateClass": 11,
+      "stateOverall": 11,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
@@ -12836,8 +12836,8 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 143,
-      "stateClass": 24,
+      "stateOverall": 137,
+      "stateClass": 23,
       "national": null
     },
     "stats": {
@@ -12893,7 +12893,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 178,
+      "stateOverall": 176,
       "stateClass": 25,
       "national": null
     },
@@ -13003,17 +13003,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 120,
+      "stateOverall": 121,
       "stateClass": 3,
       "national": null
     },
     "stats": {
-      "pointsFor": 353,
-      "pointsAgainst": 164,
+      "pointsFor": 395,
+      "pointsAgainst": 170,
       "yardsFor": 3199,
       "yardsAgainst": 0,
       "passYdsFor": 976,
@@ -13030,7 +13030,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "awayRecord": {
@@ -13042,7 +13042,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -13060,17 +13060,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 122,
+      "stateOverall": 123,
       "stateClass": 4,
       "national": null
     },
     "stats": {
-      "pointsFor": 399,
-      "pointsAgainst": 147,
+      "pointsFor": 437,
+      "pointsAgainst": 176,
       "yardsFor": 3785,
       "yardsAgainst": 0,
       "passYdsFor": 903,
@@ -13091,7 +13091,7 @@
       "losses": 2
     },
     "awayRecord": {
-      "wins": 6,
+      "wins": 7,
       "losses": 0
     },
     "neutralRecord": {
@@ -13099,7 +13099,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -13126,16 +13126,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 383,
-      "pointsAgainst": 214,
-      "yardsFor": 3351,
+      "pointsFor": 379,
+      "pointsAgainst": 195,
+      "yardsFor": 3781,
       "yardsAgainst": 0,
-      "passYdsFor": 651,
-      "rushYdsFor": 2700,
+      "passYdsFor": 789,
+      "rushYdsFor": 2992,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
-      "turnoversLost": 5
+      "turnoversForced": 19,
+      "turnoversLost": 7
     },
     "headCoach": "Rick Johnston",
     "maxprepsUrl": "https://www.maxpreps.com/ms/clarksdale/lee-academy-colts/football/",
@@ -13144,11 +13144,11 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 4,
       "losses": 1
     },
     "awayRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "neutralRecord": {
@@ -13232,24 +13232,24 @@
     "season": "2026-27",
     "record": {
       "wins": 3,
-      "losses": 8
+      "losses": 9
     },
     "rankings": {
-      "stateOverall": 211,
+      "stateOverall": 210,
       "stateClass": 9,
       "national": null
     },
     "stats": {
-      "pointsFor": 188,
-      "pointsAgainst": 339,
-      "yardsFor": 2162,
+      "pointsFor": 224,
+      "pointsAgainst": 396,
+      "yardsFor": 2421,
       "yardsAgainst": 0,
-      "passYdsFor": 1025,
-      "rushYdsFor": 1137,
+      "passYdsFor": 1147,
+      "rushYdsFor": 1274,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 13,
-      "turnoversLost": 11
+      "turnoversForced": 14,
+      "turnoversLost": 14
     },
     "headCoach": "Pat Byrd",
     "maxprepsUrl": "https://www.maxpreps.com/ms/louisville/winston-academy-patriots/football/",
@@ -13263,7 +13263,7 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
@@ -13271,7 +13271,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -13289,16 +13289,16 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
-      "stateOverall": 152,
+      "stateOverall": 150,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 261,
-      "pointsAgainst": 232,
+      "pointsFor": 267,
+      "pointsAgainst": 274,
       "yardsFor": 2851,
       "yardsAgainst": 0,
       "passYdsFor": 534,
@@ -13320,7 +13320,7 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
@@ -13328,7 +13328,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -13346,16 +13346,16 @@
     "season": "2026-27",
     "record": {
       "wins": 8,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
-      "stateOverall": 102,
+      "stateOverall": 100,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 368,
-      "pointsAgainst": 161,
+      "pointsFor": 397,
+      "pointsAgainst": 199,
       "yardsFor": 3593,
       "yardsAgainst": 0,
       "passYdsFor": 1224,
@@ -13373,7 +13373,7 @@
     },
     "homeRecord": {
       "wins": 4,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 4,
@@ -13384,8 +13384,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -13463,7 +13463,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 194,
+      "stateOverall": 192,
       "stateClass": 7,
       "national": null
     },
@@ -13517,7 +13517,7 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 208,
@@ -13525,8 +13525,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 217,
-      "pointsAgainst": 258,
+      "pointsFor": 224,
+      "pointsAgainst": 300,
       "yardsFor": 3047,
       "yardsAgainst": 0,
       "passYdsFor": 2213,
@@ -13544,7 +13544,7 @@
     },
     "homeRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -13556,7 +13556,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -13573,25 +13573,25 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 141,
+      "stateOverall": 140,
       "stateClass": 5,
       "national": null
     },
     "stats": {
-      "pointsFor": 225,
-      "pointsAgainst": 204,
-      "yardsFor": 3040,
+      "pointsFor": 282,
+      "pointsAgainst": 240,
+      "yardsFor": 3548,
       "yardsAgainst": 0,
       "passYdsFor": 353,
-      "rushYdsFor": 2687,
+      "rushYdsFor": 3195,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
-      "turnoversLost": 9
+      "turnoversForced": 20,
+      "turnoversLost": 11
     },
     "headCoach": "RJ Hulse",
     "maxprepsUrl": "https://www.maxpreps.com/ms/batesville/north-delta-green-wave/football/",
@@ -13600,7 +13600,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -13612,7 +13612,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -13801,17 +13801,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 30,
+      "stateOverall": 31,
       "stateClass": 1,
       "national": null
     },
     "stats": {
-      "pointsFor": 423,
-      "pointsAgainst": 120,
+      "pointsFor": 449,
+      "pointsAgainst": 123,
       "yardsFor": 3728,
       "yardsAgainst": 0,
       "passYdsFor": 1484,
@@ -13828,7 +13828,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -13840,7 +13840,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 7,
+      "count": 8,
       "result": "W"
     }
   },
@@ -13858,7 +13858,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 3
     },
     "rankings": {
@@ -13867,15 +13867,15 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 436,
-      "pointsAgainst": 306,
-      "yardsFor": 5008,
+      "pointsFor": 472,
+      "pointsAgainst": 328,
+      "yardsFor": 5466,
       "yardsAgainst": 0,
-      "passYdsFor": 3044,
-      "rushYdsFor": 1964,
+      "passYdsFor": 3251,
+      "rushYdsFor": 2215,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 18,
       "turnoversLost": 8
     },
     "headCoach": "Brian Pickens",
@@ -13885,7 +13885,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 2
     },
     "awayRecord": {
@@ -13897,7 +13897,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
+      "count": 6,
       "result": "W"
     }
   },
@@ -13916,20 +13916,20 @@
     "season": "2026-27",
     "record": {
       "wins": 8,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
-      "stateOverall": 83,
+      "stateOverall": 82,
       "stateClass": 4,
       "national": null
     },
     "stats": {
-      "pointsFor": 384,
-      "pointsAgainst": 251,
-      "yardsFor": 3987,
+      "pointsFor": 405,
+      "pointsAgainst": 275,
+      "yardsFor": 4280,
       "yardsAgainst": 0,
-      "passYdsFor": 837,
-      "rushYdsFor": 3150,
+      "passYdsFor": 858,
+      "rushYdsFor": 3422,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 0,
@@ -13947,15 +13947,15 @@
     },
     "awayRecord": {
       "wins": 4,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -13973,16 +13973,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 170,
+      "stateOverall": 167,
       "stateClass": 8,
       "national": null
     },
     "stats": {
-      "pointsFor": 145,
-      "pointsAgainst": 200,
+      "pointsFor": 153,
+      "pointsAgainst": 234,
       "yardsFor": 389,
       "yardsAgainst": 0,
       "passYdsFor": 56,
@@ -14004,14 +14004,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -14030,16 +14030,16 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 7
+      "losses": 8
     },
     "rankings": {
-      "stateOverall": 138,
+      "stateOverall": 134,
       "stateClass": 7,
       "national": null
     },
     "stats": {
-      "pointsFor": 369,
-      "pointsAgainst": 330,
+      "pointsFor": 383,
+      "pointsAgainst": 357,
       "yardsFor": 920,
       "yardsAgainst": 0,
       "passYdsFor": 652,
@@ -14061,15 +14061,15 @@
     },
     "awayRecord": {
       "wins": 4,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -14087,16 +14087,16 @@
     "season": "2026-27",
     "record": {
       "wins": 10,
-      "losses": 0
+      "losses": 1
     },
     "rankings": {
-      "stateOverall": 75,
+      "stateOverall": 74,
       "stateClass": 3,
       "national": null
     },
     "stats": {
-      "pointsFor": 313,
-      "pointsAgainst": 92,
+      "pointsFor": 335,
+      "pointsAgainst": 128,
       "yardsFor": 3120,
       "yardsAgainst": 0,
       "passYdsFor": 1037,
@@ -14118,15 +14118,15 @@
     },
     "awayRecord": {
       "wins": 4,
-      "losses": 0
+      "losses": 1
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 10,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -14257,24 +14257,24 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 127,
+      "stateOverall": 126,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 376,
-      "pointsAgainst": 242,
-      "yardsFor": 4217,
+      "pointsFor": 404,
+      "pointsAgainst": 256,
+      "yardsFor": 4466,
       "yardsAgainst": 0,
-      "passYdsFor": 1207,
-      "rushYdsFor": 3010,
+      "passYdsFor": 1277,
+      "rushYdsFor": 3189,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 15,
+      "turnoversForced": 17,
       "turnoversLost": 7
     },
     "headCoach": "Ben Durham",
@@ -14284,7 +14284,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "awayRecord": {
@@ -14296,7 +14296,7 @@
       "losses": 1
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -14314,17 +14314,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 121,
+      "stateOverall": 122,
       "stateClass": 5,
       "national": null
     },
     "stats": {
-      "pointsFor": 301,
-      "pointsAgainst": 258,
+      "pointsFor": 335,
+      "pointsAgainst": 266,
       "yardsFor": 3213,
       "yardsAgainst": 0,
       "passYdsFor": 1761,
@@ -14341,7 +14341,7 @@
       "losses": 2
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "awayRecord": {
@@ -14354,7 +14354,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -14372,7 +14372,7 @@
     "season": "2026-27",
     "record": {
       "wins": 4,
-      "losses": 6
+      "losses": 7
     },
     "rankings": {
       "stateOverall": 184,
@@ -14380,16 +14380,16 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 259,
-      "pointsAgainst": 336,
-      "yardsFor": 2902,
+      "pointsFor": 273,
+      "pointsAgainst": 372,
+      "yardsFor": 3102,
       "yardsAgainst": 0,
-      "passYdsFor": 1429,
-      "rushYdsFor": 1473,
+      "passYdsFor": 1582,
+      "rushYdsFor": 1520,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 10,
-      "turnoversLost": 9
+      "turnoversForced": 12,
+      "turnoversLost": 11
     },
     "headCoach": "John Baker",
     "maxprepsUrl": "https://www.maxpreps.com/ms/vicksburg/st-aloysius-flashes/football/",
@@ -14403,14 +14403,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -14432,7 +14432,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 214,
+      "stateOverall": 213,
       "stateClass": 10,
       "national": null
     },
@@ -14485,17 +14485,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 184,
+      "stateOverall": 182,
       "stateClass": null,
       "national": null
     },
     "stats": {
-      "pointsFor": 183,
-      "pointsAgainst": 274,
+      "pointsFor": 219,
+      "pointsAgainst": 288,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14512,7 +14512,7 @@
       "losses": 3
     },
     "homeRecord": {
-      "wins": 1,
+      "wins": 2,
       "losses": 3
     },
     "awayRecord": {
@@ -14524,8 +14524,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -14546,7 +14546,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 151,
+      "stateOverall": 149,
       "stateClass": null,
       "national": null
     },
@@ -14600,16 +14600,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 216,
+      "stateOverall": 215,
       "stateClass": null,
       "national": null
     },
     "stats": {
-      "pointsFor": 274,
-      "pointsAgainst": 201,
+      "pointsFor": 282,
+      "pointsAgainst": 243,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14631,14 +14631,14 @@
     },
     "awayRecord": {
       "wins": 2,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -14713,25 +14713,25 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 27,
+      "stateOverall": 28,
       "stateClass": 5,
       "national": null
     },
     "stats": {
-      "pointsFor": 432,
-      "pointsAgainst": 204,
-      "yardsFor": 3900,
+      "pointsFor": 474,
+      "pointsAgainst": 197,
+      "yardsFor": 4310,
       "yardsAgainst": 0,
-      "passYdsFor": 2282,
-      "rushYdsFor": 1618,
+      "passYdsFor": 2514,
+      "rushYdsFor": 1796,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
-      "turnoversForced": 17,
-      "turnoversLost": 4
+      "turnoversForced": 21,
+      "turnoversLost": 5
     },
     "headCoach": "Ron Rushing",
     "maxprepsUrl": "https://www.maxpreps.com/ms/mccomb/parklane-academy-pioneers/football/",
@@ -14740,7 +14740,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "awayRecord": {
@@ -14753,7 +14753,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -14771,16 +14771,16 @@
     "season": "2026-27",
     "record": {
       "wins": 8,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
-      "stateOverall": 9,
+      "stateOverall": 8,
       "stateClass": 2,
       "national": null
     },
     "stats": {
-      "pointsFor": 384,
-      "pointsAgainst": 134,
+      "pointsFor": 405,
+      "pointsAgainst": 176,
       "yardsFor": 4010,
       "yardsAgainst": 0,
       "passYdsFor": 1493,
@@ -14802,7 +14802,7 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
@@ -14810,7 +14810,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -14827,16 +14827,16 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 31,
+      "stateOverall": 32,
       "stateClass": 6,
       "national": null
     },
     "stats": {
-      "pointsFor": 393,
+      "pointsFor": 438,
       "pointsAgainst": 118,
       "yardsFor": 0,
       "yardsAgainst": 0,
@@ -14854,7 +14854,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "awayRecord": {
@@ -14866,7 +14866,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -14885,7 +14885,7 @@
     "season": "2026-27",
     "record": {
       "wins": 8,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
       "stateOverall": 12,
@@ -14893,8 +14893,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 334,
-      "pointsAgainst": 249,
+      "pointsFor": 346,
+      "pointsAgainst": 280,
       "yardsFor": 3921,
       "yardsAgainst": 0,
       "passYdsFor": 2891,
@@ -14941,7 +14941,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 7
     },
     "rankings": {
@@ -14950,8 +14950,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 175,
-      "pointsAgainst": 347,
+      "pointsFor": 199,
+      "pointsAgainst": 368,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -14968,7 +14968,7 @@
       "losses": 2
     },
     "homeRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 3
     },
     "awayRecord": {
@@ -14980,7 +14980,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -14998,21 +14998,21 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 69,
+      "stateOverall": 68,
       "stateClass": 7,
       "national": null
     },
     "stats": {
-      "pointsFor": 365,
-      "pointsAgainst": 203,
-      "yardsFor": 4313,
+      "pointsFor": 407,
+      "pointsAgainst": 217,
+      "yardsFor": 4786,
       "yardsAgainst": 0,
-      "passYdsFor": 2865,
-      "rushYdsFor": 1448,
+      "passYdsFor": 3149,
+      "rushYdsFor": 1637,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 1,
@@ -15025,7 +15025,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -15037,7 +15037,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
+      "count": 6,
       "result": "W"
     }
   },
@@ -15056,16 +15056,16 @@
     "season": "2026-27",
     "record": {
       "wins": 5,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 130,
+      "stateOverall": 129,
       "stateClass": 11,
       "national": null
     },
     "stats": {
-      "pointsFor": 191,
-      "pointsAgainst": 221,
+      "pointsFor": 203,
+      "pointsAgainst": 241,
       "yardsFor": 2548,
       "yardsAgainst": 0,
       "passYdsFor": 882,
@@ -15083,7 +15083,7 @@
     },
     "homeRecord": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 3,
@@ -15094,7 +15094,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -15113,7 +15113,7 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 131,
@@ -15121,8 +15121,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 309,
-      "pointsAgainst": 236,
+      "pointsFor": 312,
+      "pointsAgainst": 262,
       "yardsFor": 2852,
       "yardsAgainst": 0,
       "passYdsFor": 1775,
@@ -15144,14 +15144,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -15169,7 +15169,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 10,
+      "wins": 11,
       "losses": 1
     },
     "rankings": {
@@ -15178,8 +15178,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 470,
-      "pointsAgainst": 181,
+      "pointsFor": 512,
+      "pointsAgainst": 202,
       "yardsFor": 4328,
       "yardsAgainst": 0,
       "passYdsFor": 1654,
@@ -15196,7 +15196,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "awayRecord": {
@@ -15208,7 +15208,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 6,
+      "count": 7,
       "result": "W"
     }
   },
@@ -15227,16 +15227,16 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
-      "stateOverall": 82,
+      "stateOverall": 80,
       "stateClass": 9,
       "national": null
     },
     "stats": {
-      "pointsFor": 340,
-      "pointsAgainst": 211,
+      "pointsFor": 347,
+      "pointsAgainst": 253,
       "yardsFor": 3702,
       "yardsAgainst": 0,
       "passYdsFor": 2545,
@@ -15258,14 +15258,14 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "L"
     }
   },
@@ -15283,17 +15283,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 175,
+      "stateOverall": 172,
       "stateClass": null,
       "national": null
     },
     "stats": {
-      "pointsFor": 269,
-      "pointsAgainst": 264,
+      "pointsFor": 311,
+      "pointsAgainst": 272,
       "yardsFor": 1473,
       "yardsAgainst": 0,
       "passYdsFor": 577,
@@ -15310,7 +15310,7 @@
       "losses": 2
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "awayRecord": {
@@ -15323,7 +15323,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -15344,7 +15344,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 198,
+      "stateOverall": 199,
       "stateClass": 17,
       "national": null
     },
@@ -15397,7 +15397,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "rankings": {
@@ -15406,8 +15406,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 292,
-      "pointsAgainst": 239,
+      "pointsFor": 323,
+      "pointsAgainst": 251,
       "yardsFor": 3319,
       "yardsAgainst": 0,
       "passYdsFor": 1212,
@@ -15428,7 +15428,7 @@
       "losses": 2
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "neutralRecord": {
@@ -15436,7 +15436,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "W"
     }
   },
@@ -15511,17 +15511,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 178,
+      "stateOverall": 177,
       "stateClass": null,
       "national": null
     },
     "stats": {
-      "pointsFor": 217,
-      "pointsAgainst": 238,
+      "pointsFor": 237,
+      "pointsAgainst": 250,
       "yardsFor": 21,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15542,7 +15542,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -15550,7 +15550,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 1,
+      "count": 2,
       "result": "W"
     }
   },
@@ -15568,17 +15568,17 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 144,
+      "stateOverall": 145,
       "stateClass": 13,
       "national": null
     },
     "stats": {
-      "pointsFor": 180,
-      "pointsAgainst": 261,
+      "pointsFor": 190,
+      "pointsAgainst": 268,
       "yardsFor": 2126,
       "yardsAgainst": 0,
       "passYdsFor": 995,
@@ -15599,7 +15599,7 @@
       "losses": 2
     },
     "awayRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "neutralRecord": {
@@ -15607,8 +15607,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "L"
+      "count": 1,
+      "result": "W"
     }
   },
   {
@@ -15626,7 +15626,7 @@
     "season": "2026-27",
     "record": {
       "wins": 9,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
       "stateOverall": 70,
@@ -15634,8 +15634,8 @@
       "national": null
     },
     "stats": {
-      "pointsFor": 325,
-      "pointsAgainst": 198,
+      "pointsFor": 332,
+      "pointsAgainst": 208,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15653,7 +15653,7 @@
     },
     "homeRecord": {
       "wins": 6,
-      "losses": 0
+      "losses": 1
     },
     "awayRecord": {
       "wins": 3,
@@ -15664,8 +15664,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -15683,16 +15683,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
-      "stateOverall": 114,
+      "stateOverall": 113,
       "stateClass": null,
       "national": null
     },
     "stats": {
-      "pointsFor": 78,
-      "pointsAgainst": 233,
+      "pointsFor": 92,
+      "pointsAgainst": 275,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15714,14 +15714,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "L"
     }
   },
@@ -15740,16 +15740,16 @@
     "season": "2026-27",
     "record": {
       "wins": 2,
-      "losses": 9
+      "losses": 10
     },
     "rankings": {
-      "stateOverall": 158,
+      "stateOverall": 157,
       "stateClass": 14,
       "national": null
     },
     "stats": {
       "pointsFor": 148,
-      "pointsAgainst": 290,
+      "pointsAgainst": 335,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15771,14 +15771,14 @@
     },
     "awayRecord": {
       "wins": 1,
-      "losses": 5
+      "losses": 6
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 3,
+      "count": 4,
       "result": "L"
     }
   },
@@ -15800,7 +15800,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 192,
+      "stateOverall": 190,
       "stateClass": 16,
       "national": null
     },
@@ -15853,7 +15853,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 9,
+      "wins": 10,
       "losses": 1
     },
     "rankings": {
@@ -15862,8 +15862,8 @@
       "national": 79
     },
     "stats": {
-      "pointsFor": 372,
-      "pointsAgainst": 122,
+      "pointsFor": 414,
+      "pointsAgainst": 136,
       "yardsFor": 2343,
       "yardsAgainst": 0,
       "passYdsFor": 984,
@@ -15884,7 +15884,7 @@
       "losses": 0
     },
     "awayRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "neutralRecord": {
@@ -15892,7 +15892,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 4,
+      "count": 5,
       "result": "W"
     }
   },
@@ -15911,7 +15911,7 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 4
+      "losses": 5
     },
     "rankings": {
       "stateOverall": 5,
@@ -15919,8 +15919,8 @@
       "national": 521
     },
     "stats": {
-      "pointsFor": 444,
-      "pointsAgainst": 291,
+      "pointsFor": 474,
+      "pointsAgainst": 335,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15938,7 +15938,7 @@
     },
     "homeRecord": {
       "wins": 5,
-      "losses": 1
+      "losses": 2
     },
     "awayRecord": {
       "wins": 2,
@@ -15949,8 +15949,8 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -15968,7 +15968,7 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 4,
@@ -15976,8 +15976,8 @@
       "national": 376
     },
     "stats": {
-      "pointsFor": 388,
-      "pointsAgainst": 237,
+      "pointsFor": 414,
+      "pointsAgainst": 273,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -15999,15 +15999,15 @@
     },
     "awayRecord": {
       "wins": 4,
-      "losses": 2
+      "losses": 3
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 2,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -16024,7 +16024,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 8,
+      "wins": 9,
       "losses": 4
     },
     "rankings": {
@@ -16033,8 +16033,8 @@
       "national": 700
     },
     "stats": {
-      "pointsFor": 346,
-      "pointsAgainst": 276,
+      "pointsFor": 382,
+      "pointsAgainst": 302,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16051,7 +16051,7 @@
       "losses": 0
     },
     "homeRecord": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2
     },
     "awayRecord": {
@@ -16063,7 +16063,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 5,
+      "count": 6,
       "result": "W"
     }
   },
@@ -16082,7 +16082,7 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 10,
@@ -16090,16 +16090,16 @@
       "national": 802
     },
     "stats": {
-      "pointsFor": 386,
-      "pointsAgainst": 376,
-      "yardsFor": 3257,
+      "pointsFor": 400,
+      "pointsAgainst": 418,
+      "yardsFor": 3424,
       "yardsAgainst": 0,
-      "passYdsFor": 2040,
-      "rushYdsFor": 1217,
+      "passYdsFor": 2234,
+      "rushYdsFor": 1190,
       "passYdsAgainst": 0,
       "rushYdsAgainst": 0,
       "turnoversForced": 8,
-      "turnoversLost": 14
+      "turnoversLost": 15
     },
     "headCoach": "Chase Hammons",
     "maxprepsUrl": "https://www.maxpreps.com/la/haynesville/claiborne-academy-rebels/football/",
@@ -16109,7 +16109,7 @@
     },
     "homeRecord": {
       "wins": 4,
-      "losses": 2
+      "losses": 3
     },
     "awayRecord": {
       "wins": 2,
@@ -16121,7 +16121,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -16195,7 +16195,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4
     },
     "rankings": {
@@ -16204,8 +16204,8 @@
       "national": 682
     },
     "stats": {
-      "pointsFor": 326,
-      "pointsAgainst": 268,
+      "pointsFor": 370,
+      "pointsAgainst": 298,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16226,7 +16226,7 @@
       "losses": 3
     },
     "awayRecord": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "neutralRecord": {
@@ -16235,7 +16235,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -16595,7 +16595,7 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 3
+      "losses": 4
     },
     "rankings": {
       "stateOverall": 9,
@@ -16603,8 +16603,8 @@
       "national": 769
     },
     "stats": {
-      "pointsFor": 454,
-      "pointsAgainst": 376,
+      "pointsFor": 472,
+      "pointsAgainst": 432,
       "yardsFor": 3561,
       "yardsAgainst": 0,
       "passYdsFor": 1292,
@@ -16626,15 +16626,15 @@
     },
     "awayRecord": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "neutralRecord": {
       "wins": 0,
       "losses": 0
     },
     "streak": {
-      "count": 5,
-      "result": "W"
+      "count": 1,
+      "result": "L"
     }
   },
   {
@@ -16876,7 +16876,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 6
     },
     "rankings": {
@@ -16885,8 +16885,8 @@
       "national": 877
     },
     "stats": {
-      "pointsFor": 318,
-      "pointsAgainst": 280,
+      "pointsFor": 352,
+      "pointsAgainst": 294,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -16903,7 +16903,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "awayRecord": {
@@ -16915,7 +16915,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 2,
+      "count": 3,
       "result": "W"
     }
   },
@@ -17047,7 +17047,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "rankings": {
@@ -17056,8 +17056,8 @@
       "national": 695
     },
     "stats": {
-      "pointsFor": 144,
-      "pointsAgainst": 144,
+      "pointsFor": 190,
+      "pointsAgainst": 170,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -17074,7 +17074,7 @@
       "losses": 1
     },
     "homeRecord": {
-      "wins": 4,
+      "wins": 5,
       "losses": 0
     },
     "awayRecord": {
@@ -17087,7 +17087,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "L"
+      "result": "W"
     }
   },
   {
@@ -17105,7 +17105,7 @@
     "season": "2026-27",
     "record": {
       "wins": 7,
-      "losses": 2
+      "losses": 3
     },
     "rankings": {
       "stateOverall": 4,
@@ -17113,8 +17113,8 @@
       "national": 514
     },
     "stats": {
-      "pointsFor": 392,
-      "pointsAgainst": 186,
+      "pointsFor": 406,
+      "pointsAgainst": 220,
       "yardsFor": 3499,
       "yardsAgainst": 0,
       "passYdsFor": 703,
@@ -17136,7 +17136,7 @@
     },
     "awayRecord": {
       "wins": 5,
-      "losses": 0
+      "losses": 1
     },
     "neutralRecord": {
       "wins": 0,
@@ -17144,7 +17144,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
@@ -17161,7 +17161,7 @@
     },
     "season": "2026-27",
     "record": {
-      "wins": 10,
+      "wins": 11,
       "losses": 0
     },
     "rankings": {
@@ -17170,8 +17170,8 @@
       "national": 229
     },
     "stats": {
-      "pointsFor": 464,
-      "pointsAgainst": 176,
+      "pointsFor": 522,
+      "pointsAgainst": 184,
       "yardsFor": 0,
       "yardsAgainst": 0,
       "passYdsFor": 0,
@@ -17192,7 +17192,7 @@
       "losses": 0
     },
     "awayRecord": {
-      "wins": 5,
+      "wins": 6,
       "losses": 0
     },
     "neutralRecord": {
@@ -17200,7 +17200,7 @@
       "losses": 0
     },
     "streak": {
-      "count": 10,
+      "count": 11,
       "result": "W"
     }
   },
@@ -17447,7 +17447,7 @@
     "season": "2026-27",
     "record": {
       "wins": 6,
-      "losses": 5
+      "losses": 6
     },
     "rankings": {
       "stateOverall": 18,
@@ -17455,8 +17455,8 @@
       "national": 1289
     },
     "stats": {
-      "pointsFor": 394,
-      "pointsAgainst": 508,
+      "pointsFor": 402,
+      "pointsAgainst": 566,
       "yardsFor": 3672,
       "yardsAgainst": 0,
       "passYdsFor": 1912,
@@ -17474,7 +17474,7 @@
     },
     "homeRecord": {
       "wins": 4,
-      "losses": 3
+      "losses": 4
     },
     "awayRecord": {
       "wins": 2,
@@ -17486,7 +17486,7 @@
     },
     "streak": {
       "count": 1,
-      "result": "W"
+      "result": "L"
     }
   },
   {
