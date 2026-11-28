@@ -17,7 +17,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 109,
+      "stateOverall": 99,
       "stateClass": 3,
       "national": null
     },
@@ -74,7 +74,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 64,
+      "stateOverall": 60,
       "stateClass": 2,
       "national": null
     },
@@ -188,7 +188,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 129,
+      "stateOverall": 123,
       "stateClass": 5,
       "national": null
     },
@@ -245,7 +245,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 145,
+      "stateOverall": 136,
       "stateClass": 6,
       "national": null
     },
@@ -302,8 +302,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 152,
-      "stateClass": 8,
+      "stateOverall": 147,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -359,7 +359,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 63,
+      "stateOverall": 59,
       "stateClass": 1,
       "national": null
     },
@@ -416,7 +416,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 223,
+      "stateOverall": 222,
       "stateClass": 17,
       "national": null
     },
@@ -530,7 +530,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 167,
+      "stateOverall": 166,
       "stateClass": 9,
       "national": null
     },
@@ -701,7 +701,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 110,
+      "stateOverall": 100,
       "stateClass": 4,
       "national": null
     },
@@ -983,7 +983,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 174,
+      "stateOverall": 168,
       "stateClass": 10,
       "national": null
     },
@@ -1097,8 +1097,8 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 151,
-      "stateClass": 7,
+      "stateOverall": 152,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
@@ -1154,8 +1154,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 215,
-      "stateClass": 15,
+      "stateOverall": 212,
+      "stateClass": 14,
       "national": null
     },
     "stats": {
@@ -1496,7 +1496,7 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 260,
+      "stateOverall": 261,
       "stateClass": 29,
       "national": null
     },
@@ -1952,8 +1952,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 212,
-      "stateClass": 14,
+      "stateOverall": 216,
+      "stateClass": 15,
       "national": null
     },
     "stats": {
@@ -2063,7 +2063,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 60,
+      "stateOverall": 55,
       "stateClass": 4,
       "national": null
     },
@@ -2120,7 +2120,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 55,
+      "stateOverall": 51,
       "stateClass": 3,
       "national": null
     },
@@ -2177,7 +2177,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 83,
+      "stateOverall": 80,
       "stateClass": 7,
       "national": null
     },
@@ -2348,8 +2348,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 169,
-      "stateClass": 19,
+      "stateOverall": 174,
+      "stateClass": 20,
       "national": null
     },
     "stats": {
@@ -2405,7 +2405,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 66,
+      "stateOverall": 69,
       "stateClass": 5,
       "national": null
     },
@@ -2462,7 +2462,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 127,
+      "stateOverall": 129,
       "stateClass": 14,
       "national": null
     },
@@ -2519,7 +2519,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 186,
+      "stateOverall": 185,
       "stateClass": 25,
       "national": null
     },
@@ -2576,7 +2576,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 140,
+      "stateOverall": 141,
       "stateClass": 16,
       "national": null
     },
@@ -2633,7 +2633,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 160,
+      "stateOverall": 163,
       "stateClass": 18,
       "national": null
     },
@@ -2690,7 +2690,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 108,
+      "stateOverall": 113,
       "stateClass": 12,
       "national": null
     },
@@ -2747,8 +2747,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 184,
-      "stateClass": 24,
+      "stateOverall": 182,
+      "stateClass": 23,
       "national": null
     },
     "stats": {
@@ -2804,7 +2804,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 222,
+      "stateOverall": 223,
       "stateClass": 31,
       "national": null
     },
@@ -2861,8 +2861,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 92,
-      "stateClass": 9,
+      "stateOverall": 85,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
@@ -2918,7 +2918,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 154,
+      "stateOverall": 155,
       "stateClass": 17,
       "national": null
     },
@@ -2975,8 +2975,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 170,
-      "stateClass": 20,
+      "stateOverall": 173,
+      "stateClass": 19,
       "national": null
     },
     "stats": {
@@ -3032,7 +3032,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 69,
+      "stateOverall": 70,
       "stateClass": 6,
       "national": null
     },
@@ -3146,7 +3146,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 50,
+      "stateOverall": 48,
       "stateClass": 2,
       "national": null
     },
@@ -3602,8 +3602,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 183,
-      "stateClass": 23,
+      "stateOverall": 184,
+      "stateClass": 24,
       "national": null
     },
     "stats": {
@@ -3659,8 +3659,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 91,
-      "stateClass": 8,
+      "stateOverall": 87,
+      "stateClass": 9,
       "national": null
     },
     "stats": {
@@ -3773,7 +3773,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 99,
+      "stateOverall": 101,
       "stateClass": 11,
       "national": null
     },
@@ -3830,7 +3830,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 132,
+      "stateOverall": 133,
       "stateClass": 15,
       "national": null
     },
@@ -3944,7 +3944,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 245,
+      "stateOverall": 246,
       "stateClass": 35,
       "national": null
     },
@@ -4286,7 +4286,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 87,
+      "stateOverall": 84,
       "stateClass": 8,
       "national": null
     },
@@ -4343,7 +4343,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 161,
+      "stateOverall": 164,
       "stateClass": 19,
       "national": null
     },
@@ -4400,7 +4400,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 32,
+      "stateOverall": 30,
       "stateClass": 2,
       "national": null
     },
@@ -4514,7 +4514,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 86,
+      "stateOverall": 83,
       "stateClass": 7,
       "national": null
     },
@@ -4742,7 +4742,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 68,
+      "stateOverall": 62,
       "stateClass": 5,
       "national": null
     },
@@ -4799,7 +4799,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 102,
+      "stateOverall": 107,
       "stateClass": 10,
       "national": null
     },
@@ -4913,7 +4913,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 135,
+      "stateOverall": 131,
       "stateClass": 12,
       "national": null
     },
@@ -4970,7 +4970,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 42,
+      "stateOverall": 37,
       "stateClass": 3,
       "national": null
     },
@@ -5084,7 +5084,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 172,
+      "stateOverall": 171,
       "stateClass": 22,
       "national": null
     },
@@ -5141,7 +5141,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 168,
+      "stateOverall": 169,
       "stateClass": 20,
       "national": null
     },
@@ -5198,7 +5198,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 125,
+      "stateOverall": 122,
       "stateClass": 11,
       "national": null
     },
@@ -5312,7 +5312,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 148,
+      "stateOverall": 150,
       "stateClass": 14,
       "national": null
     },
@@ -5369,7 +5369,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 90,
+      "stateOverall": 92,
       "stateClass": 9,
       "national": null
     },
@@ -5483,7 +5483,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 80,
+      "stateOverall": 81,
       "stateClass": 6,
       "national": null
     },
@@ -5654,7 +5654,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 173,
+      "stateOverall": 172,
       "stateClass": 23,
       "national": null
     },
@@ -5711,7 +5711,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 159,
+      "stateOverall": 158,
       "stateClass": 18,
       "national": null
     },
@@ -5768,8 +5768,8 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 157,
-      "stateClass": 17,
+      "stateOverall": 154,
+      "stateClass": 16,
       "national": null
     },
     "stats": {
@@ -5939,7 +5939,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 171,
+      "stateOverall": 170,
       "stateClass": 21,
       "national": null
     },
@@ -6167,7 +6167,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 213,
+      "stateOverall": 214,
       "stateClass": 31,
       "national": null
     },
@@ -6224,8 +6224,8 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 155,
-      "stateClass": 16,
+      "stateOverall": 157,
+      "stateClass": 17,
       "national": null
     },
     "stats": {
@@ -6452,7 +6452,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 244,
+      "stateOverall": 245,
       "stateClass": 35,
       "national": null
     },
@@ -6509,7 +6509,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 59,
+      "stateOverall": 61,
       "stateClass": 10,
       "national": null
     },
@@ -6566,7 +6566,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 33,
+      "stateOverall": 31,
       "stateClass": 3,
       "national": null
     },
@@ -6623,8 +6623,8 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 58,
-      "stateClass": 9,
+      "stateOverall": 54,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -6737,7 +6737,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 78,
+      "stateOverall": 79,
       "stateClass": 13,
       "national": null
     },
@@ -6794,7 +6794,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 57,
+      "stateOverall": 53,
       "stateClass": 8,
       "national": null
     },
@@ -6965,8 +6965,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 52,
-      "stateClass": 6,
+      "stateOverall": 58,
+      "stateClass": 9,
       "national": null
     },
     "stats": {
@@ -7022,7 +7022,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 112,
+      "stateOverall": 116,
       "stateClass": 20,
       "national": null
     },
@@ -7136,7 +7136,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 62,
+      "stateOverall": 66,
       "stateClass": 11,
       "national": null
     },
@@ -7307,7 +7307,7 @@
       "losses": 0
     },
     "rankings": {
-      "stateOverall": 28,
+      "stateOverall": 27,
       "stateClass": 2,
       "national": null
     },
@@ -7421,7 +7421,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 122,
+      "stateOverall": 125,
       "stateClass": 22,
       "national": null
     },
@@ -7535,7 +7535,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 126,
+      "stateOverall": 127,
       "stateClass": 23,
       "national": null
     },
@@ -7592,8 +7592,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 85,
-      "stateClass": 14,
+      "stateOverall": 90,
+      "stateClass": 15,
       "national": null
     },
     "stats": {
@@ -7650,7 +7650,7 @@
     },
     "rankings": {
       "stateOverall": 88,
-      "stateClass": 15,
+      "stateClass": 14,
       "national": null
     },
     "stats": {
@@ -7706,7 +7706,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 103,
+      "stateOverall": 110,
       "stateClass": 18,
       "national": null
     },
@@ -7763,7 +7763,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 104,
+      "stateOverall": 111,
       "stateClass": 19,
       "national": null
     },
@@ -7820,8 +7820,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 56,
-      "stateClass": 7,
+      "stateOverall": 52,
+      "stateClass": 6,
       "national": null
     },
     "stats": {
@@ -7877,7 +7877,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 113,
+      "stateOverall": 119,
       "stateClass": 21,
       "national": null
     },
@@ -8105,7 +8105,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 158,
+      "stateOverall": 159,
       "stateClass": 24,
       "national": null
     },
@@ -8162,7 +8162,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 182,
+      "stateOverall": 183,
       "stateClass": 27,
       "national": null
     },
@@ -8219,7 +8219,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 97,
+      "stateOverall": 94,
       "stateClass": 17,
       "national": null
     },
@@ -8846,7 +8846,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 95,
+      "stateOverall": 96,
       "stateClass": 10,
       "national": null
     },
@@ -8960,7 +8960,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 142,
+      "stateOverall": 143,
       "stateClass": 19,
       "national": null
     },
@@ -9017,7 +9017,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 111,
+      "stateOverall": 117,
       "stateClass": 13,
       "national": null
     },
@@ -9131,8 +9131,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 71,
-      "stateClass": 6,
+      "stateOverall": 67,
+      "stateClass": 5,
       "national": null
     },
     "stats": {
@@ -9188,8 +9188,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 46,
-      "stateClass": 4,
+      "stateOverall": 42,
+      "stateClass": 3,
       "national": null
     },
     "stats": {
@@ -9245,7 +9245,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 119,
+      "stateOverall": 121,
       "stateClass": 15,
       "national": null
     },
@@ -9302,8 +9302,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 40,
-      "stateClass": 3,
+      "stateOverall": 68,
+      "stateClass": 6,
       "national": null
     },
     "stats": {
@@ -9359,7 +9359,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 143,
+      "stateOverall": 144,
       "stateClass": 20,
       "national": null
     },
@@ -9416,7 +9416,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 96,
+      "stateOverall": 97,
       "stateClass": 11,
       "national": null
     },
@@ -9473,8 +9473,8 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 48,
-      "stateClass": 5,
+      "stateOverall": 47,
+      "stateClass": 4,
       "national": null
     },
     "stats": {
@@ -9587,7 +9587,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 124,
+      "stateOverall": 126,
       "stateClass": 16,
       "national": null
     },
@@ -9644,7 +9644,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 134,
+      "stateOverall": 135,
       "stateClass": 18,
       "national": null
     },
@@ -9701,8 +9701,8 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 84,
-      "stateClass": 8,
+      "stateOverall": 77,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -9758,8 +9758,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 82,
-      "stateClass": 7,
+      "stateOverall": 86,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
@@ -9872,7 +9872,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 133,
+      "stateOverall": 134,
       "stateClass": 17,
       "national": null
     },
@@ -9986,7 +9986,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 214,
+      "stateOverall": 213,
       "stateClass": 25,
       "national": null
     },
@@ -10100,7 +10100,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 107,
+      "stateOverall": 112,
       "stateClass": 12,
       "national": null
     },
@@ -10214,7 +10214,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 81,
+      "stateOverall": 89,
       "stateClass": 14,
       "national": null
     },
@@ -10271,8 +10271,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 51,
-      "stateClass": 7,
+      "stateOverall": 49,
+      "stateClass": 6,
       "national": null
     },
     "stats": {
@@ -10328,7 +10328,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 31,
+      "stateOverall": 32,
       "stateClass": 4,
       "national": null
     },
@@ -10385,7 +10385,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 106,
+      "stateOverall": 109,
       "stateClass": 17,
       "national": null
     },
@@ -10499,7 +10499,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 67,
+      "stateOverall": 64,
       "stateClass": 10,
       "national": null
     },
@@ -10556,8 +10556,8 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 49,
-      "stateClass": 6,
+      "stateOverall": 50,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -10670,7 +10670,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 70,
+      "stateOverall": 71,
       "stateClass": 11,
       "national": null
     },
@@ -10784,7 +10784,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 131,
+      "stateOverall": 132,
       "stateClass": 19,
       "national": null
     },
@@ -10841,7 +10841,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 54,
+      "stateOverall": 57,
       "stateClass": 9,
       "national": null
     },
@@ -10955,7 +10955,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 105,
+      "stateOverall": 108,
       "stateClass": 16,
       "national": null
     },
@@ -11012,7 +11012,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 27,
+      "stateOverall": 29,
       "stateClass": 3,
       "national": null
     },
@@ -11069,7 +11069,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 53,
+      "stateOverall": 56,
       "stateClass": 8,
       "national": null
     },
@@ -11126,7 +11126,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 79,
+      "stateOverall": 82,
       "stateClass": 13,
       "national": null
     },
@@ -11183,7 +11183,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 150,
+      "stateOverall": 149,
       "stateClass": 21,
       "national": null
     },
@@ -11240,7 +11240,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 246,
+      "stateOverall": 244,
       "stateClass": 24,
       "national": null
     },
@@ -11297,7 +11297,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 128,
+      "stateOverall": 130,
       "stateClass": 18,
       "national": null
     },
@@ -11411,7 +11411,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 144,
+      "stateOverall": 145,
       "stateClass": 20,
       "national": null
     },
@@ -11468,7 +11468,7 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 89,
+      "stateOverall": 91,
       "stateClass": 15,
       "national": null
     },
@@ -11696,7 +11696,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 37,
+      "stateOverall": 40,
       "stateClass": 17,
       "national": null
     },
@@ -11810,8 +11810,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 5,
-      "stateClass": 5,
+      "stateOverall": 4,
+      "stateClass": 4,
       "national": null
     },
     "stats": {
@@ -12152,7 +12152,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 47,
+      "stateOverall": 46,
       "stateClass": 21,
       "national": null
     },
@@ -12380,8 +12380,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 4,
-      "stateClass": 4,
+      "stateOverall": 5,
+      "stateClass": 5,
       "national": null
     },
     "stats": {
@@ -12608,7 +12608,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 73,
+      "stateOverall": 74,
       "stateClass": 22,
       "national": null
     },
@@ -12722,7 +12722,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 138,
+      "stateOverall": 140,
       "stateClass": 24,
       "national": null
     },
@@ -12836,7 +12836,7 @@
       "losses": 9
     },
     "rankings": {
-      "stateOverall": 136,
+      "stateOverall": 137,
       "stateClass": 23,
       "national": null
     },
@@ -12893,7 +12893,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 162,
+      "stateOverall": 165,
       "stateClass": 25,
       "national": null
     },
@@ -13007,7 +13007,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 117,
+      "stateOverall": 114,
       "stateClass": 4,
       "national": null
     },
@@ -13064,7 +13064,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 114,
+      "stateOverall": 102,
       "stateClass": 1,
       "national": null
     },
@@ -13121,8 +13121,8 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 115,
-      "stateClass": 3,
+      "stateOverall": 103,
+      "stateClass": 2,
       "national": null
     },
     "stats": {
@@ -13349,8 +13349,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 116,
-      "stateClass": 2,
+      "stateOverall": 106,
+      "stateClass": 3,
       "national": null
     },
     "stats": {
@@ -13577,7 +13577,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 137,
+      "stateOverall": 138,
       "stateClass": 5,
       "national": null
     },
@@ -13805,7 +13805,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 29,
+      "stateOverall": 28,
       "stateClass": 1,
       "national": null
     },
@@ -13862,7 +13862,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 61,
+      "stateOverall": 63,
       "stateClass": 2,
       "national": null
     },
@@ -13919,7 +13919,7 @@
       "losses": 4
     },
     "rankings": {
-      "stateOverall": 101,
+      "stateOverall": 105,
       "stateClass": 4,
       "national": null
     },
@@ -13976,8 +13976,8 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 163,
-      "stateClass": 6,
+      "stateOverall": 167,
+      "stateClass": 8,
       "national": null
     },
     "stats": {
@@ -14033,8 +14033,8 @@
       "losses": 8
     },
     "rankings": {
-      "stateOverall": 166,
-      "stateClass": 8,
+      "stateOverall": 162,
+      "stateClass": 7,
       "national": null
     },
     "stats": {
@@ -14090,7 +14090,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 77,
+      "stateOverall": 78,
       "stateClass": 3,
       "national": null
     },
@@ -14261,8 +14261,8 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 165,
-      "stateClass": 7,
+      "stateOverall": 161,
+      "stateClass": 6,
       "national": null
     },
     "stats": {
@@ -14318,7 +14318,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 123,
+      "stateOverall": 115,
       "stateClass": 5,
       "national": null
     },
@@ -14375,7 +14375,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 185,
+      "stateOverall": 186,
       "stateClass": 9,
       "national": null
     },
@@ -14432,7 +14432,7 @@
       "losses": 2
     },
     "rankings": {
-      "stateOverall": 216,
+      "stateOverall": 215,
       "stateClass": 10,
       "national": null
     },
@@ -14831,7 +14831,7 @@
       "losses": 1
     },
     "rankings": {
-      "stateOverall": 30,
+      "stateOverall": 33,
       "stateClass": 6,
       "national": null
     },
@@ -14945,7 +14945,7 @@
       "losses": 7
     },
     "rankings": {
-      "stateOverall": 100,
+      "stateOverall": 104,
       "stateClass": 10,
       "national": null
     },
@@ -15059,7 +15059,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 149,
+      "stateOverall": 151,
       "stateClass": 14,
       "national": null
     },
@@ -15116,7 +15116,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 121,
+      "stateOverall": 124,
       "stateClass": null,
       "national": null
     },
@@ -15287,7 +15287,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 164,
+      "stateOverall": 160,
       "stateClass": null,
       "national": null
     },
@@ -15458,7 +15458,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 261,
+      "stateOverall": 260,
       "stateClass": 18,
       "national": null
     },
@@ -15572,7 +15572,7 @@
       "losses": 5
     },
     "rankings": {
-      "stateOverall": 130,
+      "stateOverall": 128,
       "stateClass": 12,
       "national": null
     },
@@ -15629,7 +15629,7 @@
       "losses": 3
     },
     "rankings": {
-      "stateOverall": 74,
+      "stateOverall": 73,
       "stateClass": 8,
       "national": null
     },
@@ -15686,7 +15686,7 @@
       "losses": 6
     },
     "rankings": {
-      "stateOverall": 108,
+      "stateOverall": 112,
       "stateClass": null,
       "national": null
     },
@@ -15743,7 +15743,7 @@
       "losses": 10
     },
     "rankings": {
-      "stateOverall": 147,
+      "stateOverall": 148,
       "stateClass": 13,
       "national": null
     },
@@ -15973,7 +15973,7 @@
     "rankings": {
       "stateOverall": 5,
       "stateClass": null,
-      "national": 505
+      "national": 504
     },
     "stats": {
       "pointsFor": 414,
@@ -16201,7 +16201,7 @@
     "rankings": {
       "stateOverall": 8,
       "stateClass": 4,
-      "national": 721
+      "national": 722
     },
     "stats": {
       "pointsFor": 370,
@@ -16882,7 +16882,7 @@
     "rankings": {
       "stateOverall": 11,
       "stateClass": null,
-      "national": 946
+      "national": 947
     },
     "stats": {
       "pointsFor": 352,
@@ -17053,7 +17053,7 @@
     "rankings": {
       "stateOverall": 9,
       "stateClass": null,
-      "national": 877
+      "national": 876
     },
     "stats": {
       "pointsFor": 190,
@@ -17167,7 +17167,7 @@
     "rankings": {
       "stateOverall": 2,
       "stateClass": 1,
-      "national": 352
+      "national": 353
     },
     "stats": {
       "pointsFor": 522,
